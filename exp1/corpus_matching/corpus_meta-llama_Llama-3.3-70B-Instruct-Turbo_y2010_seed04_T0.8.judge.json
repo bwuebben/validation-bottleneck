@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:22:19.222482+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y2010_seed04_T0.8.json",
+  "prompt_sha256": "69f7d1092f0b0df2a772c95f146f207f1f99484b8882276aa608f1c61bb2b11e"
+ },
+ "response": {
+  "id": "chatcmpl-E5A8tdKxPvhZA47WL63t2fVk556pf",
+  "object": "chat.completion",
+  "created": 1784899335,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"RDAbility\", \"strength\": \"close\", \"reason\": \"Both use R&D scaled by assets and focus on variability.\"},\n  {\"index\": 1, \"match\": \"ChAssetTurnover\", \"strength\": \"related\", \"reason\": \"Both relate to changes in operational efficiency metrics.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses director compensation variability.\"},\n  {\"index\": 3, \"match\": \"Herf\", \"strength\": \"exact\", \"reason\": \"Both use Herfindahl index for customer concentration.\"},\n  {\"index\": 4, \"match\": \"CitationsRD\", \"strength\": \"related\", \"reason\": \"Both use patent citation data, but different network metrics.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee option delta changes.\"},\n  {\"index\": 6, \"match\": \"iomom_supp\", \"strength\": \"related\", \"reason\": \"Both use supplier relationships, but different construction.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses tax haven subsidiary proportion.\"},\n  {\"index\": 8, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Both use governance index data, but different aggregation.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses industry-adjusted carbon emissions.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2886,
+   "completion_tokens": 349,
+   "total_tokens": 3235,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

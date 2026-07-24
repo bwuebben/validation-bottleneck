@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:07:18.681109+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 4,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQN1VY-6Ng1vN-a20325729ab280da",
+  "object": "chat.completion",
+  "created": 1784898430,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 4,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"R&D Intensity Momentum\", \"construction\": \"Calculate the change in research and development expenses over the past year, scaled by total assets, and then rank stocks based on this change\", \"rationale\": \"Firms with increasing R&D expenditures may be more likely to innovate and experience future growth, leading to higher returns\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Pension Fund Underfunding\", \"construction\": \"Calculate the difference between the projected benefit obligation and the fair value of plan assets for pension funds, scaled by total assets, using data from the footnotes of 10-K filings\", \"rationale\": \"Firms with underfunded pension plans may face higher future liabilities, reducing expected returns\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Customer Concentration\", \"construction\": \"Calculate the percentage of total sales derived from the top 5 customers, using data from the 10-K filings\", \"rationale\": \"Firms with high customer concentration may be more vulnerable to losses if a major customer defaults or switches to a competitor\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Environmental Liability Exposure\", \"construction\": \"Calculate the ratio of environmental liabilities to total assets, using data from the footnotes of 10-K filings\", \"rationale\": \"Firms with high environmental liabilities may face future costs and reputational damage, reducing expected returns\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Unionization Rate\", \"construction\": \"Calculate the percentage of employees that are unionized, using data from the Bureau of Labor Statistics and company filings\", \"rationale\": \"Firms with high unionization rates may face higher labor costs and reduced flexibility, reducing expected returns\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Director and Officer Stock Ownership Dispersion\", \"construction\": \"Calculate the standard deviation of stock ownership among directors and officers, using data from proxy statements\", \"rationale\": \"Firms with dispersed ownership among insiders may have less aligned incentives, reducing expected returns\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Supply Chain Complexity\", \"construction\": \"Calculate the number of different suppliers used by the firm, scaled by total assets, using data from 10-K filings\", \"rationale\": \"Firms with complex supply chains may be more vulnerable to disruptions and logistics issues, reducing expected returns\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Employee Turnover Rate\", \"construction\": \"Calculate the ratio of employee turnover to total employees, using data from company filings and industry reports\", \"rationale\": \"Firms with high employee turnover rates may face higher recruitment and training costs, reducing expected returns\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Litigation Frequency\", \"construction\": \"Calculate the number of lawsuits filed against the firm over the past year, scaled by total assets, using data from court filings and company reports\", \"rationale\": \"Firms with frequent litigation may face higher legal costs and reputational damage, reducing expected returns\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Product Recalls\", \"construction\": \"Calculate the number of product recalls issued by the firm over the past year, scaled by total sales, using data from company reports and regulatory filings\", \"rationale\": \"Firms with frequent product recalls may face higher costs and reputational damage, reducing expected returns\", \"higher_returns_for\": \"low values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 752,
+   "total_tokens": 1046,
+   "cached_tokens": 256
+  }
+ }
+}

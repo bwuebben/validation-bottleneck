@@ -22,9 +22,11 @@ DERIVED.mkdir(exist_ok=True)
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from _dp import get_dp  # noqa: E402
 
-WALLS = {"gpt-4-0613": "2022-04", "gpt-4o-2024-08-06": "2024-01"}  # 4.1 not evaluable v1
+WALLS = {"gpt-4-0613": "2022-04", "gpt-4o-2024-08-06": "2024-01",
+         "meta-llama_Llama-3.3-70B-Instruct-Turbo": "2024-03"}  # 4.1 not evaluable v1; llama per Amendment 1
 DATA_END = dt.date(2024, 12, 31)
-MIN_MONTHS = {"gpt-4-0613": 24, "gpt-4o-2024-08-06": 9}
+MIN_MONTHS = {"gpt-4-0613": 24, "gpt-4o-2024-08-06": 9,
+              "meta-llama_Llama-3.3-70B-Instruct-Turbo": 8}
 WEIGHTS = {-1.0, -0.5, 0.5, 1.0}
 REGIMES = {"VIX_ABOVE_TRAILING_MEDIAN", "VIX_BELOW_TRAILING_MEDIAN",
            "TERM_SPREAD_POSITIVE", "TERM_SPREAD_NEGATIVE",
@@ -68,16 +70,19 @@ def main() -> None:
     # ---------------- Stage 0: universe ----------------
     lib = {l.split(":")[0] for l in (EXP2 / "primitives" / "library_block.txt").read_text().splitlines()}
     hyps = []
-    for f in sorted(CORPUS.glob("gpt*/v*_seed*.json")):
+    for f in sorted(CORPUS.glob("*/v*_seed*.json")):
         if f.name.startswith("smoke_"):
             continue
         env = json.loads(f.read_text())
-        model = env["meta"]["model_requested"]
+        model = env["meta"]["model_requested"].replace("/", "_")
         content = env["response"]["choices"][0]["message"]["content"]
         try:
             j = json.loads(content)
         except json.JSONDecodeError:
-            j = json.loads(strip_fences(content))
+            try:
+                j = json.loads(strip_fences(content))
+            except json.JSONDecodeError:
+                j = {"hypotheses": []}  # malformed response: excluded at Stage 0 per spec
         for i, h in enumerate(j.get("hypotheses", [])):
             expr = h.get("expression", {}) or {}
             terms = expr.get("terms", []) or []
@@ -330,7 +335,7 @@ def main() -> None:
             f"{max((x['t'] for x in ev), default=float('nan')):.2f}; "
             f"median t = {np.median([x['t'] for x in ev]):.2f}\n"
             f"  aux predictions: {aux_tot} testable, {aux_all} hold "
-            f"({aux_all / aux_tot:.0%})\n"
+            f"({(aux_all / aux_tot) if aux_tot else float('nan'):.0%})\n"
             f"  FULL SURVIVORS (t>2 AND all testable aux hold): {len(full)}"
         )
         for x in sorted(full, key=lambda z: -z["t"])[:10]:

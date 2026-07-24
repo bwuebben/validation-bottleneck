@@ -21,6 +21,7 @@ REPORTED = {
     "gpt-4-0613": "2021-09",
     "gpt-4o-2024-08-06": "2023-10",
     "gpt-4.1-2025-04-14": "2024-06",
+    "meta-llama_Llama-3.3-70B-Instruct-Turbo": "2023-12",
 }
 MARGIN_MONTHS = 3
 LAP_THRESHOLD = 0.5

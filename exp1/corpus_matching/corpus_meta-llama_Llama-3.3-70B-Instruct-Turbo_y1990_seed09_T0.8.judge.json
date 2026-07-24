@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:18:35.557586+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y1990_seed09_T0.8.json",
+  "prompt_sha256": "d881ce894dde39b43c87bae358852cb9787baa3cd0e4aac93c36d88112559f9d"
+ },
+ "response": {
+  "id": "chatcmpl-E5A5Ed5unu5baA7owOFXpzBW3rbW5",
+  "object": "chat.completion",
+  "created": 1784899108,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"AssetGrowth\", \"strength\": \"related\", \"reason\": \"Both use asset growth, but volatility is a new angle.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No inventory turnover acceleration or similar in library.\"},\n  {\"index\": 2, \"match\": \"AdExp\", \"strength\": \"related\", \"reason\": \"Both use advertising expense, but not its consistency.\"},\n  {\"index\": 3, \"match\": \"RD\", \"strength\": \"related\", \"reason\": \"Both use R&D, but not smoothness/volatility.\"},\n  {\"index\": 4, \"match\": \"grcapx\", \"strength\": \"exact\", \"reason\": \"Year-over-year change in capex matches grcapx.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No measure of accounts payable days consistency.\"},\n  {\"index\": 6, \"match\": \"tang\", \"strength\": \"exact\", \"reason\": \"Tangible asset intensity matches tangibility definition.\"},\n  {\"index\": 7, \"match\": \"FR\", \"strength\": \"related\", \"reason\": \"Both use pension data, but not asset allocation specifics.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No sales growth deceleration or similar in library.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No employee growth stability or similar in library.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2876,
+   "completion_tokens": 349,
+   "total_tokens": 3225,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

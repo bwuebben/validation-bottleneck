@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:10:09.286604+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQNrsG-fdNmn-a2032984eb21ab71",
+  "object": "chat.completion",
+  "created": 1784898596,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 42,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"R&D Expense Growth Volatility\", \"construction\": \"standard deviation of year-over-year changes in R&D expenses over the past 5 years, using Compustat data\", \"rationale\": \"Firms with volatile R&D expense growth may face greater uncertainty and risk, leading to higher required returns. This volatility can signal potential future disruptions or innovations.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Employee Growth Acceleration\", \"construction\": \"difference between the 3-year and 1-year growth rates of total employees, using Compustat data\", \"rationale\": \"Firms with accelerating employee growth may be experiencing increasing returns to scale or improving operational efficiency, leading to higher future returns. This acceleration can signal strong future growth prospects.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Supply Chain Complexity\", \"construction\": \"number of unique suppliers reported in the firm's 10-K filings over the past year, manually collected from EDGAR\", \"rationale\": \"Firms with complex supply chains may face greater operational risks and challenges, leading to higher required returns. This complexity can signal potential future disruptions or bottlenecks.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Patent Citation Network Centrality\", \"construction\": \"eigenvector centrality of the firm's patents in the USPTO patent citation network over the past 5 years, using patent data from the USPTO\", \"rationale\": \"Firms with highly central patents in the citation network may have more influential and valuable innovations, leading to higher future returns. This centrality can signal strong future growth prospects.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Board Member Busyness\", \"construction\": \"average number of other public company board seats held by the firm's board members, using data from proxy statements and EDGAR\", \"rationale\": \"Firms with busy board members may face greater agency costs and monitoring challenges, leading to higher required returns. This busyness can signal potential future governance issues.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Institutional Investor Concentration\", \"construction\": \"Herfindahl-Hirschman Index of institutional investor ownership, using 13F filings from the SEC\", \"rationale\": \"Firms with concentrated institutional ownership may face greater pressure to meet short-term expectations, leading to higher required returns. This concentration can signal potential future agency conflicts.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Customer Concentration\", \"construction\": \"percentage of total revenue earned from the firm's top 5 customers, using Compustat data and 10-K filings\", \"rationale\": \"Firms with highly concentrated customer bases may face greater revenue risks and challenges, leading to higher required returns. This concentration can signal potential future disruptions or losses.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Geographic Segment Dispersion\", \"construction\": \"number of unique geographic segments reported in the firm's 10-K filings over the past year, manually collected from EDGAR\", \"rationale\": \"Firms with highly dispersed geographic operations may face greater operational risks and challenges, leading to higher required returns. This dispersion can signal potential future disruptions or bottlenecks.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Product Line Complexity\", \"construction\": \"number of unique product lines reported in the firm's 10-K filings over the past year, manually collected from EDGAR\", \"rationale\": \"Firms with complex product lines may face greater operational risks and challenges, leading to higher required returns. This complexity can signal potential future disruptions or bottlenecks.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Corporate Venture Capital Investment\", \"construction\": \"total corporate venture capital investments made by the firm over the past 5 years, using data from Venture Economics and 10-K filings\", \"rationale\": \"Firms with active corporate venture capital programs may be experiencing increasing returns to innovation and entrepreneurship, leading to higher future returns. This investment can signal strong future growth prospects.\", \"higher_returns_for\": \"high values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 892,
+   "total_tokens": 1186,
+   "cached_tokens": 0
+  }
+ }
+}

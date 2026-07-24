@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:18:20.473603+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y1990_seed07_T0.8.json",
+  "prompt_sha256": "4d612978157bd2cd78107197389063aab3e5f87dfdfa6afcbacca276d030271b"
+ },
+ "response": {
+  "id": "chatcmpl-E5A4yN7Z4Sbk6VmqzfVrPU5IkdZaa",
+  "object": "chat.completion",
+  "created": 1784899092,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses R&D volatility or similar construction.\"},\n  {\"index\": 1, \"match\": \"ChAssetTurnover\", \"strength\": \"close\", \"reason\": \"Both relate to changes in operational efficiency via turnover metrics.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses accounts payable days or similar construction.\"},\n  {\"index\": 3, \"match\": \"grcapx3y\", \"strength\": \"close\", \"reason\": \"Both use multi-year changes in capital expenditures scaled by assets.\"},\n  {\"index\": 4, \"match\": \"GrAdExp\", \"strength\": \"related\", \"reason\": \"Both use advertising expense time series, but persistence is new.\"},\n  {\"index\": 5, \"match\": \"hire\", \"strength\": \"exact\", \"reason\": \"Both measure employment growth over time.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses payout ratio volatility or similar construction.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses this specific liquidity ratio construction.\"},\n  {\"index\": 8, \"match\": \"tang\", \"strength\": \"exact\", \"reason\": \"Both measure tangible assets to total assets.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses compensation sensitivity to stock price.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2739,
+   "completion_tokens": 353,
+   "total_tokens": 3092,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

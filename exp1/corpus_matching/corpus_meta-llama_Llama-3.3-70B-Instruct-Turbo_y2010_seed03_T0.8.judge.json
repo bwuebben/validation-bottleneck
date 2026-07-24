@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:22:14.416370+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y2010_seed03_T0.8.json",
+  "prompt_sha256": "e8776147958ac069e83dc9aa4f4733ff615563b01f4391d2c556f285f23ed430"
+ },
+ "response": {
+  "id": "chatcmpl-E5A8oIYVM3RmVDUjKHAFHPXCUmU6P",
+  "object": "chat.completion",
+  "created": 1784899330,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses R&D variability or similar construction.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee option delta or similar sensitivity.\"},\n  {\"index\": 2, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Both use Herfindahl index for concentration, but Herf is for industry, not customers.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses supplier concentration or supply chain interdependence.\"},\n  {\"index\": 4, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Both use board/management structure, but signal is different.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses environmental policy stringency or similar construction.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor estimates product lifecycle stage from these inputs.\"},\n  {\"index\": 7, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Both use Herfindahl index for diversification, but Herf is for industry, not geography.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses compensation horizon or similar construction.\"},\n  {\"index\": 9, \"match\": \"DelBreadth\", \"strength\": \"close\", \"reason\": \"Both use investor base breadth/diversification, but construction differs (Herfindahl vs. breadth).\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2769,
+   "completion_tokens": 382,
+   "total_tokens": 3151,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

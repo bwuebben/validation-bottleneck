@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:00:09.559894+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 12,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQKowu-zfFMX-a2031afd7a0bdd64",
+  "object": "chat.completion",
+  "created": 1784898001,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 12,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Hypothesis 1\", \n\"mechanism\": \"The combination of IdioVol3F and Illiquidity should earn returns beyond their components due to the interaction between idiosyncratic risk and liquidity constraints.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IdioVol3F\"}, {\"weight\": 1.0, \"primitive\": \"Illiquidity\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 24},\n{\"name\": \"Hypothesis 2\", \n\"mechanism\": \"The combination of ROAQ and RD should earn returns beyond their components due to the impact of research and development on return on assets.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"roaq\"}, {\"weight\": -0.5, \"primitive\": \"RD\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": null},\n{\"name\": \"Hypothesis 3\", \n\"mechanism\": \"The combination of PctAcc and NOA should earn returns beyond their components due to the impact of accruals on net operating assets.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"PctAcc\"}, {\"weight\": -1.0, \"primitive\": \"NOA\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": 18},\n{\"name\": \"Hypothesis 4\", \n\"mechanism\": \"The combination of NetDebtFinance and Leverage should earn returns beyond their components due to the impact of debt financing on leverage.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"NetDebtFinance\"}, {\"weight\": -0.5, \"primitive\": \"Leverage\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 30},\n{\"name\": \"Hypothesis 5\", \n\"mechanism\": \"The combination of Mom12m and STreversal should earn returns beyond their components due to the interaction between momentum and short-term reversal.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Mom12m\"}, {\"weight\": -1.0, \"primitive\": \"STreversal\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"IdioVol3F\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": 24},\n{\"name\": \"Hypothesis 6\", \n\"mechanism\": \"The combination of PS and ROE should earn returns beyond their components due to the impact of profitability and solvency on return on equity.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"PS\"}, {\"weight\": 1.0, \"primitive\": \"RoE\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": null},\n{\"name\": \"Hypothesis 7\", \n\"mechanism\": \"The combination of RDIPO and RDS should earn returns beyond their components due to the impact of research and development on dirty surplus.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RDIPO\"}, {\"weight\": -0.5, \"primitive\": \"RDS\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"NOA\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": 18},\n{\"name\": \"Hypothesis 8\", \n\"mechanism\": \"The combination of GrSaleToGrInv and GrLTNOA should earn returns beyond their components due to the interaction between sales growth and growth in long-term operating assets.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"GrSaleToGrInv\"}, {\"weight\": 1.0, \"primitive\": \"GrLTNOA\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 30}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2988,
+   "completion_tokens": 1608,
+   "total_tokens": 4596,
+   "cached_tokens": 2816
+  }
+ }
+}

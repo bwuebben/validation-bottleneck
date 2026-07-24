@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:09:01.139413+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 4,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQNZEY-zfFMX-a20328128d35c034",
+  "object": "chat.completion",
+  "created": 1784898537,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 4,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"R&D Intensity Momentum\", \"construction\": \"Calculate the change in research and development expenses over the past year, scaled by total assets, using Compustat data.\", \"rationale\": \"Firms with increasing R&D investments may be more likely to innovate and experience future growth.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Cash Flow Volatility\", \"construction\": \"Compute the standard deviation of quarterly cash flows from operations over the past 5 years, using Compustat data.\", \"rationale\": \"Firms with volatile cash flows may face higher risks and require higher returns to compensate investors.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Employee Growth Rate\", \"construction\": \"Calculate the year-over-year growth rate of total employees, using Compustat data.\", \"rationale\": \"Firms with rapidly growing workforces may be experiencing strong demand and future growth opportunities.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Intangible Asset Ratio\", \"construction\": \"Compute the ratio of intangible assets to total assets, using Compustat data.\", \"rationale\": \"Firms with high intangible asset ratios may have more growth opportunities and require higher returns to compensate investors.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Foreign Sales Fraction\", \"construction\": \"Calculate the fraction of total sales generated from foreign operations, using Compustat data.\", \"rationale\": \"Firms with high foreign sales fractions may face higher risks and require higher returns to compensate investors.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Pension Plan Underfunding\", \"construction\": \"Compute the ratio of pension plan liabilities to assets, using Compustat data.\", \"rationale\": \"Firms with underfunded pension plans may face higher liabilities and require higher returns to compensate investors.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Capital Expenditure Acceleration\", \"construction\": \"Calculate the change in capital expenditures over the past year, scaled by total assets, using Compustat data.\", \"rationale\": \"Firms with increasing capital expenditures may be investing in future growth opportunities.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Advertising Expense Ratio\", \"construction\": \"Compute the ratio of advertising expenses to total sales, using Compustat data.\", \"rationale\": \"Firms with high advertising expense ratios may be experiencing strong brand recognition and future growth opportunities.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Accounts Receivable Turnover\", \"construction\": \"Calculate the ratio of total sales to average accounts receivable, using Compustat data.\", \"rationale\": \"Firms with high accounts receivable turnover may have more efficient working capital management and require lower returns to compensate investors.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Dividend Payout Acceleration\", \"construction\": \"Calculate the change in dividend payouts over the past year, scaled by total assets, using Compustat data.\", \"rationale\": \"Firms with increasing dividend payouts may be signaling future cash flow generation and requiring lower returns to compensate investors.\", \"higher_returns_for\": \"low values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 693,
+   "total_tokens": 987,
+   "cached_tokens": 256
+  }
+ }
+}

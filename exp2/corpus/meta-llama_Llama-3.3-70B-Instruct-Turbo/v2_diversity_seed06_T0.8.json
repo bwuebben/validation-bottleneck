@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T12:58:43.850426+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 6,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQKMT9-fdNmn-a20318cff939434b",
+  "object": "chat.completion",
+  "created": 1784897912,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 6,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Composite 1\", \"mechanism\": \"Firms with high growth in advertising expenses and low change in net operating assets tend to outperform due to increased brand recognition and efficient use of resources.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"GrAdExp\"}, {\"weight\": -1.0, \"primitive\": \"NetDebtFinance\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\"}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite 2\", \"mechanism\": \"Companies with high intangible assets and low leverage tend to outperform due to their ability to create value through innovation and avoid financial distress.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanBM\"}, {\"weight\": -0.5, \"primitive\": \"Leverage\"}], \"regime\": null, \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 36},\n{\"name\": \"Composite 3\", \"mechanism\": \"Firms with high employee growth and low idiosyncratic volatility tend to outperform due to their ability to attract and retain top talent and manage risk effectively.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"hire\"}, {\"weight\": -1.0, \"primitive\": \"IdioVolAHT\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"STreversal\", \"bound\": \"above\"}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 18},\n{\"name\": \"Composite 4\", \"mechanism\": \"Companies with high return on assets and low short interest tend to outperform due to their ability to generate profits and avoid being targeted by short sellers.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"roaq\"}, {\"weight\": -0.5, \"primitive\": \"ShortInterest\"}], \"regime\": null, \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 48},\n{\"name\": \"Composite 5\", \"mechanism\": \"Firms with high research and development expenses and low change in forecasted earnings tend to outperform due to their ability to innovate and avoid earnings disappointments.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": -1.0, \"primitive\": \"ForecastDispersion\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"below\"}], \"expected_annualized_sharpe\": 0.85, \"expected_decay_half_life_months\": 30},\n{\"name\": \"Composite 6\", \"mechanism\": \"Companies with high dividend yield and low net debt financing tend to outperform due to their ability to generate income and avoid financial distress.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"DivYieldST\"}, {\"weight\": -0.5, \"primitive\": \"NetDebtFinance\"}], \"regime\": null, \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \"expected_annualized_sharpe\": 0.65, \"expected_decay_half_life_months\": 42},\n{\"name\": \"Composite 7\", \"mechanism\": \"Firms with high sales growth and low inventory growth tend to outperform due to their ability to generate revenue and manage working capital.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"GrSaleToGrInv\"}, {\"weight\": -1.0, \"primitive\": \"InvGrowth\"}], \"regime\": \"TERM_SPREAD_NEGATIVE\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"STreversal\", \"bound\": \"above\"}], \"expected_annualized_sharpe\": 0.95, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite 8\", \"mechanism\": \"Companies with high enterprise multiple and low net equity financing tend to outperform due to their ability to create value through efficient use of resources and avoid diluting shareholder value.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"EntMult\"}, {\"weight\": -0.5, \"primitive\": \"NetEquityFinance\"}], \"regime\": null, \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \"expected_annualized_sharpe\": 0.55, \"expected_decay_half_life_months\": 54}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2988,
+   "completion_tokens": 1580,
+   "total_tokens": 4568,
+   "cached_tokens": 2816
+  }
+ }
+}

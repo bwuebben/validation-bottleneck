@@ -48,6 +48,20 @@ this file freezes the walls; evaluation may only use months STRICTLY AFTER the w
   24-01:1.00  24-02:1.00  24-03:1.00  24-04:1.00  24-05:1.00  24-06:1.00
   24-07:  ·   24-08:  ·   24-09:  ·   24-10:  ·   24-11:1.00  24-12:  · 
 
+## meta-llama_Llama-3.3-70B-Instruct-Turbo
+- reported cutoff: **2023-12**; last month with LAP ≥ 0.5: **2023-09**  →  **WALL = 2024-03** (evaluation uses months > 2024-03)
+- LAP by month (· = <0.05):
+  20-01:?hig  20-02:?low  20-03:?low  20-04:?hig  20-05:?hig  20-06:?hig
+  20-07:?hig  20-08:?hig  20-09:?low  20-10:?hig  20-11:?hig  20-12:?hig
+  21-01:?hig  21-02:?hig  21-03:?hig  21-04:?hig  21-05:?hig  21-06:?hig
+  21-07:?hig  21-08:?hig  21-09:?low  21-10:?hig  21-11:?hig  21-12:?hig
+  22-01:?low  22-02:?low  22-03:?hig  22-04:?low  22-05:?low  22-06:?low
+  22-07:?hig  22-08:?hig  22-09:?low  22-10:?hig  22-11:?hig  22-12:?low
+  23-01:?hig  23-02:?hig  23-03:?hig  23-04:?hig  23-05:?hig  23-06:?hig
+  23-07:?hig  23-08:?hig  23-09:?low  23-10:?unk  23-11:?unk  23-12:?unk
+  24-01:?unk  24-02:?unk  24-03:?unk  24-04:?unk  24-05:?unk  24-06:?unk
+  24-07:?unk  24-08:?unk  24-09:?unk  24-10:?unk  24-11:?unk  24-12:?unk
+
 ## Evaluation windows implied (data ends: OSAP 2024-12, JKP ~2025-12, French 2026-05)
 - gpt-4-0613 (wall 2022-04): **2022-05 → 2024-12 on OSAP (32 months)**, longer on JKP/French.
 - gpt-4o-2024-08-06 (wall 2024-01): 2024-02 → 2024-12 on OSAP (11 months), ~23 on JKP.

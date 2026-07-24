@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T12:59:37.508229+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 9,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQKdxq-zfFMX-a2031a2b8b7f9187",
+  "object": "chat.completion",
+  "created": 1784897967,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 9,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Innovation and Profitability\", \"mechanism\": \"Firms with high R&D investment and strong operating profitability tend to outperform due to their ability to innovate and maintain competitive advantage.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": 1.0, \"primitive\": \"OperProf\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 4.0},\n{\"name\": \"Value and Momentum Reversal\", \"mechanism\": \"The combination of value and momentum reversal strategies can help identify undervalued firms with strong price momentum, which tend to outperform in the long run.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"BM\"}, {\"weight\": -1.0, \"primitive\": \"Mom12m\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": null},\n{\"name\": \"Earnings Quality and Growth\", \"mechanism\": \"Firms with high earnings quality and strong earnings growth tend to outperform due to their ability to sustain growth and maintain investor trust.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Accruals\"}, {\"weight\": 1.0, \"primitive\": \"EarnSupBig\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"above\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 6.0},\n{\"name\": \"Liquidity and Volatility\", \"mechanism\": \"Firms with high liquidity and low volatility tend to outperform due to their ability to withstand market downturns and attract investors seeking stable returns.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"BidAskSpread\"}, {\"weight\": -1.0, \"primitive\": \"RealizedVol\"}], \"regime\": \"TERM_SPREAD_NEGATIVE\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 3.0},\n{\"name\": \"Governance and Investment\", \"mechanism\": \"Firms with strong governance and high investment in intangible assets tend to outperform due to their ability to innovate and maintain competitive advantage.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Governance\"}, {\"weight\": 1.0, \"primitive\": \"IntanBM\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"MomOffSeason\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 5.0},\n{\"name\": \"Momentum and Reversal in Industries\", \"mechanism\": \"The combination of momentum and reversal strategies in industries can help identify undervalued firms with strong price momentum, which tend to outperform in the long run.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IndMom\"}, {\"weight\": -1.0, \"primitive\": \"STreversal\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": null},\n{\"name\": \"Credit Risk and Profitability\", \"mechanism\": \"Firms with low credit risk and strong operating profitability tend to outperform due to their ability to maintain financial stability and attract investors seeking stable returns.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"CredRatDG\"}, {\"weight\": 1.0, \"primitive\": \"OperProfRD\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 6.0},\n{\"name\": \"Intangible Assets and Innovation\", \"mechanism\": \"Firms with high investment in intangible assets and strong innovation capabilities tend to outperform due to their ability to innovate and maintain competitive advantage.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanEP\"}, {\"weight\": 1.0, \"primitive\": \"PatentsRD\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 4.0}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2988,
+   "completion_tokens": 1600,
+   "total_tokens": 4588,
+   "cached_tokens": 2816
+  }
+ }
+}

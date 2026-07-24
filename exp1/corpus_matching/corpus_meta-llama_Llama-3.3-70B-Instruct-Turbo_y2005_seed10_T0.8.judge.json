@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:21:54.239395+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y2005_seed10_T0.8.json",
+  "prompt_sha256": "271ee6bd6acb27d292c362265434a0db55dfb5fb0d3122f23fc0efb8c227ebad"
+ },
+ "response": {
+  "id": "chatcmpl-E5A8TMMRFbl80HiTA0Tx31GW33Y7l",
+  "object": "chat.completion",
+  "created": 1784899309,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"SurpriseRD\", \"strength\": \"related\", \"reason\": \"Both use R&D volatility, but construction differs (level vs. std dev).\"},\n  {\"index\": 1, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Both use Herfindahl index for concentration, but on customers not industry.\"},\n  {\"index\": 2, \"match\": \"ChAssetTurnover\", \"strength\": \"related\", \"reason\": \"Both relate to turnover changes, but inventory turnover is distinct.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No patent citation lag or similar innovation timing measure in library.\"},\n  {\"index\": 4, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Both relate to governance, but director busyness is not directly captured.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No textual analysis or earnings call tone measure in library.\"},\n  {\"index\": 6, \"match\": \"MeanRankRevGrowth\", \"strength\": \"related\", \"reason\": \"Both involve sales growth changes, but deceleration is not directly captured.\"},\n  {\"index\": 7, \"match\": \"hire\", \"strength\": \"related\", \"reason\": \"Both use employee growth, but volatility of growth is not in library.\"},\n  {\"index\": 8, \"match\": \"HerfAsset\", \"strength\": \"related\", \"reason\": \"Both use Herfindahl index, but on supplier industries not assets.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No measure of geographic segmentation or segment count in library.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2909,
+   "completion_tokens": 387,
+   "total_tokens": 3296,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

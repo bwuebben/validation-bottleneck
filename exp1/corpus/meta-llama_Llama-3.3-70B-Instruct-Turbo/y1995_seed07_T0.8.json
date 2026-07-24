@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:07:45.180457+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 7,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQN9KK-fdNmn-a20326199e88dcde",
+  "object": "chat.completion",
+  "created": 1784898456,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 7,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"R&D Volatility\", \"construction\": \"standard deviation of research and development expenses over the past 5 years, scaled by total assets\", \"rationale\": \"Firms with more volatile R&D expenses may face higher uncertainty and therefore require a higher expected return to compensate investors for the increased risk. This volatility can be a proxy for the firm's ability to innovate and adapt to changing market conditions.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Capital Expenditure Acceleration\", \"construction\": \"change in capital expenditures over the past year, scaled by total assets, minus the average change over the past 5 years\", \"rationale\": \"Firms that rapidly increase their capital expenditures may be undertaking risky and potentially value-creating investments, and therefore require a higher expected return. This acceleration can be a proxy for the firm's investment opportunities and growth prospects.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Inventory Turnover Dispersion\", \"construction\": \"standard deviation of inventory turnover over the past 5 years\", \"rationale\": \"Firms with more variable inventory turnover may face higher operational risk and therefore require a higher expected return to compensate investors for the increased uncertainty. This dispersion can be a proxy for the firm's ability to manage its supply chain and respond to changing market conditions.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Accounts Payable Days Variability\", \"construction\": \"standard deviation of days accounts payable over the past 5 years\", \"rationale\": \"Firms with more variable accounts payable days may face higher financial risk and therefore require a higher expected return to compensate investors for the increased uncertainty. This variability can be a proxy for the firm's ability to manage its working capital and respond to changing market conditions.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Advertising Expense Ratio Volatility\", \"construction\": \"standard deviation of advertising expenses over the past 5 years, scaled by total sales\", \"rationale\": \"Firms with more volatile advertising expenses may face higher marketing risk and therefore require a higher expected return to compensate investors for the increased uncertainty. This volatility can be a proxy for the firm's ability to manage its brand and respond to changing market conditions.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Property, Plant, and Equipment Obsolescence\", \"construction\": \"average age of property, plant, and equipment, weighted by net book value\", \"rationale\": \"Firms with older property, plant, and equipment may face higher technological risk and therefore require a higher expected return to compensate investors for the increased uncertainty. This obsolescence can be a proxy for the firm's ability to invest in new technologies and respond to changing market conditions.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Audit Qualified Opinion Frequency\", \"construction\": \"number of years with an audit qualified opinion over the past 5 years\", \"rationale\": \"Firms with more frequent audit qualified opinions may face higher governance risk and therefore require a higher expected return to compensate investors for the increased uncertainty. This frequency can be a proxy for the firm's ability to manage its financial reporting and respond to changing regulatory conditions.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Off-Balance-Sheet Liability Growth\", \"construction\": \"change in off-balance-sheet liabilities over the past year, scaled by total assets\", \"rationale\": \"Firms with rapidly growing off-balance-sheet liabilities may face higher financial risk and therefore require a higher expected return to compensate investors for the increased uncertainty. This growth can be a proxy for the firm's ability to manage its financial leverage and respond to changing market conditions.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Top Executive Team Tenure Dispersion\", \"construction\": \"standard deviation of top executive team members' tenure\", \"rationale\": \"Firms with more variable top executive team tenure may face higher management risk and therefore require a higher expected return to compensate investors for the increased uncertainty. This dispersion can be a proxy for the firm's ability to manage its leadership and respond to changing market conditions.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Pension Plan Underfunding\", \"construction\": \"pension plan underfunding, scaled by total assets\", \"rationale\": \"Firms with more underfunded pension plans may face higher financial risk and therefore require a higher expected return to compensate investors for the increased uncertainty. This underfunding can be a proxy for the firm's ability to manage its long-term obligations and respond to changing market conditions.\", \"higher_returns_for\": \"high values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 987,
+   "total_tokens": 1281,
+   "cached_tokens": 256
+  }
+ }
+}

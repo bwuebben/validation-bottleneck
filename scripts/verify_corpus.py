@@ -2,8 +2,9 @@
 """Standalone integrity + reproduction check for the Validation Bottleneck archive.
 
 Stdlib only. Verifies:
-  1. Corpus counts: 165 Experiment-1 generation files / 1,650 proposals;
-     126 Experiment-2 generation files / 1,008 hypotheses.
+  1. Corpus counts: 220 Experiment-1 generation files / 2,200 proposals;
+     168 Experiment-2 generation files / 1,336 well-formed hypotheses (one archived
+     response is malformed JSON and contributes zero, per the registered specification).
   2. Manifest integrity: every manifest line's output hash matches the SHA-256 of the
      archived response content.
   3. Reproduction: recomputes Experiment 1's headline table (results_a.csv) from the raw
@@ -41,7 +42,7 @@ def content_of(env):
 
 
 print("== 1. Corpus counts ==")
-e1_files = [f for f in sorted((ROOT / "exp1" / "corpus").glob("gpt*/y*_seed*.json"))
+e1_files = [f for f in sorted((ROOT / "exp1" / "corpus").glob("*/y*_seed*.json"))
             if not f.name.startswith("smoke_")]
 props = 0
 for f in e1_files:
@@ -51,10 +52,10 @@ for f in e1_files:
     except json.JSONDecodeError:
         j = json.loads(strip_fences(content_of(env)))
     props += len(j.get("predictors", []))
-check("exp1 generation files == 165", len(e1_files) == 165, str(len(e1_files)))
-check("exp1 proposals == 1650", props == 1650, str(props))
+check("exp1 generation files == 220", len(e1_files) == 220, str(len(e1_files)))
+check("exp1 proposals == 2200", props == 2200, str(props))
 
-e2_files = [f for f in sorted((ROOT / "exp2" / "corpus").glob("gpt*/v*_seed*.json"))
+e2_files = [f for f in sorted((ROOT / "exp2" / "corpus").glob("*/v*_seed*.json"))
             if not f.name.startswith("smoke_")]
 hyps = 0
 for f in e2_files:
@@ -62,10 +63,13 @@ for f in e2_files:
     try:
         j = json.loads(content_of(env))
     except json.JSONDecodeError:
-        j = json.loads(strip_fences(content_of(env)))
+        try:
+            j = json.loads(strip_fences(content_of(env)))
+        except json.JSONDecodeError:
+            j = {}  # one archived malformed response; excluded per specification
     hyps += len(j.get("hypotheses", []))
-check("exp2 generation files == 126", len(e2_files) == 126, str(len(e2_files)))
-check("exp2 hypotheses == 1008", hyps == 1008, str(hyps))
+check("exp2 generation files == 168", len(e2_files) == 168, str(len(e2_files)))
+check("exp2 hypotheses == 1336", hyps == 1336, str(hyps))
 
 print("== 2. Manifest hash integrity ==")
 for exp in ("exp1", "exp2"):
@@ -132,7 +136,7 @@ with open(ROOT / "exp1" / "derived" / "results_a.csv") as fh:
             ok = ok and abs(d["post"] / matched - float(r["share_post_of_matched"])) < 1e-9
         if not ok:
             bad += 1
-check("results_a.csv reproduced from raw corpus (15 model×vintage cells)", bad == 0,
+check("results_a.csv reproduced from raw corpus (20 model×vintage cells)", bad == 0,
       f"{bad} cell mismatches")
 
 print()

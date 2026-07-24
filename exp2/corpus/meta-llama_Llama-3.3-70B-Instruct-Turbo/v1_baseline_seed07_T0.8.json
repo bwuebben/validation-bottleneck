@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T12:53:57.654958+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 7,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQHtfb-zfFMX-a20311d99c423f3b",
+  "object": "chat.completion",
+  "created": 1784897627,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 7,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Composite 1\", \n\"mechanism\": \"Firms with high book-to-market ratios and low accruals tend to outperform, but this effect is amplified when combined with a measure of earnings consistency, as it indicates a more stable financial foundation.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"BM\"}, {\"weight\": -0.5, \"primitive\": \"Accruals\"}, {\"weight\": 0.5, \"primitive\": \"EarningsConsistency\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite 2\", \n\"mechanism\": \"The combination of high intangible assets and low operating leverage leads to outperformance, as it suggests a firm with a strong competitive position and low financial risk.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanBM\"}, {\"weight\": -0.5, \"primitive\": \"OPLeverage\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": 18},\n{\"name\": \"Composite 3\", \n\"mechanism\": \"Firms with high R&D expenditures and low net debt financing tend to outperform, as they are investing in their future growth while maintaining a healthy financial position.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": -0.5, \"primitive\": \"NetDebtFinance\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"RD\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": 30},\n{\"name\": \"Composite 4\", \n\"mechanism\": \"The combination of high earnings consistency and low idiosyncratic volatility leads to outperformance, as it indicates a firm with a stable financial foundation and low risk.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"EarningsConsistency\"}, {\"weight\": -0.5, \"primitive\": \"IdioVol3F\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \n\"expected_annualized_sharpe\": 0.6, \n\"expected_decay_half_life_months\": 12},\n{\"name\": \"Composite 5\", \n\"mechanism\": \"Firms with high sales growth and low operating accruals tend to outperform, as they are experiencing strong revenue growth while maintaining a healthy financial position.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"GrSaleToGrInv\"}, {\"weight\": -0.5, \"primitive\": \"PctTotAcc\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"GrSaleToGrInv\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.85, \n\"expected_decay_half_life_months\": 20},\n{\"name\": \"Composite 6\", \n\"mechanism\": \"The combination of high intangible assets and high R&D expenditures leads to outperformance, as it suggests a firm with a strong competitive position and a focus on innovation.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanBM\"}, {\"weight\": 1.0, \"primitive\": \"RD\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \n\"expected_annualized_sharpe\": 0.75, \n\"expected_decay_half_life_months\": 15},\n{\"name\": \"Composite 7\", \n\"mechanism\": \"Firms with high earnings consistency and low net operating assets tend to outperform, as they are experiencing stable financial performance while maintaining a healthy balance sheet.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"EarningsConsistency\"}, {\"weight\": -0.5, \"primitive\": \"NOA\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"EarningsConsistency\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 25},\n{\"name\": \"Composite 8\", \n\"mechanism\": \"The combination of high sales growth and low idiosyncratic volatility leads to outperformance, as it indicates a firm with strong revenue growth and low risk.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"GrSaleToGrInv\"}, {\"weight\": -0.5, \"primitive\": \"IdioVolAHT\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": 18}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2887,
+   "completion_tokens": 1702,
+   "total_tokens": 4589,
+   "cached_tokens": 2816
+  }
+ }
+}

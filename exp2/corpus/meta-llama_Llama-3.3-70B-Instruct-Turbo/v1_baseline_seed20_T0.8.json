@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T12:57:04.251319+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 20,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQJoBM-6Ng1vN-a2031629dba11efc",
+  "object": "chat.completion",
+  "created": 1784897803,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 20,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Accruals and Intangibles\", \n\"mechanism\": \"The combination of accruals and intangibles captures both financial statement and real economic activity, leading to a more comprehensive picture of a firm's profitability.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Accruals\"}, {\"weight\": 1.0, \"primitive\": \"IntanBM\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 24},\n{\"name\": \"Momentum and Reversal\", \n\"mechanism\": \"The combination of momentum and reversal strategies captures both continuation and mean-reversion effects in stock prices, leading to a more robust portfolio.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Mom12m\"}, {\"weight\": -1.0, \"primitive\": \"MomOffSeason\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": 36},\n{\"name\": \"Value and Profitability\", \n\"mechanism\": \"The combination of value and profitability factors captures both the cheapness and quality of a firm, leading to a more attractive investment opportunity.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"BM\"}, {\"weight\": 1.0, \"primitive\": \"OperProf\"}], \"regime\": null, \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": 18},\n{\"name\": \"Growth and Investment\", \n\"mechanism\": \"The combination of growth and investment factors captures both the potential and actualized growth of a firm, leading to a more comprehensive picture of its prospects.\", \n\"expression\": {\"terms\": [{\"weight\": !0, \"primitive\": \"GrSaleToGrInv\"}, {\"weight\": 1.0, \"primitive\": \"Investment\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.85, \n\"expected_decay_half_life_months\": 30},\n{\"name\": \"Risk and Return\", \n\"mechanism\": \"The combination of risk and return factors captures both the potential downsides and upsides of an investment, leading to a more balanced portfolio.\", \n\"expression\": {\"terms\": [{\"weight\": -1.0, \"primitive\": \"Beta\"}, {\"weight\": 1.0, \"primitive\": \"EP\"}], \"regime\": null, \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.75, \n\"expected_decay_half_life_months\": 24},\n{\"name\": \"Quality and Yield\", \n\"mechanism\": \"The combination of quality and yield factors captures both the financial health and income generation potential of a firm, leading to a more attractive investment opportunity.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"PS\"}, {\"weight\": 1.0, \"primitive\": \"NetPayoutYield\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"BetaFP\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 30},\n{\"name\": \"Momentum and Volatility\", \n\"mechanism\": \"The combination of momentum and volatility factors captures both the trend and risk characteristics of a stock, leading to a more robust portfolio.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Mom12m\"}, {\"weight\": -1.0, \"primitive\": \"RealizedVol\"}], \"regime\": null, \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": 36},\n{\"name\": \"Value and Momentum\", \n\"mechanism\": \"The combination of value and momentum factors captures both the cheapness and trend characteristics of a stock, leading to a more attractive investment opportunity.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"BM\"}, {\"weight\": 1.0, \"primitive\": \"Mom6m\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"EP\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.85, \n\"expected_decay_half_life_months\": 30}\n]}}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2887,
+   "completion_tokens": 1592,
+   "total_tokens": 4479,
+   "cached_tokens": 2816
+  }
+ }
+}

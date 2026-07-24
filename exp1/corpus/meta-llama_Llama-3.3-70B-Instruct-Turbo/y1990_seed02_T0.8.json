@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:05:16.559241+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 2,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQMP43-6Ng1vN-a203227dcbf0aef5",
+  "object": "chat.completion",
+  "created": 1784898308,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 2,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"Capital Expenditure Stability\", \"construction\": \"Calculate the standard deviation of capital expenditures over the past 5 years, scaled by total assets, using Compustat data.\", \"rationale\": \"Firms with stable capital expenditures are better positioned to weather economic downturns, as they have a more predictable cost structure.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Industry Relative R&D Intensity\", \"construction\": \"Calculate R&D expenditures as a percentage of sales for each firm, then rank firms within their industry (defined by 2-digit SIC code) based on this metric, using Compustat and CRSP data.\", \"rationale\": \"Firms that invest more heavily in R&D relative to their industry peers are more likely to experience future growth and innovation.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Pension Plan Funding Status\", \"construction\": \"Calculate the ratio of pension plan assets to liabilities, using Compustat data.\", \"rationale\": \"Firms with well-funded pension plans are less likely to face future cash outflows and associated stock price declines.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Insider Trading Sentiment\", \"construction\": \"Calculate the net number of shares purchased by insiders (executives and directors) over the past year, scaled by total shares outstanding, using insider trading data from the SEC.\", \"rationale\": \"Insiders with superior knowledge of their firms' prospects are likely to make informed trading decisions, which can predict future stock price movements.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Environmental Liability Exposure\", \"construction\": \"Calculate a firm's environmental liability exposure based on the number and severity of environmental incidents (e.g., EPA violations) over the past 5 years, using data from the EPA and other sources.\", \"rationale\": \"Firms with high environmental liability exposure face potential future costs and reputational damage, which can negatively impact their stock price.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Corporate Governance Structure\", \"construction\": \"Calculate a governance score based on factors such as board independence, executive compensation, and shareholder rights, using proxy statement data.\", \"rationale\": \"Firms with strong corporate governance structures are more likely to act in shareholders' interests and make value-enhancing decisions.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Supply Chain Concentration\", \"construction\": \"Calculate the Herfindahl-Hirschman index of supplier concentration for each firm, using data on supplier relationships from industry reports and other sources.\", \"rationale\": \"Firms with concentrated supply chains are more vulnerable to supplier disruptions and price increases, which can negatively impact their stock price.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Product Market Competition\", \"construction\": \"Calculate a competition score based on factors such as industry concentration, barriers to entry, and product differentiation, using data from industry reports and other sources.\", \"rationale\": \"Firms operating in highly competitive product markets are more likely to experience downward pressure on prices and profits.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Employee Relations\", \"construction\": \"Calculate a score based on factors such as unionization rates, employee turnover, and worker safety records, using data from the BLS and other sources.\", \"rationale\": \"Firms with positive employee relations are more likely to experience improved productivity and reduced labor costs.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Community Involvement\", \"construction\": \"Calculate a score based on factors such as charitable donations, community development programs, and environmental sustainability initiatives, using data from firm reports and other sources.\", \"rationale\": \"Firms that demonstrate a commitment to community involvement and social responsibility may experience enhanced reputation and customer loyalty.\", \"higher_returns_for\": \"high values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 830,
+   "total_tokens": 1124,
+   "cached_tokens": 256
+  }
+ }
+}

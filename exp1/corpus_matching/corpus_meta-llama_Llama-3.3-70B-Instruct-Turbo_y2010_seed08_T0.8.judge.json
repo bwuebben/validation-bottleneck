@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:22:35.766452+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y2010_seed08_T0.8.json",
+  "prompt_sha256": "c764a8feaceffc0cb1a40b473fe010bfe60dfa6874ef1a5b82f251c8c57cb572"
+ },
+ "response": {
+  "id": "chatcmpl-E5A9A91VOgITXe9PfgT1DhStkJCW2",
+  "object": "chat.completion",
+  "created": 1784899352,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"RD\", \"strength\": \"close\", \"reason\": \"Both use R&D scaled by sales or market; averaging differs.\"},\n  {\"index\": 1, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Both use Herfindahl index, but on customers vs. industry.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor combines inventory and payables this way.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses foreign sales volatility.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee stock option overhang.\"},\n  {\"index\": 5, \"match\": \"Governance\", \"strength\": \"close\", \"reason\": \"Both use composite governance scores from similar data.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses environmental sustainability metrics.\"},\n  {\"index\": 7, \"match\": \"Herf\", \"strength\": \"exact\", \"reason\": \"Herfindahl index of industry concentration matches exactly.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses CEO pay scaled by market cap.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses innovation network centrality.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2815,
+   "completion_tokens": 345,
+   "total_tokens": 3160,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

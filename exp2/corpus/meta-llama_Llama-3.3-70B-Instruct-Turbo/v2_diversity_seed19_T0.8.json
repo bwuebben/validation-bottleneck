@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:01:55.748593+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 19,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQLKto-zfFMX-a2031d72ffede14b",
+  "object": "chat.completion",
+  "created": 1784898102,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 19,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Composite 1\", \"mechanism\": \"Firms with high R&D investment and low accruals tend to outperform due to their innovative products and efficient resource allocation.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": -1.0, \"primitive\": \"Accruals\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite 2\", \"mechanism\": \"Companies with high intangible assets and low book leverage tend to outperform due to their ability to generate profits through intellectual property and efficient capital structure.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanBM\"}, {\"weight\": -0.5, \"primitive\": \"BookLeverage\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 18},\n{\"name\": \"Composite 3\", \"mechanism\": \"Firms with high operating profitability and low idiosyncratic volatility tend to outperform due to their stable cash flows and low risk.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"OperProf\"}, {\"weight\": -1.0, \"primitive\": \"IdioVol3F\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"SP\", \"bound\": \"above\", \"threshold\": 0.3}, {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 30},\n{\"name\": \"Composite 4\", \"mechanism\": \"Companies with high employee growth and low short interest tend to outperform due to their ability to attract and retain talent and avoid information asymmetry.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"hire\"}, {\"weight\": -0.5, \"primitive\": \"ShortInterest\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}, {\"type\": \"subperiod_consistency\"}, {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 12},\n{\"name\": \"Composite 5\", \"mechanism\": \"Firms with high R&D ability and low net debt financing tend to outperform due to their innovative products and efficient capital allocation.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RDAbility\"}, {\"weight\": -1.0, \"primitive\": \"NetDebtFinance\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"below\", \"threshold\": 0.3}, {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite 6\", \"mechanism\": \"Companies with high intangible return and low illiquidity tend to outperform due to their ability to generate profits through intellectual property and efficient market access.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanEP\"}, {\"weight\": -0.5, \"primitive\": \"Illiquidity\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 18},\n{\"name\": \"Composite 7\", \"mechanism\": \"Firms with high operating cash flows and low idiosyncratic skewness tend to outperform due to their stable cash flows and low risk.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"cfp\"}, {\"weight\": -1.0, \"primitive\": \"ReturnSkew3F\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"SP\", \"bound\": \"above\", \"threshold\": 0.3}, {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 30},\n{\"name\": \"Composite 8\", \"mechanism\": \"Companies with high employee momentum and low short interest tend to outperform due to their ability to attract and retain talent and avoid information asymmetry.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"iomom_cust\"}, {\"weight\": -0.5, \"primitive\": \"ShortInterest\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}, {\"type\": \"subperiod_consistency\"}, {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 12}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2988,
+   "completion_tokens": 1548,
+   "total_tokens": 4536,
+   "cached_tokens": 2816
+  }
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T12:55:34.726457+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 14,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQJNQw-6Ng1vN-a20314212b954b16",
+  "object": "chat.completion",
+  "created": 1784897720,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 14,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Hypothesis 1\", \"mechanism\": \"Combining value and momentum factors can lead to improved returns due to the diversification of risk and the exploitation of different market inefficiencies.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"BM\"}, {\"weight\": 0.5, \"primitive\": \"Mom12m\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Hypothesis 2\", \"mechanism\": \"The combination of quality and low volatility factors can provide a more stable source of returns, as high-quality companies with low volatility are less likely to experience significant downturns.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"RoE\"}, {\"weight\": 0.5, \"primitive\": \"RealizedVol\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"lower\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 36},\n{\"name\": \"Hypothesis 3\", \"mechanism\": \"The intersection of momentum and accruals factors can help identify companies with strong earnings momentum and low accruals, which are less likely to experience earnings disappointments.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"Mom12m\"}, {\"weight\": 0.5, \"primitive\": \"AbnormalAccruals\"}], \"regime\": null, \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"correlation\", \"primitive\": \"Accruals\", \"bound\": \"above\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 18},\n{\"name\": \"Hypothesis 4\", \"mechanism\": \"Combining dividend yield and book-to-market factors can provide a more comprehensive picture of a company's value, as high dividend yields and low book-to-market ratios can indicate undervaluation.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"DivYieldST\"}, {\"weight\": 0.5, \"primitive\": \"BM\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 48},\n{\"name\": \"Hypothesis 5\", \"mechanism\": \"The combination of size and investment factors can help identify small companies with low investment rates, which are more likely to experience high growth rates.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"Size\"}, {\"weight\": 0.5, \"primitive\": \"Investment\"}], \"regime\": null, \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Hypothesis 6\", \"mechanism\": \"The intersection of profitability and intangible assets factors can help identify companies with high profitability and low intangible assets, which are less likely to experience significant declines in profitability.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"RoE\"}, {\"weight\": 0.5, \"primitive\": \"IntanBM\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"lower\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 36},\n{\"name\": \"Hypothesis 7\", \"mechanism\": \"Combining earnings surprise and short interest factors can provide a more comprehensive picture of a company's earnings momentum, as high earnings surprises and low short interest can indicate strong earnings growth.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"}, {\"weight\": 0.5, \"primitive\": \"ShortInterest\"}], \"regime\": null, \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 18},\n{\"name\": \"Hypothesis 8\", \"mechanism\": \"The combination of low volatility and high dividend yield factors can provide a more stable source of returns, as companies with low volatility and high dividend yields are less likely to experience significant downturns.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"RealizedVol\"}, {\"weight\": 0.5, \"primitive\": \"DivYieldST\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 48}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2887,
+   "completion_tokens": 1595,
+   "total_tokens": 4482,
+   "cached_tokens": 2816
+  }
+ }
+}

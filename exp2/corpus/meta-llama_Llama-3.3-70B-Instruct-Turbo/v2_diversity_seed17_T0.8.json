@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:01:17.451959+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 17,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQL9GH-fdNmn-a2031c93599d0d85",
+  "object": "chat.completion",
+  "created": 1784898066,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 17,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Composite 1\", \"mechanism\": \"Firms with high intangible assets and low leverage are more likely to experience stock price appreciation due to their ability to invest in growth opportunities.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanBM\"}, {\"weight\": -1.0, \"primitive\": \"Leverage\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite 2\", \"mechanism\": \"Firms with high operating profitability and low idiosyncratic volatility are more likely to experience stock price appreciation due to their ability to generate consistent cash flows.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"OperProf\"}, {\"weight\": -1.0, \"primitive\": \"IdioVolAHT\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 36},\n{\"name\": \"Composite 3\", \"mechanism\": \"Firms with high R&D investment and low short interest are more likely to experience stock price appreciation due to their ability to innovate and grow.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": -1.0, \"primitive\": \"ShortInterest\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"above\", \"threshold\": 0.3}, {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 18},\n{\"name\": \"Composite 4\", \"mechanism\": \"Firms with high dividend yield and low net debt financing are more likely to experience stock price appreciation due to their ability to generate income and reduce financial risk.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"DivYieldST\"}, {\"weight\": -1.0, \"primitive\": \"NetDebtFinance\"}], \"regime\": \"TERM_SPREAD_NEGATIVE\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}, {\"type\": \"correlation\", \"primitive\": \"STreversal\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 48},\n{\"name\": \"Composite 5\", \"mechanism\": \"Firms with high intangible assets and high operating leverage are more likely to experience stock price appreciation due to their ability to scale their operations and invest in growth opportunities.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanBM\"}, {\"weight\": 1.0, \"primitive\": \"OPLeverage\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12mOffSeason\", \"bound\": \"above\", \"threshold\": 0.3}, {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}], \"expected_annualized_sharpe\": 0.85, \"expected_decay_half_life_months\": 20},\n{\"name\": \"Composite 6\", \"mechanism\": \"Firms with low idiosyncratic volatility and high earnings consistency are more likely to experience stock price appreciation due to their ability to generate consistent cash flows and reduce financial risk.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IdioVolAHT\"}, {\"weight\": -1.0, \"primitive\": \"EarningsConsistency\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"correlation\", \"primitive\": \"ResidualMomentum\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.65, \"expected_decay_half_life_months\": 40},\n{\"name\": \"Composite 7\", \"mechanism\": \"Firms with high R&D investment and high intangible assets are more likely to experience stock price appreciation due to their ability to innovate and invest in growth opportunities.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": 1.0, \"primitive\": \"IntanBM\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6mJunk\", \"bound\": \"above\", \"threshold\": 0.3}, {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}], \"expected_annualized_sharpe\": 0.95, \"expected_decay_half_life_months\": 15},\n{\"name\": \"Composite 8\", \"mechanism\": \"Firms with low net debt financing and high dividend yield are more likely to experience stock price appreciation due to their ability to generate income and reduce financial risk.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"NetDebtFinance\"}, {\"weight\": -1.0, \"primitive\": \"DivYieldST\"}], \"regime\": \"TERM_SPREAD_NEGATIVE\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}, {\"type\": \"correlation\", \"primitive\": \"STreversal\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.55, \"expected_decay_half_life_months\": 50}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2988,
+   "completion_tokens": 1648,
+   "total_tokens": 4636,
+   "cached_tokens": 2816
+  }
+ }
+}

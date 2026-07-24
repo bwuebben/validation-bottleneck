@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:06:42.667850+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQMpQX-6Ng1vN-a203248d5dc089c5",
+  "object": "chat.completion",
+  "created": 1784898393,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 42,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"R&D Expense Growth\", \"construction\": \"Year-over-year percentage change in research and development expenses, calculated from the current and previous year's 10-K filings\", \"rationale\": \"Firms with rapidly increasing R&D expenses may be investing in innovative projects that will drive future growth, but also face higher risks and uncertainties\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Pension Plan Funding Status\", \"construction\": \"Ratio of pension plan assets to liabilities, calculated from the current year's 10-K filing\", \"rationale\": \"Firms with underfunded pension plans may face higher future liabilities and lower returns on equity\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Employee Growth Rate\", \"construction\": \"Year-over-year percentage change in total employees, calculated from the current and previous year's 10-K filings\", \"rationale\": \"Firms with rapidly growing workforces may be expanding into new markets or increasing production, but also face higher labor costs and management challenges\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Average Age of PP&E\", \"construction\": \"Weighted average age of property, plant, and equipment, calculated from the current year's 10-K filing\", \"rationale\": \"Firms with older PP&E may be at a competitive disadvantage due to outdated technology and higher maintenance costs\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Foreign Sales Concentration\", \"construction\": \"Percentage of total sales derived from foreign markets, calculated from the current year's 10-K filing\", \"rationale\": \"Firms with high foreign sales concentration may be more exposed to exchange rate risks and international market fluctuations\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Executive Compensation Sensitivity\", \"construction\": \"Sensitivity of CEO compensation to stock price performance, calculated from the current and previous year's proxy statements\", \"rationale\": \"Firms with high executive compensation sensitivity may have stronger incentives for managers to maximize shareholder value\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Institutional Shareholder Concentration\", \"construction\": \"Percentage of shares held by institutional investors, calculated from the current quarter's 13F filings\", \"rationale\": \"Firms with high institutional shareholder concentration may be subject to greater monitoring and discipline, leading to better governance and higher returns\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Audit Firm Size\", \"construction\": \"Size of the audit firm, measured by total revenues or number of clients, calculated from the current year's audit report\", \"rationale\": \"Firms audited by larger audit firms may benefit from higher quality audits and greater credibility with investors\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Director Board Interlocks\", \"construction\": \"Number of shared directors between the firm's board and other companies' boards, calculated from the current year's proxy statement\", \"rationale\": \"Firms with more director board interlocks may have greater access to information, resources, and networks, leading to better decision-making and higher returns\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Industry Diversification\", \"construction\": \"Herfindahl-Hirschman index of industry diversification, calculated from the current year's 10-K filing and Compustat industry classifications\", \"rationale\": \"Firms with more diversified industry portfolios may be less exposed to industry-specific risks and more able to capitalize on growth opportunities\", \"higher_returns_for\": \"low values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 765,
+   "total_tokens": 1059,
+   "cached_tokens": 0
+  }
+ }
+}

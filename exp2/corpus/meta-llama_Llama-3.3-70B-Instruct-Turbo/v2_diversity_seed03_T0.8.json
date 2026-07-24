@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T12:58:08.522562+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 3,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQKAHe-6Ng1vN-a20317e48dce3453",
+  "object": "chat.completion",
+  "created": 1784897874,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 3,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Earnings Quality and Momentum\", \n\"mechanism\": \"Firms with high earnings quality and strong momentum are likely to outperform due to their ability to sustain growth and maintain high profitability.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"NOA\"}, {\"weight\": 1.0, \"primitive\": \"Mom12m\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"AbnormalAccruals\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 24}, \n\n{\"name\": \"Financial Distress and Leverage\", \n\"mechanism\": \"Firms with low financial distress and high leverage are likely to outperform due to their ability to take on debt and invest in growth opportunities.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"OScore\"}, {\"weight\": -1.0, \"primitive\": \"Leverage\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": 36}, \n\n{\"name\": \"Innovation and Valuation\", \n\"mechanism\": \"Firms with high innovation and low valuation are likely to outperform due to their ability to create new products and services and maintain a competitive advantage.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": -1.0, \"primitive\": \"BM\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"IdioVol3F\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": 18}, \n\n{\"name\": \"Growth and Profitability\", \n\"mechanism\": \"Firms with high growth and high profitability are likely to outperform due to their ability to maintain high margins and invest in growth opportunities.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"GrSaleToGrInv\"}, {\"weight\": 1.0, \"primitive\": \"OperProf\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \n\"expected_annualized_sharpe\": 0.6, \n\"expected_decay_half_life_months\": 48}, \n\n{\"name\": \"Market Sentiment and Liquidity\", \n\"mechanism\": \"Firms with high market sentiment and high liquidity are likely to outperform due to their ability to attract investors and maintain a high trading volume.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"UpRecomm\"}, {\"weight\": 1.0, \"primitive\": \"VolMkt\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"BidAskSpread\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 24}, \n\n{\"name\": \"Intangibles and Investment\", \n\"mechanism\": \"Firms with high intangibles and high investment are likely to outperform due to their ability to create new products and services and maintain a competitive advantage.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanBM\"}, {\"weight\": 1.0, \"primitive\": \"Investment\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": 36}, \n\n{\"name\": \"Environmental and Social Governance\", \n\"mechanism\": \"Firms with high environmental and social governance are likely to outperform due to their ability to maintain a positive reputation and attract investors.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Governance\"}, {\"weight\": 1.0, \"primitive\": \"realestate\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"IdioVolAHT\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": 18}, \n\n{\"name\": \"Financial Health and Efficiency\", \n\"mechanism\": \"Firms with high financial health and efficiency are likely to outperform due to their ability to maintain a high return on assets and minimize costs.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"roaq\"}, {\"weight\": 1.0, \"primitive\": \"CashProd\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \n\"expected_annualized_sharpe\": 0.6, \n\"expected_decay_half_life_months\": 48}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2988,
+   "completion_tokens": 1654,
+   "total_tokens": 4642,
+   "cached_tokens": 2816
+  }
+ }
+}

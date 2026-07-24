@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:00:19.492937+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 13,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQKrhi-zfFMX-a2031b367d04428b",
+  "object": "chat.completion",
+  "created": 1784898010,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 13,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Composite1\", \n\"mechanism\": \"The combination of high investment and low asset growth should outperform due to underreaction to changes in a firm's investment opportunities.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Investment\"}, {\"weight\": -1.0, \"primitive\": \"AssetGrowth\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 12}, \n\n{\"name\": \"Composite2\", \n\"mechanism\": \"Firms with high intangible assets relative to their book value should earn higher returns due to their growth potential and underestimation by traditional book-to-market metrics.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanBM\"}, {\"weight\": -0.5, \"primitive\": \"BM\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"below\", \"threshold\": 0.3}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": null}, \n\n{\"name\": \"Composite3\", \n\"mechanism\": \"The combination of high operating leverage and low idiosyncratic volatility should perform well due to its high potential for earnings growth and low risk.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"OPLeverage\"}, {\"weight\": -1.0, \"primitive\": \"IdioVol3F\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"OPLeverage\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": 18}, \n\n{\"name\": \"Composite4\", \n\"mechanism\": \"Firms with high R&D spending and low price-to-sales ratio should outperform due to their potential for innovation and underestimation by the market.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": -1.0, \"primitive\": \"SP\"}], \"regime\": null, \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.6, \n\"expected_decay_half_life_months\": 24}, \n\n{\"name\": \"Composite5\", \n\"mechanism\": \"The combination of high earnings consistency and low book leverage should perform well due to its low risk and high potential for stable earnings growth.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"EarningsConsistency\"}, {\"weight\": -1.0, \"primitive\": \"BookLeverage\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"EarningsConsistency\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.85, \n\"expected_decay_half_life_months\": 15}, \n\n{\"name\": \"Composite6\", \n\"mechanism\": \"Firms with high customer momentum and low short interest should outperform due to their high potential for growth and underestimation by short sellers.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"iomom_cust\"}, {\"weight\": -1.0, \"primitive\": \"ShortInterest\"}], \"regime\": \"TERM_SPREAD_NEGATIVE\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.75, \n\"expected_decay_half_life_months\": 20}, \n\n{\"name\": \"Composite7\", \n\"mechanism\": \"The combination of high intangible assets and low realized volatility should perform well due to its high potential for growth and low risk.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanEP\"}, {\"weight\": -1.0, \"primitive\": \"RealizedVol\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"IntanEP\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 12}, \n\n{\"name\": \"Composite8\", \n\"mechanism\": \"Firms with high operating profitability and low idiosyncratic skewness should outperform due to their high potential for earnings growth and low risk.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"OperProf\"}, {\"weight\": -1.0, \"primitive\": \"ReturnSkew3F\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": null}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2988,
+   "completion_tokens": 1595,
+   "total_tokens": 4583,
+   "cached_tokens": 2816
+  }
+ }
+}

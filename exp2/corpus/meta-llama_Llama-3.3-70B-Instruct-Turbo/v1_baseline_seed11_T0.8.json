@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T12:54:42.658039+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 11,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQJ7vT-6Ng1vN-a20312f178360f73",
+  "object": "chat.completion",
+  "created": 1784897671,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 11,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Composite1\", \n\"mechanism\": \"Combining value and momentum factors captures both undervalued and trending stocks\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"BM\"}, {\"weight\": 1.0, \"primitive\": \"Mom12m\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 24.0}, \n{\"name\": \"Composite2\", \n\"mechanism\": \"Firms with high R&D spending and low accruals are more likely to have sustainable growth\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": -1.0, \"primitive\": \"Accruals\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": null}, \n{\"name\": \"Composite3\", \n\"mechanism\": \"Combining profitability and investment factors captures firms with high returns on investment and low investment growth\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"GP\"}, {\"weight\": -1.0, \"primitive\": \"Investment\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": 18.0}, \n{\"name\": \"Composite4\", \n\"mechanism\": \"Firms with high intangible assets and low leverage are more likely to have sustainable competitive advantages\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanBM\"}, {\"weight\": -1.0, \"primitive\": \"Leverage\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 30.0}, \n{\"name\": \"Composite5\", \n\"mechanism\": \"Combining momentum and reversal factors captures both trending and mean-reverting stocks\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Mom12m\"}, {\"weight\": -1.0, \"primitive\": \"STreversal\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": 24.0}, \n{\"name\": \"Composite6\", \n\"mechanism\": \"Firms with high earnings quality and low idiosyncratic volatility are more likely to have sustainable earnings growth\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Accruals\"}, {\"weight\": -1.0, \"primitive\": \"IdioVol3F\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": null}, \n{\"name\": \"Composite7\", \n\"mechanism\": \"Combining value and profitability factors captures both undervalued and highly profitable firms\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"BM\"}, {\"weight\": 1.0, \"primitive\": \"GP\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": 18.0}, \n{\"name\": \"Composite8\", \n\"mechanism\": \"Firms with high governance quality and low short interest are more likely to have sustainable stock price growth\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Governance\"}, {\"weight\": -1.0, \"primitive\": \"ShortInterest\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 30.0}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2887,
+   "completion_tokens": 1513,
+   "total_tokens": 4400,
+   "cached_tokens": 2816
+  }
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:17:42.139392+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y1990_seed01_T0.8.json",
+  "prompt_sha256": "ecf93c8ac529ddc2a13996463c7cfd1a11b7cbbfdba4994e649122aa36c24fd0"
+ },
+ "response": {
+  "id": "chatcmpl-E5A4PW9Gu4TXYV1Rl9lJlazocytUN",
+  "object": "chat.completion",
+  "created": 1784899057,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses R&D volatility or similar construction.\"},\n  {\"index\": 1, \"match\": \"FR\", \"strength\": \"exact\", \"reason\": \"FR is pension funding status, same construction as proposal.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses foreign sales concentration.\"},\n  {\"index\": 3, \"match\": \"hire\", \"strength\": \"exact\", \"reason\": \"hire is employment growth, same as employee growth rate.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses advertising expense persistence.\"},\n  {\"index\": 5, \"match\": \"tang\", \"strength\": \"exact\", \"reason\": \"tang is tangibility, same as tangible asset intensity.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses accounts receivable turnover.\"},\n  {\"index\": 7, \"match\": \"grcapx\", \"strength\": \"close\", \"reason\": \"grcapx is change in capex; similar but not identical construction.\"},\n  {\"index\": 8, \"match\": \"InvGrowth\", \"strength\": \"close\", \"reason\": \"InvGrowth is inventory growth, similar to inventory growth rate.\"},\n  {\"index\": 9, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Governance index shares theme but not construction.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2868,
+   "completion_tokens": 352,
+   "total_tokens": 3220,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

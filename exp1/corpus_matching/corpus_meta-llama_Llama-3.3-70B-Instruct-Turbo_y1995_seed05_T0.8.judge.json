@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:19:14.898379+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y1995_seed05_T0.8.json",
+  "prompt_sha256": "65a4779de4f1af40fee3c7f03cc7fc481641610cac539de11856622d8c4a36c4"
+ },
+ "response": {
+  "id": "chatcmpl-E5A5u4m11TYGWBuEAHvtUi5wKqZVp",
+  "object": "chat.completion",
+  "created": 1784899150,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"RDcap\", \"strength\": \"exact\", \"reason\": \"R&D to assets, multi-year average matches RDcap construction.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses SG&A/revenue as operational leverage.\"},\n  {\"index\": 2, \"match\": \"FR\", \"strength\": \"exact\", \"reason\": \"Pension funding status is defined as pension assets/liabilities.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses environmental liabilities or similar.\"},\n  {\"index\": 4, \"match\": \"Herf\", \"strength\": \"exact\", \"reason\": \"Herfindahl index of product segments matches Herf construction.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses foreign sales/total sales or similar.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses labor union coverage or similar.\"},\n  {\"index\": 7, \"match\": \"AdExp\", \"strength\": \"close\", \"reason\": \"AdExp is advertising expense; proposal scales by sales, not assets.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses supplier count or supply chain complexity.\"},\n  {\"index\": 9, \"match\": \"Governance\", \"strength\": \"exact\", \"reason\": \"Composite governance index matches Governance construction.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2805,
+   "completion_tokens": 356,
+   "total_tokens": 3161,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

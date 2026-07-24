@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:17:58.989319+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y1990_seed04_T0.8.json",
+  "prompt_sha256": "bae4b10b990f1bc6b81a3b3ac378f456f0647d27b4b7c41d82e4e962ae594442"
+ },
+ "response": {
+  "id": "chatcmpl-E5A4hD3O3qkvAhXNvzprb8T6lJHmA",
+  "object": "chat.completion",
+  "created": 1784899075,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"grcapx\", \"strength\": \"close\", \"reason\": \"Change in R&D intensity is analogous to capex growth signals.\"},\n  {\"index\": 1, \"match\": \"GrAdExp\", \"strength\": \"exact\", \"reason\": \"Year-over-year growth in advertising expenses matches GrAdExp.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses pension fund asset allocation.\"},\n  {\"index\": 3, \"match\": \"ChAssetTurnover\", \"strength\": \"close\", \"reason\": \"Change in inventory turnover is similar to asset turnover change.\"},\n  {\"index\": 4, \"match\": \"hire\", \"strength\": \"exact\", \"reason\": \"hire is employment growth rate, matching employee growth proposal.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses environmental liability provisions.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses foreign sales growth.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses suppliers' credit ratings.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses capex volatility.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses unionization rate.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2747,
+   "completion_tokens": 343,
+   "total_tokens": 3090,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

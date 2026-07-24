@@ -75,3 +75,18 @@ full-survivor list (if any) with expressions and mechanisms verbatim. Either out
 the paper's Evidence section: survivors = the protocol demonstrated on the only valid
 window; zero survivors = the validation bottleneck, measured. No other tests without a
 flagged spec amendment.
+
+---
+
+## Amendment 1 — open-weight replication arm (2026-07-24, flagged per the Stage 4 rule;
+committed BEFORE any post-wall return for this model was touched)
+
+Model added: **meta-llama/Llama-3.3-70B-Instruct-Turbo** (Together serving; weights
+permanently on HuggingFace; reported knowledge cutoff December 2023 per Meta's model card;
+independent training lineage — the panel's one-vendor limitation mitigant). Wall frozen
+from probe data under the UNCHANGED rule, using the pre-built answer-based fallback (the
+provider returns no logprobs): **WALL = 2024-03**; OSAP window 2024-04 → 2024-12
+(9 months); MIN_MONTHS = 8. All Stage 0–4 rules apply unchanged; the one malformed-JSON
+generation call (1 of 42) is excluded at Stage 0 as an invalid response. For Experiment 1,
+the same judge, matching protocol, and tests (a)/(b) extend to this model (Fisher
+combination now over 20 model×vintage cells). No other changes.

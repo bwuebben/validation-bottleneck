@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:21:41.128861+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y2005_seed07_T0.8.json",
+  "prompt_sha256": "cfd3ed0c5023acb341568948611e3ff6f6fbb5aaa854a438286ca9ef5c3103c7"
+ },
+ "response": {
+  "id": "chatcmpl-E5A8HezwAkukqcKTcYcknQZ4Tx9VD",
+  "object": "chat.completion",
+  "created": 1784899297,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Herf uses industry sales, not segment revenue, but same HHI concept.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee growth volatility.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses capex-to-depreciation ratio directly.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor counts supply chain partners from text.\"},\n  {\"index\": 4, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Governance index may include board busyness, but not directly.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses carbon intensity or emissions.\"},\n  {\"index\": 6, \"match\": \"FR\", \"strength\": \"exact\", \"reason\": \"FR is pension funding status: liabilities to assets ratio.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses product lifecycle from patents.\"},\n  {\"index\": 8, \"match\": \"RIO_Disp\", \"strength\": \"close\", \"reason\": \"RIO_Disp uses inst. ownership and forecast dispersion; similar dispersion idea.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses sentiment volatility from filings.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2826,
+   "completion_tokens": 356,
+   "total_tokens": 3182,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

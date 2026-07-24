@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:09:47.715761+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 9,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQNmNH-6Ng1vN-a20329119b17e7f5",
+  "object": "chat.completion",
+  "created": 1784898578,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 9,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"R&D Expense Churn\", \"construction\": \"Calculate the standard deviation of R&D expenses over the past 5 years, scaled by average total assets over the same period.\", \"rationale\": \"High R&D expense churn may indicate firms struggling to find profitable projects, leading to lower future returns. Firms with more stable R&D expenses may be better at allocating resources.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Trade Credit Ratio\", \"construction\": \"Compute the ratio of accounts payable to cost of goods sold, averaged over the past 3 years.\", \"rationale\": \"Firms with high trade credit ratios may be taking advantage of supplier financing, indicating strong bargaining power and potential for higher returns. This ratio can signal a firm's ability to manage working capital.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Employee Growth Volatility\", \"construction\": \"Calculate the standard deviation of year-over-year changes in the number of employees over the past 10 years, scaled by average total employees over the same period.\", \"rationale\": \"High employee growth volatility may signal poor management of human capital, leading to lower future returns. Firms with more stable employee growth may be better at managing their workforce.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Environmental Liability Exposure\", \"construction\": \"Estimate the ratio of environmental lawsuit settlements to total assets, averaged over the past 5 years.\", \"rationale\": \"Firms with high environmental liability exposure may face significant future costs, leading to lower returns. This measure can signal a firm's potential environmental risks.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Pension Fund Asset Allocation\", \"construction\": \"Compute the ratio of pension fund assets allocated to equity investments, averaged over the past 3 years.\", \"rationale\": \"Firms with pension funds allocated more heavily to equity investments may be taking on excessive risk, leading to lower future returns. This ratio can signal a firm's overall risk tolerance.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Customer Concentration Index\", \"construction\": \"Calculate the Herfindahl index of customer sales concentrations, using data from the past 5 years.\", \"rationale\": \"Firms with high customer concentration may be vulnerable to losses if major customers withdraw their business, leading to lower future returns. This index can signal a firm's customer diversification.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Executive Stock Option Burn Rate\", \"construction\": \"Compute the ratio of executive stock option exercises to total shares outstanding, averaged over the past 3 years.\", \"rationale\": \"Firms with high executive stock option burn rates may be incentivizing managers to prioritize short-term gains over long-term value creation, leading to lower future returns. This ratio can signal a firm's executive compensation structure.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Labor Union Coverage Ratio\", \"construction\": \"Estimate the ratio of unionized employees to total employees, using data from the past 5 years.\", \"rationale\": \"Firms with high labor union coverage may face higher labor costs and reduced flexibility, leading to lower future returns. This ratio can signal a firm's labor relations and potential labor cost risks.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Foreign Tax Haven Exposure\", \"construction\": \"Compute the ratio of foreign earnings to total earnings, averaged over the past 3 years, and weight by a tax haven indicator variable.\", \"rationale\": \"Firms with high foreign tax haven exposure may be engaging in aggressive tax avoidance, potentially leading to future tax liabilities and lower returns. This measure can signal a firm's tax risk and potential for future tax liabilities.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Corporate Governance Entrenchment Index\", \"construction\": \"Calculate an index of corporate governance provisions, including staggered boards, poison pills, and golden parachutes, using data from the past 5 years.\", \"rationale\": \"Firms with high corporate governance entrenchment may be insulating managers from shareholder pressure, leading to lower future returns. This index can signal a firm's level of managerial entrenchment and potential for agency problems.\", \"higher_returns_for\": \"low values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 914,
+   "total_tokens": 1208,
+   "cached_tokens": 256
+  }
+ }
+}

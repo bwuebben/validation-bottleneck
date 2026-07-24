@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:18:03.741673+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y1990_seed05_T0.8.json",
+  "prompt_sha256": "aa895414dab3412a362959ec54674a7230f091d29788a3f3a14046c4ce9ff8d3"
+ },
+ "response": {
+  "id": "chatcmpl-E5A4l8yOwyNRxiZdljP4GYJiI3aKu",
+  "object": "chat.completion",
+  "created": 1784899079,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"RDcap\", \"strength\": \"exact\", \"reason\": \"R&D to assets, multi-year average is a detail.\"},\n  {\"index\": 1, \"match\": \"AdExp\", \"strength\": \"close\", \"reason\": \"AdExp is ad expense/sales; proposal adds market share.\"},\n  {\"index\": 2, \"match\": \"ChAssetTurnover\", \"strength\": \"close\", \"reason\": \"Both measure change in efficiency; proposal uses inventory turnover.\"},\n  {\"index\": 3, \"match\": \"FR\", \"strength\": \"exact\", \"reason\": \"Pension funding status is directly in FR.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor on insider ownership concentration.\"},\n  {\"index\": 5, \"match\": \"hire\", \"strength\": \"exact\", \"reason\": \"hire is employment growth rate.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for customer concentration.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for supplier diversity.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for environmental liabilities.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for product line diversity.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2849,
+   "completion_tokens": 333,
+   "total_tokens": 3182,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

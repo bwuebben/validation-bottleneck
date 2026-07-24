@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:07:53.640992+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 8,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQNCAv-fdNmn-a20326562b6441b2",
+  "object": "chat.completion",
+  "created": 1784898466,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 8,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"Research Intensity\", \"construction\": \"R&D expense for the past 3 years divided by total assets, averaged over the same period\", \"rationale\": \"Firms investing heavily in R&D may experience future growth and returns as a result of innovation, but also face higher uncertainty and risk.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Advertising Efficiency\", \"construction\": \"Advertising expense for the past year divided by the change in sales over the same period\", \"rationale\": \"Firms with efficient advertising spend may see increased brand recognition and customer loyalty, leading to higher returns.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Employee Growth\", \"construction\": \"3-year average annual growth rate of total employees\", \"rationale\": \"Firms experiencing rapid employee growth may be indicative of expanding operations and future success, but also face challenges in maintaining corporate culture.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Real Estate Ownership\", \"construction\": \"Total property, plant, and equipment divided by total assets, averaged over the past 5 years\", \"rationale\": \"Firms with significant real estate holdings may benefit from appreciating property values and reduced rent expenses, but also face illiquidity and management challenges.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Pension Funding Ratio\", \"construction\": \"Pension assets divided by pension liabilities, averaged over the past 3 years\", \"rationale\": \"Firms with well-funded pensions may experience lower future liabilities and increased financial flexibility, leading to higher returns.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Levered Cash Flow Volatility\", \"construction\": \"Standard deviation of debt-financed cash flow (EBITDA - interest expense) over the past 5 years\", \"rationale\": \"Firms with volatile debt-financed cash flow may face higher risk of default and financial distress, leading to lower returns.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Board Independence\", \"construction\": \"Percentage of independent board members (not employed by the firm) over the past year\", \"rationale\": \"Firms with independent boards may experience improved governance and decision-making, leading to higher returns.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Environmental Liability\", \"construction\": \"Environmental provisions and liabilities divided by total assets, averaged over the past 3 years\", \"rationale\": \"Firms with significant environmental liabilities may face future cleanup costs and reputational damage, leading to lower returns.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Inventory Turnover Acceleration\", \"construction\": \"Year-over-year change in inventory turnover ratio (COGS / average inventory) over the past 3 years\", \"rationale\": \"Firms experiencing accelerating inventory turnover may be indicative of improved operational efficiency and future growth.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Capital Expenditure Reversal\", \"construction\": \"Year-over-year change in capital expenditures divided by total assets, averaged over the past 5 years\", \"rationale\": \"Firms with reversing capital expenditure trends may be indicative of changing business conditions and future returns.\", \"higher_returns_for\": \"low values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 706,
+   "total_tokens": 1000,
+   "cached_tokens": 256
+  }
+ }
+}

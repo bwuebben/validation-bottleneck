@@ -19,3 +19,10 @@
   E[max t] under null ≈ 3.39; realized max t = 2.80; median t = 0.00
   aux predictions: 89 testable, 26 hold (29%)
   FULL SURVIVORS (t>2 AND all testable aux hold): 0
+
+=== meta-llama_Llama-3.3-70B-Instruct-Turbo (wall 2024-03; window 9 months; M = 294 distinct expressions) ===
+  evaluable: 283/294   ladder: mean>0: 127  t>2: 8  BY-FDR(q=.05): 0  t>√(2lnM)=3.37: 0
+  E[max t] under null ≈ 3.37; realized max t = 2.52; median t = 0.00
+  aux predictions: 88 testable, 14 hold (16%)
+  FULL SURVIVORS (t>2 AND all testable aux hold): 1
+    t=2.52 ann=39.0% SR=2.91 n=9 aux 1/1 | +0.5·OrgCap + +1·roaq | VIX_BELOW_TRAILING_MEDIAN | vt=False

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:19:42.146649+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y1995_seed09_T0.8.json",
+  "prompt_sha256": "0ea8d5bd0486beb1adc8c6a598b44e3538c206551a38c4fa06e49b73a73cb5db"
+ },
+ "response": {
+  "id": "chatcmpl-E5A6L8EW9RqCtG3qht6v1MisPsGwL",
+  "object": "chat.completion",
+  "created": 1784899177,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"AssetGrowth\", \"strength\": \"related\", \"reason\": \"Both use asset growth, but volatility is a new angle.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No inventory turnover acceleration or similar in library.\"},\n  {\"index\": 2, \"match\": \"grcapx\", \"strength\": \"close\", \"reason\": \"Both use change in capex/assets, but time window differs.\"},\n  {\"index\": 3, \"match\": \"hire\", \"strength\": \"exact\", \"reason\": \"Both measure year-over-year employee growth.\"},\n  {\"index\": 4, \"match\": \"AdExp\", \"strength\": \"close\", \"reason\": \"Both use advertising expense, but proposal scales by sales.\"},\n  {\"index\": 5, \"match\": \"RD\", \"strength\": \"close\", \"reason\": \"Both use R&D/sales, but proposal averages over 3 years.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No customer concentration or similar in library.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No industry diversification or similar in library.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No geographic expansion or similar in library.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No supply chain complexity or similar in library.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2836,
+   "completion_tokens": 345,
+   "total_tokens": 3181,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

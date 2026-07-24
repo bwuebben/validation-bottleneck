@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:09:25.395505+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 7,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQNfCY-fdNmn-a203288f7ade0aec",
+  "object": "chat.completion",
+  "created": 1784898557,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 7,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"R&D Volatility\", \"construction\": \"standard deviation of research and development expenses over the past 5 years, scaled by total assets\", \"rationale\": \"Firms with more volatile R&D expenses may be pursuing riskier and more innovative projects, leading to potential outsize returns. This volatility may also reflect managerial overconfidence or risk-taking behavior.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Cash Flow Concentration\", \"construction\": \"Herfindahl index of the firm's top 5 customers' sales, calculated using Compustat customer data\", \"rationale\": \"Firms with more concentrated customer bases may face higher risks and potential gains from changes in customer relationships or industry dynamics. This concentration may lead to greater returns for firms that successfully manage these risks.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Industry Migration\", \"construction\": \"number of SIC code changes over the past 10 years, normalized by the number of years since the firm's IPO\", \"rationale\": \"Firms that change industries more frequently may be better at adapting to changing market conditions, leading to potential outperformance. This ability to migrate industries may also reflect a more dynamic and innovative corporate culture.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Employee Growth Acceleration\", \"construction\": \"difference between the 3-year and 1-year growth rates of total employees, using Compustat data\", \"rationale\": \"Firms with accelerating employee growth may be experiencing rapid expansion and increasing returns to scale, leading to higher future returns. This acceleration may also reflect successful investments in human capital.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Institutional Ownership Dispersion\", \"construction\": \"standard deviation of institutional ownership percentages across all institutions holding the stock, using 13F filings\", \"rationale\": \"Firms with more dispersed institutional ownership may have less informed or less active investors, potentially leading to more opportunities for mispricing and outperformance. This dispersion may also reflect a lack of attention from institutional investors.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Supply Chain Efficiency\", \"construction\": \"ratio of cost of goods sold to total sales, normalized by the industry median, using Compustat data\", \"rationale\": \"Firms with more efficient supply chains may have lower costs and higher profit margins, leading to higher future returns. This efficiency may also reflect better operational management and logistics.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Geographic Segment Growth\", \"construction\": \"average growth rate of sales across all geographic segments, using Compustat segment data\", \"rationale\": \"Firms with faster-growing geographic segments may be expanding into new and profitable markets, leading to higher future returns. This growth may also reflect successful investments in international expansion.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Audit Committee Independence\", \"construction\": \"percentage of audit committee members who are independent, using proxy statement data\", \"rationale\": \"Firms with more independent audit committees may have better corporate governance and lower risks of accounting irregularities, potentially leading to higher future returns. This independence may also reflect a more transparent and trustworthy corporate culture.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Pension Plan Underfunding\", \"construction\": \"ratio of pension plan liabilities to assets, using Compustat data\", \"rationale\": \"Firms with more underfunded pension plans may face higher liabilities and potential risks, leading to lower future returns. This underfunding may also reflect poor management of employee benefits and retirement obligations.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Inside Ownership Concentration\", \"construction\": \"Herfindahl index of insider ownership percentages, using proxy statement data\", \"rationale\": \"Firms with more concentrated insider ownership may have more aligned managerial incentives and better governance, potentially leading to higher future returns. This concentration may also reflect a more committed and invested management team.\", \"higher_returns_for\": \"high values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 868,
+   "total_tokens": 1162,
+   "cached_tokens": 256
+  }
+ }
+}

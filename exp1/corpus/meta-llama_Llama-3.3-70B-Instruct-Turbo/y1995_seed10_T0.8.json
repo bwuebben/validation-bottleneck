@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:08:14.910774+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQNJPW-zfFMX-a20326d91c9f8153",
+  "object": "chat.completion",
+  "created": 1784898487,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 10,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"R&DIntensityVolatility\", \"construction\": \"standard deviation of R&D expense divided by sales over the past 5 years\", \"rationale\": \"Firms with more volatile R&D investments may have more uncertain future cash flows, leading to higher required returns. This volatility can capture risks not accounted for by traditional measures.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"EmployeeGrowthAcceleration\", \"construction\": \"change in 3-year employee growth rate minus change in 5-year employee growth rate\", \"rationale\": \"Accelerating employee growth may indicate improving business prospects, but at a decreasing marginal return, thus requiring higher returns to compensate for the risks of diminishing returns.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"AdvertisingEfficiency\", \"construction\": \"advertising expense divided by the change in sales over the past year\", \"rationale\": \"Firms with high advertising efficiency may have stronger brands or better marketing strategies, potentially leading to more stable cash flows and lower required returns. However, overpayment for advertising may signal overconfidence or agency issues, leading to lower returns.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"TrendInTobin'sQ\", \"construction\": \"slope of the linear regression of Tobin's Q on time over the past 5 years\", \"rationale\": \"A positive trend in Tobin's Q may indicate increasing competitive advantages or growth opportunities, while a negative trend may signal declining industry prospects or firm-specific issues.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"InventoryTurnoverVolatility\", \"construction\": \"standard deviation of inventory turnover over the past 5 years\", \"rationale\": \"High volatility in inventory turnover can indicate operational inefficiencies or supply chain risks, leading to higher required returns.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"ExecutiveCompensationDispersion\", \"construction\": \"standard deviation of executive compensation divided by the mean executive compensation over the past 3 years\", \"rationale\": \"High dispersion in executive compensation may signal poor governance or overpayment for certain skills, potentially leading to lower returns.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"DaysSalesOutstandingVolatility\", \"construction\": \"standard deviation of days sales outstanding over the past 5 years\", \"rationale\": \"Firms with volatile days sales outstanding may have inconsistent cash flows or poor working capital management, requiring higher returns to compensate for these risks.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"SG&AExpenseGrowth\", \"construction\": \"3-year growth rate of selling, general, and administrative expenses\", \"rationale\": \"Rapidly growing SG&A expenses may indicate overinvestment in non-core activities or decreasing operational efficiency, potentially leading to lower returns.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"CapExIntensityTrend\", \"construction\": \"slope of the linear regression of capital expenditures divided by sales on time over the past 5 years\", \"rationale\": \"A positive trend in capital expenditures intensity may indicate increasing investment in growth opportunities,! while a negative trend may signal declining industry prospects or firm-specific issues.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"AccountsPayableDaysVolatility\", \"construction\": \"standard deviation of accounts payable days over the past 5 years\", \"rationale\": \"High volatility in accounts payable days can indicate inconsistent supply chain management or poor working capital practices, leading to higher required returns.\", \"higher_returns_for\": \"high values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 767,
+   "total_tokens": 1061,
+   "cached_tokens": 0
+  }
+ }
+}

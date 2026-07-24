@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T12:59:26.849648+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 8,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQKWhA-6Ng1vN-a20319924bad72cb",
+  "object": "chat.completion",
+  "created": 1784897943,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 8,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Composite 1\", \"mechanism\": \"Firms with high R&D investment and low accruals tend to outperform those with low R&D investment and high accruals due to the potential for future growth and undervaluation.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"RD\"}, {\"weight\": -0.5, \"primitive\": \"Accruals\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite 2\", \"mechanism\": \"Firms with high intangible assets and low book leverage tend to outperform those with low intangible assets and high book leverage due to the potential for future growth and lower financial risk.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"IntanBM\"}, {\"weight\": -0.5, \"primitive\": \"BookLeverage\"}], \"regime\": null, \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": null},\n{\"name\": \"Composite 3\", \"mechanism\": \"Firms with high operating profitability and low idiosyncratic volatility tend to outperform those with low operating profitability and high idiosyncratic volatility due to the potential for future stability and lower risk.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"OperProf\"}, {\"weight\": -0.5, \"primitive\": \"IdioVol3F\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"above\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 18},\n{\"name\": \"Composite 4\", \"mechanism\": \"Firms with high customer momentum and low short interest tend to outperform those with low customer momentum and high short interest due to the potential for future growth and lower short-selling pressure.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"iomom_cust\"}, {\"weight\": -0.5, \"primitive\": \"ShortInterest\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 12},\n{\"name\": \"Composite 5\", \"mechanism\": \"Firms with high organizational capital and low net debt financing tend to outperform those with low organizational capital and high net debt financing due to the potential for future growth and lower financial risk.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"OrgCap\"}, {\"weight\": -0.5, \"primitive\": \"NetDebtFinance\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite 6\", \"mechanism\": \"Firms with high intangible return on equity and low book-to-market ratio tend to outperform those with low intangible return on equity and high book-to-market ratio due to the potential for future growth and undervaluation.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"IntanEP\"}, {\"weight\": -0.5, \"primitive\": \"BM\"}], \"regime\": \"TERM_SPREAD_NEGATIVE\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": null},\n{\"name\": \"Composite 7\", \"mechanism\": \"Firms with high net operating assets and low idiosyncratic volatility tend to outperform those with low net operating assets and high idiosyncratic volatility due to the potential for future stability and lower risk.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"NOA\"}, {\"weight\": -0.5, \"primitive\": \"IdioVolAHT\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"above\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 18},\n{\"name\": \"Composite 8\", \"mechanism\": \"Firms with high patent intensity and low short interest tend to outperform those with low patent intensity and high short interest due to the potential for future growth and lower short-selling pressure.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"PatentsRD\"}, {\"weight\": -0.5, \"primitive\": \"ShortInterest\"}], \"regime\": null, \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 12}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2988,
+   "completion_tokens": 1617,
+   "total_tokens": 4605,
+   "cached_tokens": 2816
+  }
+ }
+}

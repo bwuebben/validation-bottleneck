@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:11:39.293713+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 9,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQPMKv-fdNmn-a2032bdabeb5000c",
+  "object": "chat.completion",
+  "created": 1784898692,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 9,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"R&D Expense Churn\", \"construction\": \"Calculate the standard deviation of R&D expenses over the past 5 years, scaled by the average total assets over the same period\", \"rationale\": \"Firms with volatile R&D expenses may be more likely to experience breakthroughs, but also face higher risks, leading to a premium for their stock returns\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Employee Growth Acceleration\", \"construction\": \"Compute the difference between the 3-year and 1-year growth rates of total employees, then scale by the 1-year growth rate\", \"rationale\": \"Accelerating employee growth may indicate successful expansion and increasing returns to scale, but also potential management challenges\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Inventory Turnover Variability\", \"construction\": \"Calculate the standard deviation of inventory turnover over the past 5 years, then scale by the average inventory turnover over the same period\", \"rationale\": \"Firms with highly variable inventory turnover may face operational risks, but also opportunities for improvement, leading to a premium for their stock returns\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Capex-to-Depreciation Ratio\", \"construction\": \"Compute the ratio of capital expenditures to depreciation and amortization expenses over the past year\", \"rationale\": \"Firms with high capital expenditures relative to depreciation may be investing in growth opportunities, but also taking on additional risks\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Accounts Payable Days Variability\", \"construction\": \"Calculate the standard deviation of days accounts payable over the past 5 years, then scale by the average days accounts payable over the same period\", \"rationale\": \"Firms with highly variable accounts payable days may face supply chain risks, but also opportunities for improvement, leading to a premium for their stock returns\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Cash Flow Volatility\", \"construction\": \"Calculate the standard deviation of operating cash flow over the past 5 years, scaled by the average total assets over the same period\", \"rationale\": \"Firms with volatile cash flows may face financial risks, but also opportunities for growth, leading to a premium for their stock returns\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Director and Officer Ownership Concentration\", \"construction\": \"Compute the Herfindahl-Hirschman Index of director and officer ownership, based on the number of shares owned by each insider\", \"rationale\": \"Firms with concentrated insider ownership may have more aligned incentives, but also potential agency costs\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Segment Growth Diversification\", \"construction\": \"Calculate the Herfindahl-Hirschman Index of segment sales growth rates, based on the sales growth rate of each business segment\", \"rationale\": \"Firms with diversified segment growth may face lower risks, but also potential challenges in allocating resources\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Geographic Revenue Diversification\", \"construction\": \"Calculate the Herfindahl-Hirschman Index of geographic sales, based on the sales in each region or country\", \"rationale\": \"Firms with diversified geographic revenue may face lower risks, but also potential challenges in managing global operations\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Supply Chain Financing Dependence\", \"construction\": \"Compute the ratio of accounts payable to cost of goods sold, then scale by the ratio of accounts receivable to sales\", \"rationale\": \"Firms with high supply chain financing dependence may face operational risks, but also opportunities for improvement, leading to a premium for their stock returns\", \"higher_returns_for\": \"high values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 812,
+   "total_tokens": 1106,
+   "cached_tokens": 256
+  }
+ }
+}

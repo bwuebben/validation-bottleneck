@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:18:12.025270+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y1990_seed06_T0.8.json",
+  "prompt_sha256": "07b618139266249044d3b8a2497a7c1c9794788156434705468dd9ee3229bd06"
+ },
+ "response": {
+  "id": "chatcmpl-E5A4qG86a4uZ0fA42ywVWCwSPQuaB",
+  "object": "chat.completion",
+  "created": 1784899084,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"GrAdExp\", \"strength\": \"close\", \"reason\": \"Both use growth in R&D/ad expenses, but not identical scaling.\"},\n  {\"index\": 1, \"match\": \"Tax\", \"strength\": \"close\", \"reason\": \"Both relate taxes paid to income, but slightly different definitions.\"},\n  {\"index\": 2, \"match\": \"hire\", \"strength\": \"exact\", \"reason\": \"Both measure employment growth over a multi-year period.\"},\n  {\"index\": 3, \"match\": \"AdExp\", \"strength\": \"close\", \"reason\": \"Both use advertising expenses relative to sales, but efficiency focus differs.\"},\n  {\"index\": 4, \"match\": \"FR\", \"strength\": \"exact\", \"reason\": \"Both use pension assets to liabilities as funding status.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses environmental liabilities.\"},\n  {\"index\": 6, \"match\": \"CitationsRD\", \"strength\": \"exact\", \"reason\": \"Both use patent citation counts as innovation measure.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses labor union coverage.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses corporate giving/donations.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses geographic revenue concentration.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2695,
+   "completion_tokens": 347,
+   "total_tokens": 3042,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

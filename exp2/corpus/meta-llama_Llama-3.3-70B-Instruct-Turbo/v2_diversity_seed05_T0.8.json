@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T12:58:31.095525+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 5,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQKHbm-fdNmn-a203187e4c1f3e9d",
+  "object": "chat.completion",
+  "created": 1784897899,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 5,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Innovation and Profitability\", \n\"mechanism\": \"Firms with high R&D investment and profitability tend to outperform due to their ability to innovate and maintain competitive advantage.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": 1.0, \"primitive\": \"OperProf\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 24},\n{\"name\": \"Financial Health and Earnings Quality\", \n\"mechanism\": \"Companies with strong financial health and high earnings quality tend to perform better due to their lower risk and more sustainable earnings.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"NetPayoutYield\"}, {\"weight\": -1.0, \"primitive\": \"AbnormalAccruals\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": 30},\n{\"name\": \"Growth and Valuation\", \n\"mechanism\": \"Firms with high growth prospects and reasonable valuations tend to outperform due to their potential for future earnings growth.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"GrSaleToGrInv\"}, {\"weight\": -1.0, \"primitive\": \"EntMult\"}], \"regime\": null, \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": 18},\n{\"name\": \"Momentum and Reversal\", \n\"mechanism\": \" Stocks with high momentum tend to continue outperforming in the short term, while those with low momentum tend to reverse in the long term.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Mom12m\"}, {\"weight\": -1.0, \"primitive\": \"LRreversal\"}], \"regime\": \"TERM_SPREAD_NEGATIVE\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \n\"expected_annualized_sharpe\": 0.6, \n\"expected_decay_half_life_months\": 36},\n{\"name\": \"Quality and Leverage\", \n\"mechanism\": \"Companies with high quality and low leverage tend to outperform due to their lower risk and more stable earnings.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"PS\"}, {\"weight\": -1.0, \"primitive\": \"BookLeverage\"}], \"regime\": null, \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"MomOffSeason\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 24},\n{\"name\": \"Intangibles and Investment\", \n\"mechanism\": \"Firms with high intangible assets and investment tend to outperform due to their potential for future growth and innovation.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanBM\"}, {\"weight\": 1.0, \"primitive\": \"Investment\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": 30},\n{\"name\": \"Earnings and Financial Statement Analysis\", \n\"mechanism\": \"Companies with high earnings quality and strong financial statement analysis tend to outperform due to their more accurate earnings and lower risk.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"EarningsSurprise\"}, {\"weight\": -1.0, \"primitive\": \"TotalAccruals\"}], \"regime\": null, \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6mJunk\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": 18},\n{\"name\": \"Liquidity and Trading Volume\", \n\"mechanism\": \"Stocks with high liquidity and trading volume tend to outperform due to their lower transaction costs and higher market efficiency.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"BidAskSpread\"}, {\"weight\": 1.0, \"primitive\": \"VolMkt\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \n\"expected_annualized_sharpe\": 0.6, \n\"expected_decay_half_life_months\": 36}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2988,
+   "completion_tokens": 1625,
+   "total_tokens": 4613,
+   "cached_tokens": 0
+  }
+ }
+}

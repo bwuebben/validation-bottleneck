@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T12:56:16.679210+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 17,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQJbRU-zfFMX-a2031532bd687a38",
+  "object": "chat.completion",
+  "created": 1784897764,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 17,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Value and Momentum Composite\", \n\"mechanism\": \"Firms with high book-to-market ratios and strong momentum tend to outperform due to overreaction and underreaction to news.\", \n\"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"BM\"}, {\"weight\": 0.5, \"primitive\": \"Mom12m\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 36},\n{\"name\": \"Profitability and Investment Composite\", \n\"mechanism\": \"Firms with high profitability and low investment tend to outperform due to efficient allocation of resources.\", \n\"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"GP\"}, {\"weight\": -0.5, \"primitive\": \"Investment\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": 24},\n{\"name\": \"Earnings Quality and Accruals Composite\", \n\"mechanism\": \"Firms with high earnings quality and low accruals tend to outperform due to reduced risk of earnings manipulation.\", \n\"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"PS\"}, {\"weight\": -0.5, \"primitive\": \"Accruals\"}], \"regime\": null, \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"AbnormalAccruals\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": 48},\n{\"name\": \"Leverage and Liquidity Composite\", \n\"mechanism\": \"Firms with low leverage and high liquidity tend to outperform due to reduced risk of financial distress.\", \n\"expression\": {\"terms\": [{\"weight\": -0.5, \"primitive\": \"Leverage\"}, {\"weight\": 0.5, \"primitive\": \"BidAskSpread\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \n\"expected_annualized_sharpe\": 0.6, \n\"expected_decay_half_life_months\": 18},\n{\"name\": \"Momentum and Reversal Composite\", \n\"mechanism\": \"Firms with strong momentum and subsequent reversal tend to outperform due to overreaction to news.\", \n\"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"Mom12m\"}, {\"weight\": -0.5, \"primitive\": \"STreversal\"}], \"regime\": null, \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 36},\n{\"name\": \"Quality and Volatility Composite\", \n\"mechanism\": \"Firms with high quality and low volatility tend to outperform due to reduced risk of earnings surprises.\", \n\"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"PS\"}, {\"weight\": -0.5, \"primitive\": \"RealizedVol\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": 24},\n{\"name\": \"Value and Profitability Composite\", \n\"mechanism\": \"Firms with high book-to-market ratios and high profitability tend to outperform due to efficient allocation of resources.\", \n\"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"BM\"}, {\"weight\": 0.5, \"primitive\": \"GP\"}], \"regime\": null, \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"AbnormalAccruals\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": 48},\n{\"name\": \"Leverage and Earnings Quality Composite\", \n\"mechanism\": \"Firms with low leverage and high earnings quality tend to outperform due to reduced risk of financial distress and earnings manipulation.\", \n\"expression\": {\"terms\": [{\"weight\": -0.5, \"primitive\": \"Leverage\"}, {\"weight\": 0.5, \"primitive\": \"PS\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \n\"expected_annualized_sharpe\": 0.6, \n\"expected_decay_half_life_months\": 18}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2887,
+   "completion_tokens": 1601,
+   "total_tokens": 4488,
+   "cached_tokens": 2816
+  }
+ }
+}

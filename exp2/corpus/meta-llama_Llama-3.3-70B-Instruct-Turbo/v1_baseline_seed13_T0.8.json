@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T12:55:19.358360+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 13,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQJFBE-zfFMX-a20313883dae6194",
+  "object": "chat.completion",
+  "created": 1784897696,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 13,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Composite1\", \"mechanism\": \"Firms with high accruals and low book-to-market ratios tend to have poor future returns, while firms with low accruals and high book-to-market ratios tend to have high future returns. Combining these factors can help identify mispriced stocks.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Accruals\"}, {\"weight\": -1.0, \"primitive\": \"BM\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite2\", \"mechanism\": \"Combining momentum and value factors can help identify stocks with high expected returns. The momentum factor can capture stocks with high growth potential, while the value factor can capture stocks with low prices relative to their fundamentals.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Mom12m\"}, {\"weight\": 1.0, \"primitive\": \"EP\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 36},\n{\"name\": \"Composite3\", \"mechanism\": \"Firms with high intangible assets and low book leverage tend to have high expected returns. Combining these factors can help identify stocks with high growth potential and low financial risk.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanBM\"}, {\"weight\": -1.0, \"primitive\": \"BookLeverage\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"RoE\", \"bound\": \"above\", \"threshold\": 0.3}, {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 18},\n{\"name\": \"Composite4\", \"mechanism\": \"Combining factors that capture earnings quality and financial health can help identify stocks with high expected returns. Firms with high earnings quality and low financial risk tend to have high future returns.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"EarningsConsistency\"}, {\"weight\": -1.0, \"primitive\": \"NetDebtFinance\"}], \"regime\": null, \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.85, \"expected_decay_half_life_months\": 30},\n{\"name\": \"Composite5\", \"mechanism\": \"Firms with high R&D expenditures and low market beta tend to have high expected returns. Combining these factors can help identify stocks with high growth potential and low systematic risk.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": -1.0, \"primitive\": \"Beta\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"below\", \"threshold\": 0.3}, {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"}], \"expected_annualized_sharpe\": 0.95, \"expected_decay_half_life_months\": 42},\n{\"name\": \"Composite6\", \"mechanism\": \"Combining factors that capture profitability and investment can help identify stocks with high expected returns. Firms with high profitability and low investment tend to have high future returns.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"OperProf\"}, {\"weight\": -1.0, \"primitive\": \"Investment\"}], \"regime\": null, \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite7\", \"mechanism\": \"Firms with high intangible assets and high earnings quality tend to have high expected returns. Combining these factors can help identify stocks with high growth potential and high earnings quality.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanBM\"}, {\"weight\": 1.0, \"primitive\": \"EarningsConsistency\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"RoE\", \"bound\": \"above\", \"threshold\": 0.3}, {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}], \"expected_annualized_sharpe\": 0.85, \"expected_decay_half_life_months\": 30},\n{\"name\": \"Composite8\", \"mechanism\": \"Combining factors that capture financial health and profitability can help identify stocks with high expected returns. Firms with high financial health and high profitability tend to have high future returns.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"NetPayoutYield\"}, {\"weight\": 1.0, \"primitive\": \"OperProf\"}], \"regime\": null, \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 36}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2887,
+   "completion_tokens": 1615,
+   "total_tokens": 4502,
+   "cached_tokens": 2816
+  }
+ }
+}

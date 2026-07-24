@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:00:50.724839+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 15,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQKy9p-fdNmn-a2031bbe8c505930",
+  "object": "chat.completion",
+  "created": 1784898032,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 15,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Innovation and Intangibles\", \n\"mechanism\": \"The combination of firms with high R&D investment and those with high intangible assets should outperform, as the market underestimates the value of innovation and intangible capital.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": 1.0, \"primitive\": \"IntanBM\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 24},\n{\"name\": \"Earnings Quality and Momentum\", \n\"mechanism\": \"The combination of firms with high earnings quality and those with high momentum should outperform, as the market underestimates the persistence of earnings quality and momentum.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"PS\"}, {\"weight\": 1.0, \"primitive\": \"Mom6m\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": 18},\n{\"name\": \"Value and Distress\", \n\"mechanism\": \"The combination of firms with high book-to-market ratios and those with high distress risk should outperform, as the market overestimates the risk of distress and underestimates the value of high book-to-market firms.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"BM\"}, {\"weight\": -1.0, \"primitive\": \"OScore\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"opposite_sign\"}], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": 30},\n{\"name\": \"Profitability and Investment\", \n\"mechanism\": \"The combination of firms with high profitability and those with high investment should outperform, as the market underestimates the value of profitable investment.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"OperProf\"}, {\"weight\": 1.0, \"primitive\": \"InvGrowth\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.85, \n\"expected_decay_half_life_months\": 20},\n{\"name\": \"Liquidity and Volatility\", \n\"mechanism\": \"The combination of firms with high liquidity and those with low volatility should outperform, as the market underestimates the value of liquidity and overestimates the risk of low volatility.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"BidAskSpread\"}, {\"weight\": -1.0, \"primitive\": \"RealizedVol\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}], \n\"expected_annualized_sharpe\": 0.75, \n\"expected_decay_half_life_months\": 28},\n{\"name\": \"Growth and Sentiment\", \n\"mechanism\": \"The combination of firms with high growth and those with high sentiment should outperform, as the market underestimates the value of growth and overestimates the risk of high sentiment.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"GrSaleToGrInv\"}, {\"weight\": 1.0, \"primitive\": \"UpRecomm\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.95, \n\"expected_decay_half_life_months\": 15},\n{\"name\": \"Dividend Yield and Earnings Surprise\", \n\"mechanism\": \"The combination of firms with high dividend yield and those with high earnings surprise should outperform, as the market underestimates the value of high dividend yield and overestimates the risk of high earnings surprise.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"DivYieldST\"}, {\"weight\": 1.0, \"primitive\": \"EarningsSurprise\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"opposite_sign\"}], \n\"expected_annualized_sharpe\": 0.65, \n\"expected_decay_half_life_months\": 32},\n{\"name\": \"Financial Health and Leverage\", \n\"mechanism\": \"The combination of firms with high financial health and those with low leverage should outperform, as the market underestimates the value of financial health and overestimates the risk of low leverage.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"PS\"}, {\"weight\": -1.0, \"primitive\": \"Leverage\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 25}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2988,
+   "completion_tokens": 1710,
+   "total_tokens": 4698,
+   "cached_tokens": 2816
+  }
+ }
+}

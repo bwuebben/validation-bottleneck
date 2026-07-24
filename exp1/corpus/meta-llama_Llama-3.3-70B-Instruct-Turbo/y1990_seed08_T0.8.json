@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:06:10.623342+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 8,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQMfa3-zfFMX-a20323d398a8e27b",
+  "object": "chat.completion",
+  "created": 1784898363,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 8,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"Research Intensity\", \"construction\": \"R&D expense divided by total assets, measured over the past 3 years\", \"rationale\": \"Firms that invest more in research and development may have higher growth prospects, but also face greater uncertainty and risk, leading to higher required returns.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Advertising Efficiency\", \"construction\": \"Advertising expense divided by sales growth, measured over the past 2 years\", \"rationale\": \"Firms that generate more sales growth per dollar of advertising may have more effective marketing strategies, but those with low efficiency may face greater pressure to improve, leading to higher returns.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Tangible Asset Ratio\", \"construction\": \"Net property, plant, and equipment divided by total assets, measured at the end of the previous fiscal year\", \"rationale\": \"Firms with more tangible assets may be less vulnerable to economic downturns, but also may face greater costs and lower flexibility, leading to higher required returns for those with fewer tangible assets.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Employee Productivity\", \"construction\": \"Sales divided by total employees, measured over the past year\", \"rationale\": \"Firms with higher sales per employee may have more efficient operations, but those with lower productivity may face greater pressure to improve, leading to higher returns.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Dividend Payout Acceleration\", \"construction\": \"Change in dividend payout ratio over the past 2 years\", \"rationale\": \"Firms that accelerate their dividend payouts may signal greater confidence in their future prospects, but also may face greater pressure to maintain those payouts, leading to higher required returns.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Industry Diversification\", \"construction\": \"Herfindahl index of sales across different SIC codes, measured over the past year\", \"rationale\": \"Firms with more diversified sales across industries may face less idiosyncratic risk, but those with greater concentration may face greater potential for growth, leading to higher returns.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Inventory Turnover Volatility\", \"construction\": \"Standard deviation of inventory turnover over the past 3 years\", \"rationale\": \"Firms with more volatile inventory turnover may face greater operational risk, leading to higher required returns.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Accounts Receivable Growth\", \"construction\": \"Change in accounts receivable divided by change in sales, measured over the past year\", \"rationale\": \"Firms with rapid growth in accounts receivable relative to sales may face greater credit risk, leading to higher required returns.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Capital Expenditure Ratio\", \"construction\": \"Capital expenditures divided by total assets, measured over the past 2 years\", \"rationale\": \"Firms that invest more in capital expenditures may have higher growth prospects, but also face greater costs and lower flexibility, leading to higher required returns.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Executive Compensation Volatility\", \"construction\": \"Standard deviation of total executive compensation over the past 3 years\", \"rationale\": \"Firms with more volatile executive compensation may face greater agency costs, leading to higher required returns.\", \"higher_returns_for\": \"high values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 749,
+   "total_tokens": 1043,
+   "cached_tokens": 256
+  }
+ }
+}

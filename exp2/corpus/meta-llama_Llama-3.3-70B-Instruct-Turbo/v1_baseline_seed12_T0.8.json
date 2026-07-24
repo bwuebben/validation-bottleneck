@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T12:54:54.909726+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 12,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQJBSU-6Ng1vN-a203133b7a430f97",
+  "object": "chat.completion",
+  "created": 1784897683,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 12,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"H1\", \"mechanism\": \"Combining value and momentum factors to capture the benefits of both strategies.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"BM\"}, {\"weight\": 0.5, \"primitive\": \"Mom12m\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 36},\n{\"name\": \"H2\", \"mechanism\": \"Identifying companies with high R&D investment and positive earnings surprises to capture the benefits of innovation.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": -1.0, \"primitive\": \"EarningsSurprise\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 24},\n{\"name\": \"H3\", \"mechanism\": \"Combining quality and value factors to capture the benefits of high-quality, undervalued companies.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"PS\"}, {\"weight\": 0.5, \"primitive\": \"BMdec\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"above\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 48},\n{\"name\": \"H4\", \"mechanism\": \"Identifying companies with high short interest and positive earnings surprises to capture the benefits of short squeeze.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"ShortInterest\"}, {\"weight\": -1.0, \"primitive\": \"EarningsSurprise\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \"expected_annualized_sharpe\": 1.0, \"expected_decay_half_life_months\": 12},\n{\"name\": \"H5\", \"mechanism\": \"Combining momentum and value factors with a volatility target to capture the benefits of both strategies while managing risk.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"Mom12m\"}, {\"weight\": 0.5, \"primitive\": \"BM\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 36},\n{\"name\": \"H6\", \"mechanism\": \"Identifying companies with high R&D investment and high operating profitability to capture the benefits of innovation and quality.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": 1.0, \"primitive\": \"OperProf\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 24},\n{\"name\": \"H7\", \"mechanism\": \"Combining quality and momentum factors to capture the benefits of high-quality companies with strong price momentum.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"PS\"}, {\"weight\": 0.5, \"primitive\": \"Mom12m\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"above\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 48},\n{\"name\": \"H8\", \"mechanism\": \"Identifying companies with high short interest and high operating leverage to capture the benefits of short squeeze and operating efficiency.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"ShortInterest\"}, {\"weight\": 1.0, \"primitive\": \"OPLeverage\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \"expected_annualized_sharpe\": 1.0, \"expected_decay_half_life_months\": 12}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2887,
+   "completion_tokens": 1509,
+   "total_tokens": 4396,
+   "cached_tokens": 2816
+  }
+ }
+}

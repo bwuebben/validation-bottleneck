@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:20:13.904660+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y2000_seed02_T0.8.json",
+  "prompt_sha256": "3c5faf83329bebf53ae5a0fbd78e96b0af1a9d976cc83d457f6e4001e970496f"
+ },
+ "response": {
+  "id": "chatcmpl-E5A6qliqvfrp2QhQJTM32nSbaKvfQ",
+  "object": "chat.completion",
+  "created": 1784899208,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses capex stability or volatility.\"},\n  {\"index\": 1, \"match\": \"ChAssetTurnover\", \"strength\": \"close\", \"reason\": \"Both use changes in turnover ratios for efficiency.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses R&D volatility or stability.\"},\n  {\"index\": 3, \"match\": \"ChInv\", \"strength\": \"close\", \"reason\": \"Both use changes in inventory growth rates.\"},\n  {\"index\": 4, \"match\": \"EarningsSurprise\", \"strength\": \"close\", \"reason\": \"Both use earnings surprise, but proposal uses trend/slope.\"},\n  {\"index\": 5, \"match\": \"ShortInterest\", \"strength\": \"close\", \"reason\": \"Both use changes in short interest, but proposal uses momentum.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses dividend yield volatility/dispersion.\"},\n  {\"index\": 7, \"match\": \"hire\", \"strength\": \"exact\", \"reason\": \"Both use employment growth rate.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses capex/PPE renewal rate.\"},\n  {\"index\": 9, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Both relate to governance, but use different ownership concentration measures.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2918,
+   "completion_tokens": 351,
+   "total_tokens": 3269,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

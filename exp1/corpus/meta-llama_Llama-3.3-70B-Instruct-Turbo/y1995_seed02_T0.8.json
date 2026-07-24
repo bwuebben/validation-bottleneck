@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:07:00.085623+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 2,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQMvPd-fdNmn-a203250b9e2688c3",
+  "object": "chat.completion",
+  "created": 1784898413,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 2,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"Capital Expenditure Stability\", \"construction\": \"Calculate the standard deviation of capital expenditures over the past 5 years, scaled by total assets, using Compustat data.\", \"rationale\": \"Firms with stable capital expenditures are better positioned to adapt to changing market conditions, leading to higher returns.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Inventory Turnover Acceleration\", \"construction\": \"Compute the difference in inventory turnover between the current year and the average of the past 3 years, using Compustat data.\", \"rationale\": \"An increase in inventory turnover indicates improving operational efficiency, which should be rewarded with higher returns.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Accounts Payable Days Deceleration\", \"construction\": \"Calculate the change in days accounts payable over the past year, using Compustat data.\", \"rationale\": \"A decrease in days accounts payable suggests deteriorating supplier relationships or reduced financial flexibility, leading to lower returns.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"R&D Intensity Volatility\", \"construction\": \"Compute the standard deviation of R&D expenditures over the past 5 years, scaled by sales, using Compustat data.\", \"rationale\": \"Firms with volatile R&D intensity may be pursuing riskier, higher-return projects or struggling with inconsistent innovation, leading to higher returns.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Dividend Payout Consistency\", \"construction\": \"Calculate the proportion of years with dividend payments over the past 10 years, using CRSP data.\", \"rationale\": \"Firms with consistent dividend payouts demonstrate a commitment to returning value to shareholders, which should be rewarded with higher returns.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Employee Growth Rate\", \"construction\": \"Compute the average annual growth rate of employees over the past 5 years, using Compustat data.\", \"rationale\": \"Firms with high employee growth rates may be expanding into new markets or increasing their market share, leading to higher returns.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Supplier Concentration\", \"construction\": \"Calculate the Herfindahl index of supplier sales over the past year, using Compustat data.\", \"rationale\": \"Firms with high supplier concentration may be exposed to supply chain risks or negotiating power imbalances, leading to lower returns.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Environmental Liability\", \"construction\": \"Estimate the present value of potential environmental liabilities using Compustat data on environmental expenditures and liabilities.\", \"rationale\": \"Firms with high environmental liabilities may face future legal or regulatory costs, leading to lower returns.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Product Line Diversification\", \"construction\": \"Compute the Herfindahl index of sales by product line over the past year, using Compustat data.\", \"rationale\": \"Firms with diversified product lines may be less exposed to industry-specific risks, leading to higher returns.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Corporate Governance Quality\", \"construction\": \"Calculate a composite score based on board independence, insider ownership, and audit committee composition, using proxy statement data.\", \"rationale\": \"Firms with high-quality corporate governance may be better positioned to make value-maximizing decisions, leading to higher returns.\", \"higher_returns_for\": \"high values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 752,
+   "total_tokens": 1046,
+   "cached_tokens": 256
+  }
+ }
+}

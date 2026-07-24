@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:01:41.106396+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 18,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQLCrj-zfFMX-a2031cdf3d87b57d",
+  "object": "chat.completion",
+  "created": 1784898078,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 18,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Composite 1\", \"mechanism\": \"Combining investment and intangibility signals to capture mispricing in firms with high growth opportunities\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"Investment\"}, {\"weight\": 0.5, \"primitive\": \"IntanBM\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite 2\", \"mechanism\": \"Identifying undervalued firms with strong governance and low accruals\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Governance\"}, {\"weight\": -0.5, \"primitive\": \"Accruals\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 18},\n{\"name\": \"Composite 3\", \"mechanism\": \"Capturing the premium from combining momentum and earnings consistency signals\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"Mom6m\"}, {\"weight\": 0.5, \"primitive\": \"EarningsConsistency\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"STreversal\", \"bound\": \"above\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 30},\n{\"name\": \"Composite 4\", \"mechanism\": \"Identifying overvalued firms with high idiosyncratic volatility and low profitability\", \"expression\": {\"terms\": [{\"weight\": -1.0, \"primitive\": \"IdioVolAHT\"}, {\"weight\": -0.5, \"primitive\": \"OperProf\"}], \"regime\": \"TERM_SPREAD_NEGATIVE\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 12},\n{\"name\": \"Composite 5\", \"mechanism\": \"Combining signals from analysts' forecast revisions and earnings surprises to capture market inefficiencies\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"REV6\"}, {\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite 6\", \"mechanism\": \"Identifying undervalued firms with high R&D spending and low market leverage\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": -0.5, \"primitive\": \"Leverage\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 18},\n{\"name\": \"Composite 7\", \"mechanism\": \"Capturing the premium from combining intangibility and investment signals with a short-term reversal strategy\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"IntanBM\"}, {\"weight\": 0.5, \"primitive\": \"Investment\"}, {\"weight\": -0.5, \"primitive\": \"STreversal\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"above\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 30},\n{\"name\": \"Composite 8\", \"mechanism\": \"Identifying overvalued firms with high net debt financing and low profitability, and capturing the premium from a short-term momentum strategy\", \"expression\": {\"terms\": [{\"weight\": -1.0, \"primitive\": \"NetDebtFinance\"}, {\"weight\": -0.5, \"primitive\": \"OperProf\"}, {\"weight\": 0.5, \"primitive\": \"Mom6m\"}], \"regime\": \"TERM_SPREAD_NEGATIVE\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 12}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2988,
+   "completion_tokens": 1544,
+   "total_tokens": 4532,
+   "cached_tokens": 2816
+  }
+ }
+}

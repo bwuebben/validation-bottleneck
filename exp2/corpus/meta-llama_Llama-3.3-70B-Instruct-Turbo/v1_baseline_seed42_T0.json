@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T12:52:18.309764+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQHQ5N-fdNmn-a2030f7caf1d7298",
+  "object": "chat.completion",
+  "created": 1784897531,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 42,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Composite 1\", \"mechanism\": \"Firms with high intangible assets and low book leverage tend to outperform due to their ability to invest in growth opportunities.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanBM\"}, {\"weight\": -0.5, \"primitive\": \"BookLeverage\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite 2\", \"mechanism\": \"Companies with high R&D expenditures and low short interest tend to outperform due to their innovative capabilities and low risk of short squeezes.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": -0.5, \"primitive\": \"ShortInterest\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"lower\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": null},\n{\"name\": \"Composite 3\", \"mechanism\": \"Firms with high operating profitability and low idiosyncratic volatility tend to outperform due to their stable cash flows and low risk.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"OperProf\"}, {\"weight\": -0.5, \"primitive\": \"IdioVol3F\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"above\", \"threshold\": 0.3}, {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 18},\n{\"name\": \"Composite 4\", \"mechanism\": \"Companies with high dividend yields and low net debt financing tend to outperform due to their attractive income streams and low financial risk.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"DivYieldST\"}, {\"weight\": -0.5, \"primitive\": \"NetDebtFinance\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.85, \"expected_decay_half_life_months\": 30},\n{\"name\": \"Composite 5\", \"mechanism\": \"Firms with high sales growth and low asset growth tend to outperform due to their efficient use of resources and high profitability.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"GrSaleToGrInv\"}, {\"weight\": -0.5, \"primitive\": \"AssetGrowth\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"BMdec\", \"bound\": \"below\", \"threshold\": 0.3}, {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}], \"expected_annualized_sharpe\": 0.95, \"expected_decay_half_life_months\": 12},\n{\"name\": \"Composite 6\", \"mechanism\": \"Companies with high intangible assets and high R&D expenditures tend to outperform due to their innovative capabilities and growth opportunities.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanBM\"}, {\"weight\": 1.0, \"primitive\": \"RD\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"lower\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 1.0, \"expected_decay_half_life_months\": null},\n{\"name\": \"Composite 7\", \"mechanism\": \"Firms with high operating leverage and low idiosyncratic volatility tend to outperform due to their high profitability and low risk.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"OPLeverage\"}, {\"weight\": -0.5, \"primitive\": \"IdioVolAHT\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"above\", \"threshold\": 0.3}, {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 20},\n{\"name\": \"Composite 8\", \"mechanism\": \"Companies with high dividend yields and low short interest tend to outperform due to their attractive income streams and low risk of short squeezes.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"DivYieldST\"}, {\"weight\": -0.5, \"primitive\": \"ShortInterest\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 25}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2887,
+   "completion_tokens": 1536,
+   "total_tokens": 4423,
+   "cached_tokens": 0
+  }
+ }
+}

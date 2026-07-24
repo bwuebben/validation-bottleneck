@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:20:51.029644+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y2000_seed08_T0.8.json",
+  "prompt_sha256": "d86e4285028d008faa54a1b0388f4f68472b0cc8be4584ce8964a990371c84d6"
+ },
+ "response": {
+  "id": "chatcmpl-E5A7SsvPxX3Od3iz3tDwKUSZUCgu4",
+  "object": "chat.completion",
+  "created": 1784899246,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"RDcap\", \"strength\": \"close\", \"reason\": \"Both use R&D scaled by assets, but time window differs.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer concentration or similar.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses environmental liabilities or similar.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee turnover or similar.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses supply chain complexity or similar.\"},\n  {\"index\": 5, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Both relate to board structure, but diversity is not directly measured.\"},\n  {\"index\": 6, \"match\": \"Tax\", \"strength\": \"related\", \"reason\": \"Both relate to tax, but construction and focus differ.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses product lifecycle or similar.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses geographic diversification or similar.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses IT investment or similar.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2779,
+   "completion_tokens": 341,
+   "total_tokens": 3120,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

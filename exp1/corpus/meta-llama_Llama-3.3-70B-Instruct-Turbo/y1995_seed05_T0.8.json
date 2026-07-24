@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:07:26.914171+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 5,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQN4FQ-fdNmn-a20325b09ff9ffb2",
+  "object": "chat.completion",
+  "created": 1784898439,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 5,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"Research Intensity\", \"construction\": \"R&D expenses scaled by total assets, averaged over the past 3 years\", \"rationale\": \"Firms investing heavily in R&D may experience future growth and profitability, leading to higher returns. This measure captures a firm's commitment to innovation.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Operational Leverage\", \"construction\": \"The ratio of selling, general, and administrative expenses to total revenues, calculated as a 5-year average\", \"rationale\": \"Firms with high operational leverage may be more sensitive to changes in revenue, leading to higher returns in expanding markets. This measure reflects a firm's ability to scale its operations.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Pension Funding Ratio\", \"construction\": \"The ratio of pension assets to pension liabilities, calculated from the most recent annual report\", \"rationale\": \"Firms with well-funded pensions may be less likely to experience financial distress, leading to higher returns. This measure captures a firm's ability to manage its long-term obligations.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Environmental Liability\", \"construction\": \"The ratio of environmental liabilities to total assets, calculated from the most recent annual report\", \"rationale\": \"Firms with significant environmental liabilities may face future costs and regulatory risks, leading to lower returns. This measure reflects a firm's exposure to environmental risks.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Product Diversification\", \"construction\": \"The Herfindahl index of product segments, calculated from the most recent annual report\", \"rationale\": \"Firms with diversified product offerings may be less susceptible to industry-specific shocks, leading to higher returns. This measure captures a firm's ability to manage its product risk.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Geographic Dispersion\", \"construction\": \"The ratio of foreign sales to total sales, calculated as a 3-year average\", \"rationale\": \"Firms with significant foreign sales may be more exposed to global growth opportunities, leading to higher returns. This measure reflects a firm's ability to access new markets.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Labor Union Coverage\", \"construction\": \"The percentage of employees covered by collective bargaining agreements, calculated from the most recent annual report\", \"rationale\": \"Firms with high labor union coverage may face higher labor costs and reduced flexibility, leading to lower returns. This measure captures a firm's exposure to labor risks.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Advertising Efficiency\", \"construction\": \"The ratio of advertising expenses to total sales, calculated as a 5-year average\", \"rationale\": \"Firms with efficient advertising strategies may be more effective at reaching their target markets, leading to higher returns. This measure reflects a firm's ability to manage its marketing efforts.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Supply Chain Complexity\", \"construction\": \"The number of suppliers and vendors reported in the most recent annual report, scaled by total assets\", \"rationale\": \"Firms with complex supply chains may be more vulnerable to disruptions and logistics risks, leading to lower returns. This measure captures a firm's exposure to operational risks.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Corporate Governance Index\", \"construction\": \"A composite index of board independence, executive compensation, and shareholder rights, calculated from the most recent proxy statement\", \"rationale\": \"Firms with strong corporate governance practices may be more likely to prioritize shareholder value, leading to higher returns. This measure reflects a firm's commitment to good governance.\", \"higher_returns_for\": \"high values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 804,
+   "total_tokens": 1098,
+   "cached_tokens": 256
+  }
+ }
+}

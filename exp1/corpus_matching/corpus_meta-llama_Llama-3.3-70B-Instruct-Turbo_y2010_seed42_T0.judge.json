@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:22:47.951543+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y2010_seed42_T0.json",
+  "prompt_sha256": "a0455a71063e9cd6b5fac55731834a9b36fbd72c3294580ba28d1dc2f34ee452"
+ },
+ "response": {
+  "id": "chatcmpl-E5A9LNtS7MU9bo1vy6Nkc5gwGwwl9",
+  "object": "chat.completion",
+  "created": 1784899363,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses R&D growth volatility.\"},\n  {\"index\": 1, \"match\": \"Herf\", \"strength\": \"exact\", \"reason\": \"Herf is industry concentration; proposal is customer, but same Herfindahl logic.\"},\n  {\"index\": 2, \"match\": \"ChAssetTurnover\", \"strength\": \"close\", \"reason\": \"Both use change in turnover; proposal focuses on inventory, library on assets.\"},\n  {\"index\": 3, \"match\": \"grcapx\", \"strength\": \"close\", \"reason\": \"Both use change in capex; proposal is annual, library is two-year.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses change in payable days.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee growth volatility.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses change in receivable days.\"},\n  {\"index\": 7, \"match\": \"tang\", \"strength\": \"related\", \"reason\": \"Both relate to asset tangibility/obsolescence, but construction differs.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses SG&A ratio volatility.\"},\n  {\"index\": 9, \"match\": \"IntanBM\", \"strength\": \"close\", \"reason\": \"Both use intangible asset growth, but library uses BM ratio.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3074,
+   "completion_tokens": 369,
+   "total_tokens": 3443,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

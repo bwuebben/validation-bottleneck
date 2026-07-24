@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:21:02.531757+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y2000_seed10_T0.8.json",
+  "prompt_sha256": "73494b2602ad72f3c70c0f7c66f599257538f4287842351f43ff45282afbc9fd"
+ },
+ "response": {
+  "id": "chatcmpl-E5A7doLwE6EsWsQmM2ND5BPc4biFY",
+  "object": "chat.completion",
+  "created": 1784899257,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses R&D volatility as signal.\"},\n  {\"index\": 1, \"match\": \"AdExp\", \"strength\": \"close\", \"reason\": \"Both use advertising expenses, but denominator differs.\"},\n  {\"index\": 2, \"match\": \"hire\", \"strength\": \"related\", \"reason\": \"Both use employee growth, but acceleration is new.\"},\n  {\"index\": 3, \"match\": \"tang\", \"strength\": \"related\", \"reason\": \"Both use tangible assets, but obsolescence is distinct.\"},\n  {\"index\": 4, \"match\": \"VarCF\", \"strength\": \"exact\", \"reason\": \"Both use variance of operating cash flows.\"},\n  {\"index\": 5, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Both use Herfindahl index, but for different ownership types.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses director option grants.\"},\n  {\"index\": 7, \"match\": \"iomom_cust\", \"strength\": \"related\", \"reason\": \"Both use customer concentration, but different construction.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses geographic segment diversification.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses supply chain leverage or supplier count.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2676,
+   "completion_tokens": 346,
+   "total_tokens": 3022,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

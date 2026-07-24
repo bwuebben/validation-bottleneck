@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T12:51:56.986253+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 300,
+  "harness_version": "1.0.0",
+  "smoke": true
+ },
+ "response": {
+  "id": "otQHJN7-6Ng1vN-a2030f099bbb88c3",
+  "object": "chat.completion",
+  "created": 1784897511,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "length",
+    "seed": 42,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Composite 1\", \"mechanism\": \"Firms with high intangible assets and low book leverage tend to outperform due to their ability to invest in growth opportunities.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanBM\"}, {\"weight\": -0.5, \"primitive\": \"BookLeverage\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite 2\", \"mechanism\": \"Companies with high R&D spending and low short interest tend to outperform due to their innovative products and low market scrutiny.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": -0.5, \"primitive\": \"ShortInterest\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2887,
+   "completion_tokens": 300,
+   "total_tokens": 3187,
+   "cached_tokens": 0
+  }
+ }
+}

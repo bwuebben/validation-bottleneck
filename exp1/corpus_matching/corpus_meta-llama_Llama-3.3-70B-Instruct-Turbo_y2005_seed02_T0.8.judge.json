@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:21:19.224030+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y2005_seed02_T0.8.json",
+  "prompt_sha256": "7ee8f8e31554880135858d27684213dad9d1b650ca61e2f8f5131ba3cdae9f4a"
+ },
+ "response": {
+  "id": "chatcmpl-E5A7unjti31mxwwMfMKzECk9YxTPV",
+  "object": "chat.completion",
+  "created": 1784899274,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses capex stability or its volatility.\"},\n  {\"index\": 1, \"match\": \"AdExp\", \"strength\": \"close\", \"reason\": \"AdExp uses advertising/sales; proposal adds industry ranking.\"},\n  {\"index\": 2, \"match\": \"hire\", \"strength\": \"close\", \"reason\": \"hire uses employment growth; proposal uses acceleration.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses trade credit or payables/COGS.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses voluntary 8-K disclosure frequency.\"},\n  {\"index\": 5, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Herf uses industry sales concentration; proposal uses customer concentration.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses R&D tax credits or their efficiency.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses institutional Herfindahl concentration.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses persistence of marketing expense growth.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses taxes paid on foreign earnings.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2879,
+   "completion_tokens": 350,
+   "total_tokens": 3229,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

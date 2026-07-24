@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T12:52:29.275727+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 1,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQHSbw-zfFMX-a2030fb51c21187f",
+  "object": "chat.completion",
+  "created": 1784897539,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 1,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Momentum and Volatility\", \n\"mechanism\": \"Combining momentum and volatility predictors captures the distinct return premia associated with each, as momentum exploits gradual information diffusion and volatility predictors capitalize on risk aversion.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Mom6m\"}, {\"weight\": 0.5, \"primitive\": \"Beta\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 24},\n{\"name\": \"Value and Profitability\", \n\"mechanism\": \"The intersection of value and profitability predictors identifies high-quality firms at discounted prices, which are more likely to experience positive revisions in expectations and subsequent price appreciation.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"BM\"}, {\"weight\": 0.5, \"primitive\": \"OperProf\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": 18},\n{\"name\": \"Growth and Investment\", \n\"mechanism\": \"The combination of growth and investment predictors isolates firms with strong expansion potential and the ability to effectively allocate capital, leading to superior long-term performance.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"GrSaleToGrInv\"}, {\"weight\": 0.5, \"primitive\": \"Investment\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": 30},\n{\"name\": \"Momentum and Reversal\", \n\"mechanism\": \"The blend of momentum and reversal predictors balances the benefits of trending strategies with the mean-reversion properties of stock prices, resulting in more consistent returns across different market regimes.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Mom12m\"}, {\"weight\": -0.5, \"primitive\": \"STreversal\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"weaker\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 24},\n{\"name\": \"Quality and Yield\", \n\"mechanism\": \"The combination of quality and yield predictors focuses on firms with strong financials and attractive dividend yields, which are better positioned to weather economic downturns and provide stable returns.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"PS\"}, {\"weight\": 0.5, \"primitive\": \"DivYieldST\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": 18},\n{\"name\": \"Size and Liquidity\", \n\"mechanism\": \"The intersection of size and liquidity predictors identifies smaller, more liquid firms that are more susceptible to information shocks and subsequent price movements.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Size\"}, {\"weight\": 0.5, \"primitive\": \"Illiquidity\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": 30},\n{\"name\": \"Value and Momentum\", \n\"mechanism\": \"The combination of value and momentum predictors captures undervalued firms with strong price trends, which are more likely to experience continued price appreciation as their intrinsic value is recognized.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"BMdec\"}, {\"weight\": 0.5, \"primitive\": \"Mom6m\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 24},\n{\"name\": \"Growth and Volatility\", \n\"mechanism\": \"The blend of growth and volatility predictors isolates firms with high expansion potential and low risk, which are better positioned to deliver stable, long-term growth.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"GrSaleToGrInv\"}, {\"weight\": -0.5, \"primitive\": \"Beta\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": 30}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2887,
+   "completion_tokens": 1619,
+   "total_tokens": 4506,
+   "cached_tokens": 0
+  }
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:18:53.714679+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y1995_seed01_T0.8.json",
+  "prompt_sha256": "fd7e48d9a9c20d458a20c19be74e2fffbb82c8cb3ec65275ad2a735994569101"
+ },
+ "response": {
+  "id": "chatcmpl-E5A5YymJ2NFrVosr8tszzLJ9G3Osy",
+  "object": "chat.completion",
+  "created": 1784899128,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses R&D volatility or similar construction.\"},\n  {\"index\": 1, \"match\": \"grcapx\", \"strength\": \"close\", \"reason\": \"Both capture changes in capex, but proposal uses acceleration.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses inventory growth dispersion or similar.\"},\n  {\"index\": 3, \"match\": \"AdExp\", \"strength\": \"related\", \"reason\": \"Both use advertising expense, but persistence is not in library.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses accounts payable turnover or similar.\"},\n  {\"index\": 5, \"match\": \"tang\", \"strength\": \"related\", \"reason\": \"Both use tangible assets, but obsolescence ratio is not in library.\"},\n  {\"index\": 6, \"match\": \"hire\", \"strength\": \"related\", \"reason\": \"Both use employee growth, but proposal uses consistency/volatility.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses receivable turnover volatility or similar.\"},\n  {\"index\": 8, \"match\": \"FR\", \"strength\": \"related\", \"reason\": \"Both use pension data, but asset allocation is not in library.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses operating lease commitments or similar.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2864,
+   "completion_tokens": 361,
+   "total_tokens": 3225,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

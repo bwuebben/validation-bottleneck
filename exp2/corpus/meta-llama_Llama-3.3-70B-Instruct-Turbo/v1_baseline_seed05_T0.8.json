@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T12:53:32.612247+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 5,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQHgpU-6Ng1vN-a20310e0ab2af82f",
+  "object": "chat.completion",
+  "created": 1784897587,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 5,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Value Momentum Composite\", \n\"mechanism\": \"Combining value and momentum strategies can exploit the distinct return drivers of each approach, leading to improved performance.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"BM\"}, {\"weight\": 1.0, \"primitive\": \"Mom12m\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 24.0}, \n\n{\"name\": \"Quality Growth Dampener\", \n\"mechanism\": \"High-quality firms with high growth expectations may experience return reversals, as the market tends to overestimate their future prospects.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"PS\"}, {\"weight\": -1.0, \"primitive\": \"GrSaleToGrInv\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"below\", \"threshold\": 0.3}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": 18.0}, \n\n{\"name\": \"Momentum Volatility Buffer\", \n\"mechanism\": \"Momentum strategies can be improved by conditioning on low volatility periods, reducing exposure to potential reversals.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Mom6m\"}, {\"weight\": -0.5, \"primitive\": \"IdioVol3F\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": 12.0}, \n\n{\"name\": \"Value Yield Enhancer\", \n\"mechanism\": \"Combining value and yield strategies can exploit the distinct return drivers of each approach, leading to improved performance.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"BM\"}, {\"weight\": 0.5, \"primitive\": \"NetPayoutYield\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"above\", \"threshold\": 0.3}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \n\"expected_annualized_sharpe\": 0.85, \n\"expected_decay_half_life_months\": 20.0}, \n\n{\"name\": \"Growth Quality Filter\", \n\"mechanism\": \"High-growth firms with poor quality characteristics may experience return reversals, as the market tends to overestimate their future prospects.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"GrSaleToGrInv\"}, {\"weight\": -1.0, \"primitive\": \"PS\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.75, \n\"expected_decay_half_life_months\": 15.0}, \n\n{\"name\": \"Momentum Reversal Dampener\", \n\"mechanism\": \"Momentum strategies can be improved by conditioning on reversal periods, reducing exposure to potential losses.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Mom6m\"}, {\"weight\": -0.5, \"primitive\": \"STreversal\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"below\", \"threshold\": 0.3}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 18.0}, \n\n{\"name\": \"Value Momentum Yield Composite\", \n\"mechanism\": \"Combining value, momentum, and yield strategies can exploit the distinct return drivers of each approach, leading to improved performance.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"BM\"}, {\"weight\": 1.0, \"primitive\": \"Mom12m\"}, {\"weight\": 0.5, \"primitive\": \"NetPayoutYield\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.95, \n\"expected_decay_half_life_months\": 12.0}, \n\n{\"name\": \"Growth Quality Momentum Composite\", \n\"mechanism\": \"Combining growth, quality, and momentum strategies can exploit the distinct return drivers of each approach, leading to improved performance.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"GrSaleToGrInv\"}, {\"weight\": 1.0, \"primitive\": \"PS\"}, {\"weight\": 1.0, \"primitive\": \"Mom6m\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"below\", \"threshold\": 0.3}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": 15.0}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2887,
+   "completion_tokens": 1617,
+   "total_tokens": 4504,
+   "cached_tokens": 2816
+  }
+ }
+}

@@ -24,17 +24,28 @@ import requests
 
 EXP2 = Path(__file__).resolve().parent.parent
 API_URL = "https://api.openai.com/v1/chat/completions"
+PROVIDERS = {
+    "openai": {"url": "https://api.openai.com/v1/chat/completions",
+               "keys": ("OPENAI_API_KEY", "OPENAI_KEY")},
+    "together": {"url": "https://api.together.xyz/v1/chat/completions",
+                 "keys": ("TOGETHER_API_KEY",)},
+}
+
 TIMEOUT = 120
+
+PROVIDER = "openai"
+
 
 def load_key() -> str:
     import os
-    key = os.environ.get("OPENAI_API_KEY") or os.environ.get("OPENAI_KEY")
+    names = PROVIDERS[PROVIDER]["keys"]
+    key = next((os.environ[n] for n in names if os.environ.get(n)), None)
     if not key:
         env = EXP2 / ".env"
         if env.exists():
             for line in env.read_text().splitlines():
                 name, _, val = line.strip().partition("=")
-                if name in ("OPENAI_API_KEY", "OPENAI_KEY") and val:
+                if name in names and val:
                     key = val.strip().strip('"').strip("'")
     if not key:
         sys.exit("No OPENAI_API_KEY / OPENAI_KEY in environment or exp2/.env.")
@@ -73,7 +84,11 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", required=True)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--provider", choices=("openai", "together"), default="openai")
     args = ap.parse_args()
+    global PROVIDER, API_URL
+    PROVIDER = args.provider
+    API_URL = PROVIDERS[args.provider]["url"]
 
     battery = json.loads((EXP2 / "prompts" / "probe_battery.json").read_text())
     probes = battery["probes"]

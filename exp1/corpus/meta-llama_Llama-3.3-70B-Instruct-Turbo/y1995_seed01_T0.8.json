@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:06:52.302168+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 1,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQMsb7-fdNmn-a20324cfbe77fc36",
+  "object": "chat.completion",
+  "created": 1784898404,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 1,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"R&D Intensity Volatility\", \"construction\": \"standard deviation of R&D expense divided by sales over the past 5 years\", \"rationale\": \"Firms with volatile R&D investments may have more uncertain future cash flows, leading to a risk premium. This volatility can be a proxy for the uncertainty of a firm's growth prospects.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Capital Expenditure Acceleration\", \"construction\": \"change in capital expenditures divided by total assets from year t-2 to t-1, minus the same change from year t-3 to t-2\", \"rationale\": \"An acceleration in capital expenditures may indicate a firm's increased commitment to growth opportunities, but also increases the risk of overinvestment. This acceleration can capture the uncertainty associated with changes in a firm's investment strategy.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Inventory Growth Dispersion\", \"construction\": \"standard deviation of the change in inventory divided by total assets over the past 3 years\", \"rationale\": \"Firms with volatile inventory growth may face challenges in managing their working capital, potentially leading to lower profitability. This dispersion can be a proxy for the operational risk of a firm.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Advertising Expense Persistence\", \"construction\": \"autoregressive coefficient from a regression of advertising expense on its lagged values over the past 5 years\", \"rationale\": \"Firms with persistent advertising expenses may have a strong brand or market position, but also face the risk of overinvesting in advertising. This persistence can capture the effectiveness of a firm's marketing strategy.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Accounts Payable Turnover\", \"construction\": \"cost of goods sold divided by average accounts payable over the past year\", \"rationale\": \"Firms with high accounts payable turnover may have strong bargaining power with their suppliers, potentially leading to lower costs. This turnover can be a proxy for a firm's operational efficiency.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Tangible Asset Obsolescence\", \"construction\": \"accumulated depreciation divided by gross tangible assets\", \"rationale\": \"Firms with high tangible asset obsolescence may face challenges in maintaining their productive capacity, potentially leading to lower profitability. This obsolescence can be a proxy for the risk of technological disruption.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Employee Growth Consistency\", \"construction\": \"standard deviation of the change in the number of employees over the past 5 years\", \"rationale\": \"Firms with consistent employee growth may have a strong corporate culture, but also face the risk of overexpansion. This consistency can capture the effectiveness of a firm's human capital management.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Trade Receivable Turnover Volatility\", \"construction\": \"standard deviation of the change in trade receivables divided by sales over the past 3 years\", \"rationale\": \"Firms with volatile trade receivable turnover may face challenges in managing their working capital, potentially leading to lower profitability. This volatility can be a proxy for the operational risk of a firm.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Pension Fund Asset Allocation\", \"construction\": \"percentage of pension fund assets allocated to equities\", \"rationale\": \"Firms with a high allocation to equities in their pension fund may have a higher risk tolerance, potentially leading to higher expected returns. This allocation can capture the risk preference of a firm's management.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Operating Lease Commitment\", \"construction\": \"total operating lease commitments divided by total assets\", \"rationale\": \"Firms with high operating lease commitments may face challenges in managing their capital structure, potentially leading to lower profitability. This commitment can be a proxy for the flexibility of a firm's investment strategy.\", \"higher_returns_for\": \"low values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 863,
+   "total_tokens": 1157,
+   "cached_tokens": 0
+  }
+ }
+}

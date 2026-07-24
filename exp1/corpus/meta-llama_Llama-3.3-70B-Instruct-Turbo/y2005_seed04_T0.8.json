@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:10:55.827453+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 4,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQP8rz-fdNmn-a2032ad28e3f344d",
+  "object": "chat.completion",
+  "created": 1784898650,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 4,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"R&D Intensity Momentum\", \"construction\": \"Calculate the change in R&D expenses over the past year, scaled by total assets, and then calculate the change in this ratio over the past 2 years\", \"rationale\": \"Firms with increasing R&D investments may be more likely to experience future growth, and the momentum in this measure can indicate the success of these investments\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Supply Chain Efficiency\", \"construction\": \"Calculate the ratio of cost of goods sold to total sales, and then calculate the standard deviation of this ratio over the past 5 years\", \"rationale\": \"Firms with more stable supply chains may be better positioned to manage costs and deliver returns to shareholders\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Inventory Turnover Acceleration\", \"construction\": \"Calculate the change in inventory turnover over the past year, where inventory turnover is calculated as cost of goods sold divided by average inventory\", \"rationale\": \"Firms with accelerating inventory turnover may be experiencing improving operational efficiency\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Environmental Liability\", \"construction\": \"Calculate the ratio of environmental liabilities to total assets, using data from the firm's 10-K filings\", \"rationale\": \"Firms with high environmental liabilities may face future costs and reputational risks that can negatively impact returns\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Employee Growth Consistency\", \"construction\": \"Calculate the standard deviation of the year-over-year change in total employees over the past 5 years\", \"rationale\": \"Firms with consistent employee growth may be better positioned to deliver stable returns to shareholders\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Customer Concentration Risk\", \"construction\": \"Calculate the Herfindahl index of customer concentration, using data on the firm's top 5 customers\", \"rationale\": \"Firms with high customer concentration may face future risks and uncertainties that can negatively impact returns\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Tax Loss Carryforward\", \"construction\": \"Calculate the ratio of tax loss carryforwards to total assets, using data from the firm's 10-K filings\", \"rationale\": \"Firms with high tax loss carryforwards may be able to reduce future tax liabilities and increase returns to shareholders\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Pension Plan Funding Status\", \"construction\": \"Calculate the ratio of pension plan assets to pension plan liabilities, using data from the firm's 10-K filings\", \"rationale\": \"Firms with well-funded pension plans may face lower future liabilities and increased financial flexibility\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Executive Compensation Alignment\", \"construction\": \"Calculate the ratio of executive compensation to total firm value, using data from the firm's proxy filings\", \"rationale\": \"Firms with executive compensation packages that are aligned with shareholder interests may be more likely to deliver returns to shareholders\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Director Busyness\", \"construction\": \"Calculate the average number of board seats held by each director, using data from the firm's proxy filings\", \"rationale\": \"Firms with busy directors may face future governance risks and decreased board effectiveness\", \"higher_returns_for\": \"low values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 737,
+   "total_tokens": 1031,
+   "cached_tokens": 256
+  }
+ }
+}

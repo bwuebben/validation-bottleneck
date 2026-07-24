@@ -20,7 +20,7 @@ def strip_fences(c: str) -> str:
 
 def main() -> None:
     rows = []
-    for f in sorted(CORPUS.glob("gpt*/y*_seed*.json")):
+    for f in sorted(CORPUS.glob("*/y*_seed*.json")):
         if f.name.startswith("smoke_"):
             continue
         env = json.loads(f.read_text())

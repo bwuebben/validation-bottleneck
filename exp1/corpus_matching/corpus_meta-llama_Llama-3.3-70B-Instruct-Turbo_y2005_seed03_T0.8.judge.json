@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:21:23.401481+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y2005_seed03_T0.8.json",
+  "prompt_sha256": "905cac839c6f9be1dc3709102b5f5c4dcbe50fb6ceeea2bc551d8fed68c56b2e"
+ },
+ "response": {
+  "id": "chatcmpl-E5A7zhtnKulIhTNxxmJGevadmshNH",
+  "object": "chat.completion",
+  "created": 1784899279,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses R&D variability or similar construction.\"},\n  {\"index\": 1, \"match\": \"ChAssetTurnover\", \"strength\": \"close\", \"reason\": \"Both relate to changes in turnover, but focus on different components.\"},\n  {\"index\": 2, \"match\": \"grcapx\", \"strength\": \"close\", \"reason\": \"Both measure change in capex, but time window differs.\"},\n  {\"index\": 3, \"match\": \"AdExp\", \"strength\": \"related\", \"reason\": \"Both use advertising expense, but persistence is not in library.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee growth volatility.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses receivable days outstanding.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses persistence of taxes paid.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses change in intangible assets.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses operating lease expense ratio.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses deferred tax assets/liabilities ratio.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2717,
+   "completion_tokens": 347,
+   "total_tokens": 3064,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

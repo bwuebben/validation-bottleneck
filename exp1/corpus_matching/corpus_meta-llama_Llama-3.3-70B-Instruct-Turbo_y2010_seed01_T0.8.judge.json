@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:22:03.153170+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y2010_seed01_T0.8.json",
+  "prompt_sha256": "5531718e133380cd64e4245bbc92e29d59d3ad9114f38a80b6ca8fdaeb701cca"
+ },
+ "response": {
+  "id": "chatcmpl-E5A8cwtKJ5KK8giwLllB7KRa7JKBU",
+  "object": "chat.completion",
+  "created": 1784899318,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses R&D volatility or similar construction.\"},\n  {\"index\": 1, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Both measure concentration, but Herf is for industry, not customers.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses supplier count or supply chain complexity.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee turnover or similar human capital signal.\"},\n  {\"index\": 4, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Both relate patents to R&D, but PatentsRD uses granted patents, not pending.\"},\n  {\"index\": 5, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Herf is a Herfindahl index, but for industry, not geographic segments.\"},\n  {\"index\": 6, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Both relate to governance, but construction is different.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses environmental liability or similar construction.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses product lifecycle or product age.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses operating lease obligations or off-balance-sheet financing.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2853,
+   "completion_tokens": 371,
+   "total_tokens": 3224,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

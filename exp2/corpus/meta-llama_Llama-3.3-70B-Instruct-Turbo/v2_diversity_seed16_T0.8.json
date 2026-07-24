@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:01:05.237696+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 16,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQL4v2-6Ng1vN-a2031c382c28d250",
+  "object": "chat.completion",
+  "created": 1784898051,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 16,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Composite 1\", \"mechanism\": \"Firms with high R&D ability and low accruals are likely to outperform due to their innovative capabilities and efficient use of resources.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RDAbility\"}, {\"weight\": -1.0, \"primitive\": \"Accruals\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite 2\", \"mechanism\": \"Companies with high intangible assets and low leverage are more likely to generate long-term value due to their ability to adapt to changing market conditions.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanBM\"}, {\"weight\": -0.5, \"primitive\": \"Leverage\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \n\"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 18},\n{\"name\": \"Composite 3\", \"mechanism\": \"Firms with high operating profitability and low idiosyncratic volatility are more likely to deliver stable returns due to their efficient operations and low risk profile.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"OperProf\"}, {\"weight\": -1.0, \"primitive\": \"IdioVolAHT\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"STreversal\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 30},\n{\"name\": \"Composite 4\", \"mechanism\": \"Companies with high customer momentum and low short interest are more likely to outperform due to their strong customer base and low short selling pressure.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"iomom_cust\"}, {\"weight\": -0.5, \"primitive\": \"ShortInterest\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \n\"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 12},\n{\"name\": \"Composite 5\", \"mechanism\": \"Firms with high governance scores and low debt issuance are more likely to generate long-term value due to their effective management and low financial risk.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Governance\"}, {\"weight\": -1.0, \"primitive\": \"DebtIssuance\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite 6\", \"mechanism\": \"Companies with high R&D expenses and low operating leverage are more likely to innovate and adapt to changing market conditions, leading to outperformance.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": -0.5, \"primitive\": \"OPLeverage\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \n\"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 18},\n{\"name\": \"Composite 7\", \"mechanism\": \"Firms with high intangible assets and low illiquidity are more likely to generate long-term value due to their ability to adapt to changing market conditions and low trading costs.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanEP\"}, {\"weight\": -1.0, \"primitive\": \"Illiquidity\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"STreversal\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 30},\n{\"name\": \"Composite 8\", \"mechanism\": \"Companies with high operating cash flows and low net debt financing are more likely to deliver stable returns due to their efficient operations and low financial risk.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"CBOperProf\"}, {\"weight\": -0.5, \"primitive\": \"NetDebtFinance\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \n\"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 12}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2988,
+   "completion_tokens": 1630,
+   "total_tokens": 4618,
+   "cached_tokens": 2816
+  }
+ }
+}

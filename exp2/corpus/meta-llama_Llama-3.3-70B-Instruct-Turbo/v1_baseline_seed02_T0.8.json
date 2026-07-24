@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T12:52:37.875629+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 2,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQHVtc-zfFMX-a2030ff9a949f5f7",
+  "object": "chat.completion",
+  "created": 1784897550,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 2,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Composite 1\", \n\"mechanism\": \"Firms with high accruals and low book-to-market ratios tend to have lower returns due to overestimation of their financial health, so a composite that combines these factors should earn higher returns.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Accruals\"}, {\"weight\": -1.0, \"primitive\": \"BM\"}], \"regime\": null, \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite 2\", \n\"mechanism\": \"Companies with high R&D expenditures and low market-to-book ratios tend to have higher returns due to their innovative potential, so a composite that combines these factors should earn higher returns.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": -1.0, \"primitive\": \"BM\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": 30},\n{\"name\": \"Composite 3\", \n\"mechanism\": \"Firms with high idiosyncratic volatility and low momentum tend to have lower returns due to their high risk and low growth potential, so a composite that combines these factors should earn higher returns.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IdioVolAHT\"}, {\"weight\": -1.0, \"primitive\": \"Mom12m\"}], \"regime\": null, \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"above\", \"threshold\": 0.3}, {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": 18},\n{\"name\": \"Composite 4\", \n\"mechanism\": \"Companies with high operating leverage and low financial leverage tend to have higher returns due to their ability to generate cash flow and reduce debt, so a composite that combines these factors should earn higher returns.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"OPLeverage\"}, {\"weight\": -1.0, \"primitive\": \"BookLeverage\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.85, \n\"expected_decay_half_life_months\": 36},\n{\"name\": \"Composite 5\", \n\"mechanism\": \"Firms with high return on assets and low market-to-book ratios tend to have higher returns due to their high profitability and undervaluation, so a composite that combines these factors should earn higher returns.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"roaq\"}, {\"weight\": -1.0, \"primitive\": \"BM\"}], \"regime\": null, \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Accruals\", \"bound\": \"below\", \"threshold\": 0.3}, {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"lower\"}], \n\"expected_annualized_sharpe\": 0.75, \n\"expected_decay_half_life_months\": 12},\n{\"name\": \"Composite 6\", \n\"mechanism\": \"Companies with high R&D ability and low idiosyncratic volatility tend to have higher returns due to their innovative potential and low risk, so a composite that combines these factors should earn higher returns.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RDAbility\"}, {\"weight\": -1.0, \"primitive\": \"IdioVolAHT\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.95, \n\"expected_decay_half_life_months\": 42},\n{\"name\": \"Composite 7\", \n\"mechanism\": \"Firms with high intangible assets and low book-to-market ratios tend to have higher returns due to their high growth potential and undervaluation, so a composite that combines these factors should earn higher returns.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanBM\"}, {\"weight\": -1.0, \"primitive\": \"BM\"}], \"regime\": null, \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"above\", \"threshold\": 0.3}, {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite 8\", \n\"mechanism\": \"Companies with high dividend yield and low financial leverage tend to have higher returns due to their high income generation and low risk, so a composite that combines these factors should earn higher returns.\", \n\"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"DivYieldST\"}, {\"weight\": -1.0, \"primitive\": \"BookLeverage\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.9, \n\"expected_decay_half_life_months\": 36}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2887,
+   "completion_tokens": 1675,
+   "total_tokens": 4562,
+   "cached_tokens": 2816
+  }
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:05:52.809341+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 6,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQMaDW-zfFMX-a203236349588dd6",
+  "object": "chat.completion",
+  "created": 1784898345,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 6,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"R&D Intensity Momentum\", \"construction\": \"Calculate the 3-year change in R&D expenses scaled by average total assets over the same period\", \"rationale\": \"Firms with increasing R&D investment are more likely to experience future growth and innovation, leading to higher returns\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Taxes Paid Ratio\", \"construction\": \"Compute the ratio of income taxes paid to pretax income over the past year\", \"rationale\": \"Firms with lower taxes paid may be taking excessive risks or engaging in tax avoidance schemes, while firms with higher taxes paid may be more profitable and stable\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Employee Growth Rate\", \"construction\": \"Calculate the 2-year growth rate of total employees\", \"rationale\": \"Firms with rapidly growing workforces may be experiencing rapid expansion and increasing demand for their products or services\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Advertising Efficiency\", \"construction\": \"Compute the ratio of advertising expenses to sales over the past year\", \"rationale\": \"Firms with lower advertising expenses relative to sales may be more efficient in their marketing efforts and have stronger brand recognition\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Pension Funding Status\", \"construction\": \"Calculate the ratio of pension assets to pension liabilities as reported in the footnotes\", \"rationale\": \"Firms with better-funded pension plans may have lower future liabilities and higher financial flexibility\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Environmental Liability\", \"construction\": \"Estimate the ratio of environmental liabilities to total assets using data from the footnotes and industry reports\", \"rationale\": \"Firms with lower environmental liabilities may have lower future costs and reputational risks associated with environmental degradation\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Patent Citation Count\", \"construction\": \"Count the number of patent citations received by a firm's patents over the past 5 years\", \"rationale\": \"Firms with more highly-cited patents may have more innovative and valuable intellectual property\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Labor Union Coverage\", \"construction\": \"Estimate the percentage of employees covered by labor unions using data from industry reports and company filings\", \"rationale\": \"Firms with lower labor union coverage may have more flexible labor costs and lower risk of labor disputes\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Corporate Giving Ratio\", \"construction\": \"Compute the ratio of charitable donations to net income over the past year\", \"rationale\": \"Firms with higher corporate giving may have stronger community relationships and reputations, while firms with lower giving may be more focused on shareholder value\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"North American Revenue Concentration\", \"construction\": \"Calculate the percentage of total revenue earned in North America over the past year\", \"rationale\": \"Firms with higher revenue concentration in North America may be more exposed to regional economic trends and have lower diversification benefits\", \"higher_returns_for\": \"low values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 688,
+   "total_tokens": 982,
+   "cached_tokens": 256
+  }
+ }
+}

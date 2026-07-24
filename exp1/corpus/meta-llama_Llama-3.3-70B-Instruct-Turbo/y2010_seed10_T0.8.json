@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:13:33.372898+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQPwBQ-zfFMX-a2032ea34ef40aec",
+  "object": "chat.completion",
+  "created": 1784898806,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 10,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"R&DIntensityVolatility\", \"construction\": \"standard deviation of R&D expenses over the past 5 years, scaled by average total assets\", \"rationale\": \"Firms with highly volatile R&D investments may be more likely to experience breakthroughs or failures, leading to divergent future returns\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"EmployeeGrowthAccelerations\", \"construction\": \"change in 3-year employee growth rate, relative to the prior 3-year period\", \"rationale\": \"Accelerating employee growth may signal successful firm expansion or impending over-expansion, with implications for future returns\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"IntangibleAssetObsolescence\", \"construction\": \"percentage of intangible assets that have been on the balance sheet for over 10 years, scaled by total intangible assets\", \"rationale\": \"Firms with large fractions of obsolete intangible assets may struggle to adapt to changing market conditions\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"TradeCreditorsConcentration\", \"construction\": \"Herfindahl index of trade creditor concentrations, based on accounts payable and total current liabilities\", \"rationale\": \"Firms with concentrated trade creditor bases may face higher supply chain risks and potential disruptions\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"GAAPtoTaxIncomeDispersion\", \"construction\": \"standard deviation of differences between GAAP net income and tax net income over the past 5 years\", \"rationale\": \"Firms with large dispersions between GAAP and tax accounting results may be engaging in aggressive tax or accounting practices, with uncertain implications for future returns\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"BoardMemberBusyiness\", \"construction\": \"average number of other public company board seats held by each firm's board members\", \"rationale\": \"Firms with busy, over-committed board members may suffer from inadequate oversight and guidance\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"DividendPayoutSmoothing\", \"construction\": \"standard deviation of dividend payout ratios over the past 10 years\", \"rationale\": \"Firms that smooth dividend payouts may be prioritizing shareholder returns over investment opportunities, with implications for future growth\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"InstitutionalInvestorHerding\", \"construction\": \"percentage of institutional investor holdings that are also held by the top 5 institutional investors in the stock\", \"rationale\": \"Firms with high levels of institutional herding may be more susceptible to future price movements driven by coordinated investor actions\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"CapitalExpenditureReversals\", \"construction\": \"frequency of years with declining capital expenditures, over the past 10 years\", \"rationale\": \"Firms that frequently reverse or reduce capital expenditures may be experiencing changing business conditions or poor investment decisions\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"OptionMarketImpliedSkewness\", \"construction\": \"implied skewness of firm-level stock option prices, estimated using a parametric model\", \"rationale\": \"Fims with high implied skewness in option markets may be perceived as having greater potential for extreme returns, either positive or negative\", \"higher_returns_for\": \"high values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 730,
+   "total_tokens": 1024,
+   "cached_tokens": 256
+  }
+ }
+}

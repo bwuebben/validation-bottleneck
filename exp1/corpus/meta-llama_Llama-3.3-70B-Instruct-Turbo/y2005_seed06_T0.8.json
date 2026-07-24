@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:11:13.833755+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 6,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQPEBA-fdNmn-a2032b420ede43c3",
+  "object": "chat.completion",
+  "created": 1784898668,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 6,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"R&D Expense Growth Volatility\", \"construction\": \"standard deviation of year-over-year changes in R&D expenses over the past 5 years, using Compustat data\", \"rationale\": \"Firms with volatile R&D expense growth may face higher uncertainty and thus higher required returns, as investors demand compensation for increased risk.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"CEO Portfolio Concentration\", \"construction\": \"percentage of CEO's net worth held in company stock, using ExecuComp data and proxy statements\", \"rationale\": \"CEOs with more concentrated portfolios may take on more risk, leading to higher expected returns for shareholders.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Supply Chain Complexity\", \"construction\": \"number of distinct suppliers and customers, using trade publication data and 10-K filings\", \"rationale\": \"Firms with complex supply chains may face higher operational risks and thus higher required returns.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Institutional Investor Attention\", \"construction\": \"number of distinct institutional investors holding the stock, using 13F filings\", \"rationale\": \"Firms with more institutional investor attention may face higher scrutiny and thus lower required returns, as investors are more informed.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Employee Stock Option Expensivity\", \"construction\": \"value of employee stock options granted, using Compustat data and proxy statements\", \"rationale\": \"Firms with more expensively granted employee stock options may face higher agency costs and thus higher required returns.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Board Interconnectedness\", \"construction\": \"number of shared board members with other firms, using proxy statements and BoardEx data\", \"rationale\": \"Firms with more interconnected boards may face higher risks of groupthink and thus higher required returns.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Patent Citation Network Centrality\", \"construction\": \"number of citations received by a firm's patents, using USPTO data\", \"rationale\": \"Firms with more central patent citation networks may face higher risks of intellectual property disputes and thus higher required returns.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Media Sentiment Dispersion\", \"construction\": \"standard deviation of media sentiment scores, using Dow Jones news archives\", \"rationale\": \"Firms with more dispersed media sentiment may face higher uncertainty and thus higher required returns, as investors demand compensation for increased risk.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Industry Relative Valuation Dispersion\", \"construction\": \"standard deviation of price-to-book ratios within an industry, using Compustat data\", \"rationale\": \"Firms in industries with higher relative valuation dispersion may face higher risks of mispricing and thus higher required returns.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Employee Turnover Rate\", \"construction\": \"percentage of employees leaving the firm, using Compustat data and 10-K filings\", \"rationale\": \"Firms with higher employee turnover rates may face higher human capital risks and thus higher required returns.\", \"higher_returns_for\": \"high values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 704,
+   "total_tokens": 998,
+   "cached_tokens": 256
+  }
+ }
+}

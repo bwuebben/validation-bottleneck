@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:20:46.177981+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/meta-llama_Llama-3.3-70B-Instruct-Turbo/y2000_seed07_T0.8.json",
+  "prompt_sha256": "8d943439b267c040288aa956b19546c8bb26b37a9cb7cd993be6ed6f34ffe360"
+ },
+ "response": {
+  "id": "chatcmpl-E5A7NggbbPrBLcgyPeEANKamgzgjy",
+  "object": "chat.completion",
+  "created": 1784899241,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses R&D volatility or similar construction.\"},\n  {\"index\": 1, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Herf uses Herfindahl index, but for industry concentration, not customers.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor tracks SIC code changes or industry migration.\"},\n  {\"index\": 3, \"match\": \"hire\", \"strength\": \"related\", \"reason\": \"hire uses employment growth, but not acceleration or difference in growth rates.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses dispersion of institutional ownership.\"},\n  {\"index\": 5, \"match\": \"GrSaleToGrInv\", \"strength\": \"related\", \"reason\": \"Both relate to efficiency/costs, but different construction and focus.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses geographic segment sales growth.\"},\n  {\"index\": 7, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Governance index may include audit committee independence, but not exact.\"},\n  {\"index\": 8, \"match\": \"FR\", \"strength\": \"exact\", \"reason\": \"FR is pension funding status, matching liabilities/assets construction.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses Herfindahl index of insider ownership.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2876,
+   "completion_tokens": 366,
+   "total_tokens": 3242,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

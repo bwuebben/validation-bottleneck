@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:10:38.197059+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 2,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQNyKi-zfFMX-a2032a0b9c81426a",
+  "object": "chat.completion",
+  "created": 1784898618,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 2,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"Capital Expenditure Stability\", \"construction\": \"Calculate the standard deviation of capital expenditures (from Compustat) over the past 5 years, normalized by total assets\", \"rationale\": \"Firms with stable capital expenditures are better positioned to generate consistent cash flows, as they are less likely to experience large swings in investment outlays\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Industry Relative Advertising Efficiency\", \"construction\": \"Calculate the ratio of advertising expenses (from Compustat) to sales, then rank this ratio within each industry (defined by 2-digit SIC code) over the past 3 years\", \"rationale\": \"Firms that efficiently allocate advertising expenditures within their industry are likely to experience higher growth and returns\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Employee Growth Acceleration\", \"construction\": \"Calculate the 3-year moving average of the change in employee count (from Compustat), then calculate the acceleration of this growth rate over the past year\", \"rationale\": \"Firms experiencing accelerating employee growth are likely to be investing in high-growth opportunities, which can drive future returns\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Trade Credit Ratio\", \"construction\": \"Calculate the ratio of accounts payable (from Compustat) to cost of goods sold, then normalize by the industry median ratio over the past 2 years\", \"rationale\": \"Firms with high trade credit ratios are able to negotiate favorable payment terms with suppliers, indicating strong bargaining power and potential for higher returns\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Voluntary Disclosure Frequency\", \"construction\": \"Count the number of 8-K filings (from EDGAR) over the past year that are not required by law, then normalize by total assets\", \"rationale\": \"Firms that voluntarily disclose more information are likely to be more transparent and have lower information asymmetry, which can lead to higher returns\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Supply Chain Concentration\", \"construction\": \"Calculate the Herfindahl index of sales concentrated among the top 5 customers (from Compustat), then normalize by total sales\", \"rationale\": \"Firms with concentrated supply chains are more vulnerable to customer-specific risks, which can lead to lower returns\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"R&D Tax Benefit\", \"construction\": \"Calculate the ratio of R&D tax credits (from Compustat) to total R&D expenses, then normalize by the industry median ratio over the past 2 years\", \"rationale\": \"Firms that effectively utilize R&D tax credits are likely to have a competitive advantage in innovation and investment, driving higher returns\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Institutional Investor Concentration\", \"construction\": \"Calculate the Herfindahl index of institutional ownership (from Thomson Financial) concentrated among the top 10 institutional investors, then normalize by total shares outstanding\", \"rationale\": \"Firms with concentrated institutional ownership are more likely to experience information-driven trading and potential price inefficiencies\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Marketing Expense Persistence\", \"construction\": \"Calculate the 3-year moving average of the change in marketing expenses (from Compustat), then calculate the persistence of this growth rate over the past year using an AR(1) model\", \"rationale\": \"Firms with persistent marketing expense growth are likely to experience stable and increasing brand value, driving higher returns\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Taxes Paid on Foreign Earnings\", \"construction\": \"Calculate the ratio of foreign earnings (from Compustat) to total earnings, then multiply by the effective tax rate on foreign earnings (estimated using a proprietary tax database)\", \"rationale\": \"Firms that minimize taxes on foreign earnings are likely to have a competitive advantage in global operations and investment, leading to higher returns\", \"higher_returns_for\": \"low values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 872,
+   "total_tokens": 1166,
+   "cached_tokens": 0
+  }
+ }
+}

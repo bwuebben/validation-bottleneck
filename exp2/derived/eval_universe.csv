@@ -1,3 +1,4 @@
 model,hypotheses,valid,invalid,compliant,distinct_M,dup_rate
 gpt-4-0613,336,334,2,320,330,0.0119760479041916
 gpt-4o-2024-08-06,336,324,12,336,318,0.01851851851851849
+meta-llama_Llama-3.3-70B-Instruct-Turbo,328,324,4,328,294,0.09259259259259256

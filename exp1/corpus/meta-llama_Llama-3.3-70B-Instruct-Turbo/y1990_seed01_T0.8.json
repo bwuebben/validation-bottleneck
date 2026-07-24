@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T13:05:07.623200+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 1,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQMGpA-6Ng1vN-a20321f5c8c55ed0",
+  "object": "chat.completion",
+  "created": 1784898287,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 1,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n{\"name\": \"R&D Intensity Volatility\", \"construction\": \"standard deviation of R&D expense divided by total assets over the past 5 years\", \"rationale\": \"Firms with more volatile R&D investments may face greater uncertainty and require a higher return to compensate investors for the risk. This volatility can be a proxy for the firm's ability to adapt to changing market conditions.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Pension Plan Underfunding\", \"construction\": \"estimated pension liability minus pension plan assets, scaled by total assets\", \"rationale\": \"Firms with underfunded pension plans may face significant future liabilities, increasing their financial risk and required return. This underfunding can be a signal of the firm's overall financial health.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Foreign Sales Concentration\", \"construction\": \"proportion of total sales generated from foreign countries, calculated over the past 3 years\", \"rationale\": \"Firms with a high concentration of foreign sales may be more exposed to exchange rate fluctuations and country-specific risks, requiring a higher return to compensate investors. This concentration can be a proxy for the firm's global diversification.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Employee Growth Rate\", \"construction\": \"average annual growth rate of total employees over the past 5 years\", \"rationale\": \"Firms with rapidly growing workforces may be experiencing increasing returns to scale or expanding into new markets, leading to higher expected returns. This growth rate can be a signal of the firm's future prospects.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Advertising Expense Persistence\", \"construction\": \"autoregressive coefficient from a regression of current advertising expense on past advertising expense, estimated over the past 5 years\", \"rationale\": \"Firms with persistent advertising expenses may be building strong brand recognition and customer loyalty, leading to higher expected returns. This persistence can be a proxy for the firm's marketing effectiveness.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Tangible Asset Intensity\", \"construction\": \"net property, plant, and equipment divided by total assets\", \"rationale\": \"Firms with high tangible asset intensity may be more vulnerable to economic downturns and require a higher return to compensate investors for the risk. This intensity can be a signal of the firm's capital structure.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Accounts Receivable Turnover\", \"construction\": \"total sales divided by average accounts receivable, calculated over the past year\", \"rationale\": \"Firms with high accounts receivable turnover may be experiencing strong customer demand and efficient working capital management, leading to higher expected returns. This turnover can be a proxy for the firm's operational efficiency.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Capital Expenditure Reversal\", \"construction\": \"change in capital expenditures divided by total assets, calculated over the past year\", \"rationale\": \"Firms with large reversals in capital expenditures may be responding to changes in their competitive environment, requiring a higher return to compensate investors for the risk. This reversal can be a signal of the firm's adaptability.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Inventory Growth Rate\", \"construction\": \"average annual growth rate of total inventory over the past 5 years\", \"rationale\": \"Firms with rapidly growing inventories may be experiencing increasing demand or preparing for future growth, leading to higher expected returns. This growth rate can be a proxy for the firm's future prospects.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Executive Compensation Sensitivity\", \"construction\": \"sensitivity of CEO compensation to stock price performance, estimated over the past 5 years\", \"rationale\": \"Firms with high executive compensation sensitivity may be more likely to have managers acting in the interests of shareholders, leading to higher expected returns. This sensitivity can be a proxy for the firm's corporate governance.\", \"higher_returns_for\": \"high values of the measure\"}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 294,
+   "completion_tokens": 872,
+   "total_tokens": 1166,
+   "cached_tokens": 256
+  }
+ }
+}

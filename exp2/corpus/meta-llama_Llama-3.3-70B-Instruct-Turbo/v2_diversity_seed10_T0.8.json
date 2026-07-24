@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "utc": "2026-07-24T12:59:48.669416+00:00",
+  "model_requested": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "otQKh8Y-6Ng1vN-a2031a6e1adfd954",
+  "object": "chat.completion",
+  "created": 1784897978,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "prompt": [],
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "seed": 10,
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Composite 1\", \"mechanism\": \"Firms with high advertising expenses and low book leverage tend to outperform, as they can capitalize on their market presence and manage their debt effectively.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"AdExp\"}, {\"weight\": -1.0, \"primitive\": \"BookLeverage\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6m\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite 2\", \"mechanism\": \"Companies with high intangible assets and low idiosyncratic volatility tend to outperform, as they can capitalize on their intellectual property and manage their risk effectively.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanBM\"}, {\"weight\": -1.0, \"primitive\": \"IdioVol3F\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 18},\n{\"name\": \"Composite 3\", \"mechanism\": \"Firms with high operating profitability and low short interest tend to outperform, as they can capitalize on their strong operations and avoid the attention of short sellers.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"OperProf\"}, {\"weight\": -1.0, \"primitive\": \"ShortInterest\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"above\", \"threshold\": 0.3}, {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 30},\n{\"name\": \"Composite 4\", \"mechanism\": \"Companies with high R&D expenses and low realized volatility tend to outperform, as they can capitalize on their innovative products and manage their risk effectively.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": -1.0, \"primitive\": \"RealizedVol\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6mJunk\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 12},\n{\"name\": \"Composite 5\", \"mechanism\": \"Firms with high earnings consistency and low change in forecast accruals tend to outperform, as they can capitalize on their stable earnings and avoid the attention of skeptical investors.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"EarningsConsistency\"}, {\"weight\": -1.0, \"primitive\": \"ChForecastAccrual\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"weaker\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite 6\", \"mechanism\": \"Companies with high intangible assets and high operating leverage tend to outperform, as they can capitalize on their intellectual property and scale their operations effectively.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanEP\"}, {\"weight\": 1.0, \"primitive\": \"OPLeverage\"}], \"regime\": null, \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"above\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 18},\n{\"name\": \"Composite 7\", \"mechanism\": \"Firms with high R&D ability and low idiosyncratic volatility tend to outperform, as they can capitalize on their innovative products and manage their risk effectively.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RDAbility\"}, {\"weight\": -1.0, \"primitive\": \"IdioVolAHT\"}], \"regime\": \"TERM_SPREAD_NEGATIVE\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom6mJunk\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 12},\n{\"name\": \"Composite 8\", \"mechanism\": \"Companies with high net operating assets and low short interest tend to outperform, as they can capitalize on their strong operations and avoid the attention of short sellers.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"NOA\"}, {\"weight\": -1.0, \"primitive\": \"ShortInterest\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"above\", \"threshold\": 0.3}, {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 30}\n]}",
+     "tool_calls": []
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2988,
+   "completion_tokens": 1624,
+   "total_tokens": 4612,
+   "cached_tokens": 2816
+  }
+ }
+}

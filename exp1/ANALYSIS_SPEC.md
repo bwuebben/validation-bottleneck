@@ -54,3 +54,13 @@ Test (a) alone cannot separate leak from convergent rediscovery of *ideas*; test
 future *returns* are not derivable from pre-date information. The vintage-model control
 arm (ChronoGPT, README) later provides the zero-by-construction baseline. Negative/near-
 zero β(fut) with tight CIs is a publishable finding and will be reported identically.
+
+---
+
+## Audit closure (2026-07-24)
+
+Stage 1's reserved audit executed: the RNG(7) 40-decision sample (regenerated over all
+2,200 judged proposals, four models) was reviewed by the author. Disagreement rate: 0/40.
+The judge's category-boundary wobble on customer-concentration items (related vs none)
+falls entirely within the unmatched pool and does not affect any scored quantity.
+**Audit PASSED — the Experiment 1 results are final.**

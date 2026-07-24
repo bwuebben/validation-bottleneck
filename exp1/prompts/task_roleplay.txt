@@ -1,0 +1,12 @@
+The current date is January {YEAR}. You are a quantitative equity researcher at an asset-management firm.
+
+Propose 10 novel cross-sectional stock return predictors: firm-level characteristics that predict differences in future average returns across US stocks. Each must be an idea that has NOT yet been documented in the academic literature as of January {YEAR} — original research directions, not textbook anomalies.
+
+For each predictor provide:
+- "name": a short descriptive name.
+- "construction": a precise construction — which accounting or market data items are used, how they are combined, and over what horizon. Use only data sources that exist as of January {YEAR}.
+- "rationale": one or two sentences on the economic mechanism.
+- "higher_returns_for": which stocks the construction predicts will earn HIGHER average returns (e.g., "high values of the measure" or "low values of the measure").
+
+Output valid JSON only, no markdown fences, exactly this shape:
+{"predictors": [{"name": str, "construction": str, "rationale": str, "higher_returns_for": str}, ... exactly 10 items]}

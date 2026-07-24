@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:50:45.970374+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 3,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zLPoFmr9fR2egUNitVxZqb14oKt",
+  "object": "chat.completion",
+  "created": 1784857827,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\n    \"name\": \"Research and Development Intensity\",\n    \"construction\": \"Annual R&D expenditure / market capitalization\",\n    \"rationale\": \"Firms investing more in R&D may be more innovative, possibly leading to higher future earnings.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Advertising Expenditure Ratio\",\n    \"construction\": \"Annual advertising expenditure / total sales\",\n    \"rationale\": \"High advertising spending may signal superior product quality or market power.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Employee Satisfaction\",\n    \"construction\": \"Survey data on employee satisfaction, standardized and rescaled\",\n    \"rationale\": \"Firms with more satisfied employees may have lower turnover and higher productivity.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Executive Age\",\n    \"construction\": \"Average age of the top five executives\",\n    \"rationale\": \"Younger executives may be more innovative and growth-oriented.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Corporate Social Responsibility Score\",\n    \"construction\": \"External ratings of firms' environmental, social, and governance performance\",\n    \"rationale\": \"Responsible firms may attract socially conscious investors or customers, boosting returns.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Patent Quality\",\n    \"construction\": \"Citations per patent, standardized and rescaled\",\n    \"rationale\": \"High-quality patents may signal superior innovation and future growth.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"CEO-CFO Pay Ratio\",\n    \"construction\": \"CEO total compensation / CFO total compensation\",\n    \"rationale\": \"A high ratio may signal CEO overconfidence or poor governance.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Customer Concentration\",\n    \"construction\": \"Sales to the largest customer / total sales\",\n    \"rationale\": \"High customer concentration may increase business risk.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Geographic Diversification\",\n    \"construction\": \"Number of distinct geographic markets in which the firm operates\",\n    \"rationale\": \"More diversified firms may be less exposed to local economic shocks.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Supply Chain Complexity\",\n    \"construction\": \"Number of distinct input categories in the firm's production process\",\n    \"rationale\": \"Complex supply chains may be difficult to manage efficiently.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 604,
+   "total_tokens": 874,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

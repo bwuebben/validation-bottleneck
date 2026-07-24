@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:34:07.084691+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y1990_seed02_T0.8.json",
+  "prompt_sha256": "8de9aaf70e7c82673e0793fab4d201b55ff37c186658cf491e00faf8a5666658"
+ },
+ "response": {
+  "id": "chatcmpl-E501b567du4TXQUnGp8BT7gLWbvTk",
+  "object": "chat.completion",
+  "created": 1784860443,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"BookLeverage\", \"strength\": \"related\", \"reason\": Both use debt structure, but focus differs (maturity vs. leverage).\"},\n  {\"index\": 1, \"match\": \"EarningsConsistency\", \"strength\": \"related\", \"reason\": Both use earnings variability, but one is volatility, other is consistency.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": No library predictor uses capital stock age.\"},\n  {\"index\": 3, \"match\": \"Herf\", \"strength\": \"related\", \"reason\": Both measure industry competition, but Herf uses concentration, not market share.\"},\n  {\"index\": 4, \"match\": \"RD\", \"strength\": \"exact\", \"reason\": Both use R&D expenditures divided by sales or market cap.\"},\n  {\"index\": 5, \"match\": \"EarningsStreak\", \"strength\": \"related\", \"reason\": Both use streaks, but one is earnings, other is dividends.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": No library predictor uses labor compensation to assets.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": No library predictor uses geographic diversification.\"},\n  {\"index\": 8, \"match\": \"Tax\", \"strength\": \"close\", \"reason\": Both use taxes relative to income, but construction details may differ.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": No library predictor uses customer revenue concentration.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2681,
+   "completion_tokens": 354,
+   "total_tokens": 3035,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

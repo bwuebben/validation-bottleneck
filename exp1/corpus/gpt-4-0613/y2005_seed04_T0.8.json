@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:57:57.694216+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 4,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zSSB9N1AeIPgEdZRmPakFdKOoK1",
+  "object": "chat.completion",
+  "created": 1784858264,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\"name\": \"Employee Satisfaction Index\", \"construction\": \"Derived from public surveys and social media sentiment analysis about the company as a place to work, normalized on a -1 to 1 scale.\", \"rationale\": \"Happier employees may be more productive, leading to better company performance.\", \"higher_returns_for\": \"High values of the measure\"},\n  {\"name\": \"CEO Tenure\", \"construction\": \"The number of years the current CEO has been in the position.\", \"rationale\": \"Longer-tenured CEOs may indicate stable leadership and vice versa.\", \"higher_returns_for\": \"High values of the measure\"},\n  {\"name\": \"Index of Market Expectation Versus Analyst Expectation\", \"construction\": \"The difference between market consensus (as represented by the current stock price) and analyst consensus on future earnings, normalized as a ratio.\", \"rationale\": \"Significant discrepancies might indicate an under- or over-valued stock.\", \"higher_returns_for\": \"High values of the measure\"},\n  {\"name\": \"Tax Rate Volatility\", \"construction\": \"Standard deviation of the company's effective tax rate over the past five years.\", \"rationale\": \"Greater tax rate volatility may indicate financial instability or aggressive tax strategies.\", \"higher_returns_for\": \"Low values of the measure\"},\n  {\"name\": \"Social Responsibility Index\", \"construction\": \"A measure of the company's impact on society (e.g., environmental record, community involvement), derived from public data and normalized on a -1 to 1 scale.\", \"rationale\": \"Companies with higher social responsibility scores may be more attractive to investors, boosting demand for their shares.\", \"higher_returns_for\": \"High values of the measure\"},\n  {\"name\": \"Product Recalls\", \"construction\": \"Number of product recalls conducted by the company over the past three years.\", \"rationale\": \"Frequent recalls may indicate poor quality control, affecting the company's reputation and sales.\", \"higher_returns_for\": \"Low values of the measure\"},\n  {\"name\": \"R&D Expenditure Ratio\", \"construction\": \"Ratio of Research & Development expenditure to total revenue.\", \"rationale\": \"Higher R&D investments may lead to innovative products and services, improving future profitability.\", \"higher_returns_for\": \"High values of the measure\"},\n  {\"name\": \"Debt Maturity Structure\", \"construction\": \"Weighted average maturity of the company's debt.\", \"rationale\": \"Longer debt maturities may indicate a lower risk of default.\", \"higher_returns_for\": \"High values of the measure\"},\n  {\"name\": \"Percentage of Independent Directors\", \"construction\": \"Ratio of independent directors to the total number of directors on the board.\", \"rationale\": \"A higher percentage of independent directors may indicate better corporate governance.\", \"higher_returns_for\": \"High values of the measure\"},\n  {\"name\": \"Customer Concentration\", \"construction\": \"Herfindahl-Hirschman Index (HHI) of customer concentration, calculated from the company's disclosed major customers.\", \"rationale\": \"Greater customer concentration may indicate higher business risk.\", \"higher_returns_for\": \"Low values of the measure\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 651,
+   "total_tokens": 921,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

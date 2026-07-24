@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:11:37.300072+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yjbWUHd5vvs9I6ytW00MZmj47vb",
+  "object": "chat.completion",
+  "created": 1784855483,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [{\"name\": \"MomentumValueConvergence\", \"mechanism\": \"Combining momentum with value captures the convergence of market expectations with fundamental valuations, potentially earning returns from both price momentum and undervaluation correction.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"Mom12m\"}, {\"weight\": 0.5, \"primitive\": \"BM\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 36}, {\"name\": \"LiquidityRiskArbitrage\", \"mechanism\": \"The combination of liquidity risk and return skewness captures mispricings arising from liquidity constraints and the preference for positive skewness, yielding a premium.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"BetaLiquidityPS\"}, {\"weight\": 0.5, \"primitive\": \"ReturnSkew\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.75, \"expected_decay_half_life_months\": 48}, {\"name\": \"ProfitabilityValuationMix\", \"mechanism\": \"Combining operating profitability with a value measure captures firms that are both profitable and undervalued, likely to mean-revert upwards.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"OperProf\"}, {\"weight\": 0.5, \"primitive\": \"EP\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \"expected_annualized_sharpe\": 0.85, \"expected_decay_half_life_months\": 30}, {\"name\": \"InnovationMomentumSynergy\", \"mechanism\": \"By weighting R&D activity with intermediate momentum, stocks that innovate effectively sustain price rises, capturing the synergy of innovation and momentum.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"RD\"}, {\"weight\": 0.5, \"primitive\": \"IntMom\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}, {\"type\": \"correlation\", \"primitive\": \"RD\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.95, \"expected_decay_half_life_months\": 40}, {\"name\": \"VolatilityValueCrossover\", \"mechanism\": \"Combining systematic volatility with the book-to-market ratio captures value opportunities that emerge in volatile environments.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"betaVIX\"}, {\"weight\": 0.5, \"primitive\": \"BM\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"opposite_sign\"}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 24}, {\"name\": \"GrowthQualityDuality\", \"mechanism\": \"The combination of asset growth with earnings forecast revisions captures the duality of growth expectations and quality upgrades, leading to superior returns.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"AssetGrowth\"}, {\"weight\": 0.5, \"primitive\": \"AnalystRevision\"}], \"regime\": \"TERM_SPREAD_NEGATIVE\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 36}, {\"name\": \"FinancialFlexibilityAdvantage\", \"mechanism\": \"Combining cash to assets with net payout yield identifies firms with financial flexibility, poised to capitalize on opportunities or withstand downturns.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"Cash\"}, {\"weight\": 0.5, \"primitive\": \"NetPayoutYield\"}], \"regime\": null, \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}, {\"type\": \"correlation\", \"primitive\": \"Cash\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 48}, {\"name\": \"EarningsMomentumConsistency\", \"mechanism\": \"Integrating earnings surprise with residual momentum captures consistent price reactions to earnings announcements, exploiting underreaction phenomena.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"}, {\"weight\": 0.5, \"primitive\": \"ResidualMomentum\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"EarningsSurprise\", \"bound\": \"above\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 1.0, \"expected_decay_half_life_months\": 36}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 1552,
+   "total_tokens": 4353,
+   "prompt_tokens_details": {
+    "cached_tokens": 2560,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

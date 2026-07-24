@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:16:34.644654+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zka2ypLoVJwd4o8k6xlGeRVHZe2",
+  "object": "chat.completion",
+  "created": 1784859388,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Insider Option Exercise Ratio\", \"construction\": \"Total value of insider options exercised over the past year divided by total shares outstanding (from SEC Forms 3/4/5 and 10-K).\", \"rationale\": \"Frequent insider option exercises may signal insiders' short-term confidence but could also indicate stock overvaluation and anticipation of mean reversion.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Long-Term Debt Issuance Spike\", \"construction\": \"Indicator variable equal to 1 if the firm\u2019s long-term debt issuance (from cash flow statement) in the past year is more than twice the average of the prior five years; 0 otherwise.\", \"rationale\": \"Unusually large increases in debt may indicate management's optimism about future growth opportunities or, conversely, desperation; the effect on returns is unknown but worth testing.\", \"higher_returns_for\": \"indicator equal to 1\"}, {\"name\": \"Inventory Write-Off Momentum\", \"construction\": \"Sum of inventory write-offs reported over the past eight quarters, scaled by average total assets (Compustat data).\", \"rationale\": \"Persistent inventory write-offs may reflect ongoing operational issues or conservative accounting; mean reversion or overreaction by the market is possible.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Dividend Initiation Delay\", \"construction\": \"Number of years since IPO until the first dividend payment, for firms that eventually pay dividends (using CRSP and Compustat).\", \"rationale\": \"Firms that wait longer before initiating dividends may have different growth or risk profiles, and delayed initiators might be undervalued at the time of their first payout.\", \"higher_returns_for\": \"longer delays\"}, {\"name\": \"Cash Flow Predictability\", \"construction\": \"R-squared of a regression of quarterly operating cash flow on its own four-quarter lagged values (time series, rolling 5 years).\", \"rationale\": \"Firms with more predictable cash flows may be less risky or subject to less mispricing.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Sustained Gross Margin Expansion\", \"construction\": \"Average annual change in gross margin (gross profit/sales) over the past three years.\", \"rationale\": \"Firms with consistently improving gross margins may have strengthening competitive positions and pricing power.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"CapEx Consistency Score\", \"construction\": \"Standard deviation of annual capital expenditures divided by average capital expenditures over the past five years.\", \"rationale\": \"Firms with more consistent (lower variability) capital expenditures may be better managed and face fewer shocks.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Subsidiary Sale Frequency\", \"construction\": \"Number of subsidiary or segment sales (from 10-K footnotes) in the past three years, scaled by firm size.\", \"rationale\": \"Frequent divestitures may indicate management's opportunism, strategic refocusing, or distress; the return implications are ambiguous and unexplored.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Patent Citation Growth\", \"construction\": \"Annual growth rate in patent citations (from USPTO data) attributed to the firm over the past three years.\", \"rationale\": \"Increasing citation rates may proxy for innovation quality and future cash flow growth.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Segment Revenue Diversification Index\", \"construction\": \"Herfindahl-Hirschman Index (HHI) based on revenue shares of each business segment (from Compustat segment data); higher HHI means less diversification.\", \"rationale\": \"Revenue concentration may increase risk or indicate focus; the impact on returns is an open question.\", \"higher_returns_for\": \"low values of the measure (i.e., more diversified firms)\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 817,
+   "total_tokens": 1086,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_1adda89cc2"
+ }
+}

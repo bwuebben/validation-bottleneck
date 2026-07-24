@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:16:10.069219+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 7,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zkCnojqAfK6tiXN9q2g1odg9hcN",
+  "object": "chat.completion",
+  "created": 1784859364,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Short-Term Operating Leverage Change\", \"construction\": \"Change in (Sales - Cost of Goods Sold) / Sales over the most recent quarter.\", \"rationale\": \"Firms with increasing operating leverage may experience greater earnings volatility, which could be rewarded with higher risk premia.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Post-Earnings Accruals Drift\", \"construction\": \"Sum of accruals in the two quarters following an earnings announcement, divided by average total assets.\", \"rationale\": \"Delayed market reaction to accrual quality can predict future returns after earnings events.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Net Insider Trading Activity\", \"construction\": \"Net purchases by insiders (number of shares bought minus sold) as a percent of shares outstanding over the past six months.\", \"rationale\": \"Insiders may possess private information about future prospects; high net buying could signal undervaluation.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Inventory Growth Relative to Industry\", \"construction\": \"Trailing 12-month change in inventories divided by average inventories, minus the industry median of the same measure.\", \"rationale\": \"Firms growing inventories faster than peers may face future sales slowdowns or markdowns.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"CEO Age\", \"construction\": \"Age of the firm's CEO as reported in company proxy statements.\", \"rationale\": \"Younger CEOs may be more likely to pursue growth opportunities or take risks that impact future returns.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Volatility of Free Cash Flow\", \"construction\": \"Standard deviation of quarterly free cash flow (operating cash flow minus capital expenditures) over the past 3 years, scaled by total assets.\", \"rationale\": \"High variability in free cash flow may be associated with riskier, potentially higher-return firms.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Short-Term Debt Proportion\", \"construction\": \"Short-term debt divided by total debt as of most recent fiscal year-end.\", \"rationale\": \"Firms relying more on short-term financing may face rollover risk, potentially earning higher risk premia.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Accounts Receivable Write-Off Ratio\", \"construction\": \"Write-offs of accounts receivable over the past year divided by total sales.\", \"rationale\": \"High write-off ratios may indicate aggressive revenue recognition or deteriorating customer quality.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Media Coverage Change\", \"construction\": \"Change in the number of major news articles mentioning the firm over the past year, normalized by previous-year coverage.\", \"rationale\": \"A sudden spike in media attention may reflect overreaction or attention-driven mispricing.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Patent Filing Intensity\", \"construction\": \"Number of new patents filed in the past year divided by total assets.\", \"rationale\": \"Firms with greater innovation activity may be investing in future growth, which could be underappreciated by the market.\", \"higher_returns_for\": \"high values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 688,
+   "total_tokens": 957,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_1adda89cc2"
+ }
+}

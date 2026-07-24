@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:10:11.309105+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 5,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yiCfGyD7RmvIAYKY5tTcS8WEYTP",
+  "object": "chat.completion",
+  "created": 1784855396,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"Momentum and Volatility Interaction\",\n      \"mechanism\": \"Combining momentum and systematic volatility captures both trend-following behavior and investor fear, potentially leading to enhanced returns as volatile stocks with strong trends outperform in specific environments.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"Mom12m\"},\n          {\"weight\": -0.5, \"primitive\": \"betaVIX\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.8,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"Value and Dividend Timing\",\n      \"mechanism\": \"A combination of book-to-market value and predicted dividend yield may exploit mispricings due to both fundamental value signals and income expectations, leading to returns beyond individual components.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"BM\"},\n          {\"weight\": 0.5, \"primitive\": \"DivYieldST\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.7,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Growth and Profitability Mix\",\n      \"mechanism\": \"High profitability firms with strong asset growth can yield superior returns as they effectively reinvest earnings, balancing growth and profitability.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"OperProf\"},\n          {\"weight\": 0.5, \"primitive\": \"AssetGrowth\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 1.0,\n      \"expected_decay_half_life_months\": 18\n    },\n    {\n      \"name\": \"Leverage and Earnings Consistency\",\n      \"mechanism\": \"Firms with stable earnings and controlled leverage are perceived as less risky, leading to potential mispricing and higher returns when combined.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"EarningsConsistency\"},\n          {\"weight\": -0.5, \"primitive\": \"Leverage\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"weaker\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.75,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"Quality and Sentiment Overlay\",\n      \"mechanism\": \"High-quality stocks with positive analyst revisions outperform due to superior fundamentals and supportive sentiment, potentially yielding excess returns.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"OperProfRD\"},\n          {\"weight\": 0.5, \"primitive\": \"AnalystRevision\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_DOWN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": 20\n    },\n    {\n      \"name\": \"Liquidity Risk and Earnings Surprise\",\n      \"mechanism\": \"Stocks with high bid-ask spreads and positive earnings surprises can offer excess returns as they capture underappreciated liquidity risk and positive news.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"BidAskSpread\"},\n          {\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"weaker\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.6,\n      \"expected_decay_half_life_months\": 15\n    },\n    {\n      \"name\": \"M&A Potential and Cash Position\",\n      \"mechanism\": \"Firms with high takeover vulnerability and strong cash positions might be mispriced due to market speculation, leading to excess returns as potential acquisition targets.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"Activism1\"},\n          {\"weight\": 0.5, \"primitive\": \"Cash\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"lower\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"opposite_sign\"},\n        {\"type\": \"correlation\", \"primitive\": \"Activism2\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.85,\n      \"expected_decay_half_life_months\": 22\n    },\n    {\n      \"name\": \"Debt Issuance and Profitability\",\n      \"mechanism\": \"Firms issuing debt while maintaining profitability might be capitalizing on growth opportunities, leading to underappreciated returns as they leverage efficiently.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": -1.0, \"primitive\": \"DebtIssuance\"},\n          {\"weight\": 1.0, \"primitive\": \"OperProf\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"CashProd\", \"bound\": \"above\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.65,\n      \"expected_decay_half_life_months\": 28\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 1789,
+   "total_tokens": 4590,
+   "prompt_tokens_details": {
+    "cached_tokens": 2560,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

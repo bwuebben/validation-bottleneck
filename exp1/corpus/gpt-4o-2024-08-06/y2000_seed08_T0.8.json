@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:07:58.500214+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 8,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zcF1OITmM65wJBNO6qBvZxmMY1w",
+  "object": "chat.completion",
+  "created": 1784858871,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n    \"predictors\": [\n        {\n            \"name\": \"Patent Growth Rate\",\n            \"construction\": \"Annual growth rate of the number of patents filed by the firm, sourced from the US Patent and Trademark Office, over the past three years.\",\n            \"rationale\": \"Firms with rapidly increasing patent filings may be innovating more aggressively, potentially leading to higher future profitability.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Executive Compensation Ratio\",\n            \"construction\": \"CEO total compensation divided by the total compensation of the top five executives, using data from proxy statements in the last fiscal year.\",\n            \"rationale\": \"A higher ratio may indicate a strong alignment of CEO incentives with shareholder interests, driving better firm performance.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Supplier Concentration Index\",\n            \"construction\": \"The Herfindahl-Hirschman Index (HHI) of the firm's top five suppliers' revenue, sourced from annual reports.\",\n            \"rationale\": \"Firms less dependent on a few suppliers may have more stable operations and better negotiation leverage.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        },\n        {\n            \"name\": \"Customer Satisfaction Score\",\n            \"construction\": \"Annual average of customer satisfaction scores from surveys conducted by independent agencies for the last fiscal year.\",\n            \"rationale\": \"High customer satisfaction may indicate strong customer loyalty and potential future revenue growth.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Environmental Violation Count\",\n            \"construction\": \"Total number of environmental violations reported by the Environmental Protection Agency over the past five years.\",\n            \"rationale\": \"Firms with fewer violations may face lower regulatory risks and associated costs.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        },\n        {\n            \"name\": \"Employee Turnover Ratio\",\n            \"construction\": \"Annual voluntary turnover rate of employees, calculated from human resources reports.\",\n            \"rationale\": \"Lower turnover can indicate employee satisfaction and operational stability.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        },\n        {\n            \"name\": \"R&D Efficiency\",\n            \"construction\": \"Research and development expenses divided by the number of successful product launches in the last three years.\",\n            \"rationale\": \"Efficient R&D spending that leads to successful product launches may indicate effective innovation strategies.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        },\n        {\n            \"name\": \"Social Media Sentiment Score\",\n            \"construction\": \"Average sentiment score of the firm's mentions on major online forums and social media platforms over the past six months, using text analysis tools.\",\n            \"rationale\": \"Positive sentiment may reflect strong consumer approval and brand strength.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Board Diversity Index\",\n            \"construction\": \"Proportion of board members from underrepresented groups, based on annual board composition disclosures.\",\n            \"rationale\": \"Diverse boards may bring a wider range of perspectives, potentially leading to better decision-making and firm performance.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Adoption Speed of New Technology\",\n            \"construction\": \"Time taken for a firm to adopt major new industry-specific technologies relative to its peers, measured in months.\",\n            \"rationale\": \"Firms that quickly adopt new technologies may gain competitive advantages and operational efficiencies.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        }\n    ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 759,
+   "total_tokens": 1028,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2079a33cc7"
+ }
+}

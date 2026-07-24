@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:28:10.761987+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y1995_seed10_T0.8.json",
+  "prompt_sha256": "246d1eeb1af69bc509a73dad71da5a1ac3b1646f1b90dd94f3098545e8bf252c"
+ },
+ "response": {
+  "id": "chatcmpl-E4zvrAsg5PYEuuiZxBb3ruXQoap1A",
+  "object": "chat.completion",
+  "created": 1784860087,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"InvGrowth\", \"strength\": \"exact\", \"reason\": \"Same year-over-year inventory growth construction.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for short-term debt to assets.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for receivables to sales ratio.\"},\n  {\"index\": 3, \"match\": \"GrSaleToGrOverhead\", \"strength\": \"related\", \"reason\": \"Both use R&D and sales growth, but different constructions.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for dividend deviation/volatility.\"},\n  {\"index\": 5, \"match\": \"VarCF\", \"strength\": \"related\", \"reason\": \"Both use cash flow time-series, but one is skewness, one is variance.\"},\n  {\"index\": 6, \"match\": \"GP\", \"strength\": \"close\", \"reason\": \"Both use gross margin, but one is level, one is change.\"},\n  {\"index\": 7, \"match\": \"GrSaleToGrOverhead\", \"strength\": \"related\", \"reason\": \"Both relate SG&A and sales, but different focus.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for net insider buying.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for sales volatility.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2762,
+   "completion_tokens": 360,
+   "total_tokens": 3122,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

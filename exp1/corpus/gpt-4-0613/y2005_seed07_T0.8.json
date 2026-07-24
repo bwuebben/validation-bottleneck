@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:58:48.060613+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 7,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zTFd9xJvp1WFZMWMn9dyd2eheCZ",
+  "object": "chat.completion",
+  "created": 1784858313,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\n    \"name\": \"Net Working Capital Ratio\", \n    \"construction\": \"Calculated by subtracting current liabilities from current assets and dividing by total assets. Data source: quarterly balance sheets.\", \n    \"rationale\": \"Companies with higher net working capital ratios may be better able to weather financial distress.\", \n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"CEO Tenure\", \n    \"construction\": \"Number of years the current CEO has held the position. Data source: annual proxy statements.\", \n    \"rationale\": \"CEOs with longer tenure may have more experience and knowledge, leading to better performance.\", \n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Sales Volatility\", \n    \"construction\": \"Standard deviation of past 5 years' quarterly sales growth rates. Data source: quarterly income statements.\", \n    \"rationale\": \"Firms with more stable sales may be more predictable and less risky.\", \n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Capital Expenditure Ratio\", \n    \"construction\": \"Capital expenditures divided by net income, averaged over the past 5 years. Data source: annual cash flow statements.\", \n    \"rationale\": \"Firms that invest more in capital may be anticipating growth.\", \n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Employee Efficiency\", \n    \"construction\": \"Revenue divided by number of employees. Data source: annual income statements and Form 10-K disclosures.\", \n    \"rationale\": \"Firms that generate more revenue per employee may be more efficient or have more valuable human capital.\", \n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Dividend Change\", \n    \"construction\": \"Change in dividends per share over the past year. Data source: annual dividend announcements.\", \n    \"rationale\": \"A recent increase in dividends may signal confidence from management.\", \n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Share Repurchase Ratio\", \n    \"construction\": \"Dollar amount of share repurchases divided by market capitalization. Data source: annual cash flow statements and stock price data.\", \n    \"rationale\": \"Companies repurchasing their own shares may expect their stock price to rise.\", \n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Debt Maturity\", \n    \"construction\": \"Weighted average maturity of the firm's debt. Data source: annual financial statement footnotes.\", \n    \"rationale\": \"Longer debt maturity may reduce refinancing risk and signal creditworthiness.\", \n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Pension Fund Status\", \n    \"construction\": \"Funded status of the firm's pension plan, defined as the difference between plan assets and projected obligations. Data source: annual pension plan disclosures.\", \n    \"rationale\": \"Better-funded pension plans may reduce future corporate financial risk.\", \n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Customer Concentration\", \n    \"construction\": \"Revenue from the firm's largest customer divided by total revenue. Data source: annual Form 10-K disclosures.\", \n    \"rationale\": \"Higher customer concentration may increase business risk due to dependence on a single customer.\", \n    \"higher_returns_for\": \"Low values of the measure\"\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 772,
+   "total_tokens": 1042,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

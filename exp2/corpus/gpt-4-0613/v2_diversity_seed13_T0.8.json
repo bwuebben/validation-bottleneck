@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:02:49.080766+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 13,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yacAyzC0SWD4yK8lXTWSkUhxn7H",
+  "object": "chat.completion",
+  "created": 1784854926,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\n\"name\": \"Consumption_Frictions\", \n\"mechanism\": \"Variations in consumption patterns due to cyclical factors, consumer sentiment, and market liquidity conditions affect firms differently based on their customer base. Firms with more stable customer bases would perform better in uncertain conditions.\", \n\"expression\": {\n    \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"CustomerMomentum\"},\n        {\"weight\": -0.5, \"primitive\": \"IndMom\"},\n        {\"weight\": -0.5, \"primitive\": \"Herf\"}\n    ], \n    \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \n    \"vol_target\": true\n}, \n\"auxiliary_predictions\": [\n    {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"lower\"}, \n    {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n    {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}\n], \n\"expected_annualized_sharpe\": 0.6, \n\"expected_decay_half_life_months\": 24\n},\n{\n\"name\": \"LiquidityRisk_Differential\", \n\"mechanism\": \"Firms with higher liquidity risk are likely to have higher expected returns - a risk premium. In periods of high market volatility, this liquidity risk is likely to be exacerbated, leading to higher expected returns.\", \n\"expression\": {\n    \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"Illiquidity\"},\n        {\"weight\": -0.5, \"primitive\": \"BetaTailRisk\"}\n    ], \n    \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \n    \"vol_target\": false\n}, \n\"auxiliary_predictions\": [\n    {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"lower\"}, \n    {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n    {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"above\", \"threshold\": 0.3}\n], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": 36\n},\n{\n\"name\": \"Quality_Innovation_Spread\", \n\"mechanism\": \"High quality companies with innovative capabilities outperform their lower quality peers in the long-run, especially in up-market conditions.\", \n\"expression\": {\n    \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"PS\"},\n        {\"weight\": -1.0, \"primitive\": \"PatentsRD\"}\n    ], \n    \"regime\": \"MKT_TRAILING_12M_UP\", \n    \"vol_target\": true\n}, \n\"auxiliary_predictions\": [\n    {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, \n    {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n    {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n], \n\"expected_annualized_sharpe\": 0.8, \n\"expected_decay_half_life_months\": null\n},\n{\n\"name\": \"Investment_Age_Spread\", \n\"mechanism\": \"Firms with higher recent investment but older age will have better performance as the newer investments should start yielding returns while the firm benefits from the stability of its age.\", \n\"expression\": {\n    \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"Investment\"},\n        {\"weight\": 0.5, \"primitive\": \"FirmAge\"}\n    ], \n    \"regime\": null, \n    \"vol_target\": false\n}, \n\"auxiliary_predictions\": [\n    {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n    {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n    {\"type\": \"subperiod_consistency\"}\n], \n\"expected_annualized_sharpe\": 0.6, \n\"expected_decay_half_life_months\": 48\n},\n{\n\"name\": \"Fiscal_Drag\", \n\"mechanism\": \"Firms with higher tax burden and lower external financing will underperform, especially in down-market conditions as these firms face higher cost of capital and fiscal drag.\", \n\"expression\": {\n    \"terms\": [\n        {\"weight\": -1.0, \"primitive\": \"Tax\"},\n        {\"weight\": 0.5, \"primitive\": \"XFIN\"}\n    ], \n    \"regime\": \"MKT_TRAILING_12M_DOWN\", \n    \"vol_target\": false\n}, \n\"auxiliary_predictions\": [\n    {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"lower\"}, \n    {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n    {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"above\", \"threshold\": 0.3}\n], \n\"expected_annualized_sharpe\": 0.5, \n\"expected_decay_half_life_months\": 60\n},\n{\n\"name\": \"Market_Sentiment_Differential\", \n\"mechanism\": \"In periods of low market volatility, firms with higher analyst optimism and higher trading volume will outperform due to positive market sentiment.\", \n\"expression\": {\n    \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"AOP\"},\n        {\"weight\": 0.5, \"primitive\": \"DolVol\"}\n    ], \n    \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \n    \"vol_target\": true\n}, \n\"auxiliary_predictions\": [\n    {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}, \n    {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n    {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": null\n},\n{\n\"name\": \"Growth_Leverage_Differential\", \n\"mechanism\": \"Older firms with higher asset growth and lower leverage will outperform their peers due to lower financial distress risk and higher operational efficiency.\", \n\"expression\": {\n    \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"AssetGrowth\"},\n        {\"weight\": -0.5, \"primitive\": \"Leverage\"},\n        {\"weight\": 0.5, \"primitive\": \"FirmAge\"}\n    ], \n    \"regime\": null, \n    \"vol_target\": false\n}, \n\"auxiliary_predictions\": [\n    {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n    {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n    {\"type\": \"subperiod_consistency\"}\n], \n\"expected_annualized_sharpe\": 0.65, \n\"expected_decay_half_life_months\": 36\n},\n{\n\"name\": \"Credit_Risk_Growth_Differential\", \n\"mechanism\": \"In periods of high market volatility, firms with lower credit rating downgrades and higher asset growth will outperform their peers due to lower credit risk and higher investment efficiency.\", \n\"expression\": {\n    \"terms\": [\n        {\"weight\": -1.0, \"primitive\": \"CredRatDG\"},\n        {\"weight\": 1.0, \"primitive\": \"AssetGrowth\"}\n    ], \n    \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \n    \"vol_target\": true\n}, \n\"auxiliary_predictions\": [\n    {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"lower\"}, \n    {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n    {\"type\": \"correlation\", \"primitive\": \"BetaLiquidityPS\", \"bound\": \"below\", \"threshold\": 0.3}\n], \n\"expected_annualized_sharpe\": 0.7, \n\"expected_decay_half_life_months\": 48\n}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2965,
+   "completion_tokens": 1831,
+   "total_tokens": 4796,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

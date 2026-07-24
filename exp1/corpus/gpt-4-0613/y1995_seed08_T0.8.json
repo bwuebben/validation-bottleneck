@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:52:38.203456+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 8,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zNF2nhXnmuSiWKxee9LojRxEACa",
+  "object": "chat.completion",
+  "created": 1784857941,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n\"predictors\": [\n{\n\"name\": \"Non-Operating Income Dependency\", \n\"construction\": \"Calculate as the ratio of non-operating income to total income for the most recent fiscal year.\", \n\"rationale\": \"Companies overly dependent on non-core activities may be riskier.\", \n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"R&D Investment Intensity\", \n\"construction\": \"Calculate as the ratio of R&D expenses to total assets for the most recent fiscal year.\", \n\"rationale\": \"Higher R&D spending might indicate more innovative firms, which could lead to higher future profits.\", \n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Employee Satisfaction\", \n\"construction\": \"Gather data from surveys of employee satisfaction, normalize and rank across all companies.\", \n\"rationale\": \"Higher employee satisfaction indicates a healthier corporate culture, potentially leading to better performance.\", \n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Greenhouse Gas Emissions\", \n\"construction\": \"Obtain data on each company's greenhouse gas emissions, normalize and rank across all companies.\", \n\"rationale\": \"Companies with higher emissions may face future regulatory risks.\", \n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"Product Diversity\", \n\"construction\": \"Obtain data on the number of distinct products or services a company offers, normalize and rank across all companies.\", \n\"rationale\": \"Greater product diversity may indicate less business risk.\", \n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Customer Concentration\", \n\"construction\": \"Calculate as the percentage of revenue from the company's largest customer in the most recent fiscal year.\", \n\"rationale\": \"High customer concentration indicates higher business risk.\", \n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"Litigation Exposure\", \n\"construction\": \"Collect data on pending lawsuits, normalize and rank across all companies.\", \n\"rationale\": \"Companies with higher litigation risks might be penalized by the stock market.\", \n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"Executive Compensation Structure\", \n\"construction\": \"Calculate as the ratio of variable (performance-based) executive compensation to total executive compensation for the most recent year.\", \n\"rationale\": \"Incentive-aligned compensation structures may lead to superior company performance.\", \n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Charitable Giving\", \n\"construction\": \"Calculate as the ratio of charitable contributions to pre-tax income for the most recent fiscal year.\", \n\"rationale\": \"High charitable giving might indicate strong corporate social responsibility, potentially boosting brand image.\", \n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Board Diversity\", \n\"construction\": \"Calculate as the percentage of female and minority board members for each company.\", \n\"rationale\": \"Companies with diverse boards might benefit from broader perspectives and improved decision making.\", \n\"higher_returns_for\": \"High values of the measure\"\n}\n]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 648,
+   "total_tokens": 918,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:01:52.043559+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 6,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zWEubVOkHueZ3Br5cHBIEpOZNja",
+  "object": "chat.completion",
+  "created": 1784858498,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Social Media Sentiment\",\n      \"construction\": \"Aggregate sentiment of company mentions on social media platforms over the past quarter.\",\n      \"rationale\": \"Positive public sentiment may foretell future stock performance.\",\n      \"higher_returns_for\": \"high sentiment scores\"\n    },\n    {\n      \"name\": \"Employee Satisfaction\",\n      \"construction\": \"Average employee rating from online job review sites over the past year.\",\n      \"rationale\": \"Happy employees may lead to better company performance.\",\n      \"higher_returns_for\": \"high employee satisfaction scores\"\n    },\n    {\n      \"name\": \"Online Sales Growth\",\n      \"construction\": \"Year-over-year growth in company's online sales.\",\n      \"rationale\": \"Companies with strong online sales growth may outperform.\",\n      \"higher_returns_for\": \"high online sales growth\"\n    },\n    {\n      \"name\": \"Product Review Score\",\n      \"construction\": \"Average score of company's products on major online retail sites over the past quarter.\",\n      \"rationale\": \"Companies with high-quality products may have stronger future earnings.\",\n      \"higher_returns_for\": \"high product review scores\"\n    },\n    {\n      \"name\": \"Patent Application Count\",\n      \"construction\": \"Number of patent applications filed by a company in the past year.\",\n      \"rationale\": \"Innovative companies may outperform.\",\n      \"higher_returns_for\": \"high patent application counts\"\n    },\n    {\n      \"name\": \"Data Breach Incidents\",\n      \"construction\": \"Number of data breach incidents reported by a company over the past year.\",\n      \"rationale\": \"Companies with frequent data breaches may underperform due to reputational and financial damages.\",\n      \"higher_returns_for\": \"low data breach incident counts\"\n    },\n    {\n      \"name\": \"Executive Turnover\",\n      \"construction\": \"Number of top-level executives that have left the company in the past year.\",\n      \"rationale\": \"High executive turnover may indicate internal instability, leading to underperformance.\",\n      \"higher_returns_for\": \"low executive turnover\"\n    },\n    {\n      \"name\": \"Supply Chain Diversity\",\n      \"construction\": \"Number of unique geographic locations from where a company sources its supplies.\",\n      \"rationale\": \"Companies with diversified supply chains may be less subject to regional disruptions.\",\n      \"higher_returns_for\": \"high supply chain diversity\"\n    },\n    {\n      \"name\": \"Cybersecurity Investment\",\n      \"construction\": \"Amount of money a company has invested in cybersecurity measures over the past year.\",\n      \"rationale\": \"Companies that invest in cybersecurity may be less prone to data breaches, mitigating financial risk.\",\n      \"higher_returns_for\": \"high cybersecurity investment\"\n    },\n    {\n      \"name\": \"Sustainability Score\",\n      \"construction\": \"Score based on company's adherence to environmental, social, and governance (ESG) standards over the past year.\",\n      \"rationale\": \"Companies with high ESG standards may have a competitive advantage and better long-term viability.\",\n      \"higher_returns_for\": \"high sustainability scores\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 642,
+   "total_tokens": 912,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

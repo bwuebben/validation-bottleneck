@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:26:14.127029+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y2005_seed10_T0.8.json",
+  "prompt_sha256": "17ad2643a392af1750d170717b2e036b9110bd2e64cf52a140608436e34a1662"
+ },
+ "response": {
+  "id": "chatcmpl-E4ztyuIjs49HEstgiCY3CiGdAcTig",
+  "object": "chat.completion",
+  "created": 1784859970,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee satisfaction survey data.\"},\n  {\"index\": 1, \"match\": \"FirmAge\", \"strength\": \"related\", \"reason\": \"Both relate to firm/leadership longevity, but not the same signal.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses website traffic or similar digital metrics.\"},\n  {\"index\": 3, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Both use third-party ESG-type ratings, but focus differs.\"},\n  {\"index\": 4, \"match\": \"CustomerMomentum\", \"strength\": \"related\", \"reason\": \"Both use customer data, but churn is a different signal.\"},\n  {\"index\": 5, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Both use patent data; this is growth, library is level.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses supplier count or supply chain complexity.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses R&D volatility; all use levels or ratios.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer concentration or similar.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses product line count or diversity.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2643,
+   "completion_tokens": 360,
+   "total_tokens": 3003,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

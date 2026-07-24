@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:26:20.969024+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y2010_seed01_T0.8.json",
+  "prompt_sha256": "7c6910502760ae6052efe6217ac6dbf3c35c2ccf5384087ebf792779fe1f86cf"
+ },
+ "response": {
+  "id": "chatcmpl-E4zu6FDfpf7i3XVrFBK0PZiTidS0W",
+  "object": "chat.completion",
+  "created": 1784859978,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"EarningsSurprise\", \"strength\": \"close\", \"reason\": \"Both use earnings surprise, but proposal uses momentum/delta.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor counts dividend increases over long horizons.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses CEO tenure or tenure-period returns.\"},\n  {\"index\": 3, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Both relate to governance, but construction is different.\"},\n  {\"index\": 4, \"match\": \"AnalystRevision\", \"strength\": \"close\", \"reason\": \"Both use analyst sentiment change, but proposal is industry-level.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses product introductions or this ratio.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses social media sentiment.\"},\n  {\"index\": 7, \"match\": \"NetPayoutYield\", \"strength\": \"exact\", \"reason\": \"NetPayoutYield is dividends plus repurchases over market cap.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee satisfaction or job review data.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses ESG or environmental scores.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2612,
+   "completion_tokens": 354,
+   "total_tokens": 2966,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

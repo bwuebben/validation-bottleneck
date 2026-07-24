@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:54:25.984774+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 3,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zP0RvjvF2i8IHxxcZBcISfn9UlE",
+  "object": "chat.completion",
+  "created": 1784858050,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\n    \"name\": \"Productivity Growth\",\n    \"construction\": \"Measure as the change in revenue per employee over the past year.\",\n    \"rationale\": \"Companies with growing productivity may be more efficient and profitable in future.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Brand Strength\",\n    \"construction\": \"Use advertising spending as a proxy. Calculate as advertising expense divided by total revenue.\",\n    \"rationale\": \"Strong brands may have more pricing power and customer loyalty.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Capex Efficiency\",\n    \"construction\": \"Calculate as the change in capital expenditures divided by the change in total assets over the past year.\",\n    \"rationale\": \"Efficient capex might signal profitable growth opportunities.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Customer Concentration\",\n    \"construction\": \"Calculate as revenue from the largest customer divided by total revenue.\",\n    \"rationale\": \"Companies reliant on few customers may be vulnerable to customer churn.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Debt Maturity\",\n    \"construction\": \"Calculate as the average time until a company's debt comes due.\",\n    \"rationale\": \"Longer debt maturity may provide more financial flexibility.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Management Ownership\",\n    \"construction\": \"Calculate as the number of shares held by senior management divided by total shares outstanding.\",\n    \"rationale\": \"Management with more skin in the game may act more in shareholders' interest.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Employee Satisfaction\",\n    \"construction\": \"Use employee turnover rate as a proxy. Calculate as the number of employees leaving the company divided by the total number of employees over the past year.\",\n    \"rationale\": \"A satisfied workforce may lead to better productivity and lower hiring costs.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Dividend Growth\",\n    \"construction\": \"Calculate as the change in dividends per share over the past year.\",\n    \"rationale\": \"Dividend growth may signal strong future cash flows.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"R&D Efficiency\",\n    \"construction\": \"Calculate as the change in revenue divided by the change in R&D spending over the past year.\",\n    \"rationale\": \"Efficiency in R&D may predict successful innovation and competitive advantage.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Sales Stability\",\n    \"construction\": \"Calculate as the standard deviation of quarterly sales growth rates over the past year.\",\n    \"rationale\": \"Stable sales might indicate a reliable business model.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 655,
+   "total_tokens": 925,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

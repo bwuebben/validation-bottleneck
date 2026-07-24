@@ -1,0 +1,1910 @@
+[
+ {
+  "acronym": "AbnormalAccruals",
+  "authors": "Xie",
+  "year": 2001,
+  "journal": "AR",
+  "sample_start": 1971,
+  "sample_end": 1992,
+  "description": "Abnormal Accruals"
+ },
+ {
+  "acronym": "Accruals",
+  "authors": "Sloan",
+  "year": 1996,
+  "journal": "AR",
+  "sample_start": 1962,
+  "sample_end": 1991,
+  "description": "Accruals"
+ },
+ {
+  "acronym": "AccrualsBM",
+  "authors": "Bartov and Kim",
+  "year": 2004,
+  "journal": "RFQA",
+  "sample_start": 1980,
+  "sample_end": 1998,
+  "description": "Book-to-market and accruals"
+ },
+ {
+  "acronym": "Activism1",
+  "authors": "Cremers and Nair",
+  "year": 2005,
+  "journal": "JF",
+  "sample_start": 1990,
+  "sample_end": 2001,
+  "description": "Takeover vulnerability"
+ },
+ {
+  "acronym": "Activism2",
+  "authors": "Cremers and Nair",
+  "year": 2005,
+  "journal": "JF",
+  "sample_start": 1990,
+  "sample_end": 2001,
+  "description": "Active shareholders"
+ },
+ {
+  "acronym": "AdExp",
+  "authors": "Chan, Lakonishok and Sougiannis",
+  "year": 2001,
+  "journal": "JF",
+  "sample_start": 1975,
+  "sample_end": 1996,
+  "description": "Advertising Expense"
+ },
+ {
+  "acronym": "AgeIPO",
+  "authors": "Ritter",
+  "year": 1991,
+  "journal": "JF",
+  "sample_start": 1975,
+  "sample_end": 1987,
+  "description": "IPO and age"
+ },
+ {
+  "acronym": "AM",
+  "authors": "Fama and French",
+  "year": 1992,
+  "journal": "JF",
+  "sample_start": 1963,
+  "sample_end": 1990,
+  "description": "Total assets to market"
+ },
+ {
+  "acronym": "AnalystRevision",
+  "authors": "Hawkins, Chamberlin, Daniel",
+  "year": 1984,
+  "journal": "FAJ",
+  "sample_start": 1975,
+  "sample_end": 1980,
+  "description": "EPS forecast revision"
+ },
+ {
+  "acronym": "AnalystValue",
+  "authors": "Frankel and Lee",
+  "year": 1998,
+  "journal": "JAE",
+  "sample_start": 1975,
+  "sample_end": 1993,
+  "description": "Analyst Value"
+ },
+ {
+  "acronym": "AnnouncementReturn",
+  "authors": "Chan, Jegadeesh and Lakonishok",
+  "year": 1996,
+  "journal": "JF",
+  "sample_start": 1977,
+  "sample_end": 1992,
+  "description": "Earnings announcement return"
+ },
+ {
+  "acronym": "AOP",
+  "authors": "Frankel and Lee",
+  "year": 1998,
+  "journal": "JAE",
+  "sample_start": 1975,
+  "sample_end": 1993,
+  "description": "Analyst Optimism"
+ },
+ {
+  "acronym": "AssetGrowth",
+  "authors": "Cooper, Gulen and Schill",
+  "year": 2008,
+  "journal": "JF",
+  "sample_start": 1968,
+  "sample_end": 2003,
+  "description": "Asset growth"
+ },
+ {
+  "acronym": "Beta",
+  "authors": "Fama and MacBeth",
+  "year": 1973,
+  "journal": "JPE",
+  "sample_start": 1929,
+  "sample_end": 1968,
+  "description": "CAPM beta"
+ },
+ {
+  "acronym": "BetaFP",
+  "authors": "Frazzini and Pedersen",
+  "year": 2014,
+  "journal": "JFE",
+  "sample_start": 1929,
+  "sample_end": 2012,
+  "description": "Frazzini-Pedersen Beta"
+ },
+ {
+  "acronym": "BetaLiquidityPS",
+  "authors": "Pastor and Stambaugh",
+  "year": 2003,
+  "journal": "JPE",
+  "sample_start": 1968,
+  "sample_end": 1999,
+  "description": "Pastor-Stambaugh liquidity beta"
+ },
+ {
+  "acronym": "BetaTailRisk",
+  "authors": "Kelly and Jiang",
+  "year": 2014,
+  "journal": "RFS",
+  "sample_start": 1963,
+  "sample_end": 2010,
+  "description": "Tail risk beta"
+ },
+ {
+  "acronym": "betaVIX",
+  "authors": "Ang et al.",
+  "year": 2006,
+  "journal": "JF",
+  "sample_start": 1986,
+  "sample_end": 2000,
+  "description": "Systematic volatility"
+ },
+ {
+  "acronym": "BidAskSpread",
+  "authors": "Amihud and Mendelson",
+  "year": 1986,
+  "journal": "JFE",
+  "sample_start": 1961,
+  "sample_end": 1980,
+  "description": "Bid-ask spread"
+ },
+ {
+  "acronym": "BM",
+  "authors": "Stattman",
+  "year": 1980,
+  "journal": "Other",
+  "sample_start": 1962,
+  "sample_end": 1976,
+  "description": "Book to market, original (Stattman 1980)"
+ },
+ {
+  "acronym": "BMdec",
+  "authors": "Fama and French",
+  "year": 1992,
+  "journal": "JF",
+  "sample_start": 1963,
+  "sample_end": 1990,
+  "description": "Book to market using December ME"
+ },
+ {
+  "acronym": "BookLeverage",
+  "authors": "Fama and French",
+  "year": 1992,
+  "journal": "JF",
+  "sample_start": 1963,
+  "sample_end": 1990,
+  "description": "Book leverage (annual)"
+ },
+ {
+  "acronym": "BPEBM",
+  "authors": "Penman, Richardson and Tuna",
+  "year": 2007,
+  "journal": "JAR",
+  "sample_start": 1963,
+  "sample_end": 2001,
+  "description": "Leverage component of BM"
+ },
+ {
+  "acronym": "BrandInvest",
+  "authors": "Belo, Lin and Vitorino",
+  "year": 2014,
+  "journal": "RED",
+  "sample_start": 1975,
+  "sample_end": 2010,
+  "description": "Brand capital investment"
+ },
+ {
+  "acronym": "Cash",
+  "authors": "Palazzo",
+  "year": 2012,
+  "journal": "JFE",
+  "sample_start": 1972,
+  "sample_end": 2009,
+  "description": "Cash to assets"
+ },
+ {
+  "acronym": "CashProd",
+  "authors": "Chandrashekar and Rao",
+  "year": 2009,
+  "journal": "WP",
+  "sample_start": 1963,
+  "sample_end": 2003,
+  "description": "Cash Productivity"
+ },
+ {
+  "acronym": "CBOperProf",
+  "authors": "Ball et al.",
+  "year": 2016,
+  "journal": "JFE",
+  "sample_start": 1963,
+  "sample_end": 2014,
+  "description": "Cash-based operating profitability"
+ },
+ {
+  "acronym": "CF",
+  "authors": "Lakonishok, Shleifer, Vishny",
+  "year": 1994,
+  "journal": "JF",
+  "sample_start": 1968,
+  "sample_end": 1990,
+  "description": "Cash flow to market"
+ },
+ {
+  "acronym": "cfp",
+  "authors": "Desai, Rajgopal, Venkatachalam",
+  "year": 2004,
+  "journal": "AR",
+  "sample_start": 1973,
+  "sample_end": 1997,
+  "description": "Operating Cash flows to price"
+ },
+ {
+  "acronym": "ChangeInRecommendation",
+  "authors": "Jegadeesh et al.",
+  "year": 2004,
+  "journal": "JF",
+  "sample_start": 1985,
+  "sample_end": 1998,
+  "description": "Change in recommendation"
+ },
+ {
+  "acronym": "ChAssetTurnover",
+  "authors": "Soliman",
+  "year": 2008,
+  "journal": "AR",
+  "sample_start": 1984,
+  "sample_end": 2002,
+  "description": "Change in Asset Turnover"
+ },
+ {
+  "acronym": "ChEQ",
+  "authors": "Lockwood and Prombutr",
+  "year": 2010,
+  "journal": "JFR",
+  "sample_start": 1964,
+  "sample_end": 2007,
+  "description": "Growth in book equity"
+ },
+ {
+  "acronym": "ChForecastAccrual",
+  "authors": "Barth and Hutton",
+  "year": 2004,
+  "journal": "RAS",
+  "sample_start": 1981,
+  "sample_end": 1996,
+  "description": "Change in Forecast and Accrual"
+ },
+ {
+  "acronym": "ChInv",
+  "authors": "Thomas and Zhang",
+  "year": 2002,
+  "journal": "RAS",
+  "sample_start": 1970,
+  "sample_end": 1997,
+  "description": "Inventory Growth"
+ },
+ {
+  "acronym": "ChInvIA",
+  "authors": "Abarbanell and Bushee",
+  "year": 1998,
+  "journal": "AR",
+  "sample_start": 1974,
+  "sample_end": 1988,
+  "description": "Change in capital inv (ind adj)"
+ },
+ {
+  "acronym": "ChNAnalyst",
+  "authors": "Scherbina",
+  "year": 2008,
+  "journal": "ROF",
+  "sample_start": 1982,
+  "sample_end": 2005,
+  "description": "Decline in Analyst Coverage"
+ },
+ {
+  "acronym": "ChNNCOA",
+  "authors": "Soliman",
+  "year": 2008,
+  "journal": "AR",
+  "sample_start": 1984,
+  "sample_end": 2002,
+  "description": "Change in Net Noncurrent Op Assets"
+ },
+ {
+  "acronym": "ChNWC",
+  "authors": "Soliman",
+  "year": 2008,
+  "journal": "AR",
+  "sample_start": 1984,
+  "sample_end": 2002,
+  "description": "Change in Net Working Capital"
+ },
+ {
+  "acronym": "ChTax",
+  "authors": "Thomas and Zhang",
+  "year": 2011,
+  "journal": "JAR",
+  "sample_start": 1977,
+  "sample_end": 2006,
+  "description": "Change in Taxes"
+ },
+ {
+  "acronym": "CitationsRD",
+  "authors": "Hirschleifer, Hsu and Li",
+  "year": 2013,
+  "journal": "JFE",
+  "sample_start": 1982,
+  "sample_end": 2008,
+  "description": "Citations to RD expenses"
+ },
+ {
+  "acronym": "CompEquIss",
+  "authors": "Daniel and Titman",
+  "year": 2006,
+  "journal": "JF",
+  "sample_start": 1968,
+  "sample_end": 2003,
+  "description": "Composite equity issuance"
+ },
+ {
+  "acronym": "CompositeDebtIssuance",
+  "authors": "Lyandres, Sun and Zhang",
+  "year": 2008,
+  "journal": "RFS",
+  "sample_start": 1970,
+  "sample_end": 2005,
+  "description": "Composite debt issuance"
+ },
+ {
+  "acronym": "ConsRecomm",
+  "authors": "Barber et al.",
+  "year": 2001,
+  "journal": "JF",
+  "sample_start": 1985,
+  "sample_end": 1997,
+  "description": "Consensus Recommendation"
+ },
+ {
+  "acronym": "ConvDebt",
+  "authors": "Valta",
+  "year": 2016,
+  "journal": "JFQA",
+  "sample_start": 1985,
+  "sample_end": 2012,
+  "description": "Convertible debt indicator"
+ },
+ {
+  "acronym": "CoskewACX",
+  "authors": "Ang, Chen and Xing",
+  "year": 2006,
+  "journal": "RFS",
+  "sample_start": 1963,
+  "sample_end": 2001,
+  "description": "Coskewness using daily returns"
+ },
+ {
+  "acronym": "Coskewness",
+  "authors": "Harvey and Siddique",
+  "year": 2000,
+  "journal": "JF",
+  "sample_start": 1964,
+  "sample_end": 1993,
+  "description": "Coskewness"
+ },
+ {
+  "acronym": "CPVolSpread",
+  "authors": "Bali and Hovakimian",
+  "year": 2009,
+  "journal": "MS",
+  "sample_start": 1996,
+  "sample_end": 2004,
+  "description": "Call minus Put Vol"
+ },
+ {
+  "acronym": "CredRatDG",
+  "authors": "Dichev and Piotroski",
+  "year": 2001,
+  "journal": "JF",
+  "sample_start": 1986,
+  "sample_end": 1998,
+  "description": "Credit Rating Downgrade"
+ },
+ {
+  "acronym": "CustomerMomentum",
+  "authors": "Cohen and Frazzini",
+  "year": 2008,
+  "journal": "JF",
+  "sample_start": 1980,
+  "sample_end": 2004,
+  "description": "Customer momentum"
+ },
+ {
+  "acronym": "dCPVolSpread",
+  "authors": "An, Ang, Bali, Cakici",
+  "year": 2014,
+  "journal": "JF",
+  "sample_start": 1996,
+  "sample_end": 2011,
+  "description": "Change in put vol minus change in call vol"
+ },
+ {
+  "acronym": "DebtIssuance",
+  "authors": "Spiess and Affleck-Graves",
+  "year": 1999,
+  "journal": "JFE",
+  "sample_start": 1975,
+  "sample_end": 1989,
+  "description": "Debt Issuance"
+ },
+ {
+  "acronym": "DelBreadth",
+  "authors": "Chen, Hong and Stein",
+  "year": 2002,
+  "journal": "JFE",
+  "sample_start": 1979,
+  "sample_end": 1998,
+  "description": "Breadth of ownership"
+ },
+ {
+  "acronym": "DelCOA",
+  "authors": "Richardson et al.",
+  "year": 2005,
+  "journal": "JAE",
+  "sample_start": 1962,
+  "sample_end": 2001,
+  "description": "Change in current operating assets"
+ },
+ {
+  "acronym": "DelCOL",
+  "authors": "Richardson et al.",
+  "year": 2005,
+  "journal": "JAE",
+  "sample_start": 1962,
+  "sample_end": 2001,
+  "description": "Change in current operating liabilities"
+ },
+ {
+  "acronym": "DelDRC",
+  "authors": "Prakash and Sinha",
+  "year": 2013,
+  "journal": "CAR",
+  "sample_start": 2002,
+  "sample_end": 2007,
+  "description": "Deferred Revenue"
+ },
+ {
+  "acronym": "DelEqu",
+  "authors": "Richardson et al.",
+  "year": 2005,
+  "journal": "JAE",
+  "sample_start": 1963,
+  "sample_end": 2001,
+  "description": "Change in equity to assets"
+ },
+ {
+  "acronym": "DelFINL",
+  "authors": "Richardson et al.",
+  "year": 2005,
+  "journal": "JAE",
+  "sample_start": 1962,
+  "sample_end": 2001,
+  "description": "Change in financial liabilities"
+ },
+ {
+  "acronym": "DelLTI",
+  "authors": "Richardson et al.",
+  "year": 2005,
+  "journal": "JAE",
+  "sample_start": 1962,
+  "sample_end": 2001,
+  "description": "Change in long-term investment"
+ },
+ {
+  "acronym": "DelNetFin",
+  "authors": "Richardson et al.",
+  "year": 2005,
+  "journal": "JAE",
+  "sample_start": 1962,
+  "sample_end": 2001,
+  "description": "Change in net financial assets"
+ },
+ {
+  "acronym": "DivInit",
+  "authors": "Michaely, Thaler and Womack",
+  "year": 1995,
+  "journal": "JF",
+  "sample_start": 1964,
+  "sample_end": 1988,
+  "description": "Dividend Initiation"
+ },
+ {
+  "acronym": "DivOmit",
+  "authors": "Michaely, Thaler and Womack",
+  "year": 1995,
+  "journal": "JF",
+  "sample_start": 1964,
+  "sample_end": 1988,
+  "description": "Dividend Omission"
+ },
+ {
+  "acronym": "DivSeason",
+  "authors": "Hartzmark and Salomon",
+  "year": 2013,
+  "journal": "JFE",
+  "sample_start": 1927,
+  "sample_end": 2011,
+  "description": "Dividend seasonality"
+ },
+ {
+  "acronym": "DivYieldST",
+  "authors": "Litzenberger and Ramaswamy",
+  "year": 1979,
+  "journal": "JFE",
+  "sample_start": 1936,
+  "sample_end": 1977,
+  "description": "Predicted div yield next month"
+ },
+ {
+  "acronym": "dNoa",
+  "authors": "Hirshleifer, Hou, Teoh, Zhang",
+  "year": 2004,
+  "journal": "JAE",
+  "sample_start": 1964,
+  "sample_end": 2002,
+  "description": "change in net operating assets"
+ },
+ {
+  "acronym": "DolVol",
+  "authors": "Brennan, Chordia, Subra",
+  "year": 1998,
+  "journal": "JFE",
+  "sample_start": 1966,
+  "sample_end": 1995,
+  "description": "Past trading volume"
+ },
+ {
+  "acronym": "DownRecomm",
+  "authors": "Barber et al.",
+  "year": 2001,
+  "journal": "JF",
+  "sample_start": 1985,
+  "sample_end": 1997,
+  "description": "Down forecast EPS"
+ },
+ {
+  "acronym": "dVolCall",
+  "authors": "An, Ang, Bali, Cakici",
+  "year": 2014,
+  "journal": "JF",
+  "sample_start": 1996,
+  "sample_end": 2011,
+  "description": "Change in call vol"
+ },
+ {
+  "acronym": "dVolPut",
+  "authors": "An, Ang, Bali, Cakici",
+  "year": 2014,
+  "journal": "JF",
+  "sample_start": 1996,
+  "sample_end": 2011,
+  "description": "Change in put vol"
+ },
+ {
+  "acronym": "EarningsConsistency",
+  "authors": "Alwathainani",
+  "year": 2009,
+  "journal": "BAR",
+  "sample_start": 1971,
+  "sample_end": 2002,
+  "description": "Earnings consistency"
+ },
+ {
+  "acronym": "EarningsForecastDisparity",
+  "authors": "Da and Warachka",
+  "year": 2011,
+  "journal": "JFE",
+  "sample_start": 1983,
+  "sample_end": 2006,
+  "description": "Long-vs-short EPS forecasts"
+ },
+ {
+  "acronym": "EarningsStreak",
+  "authors": "Loh and Warachka",
+  "year": 2012,
+  "journal": "MS",
+  "sample_start": 1987,
+  "sample_end": 2009,
+  "description": "Earnings surprise streak"
+ },
+ {
+  "acronym": "EarningsSurprise",
+  "authors": "Foster, Olsen and Shevlin",
+  "year": 1984,
+  "journal": "AR",
+  "sample_start": 1974,
+  "sample_end": 1981,
+  "description": "Earnings Surprise"
+ },
+ {
+  "acronym": "EarnSupBig",
+  "authors": "Hou",
+  "year": 2007,
+  "journal": "RFS",
+  "sample_start": 1972,
+  "sample_end": 2001,
+  "description": "Earnings surprise of big firms"
+ },
+ {
+  "acronym": "EBM",
+  "authors": "Penman, Richardson and Tuna",
+  "year": 2007,
+  "journal": "JAR",
+  "sample_start": 1963,
+  "sample_end": 2001,
+  "description": "Enterprise component of BM"
+ },
+ {
+  "acronym": "EntMult",
+  "authors": "Loughran and Wellman",
+  "year": 2011,
+  "journal": "JFQA",
+  "sample_start": 1963,
+  "sample_end": 2009,
+  "description": "Enterprise Multiple"
+ },
+ {
+  "acronym": "EP",
+  "authors": "Basu",
+  "year": 1977,
+  "journal": "JF",
+  "sample_start": 1957,
+  "sample_end": 1971,
+  "description": "Earnings-to-Price Ratio"
+ },
+ {
+  "acronym": "EquityDuration",
+  "authors": "Dechow, Sloan and Soliman",
+  "year": 2004,
+  "journal": "RAS",
+  "sample_start": 1962,
+  "sample_end": 1998,
+  "description": "Equity Duration"
+ },
+ {
+  "acronym": "ExchSwitch",
+  "authors": "Dharan and Ikenberry",
+  "year": 1995,
+  "journal": "JF",
+  "sample_start": 1962,
+  "sample_end": 1990,
+  "description": "Exchange Switch"
+ },
+ {
+  "acronym": "ExclExp",
+  "authors": "Doyle, Lundholm and Soliman",
+  "year": 2003,
+  "journal": "RAS",
+  "sample_start": 1988,
+  "sample_end": 1999,
+  "description": "Excluded Expenses"
+ },
+ {
+  "acronym": "FEPS",
+  "authors": "Cen, Wei, and Zhang",
+  "year": 2006,
+  "journal": "WP",
+  "sample_start": 1983,
+  "sample_end": 2002,
+  "description": "Analyst earnings per share"
+ },
+ {
+  "acronym": "fgr5yrLag",
+  "authors": "La Porta",
+  "year": 1996,
+  "journal": "JF",
+  "sample_start": 1983,
+  "sample_end": 1990,
+  "description": "Long-term EPS forecast"
+ },
+ {
+  "acronym": "FirmAge",
+  "authors": "Barry and Brown",
+  "year": 1984,
+  "journal": "JFE",
+  "sample_start": 1931,
+  "sample_end": 1980,
+  "description": "Firm age based on CRSP"
+ },
+ {
+  "acronym": "FirmAgeMom",
+  "authors": "Zhang",
+  "year": 2006,
+  "journal": "JF",
+  "sample_start": 1983,
+  "sample_end": 2001,
+  "description": "Firm Age - Momentum"
+ },
+ {
+  "acronym": "ForecastDispersion",
+  "authors": "Diether, Malloy and Scherbina",
+  "year": 2002,
+  "journal": "JF",
+  "sample_start": 1976,
+  "sample_end": 2000,
+  "description": "EPS Forecast Dispersion"
+ },
+ {
+  "acronym": "FR",
+  "authors": "Franzoni and Marin",
+  "year": 2006,
+  "journal": "JF",
+  "sample_start": 1980,
+  "sample_end": 2002,
+  "description": "Pension Funding Status"
+ },
+ {
+  "acronym": "Frontier",
+  "authors": "Nguyen and Swanson",
+  "year": 2009,
+  "journal": "JFQA",
+  "sample_start": 1980,
+  "sample_end": 2003,
+  "description": "Efficient frontier index"
+ },
+ {
+  "acronym": "Governance",
+  "authors": "Gompers, Ishii and Metrick",
+  "year": 2003,
+  "journal": "QJE",
+  "sample_start": 1990,
+  "sample_end": 1999,
+  "description": "Governance Index"
+ },
+ {
+  "acronym": "GP",
+  "authors": "Novy-Marx",
+  "year": 2013,
+  "journal": "JFE",
+  "sample_start": 1963,
+  "sample_end": 2010,
+  "description": "gross profits / total assets"
+ },
+ {
+  "acronym": "GrAdExp",
+  "authors": "Lou",
+  "year": 2014,
+  "journal": "RFS",
+  "sample_start": 1974,
+  "sample_end": 2010,
+  "description": "Growth in advertising expenses"
+ },
+ {
+  "acronym": "grcapx",
+  "authors": "Anderson and Garcia-Feijoo",
+  "year": 2006,
+  "journal": "JF",
+  "sample_start": 1976,
+  "sample_end": 1999,
+  "description": "Change in capex (two years)"
+ },
+ {
+  "acronym": "grcapx3y",
+  "authors": "Anderson and Garcia-Feijoo",
+  "year": 2006,
+  "journal": "JF",
+  "sample_start": 1976,
+  "sample_end": 1999,
+  "description": "Change in capex (three years)"
+ },
+ {
+  "acronym": "GrLTNOA",
+  "authors": "Fairfield, Whisenant and Yohn",
+  "year": 2003,
+  "journal": "AR",
+  "sample_start": 1964,
+  "sample_end": 1993,
+  "description": "Growth in long term operating assets"
+ },
+ {
+  "acronym": "GrSaleToGrInv",
+  "authors": "Abarbanell and Bushee",
+  "year": 1998,
+  "journal": "AR",
+  "sample_start": 1974,
+  "sample_end": 1988,
+  "description": "Sales growth over inventory growth"
+ },
+ {
+  "acronym": "GrSaleToGrOverhead",
+  "authors": "Abarbanell and Bushee",
+  "year": 1998,
+  "journal": "AR",
+  "sample_start": 1974,
+  "sample_end": 1988,
+  "description": "Sales growth over overhead growth"
+ },
+ {
+  "acronym": "Herf",
+  "authors": "Hou and Robinson",
+  "year": 2006,
+  "journal": "JF",
+  "sample_start": 1963,
+  "sample_end": 2001,
+  "description": "Industry concentration (sales)"
+ },
+ {
+  "acronym": "HerfAsset",
+  "authors": "Hou and Robinson",
+  "year": 2006,
+  "journal": "JF",
+  "sample_start": 1963,
+  "sample_end": 2001,
+  "description": "Industry concentration (assets)"
+ },
+ {
+  "acronym": "HerfBE",
+  "authors": "Hou and Robinson",
+  "year": 2006,
+  "journal": "JF",
+  "sample_start": 1963,
+  "sample_end": 2001,
+  "description": "Industry concentration (equity)"
+ },
+ {
+  "acronym": "High52",
+  "authors": "George and Hwang",
+  "year": 2004,
+  "journal": "JF",
+  "sample_start": 1963,
+  "sample_end": 2001,
+  "description": "52 week high"
+ },
+ {
+  "acronym": "hire",
+  "authors": "Bazdresch, Belo and Lin",
+  "year": 2014,
+  "journal": "JPE",
+  "sample_start": 1965,
+  "sample_end": 2010,
+  "description": "Employment growth"
+ },
+ {
+  "acronym": "IdioVol3F",
+  "authors": "Ang et al.",
+  "year": 2006,
+  "journal": "JF",
+  "sample_start": 1963,
+  "sample_end": 2000,
+  "description": "Idiosyncratic risk (3 factor)"
+ },
+ {
+  "acronym": "IdioVolAHT",
+  "authors": "Ali, Hwang, and Trombley",
+  "year": 2003,
+  "journal": "JFE",
+  "sample_start": 1976,
+  "sample_end": 1997,
+  "description": "Idiosyncratic risk (AHT)"
+ },
+ {
+  "acronym": "Illiquidity",
+  "authors": "Amihud",
+  "year": 2002,
+  "journal": "JFM",
+  "sample_start": 1964,
+  "sample_end": 1997,
+  "description": "Amihud's illiquidity"
+ },
+ {
+  "acronym": "IndIPO",
+  "authors": "Ritter",
+  "year": 1991,
+  "journal": "JF",
+  "sample_start": 1975,
+  "sample_end": 1987,
+  "description": "Initial Public Offerings"
+ },
+ {
+  "acronym": "IndMom",
+  "authors": "Grinblatt and Moskowitz",
+  "year": 1999,
+  "journal": "JF",
+  "sample_start": 1963,
+  "sample_end": 1995,
+  "description": "Industry Momentum"
+ },
+ {
+  "acronym": "IndRetBig",
+  "authors": "Hou",
+  "year": 2007,
+  "journal": "RFS",
+  "sample_start": 1972,
+  "sample_end": 2001,
+  "description": "Industry return of big firms"
+ },
+ {
+  "acronym": "IntanBM",
+  "authors": "Daniel and Titman",
+  "year": 2006,
+  "journal": "JF",
+  "sample_start": 1968,
+  "sample_end": 2003,
+  "description": "Intangible return using BM"
+ },
+ {
+  "acronym": "IntanCFP",
+  "authors": "Daniel and Titman",
+  "year": 2006,
+  "journal": "JF",
+  "sample_start": 1968,
+  "sample_end": 2003,
+  "description": "Intangible return using CFtoP"
+ },
+ {
+  "acronym": "IntanEP",
+  "authors": "Daniel and Titman",
+  "year": 2006,
+  "journal": "JF",
+  "sample_start": 1968,
+  "sample_end": 2003,
+  "description": "Intangible return using EP"
+ },
+ {
+  "acronym": "IntanSP",
+  "authors": "Daniel and Titman",
+  "year": 2006,
+  "journal": "JF",
+  "sample_start": 1968,
+  "sample_end": 2003,
+  "description": "Intangible return using Sale2P"
+ },
+ {
+  "acronym": "IntMom",
+  "authors": "Novy-Marx",
+  "year": 2012,
+  "journal": "JFE",
+  "sample_start": 1927,
+  "sample_end": 2010,
+  "description": "Intermediate Momentum"
+ },
+ {
+  "acronym": "Investment",
+  "authors": "Titman, Wei and Xie",
+  "year": 2004,
+  "journal": "JFQA",
+  "sample_start": 1973,
+  "sample_end": 1996,
+  "description": "Investment to revenue"
+ },
+ {
+  "acronym": "InvestPPEInv",
+  "authors": "Lyandres, Sun and Zhang",
+  "year": 2008,
+  "journal": "RFS",
+  "sample_start": 1970,
+  "sample_end": 2005,
+  "description": "change in ppe and inv/assets"
+ },
+ {
+  "acronym": "InvGrowth",
+  "authors": "Belo and Lin",
+  "year": 2012,
+  "journal": "RFS",
+  "sample_start": 1965,
+  "sample_end": 2009,
+  "description": "Inventory Growth"
+ },
+ {
+  "acronym": "IO_ShortInterest",
+  "authors": "Asquith Pathak and Ritter",
+  "year": 2005,
+  "journal": "JFE",
+  "sample_start": 1980,
+  "sample_end": 2002,
+  "description": "Inst own among high short interest"
+ },
+ {
+  "acronym": "iomom_cust",
+  "authors": "Menzly and Ozbas",
+  "year": 2010,
+  "journal": "JF",
+  "sample_start": 1986,
+  "sample_end": 2005,
+  "description": "Customers momentum"
+ },
+ {
+  "acronym": "iomom_supp",
+  "authors": "Menzly and Ozbas",
+  "year": 2010,
+  "journal": "JF",
+  "sample_start": 1986,
+  "sample_end": 2005,
+  "description": "Suppliers momentum"
+ },
+ {
+  "acronym": "Leverage",
+  "authors": "Bhandari",
+  "year": 1988,
+  "journal": "JF",
+  "sample_start": 1952,
+  "sample_end": 1981,
+  "description": "Market leverage"
+ },
+ {
+  "acronym": "LRreversal",
+  "authors": "De Bondt and Thaler",
+  "year": 1985,
+  "journal": "JF",
+  "sample_start": 1929,
+  "sample_end": 1982,
+  "description": "Long-run reversal"
+ },
+ {
+  "acronym": "MaxRet",
+  "authors": "Bali, Cakici, and Whitelaw",
+  "year": 2011,
+  "journal": "JFE",
+  "sample_start": 1962,
+  "sample_end": 2005,
+  "description": "Maximum return over month"
+ },
+ {
+  "acronym": "MeanRankRevGrowth",
+  "authors": "Lakonishok, Shleifer, Vishny",
+  "year": 1994,
+  "journal": "JF",
+  "sample_start": 1968,
+  "sample_end": 1990,
+  "description": "Revenue Growth Rank"
+ },
+ {
+  "acronym": "Mom12m",
+  "authors": "Jegadeesh and Titman",
+  "year": 1993,
+  "journal": "JF",
+  "sample_start": 1964,
+  "sample_end": 1989,
+  "description": "Momentum (12 month)"
+ },
+ {
+  "acronym": "Mom12mOffSeason",
+  "authors": "Heston and Sadka",
+  "year": 2008,
+  "journal": "JFE",
+  "sample_start": 1965,
+  "sample_end": 2002,
+  "description": "Momentum without the seasonal part"
+ },
+ {
+  "acronym": "Mom6m",
+  "authors": "Jegadeesh and Titman",
+  "year": 1993,
+  "journal": "JF",
+  "sample_start": 1964,
+  "sample_end": 1989,
+  "description": "Momentum (6 month)"
+ },
+ {
+  "acronym": "Mom6mJunk",
+  "authors": "Avramov et al",
+  "year": 2007,
+  "journal": "JF",
+  "sample_start": 1985,
+  "sample_end": 2003,
+  "description": "Junk Stock Momentum"
+ },
+ {
+  "acronym": "MomOffSeason",
+  "authors": "Heston and Sadka",
+  "year": 2008,
+  "journal": "JFE",
+  "sample_start": 1965,
+  "sample_end": 2002,
+  "description": "Off season long-term reversal"
+ },
+ {
+  "acronym": "MomOffSeason06YrPlus",
+  "authors": "Heston and Sadka",
+  "year": 2008,
+  "journal": "JFE",
+  "sample_start": 1965,
+  "sample_end": 2002,
+  "description": "Off season reversal years 6 to 10"
+ },
+ {
+  "acronym": "MomOffSeason11YrPlus",
+  "authors": "Heston and Sadka",
+  "year": 2008,
+  "journal": "JFE",
+  "sample_start": 1965,
+  "sample_end": 2002,
+  "description": "Off season reversal years 11 to 15"
+ },
+ {
+  "acronym": "MomOffSeason16YrPlus",
+  "authors": "Heston and Sadka",
+  "year": 2008,
+  "journal": "JFE",
+  "sample_start": 1965,
+  "sample_end": 2002,
+  "description": "Off season reversal years 16 to 20"
+ },
+ {
+  "acronym": "MomRev",
+  "authors": "Chan and Ko",
+  "year": 2006,
+  "journal": "JOIM",
+  "sample_start": 1965,
+  "sample_end": 2001,
+  "description": "Momentum and LT Reversal"
+ },
+ {
+  "acronym": "MomSeason",
+  "authors": "Heston and Sadka",
+  "year": 2008,
+  "journal": "JFE",
+  "sample_start": 1965,
+  "sample_end": 2002,
+  "description": "Return seasonality years 2 to 5"
+ },
+ {
+  "acronym": "MomSeason06YrPlus",
+  "authors": "Heston and Sadka",
+  "year": 2008,
+  "journal": "JFE",
+  "sample_start": 1965,
+  "sample_end": 2002,
+  "description": "Return seasonality years 6 to 10"
+ },
+ {
+  "acronym": "MomSeason11YrPlus",
+  "authors": "Heston and Sadka",
+  "year": 2008,
+  "journal": "JFE",
+  "sample_start": 1965,
+  "sample_end": 2002,
+  "description": "Return seasonality years 11 to 15"
+ },
+ {
+  "acronym": "MomSeason16YrPlus",
+  "authors": "Heston and Sadka",
+  "year": 2008,
+  "journal": "JFE",
+  "sample_start": 1965,
+  "sample_end": 2002,
+  "description": "Return seasonality years 16 to 20"
+ },
+ {
+  "acronym": "MomSeasonShort",
+  "authors": "Heston and Sadka",
+  "year": 2008,
+  "journal": "JFE",
+  "sample_start": 1965,
+  "sample_end": 2002,
+  "description": "Return seasonality last year"
+ },
+ {
+  "acronym": "MomVol",
+  "authors": "Lee and Swaminathan",
+  "year": 2000,
+  "journal": "JF",
+  "sample_start": 1965,
+  "sample_end": 1995,
+  "description": "Momentum in high volume stocks"
+ },
+ {
+  "acronym": "MRreversal",
+  "authors": "De Bondt and Thaler",
+  "year": 1985,
+  "journal": "JF",
+  "sample_start": 1933,
+  "sample_end": 1980,
+  "description": "Medium-run reversal"
+ },
+ {
+  "acronym": "MS",
+  "authors": "Mohanram",
+  "year": 2005,
+  "journal": "RAS",
+  "sample_start": 1978,
+  "sample_end": 2001,
+  "description": "Mohanram G-score"
+ },
+ {
+  "acronym": "NetDebtFinance",
+  "authors": "Bradshaw, Richardson, Sloan",
+  "year": 2006,
+  "journal": "JAE",
+  "sample_start": 1971,
+  "sample_end": 2000,
+  "description": "Net debt financing"
+ },
+ {
+  "acronym": "NetDebtPrice",
+  "authors": "Penman, Richardson and Tuna",
+  "year": 2007,
+  "journal": "JAR",
+  "sample_start": 1963,
+  "sample_end": 2001,
+  "description": "Net debt to price"
+ },
+ {
+  "acronym": "NetEquityFinance",
+  "authors": "Bradshaw, Richardson, Sloan",
+  "year": 2006,
+  "journal": "JAE",
+  "sample_start": 1971,
+  "sample_end": 2000,
+  "description": "Net equity financing"
+ },
+ {
+  "acronym": "NetPayoutYield",
+  "authors": "Boudoukh et al.",
+  "year": 2007,
+  "journal": "JF",
+  "sample_start": 1984,
+  "sample_end": 2003,
+  "description": "Net Payout Yield"
+ },
+ {
+  "acronym": "NOA",
+  "authors": "Hirshleifer et al.",
+  "year": 2004,
+  "journal": "JAE",
+  "sample_start": 1964,
+  "sample_end": 2002,
+  "description": "Net Operating Assets"
+ },
+ {
+  "acronym": "NumEarnIncrease",
+  "authors": "Loh and Warachka",
+  "year": 2012,
+  "journal": "MS",
+  "sample_start": 1987,
+  "sample_end": 2009,
+  "description": "Earnings streak length"
+ },
+ {
+  "acronym": "OperProf",
+  "authors": "Fama and French",
+  "year": 2006,
+  "journal": "JFE",
+  "sample_start": 1977,
+  "sample_end": 2003,
+  "description": "operating profits / book equity"
+ },
+ {
+  "acronym": "OperProfRD",
+  "authors": "Ball et al.",
+  "year": 2016,
+  "journal": "JFE",
+  "sample_start": 1963,
+  "sample_end": 2014,
+  "description": "Operating profitability R&D adjusted"
+ },
+ {
+  "acronym": "OPLeverage",
+  "authors": "Novy-Marx",
+  "year": 2011,
+  "journal": "ROF",
+  "sample_start": 1963,
+  "sample_end": 2008,
+  "description": "Operating leverage"
+ },
+ {
+  "acronym": "OptionVolume1",
+  "authors": "Johnson and So",
+  "year": 2012,
+  "journal": "JFE",
+  "sample_start": 1996,
+  "sample_end": 2010,
+  "description": "Option to stock volume"
+ },
+ {
+  "acronym": "OptionVolume2",
+  "authors": "Johnson and So",
+  "year": 2012,
+  "journal": "JFE",
+  "sample_start": 1996,
+  "sample_end": 2010,
+  "description": "Option volume to average"
+ },
+ {
+  "acronym": "OrderBacklog",
+  "authors": "Rajgopal, Shevlin, Venkatachalam",
+  "year": 2003,
+  "journal": "RAS",
+  "sample_start": 1981,
+  "sample_end": 1999,
+  "description": "Order backlog"
+ },
+ {
+  "acronym": "OrderBacklogChg",
+  "authors": "Baik and Ahn",
+  "year": 2007,
+  "journal": "Other",
+  "sample_start": 1971,
+  "sample_end": 1999,
+  "description": "Change in order backlog"
+ },
+ {
+  "acronym": "OrgCap",
+  "authors": "Eisfeldt and Papanikolaou",
+  "year": 2013,
+  "journal": "JF",
+  "sample_start": 1970,
+  "sample_end": 2008,
+  "description": "Organizational capital"
+ },
+ {
+  "acronym": "OScore",
+  "authors": "Dichev",
+  "year": 1998,
+  "journal": "JF",
+  "sample_start": 1981,
+  "sample_end": 1995,
+  "description": "O Score"
+ },
+ {
+  "acronym": "PatentsRD",
+  "authors": "Hirschleifer, Hsu and Li",
+  "year": 2013,
+  "journal": "JFE",
+  "sample_start": 1982,
+  "sample_end": 2008,
+  "description": "Patents to RD expenses"
+ },
+ {
+  "acronym": "PayoutYield",
+  "authors": "Boudoukh et al.",
+  "year": 2007,
+  "journal": "JF",
+  "sample_start": 1984,
+  "sample_end": 2003,
+  "description": "Payout Yield"
+ },
+ {
+  "acronym": "PctAcc",
+  "authors": "Hafzalla, Lundholm, Van Winkle",
+  "year": 2011,
+  "journal": "AR",
+  "sample_start": 1989,
+  "sample_end": 2008,
+  "description": "Percent Operating Accruals"
+ },
+ {
+  "acronym": "PctTotAcc",
+  "authors": "Hafzalla, Lundholm, Van Winkle",
+  "year": 2011,
+  "journal": "AR",
+  "sample_start": 1989,
+  "sample_end": 2008,
+  "description": "Percent Total Accruals"
+ },
+ {
+  "acronym": "PredictedFE",
+  "authors": "Frankel and Lee",
+  "year": 1998,
+  "journal": "JAE",
+  "sample_start": 1979,
+  "sample_end": 1993,
+  "description": "Predicted Analyst forecast error"
+ },
+ {
+  "acronym": "Price",
+  "authors": "Blume and Husic",
+  "year": 1973,
+  "journal": "JF",
+  "sample_start": 1932,
+  "sample_end": 1971,
+  "description": "Price"
+ },
+ {
+  "acronym": "PriceDelayRsq",
+  "authors": "Hou and Moskowitz",
+  "year": 2005,
+  "journal": "RFS",
+  "sample_start": 1964,
+  "sample_end": 2001,
+  "description": "Price delay r square"
+ },
+ {
+  "acronym": "PriceDelaySlope",
+  "authors": "Hou and Moskowitz",
+  "year": 2005,
+  "journal": "RFS",
+  "sample_start": 1964,
+  "sample_end": 2001,
+  "description": "Price delay coeff"
+ },
+ {
+  "acronym": "PriceDelayTstat",
+  "authors": "Hou and Moskowitz",
+  "year": 2005,
+  "journal": "RFS",
+  "sample_start": 1964,
+  "sample_end": 2001,
+  "description": "Price delay SE adjusted"
+ },
+ {
+  "acronym": "ProbInformedTrading",
+  "authors": "Easley, Hvidkjaer and O'Hara",
+  "year": 2002,
+  "journal": "JF",
+  "sample_start": 1984,
+  "sample_end": 1998,
+  "description": "Probability of Informed Trading"
+ },
+ {
+  "acronym": "PS",
+  "authors": "Piotroski",
+  "year": 2000,
+  "journal": "JAR",
+  "sample_start": 1976,
+  "sample_end": 1996,
+  "description": "Piotroski F-score"
+ },
+ {
+  "acronym": "RD",
+  "authors": "Chan, Lakonishok and Sougiannis",
+  "year": 2001,
+  "journal": "JF",
+  "sample_start": 1975,
+  "sample_end": 1995,
+  "description": "R&D over market cap"
+ },
+ {
+  "acronym": "RDAbility",
+  "authors": "Cohen, Diether and Malloy",
+  "year": 2013,
+  "journal": "RFS",
+  "sample_start": 1980,
+  "sample_end": 2009,
+  "description": "R&D ability"
+ },
+ {
+  "acronym": "RDcap",
+  "authors": "Li",
+  "year": 2011,
+  "journal": "RFS",
+  "sample_start": 1980,
+  "sample_end": 2007,
+  "description": "R&D capital-to-assets"
+ },
+ {
+  "acronym": "RDIPO",
+  "authors": "Gou, Lev and Shi",
+  "year": 2006,
+  "journal": "JBFA",
+  "sample_start": 1980,
+  "sample_end": 1995,
+  "description": "IPO and no R&D spending"
+ },
+ {
+  "acronym": "RDS",
+  "authors": "Landsman et al.",
+  "year": 2011,
+  "journal": "AR",
+  "sample_start": 1976,
+  "sample_end": 2003,
+  "description": "Real dirty surplus"
+ },
+ {
+  "acronym": "realestate",
+  "authors": "Tuzel",
+  "year": 2010,
+  "journal": "RFS",
+  "sample_start": 1971,
+  "sample_end": 2005,
+  "description": "Real estate holdings"
+ },
+ {
+  "acronym": "RealizedVol",
+  "authors": "Ang et al.",
+  "year": 2006,
+  "journal": "JF",
+  "sample_start": 1963,
+  "sample_end": 2000,
+  "description": "Realized (Total) Volatility"
+ },
+ {
+  "acronym": "Recomm_ShortInterest",
+  "authors": "Drake, Rees and Swanson",
+  "year": 2011,
+  "journal": "AR",
+  "sample_start": 1994,
+  "sample_end": 2006,
+  "description": "Analyst Recommendations and Short-Interest"
+ },
+ {
+  "acronym": "ResidualMomentum",
+  "authors": "Blitz, Huij and Martens",
+  "year": 2011,
+  "journal": "JEmpFin",
+  "sample_start": 1930,
+  "sample_end": 2009,
+  "description": "Momentum based on FF3 residuals"
+ },
+ {
+  "acronym": "retConglomerate",
+  "authors": "Cohen and Lou",
+  "year": 2012,
+  "journal": "JFE",
+  "sample_start": 1977,
+  "sample_end": 2009,
+  "description": "Conglomerate return"
+ },
+ {
+  "acronym": "ReturnSkew",
+  "authors": "Bali, Engle and Murray",
+  "year": 2015,
+  "journal": "Book",
+  "sample_start": 1963,
+  "sample_end": 2012,
+  "description": "Return skewness"
+ },
+ {
+  "acronym": "ReturnSkew3F",
+  "authors": "Bali, Engle and Murray",
+  "year": 2015,
+  "journal": "Book",
+  "sample_start": 1963,
+  "sample_end": 2012,
+  "description": "Idiosyncratic skewness (3F model)"
+ },
+ {
+  "acronym": "REV6",
+  "authors": "Chan, Jegadeesh and Lakonishok",
+  "year": 1996,
+  "journal": "JF",
+  "sample_start": 1977,
+  "sample_end": 1992,
+  "description": "Earnings forecast revisions"
+ },
+ {
+  "acronym": "RevenueSurprise",
+  "authors": "Jegadeesh and Livnat",
+  "year": 2006,
+  "journal": "JAE",
+  "sample_start": 1987,
+  "sample_end": 2003,
+  "description": "Revenue Surprise"
+ },
+ {
+  "acronym": "RIO_Disp",
+  "authors": "Nagel",
+  "year": 2005,
+  "journal": "JFE",
+  "sample_start": 1980,
+  "sample_end": 2003,
+  "description": "Inst Own and Forecast Dispersion"
+ },
+ {
+  "acronym": "RIO_MB",
+  "authors": "Nagel",
+  "year": 2005,
+  "journal": "JFE",
+  "sample_start": 1980,
+  "sample_end": 2003,
+  "description": "Inst Own and Market to Book"
+ },
+ {
+  "acronym": "RIO_Turnover",
+  "authors": "Nagel",
+  "year": 2005,
+  "journal": "JFE",
+  "sample_start": 1980,
+  "sample_end": 2003,
+  "description": "Inst Own and Turnover"
+ },
+ {
+  "acronym": "RIO_Volatility",
+  "authors": "Nagel",
+  "year": 2005,
+  "journal": "JFE",
+  "sample_start": 1980,
+  "sample_end": 2003,
+  "description": "Inst Own and Idio Vol"
+ },
+ {
+  "acronym": "RIVolSpread",
+  "authors": "Bali and Hovakimian",
+  "year": 2009,
+  "journal": "MS",
+  "sample_start": 1996,
+  "sample_end": 2004,
+  "description": "Realized minus Implied Vol"
+ },
+ {
+  "acronym": "roaq",
+  "authors": "Balakrishnan, Bartov and Faurel",
+  "year": 2010,
+  "journal": "JAE",
+  "sample_start": 1976,
+  "sample_end": 2005,
+  "description": "Return on assets (qtrly)"
+ },
+ {
+  "acronym": "RoE",
+  "authors": "Haugen and Baker",
+  "year": 1996,
+  "journal": "JFE",
+  "sample_start": 1979,
+  "sample_end": 1993,
+  "description": "net income / book equity"
+ },
+ {
+  "acronym": "sfe",
+  "authors": "Elgers, Lo and Pfeiffer",
+  "year": 2001,
+  "journal": "AR",
+  "sample_start": 1982,
+  "sample_end": 1998,
+  "description": "Earnings Forecast to price"
+ },
+ {
+  "acronym": "ShareIss1Y",
+  "authors": "Pontiff and Woodgate",
+  "year": 2008,
+  "journal": "JF",
+  "sample_start": 1970,
+  "sample_end": 2003,
+  "description": "Share issuance (1 year)"
+ },
+ {
+  "acronym": "ShareIss5Y",
+  "authors": "Daniel and Titman",
+  "year": 2006,
+  "journal": "JF",
+  "sample_start": 1968,
+  "sample_end": 2003,
+  "description": "Share issuance (5 year)"
+ },
+ {
+  "acronym": "ShareRepurchase",
+  "authors": "Ikenberry, Lakonishok, Vermaelen",
+  "year": 1995,
+  "journal": "JFE",
+  "sample_start": 1980,
+  "sample_end": 1990,
+  "description": "Share repurchases"
+ },
+ {
+  "acronym": "ShareVol",
+  "authors": "Datar, Naik and Radcliffe",
+  "year": 1998,
+  "journal": "JFM",
+  "sample_start": 1962,
+  "sample_end": 1991,
+  "description": "Share Volume"
+ },
+ {
+  "acronym": "ShortInterest",
+  "authors": "Dechow et al.",
+  "year": 2001,
+  "journal": "JFE",
+  "sample_start": 1976,
+  "sample_end": 1993,
+  "description": "Short Interest"
+ },
+ {
+  "acronym": "sinAlgo",
+  "authors": "Hong and Kacperczyk",
+  "year": 2009,
+  "journal": "JFE",
+  "sample_start": 1926,
+  "sample_end": 2006,
+  "description": "Sin Stock (selection criteria)"
+ },
+ {
+  "acronym": "Size",
+  "authors": "Banz",
+  "year": 1981,
+  "journal": "JFE",
+  "sample_start": 1926,
+  "sample_end": 1975,
+  "description": "Size"
+ },
+ {
+  "acronym": "skew1",
+  "authors": "Xing, Zhang and Zhao",
+  "year": 2010,
+  "journal": "JFQA",
+  "sample_start": 1996,
+  "sample_end": 2005,
+  "description": "Volatility smirk near the money"
+ },
+ {
+  "acronym": "SmileSlope",
+  "authors": "Yan",
+  "year": 2011,
+  "journal": "JFE",
+  "sample_start": 1996,
+  "sample_end": 2005,
+  "description": "Put volatility minus call volatility"
+ },
+ {
+  "acronym": "SP",
+  "authors": "Barbee, Mukherji and Raines",
+  "year": 1996,
+  "journal": "FAJ",
+  "sample_start": 1979,
+  "sample_end": 1991,
+  "description": "Sales-to-price"
+ },
+ {
+  "acronym": "Spinoff",
+  "authors": "Cusatis, Miles and Woolridge",
+  "year": 1993,
+  "journal": "JFE",
+  "sample_start": 1965,
+  "sample_end": 1988,
+  "description": "Spinoffs"
+ },
+ {
+  "acronym": "std_turn",
+  "authors": "Chordia, Subra, Anshuman",
+  "year": 2001,
+  "journal": "JFE",
+  "sample_start": 1966,
+  "sample_end": 1995,
+  "description": "Share turnover volatility"
+ },
+ {
+  "acronym": "STreversal",
+  "authors": "Jegadeesh",
+  "year": 1990,
+  "journal": "JF",
+  "sample_start": 1934,
+  "sample_end": 1987,
+  "description": "Short term reversal"
+ },
+ {
+  "acronym": "SurpriseRD",
+  "authors": "Eberhart, Maxwell and Siddique",
+  "year": 2004,
+  "journal": "JF",
+  "sample_start": 1974,
+  "sample_end": 2001,
+  "description": "Unexpected R&D increase"
+ },
+ {
+  "acronym": "tang",
+  "authors": "Hahn and Lee",
+  "year": 2009,
+  "journal": "JF",
+  "sample_start": 1973,
+  "sample_end": 2001,
+  "description": "Tangibility"
+ },
+ {
+  "acronym": "Tax",
+  "authors": "Lev and Nissim",
+  "year": 2004,
+  "journal": "AR",
+  "sample_start": 1973,
+  "sample_end": 2000,
+  "description": "Taxable income to income"
+ },
+ {
+  "acronym": "TotalAccruals",
+  "authors": "Richardson et al.",
+  "year": 2005,
+  "journal": "JAE",
+  "sample_start": 1962,
+  "sample_end": 2001,
+  "description": "Total accruals"
+ },
+ {
+  "acronym": "TrendFactor",
+  "authors": "Han, Zhou, Zhu",
+  "year": 2016,
+  "journal": "JFE",
+  "sample_start": 1930,
+  "sample_end": 2014,
+  "description": "Trend Factor"
+ },
+ {
+  "acronym": "UpRecomm",
+  "authors": "Barber et al.",
+  "year": 2001,
+  "journal": "JF",
+  "sample_start": 1985,
+  "sample_end": 1997,
+  "description": "Up Forecast"
+ },
+ {
+  "acronym": "VarCF",
+  "authors": "Haugen and Baker",
+  "year": 1996,
+  "journal": "JFE",
+  "sample_start": 1979,
+  "sample_end": 1993,
+  "description": "Cash-flow to price variance"
+ },
+ {
+  "acronym": "VolMkt",
+  "authors": "Haugen and Baker",
+  "year": 1996,
+  "journal": "JFE",
+  "sample_start": 1979,
+  "sample_end": 1993,
+  "description": "Volume to market equity"
+ },
+ {
+  "acronym": "VolSD",
+  "authors": "Chordia, Subra, Anshuman",
+  "year": 2001,
+  "journal": "JFE",
+  "sample_start": 1966,
+  "sample_end": 1995,
+  "description": "Volume Variance"
+ },
+ {
+  "acronym": "VolumeTrend",
+  "authors": "Haugen and Baker",
+  "year": 1996,
+  "journal": "JFE",
+  "sample_start": 1979,
+  "sample_end": 1993,
+  "description": "Volume Trend"
+ },
+ {
+  "acronym": "XFIN",
+  "authors": "Bradshaw, Richardson, Sloan",
+  "year": 2006,
+  "journal": "JAE",
+  "sample_start": 1971,
+  "sample_end": 2000,
+  "description": "Net external financing"
+ },
+ {
+  "acronym": "zerotrade12M",
+  "authors": "Liu",
+  "year": 2006,
+  "journal": "JFE",
+  "sample_start": 1960,
+  "sample_end": 2003,
+  "description": "Days with zero trades"
+ },
+ {
+  "acronym": "zerotrade1M",
+  "authors": "Liu",
+  "year": 2006,
+  "journal": "JFE",
+  "sample_start": 1960,
+  "sample_end": 2003,
+  "description": "Days with zero trades"
+ },
+ {
+  "acronym": "zerotrade6M",
+  "authors": "Liu",
+  "year": 2006,
+  "journal": "JFE",
+  "sample_start": 1960,
+  "sample_end": 2003,
+  "description": "Days with zero trades"
+ }
+]

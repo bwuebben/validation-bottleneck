@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:15:07.515264+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 9,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zjBrU4ttU7AI2nPDv6nhrfP8Zzi",
+  "object": "chat.completion",
+  "created": 1784859301,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\"name\": \"Long-Term Asset Growth Volatility\", \"construction\": \"Calculate the standard deviation of annual percent changes in total assets over the past 7 years using Compustat annual data.\", \"rationale\": \"Firms with stable growth in assets may reflect disciplined capital allocation, while volatile asset growth could signal inconsistent strategy or response to industry shocks.\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Cash Flow Persistence\", \"construction\": \"Regress quarterly operating cash flows on a constant over the past 16 quarters; use the R-squared as the measure.\", \"rationale\": \"Persistent cash flows suggest a more predictable and durable business model, which may be underappreciated by the market.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Relative Supplier Concentration\", \"construction\": \"Divide purchases from the top supplier (from 10-K supply chain disclosures) by total COGS in the most recent fiscal year.\", \"rationale\": \"Dependence on a single supplier can expose firms to operational risks that might not be priced in.\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Cumulative Insider Trading Net Value\", \"construction\": \"Sum net purchases (buys minus sells) by all insiders over the past 12 months from SEC Form 4 filings, scaled by market capitalization.\", \"rationale\": \"Insiders have superior information about future firm prospects and their net buying may signal undervaluation.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Dividend Smoothing Score\", \"construction\": \"Standard deviation of annual dividend per share changes over the past 10 years, divided by average earnings per share over the same period.\", \"rationale\": \"Stable dividend policies may indicate management confidence and financial discipline, attracting longer-term investors.\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"R&D Capitalization Ratio\", \"construction\": \"Ratio of accumulated R&D expense over the past 5 years to total assets, with R&D accumulated as if it were capitalized and depreciated linearly over 5 years.\", \"rationale\": \"Firms investing heavily in R&D may be underappreciated if the market treats R&D as an expense rather than an investment.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Patent Application Intensity\", \"construction\": \"Count of patent applications in the past 3 years from USPTO data, divided by total assets.\", \"rationale\": \"High rates of innovation may drive future profitability that is not yet reflected in accounting numbers.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Lagged Environmental Incident Count\", \"construction\": \"Count the number of reported environmental violations or incidents (from EPA records) in the prior 3 years.\", \"rationale\": \"Firms with poor environmental track records may face regulatory or reputational risks not fully priced in.\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Supplier Payment Delay Index\", \"construction\": \"Average days payable outstanding (DPO) over the past 3 years, from Compustat cash flow and balance sheet data.\", \"rationale\": \"Firms delaying payments to suppliers might be experiencing liquidity issues or extracting value from working capital at the cost of long-term relationships.\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Relative Geographic Expansion Rate\", \"construction\": \"Count of new international markets entered in the last 5 years (as disclosed in 10-K business segment information), divided by prior 5-year average firm sales.\", \"rationale\": \"Aggressive but successful geographic expansion may signal growth opportunities yet to be fully priced.\", \"higher_returns_for\": \"high values of the measure\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 797,
+   "total_tokens": 1066,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_294c310c0b"
+ }
+}

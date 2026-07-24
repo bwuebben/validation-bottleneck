@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:46:32.781562+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 2,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zHPRsoh3kzkA98w8EGAkLivIaF0",
+  "object": "chat.completion",
+  "created": 1784857579,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n\"predictors\": [\n{\n\"name\": \"Debt Maturity Structure\",\n\"construction\": \"The proportion of a firm's debt that is due to mature in the next year. Calculated as short-term debt divided by total debt.\",\n\"rationale\": \"Firms with a larger proportion of short-term debt may face higher refinancing risk, which could signal financial distress and lead to higher expected returns.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Earnings Volatility\",\n\"construction\": \"Standard deviation of the firm's earnings over the past five years.\",\n\"rationale\": \"Firms with more volatile earnings might be riskier and require a higher expected return to compensate investors.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Investment Age\",\n\"construction\": \"The weighted average age of the firm's capital stock, using depreciation rates to weight the age of each vintage.\",\n\"rationale\": \"Older capital may be less productive or more prone to obsolescence, requiring higher expected returns to compensate for the risk.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Product Market Competition\",\n\"construction\": \"Inverse of the firm's market share in its primary industry.\",\n\"rationale\": \"Firms in more competitive markets may face higher business risk, leading to higher expected returns.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"R&D Intensity\",\n\"construction\": \"Research and development expenditures divided by total sales.\",\n\"rationale\": \"Firms that invest heavily in R&D may be taking on higher risk projects with uncertain outcomes, leading to higher expected returns.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Dividend Persistence\",\n\"construction\": \"Number of consecutive years a firm has paid dividends.\",\n\"rationale\": \"Firms with a longer history of dividend payments may be perceived as less risky, leading to lower expected returns.\",\n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"Labor Intensity\",\n\"construction\": \"Ratio of employee compensation to total assets.\",\n\"rationale\": \"Firms with higher labor intensity might be more vulnerable to wage shocks, leading to higher expected returns to compensate for the risk.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Geographic Diversification\",\n\"construction\": \"Number of different geographic markets in which the firm operates.\",\n\"rationale\": \"Firms that are more geographically diversified may be less vulnerable to local economic shocks, leading to lower expected returns.\",\n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"Tax Exposure\",\n\"construction\": \"Ratio of total taxes paid to pre-tax income.\",\n\"rationale\": \"Firms with higher tax exposure might face higher financial distress risk, requiring higher expected returns to compensate investors.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Customer Concentration\",\n\"construction\": \"Revenue from the firm's largest customer as a percentage of total revenue.\",\n\"rationale\": \"Firms that rely heavily on a single customer may face higher business risk, leading to higher expected returns.\",\n\"higher_returns_for\": \"High values of the measure\"\n}\n]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 679,
+   "total_tokens": 949,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

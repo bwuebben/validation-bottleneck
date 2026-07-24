@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:14:47.227494+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 6,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zirgR17soHH2goxWNM88fenElna",
+  "object": "chat.completion",
+  "created": 1784859281,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Customer Concentration Ratio\", \"construction\": \"Sum the percentage of total revenue derived from the firm's top 3 customers, as disclosed in annual filings.\", \"rationale\": \"Greater dependence on a few customers increases business risk and may not be fully priced.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Expense Deferral Ratio\", \"construction\": \"Calculate the ratio of capitalized expenses (e.g., capitalized R&D, software development costs) to total expenses in the most recent fiscal year.\", \"rationale\": \"Firms deferring more expenses may be engaging in earnings management, which could signal future risk.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Insider Loan Guarantee Exposure\", \"construction\": \"Indicator variable equal to 1 if insiders have guaranteed company debt (disclosed in proxy or 10-K), 0 otherwise.\", \"rationale\": \"Insider financial commitment may signal alignment of interests and unpriced risk.\", \"higher_returns_for\": \"value of 1 (insiders guaranteeing company debt)\"}, {\"name\": \"Short-Term Asset Volatility\", \"construction\": \"Compute standard deviation of quarterly changes in current assets over the past 12 quarters, scaled by average current assets.\", \"rationale\": \"Higher volatility in short-term assets may indicate operational uncertainty and mispricing.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Supplier Payment Stretch\", \"construction\": \"Change in days payable outstanding (DPO) over the past year.\", \"rationale\": \"Firms stretching payables may be facing financial constraints, which could foreshadow distress risk premium.\", \"higher_returns_for\": \"high increases in DPO\"}, {\"name\": \"Cost of Goods Sold Smoothing\", \"construction\": \"Calculate the autocorrelation of quarterly cost of goods sold (COGS) over the past 12 quarters.\", \"rationale\": \"Higher autocorrelation may reflect earnings management or operational rigidity, both potentially underpriced.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Patent Citation Growth\", \"construction\": \"Annual growth rate in the number of patent citations disclosed in patent filings or annual reports.\", \"rationale\": \"Rising patent citations may capture future innovation unrecognized by the market.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Contingent Liability Density\", \"construction\": \"Sum of estimated contingent liabilities (e.g., pending litigation, environmental fines) as a percentage of total assets, as disclosed in notes to financial statements.\", \"rationale\": \"Firms with higher contingent liabilities may face unpriced risks that could result in higher required returns.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"R&D Depreciation Ratio\", \"construction\": \"Ratio of accumulated amortization of capitalized R&D to total capitalized R&D on the balance sheet.\", \"rationale\": \"Higher ratios might signal mature or declining innovation assets, hence higher risk.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Non-GAAP Earnings Prevalence\", \"construction\": \"Count of non-GAAP earnings adjustments reported in press releases over the trailing year.\", \"rationale\": \"Frequent adjustments may indicate earnings quality concerns and hence higher risk premia.\", \"higher_returns_for\": \"high values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 698,
+   "total_tokens": 967,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_294c310c0b"
+ }
+}

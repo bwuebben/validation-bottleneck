@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:50:25.857616+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 2,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zL2Tkv70uzHy6zhoNIlfvsbCDIA",
+  "object": "chat.completion",
+  "created": 1784857804,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n\"predictors\": [\n{\n\"name\": \"Investment to Capital Ratio\",\n\"construction\": \"Compustat's annual capital expenditures divided by total assets, both at fiscal year-end.\",\n\"rationale\": \"Greater investment could imply management's belief in future growth opportunities.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"R&D Spend to Sales Ratio\",\n\"construction\": \"Compustat's annual R&D expense divided by annual sales revenue, both at fiscal year-end.\",\n\"rationale\": \"Firms spending more on R&D may have promising future growth prospects.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Debt Maturity Structure\",\n\"construction\": \"CRSP's long-term debt divided by total debt, both at fiscal year-end.\",\n\"rationale\": \"A firm's maturity structure can signal its credit risk.\",\n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"Advertising to Sales Ratio\",\n\"construction\": \"Compustat's annual advertising expense divided by annual sales revenue, both at fiscal year-end.\",\n\"rationale\": \"Higher advertising spend could suggest a firm's confidence in its products.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Durable Asset Ratio\",\n\"construction\": \"Compustat's property, plant & equipment divided by total assets, both at fiscal year-end.\",\n\"rationale\": \"Firms with more durable assets might be more resilient to downturns.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Dividend Payout Frequency\",\n\"construction\": \"Number of times dividends are paid during the fiscal year, sourced from CRSP.\",\n\"rationale\": \"Frequent payouts could signal management's confidence in consistent cash flows.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"CEO Tenure\",\n\"construction\": \"Number of years the current CEO has been in position, sourced from proxy statements.\",\n\"rationale\": \"Longer CEO tenure might indicate stable management and strategic focus.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Revenue Concentration\",\n\"construction\": \"Herfindahl index of sales across different business segments, sourced from Compustat Segment data.\",\n\"rationale\": \"High concentration might indicate a firm's competitiveness in its main operations.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Employee Productivity\",\n\"construction\": \"Annual sales revenue divided by the number of employees, both sourced from Compustat at fiscal year-end.\",\n\"rationale\": \"Higher productivity could reflect efficient operations and superior human capital management.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Insider Trading Volume\",\n\"construction\": \"Number of shares traded by insiders during the fiscal year, sourced from SEC Form 4 filings.\",\n\"rationale\": \"Insider trading can provide signals about the firm's future prospects.\",\n\"higher_returns_for\": \"High values of the measure\"\n}\n]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 632,
+   "total_tokens": 902,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:15:41.089498+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 3,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zjkySnBcGuEXOZOxPn0rzJBWEQM",
+  "object": "chat.completion",
+  "created": 1784859336,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Short-Term Asset Growth Dispersion\", \"construction\": \"Compute the standard deviation of quarterly asset growth rates over the past two years for each firm.\", \"rationale\": \"Firms with highly volatile asset growth may reflect managerial uncertainty or shifting business prospects, potentially mispriced by investors.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"R&D to Free Cash Flow Ratio\", \"construction\": \"Divide total R&D expense (annual) by free cash flow (annual, operating cash flow minus capital expenditures).\", \"rationale\": \"Firms investing a higher proportion of free cash flow into R&D may have more growth options underappreciated by the market.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Late Filer Indicator\", \"construction\": \"Flag firms that file annual 10-Ks more than 90 days after fiscal year-end.\", \"rationale\": \"Late filings may signal internal problems or poor governance that investors penalize, possibly leading to subsequent mean reversion.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Net Insider Trading\", \"construction\": \"Sum net insider purchases (shares bought minus shares sold by officers/directors) over the past six months and divide by shares outstanding.\", \"rationale\": \"Insiders have superior firm information; net purchases may indicate undervaluation.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Negative Analyst Revision Skew\", \"construction\": \"Calculate the skewness of analyst earnings forecast revisions over the past year for each firm.\", \"rationale\": \"Unusually negative skewness may indicate overreaction, leading to future reversals.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Operating Cost Stickiness\", \"construction\": \"Measure percent change in operating costs when revenue falls by at least 5% year-over-year; define stickiness as % cost change divided by % revenue change.\", \"rationale\": \"Firms with stickier costs may have less operational flexibility, which could be mispriced by the market.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"New Product Announcements\", \"construction\": \"Count the number of new product launches announced in press releases in the past 12 months.\", \"rationale\": \"Frequent product launches may reflect innovation undervalued by investors.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Backlog Growth Rate\", \"construction\": \"Compute the year-over-year percentage change in order backlog as reported in 10-Ks.\", \"rationale\": \"Rising backlogs can signal underestimated future revenues and growth.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Dividend Initiation Surprise\", \"construction\": \"Flag firms that initiate a dividend after at least three years of no dividend; measure the amount as a percent of current earnings.\", \"rationale\": \"Unexpected dividend initiations may signal improved prospects underappreciated by the market.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Patent Citation Intensity\", \"construction\": \"Count the number of citations received by a firm\u2019s patents (from USPTO data) over the past three years, scaled by total assets.\", \"rationale\": \"Firms with more highly cited patents may possess valuable intellectual property not fully reflected in current prices.\", \"higher_returns_for\": \"high values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 716,
+   "total_tokens": 985,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_1adda89cc2"
+ }
+}

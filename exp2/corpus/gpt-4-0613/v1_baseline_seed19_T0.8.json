@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:51:51.972114+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 19,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yQ8kvAo6QYUemQpre1iSLyXMTUA",
+  "object": "chat.completion",
+  "created": 1784854276,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\"name\": \"Hypothesis01\",\n   \"mechanism\": \"Bullish market regimes favor high-momentum stocks overvalue while bearish market regimes reward low-beta stocks' stability, creating a return premium.\",\n   \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"Mom12m\"}, {\"weight\": 0.5, \"primitive\": \"Beta\"}], \"regime\": null, \"vol_target\": true},\n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}],\n   \"expected_annualized_sharpe\": 0.6,\n   \"expected_decay_half_life_months\": 24\n  },\n  {\"name\": \"Hypothesis02\",\n   \"mechanism\": \"Firms with high asset growth and high earnings forecast revisions are likely to be undervalued, creating a return premium in bullish market regimes.\",\n   \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"AssetGrowth\"}, {\"weight\": 0.5, \"primitive\": \"AnalystRevision\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": true},\n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}],\n   \"expected_annualized_sharpe\": 0.7,\n   \"expected_decay_half_life_months\": 36\n  },\n  {\"name\": \"Hypothesis03\",\n   \"mechanism\": \"Firms with high operating profitability and low book-to-market ratios are likely to outperform in bearish market regimes.\",\n   \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"OperProf\"}, {\"weight\": -0.5, \"primitive\": \"BM\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": true},\n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"below\", \"threshold\": 0.3}],\n   \"expected_annualized_sharpe\": 0.5,\n   \"expected_decay_half_life_months\": 24\n  },\n  {\"name\": \"Hypothesis04\",\n   \"mechanism\": \"Firms with high R&D expenditures and low market leverage are undervalued in developed non-US markets.\",\n   \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": -0.5, \"primitive\": \"Leverage\"}], \"regime\": null, \"vol_target\": true},\n   \"auxiliary_predictions\": [{\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"subperiod_consistency\"}],\n   \"expected_annualized_sharpe\": 0.5,\n   \"expected_decay_half_life_months\": 48\n  },\n  {\"name\": \"Hypothesis05\",\n   \"mechanism\": \"Firms with high R&D ability and low book leverage are likely to be undervalued, creating a return premium in bullish market regimes.\",\n   \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RDAbility\"}, {\"weight\": -0.5, \"primitive\": \"BookLeverage\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": true},\n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}],\n   \"expected_annualized_sharpe\": 0.6,\n   \"expected_decay_half_life_months\": 36\n  },\n  {\"name\": \"Hypothesis06\",\n   \"mechanism\": \"Low momentum and low volatility firms are likely to be undervalued, creating a return premium in bearish market regimes.\",\n   \"expression\": {\"terms\": [{\"weight\": -0.5, \"primitive\": \"Mom12m\"}, {\"weight\": -0.5, \"primitive\": \"RealizedVol\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": true},\n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"above\", \"threshold\": 0.3}],\n   \"expected_annualized_sharpe\": 0.6,\n   \"expected_decay_half_life_months\": 48\n  },\n  {\"name\": \"Hypothesis07\",\n   \"mechanism\": \"Firms with high governance scores and high predicted earnings forecasts are likely to be undervalued.\",\n   \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Governance\"}, {\"weight\": 0.5, \"primitive\": \"PredictedFE\"}], \"regime\": null, \"vol_target\": true},\n   \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"subperiod_consistency\"}],\n   \"expected_annualized_sharpe\": 0.7,\n   \"expected_decay_half_life_months\": 60\n  },\n  {\"name\": \"Hypothesis08\",\n   \"mechanism\": \"Firms with high cash-to-asset ratios and low beta are likely to be undervalued, creating a return premium in bearish market regimes.\",\n   \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Cash\"}, {\"weight\": -0.5, \"primitive\": \"Beta\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": true},\n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}],\n   \"expected_annualized_sharpe\": 0.6,\n   \"expected_decay_half_life_months\": 36\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2864,
+   "completion_tokens": 1599,
+   "total_tokens": 4463,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

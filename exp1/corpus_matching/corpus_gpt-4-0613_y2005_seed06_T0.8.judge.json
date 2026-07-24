@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:25:59.910358+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y2005_seed06_T0.8.json",
+  "prompt_sha256": "c62eddc6d85ff06c0cd788342b789ac13d2707dbc281faae5cbd06ca75858014"
+ },
+ "response": {
+  "id": "chatcmpl-E4ztlM8ZG3ZTI9i4cw78OY2Xom2iW",
+  "object": "chat.completion",
+  "created": 1784859957,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses dividend coverage volatility or similar construction.\"},\n  {\"index\": 1, \"match\": \"ChAssetTurnover\", \"strength\": \"close\", \"reason\": \"Both measure changes in efficiency of asset/inventory turnover.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses debt maturity structure or similar ratio.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses management tenure dispersion or similar signal.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses R&D expenditure stability or similar volatility measure.\"},\n  {\"index\": 5, \"match\": \"NOA\", \"strength\": \"close\", \"reason\": \"Both relate to net operating assets and working capital efficiency.\"},\n  {\"index\": 6, \"match\": \"AdExp\", \"strength\": \"related\", \"reason\": \"Both use marketing/advertising expenses relative to firm size or sales.\"},\n  {\"index\": 7, \"match\": \"CashProd\", \"strength\": \"related\", \"reason\": \"Both relate to productivity, but CashProd uses cash, not employees.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses foreign sales ratio or similar international exposure.\"},\n  {\"index\": 9, \"match\": \"FR\", \"strength\": \"exact\", \"reason\": \"FR is defined as pension funding status, matching the proposal exactly.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2691,
+   "completion_tokens": 367,
+   "total_tokens": 3058,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

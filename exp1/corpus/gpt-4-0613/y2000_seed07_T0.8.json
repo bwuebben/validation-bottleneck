@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:55:37.209227+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 7,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zQAAduCxzDmgjUqbXcHK9aoCX6b",
+  "object": "chat.completion",
+  "created": 1784858122,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\n    \"name\": \"Net Stock Issuance\",\n    \"construction\": \"Calculate the difference between shares issued and shares repurchased over the past fiscal year.\",\n    \"rationale\": \"Firms issuing new shares may be overvalued, signaling low future returns, while those repurchasing may be undervalued.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Composite Equity Issuance\",\n    \"construction\": \"Compute net equity issuance and scale by market capitalization. Sum it up over the past five years.\",\n    \"rationale\": \"Sustained equity dilution may indicate overvaluation.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Accruals\",\n    \"construction\": \"Calculate the difference between net income and cash flow from operations, scaled by total assets.\",\n    \"rationale\": \"Firms with high accruals may be engaging in earnings management, implying lower future earnings.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Net Operating Assets\",\n    \"construction\": \"Calculate the difference between total assets and total liabilities, excluding cash, and divide by total assets.\",\n    \"rationale\": \"Firms with high net operating assets may be less efficient, suggesting lower future returns.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Gross Profitability\",\n    \"construction\": \"Calculate gross profits (revenue minus cost of goods sold) over total assets.\",\n    \"rationale\": \"Firms with high gross profitability might have competitive advantages, implying higher future returns.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Asset Growth\",\n    \"construction\": \"Calculate the annual growth rate of total assets.\",\n    \"rationale\": \"Firms with high asset growth may be overinvesting, implying lower future returns.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Return on Assets\",\n    \"construction\": \"Calculate net income over total assets.\",\n    \"rationale\": \"Firms with high return on assets might be more efficient, suggesting higher future returns.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Investment to Assets\",\n    \"construction\": \"Calculate the ratio of capital expenditures to total assets.\",\n    \"rationale\": \"Firms with high investment to assets may be overinvesting, implying lower future returns.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Change in Turnover\",\n    \"construction\": \"Calculate the change in asset turnover (sales divided by total assets) from the previous year.\",\n    \"rationale\": \"Increases in turnover may signal improved efficiency, implying higher future returns.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Change in Net Operating Assets\",\n    \"construction\": \"Calculate the annual change in net operating assets.\",\n    \"rationale\": \"Firms with increasing net operating assets may be less efficient, suggesting lower future returns.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 698,
+   "total_tokens": 968,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

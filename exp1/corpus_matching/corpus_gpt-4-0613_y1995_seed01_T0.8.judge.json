@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:24:12.190262+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y1995_seed01_T0.8.json",
+  "prompt_sha256": "1435beac983fb9ddf4f8efbdb24be83c00c320025284392f51ba46a1a50f59cf"
+ },
+ "response": {
+  "id": "chatcmpl-E4zs1XDUuR3EzSOoNpN1OQ1MYveAe",
+  "object": "chat.completion",
+  "created": 1784859849,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer concentration or similar signal.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee satisfaction or survey-based index.\"},\n  {\"index\": 2, \"match\": \"CitationsRD\", \"strength\": \"exact\", \"reason\": \"CitationsRD uses patent citations as a measure of patent quality.\"},\n  {\"index\": 3, \"match\": \"AdExp\", \"strength\": \"close\", \"reason\": \"AdExp uses advertising expense; proposal normalizes by sales.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses R&D per patent or innovation efficiency.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses environmental responsibility or ESG scores.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses product diversity or product count.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses executive gender diversity or similar.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses supply chain complexity or supplier count.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses health and safety records or OSHA data.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2658,
+   "completion_tokens": 351,
+   "total_tokens": 3009,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:05:27.938823+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 3,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zZmWOUtrJpBrOe5oEGdvfZ7udQR",
+  "object": "chat.completion",
+  "created": 1784858718,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n    \"predictors\": [\n        {\n            \"name\": \"Earnings Stability\",\n            \"construction\": \"Calculate the standard deviation of quarterly earnings per share (EPS) over the past 5 years.\",\n            \"rationale\": \"Firms with stable earnings may be perceived as less risky, but the market might underappreciate this stability, leading to potential mispricing.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        },\n        {\n            \"name\": \"Employee Growth Rate\",\n            \"construction\": \"Compute the annual growth rate in the number of employees over the past 3 years using company reports.\",\n            \"rationale\": \"Rapid employee growth might indicate expansion and potential future revenue growth not yet reflected in stock prices.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Inventory Efficiency\",\n            \"construction\": \"Calculate the ratio of cost of goods sold (COGS) to average inventory over the past year.\",\n            \"rationale\": \"Efficient inventory management indicates effective operational control and can reflect positively on future profitability.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Supplier Concentration\",\n            \"construction\": \"Determine the percentage of total purchases made from the top 3 suppliers reported in financial statements.\",\n            \"rationale\": \"Lower supplier concentration reduces dependency risk, potentially leading to more stable and predictable cash flows.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        },\n        {\n            \"name\": \"Customer Loyalty Ratio\",\n            \"construction\": \"Measure the ratio of repeat customer sales to total sales over the past year from company reports.\",\n            \"rationale\": \"High customer loyalty can lead to stable revenue streams and pricing power.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Dividend Payout Volatility\",\n            \"construction\": \"Calculate the standard deviation of the dividend payout ratio over the past 5 years.\",\n            \"rationale\": \"Stable dividend payouts might suggest financial health and manager confidence, reducing perceived risk.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        },\n        {\n            \"name\": \"Book-to-Market Cyclicality\",\n            \"construction\": \"Evaluate the cyclical pattern of the book-to-market ratio over the past decade.\",\n            \"rationale\": \"Firms that exhibit counter-cyclical book-to-market ratios may have better risk management or diversification strategies.\",\n            \"higher_returns_for\": \"counter-cyclical patterns\"\n        },\n        {\n            \"name\": \"R&D Intensity Change\",\n            \"construction\": \"Compute the year-over-year change in the R&D expenditure to sales ratio over the last 3 years.\",\n            \"rationale\": \"Increased focus on R&D can signal future growth prospects and innovation capabilities.\",\n            \"higher_returns_for\": \"high positive changes\"\n        },\n        {\n            \"name\": \"Management Turnover Rate\",\n            \"construction\": \"Calculate the frequency of changes in key executive positions (CEO, CFO) over the past 5 years.\",\n            \"rationale\": \"Frequent management changes can imply instability, while stability might suggest effective leadership.\",\n            \"higher_returns_for\": \"low turnover rate\"\n        },\n        {\n            \"name\": \"Foreign Sales Exposure\",\n            \"construction\": \"Determine the percentage of total sales originating from foreign markets as reported in financial statements.\",\n            \"rationale\": \"Higher foreign sales can indicate diversification and growth opportunities beyond domestic market constraints.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        }\n    ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 746,
+   "total_tokens": 1015,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_94cd41efba"
+ }
+}

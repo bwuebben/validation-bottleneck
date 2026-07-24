@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:01:07.438524+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 11,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yZ3cPqMwWSQTvptYZ3J3YANEget",
+  "object": "chat.completion",
+  "created": 1784854829,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n\n{\"name\": \"Momentum-Duration\", \"mechanism\": \"Firms with high momentum and longer equity duration likely have significant growth opportunities, leading to higher risk-adjusted returns.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"Mom12m\"}, {\"weight\": 0.5, \"primitive\": \"EquityDuration\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.65, \"expected_decay_half_life_months\": 60},\n\n{\"name\": \"Asset-Growth-Volatility\", \"mechanism\": \"Firms with high asset growth and high idiosyncratic volatility are exposed to higher risk, commanding a risk premium.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"AssetGrowth\"}, {\"weight\": 0.5, \"primitive\": \"IdioVol3F\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}, {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}], \n\"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 48},\n\n{\"name\": \"Quality-Investment\", \"mechanism\": \"Firms with high operating profitability and lower investment will have higher quality earnings, leading to higher returns.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"OperProf\"}, {\"weight\": -1.0, \"primitive\": \"Investment\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}, {\"type\": \"subperiod_consistency\"}], \n\"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 36},\n\n{\"name\": \"Value-Momentum\", \"mechanism\": \"Firms with high book-to-market ratios and positive momentum are undervalued and will earn higher returns.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"BM\"}, {\"weight\": 0.5, \"primitive\": \"Mom6m\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}, {\"type\": \"correlation\", \"primitive\": \"Size\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 24},\n\n{\"name\": \"Profitability-Illiquidity\", \"mechanism\": \"Firms with high profitability and illiquidity are undervalued and will earn higher returns.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"OperProf\"}, {\"weight\": 0.5, \"primitive\": \"Illiquidity\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}, {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.75, \"expected_decay_half_life_months\": 18},\n\n{\"name\": \"Momentum-Volatility\", \"mechanism\": \"Firms with high momentum and low idiosyncratic volatility offer a combination of high returns and low risk.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"Mom12m\"}, {\"weight\": -0.5, \"primitive\": \"IdioVol3F\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 30},\n\n{\"name\": \"Profitability-Asset Growth\", \"mechanism\": \"Firms with high profitability and low asset growth are undervalued and will earn higher returns.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"OperProf\"}, {\"weight\": -1.0, \"primitive\": \"AssetGrowth\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": true}, \n\"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.65, \"expected_decay_half_life_months\": null},\n\n{\"name\": \"Momentum-ShareVolume\", \"mechanism\": \"Firms with high momentum and high share volume are underpriced and will earn higher returns.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"Mom12m\"}, {\"weight\": 0.5, \"primitive\": \"ShareVol\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": false}, \n\"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}, {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"above\", \"threshold\": 0.3}], \n\"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 24}\n\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2965,
+   "completion_tokens": 1542,
+   "total_tokens": 4507,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

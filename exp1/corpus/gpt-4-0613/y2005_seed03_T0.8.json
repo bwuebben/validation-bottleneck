@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:57:43.184711+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 3,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zSAYLJJa8vYtsPBrwL2QoFhIzZB",
+  "object": "chat.completion",
+  "created": 1784858246,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\n    \"name\": \"Patent Novelty\",\n    \"construction\": \"Count of a firm's US patents in the past year, weighted by the number of forward citations received within the same period.\",\n    \"rationale\": \"Innovative firms with groundbreaking inventions may outperform in the future.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"CEO Age\",\n    \"construction\": \"Current age of the firm's CEO.\",\n    \"rationale\": \"Younger CEOs may be more dynamic and innovative, leading to higher future returns.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Customer Satisfaction Index\",\n    \"construction\": \"Average customer satisfaction scores from independent surveys, normalized across all companies.\",\n    \"rationale\": \"Firms providing superior customer satisfaction may have a competitive advantage resulting in higher future returns.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Social Media Sentiment\",\n    \"construction\": \"Average sentiment score of a firm's mentions on various social media platforms over the past quarter.\",\n    \"rationale\": \"Positive social media sentiment may indicate strong customer relationships and brand image, which could drive future outperformance.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Employee Turnover Rate\",\n    \"construction\": \"Number of employees who left the firm in the past year divided by the average number of employees during the year.\",\n    \"rationale\": \"High employee turnover may be a sign of internal issues and could predict lower future performance.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Product Recall Frequency\",\n    \"construction\": \"Number of product recalls in the last three years, normalized by the number of products the firm has on the market.\",\n    \"rationale\": \"Frequent product recalls may indicate quality control problems, which could impact future returns negatively.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Proportion of Independent Board Members\",\n    \"construction\": \"Number of independent board members divided by the total number of board members.\",\n    \"rationale\": \"A higher proportion of independent board members may lead to better governance and higher future returns.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Customer Concentration\",\n    \"construction\": \"Sales to the firm's largest customer divided by total sales.\",\n    \"rationale\": \"Firms reliant on a single customer may face higher business risks and lower future returns.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Supplier Concentration\",\n    \"construction\": \"Purchases from the firm's largest supplier divided by total purchases.\",\n    \"rationale\": \"High supplier concentration may indicate a lack of bargaining power, potentially leading to lower future profitability and returns.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Managerial Ownership Change\",\n    \"construction\": \"Calculate the year-over-year change in the percentage of the firm's shares owned by its managers.\",\n    \"rationale\": \"Increases in managerial ownership may align interests with shareholders, potentially leading to higher future returns.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 721,
+   "total_tokens": 991,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

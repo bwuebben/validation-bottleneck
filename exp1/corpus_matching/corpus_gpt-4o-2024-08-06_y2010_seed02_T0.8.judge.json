@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:32:31.814900+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4o-2024-08-06/y2010_seed02_T0.8.json",
+  "prompt_sha256": "1d1adcf42bfb65bd7a300a88d50553e838a5b950b8250fdc55743e3af15d514d"
+ },
+ "response": {
+  "id": "chatcmpl-E5004TCCqZVzj0UeV9mukwDA78iYN",
+  "object": "chat.completion",
+  "created": 1784860348,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses social media sentiment or similar construction.\"},\n  {\"index\": 1, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Both use patent activity normalized by firm size/assets.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses carbon emissions or environmental efficiency.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee satisfaction or similar survey data.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses supply chain diversity or similar construction.\"},\n  {\"index\": 5, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Both relate to board structure and governance, but signal is different.\"},\n  {\"index\": 6, \"match\": \"CustomerMomentum\", \"strength\": \"related\", \"reason\": \"Both use customer base dynamics, but different signal construction.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses insider trading ratios or similar construction.\"},\n  {\"index\": 8, \"match\": \"IntanBM\", \"strength\": \"close\", \"reason\": \"Both use intangible assets as a key signal, normalized by firm size.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses green investment or similar sustainability ratio.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2751,
+   "completion_tokens": 358,
+   "total_tokens": 3109,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

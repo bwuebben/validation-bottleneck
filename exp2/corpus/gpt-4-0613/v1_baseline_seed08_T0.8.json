@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:42:53.454877+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 8,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yGzJ9yQkH1fXX8zvyXJ5L99G2bW",
+  "object": "chat.completion",
+  "created": 1784853709,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\"name\": \"H1\", \n   \"mechanism\": \"Firms with high asset growth (AssetGrowth) and high intangible returns (IntanEP) demonstrate strong future performance when market volatility is low (VIX_BELOW_TRAILING_MEDIAN), due to increased investor confidence and reduced risk aversion.\", \n   \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"AssetGrowth\"}, {\"weight\": 0.5, \"primitive\": \"IntanEP\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": true}, \n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"below\", \"threshold\": 0.3}], \n   \"expected_annualized_sharpe\": 0.7, \n   \"expected_decay_half_life_months\": 36},\n\n  {\"name\": \"H2\", \n   \"mechanism\": \"Firms with high revenue growth (MeanRankRevGrowth) and low market leverage (Leverage) tend to outperform during economic expansion (TERM_SPREAD_POSITIVE) due to their financial stability and growth potential.\", \n   \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"MeanRankRevGrowth\"}, {\"weight\": -0.5, \"primitive\": \"Leverage\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": true}, \n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \n   \"expected_annualized_sharpe\": 0.8, \n   \"expected_decay_half_life_months\": null},\n\n  {\"name\": \"H3\", \n   \"mechanism\": \"Firms with low bid-ask spread (BidAskSpread) and high book-to-market ratio (BM) perform well when market is trending down (MKT_TRAILING_12M_DOWN), as they are undervalued yet liquid.\", \n   \"expression\": {\"terms\": [{\"weight\": -1, \"primitive\": \"BidAskSpread\"}, {\"weight\": 1, \"primitive\": \"BM\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": false}, \n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"subperiod_consistency\"}], \n   \"expected_annualized_sharpe\": 0.6, \n   \"expected_decay_half_life_months\": 24},\n\n  {\"name\": \"H4\", \n   \"mechanism\": \"Firms with high institutional ownership (DelBreadth) and high earnings surprises (EarningsSurprise) tend to perform better in positive market conditions (MKT_TRAILING_12M_UP) due to information efficiency and positive sentiment.\", \n   \"expression\": {\"terms\": [{\"weight\": 1, \"primitive\": \"DelBreadth\"}, {\"weight\": 1, \"primitive\": \"EarningsSurprise\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": true}, \n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"above\", \"threshold\": 0.3}], \n   \"expected_annualized_sharpe\": 0.9, \n   \"expected_decay_half_life_months\": 48},\n\n  {\"name\": \"H5\", \n   \"mechanism\": \"Companies with high earnings consistency (EarningsConsistency) and low idiosyncratic risk (IdioVolAHT) tend to perform well in high market volatility (VIX_ABOVE_TRAILING_MEDIAN) due to their stability.\", \n   \"expression\": {\"terms\": [{\"weight\": 1, \"primitive\": \"EarningsConsistency\"}, {\"weight\": -1, \"primitive\": \"IdioVolAHT\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true}, \n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"subperiod_consistency\"}], \n   \"expected_annualized_sharpe\": 0.7, \n   \"expected_decay_half_life_months\": 60},\n\n  {\"name\": \"H6\", \n   \"mechanism\": \"Firms with high asset growth (AssetGrowth) and low leverage (Leverage) tend to perform well during economic expansions (TERM_SPREAD_POSITIVE) due to their growth potential and financial stability.\", \n   \"expression\": {\"terms\": [{\"weight\": 1, \"primitive\": \"AssetGrowth\"}, {\"weight\": -0.5, \"primitive\": \"Leverage\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": true}, \n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \n   \"expected_annualized_sharpe\": 0.8, \n   \"expected_decay_half_life_months\": 36},\n\n  {\"name\": \"H7\", \n   \"mechanism\": \"Firms with high revenue surprise (RevenueSurprise) and low price levels (Price) outperform in down-trending market (MKT_TRAILING_12M_DOWN) due to their value proposition and positive earnings news.\", \n   \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"RevenueSurprise\"}, {\"weight\": -0.5, \"primitive\": \"Price\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": false}, \n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"above\", \"threshold\": 0.3}], \n   \"expected_annualized_sharpe\": 0.6, \n   \"expected_decay_half_life_months\": 24},\n\n  {\"name\": \"H8\", \n   \"mechanism\": \"Companies with high advertising expenses (AdExp) and high sales growth (GrSaleToGrInv) outperform during economic expansions (TERM_SPREAD_POSITIVE) due to their investment in brand promotion and growing sales.\", \n   \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"AdExp\"}, {\"weight\": 0.5, \"primitive\": \"GrSaleToGrInv\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": true}, \n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}], \n   \"expected_annualized_sharpe\": 0.7, \n   \"expected_decay_half_life_months\": 36}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2864,
+   "completion_tokens": 1793,
+   "total_tokens": 4657,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

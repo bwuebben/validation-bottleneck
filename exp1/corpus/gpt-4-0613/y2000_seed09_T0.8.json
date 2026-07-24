@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:56:10.094192+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 9,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zQg6yK7Lirz0dFUqP55Hw3YJ43R",
+  "object": "chat.completion",
+  "created": 1784858154,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n\"predictors\": \n[\n  {\n    \"name\": \"Employee Satisfaction\",\n    \"construction\": \"Use data from employee satisfaction surveys, normalized by company size. Higher scores indicate more satisfaction.\",\n    \"rationale\": \"More satisfied employees could lead to increased productivity and higher earnings.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n\n  {\n    \"name\": \"CEO Compensation Ratio\",\n    \"construction\": \"Ratio of CEO compensation to median employee compensation. Higher values indicate a larger disparity.\",\n    \"rationale\": \"A large CEO pay gap could indicate potential issues with corporate governance and employee morale, possibly leading to inferior future performance.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n\n  {\n    \"name\": \"Climate Risk Exposure\",\n    \"construction\": \"Estimate of a company's potential financial loss due to climate change, such as property risk, regulatory risk, and market risk.\",\n    \"rationale\": \"Firms with higher climate risk may be more likely to face financial losses, legal liabilities, and reputational harm.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n\n  {\n    \"name\": \"Internet Presence\",\n    \"construction\": \"Uses data on website traffic and search engine ranking. Higher values indicate a stronger internet presence.\",\n    \"rationale\": \"Firms with a strong internet presence may have a marketing advantage, possibly leading to higher sales and earnings.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n\n  {\n    \"name\": \"Product Quality\",\n    \"construction\": \"Use data on product recalls and customer reviews. Higher values indicate lower product quality.\",\n    \"rationale\": \"Firms with lower product quality could face reputational harm and financial losses.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n\n  {\n    \"name\": \"Cybersecurity Risk\",\n    \"construction\": \"Data on a company's number of reported cybersecurity incidents. Higher values indicate more incidents.\",\n    \"rationale\": \"Companies with weak cybersecurity may face financial losses and reputational harm.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n\n  {\n    \"name\": \"Customer Loyalty\",\n    \"construction\": \"Use customer satisfaction surveys and product repurchase rates. Higher values indicate more customer loyalty.\",\n    \"rationale\": \"Firms with loyal customers may have a competitive advantage, possibly leading to higher sales and earnings.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n\n  {\n    \"name\": \"R&D Efficiency\",\n    \"construction\": \"Ratio of revenue growth to research and development expenses. Higher values indicate more efficient R&D.\",\n    \"rationale\": \"Firms that more efficiently convert R&D into revenue growth may outperform.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n\n  {\n    \"name\": \"Supply Chain Resilience\",\n    \"construction\": \"Use data on the number and severity of supply chain disruptions. Higher values indicate more disruptions.\",\n    \"rationale\": \"Firms with frequent supply chain disruptions may face operational inefficiencies and financial losses.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n\n  {\n    \"name\": \"Diversity and Inclusion Score\",\n    \"construction\": \"Use data on the diversity of a company's workforce and leadership. Higher scores indicate more diversity.\",\n    \"rationale\": \"Diverse companies may have broader perspectives and better decision-making, possibly leading to superior performance.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  }\n]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 740,
+   "total_tokens": 1010,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

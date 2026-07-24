@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:50:03.085837+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 1,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zKfLmgDQhskXfMblm0CzhNzm2xy",
+  "object": "chat.completion",
+  "created": 1784857781,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Customer Concentration\",\n      \"construction\": \"Calculate the percentage of sales derived from a firm's major customers. Use annual report disclosures.\",\n      \"rationale\": \"Firms with high customer concentration may face higher business risks.\",\n      \"higher_returns_for\": \"Firms with low customer concentration\"\n    },\n    {\n      \"name\": \"Employee Satisfaction\",\n      \"construction\": \"Compute an index based on employee reviews from surveys. Use external survey data if available.\",\n      \"rationale\": \"Firms with satisfied employees may have better productivity and lower staff turnover.\",\n      \"higher_returns_for\": \"Firms with high employee satisfaction\"\n    },\n    {\n      \"name\": \"Patent Quality\",\n      \"construction\": \"Count the number of times a firm's patents are cited by other patents. Use US Patent and Trademark Office data.\",\n      \"rationale\": \"Firms with high quality patents may enjoy greater competitive advantages.\",\n      \"higher_returns_for\": \"Firms with high patent quality\"\n    },\n    {\n      \"name\": \"Advertising Intensity\",\n      \"construction\": \"Compute a firm's advertising expenditure as a percentage of its sales. Use data from annual reports.\",\n      \"rationale\": \"Firms with high advertising intensity may have strong brand recognition.\",\n      \"higher_returns_for\": \"Firms with high advertising intensity\"\n    },\n    {\n      \"name\": \"Innovation Efficiency\",\n      \"construction\": \"Calculate a firm's research and development expenditure as a percentage of its patent counts. Use data from annual reports and US Patent and Trademark Office.\",\n      \"rationale\": \"Firms that efficiently convert R&D into patents may have superior innovation capabilities.\",\n      \"higher_returns_for\": \"Firms with high innovation efficiency\"\n    },\n    {\n      \"name\": \"Environmental Responsibility\",\n      \"construction\": \"Construct a score based on a firm's environmental practices. Use data from sustainability reports or external ESG ratings agencies.\",\n      \"rationale\": \"Firms with strong environmental responsibility may face less regulatory risks.\",\n      \"higher_returns_for\": \"Firms with high environmental responsibility\"\n    },\n    {\n      \"name\": \"Product Diversity\",\n      \"construction\": \"Count the number of unique products or services a firm offers. Use firm's annual reports or product catalogs.\",\n      \"rationale\": \"Firms with diverse products may have lower business risks.\",\n      \"higher_returns_for\": \"Firms with high product diversity\"\n    },\n    {\n      \"name\": \"Executive Gender Diversity\",\n      \"construction\": \"Calculate the percentage of a firm's executives that are women. Use data from annual reports or proxy statements.\",\n      \"rationale\": \"Firms with gender diverse leadership may have more balanced decision making.\",\n      \"higher_returns_for\": \"Firms with high executive gender diversity\"\n    },\n    {\n      \"name\": \"Supply Chain Complexity\",\n      \"construction\": \"Compute an index based on the number of suppliers and geographical spread of a firm's supply chain. Use data from annual reports or supplier disclosures.\",\n      \"rationale\": \"Firms with complex supply chains may face higher operational risks.\",\n      \"higher_returns_for\": \"Firms with low supply chain complexity\"\n    },\n    {\n      \"name\": \"Health and Safety Record\",\n      \"construction\": \"Calculate a score based on a firm's recorded incidents and accidents. Use data from Occupational Safety and Health Administration (OSHA).\",\n      \"rationale\": \"Firms with strong health and safety records may face lower litigation risks.\",\n      \"higher_returns_for\": \"Firms with strong health and safety records\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 745,
+   "total_tokens": 1015,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

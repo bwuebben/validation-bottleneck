@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:13:26.694848+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 6,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zhYhebEhLJdkBcQoLPysfIrXKNP",
+  "object": "chat.completion",
+  "created": 1784859200,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Operating Expense Efficiency\", \"construction\": \"Total operating expenses (from income statement) divided by total revenues, measured over the trailing twelve months.\", \"rationale\": \"Firms with lower operating expense ratios may have better cost controls, potentially leading to higher profitability and investor re-rating.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Inventory Accruals\", \"construction\": \"Change in inventories (from balance sheet) over the past year divided by average total assets.\", \"rationale\": \"High inventory accruals can signal aggressive revenue recognition or slowing demand, which may foreshadow weaker future performance.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Dividend Change Momentum\", \"construction\": \"Percentage change in annual dividends per share over the past three years.\", \"rationale\": \"Firms with accelerating dividend growth may be signaling strong, sustainable cash flows and commitment to shareholders.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Short-Term Asset Growth\", \"construction\": \"Change in current assets (from balance sheet) over the past year divided by lagged total assets.\", \"rationale\": \"Rapid asset growth can be associated with overinvestment or empire-building, which may lead to lower subsequent returns.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"SG&A Intensity\", \"construction\": \"Selling, general, and administrative (SG&A) expenses divided by total revenues, measured over the trailing twelve months.\", \"rationale\": \"Lower SG&A intensity may indicate more efficient operations and better margin discipline.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Relative Analyst Coverage\", \"construction\": \"Number of analyst earnings estimates for a firm divided by the median number for its industry (data from I/B/E/S or similar).\", \"rationale\": \"Stocks with less analyst attention may be more likely to be mispriced, offering higher average returns to investors who do the extra research.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Late Reporter Penalty\", \"construction\": \"Number of days between fiscal year-end and annual report (10-K) filing date.\", \"rationale\": \"Firms that delay financial reporting may have poor internal controls or negative surprises, both factors that could predict lower future returns.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Net Insider Purchases\", \"construction\": \"Net number of shares purchased by insiders over the prior six months, scaled by shares outstanding (data from SEC filings).\", \"rationale\": \"Insider buying may indicate undervaluation or confidence in firm prospects, while selling can signal the opposite.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Interest Coverage Change\", \"construction\": \"Change in earnings before interest and taxes (EBIT) divided by interest expense, comparing the most recent year to the previous year.\", \"rationale\": \"Improvement in the ability to service debt may indicate strengthening financial health, which could lead to higher future returns.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"R&D Capitalization Ratio\", \"construction\": \"Total R&D expense over the past three years divided by average total assets, for firms that capitalize and expense R&D (where disclosed).\", \"rationale\": \"Firms investing more heavily in R&D relative to assets may generate higher innovation and long-term growth, which the market might underappreciate.\", \"higher_returns_for\": \"high values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 741,
+   "total_tokens": 1010,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5e8833dc3f"
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:05:06.559026+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 1,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zZSZpc7mdEcx7YB44RDKVPch3MR",
+  "object": "chat.completion",
+  "created": 1784858698,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"predictors\": [\n    {\n      \"name\": \"Earnings Revision Velocity\",\n      \"construction\": \"Calculate the percentage change in analyst earnings estimates for the next fiscal year over the past month.\",\n      \"rationale\": \"Rapid upward revisions may indicate new favorable information leading to increased investor interest.\",\n      \"higher_returns_for\": \"stocks with high positive changes in earnings estimates\"\n    },\n    {\n      \"name\": \"Supply Chain Integration\",\n      \"construction\": \"Ratio of a firm's accounts payable to the accounts receivable of its top suppliers, averaged over the last fiscal year.\",\n      \"rationale\": \"Firms effectively managing their supply chains may achieve cost efficiencies and stronger pricing power.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Marketing Intensity\",\n      \"construction\": \"Advertising expenses divided by total sales, averaged over the past three fiscal years.\",\n      \"rationale\": \"Firms investing heavily in marketing may build stronger brands, leading to increased market share and pricing power.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Technology Adoption Index\",\n      \"construction\": \"Ratio of capital expenditures on technology to total capital expenditures, calculated annually.\",\n      \"rationale\": \"Firms investing more in technology may realize productivity gains and competitive advantages.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Environmental Efficiency\",\n      \"construction\": \"Ratio of waste management expenses to total revenue, averaged over the last fiscal year.\",\n      \"rationale\": \"Firms effectively managing environmental costs may reduce regulatory risks and improve operational efficiency.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Global Market Integration\",\n      \"construction\": \"Proportion of total revenue derived from international sales, calculated annually.\",\n      \"rationale\": \"Firms with significant global operations may benefit from diversified revenue sources and currency advantages.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Employee Training Investment\",\n      \"construction\": \"Training expenses divided by the number of employees, averaged over the past two years.\",\n      \"rationale\": \"Investing in employee skill development may enhance productivity and innovation.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Product Diversification Index\",\n      \"construction\": \"Count of distinct product lines offered by the firm, updated annually.\",\n      \"rationale\": \"Firms with a broad product portfolio may better withstand market fluctuations and capture diverse customer segments.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Customer Concentration\",\n      \"construction\": \"Percentage of total sales to the firm's top customer, reported in the latest fiscal year.\",\n      \"rationale\": \"High dependency on a single customer may increase business risk, potentially affecting stability and growth.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Executive Compensation Performance Sensitivity\",\n      \"construction\": \"CEO compensation tied to performance metrics divided by total CEO compensation, recalculated annually.\",\n      \"rationale\": \"Performance-linked compensation structures may align management's interests with shareholders, driving value creation.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 709,
+   "total_tokens": 978,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_94cd41efba"
+ }
+}

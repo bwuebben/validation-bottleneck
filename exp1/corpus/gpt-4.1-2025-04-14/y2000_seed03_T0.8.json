@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:14:26.710975+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 3,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ziWOCffm2PhDluaxXWbBG9N1Dyu",
+  "object": "chat.completion",
+  "created": 1784859260,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Short-Term Asset Growth Reversal\", \"construction\": \"Compute percentage change in total assets over the most recent quarter, then reverse-sort: focus on stocks with the largest declines in assets over the past quarter.\", \"rationale\": \"Firms rapidly reducing assets may be recovering from overinvestment or divesting unproductive segments, potentially boosting future performance.\", \"higher_returns_for\": \"stocks with the most negative recent quarterly asset growth\"}, {\"name\": \"R&D to Gross Margin Ratio\", \"construction\": \"Divide a company\u2019s annual research & development expense by its trailing twelve-month gross margin.\", \"rationale\": \"High R&D spend relative to gross profits may indicate strong reinvestment in innovation and long-term competitive advantage.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Inventory Write-Down Ratio\", \"construction\": \"Sum inventory write-downs reported over the past year, divide by average total inventory for the same period.\", \"rationale\": \"Firms recognizing inventory obsolescence promptly may have more conservative accounting and better risk management, positioning for recovery.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Late Accounts Receivable Growth\", \"construction\": \"Calculate the 12-month change in accounts receivable, scaled by sales; focus on the top decile of increases.\", \"rationale\": \"Unusual growth in accounts receivable relative to sales may signal aggressive revenue recognition and higher risk, so lower growth may be positive.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Net Repurchase Yield\", \"construction\": \"Total cash spent on share buybacks minus cash received from share issuance, divided by market capitalization, over the past year.\", \"rationale\": \"Firms that shrink their share count may signal confidence in undervaluation and shareholder alignment.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Employee Efficiency Ratio\", \"construction\": \"Calculate total revenue divided by the number of employees; use the year-over-year change in this ratio.\", \"rationale\": \"Rising revenue per employee can indicate operational efficiency improvements that may translate into higher profitability.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Dividend Initiation Momentum\", \"construction\": \"Dummy variable equal to one for firms that initiated a dividend (paid a first dividend) in the past 12 months.\", \"rationale\": \"Firms beginning to pay dividends may have reached a new level of financial stability or profitability, signaling positive prospects.\", \"higher_returns_for\": \"recent initiators (value of one)\"}, {\"name\": \"Tax Rate Deviation\", \"construction\": \"Difference between the effective tax rate and the statutory federal tax rate, averaged over the past two years.\", \"rationale\": \"Firms with lower effective tax rates than the statutory rate may benefit from persistent tax advantages, raising future net income.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Minority Interest Growth\", \"construction\": \"12-month percentage change in minority interest reported on the balance sheet.\", \"rationale\": \"Rising minority interest may indicate profitable expansion of consolidated subsidiaries or joint ventures.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Deferred Revenue Ratio\", \"construction\": \"Deferred revenue at fiscal year-end divided by total assets.\", \"rationale\": \"High deferred revenue may signal strong future sales and cash flow visibility, supporting higher valuations.\", \"higher_returns_for\": \"high values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 725,
+   "total_tokens": 994,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_294c310c0b"
+ }
+}

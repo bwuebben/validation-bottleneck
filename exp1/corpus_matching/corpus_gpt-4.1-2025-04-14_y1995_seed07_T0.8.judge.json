@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:27:59.263502+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y1995_seed07_T0.8.json",
+  "prompt_sha256": "8cb71193d7ba0c503c8f4c559b2646efe4545a15b030151e6c6216322027a18b"
+ },
+ "response": {
+  "id": "chatcmpl-E4zvgUs0j7prPrwnwKDawySDDQq1d",
+  "object": "chat.completion",
+  "created": 1784860076,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"OPLeverage\", \"strength\": \"close\", \"reason\": \"Both capture operating leverage via income/sales changes.\"},\n  {\"index\": 1, \"match\": \"ChInv\", \"strength\": \"close\", \"reason\": \"Both use changes in inventory growth, but proposal uses acceleration.\"},\n  {\"index\": 2, \"match\": \"GrSaleToGrOverhead\", \"strength\": \"related\", \"reason\": \"Both use sales growth, but proposal is seasonal and quarterly.\"},\n  {\"index\": 3, \"match\": \"DivOmit\", \"strength\": \"exact\", \"reason\": \"Both indicate dividend omission events.\"},\n  {\"index\": 4, \"match\": \"CashProd\", \"strength\": \"related\", \"reason\": \"Both measure productivity, but proposal uses sales/employees.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses deferred tax asset ratio.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses insider option grant intensity.\"},\n  {\"index\": 7, \"match\": \"Accruals\", \"strength\": \"close\", \"reason\": \"Both use receivables accruals, but proposal isolates receivables.\"},\n  {\"index\": 8, \"match\": \"SurpriseRD\", \"strength\": \"close\", \"reason\": \"Both measure unexpected R&D increases, but proposal normalizes by sales.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses supplier concentration ratio.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2812,
+   "completion_tokens": 365,
+   "total_tokens": 3177,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

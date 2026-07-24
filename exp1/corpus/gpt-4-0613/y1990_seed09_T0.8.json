@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:48:50.054608+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 9,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zJUHEb9tXedsEoiqZZ5YWVyToxr",
+  "object": "chat.completion",
+  "created": 1784857708,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n\"predictors\": \n[\n  {\n    \"name\": \"Employee Satisfaction\",\n    \"construction\": \"Survey data on employee satisfaction from firms, averaged over the past year.\",\n    \"rationale\": \"Firms with satisfied employees are likely to have better corporate culture and higher productivity, potentially leading to better financial performance.\",\n    \"higher_returns_for\": \"Firms with high employee satisfaction scores\"\n  },\n  {\n    \"name\": \"Customer Loyalty\",\n    \"construction\": \"Consumer survey data on brand loyalty, averaged over the last quarter.\",\n    \"rationale\": \"Companies with loyal customers are likely to have stable, recurring revenue streams, leading to predictable earnings and potentially higher returns.\",\n    \"higher_returns_for\": \"Firms with high customer loyalty scores\"\n  },\n  {\n    \"name\": \"Diversity Score\",\n    \"construction\": \"Measure of diversity in firms' executive teams and board of directors.\",\n    \"rationale\": \"Increased diversity may lead to a broader range of perspectives and better decision making, enhancing firm value.\",\n    \"higher_returns_for\": \"Firms with high diversity scores\"\n  },\n  {\n    \"name\": \"Environmental Impact\",\n    \"construction\": \"Measure of firms' environmental footprint, including waste generation and carbon emissions.\",\n    \"rationale\": \"Firms that manage their environmental impact may be better at managing other risks, leading to higher returns.\",\n    \"higher_returns_for\": \"Firms with lower environmental impact scores\"\n  },\n  {\n    \"name\": \"R&D Intensity\",\n    \"construction\": \"Ratio of research and development expenditures to total sales, averaged over the past five years.\",\n    \"rationale\": \"Investments in R&D may lead to future innovations and competitive advantages, potentially leading to higher future returns.\",\n    \"higher_returns_for\": \"Firms with high R&D intensity\"\n  },\n  {\n    \"name\": \"Patent Count\",\n    \"construction\": \"Number of patents granted to a firm over the past year.\",\n    \"rationale\": \"Patents may provide a firm with a competitive advantage, leading to higher returns.\",\n    \"higher_returns_for\": \"Firms with a high patent count\"\n  },\n  {\n    \"name\": \"Product Quality\",\n    \"construction\": \"Consumer survey data on perceived product quality, averaged over the last quarter.\",\n    \"rationale\": \"High product quality may indicate a strong brand and pricing power, leading to higher returns.\",\n    \"higher_returns_for\": \"Firms with high product quality scores\"\n  },\n  {\n    \"name\": \"Cybersecurity Investment\",\n    \"construction\": \"Measure of a firm's investment in cybersecurity infrastructure, relative to its industry peers.\",\n    \"rationale\": \"Given the increasing importance of data, firms that invest in cybersecurity may be better positioned to protect their assets and reputation, leading to higher returns.\",\n    \"higher_returns_for\": \"Firms with higher relative cybersecurity investment\"\n  },\n  {\n    \"name\": \"CEO Tenure\",\n    \"construction\": \"The number of years the current CEO has held the position.\",\n    \"rationale\": \"Long-serving CEOs may suggest stability and consistent leadership, which may be associated with better financial performance and higher returns.\",\n    \"higher_returns_for\": \"Firms with longer-serving CEOs\"\n  },\n  {\n    \"name\": \"Corporate Philanthropy\",\n    \"construction\": \"Measure of a firm's charitable donations as a percentage of its pre-tax profits.\",\n    \"rationale\": \"Firms that engage in philanthropy may benefit from improved public image and employee morale, potentially leading to higher returns.\",\n    \"higher_returns_for\": \"Firms with higher levels of corporate philanthropy\"\n  }\n]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 752,
+   "total_tokens": 1022,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

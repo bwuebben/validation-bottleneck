@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:06:56.147644+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 1,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zbCPstzy8LVAE7FUbQXHwZGD7uQ",
+  "object": "chat.completion",
+  "created": 1784858806,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n    \"predictors\": [\n        {\n            \"name\": \"Earnings Stability\",\n            \"construction\": \"Calculate the standard deviation of quarterly earnings per share (EPS) over the past 5 years.\",\n            \"rationale\": \"Firms with stable earnings are perceived as less risky and might be undervalued by risk-averse investors.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        },\n        {\n            \"name\": \"Patent Growth Rate\",\n            \"construction\": \"Compute the annualized growth rate of the number of patents filed in the past 3 years using company patent disclosures.\",\n            \"rationale\": \"Firms with rapid innovation may capture future growth opportunities that are not yet fully priced into the stock.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Supply Chain Dominance\",\n            \"construction\": \"Ratio of firm sales to supplier expenditure, calculated using industry input-output tables and firm sales data annually.\",\n            \"rationale\": \"Firms that dominate their supply chains have pricing power and potential cost advantages.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Environmental Efficiency\",\n            \"construction\": \"Total revenue per metric ton of carbon emissions, using firm-reported emissions data and financial statements annually.\",\n            \"rationale\": \"More environmentally efficient firms may incur lower future regulatory and operational costs, leading to higher profitability.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Customer Concentration Risk\",\n            \"construction\": \"Percentage of total sales attributed to the top 3 customers from annual reports.\",\n            \"rationale\": \"Firms reliant on a few customers may face higher business risk, potentially leading to higher expected returns as compensation.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Insider Trading Intensity\",\n            \"construction\": \"Aggregate dollar value of insider purchases minus sales over the past 12 months, scaled by market capitalization.\",\n            \"rationale\": \"High insider buying may signal undervaluation or future positive developments not yet known to the market.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"R&D Expense Trajectory\",\n            \"construction\": \"Slope of the linear regression of research and development (R&D) expenses over the past 8 quarters.\",\n            \"rationale\": \"Increasing investment in R&D might indicate commitment to future growth and innovation.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Employee Retention Rate\",\n            \"construction\": \"Annual employee retention rate derived from employee count data in financial statements.\",\n            \"rationale\": \"High retention rates may reflect good management and employee satisfaction, which can drive long-term performance.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Operational Complexity\",\n            \"construction\": \"Number of distinct business segments reported in financial statements.\",\n            \"rationale\": \"More complex firms might face higher management challenges and risk, leading to higher expected returns.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Geographic Revenue Diversification\",\n            \"construction\": \"Herfindahl-Hirschman Index of revenue distribution across different geographic regions from annual reports.\",\n            \"rationale\": \"Firms with diversified revenue sources may be less affected by regional economic downturns, potentially leading to undervalued risk.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        }\n    ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 756,
+   "total_tokens": 1025,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2079a33cc7"
+ }
+}

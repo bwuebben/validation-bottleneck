@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:08:33.386140+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 20,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yg7igC16TyL47FMcasDV8WxqUsL",
+  "object": "chat.completion",
+  "created": 1784855267,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Hyp_1\",\n    \"mechanism\": \"Investment in advertisement and research leads to future growth and profitability, which is often underestimated by the market.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"AdExp\"},\n        {\"weight\": 0.5, \"primitive\": \"RD\"}\n      ], \n      \"regime\": \"MKT_TRAILING_12M_UP\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Hyp_2\",\n    \"mechanism\": \"Profitable firms with large market share may consolidate their position during market downturns, leading to higher returns.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"GP\"},\n        {\"weight\": 1.0, \"primitive\": \"Size\"}\n      ], \n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"High52\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.55,\n    \"expected_decay_half_life_months\": null\n  },\n  {\n    \"name\": \"Hyp_3\",\n    \"mechanism\": \"Firms with low leverage and high liquidity are better equipped to withstand financial distress and thus provide higher returns.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"Leverage\"},\n        {\"weight\": -1.0, \"primitive\": \"Illiquidity\"}\n      ],\n      \"regime\": \"TERM_SPREAD_NEGATIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"medium\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"VolSD\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.65,\n    \"expected_decay_half_life_months\": 60\n  },\n  {\n    \"name\": \"Hyp_4\",\n    \"mechanism\": \"Firms that invest in organizational capital are likely to have more competitive advantages and hence higher returns.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"OrgCap\"},\n        {\"weight\": -0.5, \"primitive\": \"AgeIPO\"}\n      ],\n      \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"Accruals\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.5,\n    \"expected_decay_half_life_months\": 48\n  },\n  {\n    \"name\": \"Hyp_5\",\n    \"mechanism\": \"Companies with high earnings consistency and low idiosyncratic risk are more stable and may yield higher returns.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"EarningsConsistency\"},\n        {\"weight\": -1.0, \"primitive\": \"IdioVolAHT\"}\n      ],\n      \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"medium\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": null\n  },\n  {\n    \"name\": \"Hyp_6\",\n    \"mechanism\": \"Firms with low bid-ask spread and high analyst optimism are more likely to have information efficiency, leading to higher returns.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -1.0, \"primitive\": \"BidAskSpread\"},\n        {\"weight\": 1.0, \"primitive\": \"AOP\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_UP\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"AnnouncementReturn\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 72\n  },\n  {\n    \"name\": \"Hyp_7\",\n    \"mechanism\": \"Firms with high cash flows and high sales growth have better financial health and potential for future profitability, leading to higher returns.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"CF\"},\n        {\"weight\": 1.0, \"primitive\": \"GrSaleToGrInv\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": null\n  },\n  {\n    \"name\": \"Hyp_8\",\n    \"mechanism\": \"Firms with high return on assets and low share issuance may be more efficient and less likely to dilute shareholder value, leading to higher returns.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"roaq\"},\n        {\"weight\": -1.0, \"primitive\": \"ShareIss1Y\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"medium\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"ShareRepurchase\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.65,\n    \"expected_decay_half_life_months\": 60\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2965,
+   "completion_tokens": 1812,
+   "total_tokens": 4777,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

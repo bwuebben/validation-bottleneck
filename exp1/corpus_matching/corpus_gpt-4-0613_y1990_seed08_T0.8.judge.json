@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:23:56.016732+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y1990_seed08_T0.8.json",
+  "prompt_sha256": "99cacd0ff0af00f6fe734f5706aaf7b33db95876bee412effd94caffbaefaf13"
+ },
+ "response": {
+  "id": "chatcmpl-E4zrkbYufkASpIqNPrnwNRz1SyUzQ",
+  "object": "chat.completion",
+  "created": 1784859832,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for non-operating income or its ratio.\"},\n  {\"index\": 1, \"match\": \"grcapx\", \"strength\": \"exact\", \"reason\": \"Year-over-year capex growth matches grcapx construction.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses revenue per employee.\"},\n  {\"index\": 3, \"match\": \"IntanBM\", \"strength\": \"close\", \"reason\": \"Both use intangible assets, but IntanBM uses book-to-market.\"},\n  {\"index\": 4, \"match\": \"RD\", \"strength\": \"exact\", \"reason\": \"R&D over sales is the standard RD predictor.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for inventory turnover ratio.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for debt maturity structure.\"},\n  {\"index\": 7, \"match\": \"Tax\", \"strength\": \"exact\", \"reason\": \"Tax is defined as taxable income to income (tax rate).\"},\n  {\"index\": 8, \"match\": \"BookLeverage\", \"strength\": \"related\", \"reason\": \"BookLeverage is related, but not equity-to-capital.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for foreign sales ratio.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2660,
+   "completion_tokens": 351,
+   "total_tokens": 3011,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

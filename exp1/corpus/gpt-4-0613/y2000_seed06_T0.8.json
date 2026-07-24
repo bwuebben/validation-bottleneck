@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:55:21.169582+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 6,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zPlXleN9kOlasy5lq4Nwpc0Arvp",
+  "object": "chat.completion",
+  "created": 1784858097,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Dividend Coverage Volatility\",\n      \"construction\": \"Standard deviation of the ratio of Earnings Before Interest and Taxes (EBIT) to dividends paid over the past 5 years\",\n      \"rationale\": \"Firms with high dividend coverage volatility may face more uncertainty in their ability to maintain dividends, which could lead investors to require a higher return\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Inventory Turnover Growth\",\n      \"construction\": \"Growth rate of the ratio of cost of goods sold to inventory over the past 1 year\",\n      \"rationale\": \"Firms improving their efficiency in selling their inventory are likely to have improving operating performance and may earn higher future returns\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Sales Forecast Dispersion\",\n      \"construction\": \"Standard deviation of analysts' sales forecasts for the next fiscal year, divided by the number of forecasts\",\n      \"rationale\": \"High dispersion of analysts' forecasts may signal higher risk, leading to higher expected returns\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Customer Concentration\",\n      \"construction\": \"Sales to the largest customer as a proportion of total sales\",\n      \"rationale\": \"Firms with high customer concentration may face higher business risk due to potential loss of a major customer\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Employee Productivity\",\n      \"construction\": \"Sales divided by number of employees\",\n      \"rationale\": \"High employee productivity may indicate a firm's operational efficiency and competitiveness\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Pension Fund Status\",\n      \"construction\": \"Market value of pension fund assets minus pension obligations\",\n      \"rationale\": \"Firms with underfunded pension plans may face higher future expenses, which could lead to higher required return\",\n      \"higher_returns_for\": \"Low values of the measure\"\n    },\n    {\n      \"name\": \"Off-Balance Sheet Liability\",\n      \"construction\": \"Operating lease obligations from footnotes, discounted back to the present using the firm's cost of debt\",\n      \"rationale\": \"Firms with high off-balance sheet liability may face higher future expenses and higher risk, leading to higher required return\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Geographic Diversification\",\n      \"construction\": \"Number of different geographic segments in which the firm operates\",\n      \"rationale\": \"Firms that are more geographically diversified may have lower risk due to diversification benefits\",\n      \"higher_returns_for\": \"Low values of the measure\"\n    },\n    {\n      \"name\": \"Environmental Compliance Cost\",\n      \"construction\": \"Costs related to environmental compliance disclosed in footnotes or MD&A\",\n      \"rationale\": \"Firms with high environmental compliance cost may face higher operational cost and higher risk, leading to higher required return\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Investment Cycle\",\n      \"construction\": \"Change in capital expenditures as a percentage of property, plant, and equipment\",\n      \"rationale\": \"Firms in the expansion phase of their investment cycle may have higher future growth potential\",\n      \"higher_returns_for\": \"High values of the measure\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 748,
+   "total_tokens": 1018,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

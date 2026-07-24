@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:46:25.828533+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 12,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yKjMxDWu7Czo9KVvUwTmhJEJ3fo",
+  "object": "chat.completion",
+  "created": 1784853941,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Hypothesis1\",\n    \"mechanism\": \"Firms with strong momentum during market upturns but lower liquidity tend to have a higher return as liquidity dries up during market downturns.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"Mom12m\"},\n        {\"weight\": -0.5, \"primitive\": \"Illiquidity\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"Illiquidity\", \"bound\": \"above\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Hypothesis2\",\n    \"mechanism\": \"Firms with a high book to market ratio and high momentum in a positive term spread environment would yield higher returns due to value and momentum premiums.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 0.5, \"primitive\": \"BM\"},\n        {\"weight\": 0.5, \"primitive\": \"Mom12m\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.8,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Hypothesis3\",\n    \"mechanism\": \"Firms with high asset growth and low illiquidity perform better during periods of a negative term spread as they are perceived as safer investments.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"AssetGrowth\"},\n        {\"weight\": -0.5, \"primitive\": \"Illiquidity\"}\n      ],\n      \"regime\": \"TERM_SPREAD_NEGATIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 30\n  },\n  {\n    \"name\": \"Hypothesis4\",\n    \"mechanism\": \"Firms showing strong past return performance and being more tangible are likely to deliver stronger performance in a down market as they are perceived as safer investments.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 0.5, \"primitive\": \"Mom12m\"},\n        {\"weight\": 0.5, \"primitive\": \"tang\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"tang\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 18\n  },\n  {\n    \"name\": \"Hypothesis5\",\n    \"mechanism\": \"Firms with higher R&D expenses and higher momentum are likely to outperform in a up market due to growth and momentum premiums.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 0.5, \"primitive\": \"RD\"},\n        {\"weight\": 0.5, \"primitive\": \"Mom12m\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_UP\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.9,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Hypothesis6\",\n    \"mechanism\": \"Firms with lower liquidity and higher analyst optimism perform better in a down market as they are underfollowed and likely to be undervalued.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -0.5, \"primitive\": \"Illiquidity\"},\n        {\"weight\": 1.0, \"primitive\": \"AOP\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.75,\n    \"expected_decay_half_life_months\": 18\n  },\n  {\n    \"name\": \"Hypothesis7\",\n    \"mechanism\": \"Firms with a high book to market ratio and high asset growth in a positive term spread environment would yield higher returns due to value and growth premiums.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 0.5, \"primitive\": \"BM\"},\n        {\"weight\": 0.5, \"primitive\": \"AssetGrowth\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.8,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Hypothesis8\",\n    \"mechanism\": \"Firms with a lower bid-ask spread and high asset growth perform better in a up market as they are more liquid and likely to attract more investors.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -0.5, \"primitive\": \"BidAskSpread\"},\n        {\"weight\": 1.0, \"primitive\": \"AssetGrowth\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_UP\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.85,\n    \"expected_decay_half_life_months\": 24\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2864,
+   "completion_tokens": 1811,
+   "total_tokens": 4675,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

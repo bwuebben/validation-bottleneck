@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:16:42.447555+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zkhIGlW7McgWLfyYJSWZrCppHMe",
+  "object": "chat.completion",
+  "created": 1784859395,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Short-Term Accruals Volatility\", \"construction\": \"Calculate the standard deviation of quarterly short-term accruals (change in current assets minus change in current liabilities minus depreciation) over the past 8 quarters.\", \"rationale\": \"Firms with more volatile accruals may face greater uncertainty or earnings management, which could be mispriced by investors.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"R&D Capitalization Ratio\", \"construction\": \"Divide the sum of R&D expense over the past 3 years by the sum of total assets over the same period.\", \"rationale\": \"Firms investing heavily in R&D relative to assets may be undervalued due to conservative accounting treatment of R&D.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Dividend Initiation Momentum\", \"construction\": \"Indicator variable equal to 1 if the firm initiated a dividend in the past 12 months and 0 otherwise.\", \"rationale\": \"Dividend initiations may signal management confidence and future profitability not yet reflected in prices.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Net Insider Trading Volume\", \"construction\": \"Aggregate net purchases (buys minus sells) of company shares by insiders over the past 6 months, scaled by shares outstanding.\", \"rationale\": \"Insider buying may indicate undervaluation or positive private information.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Patent Grant Growth\", \"construction\": \"Year-over-year percentage change in the number of patents granted to the firm, using USPTO data.\", \"rationale\": \"Rapid growth in patent grants may signal future innovation and competitive advantage.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Customer Concentration Risk\", \"construction\": \"Sum of squared revenue shares of the top 5 customers (from 10-K disclosures) in the most recent fiscal year.\", \"rationale\": \"Firms with less customer concentration may have more stable revenues and lower risk of negative shocks.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Deferred Tax Asset Ratio\", \"construction\": \"Deferred tax assets divided by total assets, from the most recent annual report.\", \"rationale\": \"High deferred tax assets may indicate aggressive accounting or future earnings headwinds.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Supplier Payment Stretch\", \"construction\": \"Change in accounts payable divided by cost of goods sold over the past year.\", \"rationale\": \"Firms stretching payments to suppliers may be facing liquidity issues or managing earnings.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Employee Productivity Growth\", \"construction\": \"Year-over-year percentage change in revenue per employee, using Compustat and company headcount disclosures.\", \"rationale\": \"Improving productivity may signal operational efficiency and future profitability.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Shareholder Proposal Rejection Rate\", \"construction\": \"Number of shareholder proposals rejected at annual meetings in the past 3 years divided by total proposals submitted.\", \"rationale\": \"Frequent rejection of shareholder proposals may indicate entrenched management and potential governance issues.\", \"higher_returns_for\": \"low values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 692,
+   "total_tokens": 961,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_245b7c7787"
+ }
+}

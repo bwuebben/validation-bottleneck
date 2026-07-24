@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:56:25.162052+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zQxyo2IZJZBw3gYCl3OCR2QSnII",
+  "object": "chat.completion",
+  "created": 1784858171,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n\"predictors\": [\n{\n\"name\": \"Internet Adoption Rate\",\n\"construction\": \"Compute the ratio of a firm's total web traffic to its total sales over the previous year.\",\n\"rationale\": \"Firms successfully adopting internet technologies may have a competitive advantage, leading to future profitability.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Customer Satisfaction Score\",\n\"construction\": \"Use data from customer survey aggregators to compute a weighted average of customer satisfaction scores for each firm.\",\n\"rationale\": \"High customer satisfaction may indicate strong brand loyalty, leading to stable future revenues.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Employee Satisfaction Score\",\n\"construction\": \"Use data from employee survey aggregators to compute a weighted average of employee satisfaction scores for each firm.\",\n\"rationale\": \"High employee satisfaction may lead to lower turnover and higher productivity.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Patent Application Growth\",\n\"construction\": \"Measure the percentage change in the number of patent applications filed by the firm over the last five years.\",\n\"rationale\": \"High patent application growth may indicate a strong innovation pipeline, potentially leading to future profitability.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Supply Chain Efficiency\",\n\"construction\": \"Compute the ratio of a firm's Cost of Goods Sold (COGS) to its total inventory over the last year.\",\n\"rationale\": \"Greater supply chain efficiency may lead to higher gross margins.\",\n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"CEOs' Equity Ownership\",\n\"construction\": \"Calculate the percentage of outstanding shares owned by the CEO.\",\n\"rationale\": \"CEOs with larger equity stakes may have stronger incentives to maximize shareholder value.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Social Media Presence\",\n\"construction\": \"Compute the total number of followers a firm has across major social media platforms.\",\n\"rationale\": \"A large social media following may indicate strong customer engagement and brand recognition.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Sustainability Reporting\",\n\"construction\": \"Assess whether a firm publishes an annual sustainability report and assigns a binary value (1: yes, 0: no).\",\n\"rationale\": \"Firms that prioritize sustainability may attract socially responsible investors and customers.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Quality of Earnings\",\n\"construction\": \"Calculate the ratio of a firm's operating cash flow to its net income.\",\n\"rationale\": \"Firms with high quality of earnings may have more sustainable profits.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Revenue Volatility\",\n\"construction\": \"Calculate the standard deviation of a firm's quarterly revenue growth rates over the last five years.\",\n\"rationale\": \"Firms with stable revenues may be more resilient to economic downturns.\",\n\"higher_returns_for\": \"Low values of the measure\"\n}\n]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 641,
+   "total_tokens": 911,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

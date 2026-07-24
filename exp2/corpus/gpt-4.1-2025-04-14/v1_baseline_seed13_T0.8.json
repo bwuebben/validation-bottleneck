@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:24:19.605068+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 13,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yvybeOfqU6uQyOEcbQ2FWiqKPV1",
+  "object": "chat.completion",
+  "created": 1784856250,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Profitability-Momentum Divergence\",\n    \"mechanism\": \"Stocks with high profitability but low recent momentum can be undervalued as investor attention focuses on past returns, missing future earnings strength. This composite captures the revaluation when fundamentals (operating profitability) and sentiment (momentum) diverge, potentially compounding the two signals for stronger outperformance than either predictor alone.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"OperProf\"},\n        {\"weight\": -0.5, \"primitive\": \"Mom12m\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"subperiod_consistency\"},\n      {\"type\": \"correlation\", \"primitive\": \"OperProf\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}\n    ],\n    \"expected_annualized_sharpe\": 0.9,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Shareholder Return Discipline (Buybacks minus Issuance)\",\n    \"mechanism\": \"Firms simultaneously engaging in share repurchases while avoiding equity issuance demonstrate strong capital discipline, likely signaling management\u2019s conviction in undervaluation and alignment with shareholders. The net effect better isolates intentional capital return from mechanical buybacks or dilution alone.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"ShareRepurchase\"},\n        {\"weight\": -1.0, \"primitive\": \"ShareIss1Y\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Analyst Disagreement Value\",\n    \"mechanism\": \"High book-to-market stocks with low analyst forecast dispersion are more likely to be undervalued because they combine objective undervaluation with analyst consensus, suggesting that the value signal is less likely to be a value trap. This reduces the likelihood of idiosyncratic risk mispricing.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"BM\"},\n        {\"weight\": -0.5, \"primitive\": \"ForecastDispersion\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"subperiod_consistency\"},\n      {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.75,\n    \"expected_decay_half_life_months\": 30\n  },\n  {\n    \"name\": \"Cautious Growth in Low Volatility\",\n    \"mechanism\": \"Asset growth is typically penalized, but in low volatility (risk-on) markets, investors are more forgiving of growth strategies. By going short asset growth in calm environments, the composite capitalizes on the market's tendency to overpay for perceived safety plus growth.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -1.0, \"primitive\": \"AssetGrowth\"},\n        {\"weight\": 0.5, \"primitive\": \"RealizedVol\"}\n      ],\n      \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"AssetGrowth\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 18\n  },\n  {\n    \"name\": \"Profit Surprise Reaction\",\n    \"mechanism\": \"Combining operating profitability with earnings surprise takes advantage of market underreaction to concurrent positive signals\u2014firms with both strong profitability and positive surprises are more likely to outperform as investor expectations are sequentially revised.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 0.5, \"primitive\": \"OperProf\"},\n        {\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"correlation\", \"primitive\": \"EarningsSurprise\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"subperiod_consistency\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}\n    ],\n    \"expected_annualized_sharpe\": 0.8,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Liquidity-Momentum Defensive\",\n    \"mechanism\": \"Stocks with high momentum but low liquidity beta (less exposed to liquidity shocks) are more robust to market stress, leading to higher risk-adjusted returns as they combine crowd-favorite characteristics with defensiveness to liquidity crises.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"Mom12m\"},\n        {\"weight\": -1.0, \"primitive\": \"BetaLiquidityPS\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"correlation\", \"primitive\": \"BetaLiquidityPS\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 20\n  },\n  {\n    \"name\": \"Quality Post-Dilution Recovery\",\n    \"mechanism\": \"Stocks with high cash flow yield but recent equity issuance are typically shunned due to dilution. However, high cash flow may indicate that issuance is for productive investment, enabling superior future performance once the market digests the event.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"CF\"},\n        {\"weight\": -0.5, \"primitive\": \"ShareIss1Y\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_UP\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"ShareIss1Y\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.65,\n    \"expected_decay_half_life_months\": 18\n  },\n  {\n    \"name\": \"R&D Capital Momentum\",\n    \"mechanism\": \"Firms with high R&D-to-assets ratios and positive intermediate momentum benefit both from intangible capital investment and investor recognition. The combination exploits underappreciated innovation that is just beginning to be reflected in stock prices.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"RDcap\"},\n        {\"weight\": 0.5, \"primitive\": \"IntMom\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"subperiod_consistency\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.8,\n    \"expected_decay_half_life_months\": 36\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 1926,
+   "total_tokens": 4727,
+   "prompt_tokens_details": {
+    "cached_tokens": 2560,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5f160af537"
+ }
+}

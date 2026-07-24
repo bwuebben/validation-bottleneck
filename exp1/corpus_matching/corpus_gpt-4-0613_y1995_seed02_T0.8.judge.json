@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:24:15.857913+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y1995_seed02_T0.8.json",
+  "prompt_sha256": "d0bbfb2d172ed514dc162fe89b465a9f82d661140db6d635df59dc8417a3c606"
+ },
+ "response": {
+  "id": "chatcmpl-E4zs4zESREcgriBBgD7QHGmfo8Vie",
+  "object": "chat.completion",
+  "created": 1784859852,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"Investment\", \"strength\": \"exact\", \"reason\": \"Investment to assets is the same as Investment.\"},\n  {\"index\": 1, \"match\": \"RD\", \"strength\": \"exact\", \"reason\": \"R&D to sales is the same as RD predictor.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses debt maturity structure.\"},\n  {\"index\": 3, \"match\": \"AdExp\", \"strength\": \"close\", \"reason\": \"AdExp is advertising expense; ratio to sales is a detail.\"},\n  {\"index\": 4, \"match\": \"tang\", \"strength\": \"exact\", \"reason\": \"Tangibility is PPE to assets, same as proposal.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses payout frequency.\"},\n  {\"index\": 6, \"match\": \"FirmAge\", \"strength\": \"related\", \"reason\": \"FirmAge is related to CEO tenure via longevity.\"},\n  {\"index\": 7, \"match\": \"Herf\", \"strength\": \"exact\", \"reason\": \"Herf is Herfindahl index of sales concentration.\"},\n  {\"index\": 8, \"match\": \"CashProd\", \"strength\": \"related\", \"reason\": \"Cash productivity is related to employee productivity.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses insider trading volume.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2641,
+   "completion_tokens": 343,
+   "total_tokens": 2984,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

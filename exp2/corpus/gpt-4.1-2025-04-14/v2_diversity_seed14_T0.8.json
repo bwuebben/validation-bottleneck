@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:30:55.752981+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 14,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4z2DFKwmvfPahVBdfpb2fNHdTPYN",
+  "object": "chat.completion",
+  "created": 1784856637,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Organizational Intangibles Efficiency\",\n    \"mechanism\": \"Firms efficiently converting organizational capital and brand investment into sales growth signal superior management and competitive positioning, which is not captured by looking at each input alone. Firms with strong organizational capital and brand investment, but only when this coincides with above-median sales-over-inventory growth, should outperform.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 0.5, \"primitive\": \"OrgCap\"},\n        {\"weight\": 0.5, \"primitive\": \"BrandInvest\"},\n        {\"weight\": 1.0, \"primitive\": \"GrSaleToGrInv\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_UP\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"GrSaleToGrInv\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.85,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Option Sentiment Supply Shock\",\n    \"mechanism\": \"Stocks that experience a simultaneous rise in call option volume and a steepening of the volatility smile may reflect shifts in investor sentiment, only profitable when combined. This suggests supply/demand imbalances in the derivatives market that spill over to the underlying, independent from volume or volatility alone.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"dVolCall\"},\n        {\"weight\": 0.5, \"primitive\": \"SmileSlope\"},\n        {\"weight\": -0.5, \"primitive\": \"OptionVolume1\"}\n      ],\n      \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"OptionVolume1\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 18\n  },\n  {\n    \"name\": \"Supply Chain Cross-Momentum\",\n    \"mechanism\": \"Firms that enjoy simultaneous positive momentum among both their key customers and suppliers are positioned at the intersection of strong demand and robust supply channels. This amplifies their own prospects beyond what is inferred from customer or supplier momentum in isolation.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"iomom_cust\"},\n        {\"weight\": 1.0, \"primitive\": \"iomom_supp\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"iomom_cust\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 30\n  },\n  {\n    \"name\": \"Earnings-Surprise-Linked Short Interest\",\n    \"mechanism\": \"High short interest combined with recent positive earnings surprises can signal overreaction by short sellers who ignore new information. Stocks with both characteristics are prone to short covering and positive drift, but only when the term spread is positive (accommodative credit conditions).\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"ShortInterest\"},\n        {\"weight\": 1.0, \"primitive\": \"EarningsSurprise\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"subperiod_consistency\"},\n      {\"type\": \"correlation\", \"primitive\": \"EarningsSurprise\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.65,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Governance-Driven Capital Reallocation\",\n    \"mechanism\": \"Firms with high governance scores and recent increases in payout yield (dividends or buybacks) are likely reallocating capital efficiently. The combination indicates both willingness and ability to return capital, which predicts future outperformance versus governance or payout policies alone.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"Governance\"},\n        {\"weight\": 1.0, \"primitive\": \"PayoutYield\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n      {\"type\": \"correlation\", \"primitive\": \"PayoutYield\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.55,\n    \"expected_decay_half_life_months\": 40\n  },\n  {\n    \"name\": \"Analyst Dispersion and Deferred Revenue Growth\",\n    \"mechanism\": \"Stocks with high analyst forecast dispersion but rising deferred revenue may be underappreciated: uncertainty exists, but growing deferred revenue signals robust underlying demand. This blend identifies stocks with misunderstood but improving prospects.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"ForecastDispersion\"},\n        {\"weight\": 1.0, \"primitive\": \"DelDRC\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"ForecastDispersion\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.75,\n    \"expected_decay_half_life_months\": 16\n  },\n  {\n    \"name\": \"Cash Productivity and Franchise Investment\",\n    \"mechanism\": \"Firms with high cash productivity that are also increasing excluded expenses (often related to franchise or intangible investments) are reinvesting operational cash into future growth. This combination signals both operational excellence and forward-looking franchise building.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"CashProd\"},\n        {\"weight\": 0.5, \"primitive\": \"ExclExp\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"subperiod_consistency\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"ExclExp\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Debt-Equity Contrarian Spread\",\n    \"mechanism\": \"Companies simultaneously increasing both debt and equity financing are typically shunned by traditional factor models, but in periods of negative market momentum these actions may reflect opportunistic capital structure optimization. The joint signal exploits contrarian rebalancing ignored by most investors.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"NetDebtFinance\"},\n        {\"weight\": 1.0, \"primitive\": \"NetEquityFinance\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 20\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2903,
+   "completion_tokens": 2024,
+   "total_tokens": 4927,
+   "prompt_tokens_details": {
+    "cached_tokens": 2688,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_b5121c360f"
+ }
+}

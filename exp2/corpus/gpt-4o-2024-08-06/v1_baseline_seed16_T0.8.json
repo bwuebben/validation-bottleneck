@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:13:16.397870+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 16,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ylARZfuOBlnAR33iYCbhTHqvWFu",
+  "object": "chat.completion",
+  "created": 1784855580,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"Momentum and Earnings Surprise Synergy\",\n      \"mechanism\": \"Combining momentum with earnings surprises enhances returns by capturing investor underreaction to good news and overreaction to bad news. By leveraging Momentum's trend persistence and EarningsSurprise's information update, the composite benefits from continuous re-pricing as information disseminates.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"Mom12m\"},\n          {\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.8,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"Value and Profitability Anomaly\",\n      \"mechanism\": \"Combining book-to-market value with operating profitability captures mispricing related to the undervaluation of profitable firms. Investors' focus on value metrics alone may overlook the firm's ability to generate profits, enhancing returns when both are considered.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"BM\"},\n          {\"weight\": 0.5, \"primitive\": \"OperProf\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n        {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.7,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Quality and Growth Combination\",\n      \"mechanism\": \"By blending quality indicators like ROE with growth metrics, this composite captures firms that are not only profitable but also exhibit strong growth potential, leading to sustained long-term outperformance.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"RoE\"},\n          {\"weight\": 1.0, \"primitive\": \"AssetGrowth\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}\n      ],\n      \"expected_annualized_sharpe\": 0.75,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"Leverage and Earnings Momentum\",\n      \"mechanism\": \"Combining market leverage with earnings momentum exploits the mispricing effects of financial risk intertwined with positive earnings trends, potentially leading to higher risk-adjusted returns when market leverage signals distress that earnings momentum contradicts.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": -0.5, \"primitive\": \"Leverage\"},\n          {\"weight\": 1.0, \"primitive\": \"Mom12m\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"correlation\", \"primitive\": \"Leverage\", \"bound\": \"below\", \"threshold\": 0.3},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.85,\n      \"expected_decay_half_life_months\": 20\n    },\n    {\n      \"name\": \"Liquidity and Volatility Profile\",\n      \"mechanism\": \"Integrating liquidity measures with volatility indices exploits the mispricing opportunities in high liquidity, low volatility environments, where investor complacency may lead to underestimating risk and mispricing the reward.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": -0.5, \"primitive\": \"Illiquidity\"},\n          {\"weight\": 1.0, \"primitive\": \"RealizedVol\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.65,\n      \"expected_decay_half_life_months\": 28\n    },\n    {\n      \"name\": \"Analyst Revision and Revenue Surprise\",\n      \"mechanism\": \"The composite of analyst revision and revenue surprises capitalizes on the market's delayed reaction to information flow, particularly where analyst upgrades precede or coincide with positive revenue shocks.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"AnalystRevision\"},\n          {\"weight\": 1.0, \"primitive\": \"RevenueSurprise\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_DOWN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": 18\n    },\n    {\n      \"name\": \"Financial Constraints and Debt Issuance\",\n      \"mechanism\": \"This strategy combines financial constraints with debt issuance indicators to exploit the market's misunderstanding or overweighting of financial distress signals in firms that are actively restructuring or raising capital.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": -1.0, \"primitive\": \"OScore\"},\n          {\"weight\": 0.5, \"primitive\": \"DebtIssuance\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"lower\"},\n        {\"type\": \"correlation\", \"primitive\": \"OScore\", \"bound\": \"below\", \"threshold\": 0.3},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"opposite_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.6,\n      \"expected_decay_half_life_months\": 40\n    },\n    {\n      \"name\": \"Growth and Seasonality Contrast\",\n      \"mechanism\": \"By blending growth metrics with seasonal return patterns, this composite captures the differential effects between expected growth and cyclical profit-taking or sector-specific seasonal dynamics, leading to uptrending corrections.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"AssetGrowth\"},\n          {\"weight\": -0.5, \"primitive\": \"MomSeason\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"},\n        {\"type\": \"correlation\", \"primitive\": \"AssetGrowth\", \"bound\": \"above\", \"threshold\": 0.3},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.7,\n      \"expected_decay_half_life_months\": 25\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 1884,
+   "total_tokens": 4685,
+   "prompt_tokens_details": {
+    "cached_tokens": 2560,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

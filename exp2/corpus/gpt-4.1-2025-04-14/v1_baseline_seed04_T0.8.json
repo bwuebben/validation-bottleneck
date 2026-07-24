@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:22:16.593366+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 4,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ytw00ZG9USVmDR0tUPa81QmAnZi",
+  "object": "chat.completion",
+  "created": 1784856124,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\":[\n  {\n    \"name\": \"Quality-Momentum Defensive Composite\",\n    \"mechanism\": \"Combining high operating profitability (OperProf) and 12-month momentum (Mom12m), while shorting illiquidity (Illiquidity), creates a composite that captures persistent earnings strength and trend, while avoiding liquidity-driven tail risk. This blend should outperform each component by balancing quality and trend signals, and minimizing crash risk associated with illiquidity.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"OperProf\"},\n        {\"weight\": 1.0, \"primitive\": \"Mom12m\"},\n        {\"weight\": -0.5, \"primitive\": \"Illiquidity\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_UP\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 1.0,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Defensive Value with Analyst Confirmation\",\n    \"mechanism\": \"This composite combines book-to-market (BM) and cash flow yield (CF) with analyst forecast revision (AnalystRevision) to select value stocks with improving analyst sentiment, mitigating value traps. The interaction enhances value's efficacy by filtering for companies where fundamentals are corroborated by forward-looking information.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"BM\"},\n        {\"weight\": 1.0, \"primitive\": \"CF\"},\n        {\"weight\": 0.5, \"primitive\": \"AnalystRevision\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.8,\n    \"expected_decay_half_life_months\": 30\n  },\n  {\n    \"name\": \"Procyclical Asset Growth-Momentum\",\n    \"mechanism\": \"Combining asset growth (AssetGrowth) and 6-month momentum (Mom6m), conditioned on positive term spread, captures firms expanding assets during economic optimism, with price confirmation. This exploits the covariance between macro optimism, firm expansion, and near-term market trends.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"AssetGrowth\"},\n        {\"weight\": 1.0, \"primitive\": \"Mom6m\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Low-Risk Intangibles Premium\",\n    \"mechanism\": \"Long intangible-rich firms (IntanCFP), hedge by shorting high realized volatility (RealizedVol) and high market beta (Beta), targets intangibles-driven growth while suppressing compensation for market and idiosyncratic risk. This should produce a premium linked to mispricing of intangible assets, robust to market swings.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"IntanCFP\"},\n        {\"weight\": -0.5, \"primitive\": \"RealizedVol\"},\n        {\"weight\": -0.5, \"primitive\": \"Beta\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.9,\n    \"expected_decay_half_life_months\": 48\n  },\n  {\n    \"name\": \"Off-Season Reversal Plus Earnings Surprise\",\n    \"mechanism\": \"Combining off-season reversal (MomOffSeason) with earnings surprises (EarningsSurprise) captures stocks with recent negative reversal whose fundamentals have just turned positive. This exploits underreaction to fundamental improvement after a technical washout.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"MomOffSeason\"},\n        {\"weight\": 1.0, \"primitive\": \"EarningsSurprise\"}\n      ],\n      \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.85,\n    \"expected_decay_half_life_months\": 18\n  },\n  {\n    \"name\": \"Supply-Chain Momentum Quality Composite\",\n    \"mechanism\": \"By combining supplier momentum (iomom_supp) and customer momentum (iomom_cust) with gross profits (GP), the composite captures value chains with improving fundamentals and cross-firm information diffusion, while overweighting profitable industries.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"iomom_supp\"},\n        {\"weight\": 1.0, \"primitive\": \"iomom_cust\"},\n        {\"weight\": 0.5, \"primitive\": \"GP\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"GP\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.95,\n    \"expected_decay_half_life_months\": 30\n  },\n  {\n    \"name\": \"Analyst Value-Debt Issuance Contrarian\",\n    \"mechanism\": \"Long stocks with high analyst value (AnalystValue), but short those with recent debt issuance (DebtIssuance). This bets that true value identified by analysts is more credible when not tainted by aggressive corporate leverage, counteracting the tendency for debt issuers to underperform.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"AnalystValue\"},\n        {\"weight\": -1.0, \"primitive\": \"DebtIssuance\"}\n      ],\n      \"regime\": \"TERM_SPREAD_NEGATIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"AnalystValue\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 20\n  },\n  {\n    \"name\": \"Resilient Organizational Capital Growth\",\n    \"mechanism\": \"Organizational capital (OrgCap) and organizational capital growth (InvestPPEInv), hedged with short-term reversal (STreversal), identifies firms investing persistently in organizational productivity while controlling for short-term market noise. The composite exploits compounding intangible capital, robust to market reversals.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"OrgCap\"},\n        {\"weight\": 1.0, \"primitive\": \"InvestPPEInv\"},\n        {\"weight\": -0.5, \"primitive\": \"STreversal\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.8,\n    \"expected_decay_half_life_months\": 36\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 2098,
+   "total_tokens": 4899,
+   "prompt_tokens_details": {
+    "cached_tokens": 2560,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5f160af537"
+ }
+}

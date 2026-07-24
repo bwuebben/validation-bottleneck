@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:15:55.221002+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 5,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zjwv9XGF9bo3REIPeqKmm2KHdOt",
+  "object": "chat.completion",
+  "created": 1784859348,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"R&D Acceleration\", \"construction\": \"Year-over-year change in R&D expenditure (Compustat item XRD) as a percentage of total assets (AT), calculated as: [(R&D_t / AT_t) - (R&D_{t-1} / AT_{t-1})].\", \"rationale\": \"Firms accelerating investment in research and development may be positioning for future growth that is not yet recognized by the market.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Net Insider Share Purchases\", \"construction\": \"Total net shares purchased by insiders (Form 4 filings) over the past 12 months, scaled by shares outstanding (Compustat item CSHO).\", \"rationale\": \"Significant insider buying relative to company size may signal undervaluation or positive private information.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Earnings Announcement Drift Sensitivity\", \"construction\": \"Regression beta of a stock's returns to the market's reaction to recent earnings surprises for its sector, measured over the prior 8 quarters.\", \"rationale\": \"Stocks more sensitive to sector-wide earnings surprise reactions may be underpriced for their informational efficiency or future revaluation.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Short-Term Asset Turnover Change\", \"construction\": \"Difference in asset turnover (sales/total assets, Compustat items SALE/AT) between the last fiscal year and the prior year.\", \"rationale\": \"Increasing efficiency in asset utilization may precede improvements in profitability and future returns.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Employee Growth Rate\", \"construction\": \"Percentage change in number of employees (Compustat item EMP) from the previous fiscal year.\", \"rationale\": \"Rapid hiring may signal management's confidence in future demand and expansion opportunities.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Dividend Omission Signal\", \"construction\": \"Indicator for firms that have recently omitted or suspended a regular dividend (annual Compustat dividend per share DPS data), but were previously consistent payers.\", \"rationale\": \"Market overreaction to dividend cuts may lead to undervaluation for firms undergoing temporary distress or restructuring.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Patent Application Intensity\", \"construction\": \"Number of new US patent applications filed in the past year (USPTO data), scaled by total assets.\", \"rationale\": \"High rates of patent application may indicate future product launches and innovative capacity not reflected in current valuation.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Cash Flow Seasonality\", \"construction\": \"Standard deviation of quarterly operating cash flow (Compustat item OANCF) over the past 8 quarters, divided by average quarterly cash flow over the same period.\", \"rationale\": \"Lower seasonality in cash flows may indicate more stable business models and risk underestimation by the market.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Supplier Concentration Exposure\", \"construction\": \"Sum of revenue percentages derived from top 3 suppliers as disclosed in 10-K filings, or as available from FactSet Supply Chain data.\", \"rationale\": \"Greater revenue concentration may expose firms to risks not fully priced in, or may reflect bargaining power and cost advantages.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Deferred Tax Asset Growth\", \"construction\": \"Year-over-year change in deferred tax assets (Compustat item DTAS), scaled by lagged total assets (AT).\", \"rationale\": \"Rising deferred tax assets may signal aggressive tax planning or future profitability that is underappreciated by the market.\", \"higher_returns_for\": \"high values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 807,
+   "total_tokens": 1076,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_1adda89cc2"
+ }
+}

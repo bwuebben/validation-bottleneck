@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:29:35.856549+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2010_seed04_T0.8.json",
+  "prompt_sha256": "bfe72a72f2b351db44b894d4add65898e3fe293b3ffbc9cda2022d699ad05db1"
+ },
+ "response": {
+  "id": "chatcmpl-E4zxFLoU0hWswZgDzIBM6yiE9PjDY",
+  "object": "chat.completion",
+  "created": 1784860173,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"hire\", \"strength\": \"close\", \"reason\": \"Both use employee growth, but proposal uses acceleration.\"},\n  {\"index\": 1, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Both scale patenting by firm size; denominator differs.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses supplier concentration or procurement data.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses social media sentiment or its skewness.\"},\n  {\"index\": 4, \"match\": \"ForecastDispersion\", \"strength\": \"related\", \"reason\": \"Both use dispersion in forward-looking earnings estimates.\"},\n  {\"index\": 5, \"match\": \"Tax\", \"strength\": \"related\", \"reason\": \"Both use effective tax rates, but proposal uses volatility.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses green capex or environmental spending ratio.\"},\n  {\"index\": 7, \"match\": \"DelDRC\", \"strength\": \"related\", \"reason\": \"Both use deferred revenue, but proposal scales by revenue.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses gross margin change in downturns.\"},\n  {\"index\": 9, \"match\": \"DivOmit\", \"strength\": \"exact\", \"reason\": \"Both count dividend omissions over a multi-year period.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2811,
+   "completion_tokens": 356,
+   "total_tokens": 3167,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

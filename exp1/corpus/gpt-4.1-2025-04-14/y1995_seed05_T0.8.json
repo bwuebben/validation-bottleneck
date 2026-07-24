@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:13:17.038981+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 5,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zhM29EadQA0ZrDUpec3H1eHDHgm",
+  "object": "chat.completion",
+  "created": 1784859188,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"R&D Intensity Change\", \"construction\": \"Change in R&D expenditure over the past year, scaled by beginning-of-year total assets. Data from Compustat: (R&D_t - R&D_{t-1}) / Assets_{t-1}.\", \"rationale\": \"Firms increasing R&D investment may have better growth prospects not yet fully priced by the market.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Short-Term Debt Surge\", \"construction\": \"Percentage increase in short-term debt (Compustat: Data item 34) over the past fiscal year.\", \"rationale\": \"Sudden increases in short-term borrowing might signal liquidity needs or aggressive expansion, potentially leading to higher future returns if those bets succeed.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Inventory Turnover Acceleration\", \"construction\": \"One-year change in inventory turnover ratio: (COGS / Average Inventory)_{t} - (COGS / Average Inventory)_{t-1}.\", \"rationale\": \"Improving inventory turnover may indicate operational improvements or increasing demand, both of which can foreshadow higher returns.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Insider Net Purchase Ratio\", \"construction\": \"Net number of shares acquired by insiders over the past year, divided by shares outstanding. Source: SEC insider filings.\", \"rationale\": \"Insider buying may reflect management\u2019s confidence in future prospects.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Non-Operating Income Share\", \"construction\": \"Proportion of pre-tax income from non-operating sources (non-operating income / pre-tax income, Compustat items 13/170).\", \"rationale\": \"A high share may signal low earnings quality and risk of negative surprises.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Unexpected Dividend Initiations\", \"construction\": \"Indicator variable equal to 1 if the firm paid a dividend this year but none in the prior three years, 0 otherwise.\", \"rationale\": \"Surprise dividend initiations may signal management\u2019s confidence in sustainable cash flows.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Patent Count Growth\", \"construction\": \"Percentage change in the number of US patents granted (USPTO data) in the last three years relative to the prior three years.\", \"rationale\": \"Rapid innovation, as evidenced by patenting activity, may foreshadow future profitability and returns.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Related-Party Transactions Ratio\", \"construction\": \"Dollar value of disclosed related-party transactions (from annual report footnotes) divided by total assets.\", \"rationale\": \"High levels may indicate potential agency conflicts and lower future returns.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Auditor Tenure Change\", \"construction\": \"Binary variable: 1 if auditor changed in the past fiscal year, 0 otherwise (from proxy statements).\", \"rationale\": \"Recent auditor changes may signal forthcoming accounting restatements or firm-specific shocks.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Post-Listing Return Reversal\", \"construction\": \"Cumulative abnormal return in months 7-12 after IPO or exchange listing (adjusted for market return).\", \"rationale\": \"Initial post-listing overreaction may reverse, providing higher returns to laggard stocks.\", \"higher_returns_for\": \"low values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 752,
+   "total_tokens": 1021,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5e8833dc3f"
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:59:50.430489+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zUIgnQIeKouRTamVFRzy9X91h9K",
+  "object": "chat.completion",
+  "created": 1784858378,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n\"predictors\": [\n{\n\"name\": \"Employee Satisfaction Index\",\n\"construction\": \"Survey data from third-party rating agencies regarding employee satisfaction, normalized by industry.\",\n\"rationale\": \"Happier employees may contribute to a more productive and innovative company, leading to higher returns.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"CEO Tenure\",\n\"construction\": \"Number of years the current CEO has been in position.\",\n\"rationale\": \"CEOs with longer tenure could suggest stability and successful long-term strategy.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Website Traffic Growth\",\n\"construction\": \"Percentage growth in unique website visits over the past quarter, using third-party web analytics data.\",\n\"rationale\": \"Increasing website traffic could indicate growing interest in the company's products or services.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Corporate Social Responsibility Rating\",\n\"construction\": \"Ratings from third-party agencies on a company's social responsibility, normalized by industry.\",\n\"rationale\": \"Companies with strong social responsibility practices may be more resilient to social and regulatory risks.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Customer Churn\",\n\"construction\": \"The percentage of customers lost over the past year, from company reports.\",\n\"rationale\": \"High customer churn could indicate competitive weakness and lower future revenues.\",\n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"Patent Portfolio Growth\",\n\"construction\": \"Percentage growth in number of patents held by the company over the past year, from US Patent and Trademark Office data.\",\n\"rationale\": \"Increasing patent portfolio could indicate a strong innovation pipeline and potential future growth.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Supply Chain Complexity\",\n\"construction\": \"Number of unique suppliers, according to company financial disclosures.\",\n\"rationale\": \"More complex supply chains may be more vulnerable to disruptions, negatively impacting future profitability.\",\n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"R&D Expenditure Volatility\",\n\"construction\": \"Standard deviation of monthly R&D expenditures over the past three years, from company financial disclosures.\",\n\"rationale\": \"High volatility in R&D spending could indicate poor planning or execution in the company's innovation strategy.\",\n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"Customer Concentration\",\n\"construction\": \"Revenue from the largest customer as a percentage of total revenue, from company financial disclosures.\",\n\"rationale\": \"High customer concentration may increase business risk due to over-reliance on a single customer.\",\n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"Product Diversity\",\n\"construction\": \"Number of distinct product lines, from company financial disclosures.\",\n\"rationale\": \"Companies with a diverse range of products may be more resilient to industry-specific shocks.\",\n\"higher_returns_for\": \"High values of the measure\"\n}\n]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 628,
+   "total_tokens": 898,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

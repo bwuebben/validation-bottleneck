@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:29:12.502482+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2005_seed07_T0.8.json",
+  "prompt_sha256": "07a481fca2a07fb9a5a7bb1c0a8fafb3e3401fbc01e424a53592bb248a9b16dc"
+ },
+ "response": {
+  "id": "chatcmpl-E4zwsJ3RhNxFfl0zH98ZhwPFREzp7",
+  "object": "chat.completion",
+  "created": 1784860150,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"OPLeverage\", \"strength\": \"close\", \"reason\": \"Both measure operating leverage, but differ in time horizon and calculation details.\"},\n  {\"index\": 1, \"match\": \"Accruals\", \"strength\": \"close\", \"reason\": \"Both use accruals scaled by assets, but differ in timing post-earnings.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No insider trading activity predictor in the library.\"},\n  {\"index\": 3, \"match\": \"ChInvIA\", \"strength\": \"close\", \"reason\": \"Both measure inventory growth relative to industry, but differ in exact calculation.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No CEO age or executive characteristic predictor in the library.\"},\n  {\"index\": 5, \"match\": \"VarCF\", \"strength\": \"close\", \"reason\": \"Both measure cash flow volatility, but use different cash flow definitions.\"},\n  {\"index\": 6, \"match\": \"BookLeverage\", \"strength\": \"related\", \"reason\": \"Both relate to debt structure, but focus on different aspects of leverage.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No accounts receivable write-off ratio predictor in the library.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No media coverage or news attention predictor in the library.\"},\n  {\"index\": 9, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Both use patent activity scaled by firm size, but differ in denominator.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2722,
+   "completion_tokens": 383,
+   "total_tokens": 3105,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

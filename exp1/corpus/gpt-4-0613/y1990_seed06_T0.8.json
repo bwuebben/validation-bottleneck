@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:47:48.729809+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 6,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zIZn50RRjzd1EnGQCtuQi7PdXVd",
+  "object": "chat.completion",
+  "created": 1784857651,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Dividend Coverage Ratio\",\n      \"construction\": \"Annual net income divided by annual dividends paid\",\n      \"rationale\": \"Companies with a high dividend coverage ratio are potentially well-positioned to continue paying dividends, which might attract investors and increase demand for the stock.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Revenue Variability\",\n      \"construction\": \"Standard deviation of quarterly revenue over the past 5 years\",\n      \"rationale\": \"Higher variability in revenues might indicate higher risk, which could demand a higher risk premium and thus higher average returns.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Price/Earnings Volatility\",\n      \"construction\": \"Standard deviation of daily price/earnings ratios over the past year\",\n      \"rationale\": \"Higher volatility in P/E ratios may reflect uncertainty about a firm's earnings prospects, which could command a higher risk premium.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Capital Expenditures Growth\",\n      \"construction\": \"Year-over-year percentage change in annual capital expenditures\",\n      \"rationale\": \"Greater capital expenditures could signal future growth, potentially leading to higher future stock returns.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Interest Coverage Ratio\",\n      \"construction\": \"Earnings before interest and taxes divided by interest expenses\",\n      \"rationale\": \"A higher interest coverage ratio suggests a company is better equipped to handle its debt obligations, which might be viewed favorably by investors.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"R&D Intensity\",\n      \"construction\": \"Research and development expenses divided by total revenue\",\n      \"rationale\": \"Higher R&D intensity may signal future growth opportunities, which could lead to higher stock returns.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Sales Per Employee\",\n      \"construction\": \"Total revenue divided by the number of employees\",\n      \"rationale\": \"Higher sales per employee can signify greater productivity and efficiency, which may lead to higher future stock returns.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Earnings Yield Spread\",\n      \"construction\": \"Earnings yield minus the yield on a 3-month Treasury bill\",\n      \"rationale\": \"A higher spread between the earnings yield and the risk-free rate might signal an undervalued stock, which could lead to higher future returns.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Inventory Turnover\",\n      \"construction\": \"Cost of goods sold divided by average inventory during the period\",\n      \"rationale\": \"Higher inventory turnover may suggest efficient inventory management and stronger sales, which could lead to higher future stock returns.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Operating Cash Flow Margin\",\n      \"construction\": \"Operating cash flow divided by total revenue\",\n      \"rationale\": \"A higher operating cash flow margin may indicate a firm's ability to convert sales into cash efficiently, a potentially attractive quality to investors.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 725,
+   "total_tokens": 995,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

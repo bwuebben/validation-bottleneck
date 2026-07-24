@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:27:10.452504+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y1990_seed04_T0.8.json",
+  "prompt_sha256": "3bae9ee4ea5b8b9b42b85d08662c407932a321511a28d1802b73205f3dfabb8b"
+ },
+ "response": {
+  "id": "chatcmpl-E4zusORdeWHAktV70SZfzfGGE5tDb",
+  "object": "chat.completion",
+  "created": 1784860026,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"hire\", \"strength\": \"exact\", \"reason\": \"Year-over-year employee growth matches 'hire' employment growth.\"},\n  {\"index\": 1, \"match\": \"NOA\", \"strength\": \"close\", \"reason\": \"Change in net operating assets is core to NOA signal.\"},\n  {\"index\": 2, \"match\": \"RD\", \"strength\": \"close\", \"reason\": \"R&D to sales is a variant of R&D to market cap.\"},\n  {\"index\": 3, \"match\": \"ChAssetTurnover\", \"strength\": \"exact\", \"reason\": \"Change in asset turnover matches ChAssetTurnover construction.\"},\n  {\"index\": 4, \"match\": \"DivInit\", \"strength\": \"exact\", \"reason\": \"Dividend initiation indicator matches DivInit.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses sales variability or revenue volatility.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses depreciation-to-PPE ratio.\"},\n  {\"index\": 7, \"match\": \"ChInv\", \"strength\": \"close\", \"reason\": \"Change in inventory scaled by assets is similar to ChInv.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses CEO tenure or executive duration.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses pre-tax margin expansion.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2735,
+   "completion_tokens": 354,
+   "total_tokens": 3089,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

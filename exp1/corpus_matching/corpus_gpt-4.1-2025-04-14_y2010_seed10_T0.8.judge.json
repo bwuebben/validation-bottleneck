@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:29:54.353560+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2010_seed10_T0.8.json",
+  "prompt_sha256": "d7ea17eaccad1498fd46ff314d0ad5ca99a33ebbfda8a3500ba976caf64c8e90"
+ },
+ "response": {
+  "id": "chatcmpl-E4zxXu5lq5YqKpauWG3Bqhak7LdF9",
+  "object": "chat.completion",
+  "created": 1784860191,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses insider option exercise ratio.\"},\n  {\"index\": 1, \"match\": \"CustomerMomentum\", \"strength\": \"related\", \"reason\": \"Both use customer data, but signals differ (concentration vs. momentum).\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses nonlinear SG&A efficiency.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses industry patent disruption exposure.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses ESG controversy momentum.\"},\n  {\"index\": 5, \"match\": \"Tax\", \"strength\": \"related\", \"reason\": \"Both use tax-related data, but signals differ (tax shield growth vs. taxable income).\"},\n  {\"index\": 6, \"match\": \"DelCOL\", \"strength\": \"close\", \"reason\": \"Both measure changes in payables/liabilities, but construction differs slightly.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses productivity dispersion across segments.\"},\n  {\"index\": 8, \"match\": \"RD\", \"strength\": \"related\", \"reason\": \"Both use R&D intensity, but acceleration is a new signal.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses shareholder proposal resistance.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2744,
+   "completion_tokens": 353,
+   "total_tokens": 3097,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

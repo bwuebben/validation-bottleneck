@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:14:53.062820+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 7,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ziyZaY3vUT2yWSBguGRM8Uly8Eu",
+  "object": "chat.completion",
+  "created": 1784859288,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Short-Term Operating Leverage Change\", \"construction\": \"Change in (Sales - Cost of Goods Sold) / Sales over the most recent quarter.\", \"rationale\": \"Firms with increasing operating leverage may experience greater earnings volatility, which could be rewarded with higher returns due to risk compensation.\", \"higher_returns_for\": \"high increases in operating leverage\"}, {\"name\": \"Dividend Acceleration\", \"construction\": \"Growth rate of dividends per share over the past year relative to growth rate over the prior 3 years.\", \"rationale\": \"A sudden acceleration in dividend payments may signal management confidence and future profitability not yet priced in.\", \"higher_returns_for\": \"high dividend acceleration\"}, {\"name\": \"Inventory Write-down Frequency\", \"construction\": \"Number of inventory write-downs reported in the last three years.\", \"rationale\": \"Frequent inventory write-downs may indicate poor management or operational issues, while infrequent write-downs may reflect more stable operations.\", \"higher_returns_for\": \"low frequency of inventory write-downs\"}, {\"name\": \"Relative Analyst Forecast Dispersion\", \"construction\": \"Standard deviation of analyst EPS forecasts divided by mean forecast for the next fiscal year.\", \"rationale\": \"High dispersion may indicate information uncertainty, which could be compensated with higher expected returns.\", \"higher_returns_for\": \"high forecast dispersion\"}, {\"name\": \"Insider Transaction Skew\", \"construction\": \"Sum of shares bought minus shares sold by insiders over the past 12 months, divided by total shares outstanding.\", \"rationale\": \"Net insider buying reflects management's private information and confidence in future prospects.\", \"higher_returns_for\": \"high net insider buying\"}, {\"name\": \"Industry-Relative R&D Growth\", \"construction\": \"Firm's growth rate of R&D spending over the last three years minus industry median R&D growth rate.\", \"rationale\": \"Firms ramping up R&D faster than peers may be investing in future competitiveness and innovation.\", \"higher_returns_for\": \"high industry-relative R&D growth\"}, {\"name\": \"Post-Earnings Announcement Drift Amplifier\", \"construction\": \"Cumulative abnormal returns over 20 trading days following the last quarterly earnings announcement.\", \"rationale\": \"Firms with stronger post-earnings drift may experience persistent underreaction by the market.\", \"higher_returns_for\": \"high post-earnings drift\"}, {\"name\": \"Trade Credit Extension Ratio\", \"construction\": \"Accounts receivable divided by sales, relative to industry median.\", \"rationale\": \"Firms extending more trade credit than peers may be taking on extra risk to boost sales, potentially earning higher returns as a risk premium.\", \"higher_returns_for\": \"high trade credit extension relative to industry\"}, {\"name\": \"Prior-Year Board Turnover\", \"construction\": \"Number of board of director changes in the prior year.\", \"rationale\": \"Higher board turnover may signal governance changes that precede operational improvements not yet priced in.\", \"higher_returns_for\": \"high board turnover\"}, {\"name\": \"Employee Growth Surprise\", \"construction\": \"Current year employee headcount growth minus average annual growth over previous three years.\", \"rationale\": \"A sudden surge in hiring may indicate unanticipated expansion or positive demand shocks.\", \"higher_returns_for\": \"high employee growth surprise\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 670,
+   "total_tokens": 939,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_294c310c0b"
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:13:06.844433+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 4,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zhD858RgMFkXM5owLk4ePnHRJcd",
+  "object": "chat.completion",
+  "created": 1784859179,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Employee Growth Rate\", \"construction\": \"Year-over-year percentage change in total number of employees, using headcount data from annual 10-K filings.\", \"rationale\": \"Rapid expansion in workforce may signal aggressive growth strategies or overinvestment; lower growth could reflect discipline or maturity.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Inventory Volatility\", \"construction\": \"Standard deviation of quarterly inventory levels over the past three years, divided by average total assets.\", \"rationale\": \"High inventory volatility might indicate demand uncertainty or operational inefficiency, which could be penalized by investors.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Operating Lease Intensity\", \"construction\": \"Total annual operating lease expense divided by total assets, from annual financial statements.\", \"rationale\": \"Firms with high off-balance-sheet leverage may be riskier than they appear, potentially offering higher returns.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Long-Term Debt Repayment Ratio\", \"construction\": \"Ratio of principal repayments of long-term debt in the past year to total long-term debt outstanding.\", \"rationale\": \"Firms aggressively paying down debt may be signaling robust cash flows and prudent management, potentially yielding higher future returns.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"SG&A Efficiency Ratio\", \"construction\": \"One minus the ratio of selling, general, and administrative expenses to gross profit, using annual data.\", \"rationale\": \"A higher ratio indicates better cost control relative to gross profit, possibly leading to superior profitability and returns.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Patent Count Change\", \"construction\": \"Annual percentage change in the number of patents granted to the company (using USPTO data matched by firm name or CUSIP).\", \"rationale\": \"Increasing patent activity may signal innovation and future growth potential.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Net Non-Operating Income Ratio\", \"construction\": \"Non-operating income (such as from investments or asset sales) less non-operating expenses, divided by total income before extraordinary items, using annual income statements.\", \"rationale\": \"Firms that rely less on non-operating income may have more sustainable core earnings.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Foreign Sales Proportion\", \"construction\": \"Total foreign sales divided by total sales, as reported in segment disclosures in 10-K filings.\", \"rationale\": \"Greater international exposure may diversify revenue sources and offer growth opportunities, especially for US investors.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Receivables Turnover Change\", \"construction\": \"Year-over-year change in receivables turnover ratio (annual credit sales divided by average accounts receivable).\", \"rationale\": \"Improvement in receivables turnover suggests better cash collection and working capital management.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"CEO Tenure\", \"construction\": \"Number of years since current CEO assumed office, using executive disclosures in proxy statements (DEF 14A).\", \"rationale\": \"Very short tenures may indicate instability; very long tenures could signal entrenchment. Recent appointments may involve significant strategic change and risk.\", \"higher_returns_for\": \"medium values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 717,
+   "total_tokens": 986,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5e8833dc3f"
+ }
+}

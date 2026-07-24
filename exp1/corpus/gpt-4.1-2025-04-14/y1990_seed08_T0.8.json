@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:12:06.702118+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 8,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zgHnS4hl6sZbKo9mdwp6KH66COX",
+  "object": "chat.completion",
+  "created": 1784859121,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Short-Term Earnings Acceleration\", \"construction\": \"Difference between the most recent quarter's year-over-year earnings growth rate and the previous quarter's year-over-year earnings growth rate, using Compustat quarterly earnings data.\", \"rationale\": \"Firms with accelerating earnings growth may signal improved fundamentals not yet reflected in prices.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Inventory Growth Surprise\", \"construction\": \"Current quarter's inventory growth (change in inventories/sales) minus average inventory growth over the prior eight quarters, using Compustat data.\", \"rationale\": \"Negative inventory surprises may indicate leaner operations or stronger demand than anticipated.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Intra-Industry Valuation Gap\", \"construction\": \"Firm's price-to-book ratio minus median price-to-book ratio of its industry (using CRSP and Compustat), updated annually.\", \"rationale\": \"Firms trading at deep valuation discounts to industry peers may be undervalued due to investor overreaction.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Dividend Omission Indicator\", \"construction\": \"Dummy variable indicating whether a firm that paid dividends in the previous year omits a dividend in the current year, from CRSP distribution records.\", \"rationale\": \"Dividend omissions may signal distress not fully reflected in price, or conversely, omitting dividends to reinvest may boost future growth.\", \"higher_returns_for\": \"firms that recently omitted dividends\"}, {\"name\": \"Operating Cash Flow to Total Assets\", \"construction\": \"Ratio of annual operating cash flow (Compustat OANCF) to total assets, calculated at fiscal year-end.\", \"rationale\": \"High cash flow relative to assets may indicate stronger underlying profitability and financial stability.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"R&D Intensity Change\", \"construction\": \"Year-over-year change in R&D expenses divided by sales (Compustat XRD/Sale), measured annually.\", \"rationale\": \"Increasing R&D intensity may predict future innovation and earnings growth unrecognized by the market.\", \"higher_returns_for\": \"firms with recent increases in R&D intensity\"}, {\"name\": \"Share Issuance Activity\", \"construction\": \"Percentage change in shares outstanding over the prior 12 months, using CRSP shares outstanding data.\", \"rationale\": \"Issuing equity may signal overvaluation or poor future prospects, while low or negative issuance may be positive.\", \"higher_returns_for\": \"low or negative values of the measure\"}, {\"name\": \"Net PP&E Investment Rate\", \"construction\": \"Annual change in net property, plant, and equipment (PP&E) divided by average total assets over the year, using Compustat data.\", \"rationale\": \"Firms with high investment rates may be overconfident and overinvesting, while low investors may be more disciplined.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Employee Growth Rate\", \"construction\": \"Percentage change in number of employees from prior fiscal year, using Compustat data where available.\", \"rationale\": \"Rapid expansion in headcount may be associated with overoptimism or future cost pressures.\", \"higher_returns_for\": \"low or modest values of the measure\"}, {\"name\": \"Receivables-to-Sales Ratio\", \"construction\": \"Accounts receivable divided by sales (Compustat), measured annually.\", \"rationale\": \"High receivables relative to sales may indicate aggressive revenue recognition or deteriorating credit quality.\", \"higher_returns_for\": \"low values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 757,
+   "total_tokens": 1026,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_801206523b"
+ }
+}

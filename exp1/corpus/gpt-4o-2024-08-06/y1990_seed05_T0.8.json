@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:03:58.446642+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 5,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zYNGzphGmjzugEn2PdJOhYbjiIP",
+  "object": "chat.completion",
+  "created": 1784858631,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"R&D Intensity\",\n      \"construction\": \"Total R&D Expenditure divided by Market Capitalization, measured annually.\",\n      \"rationale\": \"Firms that invest heavily in research and development may signal future growth potential through innovation.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Employee Productivity\",\n      \"construction\": \"Sales per Employee, calculated as total annual sales divided by the number of employees.\",\n      \"rationale\": \"Higher productivity may indicate efficient operations and competitive advantage.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Dividend Momentum\",\n      \"construction\": \"The change in dividends per share over the past two years.\",\n      \"rationale\": \"An increasing dividend pattern could signal management's confidence in future earnings growth.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Supplier Diversity\",\n      \"construction\": \"The inverse of the Herfindahl-Hirschman Index calculated for the firm's suppliers, based on purchase values.\",\n      \"rationale\": \"Firms with a more diverse supplier base may be less vulnerable to supply chain disruptions.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Patent Count Growth\",\n      \"construction\": \"Annual percentage increase in the number of patents granted, using data from the US Patent and Trademark Office.\",\n      \"rationale\": \"Growing patent activity may signal a firm's innovative capabilities and future competitive advantage.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Insider Trading Frequency\",\n      \"construction\": \"Number of insider purchase transactions over the past year.\",\n      \"rationale\": \"Frequent insider buying might suggest that those with inside knowledge expect the stock to perform well.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Environmental Compliance Costs\",\n      \"construction\": \"Annual costs related to environmental fines and compliance, divided by total assets.\",\n      \"rationale\": \"Firms with lower compliance costs may have more efficient operations and less regulatory risk.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Customer Concentration\",\n      \"construction\": \"Percentage of total revenue from the firm's largest customer.\",\n      \"rationale\": \"High dependence on a single customer may increase risk, but low concentration suggests diversified revenue streams.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Management Turnover Rate\",\n      \"construction\": \"Number of management changes (CEO, CFO, COO) over the past three years divided by three.\",\n      \"rationale\": \"Stable management might indicate effective leadership and strategic consistency.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"IT Investment\",\n      \"construction\": \"IT expenditure as a percentage of total assets, sourced from financial statements.\",\n      \"rationale\": \"Significant IT investment may enhance operational efficiency and drive future growth.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 679,
+   "total_tokens": 948,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_94cd41efba"
+ }
+}

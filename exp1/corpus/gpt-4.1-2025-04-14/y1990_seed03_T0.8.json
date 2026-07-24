@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:11:35.690971+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 3,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zfm5c1qygI5YFBduZrhQfYWvJeV",
+  "object": "chat.completion",
+  "created": 1784859090,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Short-Term Asset Growth\", \"construction\": \"Percentage change in total current assets over the prior fiscal year, using data from Compustat annual balance sheets.\", \"rationale\": \"Rapid asset growth may signal overinvestment or empire-building, while slower asset growth may indicate disciplined capital allocation.\", \"higher_returns_for\": \"stocks with low short-term asset growth\"}, {\"name\": \"Inventory Turnover Acceleration\", \"construction\": \"Year-over-year change in inventory turnover ratio (COGS divided by average inventories) calculated from Compustat annual data.\", \"rationale\": \"Improving inventory turnover suggests increasing operational efficiency and potential future profitability.\", \"higher_returns_for\": \"stocks with large positive changes in inventory turnover\"}, {\"name\": \"Long-Term Debt Reduction\", \"construction\": \"Percentage decrease in long-term debt over the past three fiscal years, from Compustat balance sheets.\", \"rationale\": \"Firms reducing leverage may be de-risking, signaling stronger future performance.\", \"higher_returns_for\": \"stocks with large reductions in long-term debt\"}, {\"name\": \"Operating Expense Slope\", \"construction\": \"Regression slope of SG&A expenses to sales over the past five fiscal years, using Compustat annual income statements.\", \"rationale\": \"A declining SG&A-to-sales ratio may indicate increasing scalability and profitability.\", \"higher_returns_for\": \"stocks with the most negative slopes (fastest declining SG&A-to-sales ratios)\"}, {\"name\": \"Dividend Initiation\", \"construction\": \"Indicator variable equal to one if a firm initiates a dividend in the past year (Compustat dividend data), zero otherwise.\", \"rationale\": \"Dividend initiation may signal management confidence in stable cash flows.\", \"higher_returns_for\": \"stocks initiating dividends\"}, {\"name\": \"Earnings Estimate Dispersion\", \"construction\": \"Standard deviation of IBES analyst EPS forecasts for the next fiscal year, scaled by the mean forecast.\", \"rationale\": \"High dispersion reflects disagreement and greater uncertainty, which may be associated with higher risk and future returns.\", \"higher_returns_for\": \"stocks with high earnings forecast dispersion\"}, {\"name\": \"Cash Flow Consistency\", \"construction\": \"Standard deviation of operating cash flows divided by average cash flows over past five years (Compustat cash flow statement).\", \"rationale\": \"Consistent cash generators may be undervalued due to investor preference for smooth earnings.\", \"higher_returns_for\": \"stocks with low cash flow variability\"}, {\"name\": \"Delayed Price Momentum\", \"construction\": \"Past 12-month stock return measured from 13 to 1 months ago, skipping the most recent month (CRSP monthly returns).\", \"rationale\": \"Lagged momentum signals may capture investor underreaction missed by traditional momentum measures.\", \"higher_returns_for\": \"stocks with high past 12-month returns excluding the last month\"}, {\"name\": \"Insider Net Purchases\", \"construction\": \"Net purchases of shares by insiders over the past year divided by shares outstanding, from SEC Form 4 filings.\", \"rationale\": \"Insider buying can indicate undervaluation or positive private information.\", \"higher_returns_for\": \"stocks with high net insider purchases\"}, {\"name\": \"R&D Intensity Change\", \"construction\": \"Year-over-year change in R&D expense divided by total assets, using Compustat annual data.\", \"rationale\": \"Increasing R&D intensity may predict future innovation and growth.\", \"higher_returns_for\": \"stocks with largest increases in R&D-to-assets ratio\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 717,
+   "total_tokens": 986,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_801206523b"
+ }
+}

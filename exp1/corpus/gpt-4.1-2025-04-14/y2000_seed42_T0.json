@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:14:05.041456+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ziCpe8pXs57VxrIxzws1hIEnMII",
+  "object": "chat.completion",
+  "created": 1784859240,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Short-Term Accrual Volatility\", \"construction\": \"Calculate the standard deviation of quarterly short-term accruals (change in current assets minus change in current liabilities, scaled by average total assets) over the past 8 quarters.\", \"rationale\": \"Firms with volatile accruals may face greater uncertainty in earnings quality, which could be mispriced by investors.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"R&D Intensity Change\", \"construction\": \"Compute the year-over-year percentage change in R&D expense divided by total assets.\", \"rationale\": \"Firms increasing R&D intensity may be investing in future growth opportunities not yet recognized by the market.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Dividend Initiation Momentum\", \"construction\": \"Indicator variable equal to 1 if a firm initiated a dividend in the past 12 months and 0 otherwise.\", \"rationale\": \"Dividend initiations may signal management confidence and improved future prospects.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Inventory Write-Down Frequency\", \"construction\": \"Count the number of inventory write-downs disclosed in annual reports over the past 5 years.\", \"rationale\": \"Frequent write-downs may indicate poor inventory management or persistent operational issues.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Relative Insider Net Buying\", \"construction\": \"Sum net insider purchases (purchases minus sales) over the past 6 months, scaled by shares outstanding.\", \"rationale\": \"Insider buying may reflect private information about undervaluation or positive future developments.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Patent Application Growth\", \"construction\": \"Year-over-year percentage change in the number of patent applications filed by the firm, as reported in public filings.\", \"rationale\": \"Rising patent activity may signal innovation and future competitive advantage.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Deferred Tax Asset Ratio\", \"construction\": \"Deferred tax assets divided by total assets, as reported in the most recent annual report.\", \"rationale\": \"High deferred tax assets may indicate aggressive accounting or future earnings headwinds.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Customer Concentration Risk\", \"construction\": \"Percentage of total sales to the firm's largest customer, as disclosed in annual filings.\", \"rationale\": \"High customer concentration exposes firms to idiosyncratic risk that may not be fully priced.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Seasonal Sales Growth Consistency\", \"construction\": \"Standard deviation of year-over-year quarterly sales growth rates for the same quarter over the past 4 years.\", \"rationale\": \"Consistent seasonal sales growth may indicate stable demand and operational strength.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Unrecognized Pension Liability Ratio\", \"construction\": \"Unrecognized pension liabilities divided by market capitalization, as disclosed in footnotes of annual reports.\", \"rationale\": \"Large unrecognized pension liabilities may represent hidden financial risk.\", \"higher_returns_for\": \"low values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 676,
+   "total_tokens": 945,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_294c310c0b"
+ }
+}

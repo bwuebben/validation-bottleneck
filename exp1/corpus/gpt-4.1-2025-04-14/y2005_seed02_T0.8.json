@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:15:34.875642+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 2,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zjdrdCBf5aM98d5pw4hSTsBg6F1",
+  "object": "chat.completion",
+  "created": 1784859329,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\":[{\"name\":\"Inventory Volatility Ratio\",\"construction\":\"Standard deviation of quarterly inventory levels (Compustat item INVT) over the past 12 quarters, scaled by average inventory over the same period.\",\"rationale\":\"Firms with more volatile inventories may face higher uncertainty and risk, which could be compensated with higher returns.\",\"higher_returns_for\":\"high values of the measure\"},{\"name\":\"Advertising Expense Intensity Change\",\"construction\":\"Annual change in advertising expenses (Compustat item XAD) divided by lagged total assets (Compustat item AT), measured over the most recent fiscal year.\",\"rationale\":\"Increasing advertising intensity may signal growth investment not yet priced in by the market.\",\"higher_returns_for\":\"high values of the measure\"},{\"name\":\"Long-Term Debt Growth Acceleration\",\"construction\":\"Second difference (acceleration) of long-term debt (Compustat item DLTT) over the past three fiscal years, divided by total assets.\",\"rationale\":\"Accelerating debt issuance may precede significant investment or expansion that the market undervalues.\",\"higher_returns_for\":\"high values of the measure\"},{\"name\":\"Net Working Capital to Market Value\",\"construction\":\"Net working capital (current assets minus current liabilities, Compustat items ACT - LCT) divided by market capitalization (CRSP).\",\"rationale\":\"Firms with high working capital relative to market value could be undervalued or more financially flexible.\",\"higher_returns_for\":\"high values of the measure\"},{\"name\":\"Gross Margin Seasonality\",\"construction\":\"Standard deviation of quarterly gross margin percentage (gross profit / sales, Compustat items GP/Sale) over the past 12 quarters.\",\"rationale\":\"Firms with less predictable gross margins may be riskier but potentially offer higher returns as compensation.\",\"higher_returns_for\":\"high values of the measure\"},{\"name\":\"Industry Sales Dispersion\",\"construction\":\"Firm's annual sales (Compustat item SALE) minus the mean sales of its industry (4-digit SIC), divided by industry sales standard deviation.\",\"rationale\":\"Outlier firms in terms of sales\u2014especially on the high side\u2014might be mispriced due to insufficient peer comparables.\",\"higher_returns_for\":\"high positive or negative values of the measure\"},{\"name\":\"R&D Consistency Score\",\"construction\":\"Number of consecutive years with nonzero R&D expense (Compustat item XRD) over the past 10 years.\",\"rationale\":\"Sustained R&D investment could signal long-term innovation, which markets tend to undervalue.\",\"higher_returns_for\":\"high values of the measure\"},{\"name\":\"Unrecognized Asset Growth\",\"construction\":\"Annual change in off-balance sheet operating leases (from footnote disclosures) divided by total assets.\",\"rationale\":\"Growing off-balance sheet assets may indicate hidden investments not fully incorporated into equity prices.\",\"higher_returns_for\":\"high values of the measure\"},{\"name\":\"Share Repurchase Frequency\",\"construction\":\"Number of quarterly reductions in shares outstanding (Compustat item CSHO) over the past 12 quarters.\",\"rationale\":\"Frequent buybacks may reflect management signaling undervaluation or commitment to shareholder returns.\",\"higher_returns_for\":\"high values of the measure\"},{\"name\":\"Patent Grant Momentum\",\"construction\":\"Number of new patents granted (from USPTO records matched by firm) in the past 12 months minus the previous 12 months, divided by total assets.\",\"rationale\":\"Increasing patent activity may precede new product launches and future earnings surprises.\",\"higher_returns_for\":\"high values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 699,
+   "total_tokens": 968,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_1adda89cc2"
+ }
+}

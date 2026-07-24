@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:57:25.335684+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 2,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zRsQTF6cLgsf1FdN6M8CtbqF6RF",
+  "object": "chat.completion",
+  "created": 1784858228,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n\"predictors\": [\n{\n\"name\": \"Social Responsibility Score\",\n\"construction\": \"Use CSR ratings from KLD STATS database. Higher scores indicate more responsible conduct.\",\n\"rationale\": \"Firms demonstrating social responsibility may be better managed and more forward-thinking, leading to better future performance.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Customer Satisfaction Index\",\n\"construction\": \"Measure based on the American Customer Satisfaction Index. Higher ratings indicate greater customer satisfaction.\",\n\"rationale\": \"Firms with high customer satisfaction may have a competitive advantage and better future cash flows.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Patent Quality\",\n\"construction\": \"Measure based on the number of citations a firm's patents receive. More citations indicate higher quality patents.\",\n\"rationale\": \"Firms with high-quality patents may be more innovative, leading to better future performance.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Employee Satisfaction\",\n\"construction\": \"Measure based on employee reviews from websites like Glassdoor.\",\n\"rationale\": \"Firms with satisfied employees may have better future performance due to higher productivity.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"CEO Overconfidence\",\n\"construction\": \"Measure based on the number of optimistic words in a CEO's public statements. More optimistic words indicate a more overconfident CEO.\",\n\"rationale\": \"Overconfident CEOs may take on more risky projects, leading to higher future returns.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Online Presence\",\n\"construction\": \"Measure based on the number of website visits a firm receives. More visits indicate a stronger online presence.\",\n\"rationale\": \"Firms with a strong online presence may have better future performance due to higher brand recognition.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Supply Chain Efficiency\",\n\"construction\": \"Measure based on the gap between a firm's inventory turnover and its industry median. Smaller gaps indicate more efficient supply chains.\",\n\"rationale\": \"Firms with efficient supply chains may have better future performance due to cost savings.\",\n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"Earnings Smoothing\",\n\"construction\": \"Measure based on the standard deviation of a firm's earnings over the past five years. Lower standard deviations indicate more earnings smoothing.\",\n\"rationale\": \"Firms that smooth earnings may be manipulating financials and could be riskier investments.\",\n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"Mergers and Acquisitions Activity\",\n\"construction\": \"Measure based on the number of M&A transactions a firm has been involved in over the past year.\",\n\"rationale\": \"Firms with high M&A activity may have higher future returns due to synergies or growth opportunities.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"R&D Intensity\",\n\"construction\": \"Measure based on the ratio of a firm's R&D spending to its total sales.\",\n\"rationale\": \"Firms with high R&D intensity may have better future performance due to innovation and growth potential.\",\n\"higher_returns_for\": \"High values of the measure\"\n}\n]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 684,
+   "total_tokens": 954,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

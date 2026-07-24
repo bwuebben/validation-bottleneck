@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:03:01.881780+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zXIHIYtf3wA7v8lKpWkuRVNMUhY",
+  "object": "chat.completion",
+  "created": 1784858564,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n\"predictors\": [\n{\n\"name\": \"Social Media Sentiment\",\n\"construction\": \"Aggregate and analyze the sentiment of social media posts about a firm over the past quarter.\",\n\"rationale\": \"Social media sentiment can provide an early indicator of changing public opinion about a firm, which may not yet be reflected in traditional financial indicators.\",\n\"higher_returns_for\": \"Firms with increasingly positive sentiment\"\n},\n{\n\"name\": \"Green Investment Ratio\",\n\"construction\": \"Calculate the proportion of a firm's capital expenditures that are devoted to environmentally friendly technologies or practices in the most recent fiscal year.\",\n\"rationale\": \"Firms that invest in 'green' technologies may be better positioned for future regulatory changes and consumer demand shifts.\",\n\"higher_returns_for\": \"Firms with high green investment ratios\"\n},\n{\n\"name\": \"Employee Satisfaction Index\",\n\"construction\": \"Aggregate and analyze data from employee review websites for the past year.\",\n\"rationale\": \"Higher employee satisfaction can lead to increased productivity and better firm performance.\",\n\"higher_returns_for\": \"Firms with high employee satisfaction\"\n},\n{\n\"name\": \"Cybersecurity Maturity Level\",\n\"construction\": \"Evaluate a firm's cybersecurity practices and protocols, based on public and third-party data over the past year.\",\n\"rationale\": \"Firms with robust cybersecurity practices may be less exposed to costly data breaches and reputational damage.\",\n\"higher_returns_for\": \"Firms with high cybersecurity maturity levels\"\n},\n{\n\"name\": \"Supply Chain Resilience\",\n\"construction\": \"Estimate a firm's ability to manage supply chain disruptions, based on data from industry reports and public statements over the past year.\",\n\"rationale\": \"Firms with resilient supply chains may be better able to manage shocks and maintain operations.\",\n\"higher_returns_for\": \"Firms with high supply chain resilience\"\n},\n{\n\"name\": \"Product Recalls Frequency\",\n\"construction\": \"Measure the number of product recalls a firm has had in the past three years, normalized by the firm's total sales.\",\n\"rationale\": \"Frequent product recalls can indicate quality control issues that might impact a firm's future profitability.\",\n\"higher_returns_for\": \"Firms with low product recall frequencies\"\n},\n{\n\"name\": \"C-Suite Diversity\",\n\"construction\": \"Calculate the diversity of a firm's executive team, based on public information about gender, race, and ethnicity.\",\n\"rationale\": \"Diversity at the executive level can lead to a broader range of perspectives and improved decision-making.\",\n\"higher_returns_for\": \"Firms with high C-suite diversity\"\n},\n{\n\"name\": \"Mobile App Ratings\",\n\"construction\": \"Calculate the average rating of a firm's mobile app(s) over the past year, based on public app store data.\",\n\"rationale\": \"Highly rated mobile apps can indicate a strong digital presence and customer engagement.\",\n\"higher_returns_for\": \"Firms with highly rated mobile apps\"\n},\n{\n\"name\": \"Corporate Culture Score\",\n\"construction\": \"Aggregate and analyze data from employee review websites and public statements to assess a firm's corporate culture over the past year.\",\n\"rationale\": \"Positive corporate culture can lead to employee satisfaction, productivity, and retention, which can enhance firm performance.\",\n\"higher_returns_for\": \"Firms with high corporate culture scores\"\n},\n{\n\"name\": \"Revenue Concentration\",\n\"construction\": \"Calculate the percentage of a firm's revenue that comes from its largest customer in the most recent fiscal year.\",\n\"rationale\": \"Firms that are overly reliant on a single customer may be exposed to higher risk and potential volatility in earnings.\",\n\"higher_returns_for\": \"Firms with low revenue concentration\"\n}\n]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 741,
+   "total_tokens": 1011,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

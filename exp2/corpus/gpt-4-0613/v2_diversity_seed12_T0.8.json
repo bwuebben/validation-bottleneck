@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:02:05.082388+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 12,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yZgO8HWaTTLcOpZEVr2fsc7Bl9i",
+  "object": "chat.completion",
+  "created": 1784854868,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\"name\": \"Composite1\", \"mechanism\": \"This hypothesis relies on the behavioral tendency of investors to underreact to firm's recent investments and overreact to recent earnings, making a contrarian strategy profitable in the short-term.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"InvestPPEInv\"}, {\"weight\": -1.0, \"primitive\": \"EarningsSurprise\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"STreversal\", \"bound\": \"above\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.5, \"expected_decay_half_life_months\": 36},\n{\"name\": \"Composite2\", \"mechanism\": \"This hypothesis exploits the mispricing between firms with high intangible assets and high leverage due to investors' myopia towards future cash flows and risk aversion.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanBM\"}, {\"weight\": 0.5, \"primitive\": \"Leverage\"}, {\"weight\": -0.5, \"primitive\": \"Cash\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite3\", \"mechanism\": \"This hypothesis exploits the mispricing due to investors underreacting to recent changes in short-term analyst revisions and overreacting to long-term growth forecasts.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"AnalystRevision\"}, {\"weight\": -1.0, \"primitive\": \"fgr5yrLag\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 48},\n{\"name\": \"Composite4\", \"mechanism\": \"This hypothesis relies on the premise that investors underreact to information about a firm's competitive position within its industry and overreact to recent firm-specific returns.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Herf\"}, {\"weight\": -0.5, \"primitive\": \"Mom6m\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}, {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 60},\n{\"name\": \"Composite5\", \"mechanism\": \"This hypothesis exploits the mispricing associated with investors underreacting to firms' funding status and overreacting to market sentiment.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"FR\"}, {\"weight\": -1.0, \"primitive\": \"betaVIX\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.5, \"expected_decay_half_life_months\": null},\n{\"name\": \"Composite6\", \"mechanism\": \"This hypothesis exploits the mispricing between firms with recent layoffs and firms with high short interest due to investors' myopia towards future cost savings and risk aversion.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"hire\"}, {\"weight\": -1.0, \"primitive\": \"IO_ShortInterest\"}], \"regime\": \"TERM_SPREAD_NEGATIVE\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"opposite_sign\"}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 24},\n{\"name\": \"Composite7\", \"mechanism\": \"This hypothesis exploits the mispricing due to investors underreacting to recent changes in firms' asset growth and overreacting to recent changes in the firms' inventory.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"AssetGrowth\"}, {\"weight\": -1.0, \"primitive\": \"ChInv\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 36},\n{\"name\": \"Composite8\", \"mechanism\": \"This hypothesis exploits the mispricing related to investors' overreaction to firms' recent inventory growth and underreaction to changes in firms' net noncurrent operating assets.\", \"expression\": {\"terms\": [{\"weight\": -1.0, \"primitive\": \"ChInv\"}, {\"weight\": 1.0, \"primitive\": \"ChNNCOA\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 48}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2965,
+   "completion_tokens": 1444,
+   "total_tokens": 4409,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

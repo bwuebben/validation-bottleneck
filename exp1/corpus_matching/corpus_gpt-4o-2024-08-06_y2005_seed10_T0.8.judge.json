@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:32:21.542406+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4o-2024-08-06/y2005_seed10_T0.8.json",
+  "prompt_sha256": "52f685a3fc264989340c2009cd04f146512fb24e147f2e0fc17baee7f9b6e750"
+ },
+ "response": {
+  "id": "chatcmpl-E4zzu1hwrTPvzBJvBnmf5xUJNwhY1",
+  "object": "chat.completion",
+  "created": 1784860338,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee sentiment or similar textual analysis.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor based on product recall frequency or operational failures.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer churn or similar customer retention data.\"},\n  {\"index\": 3, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Both use patent counts, but library uses patent-to-R&D ratio, not growth rate.\"},\n  {\"index\": 4, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Both relate to governance, but diversity index is not in library.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor based on environmental violations or similar ESG events.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses CEO media presence or similar publicity measures.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor based on supply chain disruptions or operational interruptions.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses cybersecurity incidents or related risk events.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses innovation sentiment from textual analysis.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2668,
+   "completion_tokens": 363,
+   "total_tokens": 3031,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:28:03.286241+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y1995_seed08_T0.8.json",
+  "prompt_sha256": "4824eacd4ee8d80eae8f3e873e1234081d0df912ab30cbecbeffab581d3f51b6"
+ },
+ "response": {
+  "id": "chatcmpl-E4zvjH3fbTFNrzIAY9QCjJLEP3e1v",
+  "object": "chat.completion",
+  "created": 1784860079,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"EarningsConsistency\", \"strength\": \"close\", \"reason\": \"Both use changes in earnings growth rates for signal.\"},\n  {\"index\": 1, \"match\": \"ChInv\", \"strength\": \"close\", \"reason\": \"Both focus on unexpected or abnormal inventory changes.\"},\n  {\"index\": 2, \"match\": \"CBOperProf\", \"strength\": \"close\", \"reason\": \"Both relate cash flow to accruals or earnings quality.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No insider trading or purchase intensity variable in library.\"},\n  {\"index\": 4, \"match\": \"RDcap\", \"strength\": \"related\", \"reason\": \"Both involve R&D/capex, but proposal uses change in ratio.\"},\n  {\"index\": 5, \"match\": \"ForecastDispersion\", \"strength\": \"close\", \"reason\": \"Both use analyst forecast dispersion, but proposal is relative.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No deferred tax asset or similar tax asset ratio in library.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No gross margin stability or margin volatility variable in library.\"},\n  {\"index\": 8, \"match\": \"ShareRepurchase\", \"strength\": \"close\", \"reason\": \"Both measure share repurchases, but proposal uses yield form.\"},\n  {\"index\": 9, \"match\": \"DivInit\", \"strength\": \"exact\", \"reason\": \"Both are binary indicators for dividend initiation.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2772,
+   "completion_tokens": 363,
+   "total_tokens": 3135,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

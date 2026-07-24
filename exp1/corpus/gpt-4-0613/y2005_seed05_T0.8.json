@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:58:14.943269+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 5,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zSgBp5GEUdQc0gjeEvfOTOG2dLz",
+  "object": "chat.completion",
+  "created": 1784858278,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\"name\": \"Inventory Turnover Ratio\", \n   \"construction\": \"Cost of Goods Sold (COGS) divided by average inventory, computed annually. Data from Compustat.\", \n   \"rationale\": \"Firms that sell their inventory frequently may be more efficient, indicating good management.\", \n   \"higher_returns_for\": \"high values of the measure.\"},\n  \n  {\"name\": \"Customer Concentration\", \n   \"construction\": \"Total revenue from the firm's largest customer divided by total revenue, computed annually. Data from Thomson Reuters.\", \n   \"rationale\": \"Firms with high customer concentration may be more risky due to dependence on a single customer.\", \n   \"higher_returns_for\": \"low values of the measure.\"},\n  \n  {\"name\": \"Product Diversification\", \n   \"construction\": \"Number of distinct business segments reported in annual 10-K filings. Data from SEC EDGAR.\", \n   \"rationale\": \"Firms with greater product diversification may be less risky as they are not dependent on a single product/segment.\", \n   \"higher_returns_for\": \"high values of the measure.\"},\n  \n  {\"name\": \"CEO Compensation Structure\", \n   \"construction\": \"Proportion of CEO compensation that is equity-based, computed annually. Data from ExecuComp.\", \n   \"rationale\": \"CEOs compensated with more equity may have stronger incentives to maximize shareholder value.\", \n   \"higher_returns_for\": \"high values of the measure.\"},\n  \n  {\"name\": \"Employee Satisfaction\", \n   \"construction\": \"Average score from employee reviews on Glassdoor, computed annually.\", \n   \"rationale\": \"Employee satisfaction may be a proxy for the firm's intangible assets, like corporate culture.\", \n   \"higher_returns_for\": \"high values of the measure.\"},\n  \n  {\"name\": \"Technology Adoption Index\", \n   \"construction\": \"Number of mentions of cutting-edge technologies (e.g., AI, blockchain) in annual 10-K filings. Data from SEC EDGAR.\", \n   \"rationale\": \"Firms that adopt new technologies may be more innovative and competitive.\", \n   \"higher_returns_for\": \"high values of the measure.\"},\n  \n  {\"name\": \"Political Contributions\", \n   \"construction\": \"Total political contributions made by firm, computed annually. Data from Center for Responsive Politics.\", \n   \"rationale\": \"Firms that make large political contributions may be better able to influence policy in their favor.\", \n   \"higher_returns_for\": \"high values of the measure.\"},\n  \n  {\"name\": \"Employee Training Investment\", \n   \"construction\": \"Employee training costs as a percentage of total expenses, computed annually. Data from annual 10-K filings.\", \n   \"rationale\": \"Investments in employee training may increase productivity and enhance firm value.\", \n   \"higher_returns_for\": \"high values of the measure.\"},\n  \n  {\"name\": \"Labor Cost Efficiency\", \n   \"construction\": \"Revenue per employee, computed annually. Data from Compustat.\", \n   \"rationale\": \"Firms with higher revenue per employee may be more efficient.\", \n   \"higher_returns_for\": \"high values of the measure.\"},\n  \n  {\"name\": \"Supply Chain Resilience\", \n   \"construction\": \"Number of mentions of 'supply chain' and 'risk' in annual 10-K filings. Data from SEC EDGAR.\", \n   \"rationale\": \"Firms that frequently discuss supply chain risks may be more focused on managing these risks.\", \n   \"higher_returns_for\": \"low values of the measure.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 741,
+   "total_tokens": 1011,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

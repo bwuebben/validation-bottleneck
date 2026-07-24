@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:10:45.285372+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 7,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yikNHupAT8ctwuYd7MYCoH5yzX1",
+  "object": "chat.completion",
+  "created": 1784855430,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"hypotheses\": [\n    {\n      \"name\": \"Contrarian Innovation\",\n      \"mechanism\": \"Combining EarningsSurprise and IntanBM, this factor captures firms with unexpected earnings alongside robust intangible asset backing, potentially benefiting from market mispricing due to information asymmetry.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"EarningsSurprise\"},\n          {\"weight\": 0.5, \"primitive\": \"IntanBM\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_DOWN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Leverage Momentum\",\n      \"mechanism\": \"The Leverage and Mom12mOffSeason indicators together capture firms with recent momentum but moderated by leverage effects, potentially reflecting the market's risk adjustment.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": -0.5, \"primitive\": \"Leverage\"},\n          {\"weight\": 1.0, \"primitive\": \"Mom12mOffSeason\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.7,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"Volatility Consistency\",\n      \"mechanism\": \"By combining IdioVolAHT and EarningsConsistency, it identifies stable earnings amidst market noise, suggesting a premium for firms maintaining performance consistency.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"IdioVolAHT\"},\n          {\"weight\": 0.5, \"primitive\": \"EarningsConsistency\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 1.1,\n      \"expected_decay_half_life_months\": 48\n    },\n    {\n      \"name\": \"Growth Surprise\",\n      \"mechanism\": \"Integrating AssetGrowth and RevenueSurprise captures companies with unexpected growth acceleration, potentially reflecting underappreciated operational improvements.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"AssetGrowth\"},\n          {\"weight\": 1.0, \"primitive\": \"RevenueSurprise\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"RevenueSurprise\", \"bound\": \"above\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.8,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Defensive Growth\",\n      \"mechanism\": \"Combining Cash and Growth in Advertising Expenses (GrAdExp) highlights firms with a defensive cash position that strategically invest in growth, managing market volatility.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"Cash\"},\n          {\"weight\": 0.5, \"primitive\": \"GrAdExp\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": 48\n    },\n    {\n      \"name\": \"Risk-Adjusted Profitability\",\n      \"mechanism\": \"By combining ROE and BetaFP, it targets firms maintaining high returns on equity adjusted for risk, suggesting efficient capital allocation under varying market conditions.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": -0.5, \"primitive\": \"BetaFP\"},\n          {\"weight\": 1.0, \"primitive\": \"RoE\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"RoE\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.75,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"Consumer Sentiment Resilience\",\n      \"mechanism\": \"Integrating Consumer Momentum (CustomerMomentum) and Analyst Value captures firms benefiting from positive consumer sentiment and analyst recognition, withstanding market downturns.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"CustomerMomentum\"},\n          {\"weight\": 0.5, \"primitive\": \"AnalystValue\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"opposite_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.85,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"Operational Efficiency\",\n      \"mechanism\": \"By combining Operating Profits/Book Equity (OperProf) and Change in Asset Turnover, the factor identifies firms enhancing operational efficiency, potentially signaling sustained competitive advantage.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"OperProf\"},\n          {\"weight\": 0.5, \"primitive\": \"ChAssetTurnover\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 1.0,\n      \"expected_decay_half_life_months\": 36\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 1785,
+   "total_tokens": 4586,
+   "prompt_tokens_details": {
+    "cached_tokens": 2560,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

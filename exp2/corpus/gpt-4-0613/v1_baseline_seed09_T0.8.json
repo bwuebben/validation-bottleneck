@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:43:41.166277+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 9,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yI3FhuD2JcZSyTeyc89nft7FUWE",
+  "object": "chat.completion",
+  "created": 1784853775,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Hypothesis 1\",\n    \"mechanism\": \"Firms with high cash and book leverage tend to perform better under low market volatility conditions as they can service their debts without pressure.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 0.5, \"primitive\": \"Cash\"},\n        {\"weight\": 0.5, \"primitive\": \"BookLeverage\"}\n      ], \n      \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"Cash\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Hypothesis 2\",\n    \"mechanism\": \"Momentum strategy can be more effective when combined with the market volatility; firms with high momentum and high market beta tend to outperform in high market volatility periods.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 0.5, \"primitive\": \"Mom12m\"},\n        {\"weight\": 0.5, \"primitive\": \"Beta\"}\n      ], \n      \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"above\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Hypothesis 3\",\n    \"mechanism\": \"Firms with relatively low price and high dividend yield likely to deliver stronger returns in a positive term spread regime due to increased investor's confidence.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -0.5, \"primitive\": \"Price\"},\n        {\"weight\": 0.5, \"primitive\": \"DivYieldST\"}\n      ], \n      \"regime\": \"TERM_SPREAD_POSITIVE\", \n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.5,\n    \"expected_decay_half_life_months\": 48\n  },\n  {\n    \"name\": \"Hypothesis 4\",\n    \"mechanism\": \"Firms with strong sales growth and high gross profits can perform well in a negative term spread regime due to their robust business models.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 0.5, \"primitive\": \"GP\"},\n        {\"weight\": 0.5, \"primitive\": \"GrSaleToGrInv\"}\n      ], \n      \"regime\": \"TERM_SPREAD_NEGATIVE\", \n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"GP\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.8,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Hypothesis 5\",\n    \"mechanism\": \"Firms with high market momentum and low bid-ask spread tend to achieve high returns in the up trending market due to increased investor's attention.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 0.5, \"primitive\": \"Mom12m\"},\n        {\"weight\": -0.5, \"primitive\": \"BidAskSpread\"}\n      ], \n      \"regime\": \"MKT_TRAILING_12M_UP\", \n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 18\n  },\n  {\n    \"name\": \"Hypothesis 6\",\n    \"mechanism\": \"Firms with high earnings consistency and low price tend to perform well in a down trending market due to their stability and low price attractiveness.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 0.5, \"primitive\": \"EarningsConsistency\"},\n        {\"weight\": -0.5, \"primitive\": \"Price\"}\n      ], \n      \"regime\": \"MKT_TRAILING_12M_DOWN\", \n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"EarningsConsistency\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 12\n  },\n  {\n    \"name\": \"Hypothesis 7\",\n    \"mechanism\": \"Combination of strong analyst consensus and high trading volume can lead to superior returns when VIX is below its trailing median due to increased market confidence.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 0.5, \"primitive\": \"ConsRecomm\"},\n        {\"weight\": 0.5, \"primitive\": \"ShareVol\"}\n      ], \n      \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.65,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Hypothesis 8\",\n    \"mechanism\": \"Low price-to-sales ratio combined with positive medium-term reversal can lead to superior returns when VIX is above its trailing median due to potential underpricing.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -0.5, \"primitive\": \"SP\"},\n        {\"weight\": 0.5, \"primitive\": \"MRreversal\"}\n      ], \n      \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"SP\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.75,\n    \"expected_decay_half_life_months\": 24\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2864,
+   "completion_tokens": 1859,
+   "total_tokens": 4723,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

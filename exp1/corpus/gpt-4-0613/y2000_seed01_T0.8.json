@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:53:52.871577+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 1,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zOSy0GKVjjYWAYZ2xCiucjMsr4J",
+  "object": "chat.completion",
+  "created": 1784858016,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Customer Satisfaction Index\",\n      \"construction\": \"Use third-party customer satisfaction survey data, average the past 12 months.\",\n      \"rationale\": \"High customer satisfaction may lead to more repeat business and thus higher future profitability.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Patent Intensity\",\n      \"construction\": \"Count the number of patents granted to a firm over the past 3 years, divided by firm size (e.g. total assets).\",\n      \"rationale\": \"Patent intensity may reflect a firm's innovative capacity and potential for creating future profits.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Employee Turnover Rate\",\n      \"construction\": \"Calculate the percentage of employees who left the company over the past 12 months.\",\n      \"rationale\": \"High employee turnover may indicate internal problems and predict lower future firm performance.\",\n      \"higher_returns_for\": \"Low values of the measure\"\n    },\n    {\n      \"name\": \"Use of Non-GAAP Metrics\",\n      \"construction\": \"Count the number of non-GAAP metrics used in a company's annual report.\",\n      \"rationale\": \"Frequent use of non-GAAP metrics may indicate financial obfuscation, potentially hiding poor performance.\",\n      \"higher_returns_for\": \"Low values of the measure\"\n    },\n    {\n      \"name\": \"Tax Rate Stability\",\n      \"construction\": \"Calculate the standard deviation of the firm's effective tax rate over the past 5 years.\",\n      \"rationale\": \"Stable tax rates may suggest a less risky, more predictable future after-tax cash flow.\",\n      \"higher_returns_for\": \"Low values of the measure\"\n    },\n    {\n      \"name\": \"Product Diversity\",\n      \"construction\": \"Measure the number of distinct product lines or business segments a firm operates in.\",\n      \"rationale\": \"Diverse product lines may indicate a firm's adaptability and resilience to shocks in any single market.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Executive Age Diversity\",\n      \"construction\": \"Calculate the standard deviation of the ages of a firm's top 5 executives.\",\n      \"rationale\": \"Age diversity among executives may indicate a broader range of perspectives, potentially benefiting firm decision-making.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Gender Pay Gap\",\n      \"construction\": \"Calculate the average male salary minus the average female salary, using EEO-1 data.\",\n      \"rationale\": \"A large gender pay gap may indicate potential reputational or legal risks.\",\n      \"higher_returns_for\": \"Low values of the measure\"\n    },\n    {\n      \"name\": \"Use of Derivatives\",\n      \"construction\": \"Measure the notional amount of derivatives used, divided by total assets.\",\n      \"rationale\": \"High use of derivatives might signal higher risk, but also potential for higher returns if management is skillfully hedging or speculating.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Internet Presence\",\n      \"construction\": \"Use web scraping tools to measure the sophistication and interactivity of a company's website.\",\n      \"rationale\": \"A strong internet presence might signal a more forward-looking company, potentially predicting future growth.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 737,
+   "total_tokens": 1007,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

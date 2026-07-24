@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:31:53.915270+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 17,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4z38mxYrOdurQvB7c99tGTOcdgUO",
+  "object": "chat.completion",
+  "created": 1784856694,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Organizational Capital and Industry Concentration Shock\",\n    \"mechanism\": \"Firms with high organizational capital (OrgCap) benefit from industry-level concentration disruptions (HerfAsset), as their managerial flexibility allows them to capitalize on market structure shifts. By combining these, we expect a premium from firms best positioned to exploit transient competitive changes, beyond the sum of the components.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"OrgCap\"},\n        {\"weight\": 0.5, \"primitive\": \"HerfAsset\"},\n        {\"weight\": -0.5, \"primitive\": \"Industry Momentum\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"OrgCap\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.80,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Brand Investment with Forecast Dispersion Hedge\",\n    \"mechanism\": \"Firms with strong brand capital investment (BrandInvest) and low analyst forecast dispersion (ForecastDispersion) are likely to have sustainable cash flows and fewer information asymmetries. Hedging out high dispersion emphasizes those with the clearest growth prospects and hidden competitive advantages.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"BrandInvest\"},\n        {\"weight\": -0.5, \"primitive\": \"ForecastDispersion\"}\n      ],\n      \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n      {\"type\": \"correlation\", \"primitive\": \"ForecastDispersion\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.65,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Earnings Surprise Efficiency\",\n    \"mechanism\": \"Earnings surprise (EarningsSurprise) predicts returns, but its efficacy rises when combined with firms showing strong price delay (PriceDelayTstat), suggesting markets inefficiently incorporate timely news in these stocks. The combination identifies inefficiency pockets.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"EarningsSurprise\"},\n        {\"weight\": 0.5, \"primitive\": \"PriceDelayTstat\"},\n        {\"weight\": -0.5, \"primitive\": \"BidAskSpread\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"EarningsSurprise\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.70,\n    \"expected_decay_half_life_months\": 18\n  },\n  {\n    \"name\": \"Deferred Revenue with Operating Leverage Tilt\",\n    \"mechanism\": \"Firms accumulating deferred revenue (DelDRC) while maintaining high operating leverage (OPLeverage) are better able to buffer shocks and reinvest for growth, especially during low rate environments. The mix targets structural growth with cash flow flexibility.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"DelDRC\"},\n        {\"weight\": 0.5, \"primitive\": \"OPLeverage\"},\n        {\"weight\": -0.5, \"primitive\": \"BookLeverage\"}\n      ],\n      \"regime\": \"TERM_SPREAD_NEGATIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n      {\"type\": \"correlation\", \"primitive\": \"DelDRC\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.60,\n    \"expected_decay_half_life_months\": 30\n  },\n  {\n    \"name\": \"Supply Chain Resilience and Asset Turnover\",\n    \"mechanism\": \"Firms benefiting from positive supplier momentum (iomom_supp) and accelerating asset turnover (ChAssetTurnover), but with tempered employment growth (hire), are likely to be improving efficiency and adapting supply chains without overextending resources.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"iomom_supp\"},\n        {\"weight\": 0.5, \"primitive\": \"ChAssetTurnover\"},\n        {\"weight\": -0.5, \"primitive\": \"hire\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"iomom_supp\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.68,\n    \"expected_decay_half_life_months\": 20\n  },\n  {\n    \"name\": \"R&D Surprises with Analyst Optimism Control\",\n    \"mechanism\": \"Unexpected R&D increases (SurpriseRD) typically reward firms investing in innovation, but controlling for analyst optimism (AOP) distinguishes true innovation from mere positive sentiment, isolating genuine discovery from hype-driven moves.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"SurpriseRD\"},\n        {\"weight\": -0.5, \"primitive\": \"AOP\"},\n        {\"weight\": 0.5, \"primitive\": \"PatentsRD\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.66,\n    \"expected_decay_half_life_months\": 28\n  },\n  {\n    \"name\": \"Real Estate Asset Play in Volatile Regimes\",\n    \"mechanism\": \"Firms with substantial real estate holdings (realestate) but low market leverage (Leverage) and muted volume volatility (VolSD) are underappreciated as safe asset plays during periods of elevated market volatility, creating a unique defensive composite.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"realestate\"},\n        {\"weight\": -0.5, \"primitive\": \"Leverage\"},\n        {\"weight\": -0.5, \"primitive\": \"VolSD\"}\n      ],\n      \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"realestate\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.58,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Pension Funding and Net Debt Hedged\",\n    \"mechanism\": \"Firms with healthy pension funding (FR) but hedged for excessive net debt (NetDebtFinance) and sudden debt issuance (DebtIssuance) avoid underfunded liabilities and balance sheet risk, especially when rates rise, creating a durable hybrid safety premium.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"FR\"},\n        {\"weight\": -0.5, \"primitive\": \"NetDebtFinance\"},\n        {\"weight\": -0.5, \"primitive\": \"DebtIssuance\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.55,\n    \"expected_decay_half_life_months\": 40\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2903,
+   "completion_tokens": 2133,
+   "total_tokens": 5036,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_b5121c360f"
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:17:35.856810+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 7,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zlXsmAPsER4fojWVXOslSDHrTe5",
+  "object": "chat.completion",
+  "created": 1784859447,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Short-Term Operating Leverage Shift\", \"construction\": \"Change in (Gross Profit / Sales) over the past 2 quarters, divided by average (Gross Profit / Sales) over the past 3 years, using Compustat quarterly data.\", \"rationale\": \"Sudden shifts in operating leverage may signal under- or over-investment in productive capacity not yet reflected in prices.\", \"higher_returns_for\": \"firms with recent large increases in the ratio\"}, {\"name\": \"Inventory-to-Order Backlog Ratio\", \"construction\": \"Latest quarterly Inventory (Compustat) divided by Order Backlog (Compustat, where reported), winsorized at 1st and 99th percentiles.\", \"rationale\": \"A high ratio may indicate overproduction or weak demand, while a low ratio could signal strong demand and potential future pricing power.\", \"higher_returns_for\": \"firms with low inventory-to-order backlog ratios\"}, {\"name\": \"Insider Option Exercise Disadvantage\", \"construction\": \"Count of insider option exercises (Form 4) over the past 12 months occurring at strike prices above current market price, normalized by total option exercises.\", \"rationale\": \"Executives exercising underwater options may lack timing skill or face liquidity needs, which could signal undervaluation or expected outperformance.\", \"higher_returns_for\": \"firms with higher proportions of underwater option exercises\"}, {\"name\": \"Negative Working Capital Momentum\", \"construction\": \"3-month change in (Current Assets - Current Liabilities) scaled by Total Assets, using Compustat quarterly data.\", \"rationale\": \"Rapid improvements in working capital position may precede positive earnings surprises or improved operating performance.\", \"higher_returns_for\": \"firms with the largest positive change in working capital momentum\"}, {\"name\": \"Patent Citation Growth\", \"construction\": \"Year-on-year growth in total forward citations to a firm's patents (USPTO data), scaled by the firm's total assets.\", \"rationale\": \"Rising patent citations signal innovation and future competitive advantage, predicting superior long-term stock performance.\", \"higher_returns_for\": \"firms with highest growth in patent citations relative to assets\"}, {\"name\": \"Abnormal Deferred Revenue Increase\", \"construction\": \"Change in deferred revenue (Compustat) over the past year, divided by average historical annual deferred revenue growth over the prior 5 years.\", \"rationale\": \"Unusually large increases in deferred revenue may reflect robust customer demand and pricing power, especially for software or service firms.\", \"higher_returns_for\": \"firms with the highest abnormal deferred revenue growth\"}, {\"name\": \"Compensation-to-Profit Divergence\", \"construction\": \"1-year growth in total compensation expense (Compustat) minus 1-year growth in net income, scaled by trailing 1-year net income.\", \"rationale\": \"Disproportionately rising compensation relative to profits may signal future mean reversion or agency issues.\", \"higher_returns_for\": \"firms with negative compensation-to-profit divergence (compensation rising slower than profits)\"}, {\"name\": \"Customer Concentration Change\", \"construction\": \"Year-over-year change in the share of sales to the top three customers (from 10-K segment disclosures).\", \"rationale\": \"Decreasing dependence on major customers may reduce business risk and signal diversification of revenue streams.\", \"higher_returns_for\": \"firms with the largest decrease in customer concentration\"}, {\"name\": \"Net Share Buyback Surprise\", \"construction\": \"Difference between actual net share repurchases (Compustat Cash Flow Statement) in the past 12 months and the average annual net buybacks over the previous 3 years, scaled by market cap.\", \"rationale\": \"Surprisingly aggressive buyback activity may indicate undervaluation or management confidence.\", \"higher_returns_for\": \"firms with the highest positive net buyback surprises\"}, {\"name\": \"Post-Spin-Off Asset Turnover Jump\", \"construction\": \"Change in Asset Turnover (Sales / Total Assets, Compustat) from 1 year pre-spin to 1 year post-spin for firms undergoing spin-offs (identified via press releases and Compustat data).\", \"rationale\": \"Improved efficiency and focus following a spin-off may not be immediately priced in.\", \"higher_returns_for\": \"firms with the largest positive jumps in asset turnover after spin-offs\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 893,
+   "total_tokens": 1162,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_245b7c7787"
+ }
+}

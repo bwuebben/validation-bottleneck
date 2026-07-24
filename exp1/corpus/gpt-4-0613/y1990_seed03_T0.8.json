@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:46:59.516728+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 3,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zHeM4LmcnDgrxiCLBw903c3Fw62",
+  "object": "chat.completion",
+  "created": 1784857594,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\n    \"name\": \"Dividend Revision\",\n    \"construction\": \"Measure as the change in a firm's annual dividend announcement from the previous year.\",\n    \"rationale\": \"An increase in dividends may signal future profitability and strong financial health to the market.\",\n    \"higher_returns_for\": \"Firms with larger positive dividend revisions.\"\n  },\n  {\n    \"name\": \"Inventory Turnover Growth\",\n    \"construction\": \"Measure as the change in the ratio of cost of goods sold to the average inventory level over the past year.\",\n    \"rationale\": \"Growing inventory turnover could signify increasing sales efficiency, likely leading to boosted profitability.\",\n    \"higher_returns_for\": \"Firms with higher growth in inventory turnover.\"\n  },\n  {\n    \"name\": \"Debt Coverage Momentum\",\n    \"construction\": \"Calculate the change in the ratio of earnings before interest and taxes to interest expenses.\",\n    \"rationale\": \"Increasing ability to cover debt obligations may signal a strengthening of the firm's financial stability.\",\n    \"higher_returns_for\": \"Firms with larger positive changes in debt coverage ratio.\"\n  },\n  {\n    \"name\": \"Asset Efficiency Evolution\",\n    \"construction\": \"Measure as the change in the ratio of sales to total assets over the past year.\",\n    \"rationale\": \"Improvements in asset efficiency may suggest better management or healthier financial status.\",\n    \"higher_returns_for\": \"Firms with larger positive changes in asset efficiency ratio.\"\n  },\n  {\n    \"name\": \"Shareholder Yield\",\n    \"construction\": \"Calculate as the sum of dividend yield and buyback yield.\",\n    \"rationale\": \"Firms returning more cash to shareholders may be undervalued or have excess cash.\",\n    \"higher_returns_for\": \"Firms with higher shareholder yields.\"\n  },\n  {\n    \"name\": \"Cash Flow Volatility\",\n    \"construction\": \"Calculate as the standard deviation of the firm's cash flow over the past five years.\",\n    \"rationale\": \"High cash flow volatility could indicate riskier, potentially higher-return investment opportunities.\",\n    \"higher_returns_for\": \"Firms with high cash flow volatility.\"\n  },\n  {\n    \"name\": \"CEO Tenure\",\n    \"construction\": \"Measure as the number of years the current CEO has been in office.\",\n    \"rationale\": \"Longer CEO tenure might imply more stability and potentially better future returns.\",\n    \"higher_returns_for\": \"Firms with longer-serving CEOs.\"\n  },\n  {\n    \"name\": \"Tax Rate Persistence\",\n    \"construction\": \"Calculate as the stability of the firm's effective tax rate over the past five years.\",\n    \"rationale\": \"Firms with stable tax rates may have less financial uncertainty, potentially leading to lower risk and higher returns.\",\n    \"higher_returns_for\": \"Firms with more persistent tax rates.\"\n  },\n  {\n    \"name\": \"Employee Growth\",\n    \"construction\": \"Measure as the percentage change in the number of a firm's employees over the past year.\",\n    \"rationale\": \"Growing employee base could signal expansion and positive future outlook.\",\n    \"higher_returns_for\": \"Firms with higher employee growth.\"\n  },\n  {\n    \"name\": \"Research & Development Intensity\",\n    \"construction\": \"Calculate as the ratio of a firm's research and development expenses to its total assets.\",\n    \"rationale\": \"Higher R&D intensity could indicate more investment in potential growth opportunities.\",\n    \"higher_returns_for\": \"Firms with higher R&D intensity.\"\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 723,
+   "total_tokens": 993,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:39:39.712920+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 4,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yE0PwmOk9ZWFyAj20TLrpBWHkAE",
+  "object": "chat.completion",
+  "created": 1784853524,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\n\"name\": \"H1\",\n\"mechanism\": \"Combining momentum and value strategies can capture both high growth and undervalued stocks, offering diversification benefits and a better risk-adjusted return.\",\n\"expression\": {\n\"terms\": [\n{\"weight\": 0.5, \"primitive\": \"Mom12m\"},\n{\"weight\": -0.5, \"primitive\": \"BM\"}\n],\n\"regime\": \"MKT_TRAILING_12M_UP\",\n\"vol_target\": false\n},\n\"auxiliary_predictions\": [\n{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"},\n{\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n{\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}\n],\n\"expected_annualized_sharpe\": 0.6,\n\"expected_decay_half_life_months\": 18\n},\n{\n\"name\": \"H2\",\n\"mechanism\": \"A strategy combining earnings surprises and momentum can provide superior returns by identifying positive momentum in earnings that is not priced in yet.\",\n\"expression\": {\n\"terms\": [\n{\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"},\n{\"weight\": 0.5, \"primitive\": \"Mom12m\"}\n],\n\"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n\"vol_target\": true\n},\n\"auxiliary_predictions\": [\n{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"},\n{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n{\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n],\n\"expected_annualized_sharpe\": 0.7,\n\"expected_decay_half_life_months\": 12\n},\n{\n\"name\": \"H3\",\n\"mechanism\": \"A strategy that combines short term reversal and long term reversal can capture both short-term overreactions and long-term mean reversion.\",\n\"expression\": {\n\"terms\": [\n{\"weight\": 0.5, \"primitive\": \"STreversal\"},\n{\"weight\": -0.5, \"primitive\": \"LRreversal\"}\n],\n\"regime\": \"TERM_SPREAD_POSITIVE\",\n\"vol_target\": true\n},\n\"auxiliary_predictions\": [\n{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"},\n{\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n{\"type\": \"subperiod_consistency\"}\n],\n\"expected_annualized_sharpe\": 0.65,\n\"expected_decay_half_life_months\": 24\n},\n{\n\"name\": \"H4\",\n\"mechanism\": \"A strategy that combines high book-to-market ratio and low bid-ask spread can capture both value premium and liquidity premium.\",\n\"expression\": {\n\"terms\": [\n{\"weight\": 0.5, \"primitive\": \"BM\"},\n{\"weight\": -0.5, \"primitive\": \"BidAskSpread\"}\n],\n\"regime\": \"MKT_TRAILING_12M_UP\",\n\"vol_target\": false\n},\n\"auxiliary_predictions\": [\n{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n{\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"below\", \"threshold\": 0.3}\n],\n\"expected_annualized_sharpe\": 0.55,\n\"expected_decay_half_life_months\": 36\n},\n{\n\"name\": \"H5\",\n\"mechanism\": \"A strategy that combines high stock issuance and high share volume can capture the negative sentiment towards issuing firms and the liquidity premium.\",\n\"expression\": {\n\"terms\": [\n{\"weight\": 1.0, \"primitive\": \"ShareIss1Y\"},\n{\"weight\": -1.0, \"primitive\": \"ShareVol\"}\n],\n\"regime\": \"TERM_SPREAD_POSITIVE\",\n\"vol_target\": true\n},\n\"auxiliary_predictions\": [\n{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"},\n{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n{\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n],\n\"expected_annualized_sharpe\": 0.6,\n\"expected_decay_half_life_months\": 12\n},\n{\n\"name\": \"H6\",\n\"mechanism\": \"A strategy combining asset growth and momentum can capture the overvaluation of high asset growth companies and the persistence of strong momentum.\",\n\"expression\": {\n\"terms\": [\n{\"weight\": -0.5, \"primitive\": \"AssetGrowth\"},\n{\"weight\": 0.5, \"primitive\": \"Mom12m\"}\n],\n\"regime\": \"MKT_TRAILING_12M_UP\",\n\"vol_target\": true\n},\n\"auxiliary_predictions\": [\n{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n{\"type\": \"subperiod_consistency\"}\n],\n\"expected_annualized_sharpe\": 0.7,\n\"expected_decay_half_life_months\": 24\n},\n{\n\"name\": \"H7\",\n\"mechanism\": \"A strategy combining earnings surprises and short term reversal can capture the overreaction to earnings announcements and subsequent price correction.\",\n\"expression\": {\n\"terms\": [\n{\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"},\n{\"weight\": -0.5, \"primitive\": \"STreversal\"}\n],\n\"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n\"vol_target\": false\n},\n\"auxiliary_predictions\": [\n{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"},\n{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n{\"type\": \"correlation\", \"primitive\": \"STreversal\", \"bound\": \"below\", \"threshold\": 0.3}\n],\n\"expected_annualized_sharpe\": 0.6,\n\"expected_decay_half_life_months\": 18\n},\n{\n\"name\": \"H8\",\n\"mechanism\": \"A strategy combining 52 week high and momentum can capture the anchoring bias and the persistence of momentum.\",\n\"expression\": {\n\"terms\": [\n{\"weight\": 0.5, \"primitive\": \"High52\"},\n{\"weight\": 0.5, \"primitive\": \"Mom12m\"}\n],\n\"regime\": \"MKT_TRAILING_12M_UP\",\n\"vol_target\": false\n},\n\"auxiliary_predictions\": [\n{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"},\n{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n{\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n],\n\"expected_annualized_sharpe\": 0.65,\n\"expected_decay_half_life_months\": 24\n}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2864,
+   "completion_tokens": 1595,
+   "total_tokens": 4459,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:26:55.291545+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y2010_seed42_T0.json",
+  "prompt_sha256": "41c0b2513f195c091f3379c9ffd0fff315cd7a0ca9a538334dc66adf02ec29cf"
+ },
+ "response": {
+  "id": "chatcmpl-E4zuerwRttP0k6aCauch0TJMnlsKg",
+  "object": "chat.completion",
+  "created": 1784860012,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses social media sentiment data.\"},\n  {\"index\": 1, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Both relate to governance and executive compensation, but construction differs.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses product review data.\"},\n  {\"index\": 3, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Both use patent activity as an R&D signal.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee turnover data.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer complaint data.\"},\n  {\"index\": 6, \"match\": \"HerfAsset\", \"strength\": \"related\", \"reason\": \"Both measure concentration, but in different domains (suppliers vs. industry assets).\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses environmental impact data.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses cybersecurity incident data.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses workforce diversity data.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2627,
+   "completion_tokens": 338,
+   "total_tokens": 2965,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

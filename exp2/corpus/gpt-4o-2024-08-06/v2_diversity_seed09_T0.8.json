@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:17:46.764704+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 9,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ypX1hIx3EOE0itj1xwu1OyxBfYd",
+  "object": "chat.completion",
+  "created": 1784855851,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"EarningsSurpriseAndVolatilitySmirk\",\n      \"mechanism\": \"This composite factor captures unexpected earnings news absorbed differently across volatility regimes. Earnings surprises often prompt re-evaluation by investors, while the volatility smirk indicates market anticipation of such surprises. Their combination reveals nuanced investor reactions that neither captures alone.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"},\n          {\"weight\": 0.5, \"primitive\": \"skew1\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"correlation\", \"primitive\": \"EarningsSurprise\", \"bound\": \"below\", \"threshold\": 0.3},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}\n      ],\n      \"expected_annualized_sharpe\": 0.8,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"AssetGrowthAndAnalystRevisions\",\n      \"mechanism\": \"Firms with high asset growth often face skeptical revisions from analysts. The composite explores the tension between analyst optimism and fundamental growth, revealing valuation missteps from over-optimism or unwarranted skepticism.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": -1.0, \"primitive\": \"AssetGrowth\"},\n          {\"weight\": 1.0, \"primitive\": \"AnalystRevision\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"},\n        {\"type\": \"subperiod_consistency\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}\n      ],\n      \"expected_annualized_sharpe\": 0.7,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"OrganizationalCapitalAndRDSurprise\",\n      \"mechanism\": \"The interplay between organizational capital and unexpected R&D increases highlights firms with strategic positioning and innovation disruptions, capturing long-term competitive advantages that are missed by traditional valuation metrics.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"OrgCap\"},\n          {\"weight\": 0.5, \"primitive\": \"SurpriseRD\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"correlation\", \"primitive\": \"OrgCap\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": null\n    },\n    {\n      \"name\": \"IntanBMAndDebtIssuance\",\n      \"mechanism\": \"Firms with high intangible book-to-market ratios that issue debt might signal either overconfidence or hidden growth potential, balancing market skepticism against innovative capacity.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"IntanBM\"},\n          {\"weight\": -0.5, \"primitive\": \"DebtIssuance\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.75,\n      \"expected_decay_half_life_months\": 18\n    },\n    {\n      \"name\": \"BidAskSpreadAndUpRecomm\",\n      \"mechanism\": \"Combining bid-ask spread as a liquidity measure with upward revisions captures the interaction between liquidity constraints and renewed investor confidence, uncovering opportunities in liquidity-driven mispricings.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": -0.5, \"primitive\": \"BidAskSpread\"},\n          {\"weight\": 1.0, \"primitive\": \"UpRecomm\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.65,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"RealizedVolAndDivOmit\",\n      \"mechanism\": \"The interaction between realized volatility and dividend omissions reflects market reassessments of risk when companies cut dividends, capturing shifts in investor sentiment and risk tolerance.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"RealizedVol\"},\n          {\"weight\": -0.5, \"primitive\": \"DivOmit\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"opposite_sign\"},\n        {\"type\": \"correlation\", \"primitive\": \"RealizedVol\", \"bound\": \"below\", \"threshold\": 0.3},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}\n      ],\n      \"expected_annualized_sharpe\": 0.85,\n      \"expected_decay_half_life_months\": null\n    },\n    {\n      \"name\": \"EarningsForecastDisparityAndDolVol\",\n      \"mechanism\": \"The combination of forecast disparity and trading volume volatility reveals heightened investor uncertainty and potential overreaction, offering insights into sentiment shifts and volatility-induced mispricing.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"EarningsForecastDisparity\"},\n          {\"weight\": -0.5, \"primitive\": \"DolVol\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"subperiod_consistency\"},\n        {\"type\": \"correlation\", \"primitive\": \"DolVol\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.7,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"BrandInvestAndResidualMomentum\",\n      \"mechanism\": \"The interplay of brand investment and residual momentum captures long-term brand value not fully reflected in price momentum, indicating enduring competitive advantages overlooked by market participants.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"BrandInvest\"},\n          {\"weight\": 0.5, \"primitive\": \"ResidualMomentum\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_DOWN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": 30\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2903,
+   "completion_tokens": 1856,
+   "total_tokens": 4759,
+   "prompt_tokens_details": {
+    "cached_tokens": 2688,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

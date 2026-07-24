@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:02:28.337300+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 8,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zWllQt7f1tOPwfPXrIqVu2fkIrV",
+  "object": "chat.completion",
+  "created": 1784858531,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n\"predictors\": [\n{\n\"name\": \"Customer Satisfaction\",\n\"construction\": \"Measured through customer reviews and ratings on social media and e-commerce platforms over the past year.\",\n\"rationale\": \"Firms with higher customer satisfaction may have a stronger brand or customer loyalty, which could lead to higher future profits.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Product Development Cycle Time\",\n\"construction\": \"Calculated as the time taken from initial product concept to market launch, averaged over the past 2 years.\",\n\"rationale\": \"Faster product development could reflect a firm's efficiency or innovative capability, potentially leading to competitive advantage and higher future returns.\",\n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"Employee Morale\",\n\"construction\": \"Measured through employee surveys or third-party evaluations, averaged over the past year.\",\n\"rationale\": \"Higher morale may increase productivity and reduce employee turnover, potentially improving firm performance.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Corporate Social Responsibility (CSR) Score\",\n\"construction\": \"Measured via third-party CSR ratings based on environmental, social, governance (ESG) factors.\",\n\"rationale\": \"High-scoring CSR firms might attract more socially conscious consumers or investors, potentially leading to higher demand for their products or shares.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Data Breach Incidents\",\n\"construction\": \"Count the number of reported data breaches in the past 3 years.\",\n\"rationale\": \"Firms with more data breaches may face reputational damage and regulatory fines, potentially harming future profits.\",\n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"Patent Applications\",\n\"construction\": \"Count the number of patent applications filed in the past 1 year.\",\n\"rationale\": \"A larger number of patent applications may signal a firm's innovation and potential for future profit growth.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Supply Chain Robustness\",\n\"construction\": \"Measured by the number of unique suppliers and geographical diversity of supply sources.\",\n\"rationale\": \"Firms with more robust supply chains might be better protected against supply disruptions, which could stabilize their profits.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"CEO-Worker Pay Ratio\",\n\"construction\": \"Calculated as the CEO's total compensation divided by the median employee's pay.\",\n\"rationale\": \"A lower ratio might reflect more equitable wealth distribution within the firm, potentially improving employee morale and productivity.\",\n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"Number of Recalls\",\n\"construction\": \"Count the number of product recalls over the past 3 years.\",\n\"rationale\": \"Firms with more recalls may have lower product quality or safety, which could harm their reputation and future profits.\",\n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"Percentage of Independent Directors\",\n\"construction\": \"Calculated as the number of independent directors divided by the total number of board members.\",\n\"rationale\": \"A higher percentage could lead to better corporate governance, potentially reducing firm risk and increasing investor confidence.\",\n\"higher_returns_for\": \"High values of the measure\"\n}\n]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 690,
+   "total_tokens": 960,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:47:13.496118+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 4,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zI4rjq5t91DENDFj5msuex6KLLq",
+  "object": "chat.completion",
+  "created": 1784857620,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\"name\": \"Inventory Turnover\", \"construction\": \"Cost of Goods Sold (COGS) divided by Average Inventory for the fiscal year\", \"rationale\": \"Firms with higher inventory turnover may be more efficient in managing their resources, which could lead to higher profitability and returns.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Dividend Surprise\", \"construction\": \"Actual dividends paid compared to analyst consensus estimates, computed quarterly\", \"rationale\": \"Firms that pay higher dividends than expected may be more profitable or financially healthy than anticipated, leading to positive price reactions.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Earnings Announcement Drift\", \"construction\": \"Cumulative abnormal return from two days after quarterly earnings announcement to the next earnings announcement\", \"rationale\": \"If markets are slow to incorporate earnings news, there might be a drift in stock prices following the announcement.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Tax Rate\", \"construction\": \"Total Taxes Paid divided by Pre-Tax Income for the fiscal year\", \"rationale\": \"Firms with lower tax rates might have more net income and cash available for growth or dividends, leading to higher returns.\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Capital Expenditure Growth\", \"construction\": \"Year-over-year percentage change in capital expenditures\", \"rationale\": \"Firms that are investing heavily in their business might be expected to grow faster, leading to higher stock returns.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"CEO Age\", \"construction\": \"Age of the CEO at the end of the fiscal year\", \"rationale\": \"Older CEOs might be more conservative in their business approach, which might lead to lower volatility and higher returns.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Productivity\", \"construction\": \"Revenue divided by the number of employees at the end of the fiscal year\", \"rationale\": \"Firms with higher productivity may be more efficient, leading to higher profitability and returns.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Geographic Diversification\", \"construction\": \"Number of countries in which the firm operates at the end of the fiscal year\", \"rationale\": \"Firms operating in more countries might have more diversified revenue streams, reducing risk and potentially leading to higher returns.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Customer Concentration\", \"construction\": \"Percentage of revenue that comes from the firm's largest customer\", \"rationale\": \"Firms that rely heavily on a single customer might have more business risk, which could be reflected in their stock returns.\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Litigation Risk\", \"construction\": \"Number of ongoing lawsuits against the firm at the end of the fiscal year\", \"rationale\": \"Firms with more litigation risk might have more uncertainty about their future cash flows, which could lead to lower stock returns.\", \"higher_returns_for\": \"low values of the measure\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 672,
+   "total_tokens": 942,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

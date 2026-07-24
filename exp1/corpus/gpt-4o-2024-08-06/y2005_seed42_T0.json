@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:08:22.431583+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zcet2ZGMy6ZoFeQkhn15EE08P1F",
+  "object": "chat.completion",
+  "created": 1784858896,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Earnings Growth Consistency\",\n      \"construction\": \"Calculate the standard deviation of quarterly earnings growth rates over the past 5 years using Compustat data.\",\n      \"rationale\": \"Firms with more consistent earnings growth may be perceived as less risky, potentially leading to higher future returns.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"R&D Intensity Change\",\n      \"construction\": \"Compute the year-over-year percentage change in R&D expenditure divided by total assets using Compustat data.\",\n      \"rationale\": \"An increase in R&D intensity may signal future growth opportunities and innovation potential.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Insider Trading Volume\",\n      \"construction\": \"Aggregate the total volume of insider purchases minus sales over the past year using SEC Form 4 filings.\",\n      \"rationale\": \"High insider buying relative to selling may indicate management's confidence in the firm's future prospects.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Customer Concentration Risk\",\n      \"construction\": \"Calculate the percentage of total sales attributed to the top 5 customers from 10-K filings.\",\n      \"rationale\": \"Firms with lower customer concentration may be less vulnerable to demand shocks, reducing risk.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Environmental Compliance Costs\",\n      \"construction\": \"Estimate the annual environmental compliance costs as a percentage of total operating expenses from 10-K filings.\",\n      \"rationale\": \"Firms with lower compliance costs may have a competitive advantage and better profit margins.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Patent Citation Impact\",\n      \"construction\": \"Count the number of citations received by the firm's patents over the past 3 years using USPTO data.\",\n      \"rationale\": \"Highly cited patents may indicate valuable innovations that can drive future profitability.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Supply Chain Diversification\",\n      \"construction\": \"Measure the number of unique suppliers listed in the firm's supply chain disclosures in 10-K filings.\",\n      \"rationale\": \"A diversified supply chain may reduce operational risks and enhance resilience to disruptions.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Employee Satisfaction Index\",\n      \"construction\": \"Use employee satisfaction scores from surveys or Glassdoor reviews, averaged over the past year.\",\n      \"rationale\": \"Higher employee satisfaction can lead to increased productivity and lower turnover, boosting firm performance.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Social Media Sentiment\",\n      \"construction\": \"Analyze the sentiment of social media mentions of the firm over the past 6 months using natural language processing.\",\n      \"rationale\": \"Positive sentiment may reflect favorable public perception and potential consumer demand.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Board Diversity Index\",\n      \"construction\": \"Calculate the diversity index of the board of directors based on gender and ethnicity from proxy statements.\",\n      \"rationale\": \"Diverse boards may offer a wider range of perspectives, improving decision-making and strategic planning.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 743,
+   "total_tokens": 1012,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_eb185bfc03"
+ }
+}

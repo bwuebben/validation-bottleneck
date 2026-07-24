@@ -1,0 +1,21 @@
+
+=== gpt-4-0613 (wall 2022-04; window 32 months; M = 330 distinct expressions) ===
+  evaluable: 317/330   ladder: mean>0: 183  t>2: 17  BY-FDR(q=.05): 0  t>√(2lnM)=3.41: 0
+  E[max t] under null ≈ 3.41; realized max t = 2.69; median t = 0.22
+  aux predictions: 437 testable, 200 hold (46%)
+  FULL SURVIVORS (t>2 AND all testable aux hold): 9
+    t=2.56 ann=37.7% SR=1.57 n=32 aux 1/1 | +0.5·EarningsSurprise + +0.5·Mom12m | VIX_BELOW_TRAILING_MEDIAN | vt=True
+    t=2.45 ann=13.3% SR=1.50 n=32 aux 1/1 | +1·GrAdExp + +0.5·Mom12m | MKT_TRAILING_12M_UP | vt=True
+    t=2.40 ann=30.4% SR=1.47 n=32 aux 1/1 | +0.5·Illiquidity + +1·Mom12m | VIX_BELOW_TRAILING_MEDIAN | vt=False
+    t=2.37 ann=16.1% SR=1.45 n=32 aux 1/1 | +1·DivYieldST + +0.5·Mom12m | MKT_TRAILING_12M_UP | vt=True
+    t=2.36 ann=34.6% SR=1.45 n=32 aux 1/1 | +0.5·EquityDuration + +0.5·Mom12m | VIX_BELOW_TRAILING_MEDIAN | vt=True
+    t=2.27 ann=20.7% SR=1.39 n=32 aux 1/1 | -1·DebtIssuance + +1·EarningsConsistency | VIX_BELOW_TRAILING_MEDIAN | vt=True
+    t=2.14 ann=25.2% SR=1.31 n=32 aux 1/1 | +1·ShareIss1Y + -1·fgr5yrLag | MKT_TRAILING_12M_DOWN | vt=True
+    t=2.11 ann=44.0% SR=1.29 n=32 aux 1/1 | +0.5·IO_ShortInterest + -0.5·ShortInterest | VIX_BELOW_TRAILING_MEDIAN | vt=False
+    t=2.01 ann=13.6% SR=1.23 n=32 aux 1/1 | -0.5·IdioVol3F + +0.5·Mom12m | VIX_BELOW_TRAILING_MEDIAN | vt=False
+
+=== gpt-4o-2024-08-06 (wall 2024-01; window 11 months; M = 318 distinct expressions) ===
+  evaluable: 298/318   ladder: mean>0: 122  t>2: 8  BY-FDR(q=.05): 0  t>√(2lnM)=3.39: 0
+  E[max t] under null ≈ 3.39; realized max t = 2.80; median t = 0.00
+  aux predictions: 89 testable, 26 hold (29%)
+  FULL SURVIVORS (t>2 AND all testable aux hold): 0

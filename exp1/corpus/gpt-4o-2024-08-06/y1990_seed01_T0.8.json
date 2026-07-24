@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:03:19.781728+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 1,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zXkBSrhVgUc40sfyE88k777Z7mR",
+  "object": "chat.completion",
+  "created": 1784858592,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Earnings Stability\",\n      \"construction\": \"Calculate the standard deviation of quarterly earnings per share (EPS) over the past 5 years.\",\n      \"rationale\": \"Firms with stable earnings are perceived as less risky and might be undervalued by risk-averse investors.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Debt Issuance Shock\",\n      \"construction\": \"Measure the percentage change in total debt outstanding from one fiscal year to the next.\",\n      \"rationale\": \"Sudden increases in debt may signal aggressive expansion or financial strain, impacting future performance.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Management Tenure\",\n      \"construction\": \"Average the tenure of top executive officers in years.\",\n      \"rationale\": \"Longer management tenure may indicate stability and strategic consistency, affecting investor perceptions.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"R&D to Sales Ratio\",\n      \"construction\": \"Divide total research and development expenses by total sales for the fiscal year.\",\n      \"rationale\": \"High R&D spending relative to sales suggests investment in innovation, potentially leading to future growth.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Dividend Initiation\",\n      \"construction\": \"Binary variable indicating if the firm started paying dividends within the past year.\",\n      \"rationale\": \"Initiating dividends may signal management's confidence in future cash flows and profitability.\",\n      \"higher_returns_for\": \"stocks that initiated dividends\"\n    },\n    {\n      \"name\": \"Customer Concentration\",\n      \"construction\": \"Ratio of sales to largest customer relative to total sales, sourced from annual reports.\",\n      \"rationale\": \"High customer concentration may imply revenue risk but also strong competitive positioning.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Patent Activity Intensity\",\n      \"construction\": \"Count the number of patents filed by the firm over the past 3 years.\",\n      \"rationale\": \"Active patenting can indicate a focus on innovation, potentially leading to competitive advantages.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Environmental Violations\",\n      \"construction\": \"Count the number of environmental regulatory violations reported over the past 5 years.\",\n      \"rationale\": \"Frequent violations may indicate operational risks and potential for costly regulatory actions.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Supplier Diversity\",\n      \"construction\": \"Number of different suppliers used by the firm, as reported in procurement disclosures.\",\n      \"rationale\": \"A diversified supplier base can reduce operational risk and enhance supply chain resilience.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Market Sentiment Score\",\n      \"construction\": \"Sentiment analysis score calculated from news articles and financial reports over the past year.\",\n      \"rationale\": \"Positive sentiment reflects favorable perceptions of the firm's prospects, possibly underappreciated by the market.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 698,
+   "total_tokens": 967,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_94cd41efba"
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:58:32.111925+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 6,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zSyMe0qACcfZQeTfjoatbreN2ts",
+  "object": "chat.completion",
+  "created": 1784858296,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Dividend Coverage Volatility\",\n      \"construction\": \"Standard deviation of the ratio of Earnings Before Interest and Taxes (EBIT) to dividends paid over the past 5 years\",\n      \"rationale\": \"Firms with high dividend coverage volatility may face more uncertainty in their ability to maintain dividends, which could lead investors to require a higher return\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Inventory Turnover Growth\",\n      \"construction\": \"Rate of change in the ratio of cost of goods sold to inventory over the past 1 year\",\n      \"rationale\": \"Firms improving their efficiency in selling their inventory are likely to have improving profitability and thus higher future returns\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Debt Maturity Structure\",\n      \"construction\": \"Ratio of long-term debt to total debt\",\n      \"rationale\": \"Firms with more long-term debt in their debt structure may be considered less risky by investors, leading to higher future returns\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Management Tenure Dispersion\",\n      \"construction\": \"Standard deviation of the tenure of the top 5 executives\",\n      \"rationale\": \"Firms with a wider range of executive experience levels may benefit from diverse perspectives and innovative thinking, leading to higher future returns\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"R&D Expenditure Stability\",\n      \"construction\": \"Standard deviation of the ratio of Research and Development (R&D) expenditure to total assets over the past 5 years\",\n      \"rationale\": \"Firms with stable R&D expenditure may be more likely to generate steady flow of innovations, leading to higher future returns\",\n      \"higher_returns_for\": \"Low values of the measure\"\n    },\n    {\n      \"name\": \"Working Capital Efficiency\",\n      \"construction\": \"Ratio of current assets excluding cash to current liabilities\",\n      \"rationale\": \"Firms that manage their working capital efficiently may be more profitable and generate higher future returns\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Relative Marketing Expenses\",\n      \"construction\": \"Ratio of marketing expenses to total sales\",\n      \"rationale\": \"Firms that spend more on marketing relative to their sales may be investing in their future growth, leading to higher future returns\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Employee Productivity Growth\",\n      \"construction\": \"Rate of change in the ratio of sales to number of employees over the past 1 year\",\n      \"rationale\": \"Firms improving their employee productivity are likely to be more profitable and thus have higher future returns\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Foreign Sales Ratio\",\n      \"construction\": \"Ratio of foreign sales to total sales\",\n      \"rationale\": \"Firms with higher proportion of foreign sales may have more diversified revenue streams, reducing risk and increasing expected returns\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Pension Funding Status\",\n      \"construction\": \"Ratio of pension assets to projected pension obligations\",\n      \"rationale\": \"Firms with better-funded pension plans may face less risk from future pension obligations, leading to higher future returns\",\n      \"higher_returns_for\": \"High values of the measure\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 766,
+   "total_tokens": 1036,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:29:27.284621+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2010_seed01_T0.8.json",
+  "prompt_sha256": "e8eecb2161e6a19bd3f53c570e50eee6c30d2e34529bf341a7b56a1d67be42c4"
+ },
+ "response": {
+  "id": "chatcmpl-E4zx7NLsk7qJPAlODrTG8Fst0HYiL",
+  "object": "chat.completion",
+  "created": 1784860165,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"ChInv\", \"strength\": \"close\", \"reason\": \"Both use inventory changes, but slope over time is new.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses insider grant timing.\"},\n  {\"index\": 2, \"match\": \"RD\", \"strength\": \"close\", \"reason\": \"Both use R&D growth, but sector exclusion is new.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses cash conversion lag.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses credit spread sensitivity.\"},\n  {\"index\": 5, \"match\": \"AdExp\", \"strength\": \"close\", \"reason\": \"Both use ad expense, but sector exclusion is new.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses dividend consistency gap.\"},\n  {\"index\": 7, \"match\": \"CitationsRD\", \"strength\": \"close\", \"reason\": \"Both use patent citations, but momentum aspect is new.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses short-term lease growth.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer concentration change.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2846,
+   "completion_tokens": 338,
+   "total_tokens": 3184,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

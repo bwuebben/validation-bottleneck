@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:29:51.352376+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2010_seed09_T0.8.json",
+  "prompt_sha256": "5765d71075af0ad51f6d2f589ddbdfe7fffaa0bb4afb8a765c86f0290a95c2dd"
+ },
+ "response": {
+  "id": "chatcmpl-E4zxUMTvpAas0DdagK78et4lshxmr",
+  "object": "chat.completion",
+  "created": 1784860188,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"IntanBM\", \"strength\": \"close\", \"reason\": \"Both use intangible assets growth, but implementation details differ.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor adjusts EBIT for operating leases.\"},\n  {\"index\": 2, \"match\": \"Herf\", \"strength\": \"related\", \"reason\": \"Both measure concentration, but Herf is for industries, not suppliers.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses R&D relative to depreciation.\"},\n  {\"index\": 4, \"match\": \"RealizedVol\", \"strength\": \"related\", \"reason\": \"Both use realized volatility, but not the same seasonal change.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses change in foreign income share.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses board tenure dispersion.\"},\n  {\"index\": 7, \"match\": \"ChAssetTurnover\", \"strength\": \"close\", \"reason\": \"Both measure change in asset turnover, but focus differs (current vs total assets).\"},\n  {\"index\": 8, \"match\": \"CitationsRD\", \"strength\": \"close\", \"reason\": \"Both use patent citation growth, but scaling and period differ.\"},\n  {\"index\": 9, \"match\": \"DivInit\", \"strength\": \"exact\", \"reason\": \"Both are indicator for dividend initiation in past year.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2933,
+   "completion_tokens": 364,
+   "total_tokens": 3297,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

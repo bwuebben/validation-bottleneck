@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:17:59.330005+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zlyGokh4YGdQw0MrRC7YKv1Gtpc",
+  "object": "chat.completion",
+  "created": 1784859474,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Insider Option Exercise Ratio\", \"construction\": \"Total value of insider options exercised over the past 12 months divided by total insider shares held, using Form 4 SEC filings.\", \"rationale\": \"High insider exercising may indicate perceived overvaluation or liquidity needs, while low exercising could signal undervaluation or confidence in future upside.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Customer Concentration Change\", \"construction\": \"Year-over-year change in the percentage of revenue from the largest customer, using segment reporting and 10-K disclosures.\", \"rationale\": \"Increasing customer diversification lowers risk of adverse shocks, while rising concentration may signal vulnerability.\", \"higher_returns_for\": \"large decreases in customer concentration\"}, {\"name\": \"Nonlinear SG&A Efficiency\", \"construction\": \"Deviation of SG&A expense growth from a nonlinear (e.g., quadratic) function of revenue growth over the past three years.\", \"rationale\": \"Firms that scale SG&A more efficiently than peers may have superior operational leverage or cost control.\", \"higher_returns_for\": \"firms with negative deviations (SG&A growing less than predicted from revenue)\"}, {\"name\": \"Industry Disruption Exposure\", \"construction\": \"Count of patent grants by US-based companies in the firm's primary SIC industry (using USPTO data), normalized by the firm's market cap.\", \"rationale\": \"Industries facing technological disruption may see higher competitive pressure; firms with high exposure may be at risk.\", \"higher_returns_for\": \"firms with low exposure values\"}, {\"name\": \"ESG Momentum\", \"construction\": \"Change in annual ESG controversy score (from RepRisk/KLD database) over the past year.\", \"rationale\": \"Improvement in ESG profile may reduce risk premia or attract incremental capital.\", \"higher_returns_for\": \"firms with large positive changes (improving ESG scores)\"}, {\"name\": \"Unrealized Tax Loss Carryforward Growth\", \"construction\": \"Year-over-year percentage increase in total deferred tax assets from NOL carryforwards, from 10-K tax footnotes.\", \"rationale\": \"Growing tax shields may signal persistent unprofitability or aggressive accounting.\", \"higher_returns_for\": \"firms with low or negative growth in this measure\"}, {\"name\": \"Supplier Payment Stretch\", \"construction\": \"Change in accounts payable days (payables / COGS * 365) over the past year.\", \"rationale\": \"Increasing payables days may indicate tightening credit conditions or cash flow stress.\", \"higher_returns_for\": \"firms with decreasing or stable accounts payable days\"}, {\"name\": \"Employee Productivity Dispersion\", \"construction\": \"Standard deviation of sales per employee across business segments, as reported in segment data in 10-K.\", \"rationale\": \"High dispersion may indicate inefficient resource allocation or underperforming divisions.\", \"higher_returns_for\": \"firms with low productivity dispersion\"}, {\"name\": \"R&D Intensity Acceleration\", \"construction\": \"Second derivative (acceleration) of R&D expense to sales ratio over the past three years.\", \"rationale\": \"Firms ramping up their R&D investment may be preparing for new product launches or innovation-driven growth.\", \"higher_returns_for\": \"firms with high positive acceleration\"}, {\"name\": \"Shareholder Proposal Resistance\", \"construction\": \"Number of shareholder proposals opposed by management and subsequently defeated at annual meetings, trailing three years (using SEC proxy filings).\", \"rationale\": \"Management that resists shareholder engagement may entrench themselves, potentially reducing future value creation.\", \"higher_returns_for\": \"firms with low resistance counts\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 745,
+   "total_tokens": 1014,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_245b7c7787"
+ }
+}

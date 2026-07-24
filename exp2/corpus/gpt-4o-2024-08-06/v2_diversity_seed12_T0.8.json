@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:18:41.677276+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 12,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yqNPnHceNzwxe67PzoWYvednNO7",
+  "object": "chat.completion",
+  "created": 1784855903,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"Innovation Absorption\",\n      \"mechanism\": \"Firms with high R&D spending and effective absorption of new technologies are better positioned for long-term growth. Combining R&D and technology adoption metrics creates a more nuanced view of innovation impact, potentially leading to outperformance.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"PatentsRD\"},\n          {\"weight\": 0.5, \"primitive\": \"RDAbility\"},\n          {\"weight\": -0.5, \"primitive\": \"RDcap\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.7,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Earnings Quality Dynamics\",\n      \"mechanism\": \"Firms with consistent earnings and low accruals generate more reliable financial reporting, which attracts investors seeking stable returns. This composite adjusts for accrual manipulation, highlighting true earnings movers.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"EarningsConsistency\"},\n          {\"weight\": -0.5, \"primitive\": \"Accruals\"},\n          {\"weight\": 0.5, \"primitive\": \"TotalAccruals\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.65,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"Liquidity-Momentum Nexus\",\n      \"mechanism\": \"Combining liquidity and momentum can uncover stocks that are not only trending but also actively traded, suggesting strong investor interest and price appreciation potential.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"Mom12m\"},\n          {\"weight\": -0.5, \"primitive\": \"Illiquidity\"},\n          {\"weight\": 0.5, \"primitive\": \"DolVol\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.8,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"Cash Flow Resilience\",\n      \"mechanism\": \"Firms with strong cash flow management and low financial leverage are more resilient to economic downturns. This composite highlights firms with robust cash flow relative to debt, enhancing return stability.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"CF\"},\n          {\"weight\": -0.5, \"primitive\": \"NetDebtPrice\"},\n          {\"weight\": 0.5, \"primitive\": \"Cash\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.75,\n      \"expected_decay_half_life_months\": 40\n    },\n    {\n      \"name\": \"Operational Efficiency\",\n      \"mechanism\": \"Companies that improve operational efficiency by reducing costs relative to sales and increasing asset turnover are likely to enhance profitability and attract investors.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"OperProf\"},\n          {\"weight\": -0.5, \"primitive\": \"ChAssetTurnover\"},\n          {\"weight\": 0.5, \"primitive\": \"GrSaleToGrOverhead\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"opposite_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.72,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Leverage Sentiment Interaction\",\n      \"mechanism\": \"Firms with high financial leverage might have amplified returns when positive sentiment increases, as market optimism can drive up interest in riskier firms.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"Leverage\"},\n          {\"weight\": 0.5, \"primitive\": \"AOP\"},\n          {\"weight\": -0.5, \"primitive\": \"AnalystRevision\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"AnalystRevision\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.68,\n      \"expected_decay_half_life_months\": 28\n    },\n    {\n      \"name\": \"Brand Value Capture\",\n      \"mechanism\": \"Firms that invest in brand capital and exhibit strong sales-to-price ratios can capture consumer loyalty and pricing power, driving sustainable competitive advantages.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"BrandInvest\"},\n          {\"weight\": 0.5, \"primitive\": \"SP\"},\n          {\"weight\": -0.5, \"primitive\": \"AdExp\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.6,\n      \"expected_decay_half_life_months\": 32\n    },\n    {\n      \"name\": \"Risk-Adjusted Investment\",\n      \"mechanism\": \"Companies with a disciplined investment approach, balancing growth in assets and operating liabilities, may offer more stable returns by managing risk efficiently.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"AssetGrowth\"},\n          {\"weight\": -0.5, \"primitive\": \"DelCOL\"},\n          {\"weight\": 0.5, \"primitive\": \"DelLTI\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.7,\n      \"expected_decay_half_life_months\": 35\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2903,
+   "completion_tokens": 1958,
+   "total_tokens": 4861,
+   "prompt_tokens_details": {
+    "cached_tokens": 2688,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

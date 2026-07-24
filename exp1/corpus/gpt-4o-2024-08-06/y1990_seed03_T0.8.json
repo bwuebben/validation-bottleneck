@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:03:38.566622+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 3,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zY1YQl8IKqg6cYIlAEYwLYhLjNl",
+  "object": "chat.completion",
+  "created": 1784858609,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n    \"predictors\": [\n        {\n            \"name\": \"Supplier Network Centrality\",\n            \"construction\": \"Calculate the number of direct suppliers a firm has from Compustat segments data. Rank firms by the number of suppliers.\",\n            \"rationale\": \"Firms with extensive supplier networks may have more stable supply chains, enhancing operational resilience.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Patent Citation Growth\",\n            \"construction\": \"Calculate the annual growth rate in the number of citations a firm's patents receive, using USPTO data.\",\n            \"rationale\": \"Increasing citations may indicate valuable innovations, suggesting competitive advantages.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"CEO Media Sentiment\",\n            \"construction\": \"Perform sentiment analysis on CEO mentions in major newspapers using LexisNexis data, calculating a net sentiment score over the past year.\",\n            \"rationale\": \"Positive media sentiment may reflect market confidence in leadership and future performance.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Corporate Training Investment\",\n            \"construction\": \"Use SG&A expenses and footnote disclosures in 10-K filings to estimate annual spending on employee training programs.\",\n            \"rationale\": \"Investment in human capital may lead to productivity gains and competitive advantages.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Environmental Compliance Score\",\n            \"construction\": \"Assess the number of violations and penalties related to environmental regulations from EPA reports over the past five years.\",\n            \"rationale\": \"Firms with fewer violations may avoid costly fines and reputational damage.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        },\n        {\n            \"name\": \"Board Gender Diversity\",\n            \"construction\": \"Calculate the percentage of women on a firm's board using proxy statements.\",\n            \"rationale\": \"Gender-diverse boards may contribute to broader perspectives and better decision-making.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Employee Retention Rate\",\n            \"construction\": \"Obtain the annual turnover rate from HR disclosures or proxy statements, ranking firms by retention rate.\",\n            \"rationale\": \"Higher retention rates may reflect satisfied employees and stable operations.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"R&D Capitalization Ratio\",\n            \"construction\": \"Compute the ratio of capitalized R&D expenses to total R&D expenses from financial statements.\",\n            \"rationale\": \"Higher capitalization may indicate a focus on long-term projects with high expected returns.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Social Responsibility Index\",\n            \"construction\": \"Aggregate scores from CSR reports on community engagement, labor practices, and philanthropy, creating a composite index.\",\n            \"rationale\": \"Strong social responsibility may build brand loyalty and mitigate regulatory risks.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Product Recall Frequency\",\n            \"construction\": \"Count the number of product recalls issued by a firm over the past three years using CPSC data.\",\n            \"rationale\": \"Frequent recalls may indicate quality control issues and potential liabilities.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        }\n    ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 721,
+   "total_tokens": 990,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_94cd41efba"
+ }
+}

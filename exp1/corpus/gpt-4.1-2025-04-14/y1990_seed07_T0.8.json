@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:12:00.212725+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 7,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zgBUROJK37qX2WdmRnXJvHF0F6x",
+  "object": "chat.completion",
+  "created": 1784859115,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Short-Term Operating Leverage\", \"construction\": \"Change in operating income divided by change in sales over the past year (using quarterly Compustat data), averaged over the last four quarters.\", \"rationale\": \"Firms with higher operating leverage may be more sensitive to economic shocks, and investors might underappreciate this risk, leading to mispricing.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Inventory Growth Minus Sales Growth\", \"construction\": \"Annual percentage change in inventories minus annual percentage change in sales, both from Compustat.\", \"rationale\": \"Firms accumulating inventory faster than sales may be overproducing, indicating potential future problems that are not yet priced in.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Recent Insider Buying Ratio\", \"construction\": \"Total shares purchased by insiders over the past six months divided by total shares outstanding (using SEC Form 4 filings and CRSP share counts).\", \"rationale\": \"Insider purchases may signal undervaluation or positive private information, which the market may not fully incorporate immediately.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"R&D-to-Free-Cash-Flow Ratio\", \"construction\": \"Research and development expense divided by free cash flow (operating cash flow minus capital expenditures), both from Compustat, over the prior fiscal year.\", \"rationale\": \"Firms investing heavily in R&D relative to cash flows may be positioned for future growth undervalued by the market.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Post-Earnings Drift Magnitude\", \"construction\": \"Cumulative abnormal return in the 60 days following the most recent quarterly earnings announcement (using CRSP and quarterly earnings dates).\", \"rationale\": \"Market underreaction to earnings surprises can persist; stocks with high post-earnings drift may continue to outperform.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Dividend Change Surprise\", \"construction\": \"Actual dividend change minus the average of analyst forecasted dividend changes (using IBES forecasts and CRSP/Compustat dividend data), standardized by market capitalization.\", \"rationale\": \"Positive dividend surprises may signal management confidence, leading to upward price momentum.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Accounts Receivable Turnover Change\", \"construction\": \"Current year accounts receivable turnover (sales divided by average accounts receivable) minus prior year value, from Compustat.\", \"rationale\": \"Improving collections efficiency may indicate strengthening fundamentals not yet reflected in prices.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Share Repurchase Intensity\", \"construction\": \"Dollar value of shares repurchased over the past year divided by market capitalization, using Compustat and CRSP.\", \"rationale\": \"Repurchases can signal undervaluation and reduce agency costs, potentially leading to higher future performance.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Segment Diversification Discount\", \"construction\": \"Difference between a firm\u2019s market-to-book ratio and the value-weighted market-to-book ratios of its individual segments (using Compustat segment data).\", \"rationale\": \"Conglomerate firms with larger diversification discounts may be undervalued relative to their parts.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Tax Loss Carryforward Ratio\", \"construction\": \"Total tax loss carryforwards divided by total assets, from Compustat annual data.\", \"rationale\": \"Firms with large carryforwards may have valuable tax shields underappreciated by investors.\", \"higher_returns_for\": \"high values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 782,
+   "total_tokens": 1051,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_801206523b"
+ }
+}

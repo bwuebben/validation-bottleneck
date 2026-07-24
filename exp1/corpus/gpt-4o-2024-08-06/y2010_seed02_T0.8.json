@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:10:06.421932+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 2,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zeHqwBfzFcuq1WgOR0xwFv9DNTP",
+  "object": "chat.completion",
+  "created": 1784858997,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Social Media Sentiment Score\",\n      \"construction\": \"Aggregate sentiment score from social media mentions related to a stock over the past 30 days. Use a natural language processing algorithm to classify mentions as positive, neutral, or negative.\",\n      \"rationale\": \"Positive sentiment on social media can drive investor attention and purchasing behavior, leading to higher future returns.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Patent Activity Index\",\n      \"construction\": \"Ratio of new patents filed by the company over the past year to total assets. Use patent filing data from the US Patent and Trademark Office.\",\n      \"rationale\": \"A higher rate of innovation, as indicated by patent filings, may lead to competitive advantages and future growth.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Environmental Efficiency Ratio\",\n      \"construction\": \"Company's total revenue divided by its carbon emissions footprint over the past fiscal year. Data sourced from environmental reports and financial statements.\",\n      \"rationale\": \"Firms that generate more revenue per unit of carbon emissions may have a more sustainable business model, attracting environmentally conscious investors.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Employee Satisfaction Index\",\n      \"construction\": \"Average employee satisfaction score based on survey data collected from employee reviews over the past year.\",\n      \"rationale\": \"High employee satisfaction can lead to higher productivity and lower turnover, positively impacting firm performance.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Supply Chain Diversity Score\",\n      \"construction\": \"Percentage of suppliers from diverse industries relative to total suppliers over the past year as reported in supply chain disclosures.\",\n      \"rationale\": \"A diverse supply chain can mitigate risks related to supply disruptions and enhance operational stability.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Board Gender Diversity Ratio\",\n      \"construction\": \"Proportion of female members on the company's board of directors as of the latest fiscal year-end.\",\n      \"rationale\": \"Diverse perspectives in leadership can lead to better decision-making and governance, potentially enhancing firm performance.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Customer Loyalty Index\",\n      \"construction\": \"Annual change in the number of repeat customers divided by total customer base, based on company-reported sales data.\",\n      \"rationale\": \"A loyal customer base can provide stable revenues and reduce marketing costs, leading to improved profitability.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Insider Transactions Ratio\",\n      \"construction\": \"Total insider purchases divided by total insider sales over the past six months, using data from SEC Form 4 filings.\",\n      \"rationale\": \"Increased insider buying relative to selling may indicate insiders' confidence in the firm's future prospects.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Intellectual Property Intensity\",\n      \"construction\": \"Company's intangible assets as a percentage of total assets, using the most recent balance sheet data.\",\n      \"rationale\": \"Higher proportions of intangible assets may indicate a stronger intellectual property portfolio, which can drive future growth.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Green Investment Ratio\",\n      \"construction\": \"Expenditure on environmentally sustainable projects divided by total capital expenditure over the past year, based on company financial reports.\",\n      \"rationale\": \"Investment in sustainable projects can lead to long-term cost savings and compliance with future regulations.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 806,
+   "total_tokens": 1075,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_8772b5f549"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:25:51.843274+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y2005_seed04_T0.8.json",
+  "prompt_sha256": "5959529380601dff74b632344b730c5f41b63bdc1cbf06ed35fffdef5f141d21"
+ },
+ "response": {
+  "id": "chatcmpl-E4ztaqbrlrOnE3kU9iRxHbcaFD8hj",
+  "object": "chat.completion",
+  "created": 1784859946,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee satisfaction or sentiment data.\"},\n  {\"index\": 1, \"match\": \"FirmAge\", \"strength\": \"related\", \"reason\": \"Both relate to longevity, but CEO tenure is distinct from firm age.\"},\n  {\"index\": 2, \"match\": \"PredictedFE\", \"strength\": \"close\", \"reason\": \"Both compare market/analyst expectations, but construction details differ.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses tax rate volatility as a signal.\"},\n  {\"index\": 4, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Both use ESG/corporate responsibility themes, but signals differ.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses product recall frequency.\"},\n  {\"index\": 6, \"match\": \"RD\", \"strength\": \"exact\", \"reason\": \"Both use R&D to revenue/market cap as the core signal.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses debt maturity structure.\"},\n  {\"index\": 8, \"match\": \"Governance\", \"strength\": \"close\", \"reason\": \"Governance index includes board independence as a component.\"},\n  {\"index\": 9, \"match\": \"Herf\", \"strength\": \"exact\", \"reason\": \"Both use HHI for concentration, but Herf is for industry, not customers.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2663,
+   "completion_tokens": 365,
+   "total_tokens": 3028,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

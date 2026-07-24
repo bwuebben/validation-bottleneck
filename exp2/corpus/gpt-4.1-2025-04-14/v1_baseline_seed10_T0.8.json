@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:23:43.096441+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yvBWbn81YvBtEs3CMjfwkrxzxCN",
+  "object": "chat.completion",
+  "created": 1784856201,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Operating Profitability Minus Leverage in Positive Term Spread\",\n    \"mechanism\": \"During periods with a positive term spread (indicative of steep yield curves and favorable economic conditions), highly profitable firms with low leverage should outperform because they benefit more from economic growth and lower financing costs. Combining operating profitability and negative leverage exposure in these periods captures synergistic risk-reward dynamics not realized by either factor alone.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"OperProf\"},\n        {\"weight\": -1.0, \"primitive\": \"Leverage\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"OperProf\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.85,\n    \"expected_decay_half_life_months\": 48\n  },\n  {\n    \"name\": \"Momentum Minus High Accruals with Volatility Targeting\",\n    \"mechanism\": \"Stocks with strong price momentum that also exhibit low accruals avoid the risk of earnings manipulation and aggressive accounting. This combination should outperform either factor in isolation because it tilts toward sustainable winners whose earnings quality supports price trends.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"Mom12m\"},\n        {\"weight\": -1.0, \"primitive\": \"Accruals\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.8,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Analyst Upgrades plus Organizational Capital in Low VIX Regimes\",\n    \"mechanism\": \"Firms receiving analyst upgrades and exhibiting strong organizational capital are likely to outperform in periods of low market volatility (VIX below median). Analyst optimism paired with intangible asset strength indicates both near-term catalysts and durable competitive advantage, particularly when risk aversion is low.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"UpRecomm\"},\n        {\"weight\": 0.5, \"primitive\": \"OrgCap\"}\n      ],\n      \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"UpRecomm\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Residual Momentum and Net Payout Yield under Market Downtrends\",\n    \"mechanism\": \"During market downturns, combining stocks with high residual momentum (risk-adjusted outperformance) and high net payout yield (shareholder-friendly capital allocation) should deliver robust returns as investors seek both defensive performance and tangible returns.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"ResidualMomentum\"},\n        {\"weight\": 0.5, \"primitive\": \"NetPayoutYield\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.9,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Asset Growth Minus Short Interest with Volatility Targeting\",\n    \"mechanism\": \"Low asset growth and low short interest both historically predict higher future returns, but their combination emphasizes firms with sustainable growth and low perceived risk. This composite should deliver a premium by isolating a subset of stocks where fundamental and sentiment-based risks are simultaneously minimized.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -1.0, \"primitive\": \"AssetGrowth\"},\n        {\"weight\": -1.0, \"primitive\": \"ShortInterest\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"correlation\", \"primitive\": \"AssetGrowth\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.75,\n    \"expected_decay_half_life_months\": 60\n  },\n  {\n    \"name\": \"Cash-Flow Yield Plus Industry Momentum\",\n    \"mechanism\": \"Firms with high cash-flow yields in industries exhibiting strong momentum are likely to outperform because they combine valuation support with favorable industry trends. The intersection of cheap, cash-generating firms and positive industry sentiment reduces value traps and enhances trend persistence.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"cfp\"},\n        {\"weight\": 1.0, \"primitive\": \"IndMom\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"cfp\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 48\n  },\n  {\n    \"name\": \"Return Seasonality and Idiosyncratic Volatility under Tight Yield Curves\",\n    \"mechanism\": \"In periods of negative term spread (yield curve inversion), the combination of return seasonality and idiosyncratic volatility should outperform because persistent calendar effects interact with risk aversion, rewarding stocks with predictable seasonality and pricing in unique risk.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"MomSeason\"},\n        {\"weight\": 0.5, \"primitive\": \"IdioVol3F\"}\n      ],\n      \"regime\": \"TERM_SPREAD_NEGATIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"MomSeason\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.65,\n    \"expected_decay_half_life_months\": 18\n  },\n  {\n    \"name\": \"Dividend Yield, Brand Investment, and Analyst Forecast Dispersion\",\n    \"mechanism\": \"Stocks with high dividend yields, substantial brand investment, and low analyst forecast dispersion are likely to outperform because they combine shareholder returns, competitive advantage, and consensus-driven risk reduction. This synergy creates a robust premium that is more resilient than any single signal.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"DivYieldST\"},\n        {\"weight\": 0.5, \"primitive\": \"BrandInvest\"},\n        {\"weight\": -0.5, \"primitive\": \"ForecastDispersion\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.8,\n    \"expected_decay_half_life_months\": null\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 2011,
+   "total_tokens": 4812,
+   "prompt_tokens_details": {
+    "cached_tokens": 2560,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5f160af537"
+ }
+}

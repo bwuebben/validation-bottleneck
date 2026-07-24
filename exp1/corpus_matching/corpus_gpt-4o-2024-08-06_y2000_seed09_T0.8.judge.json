@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:31:38.635188+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4o-2024-08-06/y2000_seed09_T0.8.json",
+  "prompt_sha256": "c89d983669f06f1a51e70c6851e8c72317a755f8f7c0245033c5d56208ab0896"
+ },
+ "response": {
+  "id": "chatcmpl-E4zzDZPizk0ok9H3IkpIZ2gtffTXe",
+  "object": "chat.completion",
+  "created": 1784860295,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"hire\", \"strength\": \"exact\", \"reason\": \"hire is employment growth, same construction as proposal.\"},\n  {\"index\": 1, \"match\": \"RDcap\", \"strength\": \"exact\", \"reason\": \"RDcap is R&D capital-to-assets, same as proposal.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer concentration ratio.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses management ownership.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses geographic revenue diversification.\"},\n  {\"index\": 5, \"match\": \"FirmAge\", \"strength\": \"related\", \"reason\": \"FirmAge is related, but CEO tenure is distinct.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses strategic alliance count.\"},\n  {\"index\": 7, \"match\": \"CitationsRD\", \"strength\": \"close\", \"reason\": \"CitationsRD uses patent citations, but not per patent.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses board diversity ratio.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses supplier count or supply chain complexity.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2657,
+   "completion_tokens": 339,
+   "total_tokens": 2996,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

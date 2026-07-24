@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:26:31.700752+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y2010_seed04_T0.8.json",
+  "prompt_sha256": "d7995e53518d75afab6e7cfff85ac1b415f81a240a62b98ae71f383f17eefc53"
+ },
+ "response": {
+  "id": "chatcmpl-E4zuH0okZuWJuaLuKHXao8EXBxLYy",
+  "object": "chat.completion",
+  "created": 1784859989,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee review data or similar construction.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses social media sentiment or similar construction.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses CEO stock/compensation ratio or similar signal.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer churn or similar construction.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses CSR ratings or similar construction.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses product pipeline or similar construction.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses cybersecurity risk or similar construction.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses foreign sales ratio or similar construction.\"},\n  {\"index\": 8, \"match\": \"RD\", \"strength\": \"close\", \"reason\": \"Both use R&D scaled by firm size; RD uses market cap, proposal uses sales.\"},\n  {\"index\": 9, \"match\": \"Governance\", \"strength\": \"exact\", \"reason\": \"Both use corporate governance scores from rating agencies.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2648,
+   "completion_tokens": 352,
+   "total_tokens": 3000,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

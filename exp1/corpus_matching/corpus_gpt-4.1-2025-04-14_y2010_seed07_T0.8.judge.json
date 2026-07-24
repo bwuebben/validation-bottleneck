@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:29:45.193370+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2010_seed07_T0.8.json",
+  "prompt_sha256": "c2d19e1d07983651b0e4563c1a30eb5bed78d9f3363e7c281042a56c66b8d73a"
+ },
+ "response": {
+  "id": "chatcmpl-E4zxOK3uQDXAtoMh2hbk7SX8UBI5V",
+  "object": "chat.completion",
+  "created": 1784860182,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"OPLeverage\", \"strength\": \"close\", \"reason\": \"Both capture operating leverage shifts via gross profit/sales ratios.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses inventory/order backlog ratio.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses insider option exercise disadvantage.\"},\n  {\"index\": 3, \"match\": \"ChNWC\", \"strength\": \"exact\", \"reason\": \"Both measure change in net working capital scaled by assets.\"},\n  {\"index\": 4, \"match\": \"CitationsRD\", \"strength\": \"close\", \"reason\": \"Both use patent citation growth as innovation signal.\"},\n  {\"index\": 5, \"match\": \"DelDRC\", \"strength\": \"close\", \"reason\": \"Both use change in deferred revenue, but normalization differs.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor compares comp expense and profit growth.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer concentration change.\"},\n  {\"index\": 8, \"match\": \"ShareRepurchase\", \"strength\": \"close\", \"reason\": \"Both use net share buybacks, but surprise element is new.\"},\n  {\"index\": 9, \"match\": \"ChAssetTurnover\", \"strength\": \"close\", \"reason\": \"Both use change in asset turnover, but context differs.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2869,
+   "completion_tokens": 357,
+   "total_tokens": 3226,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

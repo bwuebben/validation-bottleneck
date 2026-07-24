@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:49:41.078930+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 16,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yNYpfDPDBo3cxmzp2RzPmWieQMu",
+  "object": "chat.completion",
+  "created": 1784854116,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n    {\n        \"name\": \"Hyp1\", \n        \"mechanism\": \"Blend of momentum and liquidity can capture excess returns when market is calm\", \n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"Mom12m\"}, \n                {\"weight\": -0.5, \"primitive\": \"Illiquidity\"}\n            ], \n            \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \n            \"vol_target\": true\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}, \n            {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, \n            {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}\n        ], \n        \"expected_annualized_sharpe\": 0.6, \n        \"expected_decay_half_life_months\": 48\n    }, \n    {\n        \"name\": \"Hyp2\", \n        \"mechanism\": \"Negative interaction between firm age and asset growth can generate returns in emerging markets\", \n        \"expression\": {\n            \"terms\": [\n                {\"weight\": -1.0, \"primitive\": \"FirmAge\"}, \n                {\"weight\": 1.0, \"primitive\": \"AssetGrowth\"}\n            ], \n            \"regime\": null, \n            \"vol_target\": false\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}, \n            {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, \n            {\"type\": \"subperiod_consistency\"}\n        ], \n        \"expected_annualized_sharpe\": 0.7, \n        \"expected_decay_half_life_months\": null\n    }, \n    {\n        \"name\": \"Hyp3\", \n        \"mechanism\": \"Combining value and earnings surprise can yield returns when term spread is positive\", \n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"BM\"}, \n                {\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"}\n            ], \n            \"regime\": \"TERM_SPREAD_POSITIVE\", \n            \"vol_target\": false\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, \n            {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, \n            {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"below\", \"threshold\": 0.3}\n        ], \n        \"expected_annualized_sharpe\": 0.65, \n        \"expected_decay_half_life_months\": 36\n    }, \n    {\n        \"name\": \"Hyp4\", \n        \"mechanism\": \"Blend of size and firm age can capture excess returns when market is up\", \n        \"expression\": {\n            \"terms\": [\n                {\"weight\": -1.0, \"primitive\": \"Size\"}, \n                {\"weight\": 0.5, \"primitive\": \"FirmAge\"}\n            ], \n            \"regime\": \"MKT_TRAILING_12M_UP\", \n            \"vol_target\": true\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, \n            {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, \n            {\"type\": \"correlation\", \"primitive\": \"Size\", \"bound\": \"above\", \"threshold\": 0.3}\n        ], \n        \"expected_annualized_sharpe\": 0.55, \n        \"expected_decay_half_life_months\": 24\n    }, \n    {\n        \"name\": \"Hyp5\", \n        \"mechanism\": \"Blend of earnings consistency and volatility can yield returns when market is down\", \n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"EarningsConsistency\"}, \n                {\"weight\": -0.5, \"primitive\": \"RealizedVol\"}\n            ], \n            \"regime\": \"MKT_TRAILING_12M_DOWN\", \n            \"vol_target\": false\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"lower\"}, \n            {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, \n            {\"type\": \"correlation\", \"primitive\": \"EarningsConsistency\", \"bound\": \"below\", \"threshold\": 0.3}\n        ], \n        \"expected_annualized_sharpe\": 0.6, \n        \"expected_decay_half_life_months\": 60\n    }, \n    {\n        \"name\": \"Hyp6\", \n        \"mechanism\": \"Blend of asset growth and value can capture excess returns in calm market\", \n        \"expression\": {\n            \"terms\": [\n                {\"weight\": -1.0, \"primitive\": \"AssetGrowth\"}, \n                {\"weight\": 1.0, \"primitive\": \"BM\"}\n            ], \n            \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \n            \"vol_target\": false\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}, \n            {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, \n            {\"type\": \"correlation\", \"primitive\": \"AssetGrowth\", \"bound\": \"above\", \"threshold\": 0.3}\n        ], \n        \"expected_annualized_sharpe\": 0.7, \n        \"expected_decay_half_life_months\": 72\n    }, \n    {\n        \"name\": \"Hyp7\", \n        \"mechanism\": \"Blend of size and liquidity can yield returns when term spread is negative\", \n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"Size\"}, \n                {\"weight\": -0.5, \"primitive\": \"Illiquidity\"}\n            ], \n            \"regime\": \"TERM_SPREAD_NEGATIVE\", \n            \"vol_target\": true\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"lower\"}, \n            {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, \n            {\"type\": \"correlation\", \"primitive\": \"Size\", \"bound\": \"below\", \"threshold\": 0.3}\n        ], \n        \"expected_annualized_sharpe\": 0.55, \n        \"expected_decay_half_life_months\": 30\n    }, \n    {\n        \"name\": \"Hyp8\", \n        \"mechanism\": \"Negative interaction between earnings surprise and volatility can generate returns in calm markets\", \n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"EarningsSurprise\"}, \n                {\"weight\": -1.0, \"primitive\": \"RealizedVol\"}\n            ], \n            \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \n            \"vol_target\": false\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}, \n            {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, \n            {\"type\": \"correlation\", \"primitive\": \"EarningsSurprise\", \"bound\": \"below\", \"threshold\": 0.3}\n        ], \n        \"expected_annualized_sharpe\": 0.6, \n        \"expected_decay_half_life_months\": 36\n    }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2864,
+   "completion_tokens": 1791,
+   "total_tokens": 4655,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

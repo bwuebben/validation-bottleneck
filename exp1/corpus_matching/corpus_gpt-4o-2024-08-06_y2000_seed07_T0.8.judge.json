@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:31:31.539508+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4o-2024-08-06/y2000_seed07_T0.8.json",
+  "prompt_sha256": "9577d930592f2c51f4492ae670d6fbfe16db563dd117e9bf017df7ff46b1e610"
+ },
+ "response": {
+  "id": "chatcmpl-E4zz7lKyBDu2HrkNwkXjWz4MzDxkM",
+  "object": "chat.completion",
+  "created": 1784860289,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"EarningsConsistency\", \"strength\": \"related\", \"reason\": \"Both measure stability/consistency of firm fundamentals over time.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses revenue per employee or similar.\"},\n  {\"index\": 2, \"match\": \"grcapx\", \"strength\": \"close\", \"reason\": \"Both use capex growth, but proposal uses volatility not level.\"},\n  {\"index\": 3, \"match\": \"AdExp\", \"strength\": \"exact\", \"reason\": \"Both use advertising expenses relative to sales/revenue.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor counts product launches or similar.\"},\n  {\"index\": 5, \"match\": \"RD\", \"strength\": \"exact\", \"reason\": \"Both use R&D expenses relative to revenue/sales.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses CEO tenure or similar.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses supplier diversity or similar.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee satisfaction or similar.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor counts environmental initiatives or similar.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2684,
+   "completion_tokens": 345,
+   "total_tokens": 3029,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

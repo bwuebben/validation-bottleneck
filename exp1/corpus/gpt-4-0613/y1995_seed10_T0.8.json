@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:53:14.919139+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zNq9cpCFJB4MeH0EFQzlCEn13j2",
+  "object": "chat.completion",
+  "created": 1784857978,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n\"predictors\": [\n    {\n        \"name\": \"Net Stock Issues\",\n        \"construction\": \"Calculate the difference between stocks issued and stocks repurchased for the previous fiscal year.\",\n        \"rationale\": \"Firms issuing new stocks may be overvalued, while firms repurchasing stocks may be undervalued.\",\n        \"higher_returns_for\": \"Firms with higher net stock repurchases\"\n    },\n    {\n        \"name\": \"Composite Equity Issuance\",\n        \"construction\": \"Calculate the ratio of the value of total equity issuance to the total market capitalization of the firm.\",\n        \"rationale\": \"Firms with higher ratios may have higher growth opportunities, leading to higher future returns.\",\n        \"higher_returns_for\": \"Firms with higher composite equity issuance ratios\"\n    },\n    {\n        \"name\": \"Accruals\",\n        \"construction\": \"Calculate the difference between net income and cash flow from operations for the previous fiscal year.\",\n        \"rationale\": \"Firms with lower accruals are more likely to have sustainable earnings.\",\n        \"higher_returns_for\": \"Firms with lower accruals\"\n    },\n    {\n        \"name\": \"Gross Profitability\",\n        \"construction\": \"Calculate the ratio of gross profits to total assets for the previous fiscal year.\",\n        \"rationale\": \"Profitable firms are likely to be more successful and therefore generate higher returns.\",\n        \"higher_returns_for\": \"Firms with higher gross profitability ratios\"\n    },\n    {\n        \"name\": \"Asset Growth\",\n        \"construction\": \"Calculate the percentage change in total assets from the previous fiscal year.\",\n        \"rationale\": \"Firms with rapid asset growth may be overvalued due to overly optimistic growth expectations.\",\n        \"higher_returns_for\": \"Firms with lower asset growth rates\"\n    },\n    {\n        \"name\": \"Return on Assets\",\n        \"construction\": \"Calculate the ratio of net income to total assets for the previous fiscal year.\",\n        \"rationale\": \"Firms with higher return on assets are likely to be more profitable and generate higher returns.\",\n        \"higher_returns_for\": \"Firms with higher return on assets\"\n    },\n    {\n        \"name\": \"Investment to Assets\",\n        \"construction\": \"Calculate the ratio of capital expenditure to total assets for the previous fiscal year.\",\n        \"rationale\": \"Firms with higher investment to assets ratio may have higher growth prospects, leading to higher future returns.\",\n        \"higher_returns_for\": \"Firms with higher investment to assets ratios\"\n    },\n    {\n        \"name\": \"Change in Leverage\",\n        \"construction\": \"Calculate the change in the ratio of total liabilities to total assets from the previous fiscal year.\",\n        \"rationale\": \"A decrease in a firm's leverage could indicate a reduction in financial risk and hence higher future returns.\",\n        \"higher_returns_for\": \"Firms with decreasing leverage ratios\"\n    },\n    {\n        \"name\": \"Change in Payout\",\n        \"construction\": \"Calculate the change in the ratio of dividends paid to net income from the previous fiscal year.\",\n        \"rationale\": \"An increase in a firm's payout ratio could indicate a commitment to returning capital to shareholders, which may be perceived positively by the market.\",\n        \"higher_returns_for\": \"Firms with increasing payout ratios\"\n    },\n    {\n        \"name\": \"Change in Working Capital\",\n        \"construction\": \"Calculate the change in working capital from the previous fiscal year.\",\n        \"rationale\": \"An increase in working capital may indicate improved operational efficiency and liquidity, which may be perceived positively by the market.\",\n        \"higher_returns_for\": \"Firms with increasing working capital\"\n    }\n]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 759,
+   "total_tokens": 1029,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

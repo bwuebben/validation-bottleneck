@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:23:37.637612+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y1990_seed04_T0.8.json",
+  "prompt_sha256": "475d24f3c03a6fa107dff5582b62aecfb6e5106780f4ca2f2ffcf86a7a7b413b"
+ },
+ "response": {
+  "id": "chatcmpl-E4zrRoj6lVV9O1xKVPgT3HC8SApx4",
+  "object": "chat.completion",
+  "created": 1784859813,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"ChInv\", \"strength\": \"related\", \"reason\": \"Both use inventory data, but turnover is a distinct efficiency ratio.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses dividend surprise versus analyst estimates.\"},\n  {\"index\": 2, \"match\": \"AnnouncementReturn\", \"strength\": \"close\", \"reason\": \"Both use post-earnings announcement returns, but drift window is longer.\"},\n  {\"index\": 3, \"match\": \"Tax\", \"strength\": \"exact\", \"reason\": \"Both use taxes paid divided by pre-tax income.\"},\n  {\"index\": 4, \"match\": \"grcapx\", \"strength\": \"close\", \"reason\": \"Both measure capex growth, but grcapx uses two-year change.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses CEO age or similar executive characteristics.\"},\n  {\"index\": 6, \"match\": \"CashProd\", \"strength\": \"related\", \"reason\": \"Both measure productivity, but CashProd uses cash, not revenue/employees.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses geographic diversification or country count.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer concentration or similar.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses litigation risk or lawsuit counts.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2670,
+   "completion_tokens": 363,
+   "total_tokens": 3033,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

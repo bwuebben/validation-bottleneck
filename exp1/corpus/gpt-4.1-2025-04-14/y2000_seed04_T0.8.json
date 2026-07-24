@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:14:33.610671+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 4,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zieCblzWA20Kf9keqs7MDO42tpy",
+  "object": "chat.completion",
+  "created": 1784859268,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Employee Growth Rate\", \"construction\": \"Year-over-year percentage change in total number of employees, using headcount data from annual 10-K filings.\", \"rationale\": \"Rapid expansion in workforce may signal aggressive growth strategies or overinvestment; lower or negative growth may indicate operational efficiency or retrenchment.\", \"higher_returns_for\": \"firms with low or negative employee growth rates\"}, {\"name\": \"Net Insider Option Grants\", \"construction\": \"Total number of stock options granted to insiders minus options exercised by insiders over the past twelve months, scaled by total shares outstanding.\", \"rationale\": \"A high net grant may signal management's confidence in undervaluation or, alternatively, potential dilution; low or negative net grants may reflect insider skepticism.\", \"higher_returns_for\": \"firms with high net insider option grants\"}, {\"name\": \"Inter-Industry Sales Exposure\", \"construction\": \"Percentage of revenues derived from sales to firms outside the company\u2019s primary SIC industry, as disclosed in segment reporting.\", \"rationale\": \"High exposure may indicate diversification benefits or lack of focus; low exposure may reflect industry specialization and competitive advantage.\", \"higher_returns_for\": \"firms with low inter-industry sales exposure\"}, {\"name\": \"Short-Term Accruals Ratio\", \"construction\": \"(Change in current assets - change in current liabilities - change in cash + change in short-term debt) divided by average total assets over the past year.\", \"rationale\": \"High short-term accruals may reflect earnings management and lower earnings quality, leading to lower future returns.\", \"higher_returns_for\": \"firms with low short-term accruals ratios\"}, {\"name\": \"Supplier Concentration Risk\", \"construction\": \"Percentage of cost of goods sold paid to the single largest supplier, as disclosed in 10-K footnotes.\", \"rationale\": \"Dependence on a single supplier may increase operational risk and reduce bargaining power, impacting long-term profitability.\", \"higher_returns_for\": \"firms with low supplier concentration risk\"}, {\"name\": \"Effective Tax Rate Deviation\", \"construction\": \"Absolute difference between the firm\u2019s effective tax rate and the median effective tax rate for its SIC peer group, based on most recent fiscal year.\", \"rationale\": \"Large deviations may signal tax avoidance or inefficiency, possibly affecting sustainability of reported earnings.\", \"higher_returns_for\": \"firms with low effective tax rate deviation\"}, {\"name\": \"R&D Capitalization Ratio\", \"construction\": \"Cumulative R&D expense over the past five years divided by the sum of annual depreciation and amortization over the same period.\", \"rationale\": \"High ratios may indicate heavy investment in intangible assets not reflected on the balance sheet, potentially underappreciated by the market.\", \"higher_returns_for\": \"firms with high R&D capitalization ratios\"}, {\"name\": \"Board Tenure Dispersion\", \"construction\": \"Standard deviation of years of tenure among board members, using board composition disclosures from proxy statements.\", \"rationale\": \"Higher dispersion may signal a mix of experience and fresh perspectives, improving governance and adaptability.\", \"higher_returns_for\": \"firms with high board tenure dispersion\"}, {\"name\": \"Net Working Capital Turnover Growth\", \"construction\": \"Year-over-year percent change in (annual sales divided by average net working capital), using balance sheet and income statement data.\", \"rationale\": \"Increasing turnover may reflect improving operational efficiency and better capital allocation.\", \"higher_returns_for\": \"firms with high net working capital turnover growth\"}, {\"name\": \"Segment Profit Margin Divergence\", \"construction\": \"Standard deviation of profit margins across business segments, as reported in annual segment disclosures.\", \"rationale\": \"High divergence may reveal hidden growth opportunities or risks in underperforming segments.\", \"higher_returns_for\": \"firms with high segment profit margin divergence\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 783,
+   "total_tokens": 1052,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_294c310c0b"
+ }
+}

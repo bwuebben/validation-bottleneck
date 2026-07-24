@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:23:20.292713+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 9,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yuz12WSuwGcmvEm4tlrD0KD1Mmi",
+  "object": "chat.completion",
+  "created": 1784856189,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Quality Value in Calm Markets\",\n    \"mechanism\": \"Combining operating profitability (OperProf), book-to-market (BM), and earnings consistency (EarningsConsistency) should capture stocks that are both high quality and undervalued, outperforming especially when risk aversion is low. The joint signal exploits mispricing in quality and value that is less aggressively arbitraged when volatility is subdued.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"OperProf\"},\n        {\"weight\": 1.0, \"primitive\": \"BM\"},\n        {\"weight\": 0.5, \"primitive\": \"EarningsConsistency\"}\n      ],\n      \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"OperProf\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 1.0,\n    \"expected_decay_half_life_months\": 30\n  },\n  {\n    \"name\": \"Analyst Disagreement with Downside Protection\",\n    \"mechanism\": \"Stocks with high analyst forecast dispersion (ForecastDispersion) but positive recent momentum (Mom12m) and low beta (Beta) are likely to be underappreciated winners, with the low beta term acting as downside risk control. The composite exploits investor underreaction to positive signals in controversial but less risky stocks.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"ForecastDispersion\"},\n        {\"weight\": 0.5, \"primitive\": \"Mom12m\"},\n        {\"weight\": -0.5, \"primitive\": \"Beta\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 18\n  },\n  {\n    \"name\": \"Capital Discipline under Tight Credit\",\n    \"mechanism\": \"Firms with high cash flow to price (cfp), low net external financing (XFIN), and low debt issuance (DebtIssuance) display disciplined capital management, which is especially valuable when the term spread is negative and credit conditions are tight. This combination targets credit-constrained mispricings.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"cfp\"},\n        {\"weight\": -0.5, \"primitive\": \"XFIN\"},\n        {\"weight\": -0.5, \"primitive\": \"DebtIssuance\"}\n      ],\n      \"regime\": \"TERM_SPREAD_NEGATIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.8,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Inventory and Organizational Capital Synergy\",\n    \"mechanism\": \"Firms with positive changes in inventory (ChInv), high organizational capital (OrgCap), and strong intermediate momentum (IntMom) are positioned to benefit from both internal efficiency and market recognition, as inventory build-ups are less likely to signal negative demand when backed by superior organization and recent price strength.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"ChInv\"},\n        {\"weight\": 0.5, \"primitive\": \"OrgCap\"},\n        {\"weight\": 0.5, \"primitive\": \"IntMom\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"correlation\", \"primitive\": \"ChInv\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 15\n  },\n  {\n    \"name\": \"Contrarian Quality under Market Downtrends\",\n    \"mechanism\": \"High gross profits (GP) and low recent momentum (Mom12mOffSeason) together select quality stocks temporarily out of favor, which tend to mean revert especially when the overall market has been weak over the prior year.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"GP\"},\n        {\"weight\": -1.0, \"primitive\": \"Mom12mOffSeason\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.65,\n    \"expected_decay_half_life_months\": 20\n  },\n  {\n    \"name\": \"Supply Chain Anchored Momentum\",\n    \"mechanism\": \"Stocks with above-average supplier momentum (iomom_supp), customer momentum (iomom_cust), and industry momentum (IndMom) benefit from positive real-economy transmission, resulting in more robust and persistent price trends. This cross-link strengthens the signal beyond each individual momentum component.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 0.5, \"primitive\": \"iomom_supp\"},\n        {\"weight\": 0.5, \"primitive\": \"iomom_cust\"},\n        {\"weight\": 1.0, \"primitive\": \"IndMom\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"correlation\", \"primitive\": \"IndMom\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.75,\n    \"expected_decay_half_life_months\": 14\n  },\n  {\n    \"name\": \"Risk Aversion-Driven Carry\",\n    \"mechanism\": \"Combining net payout yield (NetPayoutYield), Amihud illiquidity (Illiquidity), and volatility smirk (skew1), this composite captures the premium for holding liquid high-carry stocks with option-implied downside, especially in high VIX regimes when risk aversion is elevated.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"NetPayoutYield\"},\n        {\"weight\": -0.5, \"primitive\": \"Illiquidity\"},\n        {\"weight\": 0.5, \"primitive\": \"skew1\"}\n      ],\n      \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"NetPayoutYield\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"}\n    ],\n    \"expected_annualized_sharpe\": 0.8,\n    \"expected_decay_half_life_months\": 16\n  },\n  {\n    \"name\": \"Defensive Growth Compounders\",\n    \"mechanism\": \"Firms with high organizational capital (OrgCap), strong earnings streaks (EarningsStreak), and low realized volatility (RealizedVol) represent sustainable compounders\u2014defensive growth names likely to generate persistent alpha especially during periods of positive term spreads (economic expansions).\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"OrgCap\"},\n        {\"weight\": 0.5, \"primitive\": \"EarningsStreak\"},\n        {\"weight\": -0.5, \"primitive\": \"RealizedVol\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 22\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 2146,
+   "total_tokens": 4947,
+   "prompt_tokens_details": {
+    "cached_tokens": 2560,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5f160af537"
+ }
+}

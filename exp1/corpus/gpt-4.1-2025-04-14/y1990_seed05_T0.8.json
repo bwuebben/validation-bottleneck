@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:11:48.695348+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 5,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zfzydd9UVpXZTwqctIYbcilh046",
+  "object": "chat.completion",
+  "created": 1784859103,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"R&D Intensity Change\", \"construction\": \"Change in R&D expenditure over the past year, scaled by beginning-of-year total assets. Data from Compustat: (R&D_t - R&D_{t-1}) / Assets_{t-1}.\", \"rationale\": \"Firms increasing R&D investment may have better growth prospects not yet fully priced by the market.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Short-Term Debt Surge\", \"construction\": \"Percentage increase in short-term debt (Compustat: Data item 34) over the past fiscal year, scaled by total assets.\", \"rationale\": \"Large increases in short-term borrowing may signal impending liquidity needs or distressed financing, which could predict lower returns.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Inventory Turnover Acceleration\", \"construction\": \"One-year change in inventory turnover ratio: (COGS / Average Inventory)_{t} - (COGS / Average Inventory)_{t-1}.\", \"rationale\": \"Improving inventory turnover may indicate operational efficiency or increasing demand, both of which may predict higher returns.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Share Repurchase Ratio\", \"construction\": \"Net reduction in shares outstanding over the prior year divided by market capitalization at the start of the year.\", \"rationale\": \"Firms actively repurchasing shares may signal undervaluation or excess cash flow, leading to higher future returns.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Insider Holdings Change\", \"construction\": \"Annual change in percentage of shares held by insiders, based on SEC filings.\", \"rationale\": \"Increasing insider ownership may signal alignment with shareholders and private information about firm prospects.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Unrecognized Loss Provision\", \"construction\": \"Change in allowance for doubtful accounts (Compustat: Data item 75) as a percent of accounts receivable.\", \"rationale\": \"An increasing allowance may indicate prudent risk management or anticipation of future losses that are not yet recognized by investors.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Analyst Forecast Dispersion\", \"construction\": \"Standard deviation of annual EPS forecasts from I/B/E/S, normalized by absolute mean forecast, at the fiscal year-end.\", \"rationale\": \"Lower dispersion may indicate consensus and predictability, which can reduce risk premia and forecast higher returns.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Patent Citation Rate\", \"construction\": \"Annual number of patent citations (from USPTO data) per million dollars of total assets.\", \"rationale\": \"Firms with rapidly growing innovation output may enjoy future growth and profitability not yet priced in.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Gross Margin Stability\", \"construction\": \"Standard deviation of quarterly gross margin over the past three years.\", \"rationale\": \"Firms with more stable gross margins may have more predictable earnings, which may lower risk and result in higher returns.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Dividend Omission Streak\", \"construction\": \"Number of consecutive quarters the firm has omitted its regular dividend, relative to its historical pattern.\", \"rationale\": \"Omission of dividends, especially by historically steady payers, may signal financial distress and predict lower future returns.\", \"higher_returns_for\": \"low values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 743,
+   "total_tokens": 1012,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_801206523b"
+ }
+}

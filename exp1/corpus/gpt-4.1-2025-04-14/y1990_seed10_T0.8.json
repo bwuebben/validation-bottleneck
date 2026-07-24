@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:12:18.951460+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zgTtH9BkkOfMH0dqc9z7hKoF1ns",
+  "object": "chat.completion",
+  "created": 1784859133,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Insider Net Buying Ratio\", \"construction\": \"Sum of insider purchases minus insider sales over the past 6 months, divided by shares outstanding, using SEC Form 4 filings.\", \"rationale\": \"Insider buying may reflect superior information about future firm prospects, suggesting undervaluation.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Patent Intensity\", \"construction\": \"Number of new patents granted to the firm in the past year, divided by total assets at fiscal year-end.\", \"rationale\": \"Firms with greater innovative output may be better positioned for future growth and profitability.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Employee Growth Rate\", \"construction\": \"Percentage change in total number of employees reported in annual reports over the past year.\", \"rationale\": \"Rapid hiring may signal expanding business operations and anticipated revenue growth.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Short-Term Debt Change\", \"construction\": \"Change in short-term debt (current liabilities minus current assets) from previous year, scaled by total assets.\", \"rationale\": \"Significant reductions in short-term debt may indicate improving financial health and lower distress risk.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Inventory Accumulation Ratio\", \"construction\": \"Annual change in inventories divided by net sales over the same period.\", \"rationale\": \"Rising inventories relative to sales may signal demand shortfalls or inefficient operations.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Dividend Omission Indicator\", \"construction\": \"A binary variable equal to 1 if the firm has omitted its dividend in the past year, 0 otherwise.\", \"rationale\": \"Dividend omissions may indicate temporary distress and create opportunities for mean reversion.\", \"higher_returns_for\": \"high values (firms that omitted dividends)\"}, {\"name\": \"Segment Diversification Index\", \"construction\": \"Number of distinct business segments (as reported in annual reports), divided by total firm assets.\", \"rationale\": \"Greater diversification may reduce risk, attract investors, or reflect managerial skill.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"R&D to Market Cap\", \"construction\": \"Annual research and development expenditures divided by market capitalization at year-end.\", \"rationale\": \"High R&D spending relative to size may signal overlooked growth opportunities.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"CEO Tenure\", \"construction\": \"Number of years the current CEO has held the position, as reported in proxy statements.\", \"rationale\": \"Longer-tenured CEOs may have developed superior firm-specific knowledge, or alternatively, stagnation; the effect direction is an empirical question.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Pre-Tax Profit Margin Stability\", \"construction\": \"Standard deviation of pre-tax profit margin (EBIT divided by sales) over the prior five years.\", \"rationale\": \"Firms with more stable margins may be less risky and thus attract investors.\", \"higher_returns_for\": \"low values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 660,
+   "total_tokens": 929,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_801206523b"
+ }
+}

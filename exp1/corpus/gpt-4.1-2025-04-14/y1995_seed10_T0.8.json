@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:13:59.380137+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zi5UNQpcy139sYpZ0kHTerOueID",
+  "object": "chat.completion",
+  "created": 1784859233,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Inventory Growth\", \"construction\": \"Calculate the year-over-year percentage change in inventories from Compustat annual data: (Inventories_t - Inventories_{t-1}) / Inventories_{t-1}.\", \"rationale\": \"Rising inventories may signal slowing demand or over-optimism by management, while shrinking inventories may reflect strong sales or conservative management.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Short-Term Debt to Total Assets\", \"construction\": \"Divide short-term debt (Compustat: Debt in Current Liabilities) by total assets, measured at fiscal year-end.\", \"rationale\": \"Firms with higher reliance on short-term debt may face refinancing risk and financial distress, while low ratios indicate stability.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Receivables to Sales Ratio\", \"construction\": \"Compute accounts receivable (Compustat) divided by net sales (Compustat) for the most recent fiscal year.\", \"rationale\": \"A high ratio could point to aggressive revenue recognition or deteriorating customer quality.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"R&D Intensity Change\", \"construction\": \"Calculate the annual change in R&D expenditure-to-sales ratio: (R&D_t / Sales_t) - (R&D_{t-1} / Sales_{t-1}).\", \"rationale\": \"Rising R&D intensity may signal increased investment in future growth opportunities.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Dividend Deviation\", \"construction\": \"Take the absolute difference between the most recent annual dividend and the three-year average dividend, divided by the three-year average dividend.\", \"rationale\": \"Unusually large changes in dividend policy may indicate information about future prospects or risk.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Cash Flow Skewness\", \"construction\": \"Compute the skewness of quarterly operating cash flows over the past three years (12 quarters) for each firm.\", \"rationale\": \"Firms with large positive or negative skew in cash flows may be subject to unusual events or earnings management.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Gross Margin Expansion\", \"construction\": \"The change in gross margin (gross profit divided by sales) from the prior fiscal year to the current year.\", \"rationale\": \"Improving gross margins may indicate strengthening competitive position or operational efficiency.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"SG&A to Sales Decline\", \"construction\": \"Measure the year-over-year change in SG&A expense divided by sales, using Compustat annual data.\", \"rationale\": \"Firms that are effectively controlling overhead (declining SG&A/Sales) may achieve higher profitability.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Net Insider Buying\", \"construction\": \"Sum net insider purchases (Form 4 filings, SEC) over the past 12 months, scaled by shares outstanding.\", \"rationale\": \"Insider buying may reflect superior private information regarding firm prospects.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Sales Volatility\", \"construction\": \"Compute the standard deviation of quarterly sales growth rates over the past three years (12 quarters).\", \"rationale\": \"High sales volatility may indicate unpredictable fundamentals and higher risk.\", \"higher_returns_for\": \"low values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 735,
+   "total_tokens": 1004,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5e8833dc3f"
+ }
+}

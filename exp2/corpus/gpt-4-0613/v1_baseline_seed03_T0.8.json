@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:38:42.634116+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 3,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yDMNCP7dnq2vln3fUHrQGlADRmc",
+  "object": "chat.completion",
+  "created": 1784853484,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n{\n\"name\": \"Composite_Hypothesis_1\",\n\"mechanism\": \"The hypothesis leverages mispricing in high-growth firms. Investors tend to underreact to positive news about high-growth firms which leads to subsequent strong returns.\",\n\"expression\": {\n\"terms\": [\n{\"weight\": 1.0, \"primitive\": \"GrAdExp\"},\n{\"weight\": 0.5, \"primitive\": \"Mom12m\"}\n],\n\"regime\": \"MKT_TRAILING_12M_UP\",\n\"vol_target\": true\n},\n\"auxiliary_predictions\": [\n{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n{\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n{\"type\": \"correlation\", \"primitive\": \"GrAdExp\", \"bound\": \"above\", \"threshold\": 0.3}\n],\n\"expected_annualized_sharpe\": 0.7,\n\"expected_decay_half_life_months\": 24\n},\n\n{\n\"name\": \"Composite_Hypothesis_2\",\n\"mechanism\": \"The hypothesis asserts that investors overreact to firms with high debt and undervalue them. This results in high subsequent returns for these undervalued firms.\",\n\"expression\": {\n\"terms\": [\n{\"weight\": -0.5, \"primitive\": \"Leverage\"},\n{\"weight\": -1.0, \"primitive\": \"BM\"}\n],\n\"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n\"vol_target\": true\n},\n\"auxiliary_predictions\": [\n{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n{\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n{\"type\": \"correlation\", \"primitive\": \"Leverage\", \"bound\": \"below\", \"threshold\": 0.3}\n],\n\"expected_annualized_sharpe\": 0.6,\n\"expected_decay_half_life_months\": 36\n},\n\n{\n\"name\": \"Composite_Hypothesis_3\",\n\"mechanism\": \"This hypothesis posits that investors underreact to recent positive earnings surprises, leading to persistent momentum in subsequent returns.\",\n\"expression\": {\n\"terms\": [\n{\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"},\n{\"weight\": 1.0, \"primitive\": \"Mom6m\"}\n],\n\"regime\": \"MKT_TRAILING_12M_UP\",\n\"vol_target\": true\n},\n\"auxiliary_predictions\": [\n{\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n{\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n{\"type\": \"subperiod_consistency\"}\n],\n\"expected_annualized_sharpe\": 0.8,\n\"expected_decay_half_life_months\": 18\n},\n\n{\n\"name\": \"Composite_Hypothesis_4\",\n\"mechanism\": \"This hypothesis posits that investors overreact to short-term reversals in firms, leading to momentum in subsequent returns.\",\n\"expression\": {\n\"terms\": [\n{\"weight\": -1.0, \"primitive\": \"STreversal\"},\n{\"weight\": 0.5, \"primitive\": \"Mom6m\"}\n],\n\"regime\": \"MKT_TRAILING_12M_DOWN\",\n\"vol_target\": true\n},\n\"auxiliary_predictions\": [\n{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n{\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n{\"type\": \"subperiod_consistency\"}\n],\n\"expected_annualized_sharpe\": 0.65,\n\"expected_decay_half_life_months\": 30\n},\n\n{\n\"name\": \"Composite_Hypothesis_5\",\n\"mechanism\": \"This hypothesis assumes that investors underreact to stocks with high dividend yields, leading to momentum in subsequent returns.\",\n\"expression\": {\n\"terms\": [\n{\"weight\": 1.0, \"primitive\": \"DivYieldST\"},\n{\"weight\": 0.5, \"primitive\": \"Mom12m\"}\n],\n\"regime\": \"MKT_TRAILING_12M_UP\",\n\"vol_target\": true\n},\n\"auxiliary_predictions\": [\n{\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n{\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n{\"type\": \"subperiod_consistency\"}\n],\n\"expected_annualized_sharpe\": 0.75,\n\"expected_decay_half_life_months\": 18\n},\n\n{\n\"name\": \"Composite_Hypothesis_6\",\n\"mechanism\": \"This hypothesis assumes that investors underreact to recent positive changes in analyst recommendations, leading to momentum in subsequent returns.\",\n\"expression\": {\n\"terms\": [\n{\"weight\": 1.0, \"primitive\": \"ChangeInRecommendation\"},\n{\"weight\": 0.5, \"primitive\": \"Mom12m\"}\n],\n\"regime\": \"MKT_TRAILING_12M_UP\",\n\"vol_target\": true\n},\n\"auxiliary_predictions\": [\n{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n{\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n{\"type\": \"subperiod_consistency\"}\n],\n\"expected_annualized_sharpe\": 0.7,\n\"expected_decay_half_life_months\": 24\n},\n\n{\n\"name\": \"Composite_Hypothesis_7\",\n\"mechanism\": \"This hypothesis posits that investors overreact to recent negative earnings surprises, which leads to long-run reversals in returns.\",\n\"expression\": {\n\"terms\": [\n{\"weight\": -1.0, \"primitive\": \"EarningsSurprise\"},\n{\"weight\": 0.5, \"primitive\": \"LRreversal\"}\n],\n\"regime\": \"MKT_TRAILING_12M_DOWN\",\n\"vol_target\": true\n},\n\"auxiliary_predictions\": [\n{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n{\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n{\"type\": \"correlation\", \"primitive\": \"EarningsSurprise\", \"bound\": \"above\", \"threshold\": 0.3}\n],\n\"expected_annualized_sharpe\": 0.6,\n\"expected_decay_half_life_months\": 36\n},\n\n{\n\"name\": \"Composite_Hypothesis_8\",\n\"mechanism\": \"This hypothesis posits that investors underprice the risk associated with high illiquidity, which leads to subsequent high returns as compensation.\",\n\"expression\": {\n\"terms\": [\n{\"weight\": 1.0, \"primitive\": \"Illiquidity\"},\n{\"weight\": -0.5, \"primitive\": \"Size\"}\n],\n\"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n\"vol_target\": true\n},\n\"auxiliary_predictions\": [\n{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n{\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n{\"type\": \"correlation\", \"primitive\": \"Illiquidity\", \"bound\": \"below\", \"threshold\": 0.3}\n],\n\"expected_annualized_sharpe\": 0.7,\n\"expected_decay_half_life_months\": 24\n}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2864,
+   "completion_tokens": 1577,
+   "total_tokens": 4441,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

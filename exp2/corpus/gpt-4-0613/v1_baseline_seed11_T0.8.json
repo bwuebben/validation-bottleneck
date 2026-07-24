@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:45:40.158393+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 11,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yJZkYTdH8YsHC7tWFEiY9DvCB4h",
+  "object": "chat.completion",
+  "created": 1784853869,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Hypothesis_1\",\n    \"mechanism\": \"Combination of low illiquidity and high asset growth signals fundamentally strong firms that are not fully discovered by the market yet. This should lead to excess returns when the market adjusts for the undiscovered values.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"AssetGrowth\"},\n        {\"weight\": -0.5, \"primitive\": \"Illiquidity\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_UP\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"AssetGrowth\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.5,\n    \"expected_decay_half_life_months\": 12\n  },\n  {\n    \"name\": \"Hypothesis_2\",\n    \"mechanism\": \"A composite of high momentum and low leverage may signal companies undergoing positive growth changes that are not yet fully priced in by the market.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"Mom12m\"},\n        {\"weight\": -0.5, \"primitive\": \"Leverage\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_UP\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 18\n  },\n  {\n    \"name\": \"Hypothesis_3\",\n    \"mechanism\": \"Firms with a high book-to-market ratio and low bid-ask spread are undervalued and more liquid, suggesting they may be poised for a price correction.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"BM\"},\n        {\"weight\": -0.5, \"primitive\": \"BidAskSpread\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Hypothesis_4\",\n    \"mechanism\": \"Low asset growth and high book leverage may indicate companies with deteriorating fundamentals, resulting in negative returns.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -1.0, \"primitive\": \"AssetGrowth\"},\n        {\"weight\": 0.5, \"primitive\": \"BookLeverage\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"},\n      {\"type\": \"correlation\", \"primitive\": \"AssetGrowth\", \"bound\": \"above\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": -0.5,\n    \"expected_decay_half_life_months\": null\n  },\n  {\n    \"name\": \"Hypothesis_5\",\n    \"mechanism\": \"High advertising expense and low price suggest a firm is investing in growth while still remaining undervalued, leading to positive returns.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"AdExp\"},\n        {\"weight\": -0.5, \"primitive\": \"Price\"}\n      ],\n      \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"AdExp\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.4,\n    \"expected_decay_half_life_months\": 18\n  },\n  {\n    \"name\": \"Hypothesis_6\",\n    \"mechanism\": \"Firms with high EPS forecast revisions and low short interest might be undervalued and less prone to negative shocks, resulting in positive future returns.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"AnalystRevision\"},\n        {\"weight\": -0.5, \"primitive\": \"ShortInterest\"}\n      ],\n      \"regime\": \"TERM_SPREAD_NEGATIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"AnalystRevision\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Hypothesis_7\",\n    \"mechanism\": \"High gross profits and low bid-ask spread may indicate profitable and liquid companies, leading to excess returns.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"GP\"},\n        {\"weight\": -0.5, \"primitive\": \"BidAskSpread\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"GP\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 12\n  },\n  {\n    \"name\": \"Hypothesis_8\",\n    \"mechanism\": \"Firms with high sales-to-price ratio and low illiquidity are undervalued and have good liquidity, leading to positive future returns.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"SP\"},\n        {\"weight\": -0.5, \"primitive\": \"Illiquidity\"}\n      ],\n      \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"SP\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 18\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2864,
+   "completion_tokens": 1844,
+   "total_tokens": 4708,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

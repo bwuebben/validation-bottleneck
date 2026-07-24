@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:29:48.125511+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2010_seed08_T0.8.json",
+  "prompt_sha256": "6955f6b3b59843a38daad4add5a16a701eec7ebe33d0cf24a5f5138a00a3b2ba"
+ },
+ "response": {
+  "id": "chatcmpl-E4zxRQcnYquFiJakdLtIfjoVxlToX",
+  "object": "chat.completion",
+  "created": 1784860185,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"ShortInterest\", \"strength\": \"related\", \"reason\": \"Short interest volatility is related to short interest level.\"},\n  {\"index\": 1, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Both use patent activity scaled by firm size/assets.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No SG&A efficiency or similar multi-year change in library.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No supplier concentration or supply chain risk in library.\"},\n  {\"index\": 4, \"match\": \"ReturnSkew\", \"strength\": \"close\", \"reason\": \"Both measure skewness, but option-implied vs realized returns.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No dividend smoothing or payout-earnings deviation in library.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No management tone or language-based predictors in library.\"},\n  {\"index\": 7, \"match\": \"Herf\", \"strength\": \"related\", \"reason\": \"Both use Herfindahl index, but for different segmentations.\"},\n  {\"index\": 8, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Board diversity is a governance aspect, but not directly measured.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No late reporting or filing timeliness predictors in library.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2814,
+   "completion_tokens": 360,
+   "total_tokens": 3174,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

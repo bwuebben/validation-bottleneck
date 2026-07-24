@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:33:05.420496+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4o-2024-08-06/y2010_seed10_T0.8.json",
+  "prompt_sha256": "b3f121e497e324cde1b7e0bcc7bde35aebd637d32d983fc1e2f1caa0a1bca946"
+ },
+ "response": {
+  "id": "chatcmpl-E500XprkTWmjZnKvvtjAAhHPrUJ4u",
+  "object": "chat.completion",
+  "created": 1784860377,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses social media sentiment data.\"},\n  {\"index\": 1, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Both relate to board structure and governance, but diversity is not directly measured.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses environmental or carbon data.\"},\n  {\"index\": 3, \"match\": \"RD\", \"strength\": \"close\", \"reason\": \"Both use R&D scaled by firm size; denominator differs (sales vs. market cap).\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor measures supplier concentration or supply chain risk.\"},\n  {\"index\": 5, \"match\": \"CustomerMomentum\", \"strength\": \"related\", \"reason\": \"Both use customer data, but focus and construction differ.\"},\n  {\"index\": 6, \"match\": \"CitationsRD\", \"strength\": \"exact\", \"reason\": \"Both count patent citations as a measure of innovation impact.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses freight or logistics cost ratios.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee satisfaction or review data.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses earnings call tone or NLP sentiment.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2648,
+   "completion_tokens": 358,
+   "total_tokens": 3006,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

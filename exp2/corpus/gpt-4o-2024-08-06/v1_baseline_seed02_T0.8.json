@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:09:23.066122+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 2,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yhQGM21l3D2AL4vi7L6Twxd2S4m",
+  "object": "chat.completion",
+  "created": 1784855348,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"EarningsQualityMomentum\",\n      \"mechanism\": \"Combining earnings quality with momentum may capture stocks that are not only performing well but also have sustainable earnings, leading to a more robust return profile.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"},\n          {\"weight\": 0.5, \"primitive\": \"Mom12m\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.8,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"ValuationVolatilityArbitrage\",\n      \"mechanism\": \"This strategy exploits mispricings in high volatility environments by combining valuation with volatility, capturing premiums from stocks misvalued due to market inefficiencies.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"EP\"},\n          {\"weight\": -0.5, \"primitive\": \"RealizedVol\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": 18\n    },\n    {\n      \"name\": \"AnalystSentimentCycle\",\n      \"mechanism\": \"Combining analyst revisions with cyclical market conditions captures changing investor sentiment, exploiting periods of optimism and pessimism in the market cycle.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"AnalystRevision\"},\n          {\"weight\": -0.5, \"primitive\": \"ChForecastAccrual\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n        {\"type\": \"correlation\", \"primitive\": \"AnalystValue\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.7,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"QualityRiskArbitrage\",\n      \"mechanism\": \"This composite captures the interaction between high quality firms and risk factors, profiting from the mispricing of quality under high market risk.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"OperProf\"},\n          {\"weight\": -0.5, \"primitive\": \"BetaTailRisk\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 1.0,\n      \"expected_decay_half_life_months\": null\n    },\n    {\n      \"name\": \"GrowthSustainability\",\n      \"mechanism\": \"By linking asset growth with financial sustainability, the strategy identifies firms that are not only growing rapidly but also maintaining sustainable financial practices.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"AssetGrowth\"},\n          {\"weight\": -0.5, \"primitive\": \"BookLeverage\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.6,\n      \"expected_decay_half_life_months\": 48\n    },\n    {\n      \"name\": \"LiquidityMomentumTradeoff\",\n      \"mechanism\": \"Combining liquidity indicators with momentum allows this composite to capture the liquidity premium while riding the momentum wave, enhancing return predictability.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"Illiquidity\"},\n          {\"weight\": 1.0, \"primitive\": \"Mom6m\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_DOWN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.85,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"InnovationValuation\",\n      \"mechanism\": \"By combining innovation-related factors with valuation ratios, the composite identifies undervalued companies with high growth potential due to innovation.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"PatentsRD\"},\n          {\"weight\": 1.0, \"primitive\": \"EP\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.75,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"DebtDrivenGrowth\",\n      \"mechanism\": \"This composite targets firms where growth is funded by debt, capitalizing on mispriced growth potential fueled by strategic leverage.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"DebtIssuance\"},\n          {\"weight\": 0.5, \"primitive\": \"GrSaleToGrInv\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.65,\n      \"expected_decay_half_life_months\": 28\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 1772,
+   "total_tokens": 4573,
+   "prompt_tokens_details": {
+    "cached_tokens": 2560,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

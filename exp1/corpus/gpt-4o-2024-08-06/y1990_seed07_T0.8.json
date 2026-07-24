@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:04:18.592713+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 7,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zYhbmZKAfUCGoNN3ApmOWWbT6Sm",
+  "object": "chat.completion",
+  "created": 1784858651,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Employee Productivity Ratio\",\n      \"construction\": \"Total Revenue divided by Number of Employees, calculated annually from company financial statements.\",\n      \"rationale\": \"Firms with higher employee productivity may have more efficient operations, leading to greater profitability and potentially higher stock returns.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"R&D Intensity\",\n      \"construction\": \"Research and Development Expense divided by Total Sales, calculated annually.\",\n      \"rationale\": \"Firms investing heavily in R&D may be developing innovative products and technologies that could lead to future growth.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Supplier Concentration Index\",\n      \"construction\": \"Herfindahl Index based on the proportion of purchases from key suppliers as disclosed in company reports.\",\n      \"rationale\": \"Lower supplier concentration might indicate better bargaining power and supply chain stability.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Merger Activity Indicator\",\n      \"construction\": \"Binary indicator set to 1 if the firm has been involved in any merger or acquisition activity in the past year, 0 otherwise.\",\n      \"rationale\": \"Firms engaging in merger activities may be actively seeking growth opportunities, possibly leading to enhanced future returns.\",\n      \"higher_returns_for\": \"value of 1\"\n    },\n    {\n      \"name\": \"Technology Adoption Index\",\n      \"construction\": \"Score based on the number of new technology mentions in annual reports, adjusted for industry norms.\",\n      \"rationale\": \"Firms that rapidly adopt technology may gain competitive advantages, potentially increasing their market share and returns.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"CEO Equity Stake\",\n      \"construction\": \"Percentage of total outstanding shares owned by the CEO, as reported in proxy statements.\",\n      \"rationale\": \"Higher CEO equity stakes may align management interests with shareholders, potentially leading to better company performance.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Environmental Commitment Score\",\n      \"construction\": \"Composite score based on the number of environmental policies and practices disclosed in company reports.\",\n      \"rationale\": \"Firms with strong environmental commitments may reduce future regulatory risks and attract environmentally-conscious investors.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Foreign Sales Proportion\",\n      \"construction\": \"Total foreign sales divided by total sales, calculated from geographic segment disclosures.\",\n      \"rationale\": \"Firms with significant foreign sales might be better diversified and less susceptible to domestic economic downturns.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Advertising Efficiency Ratio\",\n      \"construction\": \"Total Sales divided by Advertising Expenses, calculated annually from financial statements.\",\n      \"rationale\": \"Higher advertising efficiency indicates better return on marketing investments, potentially enhancing profitability and returns.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Patent Activity Index\",\n      \"construction\": \"Number of patents filed by the firm in the past year, adjusted for industry averages.\",\n      \"rationale\": \"Active patent filing may signal innovative activity, positioning the firm for future growth and competitive advantage.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 733,
+   "total_tokens": 1002,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_94cd41efba"
+ }
+}

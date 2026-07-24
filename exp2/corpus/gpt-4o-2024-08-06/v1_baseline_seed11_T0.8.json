@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:11:53.991475+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 11,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yjqHYKQ4vOAEXSWlzIrpDZjQY65",
+  "object": "chat.completion",
+  "created": 1784855498,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"Momentum-Quality Composite\",\n      \"mechanism\": \"Combining momentum (Mom12m) with quality (OperProfRD) captures the persistence of earnings quality driving momentum profits, enhancing returns through superior firm characteristics.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"Mom12m\"},\n          {\"weight\": 0.5, \"primitive\": \"OperProfRD\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 1.2,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Value-Momentum Composite\",\n      \"mechanism\": \"Combining value (BM) with momentum (Mom6m) exploits the mean-reversion in valuations and momentum trends, providing diversified return sources.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"BM\"},\n          {\"weight\": 0.5, \"primitive\": \"Mom6m\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 1.0,\n      \"expected_decay_half_life_months\": 48\n    },\n    {\n      \"name\": \"Growth-Volatility Composite\",\n      \"mechanism\": \"Combining growth (AssetGrowth) with low volatility (RealizedVol) captures firms that grow steadily, benefiting from risk-adjusted growth.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"AssetGrowth\"},\n          {\"weight\": -0.5, \"primitive\": \"RealizedVol\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"subperiod_consistency\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"},\n        {\"type\": \"correlation\", \"primitive\": \"RealizedVol\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 1.1,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"Earnings-Momentum Composite\",\n      \"mechanism\": \"Combining earnings surprise (EarningsSurprise) with momentum (Mom12mOffSeason) capitalizes on post-earnings announcement drift and momentum.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"},\n          {\"weight\": 0.5, \"primitive\": \"Mom12mOffSeason\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 1.3,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"Cash-Flow Stability Composite\",\n      \"mechanism\": \"Combining cash flow to price (cfp) with earnings consistency (EarningsConsistency) identifies financially stable companies likely to outperform.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"cfp\"},\n          {\"weight\": 0.5, \"primitive\": \"EarningsConsistency\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 1.4,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Analyst Sentiment Composite\",\n      \"mechanism\": \"Combining analyst revision (AnalystRevision) with analyst value (AnalystValue) harnesses changes in analyst sentiment and valuation insights.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"AnalystRevision\"},\n          {\"weight\": 0.5, \"primitive\": \"AnalystValue\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"subperiod_consistency\"},\n        {\"type\": \"correlation\", \"primitive\": \"AnalystRevision\", \"bound\": \"below\", \"threshold\": 0.3},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 1.0,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"Leverage-Quality Composite\",\n      \"mechanism\": \"Combining market leverage (Leverage) with profitability (OperProf) highlights firms with optimal debt levels and efficient operations, enhancing returns.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": -0.5, \"primitive\": \"Leverage\"},\n          {\"weight\": 0.5, \"primitive\": \"OperProf\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_DOWN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 1.1,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"Growth-Stability Composite\",\n      \"mechanism\": \"Combining growth in R&D expenses (GrAdExp) with earnings stability (EarningsStreak) identifies innovative firms with consistent earnings, boosting returns.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"GrAdExp\"},\n          {\"weight\": 0.5, \"primitive\": \"EarningsStreak\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"correlation\", \"primitive\": \"GrAdExp\", \"bound\": \"below\", \"threshold\": 0.3},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 1.2,\n      \"expected_decay_half_life_months\": 36\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 1817,
+   "total_tokens": 4618,
+   "prompt_tokens_details": {
+    "cached_tokens": 2560,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:29:03.818517+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2005_seed04_T0.8.json",
+  "prompt_sha256": "0e6f5e1b926e8cca81773ee0fc558a3ee955e552532eef9c8ac24e7f56cb791c"
+ },
+ "response": {
+  "id": "chatcmpl-E4zwjLVb52QzUsDH0KaTOldPGvqFN",
+  "object": "chat.completion",
+  "created": 1784860141,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"hire\", \"strength\": \"exact\", \"reason\": \"Year-over-year employee growth matches 'hire' construction.\"},\n  {\"index\": 1, \"match\": \"ChAssetTurnover\", \"strength\": \"exact\", \"reason\": \"Change in asset turnover ratio matches 'ChAssetTurnover'.\"},\n  {\"index\": 2, \"match\": \"FR\", \"strength\": \"related\", \"reason\": \"Both use pension obligations, but FR is funding status, not unrecognized.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses inventory volatility as constructed.\"},\n  {\"index\": 4, \"match\": \"SmileSlope\", \"strength\": \"close\", \"reason\": \"Both use option-implied volatility slopes, but SmileSlope uses puts.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses segment revenue dispersion.\"},\n  {\"index\": 6, \"match\": \"RD\", \"strength\": \"close\", \"reason\": \"Both scale R&D by another expense, but not relative to SG&A minus industry.\"},\n  {\"index\": 7, \"match\": \"Tax\", \"strength\": \"close\", \"reason\": \"Both use effective tax rates, but not cash tax gap to statutory.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses net insider transaction ratio.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses late filing frequency.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2746,
+   "completion_tokens": 363,
+   "total_tokens": 3109,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

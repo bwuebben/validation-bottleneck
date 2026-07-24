@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:58:59.827094+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 8,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yWzB2sUXWttXj82en6n2D5WOxgU",
+  "object": "chat.completion",
+  "created": 1784854701,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n   \"name\": \"Hypothesis 1\",\n   \"mechanism\": \"Firms with high ROA and low volatility are likely to be fundamentally strong, and their performance can be further bolstered by high customer momentum.\",\n   \"expression\": {\n       \"terms\": [{\"weight\": 1, \"primitive\": \"roaq\"}, {\"weight\": -0.5, \"primitive\": \"RealizedVol\"}, {\"weight\": 0.5, \"primitive\": \"iomom_cust\"}],\n       \"regime\": \"MKT_TRAILING_12M_UP\",\n       \"vol_target\": true\n   },\n   \"auxiliary_predictions\": [\n       {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n       {\"type\": \"correlation\", \"primitive\": \"Size\", \"bound\": \"below\", \"threshold\": 0.3},\n       {\"type\": \"subperiod_consistency\"}\n   ],\n   \"expected_annualized_sharpe\": 0.85,\n   \"expected_decay_half_life_months\": 60\n  },\n  {\n   \"name\": \"Hypothesis 2\",\n   \"mechanism\": \"High advertising expense growth and R&D ability may signal a firm's commitment to innovation and brand visibility, which can be beneficial in a bullish market.\",\n   \"expression\": {\n       \"terms\": [{\"weight\": 0.5, \"primitive\": \"GrAdExp\"}, {\"weight\": 0.5, \"primitive\": \"RDAbility\"}],\n       \"regime\": \"MKT_TRAILING_12M_UP\",\n       \"vol_target\": false\n   },\n   \"auxiliary_predictions\": [\n       {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n       {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n       {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"above\", \"threshold\": 0.3}\n   ], \n   \"expected_annualized_sharpe\": 0.7,\n   \"expected_decay_half_life_months\": 48\n  },\n  {\n   \"name\": \"Hypothesis 3\",\n   \"mechanism\": \"Firms with a high equity duration and low idiosyncratic risk might be more attractive to conservative investors, especially in a bearish market.\",\n   \"expression\": {\n       \"terms\": [{\"weight\": 0.5, \"primitive\": \"EquityDuration\"}, {\"weight\": -0.5, \"primitive\": \"IdioVolAHT\"}],\n       \"regime\": \"MKT_TRAILING_12M_DOWN\",\n       \"vol_target\": true\n   },\n   \"auxiliary_predictions\": [\n       {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n       {\"type\": \"subperiod_consistency\"},\n       {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n   ],\n   \"expected_annualized_sharpe\": 0.8,\n   \"expected_decay_half_life_months\": null\n  },\n  {\n   \"name\": \"Hypothesis 4\",\n   \"mechanism\": \"A combination of high cash productivity and high customer momentum might indicate a well-managed firm with a loyal consumer base, which should thrive irrespective of the market regime.\",\n   \"expression\": {\n       \"terms\": [{\"weight\": 0.5, \"primitive\": \"CashProd\"}, {\"weight\": 0.5, \"primitive\": \"iomom_cust\"}],\n       \"regime\": null,\n       \"vol_target\": true\n   },\n   \"auxiliary_predictions\": [\n       {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n       {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3},\n       {\"type\": \"subperiod_consistency\"}\n   ],\n   \"expected_annualized_sharpe\": 0.9,\n   \"expected_decay_half_life_months\": 72\n  },\n  {\n   \"name\": \"Hypothesis 5\",\n   \"mechanism\": \"Firms which are innovative (high R&D ability) and risk averse (low beta) may be poised to perform well, especially in volatile markets.\",\n   \"expression\": {\n       \"terms\": [{\"weight\": 0.5, \"primitive\": \"RDAbility\"}, {\"weight\": -0.5, \"primitive\": \"Beta\"}],\n       \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n       \"vol_target\": true\n   },\n   \"auxiliary_predictions\": [\n       {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n       {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n       {\"type\": \"subperiod_consistency\"}\n   ],\n   \"expected_annualized_sharpe\": 0.8,\n   \"expected_decay_half_life_months\": 60\n  },\n  {\n   \"name\": \"Hypothesis 6\",\n   \"mechanism\": \"Consensus recommendation combined with low idiosyncratic risk can act as an indicator of strong fundamentals and lower risk, beneficial in a bear market.\",\n   \"expression\": {\n       \"terms\": [{\"weight\": 0.5, \"primitive\": \"ConsRecomm\"}, {\"weight\": -0.5, \"primitive\": \"IdioVol3F\"}],\n       \"regime\": \"MKT_TRAILING_12M_DOWN\",\n       \"vol_target\": false\n   },\n   \"auxiliary_predictions\": [\n       {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n       {\"type\": \"correlation\", \"primitive\": \"Size\", \"bound\": \"below\", \"threshold\": 0.3},\n       {\"type\": \"subperiod_consistency\"}\n   ],\n   \"expected_annualized_sharpe\": 0.7,\n   \"expected_decay_half_life_months\": 36\n  },\n  {\n   \"name\": \"Hypothesis 7\",\n   \"mechanism\": \"Firms with high asset growth and low bid-ask spread are likely to be growing and highly liquid, which can be advantageous in a bullish market.\",\n   \"expression\": {\n       \"terms\": [{\"weight\": 1, \"primitive\": \"AssetGrowth\"}, {\"weight\": -0.5, \"primitive\": \"BidAskSpread\"}],\n       \"regime\": \"MKT_TRAILING_12M_UP\",\n       \"vol_target\": true\n   },\n   \"auxiliary_predictions\": [\n       {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n       {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n       {\"type\": \"subperiod_consistency\"}\n   ],\n   \"expected_annualized_sharpe\": 0.85,\n   \"expected_decay_half_life_months\": 60\n  },\n  {\n   \"name\": \"Hypothesis 8\",\n   \"mechanism\": \"Firms with a high book to market ratio and low volatility are likely to be underestimated and fundamentally strong, especially during volatile periods.\",\n   \"expression\": {\n       \"terms\": [{\"weight\": 0.5, \"primitive\": \"BM\"}, {\"weight\": -0.5, \"primitive\": \"RealizedVol\"}],\n       \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n       \"vol_target\": false\n   },\n   \"auxiliary_predictions\": [\n       {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n       {\"type\": \"correlation\", \"primitive\": \"Size\", \"bound\": \"below\", \"threshold\": 0.3},\n       {\"type\": \"subperiod_consistency\"}\n   ],\n   \"expected_annualized_sharpe\": 0.75,\n   \"expected_decay_half_life_months\": 48\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2965,
+   "completion_tokens": 1701,
+   "total_tokens": 4666,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

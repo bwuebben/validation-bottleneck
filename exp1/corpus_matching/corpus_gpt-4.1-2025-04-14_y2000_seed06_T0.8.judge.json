@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:28:35.234839+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2000_seed06_T0.8.json",
+  "prompt_sha256": "b36b833a7802209d9b7d8442ef94077972399d07c7075c5afd31f864a01c8965"
+ },
+ "response": {
+  "id": "chatcmpl-E4zwFUkaziPRvAoJ6Ox9Zri0sK4ln",
+  "object": "chat.completion",
+  "created": 1784860111,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Both measure customer concentration, but Herf uses Herfindahl, not top-3 sum.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses capitalized/total expense ratio.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"Insider loan guarantees not covered in library predictors.\"},\n  {\"index\": 3, \"match\": \"DelCOA\", \"strength\": \"related\", \"reason\": \"Both involve changes in current operating assets, but volatility is new.\"},\n  {\"index\": 4, \"match\": \"DelCOL\", \"strength\": \"close\", \"reason\": \"DelCOL is change in current liabilities; DPO change is similar.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"COGS autocorrelation not present in library predictors.\"},\n  {\"index\": 6, \"match\": \"CitationsRD\", \"strength\": \"close\", \"reason\": \"CitationsRD uses patent citations, but not their growth rate.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"Contingent liabilities as percent of assets not in library.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"R&D amortization/capitalized R&D ratio not present in library.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"Non-GAAP earnings adjustment count not in library predictors.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2722,
+   "completion_tokens": 373,
+   "total_tokens": 3095,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

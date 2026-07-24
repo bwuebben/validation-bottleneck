@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:14:19.273253+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 2,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ziP3BWZaFUNa91POan5KxfKRWEq",
+  "object": "chat.completion",
+  "created": 1784859253,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Short-Term Earnings Acceleration\", \"construction\": \"Compute the change in quarterly earnings growth rate: (most recent quarterly EPS - EPS one quarter ago) minus (EPS one quarter ago - EPS two quarters ago), divided by stock price. Use data from quarterly filings.\", \"rationale\": \"Rapid acceleration in earnings growth may signal underappreciated improvement in fundamentals not yet reflected in prices.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Net Debt Change Yield\", \"construction\": \"Calculate (total debt minus cash and short-term investments) change over the past year, divided by market capitalization.\", \"rationale\": \"Firms reducing net debt may be improving balance sheet strength, which could lead to higher subsequent returns if the market under-reacts.\", \"higher_returns_for\": \"large negative values of the measure\"}, {\"name\": \"Employee Efficiency Ratio\", \"construction\": \"Total annual sales divided by number of employees (from 10-K), then divided by market capitalization.\", \"rationale\": \"Firms with greater sales per employee relative to their market value may be more operationally efficient and undervalued by investors.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Recent Insider Transaction Ratio\", \"construction\": \"Sum of net purchases (insider buys minus sells) over the last 6 months, divided by shares outstanding.\", \"rationale\": \"Net insider buying may indicate undervaluation or positive private information not yet reflected in the price.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Off-Balance Sheet Commitment Ratio\", \"construction\": \"Estimated future operating lease commitments (disclosed in footnotes) divided by total assets.\", \"rationale\": \"Firms with lower off-balance sheet liabilities may have less hidden leverage risk, potentially leading to higher future returns.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Late Filer Flag\", \"construction\": \"Indicator variable equal to 1 if the most recent 10-K or 10-Q filing was delayed beyond SEC deadline by more than 7 days, 0 otherwise.\", \"rationale\": \"Delayed filings may signal financial distress or management issues, likely penalized by the market.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Within-Industry Dividend Initiator\", \"construction\": \"Indicator variable equal to 1 if the firm initiated a dividend in the last year, and its industry peer group dividend initiation rate is below the median.\", \"rationale\": \"Dividend initiations in low-dividend industries may provide a stronger positive signal of financial health and confidence.\", \"higher_returns_for\": \"firms flagged by the indicator\"}, {\"name\": \"Preliminary Earnings Guidance Surprise\", \"construction\": \"Difference between most recent management preliminary earnings guidance and consensus analyst forecast, divided by stock price.\", \"rationale\": \"Positive surprises in guidance may go underappreciated by the market and predict outperformance.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Inventory Write-Down Frequency\", \"construction\": \"Count of inventory write-downs taken in the last three years, from 10-K notes.\", \"rationale\": \"Frequent inventory write-downs may indicate persistent operational inefficiencies or demand misestimation.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Relative Auditor Tenure\", \"construction\": \"Years with current auditor divided by industry average auditor tenure.\", \"rationale\": \"Unusually short auditor tenures may be associated with riskier or less transparent firms.\", \"higher_returns_for\": \"high values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 753,
+   "total_tokens": 1022,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_294c310c0b"
+ }
+}

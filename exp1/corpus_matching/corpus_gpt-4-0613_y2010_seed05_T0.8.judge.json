@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:26:35.253025+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y2010_seed05_T0.8.json",
+  "prompt_sha256": "5784a495fca436154615393913cc056cacd2c693e33a5ee5c19505f3454f8a2f"
+ },
+ "response": {
+  "id": "chatcmpl-E4zuK4PCR8WWx30YhKKqP5plmGlAY",
+  "object": "chat.completion",
+  "created": 1784859992,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No CEO tenure or similar management tenure variable in library.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No social media or network presence variable in library.\"},\n  {\"index\": 2, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Both use patent counts and citations as innovation proxies.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No executive gender diversity or similar diversity variable in library.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No automation-specific capex or technology adoption variable in library.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No green/renewable energy investment or ESG variable in library.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No charitable giving or corporate philanthropy variable in library.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No employee satisfaction or Glassdoor-type variable in library.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No cybersecurity or data security investment variable in library.\"},\n  {\"index\": 9, \"match\": \"ChAssetTurnover\", \"strength\": \"close\", \"reason\": \"Inventory turnover is a component of asset turnover change.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2562,
+   "completion_tokens": 351,
+   "total_tokens": 2913,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

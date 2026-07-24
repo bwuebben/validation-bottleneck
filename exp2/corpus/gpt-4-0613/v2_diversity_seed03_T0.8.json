@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:55:45.220219+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 3,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yTnrk4At1jbOlsKfBloimbPCFTw",
+  "object": "chat.completion",
+  "created": 1784854503,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [ \n    {\"name\": \"Hypothesis_1\", \n     \"mechanism\": \"Leverage amplifies the impact of changes in Asset Growth, making companies with higher leverage more sensitive to changes in Asset Growth, leading to higher returns.\", \n     \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"AssetGrowth\"}, {\"weight\": 1.0, \"primitive\": \"Beta\"}], \n                    \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \n                    \"vol_target\": true}, \n     \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"}, \n                              {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, \n                              {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"above\", \"threshold\": 0.3}], \n     \"expected_annualized_sharpe\": 0.5, \n     \"expected_decay_half_life_months\": 24},\n\n   {\"name\": \"Hypothesis_2\", \n     \"mechanism\": \"Market overreaction to short term reversal stocks can lead to long term reversal, witnessed in stocks with high Bid-Ask spread and volatility.\", \n     \"expression\": {\"terms\": [{\"weight\": -1.0, \"primitive\": \"STreversal\"}, {\"weight\": 1.0, \"primitive\": \"BidAskSpread\"}, {\"weight\": 1.0, \"primitive\": \"VolSD\"}], \n                    \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \n                    \"vol_target\": true}, \n     \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"}, \n                              {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, \n                              {\"type\": \"correlation\", \"primitive\": \"VolSD\", \"bound\": \"above\", \"threshold\": 0.3}], \n     \"expected_annualized_sharpe\": 0.6, \n     \"expected_decay_half_life_months\": 24},\n\n    {\"name\": \"Hypothesis_3\", \n     \"mechanism\": \"Firms with high R&D investment are more likely to experience earnings surprise due to unexpected innovation outcomes.\", \n     \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": -1.0, \"primitive\": \"EarningsSurprise\"}], \n                    \"regime\": \"MKT_TRAILING_12M_UP\", \n                    \"vol_target\": true}, \n     \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, \n                              {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, \n                              {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}], \n     \"expected_annualized_sharpe\": 0.4, \n     \"expected_decay_half_life_months\": 30},\n\n    {\"name\": \"Hypothesis_4\", \n     \"mechanism\": \"Firms in high Herfindahl index industries can sustain high profit margins due to low competition, leading to higher returns.\", \n     \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Herf\"}, {\"weight\": 1.0, \"primitive\": \"BM\"}], \n                    \"regime\": \"TERM_SPREAD_POSITIVE\", \n                    \"vol_target\": true}, \n     \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, \n                              {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, \n                              {\"type\": \"correlation\", \"primitive\": \"Herf\", \"bound\": \"above\", \"threshold\": 0.3}], \n     \"expected_annualized_sharpe\": 0.7, \n     \"expected_decay_half_life_months\": 18},\n\n    {\"name\": \"Hypothesis_5\", \n     \"mechanism\": \"Firms with high Intangible returns using CFtoP and low Short Interest are likely to have sustainable business models leading to higher returns.\", \n     \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"IntanCFP\"}, {\"weight\": -1.0, \"primitive\": \"ShortInterest\"}], \n                    \"regime\": \"TERM_SPREAD_NEGATIVE\", \n                    \"vol_target\": true}, \n     \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, \n                              {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, \n                              {\"type\": \"correlation\", \"primitive\": \"ShortInterest\", \"bound\": \"below\", \"threshold\": 0.3}], \n     \"expected_annualized_sharpe\": 0.6, \n     \"expected_decay_half_life_months\": 24},\n\n    {\"name\": \"Hypothesis_6\", \n     \"mechanism\": \"Firms with high employee growth hire and have strong momentum, leading to higher returns.\", \n     \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"hire\"}, {\"weight\": 1.0, \"primitive\": \"Mom6m\"}], \n                    \"regime\": \"MKT_TRAILING_12M_DOWN\", \n                    \"vol_target\": true}, \n     \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, \n                              {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}, \n                              {\"type\": \"correlation\", \"primitive\": \"hire\", \"bound\": \"above\", \"threshold\": 0.3}], \n     \"expected_annualized_sharpe\": 0.5, \n     \"expected_decay_half_life_months\": 18},\n\n    {\"name\": \"Hypothesis_7\", \n     \"mechanism\": \"Firms with high Citations to R&D expenses are likely to have superior innovation leading to higher returns.\", \n     \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"CitationsRD\"}, {\"weight\": -1.0, \"primitive\": \"ShareIss5Y\"}], \n                    \"regime\": null, \n                    \"vol_target\": true}, \n     \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, \n                              {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, \n                              {\"type\": \"correlation\", \"primitive\": \"CitationsRD\", \"bound\": \"above\", \"threshold\": 0.3}], \n     \"expected_annualized_sharpe\": 0.6, \n     \"expected_decay_half_life_months\": 24},\n\n    {\"name\": \"Hypothesis_8\", \n     \"mechanism\": \"A positive change in net operating assets can lead to higher returns as it signals a healthy change in the operations of the firm.\", \n     \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"ChNNCOA\"}, {\"weight\": -1.0, \"primitive\": \"TotalAccruals\"}], \n                    \"regime\": \"MKT_TRAILING_12M_UP\", \n                    \"vol_target\": true}, \n     \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, \n                              {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, \n                              {\"type\": \"correlation\", \"primitive\": \"ChNNCOA\", \"bound\": \"above\", \"threshold\": 0.3}], \n     \"expected_annualized_sharpe\": 0.6, \n     \"expected_decay_half_life_months\": 24}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2965,
+   "completion_tokens": 1772,
+   "total_tokens": 4737,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

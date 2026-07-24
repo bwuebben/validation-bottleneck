@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:15:40.606938+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 2,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ynKkb2YlYvbyjmJwTgQ62sBFXJY",
+  "object": "chat.completion",
+  "created": 1784855714,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"Growth Efficiency Composite\",\n      \"mechanism\": \"Investors often misprice the efficiency of growth investments, overly focusing on growth rates without considering efficiency. This composite captures firms with efficient growth strategies, which should outperform as they generate higher returns on invested capital.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"AssetGrowth\"},\n          {\"weight\": -0.5, \"primitive\": \"ChInvIA\"},\n          {\"weight\": 1.0, \"primitive\": \"GrSaleToGrOverhead\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.7,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Financial Distress Resilience\",\n      \"mechanism\": \"During financial distress, firms with strong governance and low leverage are better positioned to survive and potentially thrive, resulting in a premium for stocks exhibiting these characteristics.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"Governance\"},\n          {\"weight\": -1.0, \"primitive\": \"MarketLeverage\"},\n          {\"weight\": 0.5, \"primitive\": \"OScore\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"Governance\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.8,\n      \"expected_decay_half_life_months\": 48\n    },\n    {\n      \"name\": \"R&D Innovation Momentum\",\n      \"mechanism\": \"Firms with a strong recent increase in R&D expenditure while maintaining profitability are likely to be future winners due to their innovative capabilities, leading to sustained momentum in their stock returns.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"SurpriseRD\"},\n          {\"weight\": -0.5, \"primitive\": \"RD\"},\n          {\"weight\": 0.5, \"primitive\": \"OperProfRD\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": 60\n    },\n    {\n      \"name\": \"Operational Leverage Impact\",\n      \"mechanism\": \"Firms with high operational leverage benefit more during periods of economic expansion but suffer during contractions, leading to an altered risk-return profile that investors can exploit under certain market conditions.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"OPLeverage\"},\n          {\"weight\": 0.5, \"primitive\": \"ChNWC\"},\n          {\"weight\": -0.5, \"primitive\": \"DelFINL\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"OPLeverage\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.75,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"Liquidity Fragility\",\n      \"mechanism\": \"Stocks with improving bid-ask spreads and low systematic volatility indicate strengthening liquidity, which is often underappreciated by the market, providing a return premium to those identifying it early.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"BidAskSpread\"},\n          {\"weight\": -0.5, \"primitive\": \"BetaLiquidityPS\"},\n          {\"weight\": 0.5, \"primitive\": \"betaVIX\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"opposite_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.85,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"Analyst Underreaction to Changes\",\n      \"mechanism\": \"Analysts often underreact to recent changes in expectations and fundamentals due to behavioral biases, resulting in a lagged adjustment in stock prices that attentive investors can exploit.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"ChangeInRecommendation\"},\n          {\"weight\": 0.5, \"primitive\": \"ChForecastAccrual\"},\n          {\"weight\": -1.0, \"primitive\": \"AnalystRevision\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.65,\n      \"expected_decay_half_life_months\": null\n    },\n    {\n      \"name\": \"Strategic Cost Management\",\n      \"mechanism\": \"Firms that strategically manage costs without sacrificing growth can achieve superior profitability and thus provide a return premium, especially when markets are less efficient.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"OperProf\"},\n          {\"weight\": -0.5, \"primitive\": \"IntanSP\"},\n          {\"weight\": 0.5, \"primitive\": \"ChTax\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_DOWN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.6,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Strategic Innovation Cycle\",\n      \"mechanism\": \"Firms that effectively time their innovation cycle, i.e., ramp up innovation during market downturns for future readiness, tend to yield higher returns when markets rebound.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"PatentsRD\"},\n          {\"weight\": -0.5, \"primitive\": \"RDIPO\"},\n          {\"weight\": 1.0, \"primitive\": \"IntanBM\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n        {\"type\": \"correlation\", \"primitive\": \"PatentsRD\", \"bound\": \"above\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.95,\n      \"expected_decay_half_life_months\": 48\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2903,
+   "completion_tokens": 1994,
+   "total_tokens": 4897,
+   "prompt_tokens_details": {
+    "cached_tokens": 2688,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

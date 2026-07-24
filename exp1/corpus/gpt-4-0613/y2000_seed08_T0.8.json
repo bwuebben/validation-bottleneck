@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:55:52.871961+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 8,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zQQ1PB9n2fm1hbwXijcXreWESIs",
+  "object": "chat.completion",
+  "created": 1784858138,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n\"predictors\": [\n{\n\"name\": \"Internet Adoption Ratio\",\n\"construction\": \"The proportion of a firm's operations or sales that are internet-based.\",\n\"rationale\": \"Firms that are early adopters of the internet may be better positioned to gain competitive advantage in the new economy.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Product Lifecycle Stage\",\n\"construction\": \"Estimated stage of a company's core product's lifecycle, based on sales growth and analyst reports.\",\n\"rationale\": \"Firms with products in the growth stage may be poised for above-average earnings growth.\",\n\"higher_returns_for\": \"Stocks in the growth stage of the product lifecycle\"\n},\n{\n\"name\": \"Corporate Governance Score\",\n\"construction\": \"Scores based on the quality of a firm's governance practices, using data from public filings and proxy statements.\",\n\"rationale\": \"Firms with better governance may pose less risk and could be more likely to generate shareholder value over time.\",\n\"higher_returns_for\": \"High corporate governance scores\"\n},\n{\n\"name\": \"Workforce Education Level\",\n\"construction\": \"Average education level of a firm's workforce, based on publicly-available demographic data.\",\n\"rationale\": \"Firms with a more educated workforce may be more innovative and productive.\",\n\"higher_returns_for\": \"High workforce education levels\"\n},\n{\n\"name\": \"Brand Value Contribution\",\n\"construction\": \"Estimated contribution of brand value to a firm's market cap, based on analyst estimates and brand surveys.\",\n\"rationale\": \"Strong brands may reduce business risk and increase customer loyalty and pricing power.\",\n\"higher_returns_for\": \"High brand value contributions\"\n},\n{\n\"name\": \"Employee Satisfaction\",\n\"construction\": \"Measure of employee satisfaction, using data from anonymous employee reviews on early internet job sites.\",\n\"rationale\": \"Happier employees may result in better customer service and lower turnover costs.\",\n\"higher_returns_for\": \"High employee satisfaction\"\n},\n{\n\"name\": \"IP Portfolio Strength\",\n\"construction\": \"Measure of the size and quality of a firm's intellectual property portfolio, based on patent filings and citations.\",\n\"rationale\": \"A strong IP portfolio may provide a competitive advantage and potential for licensing revenue.\",\n\"higher_returns_for\": \"Strong IP portfolios\"\n},\n{\n\"name\": \"Environmental Sustainability Score\",\n\"construction\": \"Scores based on a firm's environmental practices and impact, using data from public filings and third-party reports.\",\n\"rationale\": \"Firms with strong environmental practices may pose less risk and attract investment from increasingly environmentally-conscious investors.\",\n\"higher_returns_for\": \"High environmental sustainability scores\"\n},\n{\n\"name\": \"Customer Retention Rate\",\n\"construction\": \"Measure of a firm's customer retention rate, based on publicly-available customer data and management reports.\",\n\"rationale\": \"High customer retention may indicate strong customer loyalty and reduce marketing and customer acquisition costs.\",\n\"higher_returns_for\": \"High customer retention rates\"\n},\n{\n\"name\": \"Supply Chain Efficiency\",\n\"construction\": \"Measure of a firm's supply chain efficiency, based on logistics and operations data in public filings.\",\n\"rationale\": \"An efficient supply chain can reduce costs and enable a firm to respond more quickly to market changes.\",\n\"higher_returns_for\": \"High supply chain efficiency\"\n}\n]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 664,
+   "total_tokens": 934,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

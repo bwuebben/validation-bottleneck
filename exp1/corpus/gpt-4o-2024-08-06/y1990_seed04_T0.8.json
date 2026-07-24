@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:03:49.696613+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 4,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zYBZYnXkrtfDngJ9S9Ekj3o0GFA",
+  "object": "chat.completion",
+  "created": 1784858619,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n    \"predictors\": [\n        {\n            \"name\": \"R&D Intensity\",\n            \"construction\": \"Total R&D expenses divided by total sales. Data from firm 10-K filings over the past year.\",\n            \"rationale\": \"Firms with higher R&D spending relative to sales may signal innovative potential and future growth not yet reflected in stock prices.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Employee Productivity\",\n            \"construction\": \"Total sales divided by number of employees. Data from firm 10-K filings over the past year.\",\n            \"rationale\": \"Higher sales per employee can indicate efficient use of human resources and potentially higher profitability.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Capital Expenditure Growth\",\n            \"construction\": \"Annual growth rate of capital expenditures over the past three years. Data from firm 10-K filings.\",\n            \"rationale\": \"Increasing capital expenditures can signal management's confidence in future growth prospects, which may lead to higher future returns.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Insider Trading Activity\",\n            \"construction\": \"Net number of insider shares purchased minus shares sold over the past six months. Data from SEC Form 4 filings.\",\n            \"rationale\": \"Insiders often have better information about the firm's prospects, and increased insider buying can reflect positive future performance.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Brand Equity\",\n            \"construction\": \"Advertising expenses divided by total sales. Data from firm 10-K filings over the past year.\",\n            \"rationale\": \"Firms with strong brand equity may have pricing power and customer loyalty, potentially leading to higher returns.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Dividend Growth Stability\",\n            \"construction\": \"Standard deviation of annual dividend growth rates over the past five years. Data from dividend history.\",\n            \"rationale\": \"Stable dividend growth might indicate a firm's stable cash flow, potentially leading to higher perceived reliability and returns.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        },\n        {\n            \"name\": \"Sustainable Earnings Growth\",\n            \"construction\": \"Five-year average of the return on equity minus five-year average of earnings growth rate. Data from firm 10-K filings.\",\n            \"rationale\": \"Firms with sustainable earnings growth are able to generate returns more efficiently, which can be rewarded by the market.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        },\n        {\n            \"name\": \"Supply Chain Integration\",\n            \"construction\": \"Proportion of COGS represented by in-house production over the past year. Data from firm 10-K filings.\",\n            \"rationale\": \"Firms with greater supply chain integration can potentially control costs better and improve margins, leading to higher returns.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Market Share Growth\",\n            \"construction\": \"Change in a firm's market share within its industry over the past year. Data from industry reports and firm sales figures.\",\n            \"rationale\": \"Increasing market share can signal competitive advantages and potential for future revenue growth.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Environmental Efficiency\",\n            \"construction\": \"Total energy consumption divided by total sales. Data from firm environmental reports and 10-K filings over the past year.\",\n            \"rationale\": \"Firms that use energy more efficiently may face lower regulatory risks and benefit from cost savings, enhancing returns.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        }\n    ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 801,
+   "total_tokens": 1070,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_94cd41efba"
+ }
+}

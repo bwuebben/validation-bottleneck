@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:27:16.628224+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 3,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yyfKPD7ghF2I9zKArLWzb8aD0DJ",
+  "object": "chat.completion",
+  "created": 1784856417,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Strategic Buyback\u2013R&D Allocation\",\n    \"mechanism\": \"Firms that simultaneously engage in share repurchases and maintain above-average R&D intensity are likely exploiting undervaluation while supporting future growth, signaling superior capital allocation. The blend captures a distinct premium not explained by either action alone, as it screens for firms avoiding short-termism and financial engineering.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"ShareRepurchase\"},\n        {\"weight\": 0.5, \"primitive\": \"RDcap\"},\n        {\"weight\": -0.5, \"primitive\": \"NetEquityFinance\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"ShareRepurchase\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.65,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Supply Chain Insider Advantage\",\n    \"mechanism\": \"Firms that benefit from both strong customer momentum and positive analyst revisions in their supply chain are likely to have unique forward-looking information advantages, which neither predictor fully captures alone. The composite targets supply chain spillovers reinforced by analyst attention.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"iomom_cust\"},\n        {\"weight\": 0.5, \"primitive\": \"AnalystRevision\"},\n        {\"weight\": 1.0, \"primitive\": \"iomom_supp\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_UP\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.60,\n    \"expected_decay_half_life_months\": 30\n  },\n  {\n    \"name\": \"Overlooked Intangible Edge\",\n    \"mechanism\": \"Firms with high intangible-related book-to-market ratios and organizational capital but low analyst coverage can be mispriced due to underappreciation of intangibles, especially when analysts are slow to recognize value. The composite exploits this informational inefficiency.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"IntanBM\"},\n        {\"weight\": 0.5, \"primitive\": \"OrgCap\"},\n        {\"weight\": -0.5, \"primitive\": \"ChNAnalyst\"}\n      ],\n      \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"IntanBM\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.52,\n    \"expected_decay_half_life_months\": 42\n  },\n  {\n    \"name\": \"Earnings Consistency\u2013Volatility Disconnect\",\n    \"mechanism\": \"Stocks with consistent earnings and low realized volatility, but high forecast dispersion, may be overlooked by simple quality or risk screens. This blend captures persistent mispricings when consensus lags despite financial stability.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"EarningsConsistency\"},\n        {\"weight\": 0.5, \"primitive\": \"RealizedVol\"},\n        {\"weight\": -1.0, \"primitive\": \"ForecastDispersion\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"correlation\", \"primitive\": \"EarningsConsistency\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"},\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}\n    ],\n    \"expected_annualized_sharpe\": 0.48,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Post-IPO Efficient Growth\",\n    \"mechanism\": \"Firms that recently IPO\u2019d and show high asset turnover while limiting subsequent equity issuance may benefit from lasting post-IPO underpricing and operational discipline, a channel distinct from generic growth or issuance effects.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"AgeIPO\"},\n        {\"weight\": 0.5, \"primitive\": \"ChAssetTurnover\"},\n        {\"weight\": -1.0, \"primitive\": \"NetEquityFinance\"}\n      ],\n      \"regime\": \"TERM_SPREAD_NEGATIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.56,\n    \"expected_decay_half_life_months\": 18\n  },\n  {\n    \"name\": \"Unloved Seasonals\",\n    \"mechanism\": \"Stocks demonstrating both off-season positive momentum and negative analyst forecast dispersion in low-volatility markets are likely to benefit from neglected information flow and underreaction to non-calendar news, creating a unique return source distinct from generic momentum.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"MomOffSeason\"},\n        {\"weight\": -1.0, \"primitive\": \"ForecastDispersion\"},\n        {\"weight\": 0.5, \"primitive\": \"VolumeTrend\"}\n      ],\n      \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"subperiod_consistency\"},\n      {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.44,\n    \"expected_decay_half_life_months\": 15\n  },\n  {\n    \"name\": \"Liquidity-driven Conglomerate Discount\",\n    \"mechanism\": \"By combining negative price delay, high Amihud illiquidity, and conglomerate return, this composite isolates liquidity-driven mispricings in multi-business firms, going beyond standard illiquidity or conglomerate discount explanations.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -1.0, \"primitive\": \"PriceDelayRsq\"},\n        {\"weight\": 1.0, \"primitive\": \"Illiquidity\"},\n        {\"weight\": 0.5, \"primitive\": \"retConglomerate\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"Illiquidity\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.58,\n    \"expected_decay_half_life_months\": 48\n  },\n  {\n    \"name\": \"Defensive Franchise Value\",\n    \"mechanism\": \"Firms with high brand capital investment, strong cash productivity, and low implied volatility are resilient to macro shocks and benefit from lasting franchise effects not fully captured by traditional quality or volatility screens.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"BrandInvest\"},\n        {\"weight\": 0.5, \"primitive\": \"CashProd\"},\n        {\"weight\": -1.0, \"primitive\": \"CPVolSpread\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"}\n    ],\n    \"expected_annualized_sharpe\": 0.50,\n    \"expected_decay_half_life_months\": null\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2903,
+   "completion_tokens": 2106,
+   "total_tokens": 5009,
+   "prompt_tokens_details": {
+    "cached_tokens": 2688,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_b5121c360f"
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:01:37.251406+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 5,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zVxQkacK0ed90R5G9MXen9KWPAX",
+  "object": "chat.completion",
+  "created": 1784858481,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\"name\": \"CEO Tenure\", \"construction\": \"Time since the CEO took office, measured in years.\", \"rationale\": \"Long-tenured CEOs might have more company knowledge and industry experience.\", \"higher_returns_for\": \"stocks with CEOs who have longer tenure\"},\n  {\"name\": \"Social Network Influence\", \"construction\": \"Number of followers on the company's official Twitter account.\", \"rationale\": \"Companies with a strong social network presence might have better reputation and customer loyalty.\", \"higher_returns_for\": \"stocks with higher number of followers on Twitter\"},\n  {\"name\": \"Patent Portfolio Value\", \"construction\": \"Number of patents held by the company multiplied by the average citation count per patent.\", \"rationale\": \"Companies with valuable patents might have more innovative potential.\", \"higher_returns_for\": \"stocks with higher patent portfolio values\"},\n  {\"name\": \"Executive Gender Diversity\", \"construction\": \"Proportion of female executives in the company.\", \"rationale\": \"Gender diversity in executive positions can lead to better decision making.\", \"higher_returns_for\": \"stocks with higher executive gender diversity\"},\n  {\"name\": \"Automation Adoption\", \"construction\": \"Capital expenditures on automation technologies divided by total capital expenditures.\", \"rationale\": \"Companies that adopt automation technologies might be more efficient and have higher productivity.\", \"higher_returns_for\": \"stocks with higher automation adoption\"},\n  {\"name\": \"Green Energy Investment\", \"construction\": \"Investments in renewable energy as a proportion of total investments.\", \"rationale\": \"Companies that invest in green energy might be more sustainable and forward-looking.\", \"higher_returns_for\": \"stocks with higher green energy investment\"},\n  {\"name\": \"Charitable Contributions\", \"construction\": \"Charitable contributions as a proportion of profits.\", \"rationale\": \"Companies that give more to charity might have better social responsibility and public image.\", \"higher_returns_for\": \"stocks with higher charitable contributions\"},\n  {\"name\": \"Employee Satisfaction\", \"construction\": \"Average rating on Glassdoor.\", \"rationale\": \"Companies with high employee satisfaction might have better employee morale and productivity.\", \"higher_returns_for\": \"stocks with higher employee satisfaction\"},\n  {\"name\": \"Data Security Measures\", \"construction\": \"Investment in cybersecurity as a proportion of total investment.\", \"rationale\": \"Companies that invest more in data security might be better prepared against cyber threats.\", \"higher_returns_for\": \"stocks with higher data security measures\"},\n  {\"name\": \"Supply Chain Efficiency\", \"construction\": \"Inventory turnover rate.\", \"rationale\": \"Companies with more efficient supply chains might have lower costs and higher profitability.\", \"higher_returns_for\": \"stocks with higher supply chain efficiency\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 551,
+   "total_tokens": 821,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

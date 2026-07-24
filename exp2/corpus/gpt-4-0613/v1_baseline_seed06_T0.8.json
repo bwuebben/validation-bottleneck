@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:41:00.130625+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 6,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yFZLS8AWOtrpiNnsTZSuy6VDRwH",
+  "object": "chat.completion",
+  "created": 1784853621,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n    {\n        \"name\": \"Hypothesis 1\",\n        \"mechanism\": \"Firms with high accruals and high cash-flow to price ratio have undervalued stocks creating arbitrage opportunities.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 0.5, \"primitive\": \"Accruals\"},\n                {\"weight\": 0.5, \"primitive\": \"CF\"}\n            ],\n            \"regime\": null,\n            \"vol_target\": false\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n            {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n            {\"type\": \"correlation\", \"primitive\": \"AbnormalAccruals\", \"bound\": \"below\", \"threshold\": 0.3}\n        ],\n        \"expected_annualized_sharpe\": 0.6,\n        \"expected_decay_half_life_months\": 12\n    },\n    {\n        \"name\": \"Hypothesis 2\",\n        \"mechanism\": \"Firms with high dividends and low volume are less likely to be represented in benchmarks, leading to lower risk and higher returns.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1, \"primitive\": \"DivYieldST\"},\n                {\"weight\": -0.5, \"primitive\": \"ShareVol\"}\n            ],\n            \"regime\": \"MKT_TRAILING_12M_DOWN\",\n            \"vol_target\": true\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n            {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n            {\"type\": \"subperiod_consistency\"}\n        ],\n        \"expected_annualized_sharpe\": 0.7,\n        \"expected_decay_half_life_months\": 24\n    },\n    {\n        \"name\": \"Hypothesis 3\",\n        \"mechanism\": \"Firms with higher short term reversal and lower bid-ask spread are less risk-prone, leading to higher returns.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1, \"primitive\": \"STreversal\"},\n                {\"weight\": -0.5, \"primitive\": \"BidAskSpread\"}\n            ],\n            \"regime\": \"MKT_TRAILING_12M_UP\",\n            \"vol_target\": false\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n            {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n            {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}\n        ],\n        \"expected_annualized_sharpe\": 0.5,\n        \"expected_decay_half_life_months\": 10\n    },\n    {\n        \"name\": \"Hypothesis 4\",\n        \"mechanism\": \"Firms with higher asset growth and lower cash to assets ratio are more likely to be undervalued, leading to higher returns.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 0.5, \"primitive\": \"AssetGrowth\"},\n                {\"weight\": -1, \"primitive\": \"Cash\"}\n            ],\n            \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n            \"vol_target\": true\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"},\n            {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n            {\"type\": \"subperiod_consistency\"}\n        ],\n        \"expected_annualized_sharpe\": 0.7,\n        \"expected_decay_half_life_months\": 18\n    },\n    {\n        \"name\": \"Hypothesis 5\",\n        \"mechanism\": \"Firms with high long-term EPS forecast and low short interest are likely to outperform in the market.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 0.5, \"primitive\": \"fgr5yrLag\"},\n                {\"weight\": -0.5, \"primitive\": \"ShortInterest\"}\n            ],\n            \"regime\": null,\n            \"vol_target\": false\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n            {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n            {\"type\": \"correlation\", \"primitive\": \"RDS\", \"bound\": \"below\", \"threshold\": 0.3}\n        ],\n        \"expected_annualized_sharpe\": 0.6,\n        \"expected_decay_half_life_months\": 12\n    },\n    {\n        \"name\": \"Hypothesis 6\",\n        \"mechanism\": \"Firms with high book leverage and low stock issuance are less likely to be overpriced, leading to higher returns.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1, \"primitive\": \"BookLeverage\"},\n                {\"weight\": -0.5, \"primitive\": \"ShareIss1Y\"}\n            ],\n            \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n            \"vol_target\": true\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n            {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n            {\"type\": \"subperiod_consistency\"}\n        ],\n        \"expected_annualized_sharpe\": 0.7,\n        \"expected_decay_half_life_months\": 24\n    },\n    {\n        \"name\": \"Hypothesis 7\",\n        \"mechanism\": \"Firms with high R&D over market cap and lower payout yield are likely to have higher growth potential.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1, \"primitive\": \"RD\"},\n                {\"weight\": -0.5, \"primitive\": \"PayoutYield\"}\n            ],\n            \"regime\": \"MKT_TRAILING_12M_UP\",\n            \"vol_target\": false\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"},\n            {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n            {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}\n        ],\n        \"expected_annualized_sharpe\": 0.5,\n        \"expected_decay_half_life_months\": 10\n    },\n    {\n        \"name\": \"Hypothesis 8\",\n        \"mechanism\": \"Firms with higher asset growth and lower cash to assets ratio are more likely to be undervalued, leading to higher returns.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 0.5, \"primitive\": \"AssetGrowth\"},\n                {\"weight\": -1, \"primitive\": \"Cash\"}\n            ],\n            \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n            \"vol_target\": true\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"},\n            {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n            {\"type\": \"subperiod_consistency\"}\n        ],\n        \"expected_annualized_sharpe\": 0.7,\n        \"expected_decay_half_life_months\": 18\n    }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2864,
+   "completion_tokens": 1700,
+   "total_tokens": 4564,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

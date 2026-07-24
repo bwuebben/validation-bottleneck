@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:57:06.172943+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 5,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yV69zKBCmFDHHf10K2JMklmLdXA",
+  "object": "chat.completion",
+  "created": 1784854584,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\"name\": \"Hypothesis 1\", \n   \"mechanism\": \"Firms with higher R&D and inventory growth are likely to have future innovative products leading to higher returns.\", \n   \"expression\": {\n     \"terms\": [\n       {\"weight\": 1.0, \"primitive\": \"RD\"}, \n       {\"weight\": 1.0, \"primitive\": \"InvGrowth\"}\n     ], \n     \"regime\": \"MKT_TRAILING_12M_UP\", \n     \"vol_target\": true},\n   \"auxiliary_predictions\": [\n     {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, \n     {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, \n     {\"type\": \"correlation\", \"primitive\": \"RD\", \"bound\": \"above\", \"threshold\": 0.3}\n   ], \n   \"expected_annualized_sharpe\": 0.6, \n   \"expected_decay_half_life_months\": 36},\n\n  {\"name\": \"Hypothesis 2\", \n   \"mechanism\": \"Firms with high cash reserves and high book to market values are likely to be undervalued, leading to higher returns.\", \n   \"expression\": {\n     \"terms\": [\n       {\"weight\": 1.0, \"primitive\": \"Cash\"}, \n       {\"weight\": 1.0, \"primitive\": \"BM\"}\n     ], \n     \"regime\": \"MKT_TRAILING_12M_DOWN\", \n     \"vol_target\": false},\n   \"auxiliary_predictions\": [\n     {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, \n     {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"above\", \"threshold\": 0.3}, \n     {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}\n   ], \n   \"expected_annualized_sharpe\": 0.5, \n   \"expected_decay_half_life_months\": 24},\n\n  {\"name\": \"Hypothesis 3\", \n   \"mechanism\": \"Firms with high short interest and recent equity issuance are prone to short squeeze, leading to higher returns.\", \n   \"expression\": {\n     \"terms\": [\n       {\"weight\": 1.0, \"primitive\": \"ShortInterest\"}, \n       {\"weight\": 1.0, \"primitive\": \"ShareIss1Y\"}\n     ], \n     \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \n     \"vol_target\": true},\n   \"auxiliary_predictions\": [\n     {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, \n     {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}, \n     {\"type\": \"correlation\", \"primitive\": \"ShortInterest\", \"bound\": \"above\", \"threshold\": 0.3}\n   ], \n   \"expected_annualized_sharpe\": 0.7, \n   \"expected_decay_half_life_months\": 18},\n\n  {\"name\": \"Hypothesis 4\", \n   \"mechanism\": \"Firms with high advertising expenditure and firm age can induce customer loyalty, leading to higher returns.\", \n   \"expression\": {\n     \"terms\": [\n       {\"weight\": 1.0, \"primitive\": \"AdExp\"}, \n       {\"weight\": 1.0, \"primitive\": \"FirmAge\"}\n     ], \n     \"regime\": \"TERM_SPREAD_POSITIVE\", \n     \"vol_target\": true},\n   \"auxiliary_predictions\": [\n     {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"}, \n     {\"type\": \"correlation\", \"primitive\": \"AdExp\", \"bound\": \"above\", \"threshold\": 0.3}, \n     {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"}\n   ], \n   \"expected_annualized_sharpe\": 0.4, \n   \"expected_decay_half_life_months\": 30},\n\n  {\"name\": \"Hypothesis 5\", \n   \"mechanism\": \"Firms with high asset growth and low earnings consistency are likely to be overvalued and mean revert, leading to lower returns.\", \n   \"expression\": {\n     \"terms\": [\n       {\"weight\": 1.0, \"primitive\": \"AssetGrowth\"}, \n       {\"weight\": -1.0, \"primitive\": \"EarningsConsistency\"}\n     ], \n     \"regime\": \"MKT_TRAILING_12M_UP\", \n     \"vol_target\": false},\n   \"auxiliary_predictions\": [\n     {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, \n     {\"type\": \"correlation\", \"primitive\": \"EarningsConsistency\", \"bound\": \"below\", \"threshold\": 0.3}, \n     {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"lower\"}\n   ], \n   \"expected_annualized_sharpe\": 0.5, \n   \"expected_decay_half_life_months\": 12},\n\n  {\"name\": \"Hypothesis 6\", \n   \"mechanism\": \"Firms with high R&D capital to assets and recent patenting activity are likely to have future innovative products leading to higher returns.\", \n   \"expression\": {\n     \"terms\": [\n       {\"weight\": 1.0, \"primitive\": \"RDcap\"}, \n       {\"weight\": 1.0, \"primitive\": \"PatentsRD\"}\n     ], \n     \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \n     \"vol_target\": true},\n   \"auxiliary_predictions\": [\n     {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, \n     {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, \n     {\"type\": \"correlation\", \"primitive\": \"RDcap\", \"bound\": \"above\", \"threshold\": 0.3}\n   ], \n   \"expected_annualized_sharpe\": 0.6, \n   \"expected_decay_half_life_months\": 24},\n\n  {\"name\": \"Hypothesis 7\", \n   \"mechanism\": \"Firms with high book leverage and high market leverage are likely to be overleveraged and riskier, leading to higher expected returns.\", \n   \"expression\": {\n     \"terms\": [\n       {\"weight\": 1.0, \"primitive\": \"BookLeverage\"}, \n       {\"weight\": 1.0, \"primitive\": \"Leverage\"}\n     ], \n     \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \n     \"vol_target\": false},\n   \"auxiliary_predictions\": [\n     {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, \n     {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}, \n     {\"type\": \"correlation\", \"primitive\": \"Leverage\", \"bound\": \"above\", \"threshold\": 0.3}\n   ], \n   \"expected_annualized_sharpe\": 0.7, \n   \"expected_decay_half_life_months\": 12},\n\n  {\"name\": \"Hypothesis 8\", \n   \"mechanism\": \"Firms with high past trading volume and high share volume are likely to have high liquidity, leading to lower expected returns.\", \n   \"expression\": {\n     \"terms\": [\n       {\"weight\": 1.0, \"primitive\": \"DolVol\"}, \n       {\"weight\": 1.0, \"primitive\": \"ShareVol\"}\n     ], \n     \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \n     \"vol_target\": false},\n   \"auxiliary_predictions\": [\n     {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, \n     {\"type\": \"correlation\", \"primitive\": \"DolVol\", \"bound\": \"above\", \"threshold\": 0.3}, \n     {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}\n   ], \n   \"expected_annualized_sharpe\": 0.3, \n   \"expected_decay_half_life_months\": 18}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2965,
+   "completion_tokens": 1823,
+   "total_tokens": 4788,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

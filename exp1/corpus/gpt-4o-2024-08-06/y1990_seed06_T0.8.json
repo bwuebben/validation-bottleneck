@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:04:09.491319+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 6,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zYVb9YLwZi8H7RwGemm8CZ7UR55",
+  "object": "chat.completion",
+  "created": 1784858639,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n    \"predictors\": [\n        {\n            \"name\": \"Dividend Momentum\",\n            \"construction\": \"Calculate the percentage change in dividends per share over the past 3 years using data from company financial statements.\",\n            \"rationale\": \"Firms with consistently increasing dividends may signal strong future cash flows and management confidence.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Employee Growth Rate\",\n            \"construction\": \"Measure the compound annual growth rate of the number of employees over the past 5 years using company-reported employee numbers.\",\n            \"rationale\": \"Firms with rapid employee growth may be expanding and capturing market opportunities.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Capex-to-Sales Growth\",\n            \"construction\": \"Compute the growth rate in the ratio of capital expenditures to sales over the last 3 years using financial statement data.\",\n            \"rationale\": \"Increasing capital intensity relative to sales may indicate future revenue growth and competitive positioning.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Debt Maturity Structure\",\n            \"construction\": \"Calculate the proportion of total debt maturing in the next 3 years relative to total long-term debt, from balance sheet data.\",\n            \"rationale\": \"Firms with longer-maturity debt structures may have less refinancing risk and more stable cash flows.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        },\n        {\n            \"name\": \"R&D Efficiency\",\n            \"construction\": \"Divide the 5-year growth rate in sales by the 5-year growth rate in R&D expenditures using financial statement disclosures.\",\n            \"rationale\": \"Higher sales growth relative to R&D spending may indicate efficient use of innovation investments.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Market Reaction to Earnings Surprises\",\n            \"construction\": \"Calculate the cumulative abnormal return over 3 days surrounding earnings announcements that exceed analyst forecasts.\",\n            \"rationale\": \"A strong positive market reaction to earnings surprises may signal underestimated growth prospects.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Insider Trading Volume\",\n            \"construction\": \"Sum the total shares traded by insiders over the past 12 months, from SEC Form 4 filings.\",\n            \"rationale\": \"High volumes of insider buying may indicate strong internal beliefs in undervaluation or growth potential.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Supplier Concentration Risk\",\n            \"construction\": \"Assess the percentage of sales attributable to the top three suppliers, using management discussion & analysis disclosures.\",\n            \"rationale\": \"Lower dependence on key suppliers may reduce operational risk and enhance negotiating power.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        },\n        {\n            \"name\": \"Patent Citation Impact\",\n            \"construction\": \"Count the average number of citations per patent over the last 3 years using patent office data.\",\n            \"rationale\": \"Highly-cited patents may reflect valuable innovations and potential competitive advantages.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Brand Value Growth\",\n            \"construction\": \"Estimate the growth rate in brand value using advertising expenditures and brand recognition surveys.\",\n            \"rationale\": \"Rising brand value can lead to pricing power and customer loyalty, driving future profitability.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        }\n    ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 758,
+   "total_tokens": 1027,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_94cd41efba"
+ }
+}

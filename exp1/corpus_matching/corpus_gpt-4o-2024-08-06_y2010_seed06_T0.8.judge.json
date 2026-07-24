@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:32:46.313015+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4o-2024-08-06/y2010_seed06_T0.8.json",
+  "prompt_sha256": "54d87594dcbeb660c0644167dd8311a2cfdca0002d96c118bbc9dc14e8895fcf"
+ },
+ "response": {
+  "id": "chatcmpl-E500JD4CCoWEGnufeE7VbPA0Ac3i4",
+  "object": "chat.completion",
+  "created": 1784860363,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses sustainability investment as constructed.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee satisfaction or similar surveys.\"},\n  {\"index\": 2, \"match\": \"CitationsRD\", \"strength\": \"close\", \"reason\": \"Both use patent citations, but proposal uses growth rate.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses insider trading activity.\"},\n  {\"index\": 4, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Both use ESG/CSR themes, but different construction.\"},\n  {\"index\": 5, \"match\": \"Herf\", \"strength\": \"exact\", \"reason\": \"Both use Herfindahl index for concentration, applied to customers.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses product launch success rates.\"},\n  {\"index\": 7, \"match\": \"FirmAge\", \"strength\": \"related\", \"reason\": \"Both relate to firm/executive longevity, but different focus.\"},\n  {\"index\": 8, \"match\": \"GrAdExp\", \"strength\": \"close\", \"reason\": \"Both measure growth in R&D, but proposal uses CAGR.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses digital transformation as constructed.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2682,
+   "completion_tokens": 352,
+   "total_tokens": 3034,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

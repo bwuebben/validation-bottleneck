@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:11:54.066255+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 6,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zg6jytkW2HMnGHrpfjkRTh7kCiN",
+  "object": "chat.completion",
+  "created": 1784859110,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Operating Expense Efficiency Ratio\", \"construction\": \"Total operating expenses divided by total revenues, calculated from the most recent annual financial statements.\", \"rationale\": \"Firms with lower expense ratios may be more operationally efficient and thus better positioned for profitability and growth.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Short-Term Asset Growth\", \"construction\": \"Percentage change in current assets over the past fiscal year.\", \"rationale\": \"Rapid expansion of short-term assets may reflect aggressive business activity or inventory build-up, which can precede future operational performance.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Dividend Omission Indicator\", \"construction\": \"A binary variable equal to 1 if a firm eliminated its dividend in the past year, 0 otherwise.\", \"rationale\": \"Dividend omissions might indicate distress, but the subsequent rebound or overreaction could result in higher returns for omitted stocks.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Relative Insider Ownership Change\", \"construction\": \"Change in the percentage of shares held by officers and directors over the most recent fiscal year.\", \"rationale\": \"Increasing insider ownership signals management confidence and alignment with shareholders.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"R&D to Market Equity\", \"construction\": \"Total research & development expense from the most recent annual report divided by current market capitalization.\", \"rationale\": \"High R&D spend relative to firm size may indicate commitment to innovation and future growth potential.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Inventory Write-Off Ratio\", \"construction\": \"Total inventory write-offs over the past year divided by total sales from the same period.\", \"rationale\": \"Frequent or large inventory write-offs may suggest operational issues or poor demand forecasting.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Share Repurchase Intensity\", \"construction\": \"Dollar value of shares repurchased over the past year divided by average market capitalization during the year.\", \"rationale\": \"Firms aggressively buying back shares may signal undervaluation and confidence in future prospects.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Accrual Consistency Score\", \"construction\": \"Standard deviation of annual accruals to total assets over the past five years.\", \"rationale\": \"Firms with more stable accruals may have more predictable and reliable earnings.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Customer Concentration Ratio\", \"construction\": \"Revenue from the largest single customer divided by total revenues from the most recent fiscal year (for firms that disclose this).\", \"rationale\": \"High customer concentration may expose firms to revenue shocks if key customers leave.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Cash Flow Surprise\", \"construction\": \"Difference between operating cash flow and expected cash flow (predicted using a rolling regression on past five years of data), standardized by total assets.\", \"rationale\": \"Positive surprises in cash flow may indicate underappreciated operational strength.\", \"higher_returns_for\": \"high values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 670,
+   "total_tokens": 939,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_801206523b"
+ }
+}

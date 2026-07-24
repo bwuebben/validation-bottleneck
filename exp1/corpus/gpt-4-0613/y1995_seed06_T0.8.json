@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:51:59.092666+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 6,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zMb78QsnuT5e96vAT9LLbTUXHhu",
+  "object": "chat.completion",
+  "created": 1784857901,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Dividend Coverage Ratio\",\n      \"construction\": \"Annual net income divided by annual dividends paid\",\n      \"rationale\": \"Companies with a high dividend coverage ratio are potentially well-positioned to continue paying dividends, which might attract investors and increase demand for the stock\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Revenue Variability\",\n      \"construction\": \"Standard deviation of quarterly revenue over the past 5 years\",\n      \"rationale\": \"Higher variability in revenues might indicate higher risk, which could demand a higher risk premium and thus higher average returns\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Price/Earnings Ratio Momentum\",\n      \"construction\": \"12-month rate of change in the Price/Earnings ratio\",\n      \"rationale\": \"Rapidly increasing P/E ratios may indicate increasing investor expectations about future earnings growth\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Employee Growth\",\n      \"construction\": \"Year-over-year percentage change in number of employees\",\n      \"rationale\": \"Rapid employee growth could be a sign of firm expansion and potential future profit growth\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Asset Turnover Change\",\n      \"construction\": \"Year-over-year percentage change in asset turnover ratio\",\n      \"rationale\": \"Improving efficiency in asset utilization might suggest better management and future profitability\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"R&D Intensity\",\n      \"construction\": \"Annual R&D expenses divided by annual sales\",\n      \"rationale\": \"High R&D intensity could indicate a firm's potential to generate future growth through innovation\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Insider Trading Activity\",\n      \"construction\": \"Total value of insider purchases minus total value of insider sales, over the past quarter\",\n      \"rationale\": \"A high value might suggest insiders' positive expectations about the firm's future\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Debt Maturity Structure\",\n      \"construction\": \"Long-term debt divided by total debt\",\n      \"rationale\": \"Firms with a higher proportion of long-term debt may be seen as less risky, leading to higher stock demand\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Tax Rate Stability\",\n      \"construction\": \"Standard deviation of effective tax rates over the past 5 years\",\n      \"rationale\": \"Firms with stable tax rates may be perceived as less risky, boosting investor demand\",\n      \"higher_returns_for\": \"Low values of the measure\"\n    },\n    {\n      \"name\": \"Advertising Intensity\",\n      \"construction\": \"Annual advertising expenses divided by annual sales\",\n      \"rationale\": \"High advertising intensity might indicate a firm's ability to increase market share and future profitability\",\n      \"higher_returns_for\": \"High values of the measure\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 682,
+   "total_tokens": 952,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

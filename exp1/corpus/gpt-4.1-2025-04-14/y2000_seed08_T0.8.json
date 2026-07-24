@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:15:00.059841+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 8,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zj4OPa5z6BWrB76opSboXVP1iaa",
+  "object": "chat.completion",
+  "created": 1784859294,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Short-Term Earnings Accrual Variability\", \"construction\": \"Compute the standard deviation of quarterly earnings accruals (difference between net income and cash flow from operations) over the past 8 quarters, scaled by average total assets.\", \"rationale\": \"High variability in accruals may indicate earnings management or operational instability, which could be mispriced by investors.\", \"higher_returns_for\": \"stocks with high earnings accrual variability\"}, {\"name\": \"Recent Employee Growth Rate\", \"construction\": \"Calculate the percentage change in the number of employees reported in the most recent annual report compared to 2 years prior.\", \"rationale\": \"Rapid changes in workforce may signal underlying shifts in firm growth prospects or over-expansion.\", \"higher_returns_for\": \"stocks with low recent employee growth rates\"}, {\"name\": \"Supplier Concentration Ratio\", \"construction\": \"For firms disclosing their top 5 suppliers in 10-K filings, sum the percentage of total purchases attributed to those suppliers.\", \"rationale\": \"High supplier concentration may signal vulnerability to supply shocks or bargaining power issues, impacting future returns.\", \"higher_returns_for\": \"stocks with low supplier concentration ratios\"}, {\"name\": \"Dividend Smoothing Persistence\", \"construction\": \"Measure the number of consecutive years with unchanged annual dividends per share over the past decade.\", \"rationale\": \"Persistent dividend smoothing may signal conservative management and information asymmetry.\", \"higher_returns_for\": \"stocks with longer streaks of unchanged dividends\"}, {\"name\": \"Deferred Tax Asset Growth\", \"construction\": \"Calculate the percentage change in deferred tax assets over the trailing 3 years, scaled by total assets.\", \"rationale\": \"Aggressive use of deferred tax assets may indicate earnings management or lower future profitability.\", \"higher_returns_for\": \"stocks with low deferred tax asset growth\"}, {\"name\": \"Off-Balance Sheet Operating Leases\", \"construction\": \"Estimate the present value of future minimum lease payments for operating leases, scaled by total assets, using footnote disclosures.\", \"rationale\": \"High off-balance sheet leverage may be underappreciated by the market and signal higher risk.\", \"higher_returns_for\": \"stocks with high off-balance sheet operating leases\"}, {\"name\": \"Related Party Transaction Intensity\", \"construction\": \"Count the number of related party transactions disclosed in the most recent 10-K, standardized by total assets.\", \"rationale\": \"Frequent related party transactions may reflect weak governance and potential for misappropriation, affecting returns.\", \"higher_returns_for\": \"stocks with low related party transaction intensity\"}, {\"name\": \"R&D Capitalization Ratio\", \"construction\": \"For firms that capitalize R&D, calculate the ratio of capitalized R&D to total reported R&D over the past 3 years.\", \"rationale\": \"A high ratio may indicate aggressive capitalization and overstatement of assets, affecting future returns.\", \"higher_returns_for\": \"stocks with low R&D capitalization ratios\"}, {\"name\": \"Seasonal Inventory Build-up\", \"construction\": \"Measure the average change in inventory from Q3 to Q4 over the past 5 years, scaled by total annual sales.\", \"rationale\": \"Predictable seasonal inventory swings may indicate inefficient inventory management or exposure to demand shocks.\", \"higher_returns_for\": \"stocks with low seasonal inventory build-up\"}, {\"name\": \"Pre-announcement Drift\", \"construction\": \"Calculate the average abnormal return in the 30 days before quarterly earnings announcements over the past 4 quarters.\", \"rationale\": \"Stocks with consistent pre-announcement drift may be subject to information leakage or sentiment-driven price moves.\", \"higher_returns_for\": \"stocks with high positive pre-announcement drift\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 751,
+   "total_tokens": 1020,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_294c310c0b"
+ }
+}

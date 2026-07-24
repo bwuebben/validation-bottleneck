@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:17:43.867398+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 8,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zlhg4MfxUO5slbEHkC6Mg6c4cOy",
+  "object": "chat.completion",
+  "created": 1784859457,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Short Interest Volatility\", \"construction\": \"Standard deviation of monthly short interest (shares short / shares outstanding) over the past 12 months.\", \"rationale\": \"High volatility in short interest may signal disagreement or uncertainty among informed traders, with extreme changes possibly indicating mispricings.\", \"higher_returns_for\": \"stocks with high short interest volatility\"}, {\"name\": \"Patent Application Intensity\", \"construction\": \"Number of patent applications filed in the past fiscal year divided by total assets at fiscal year end (data from USPTO filings matched to Compustat firm identifiers).\", \"rationale\": \"Firms aggressively investing in innovation may have higher future growth opportunities not fully recognized by the market.\", \"higher_returns_for\": \"stocks with high patent application intensity\"}, {\"name\": \"SG&A Efficiency Ratio\", \"construction\": \"Change in (annual SG&A expense divided by annual revenue) over the prior three fiscal years.\", \"rationale\": \"Improving efficiency in selling, general, and administrative expenses may signal better management quality and future profitability.\", \"higher_returns_for\": \"stocks with large declines (improvements) in the SG&A Efficiency Ratio\"}, {\"name\": \"Supplier Concentration Risk\", \"construction\": \"Ratio of cost of goods sold to purchases from the largest supplier, where supplier info is sourced from 10-K filings or FactSet Supply Chain data.\", \"rationale\": \"Firms highly dependent on a single supplier may face greater operational risk and higher risk premia.\", \"higher_returns_for\": \"stocks with high supplier concentration risk\"}, {\"name\": \"Option-Implied Skewness\", \"construction\": \"Skewness of risk-neutral return distribution derived from contemporaneous option prices (using OTM puts and calls, 1-month maturity).\", \"rationale\": \"Investors may demand higher returns for stocks with negatively skewed expected return distributions.\", \"higher_returns_for\": \"stocks with more negative option-implied skewness\"}, {\"name\": \"Dividend Smoothing Deviation\", \"construction\": \"Absolute value of the difference between change in annual dividend per share and change in annual earnings per share over the last 3 years.\", \"rationale\": \"Firms that pay dividends inconsistent with earnings changes may signal information asymmetry or agency problems, potentially leading to mispricings.\", \"higher_returns_for\": \"stocks with large dividend smoothing deviations\"}, {\"name\": \"Earnings Call Language Tone Shift\", \"construction\": \"Change in management tone score (proxied by positive minus negative word frequency in quarterly earnings call transcripts) over the last 4 quarters.\", \"rationale\": \"A sharp positive shift in management tone may indicate forthcoming good news not yet incorporated into prices.\", \"higher_returns_for\": \"stocks with large positive tone shifts\"}, {\"name\": \"Revenue Geographical Diversification\", \"construction\": \"Herfindahl-Hirschman Index (HHI) of revenue by geographic segment (computed from segment disclosures in 10-Ks), multiplied by -1 so that higher values indicate more diversification.\", \"rationale\": \"Geographically diversified firms may be less exposed to local shocks, so investors might underprice this risk mitigation.\", \"higher_returns_for\": \"stocks with high geographical revenue diversification\"}, {\"name\": \"Board Gender Diversity Change\", \"construction\": \"Change in the percentage of female board members over the past 2 years (from BoardEx or company proxy statements).\", \"rationale\": \"Increasing gender diversity may signal improving governance and broader perspectives, possibly enhancing long-term firm value.\", \"higher_returns_for\": \"stocks with large recent increases in board gender diversity\"}, {\"name\": \"Late-Reported Earnings Penalty\", \"construction\": \"Number of days between fiscal period end and actual 10-K/10-Q filing date minus industry median, measured each quarter.\", \"rationale\": \"Firms that report earnings later than peers may have greater opacity or internal problems, requiring a risk premium.\", \"higher_returns_for\": \"stocks with longer-than-median reporting lags\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 814,
+   "total_tokens": 1083,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_245b7c7787"
+ }
+}

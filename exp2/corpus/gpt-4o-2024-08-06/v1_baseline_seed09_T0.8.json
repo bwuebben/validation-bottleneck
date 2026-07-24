@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:11:21.922860+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 9,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yjLI3dyRKv09HOfvpPHgviLCApL",
+  "object": "chat.completion",
+  "created": 1784855467,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [{\"name\": \"Cyclic Growth Balance\", \"mechanism\": \"Combining asset growth and cash productivity balances growth with liquidity management, potentially identifying firms with efficient growth strategies that are sustainable across economic cycles.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"AssetGrowth\"}, {\"weight\": 0.5, \"primitive\": \"CashProd\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 24}, {\"name\": \"Defensive Moat\", \"mechanism\": \"Combining advertising expense with R&D ability, this composite identifies firms with strong competitive moats that can defend their market position, particularly in volatile markets.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"AdExp\"}, {\"weight\": 1.0, \"primitive\": \"RDAbility\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"AdExp\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.75, \"expected_decay_half_life_months\": 18}, {\"name\": \"Innovative Stability\", \"mechanism\": \"Firms with strong organizational capital and deferred revenue indicate stable yet innovative business models, likely providing resilient returns during periods of market turmoil.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"OrgCap\"}, {\"weight\": 0.5, \"primitive\": \"DelDRC\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.85, \"expected_decay_half_life_months\": 30}, {\"name\": \"Leverage Efficiency\", \"mechanism\": \"By combining market leverage and operating profitability, this composite captures firms efficiently using leverage to enhance profitability, potentially more pronounced in expanding markets.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Leverage\"}, {\"weight\": 1.0, \"primitive\": \"OperProf\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Leverage\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 20}, {\"name\": \"Contrarian Liquidity\", \"mechanism\": \"Combining short interest and bid-ask spread, it identifies contrarian trades where liquidity constraints may revert, particularly when the term spread is negative.\", \"expression\": {\"terms\": [{\"weight\": -0.5, \"primitive\": \"ShortInterest\"}, {\"weight\": 1.0, \"primitive\": \"BidAskSpread\"}], \"regime\": \"TERM_SPREAD_NEGATIVE\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"opposite_sign\"}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 15}, {\"name\": \"Growth Momentum\", \"mechanism\": \"This composite leverages the momentum of growing firms by combining sales growth over inventory growth with 6-month momentum, expecting superior performance during positive market trends.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"GrSaleToGrInv\"}, {\"weight\": 1.0, \"primitive\": \"Mom6m\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.95, \"expected_decay_half_life_months\": 12}, {\"name\": \"Credit Momentum\", \"mechanism\": \"Combining credit rating downgrade with industry momentum highlights firms experiencing negative re-rating but benefiting from positive industry trends, particularly in volatile markets.\", \"expression\": {\"terms\": [{\"weight\": -1.0, \"primitive\": \"CredRatDG\"}, {\"weight\": 1.0, \"primitive\": \"IndMom\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"weaker\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}], \"expected_annualized_sharpe\": 0.85, \"expected_decay_half_life_months\": 16}, {\"name\": \"Operational Momentum\", \"mechanism\": \"Combining change in asset turnover with operating leverage identifies firms optimizing operations and growth potential, performing best in positive economic conditions.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"ChAssetTurnover\"}, {\"weight\": 1.0, \"primitive\": \"OPLeverage\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}, {\"type\": \"correlation\", \"primitive\": \"OPLeverage\", \"bound\": \"below\", \"threshold\": 0.3}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": 24}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 1580,
+   "total_tokens": 4381,
+   "prompt_tokens_details": {
+    "cached_tokens": 2560,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

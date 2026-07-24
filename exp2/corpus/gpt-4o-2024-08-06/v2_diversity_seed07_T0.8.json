@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:17:14.609041+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 7,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yoyPva4qHJROQr6banxO3Rs9drE",
+  "object": "chat.completion",
+  "created": 1784855816,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"CreditRisk-PayoutYield\",\n      \"mechanism\": \"This hypothesis combines credit rating downgrades and payout yield. The former captures a firm's deteriorating credit quality, while the latter reflects shareholder compensation. The composite should reflect a risk premium where firms with worsening credit reduce payouts, indicating distress, thus commanding higher expected returns.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"CredRatDG\"},\n          {\"weight\": -0.5, \"primitive\": \"PayoutYield\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.7,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"Illiquidity-EarningsSurprise\",\n      \"mechanism\": \"Combining Amihud's illiquidity and earnings surprise captures the premium for holding stocks with high liquidity risk and significant unexpected earnings. Stocks with surprising earnings results often attract attention, but those with liquidity constraints may exhibit delayed price adjustments, yielding a premium.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"Illiquidity\"},\n          {\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"EarningsSurprise\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.65,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"AnalystOptimism-CustomerMomentum\",\n      \"mechanism\": \"This composite exploits discrepancies between analyst optimism and customer momentum. Analyst optimism might not always align with actual sales trends, which customer momentum reflects. Disparities suggest mispricing due to overreacting analysts or lagged customer trends.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"AOP\"},\n          {\"weight\": -0.5, \"primitive\": \"CustomerMomentum\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.75,\n      \"expected_decay_half_life_months\": 18\n    },\n    {\n      \"name\": \"R&D-InvestmentSize\",\n      \"mechanism\": \"The strategy combines R&D expenditure over market cap and investment size to capture firms transitioning from high R&D phases to capital expansion. Firms prioritizing R&D potentially innovate, but successful expansion requires prudent investment, reflecting corporate growth potential.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"RD\"},\n          {\"weight\": -0.5, \"primitive\": \"InvestPPEInv\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.6,\n      \"expected_decay_half_life_months\": null\n    },\n    {\n      \"name\": \"DebtIssuance-BetaLiquidity\",\n      \"mechanism\": \"This hypothesis combines debt issuance and liquidity beta to capture the interaction between funding and liquidity risk. Companies issuing more debt face heightened liquidity constraints, which can amplify returns when market liquidity risks are priced.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"DebtIssuance\"},\n          {\"weight\": 0.5, \"primitive\": \"BetaLiquidityPS\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.68,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"EarningsConsistency-ShareVolume\",\n      \"mechanism\": \"Combining earnings consistency and share volume aims to capture the signal from stable earnings against trading activity. High volume with consistent earnings might indicate informed trading, with the market yet to fully price in the stable earnings.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"EarningsConsistency\"},\n          {\"weight\": 1.0, \"primitive\": \"ShareVol\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_DOWN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"ShareVol\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.72,\n      \"expected_decay_half_life_months\": 20\n    },\n    {\n      \"name\": \"EarningsStreak-MarketLeverage\",\n      \"mechanism\": \"This composite leverages the interplay between continuous earnings improvements and high market leverage. Companies consistently beating earnings expectations but heavily leveraged might command a premium due to perceived risk and potential upside.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"EarningsStreak\"},\n          {\"weight\": -1.0, \"primitive\": \"MarketLeverage\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.78,\n      \"expected_decay_half_life_months\": 28\n    },\n    {\n      \"name\": \"ReturnSkewness-OperatingLeverage\",\n      \"mechanism\": \"Combining return skewness and operating leverage captures valuation premiums linked to asymmetric return profiles and fixed cost structures. Firms with positive skewness and high fixed costs may be underappreciated, providing upside potential when operational improvements occur.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"ReturnSkew\"},\n          {\"weight\": -0.5, \"primitive\": \"OPLeverage\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"opposite_sign\"},\n        {\"type\": \"correlation\", \"primitive\": \"ReturnSkew\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.63,\n      \"expected_decay_half_life_months\": null\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2903,
+   "completion_tokens": 1946,
+   "total_tokens": 4849,
+   "prompt_tokens_details": {
+    "cached_tokens": 2688,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

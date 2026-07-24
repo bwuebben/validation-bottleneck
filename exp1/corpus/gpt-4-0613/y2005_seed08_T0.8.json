@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:59:11.268425+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 8,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zTVq5f08b2S7yHg4G61QJ3TIY0h",
+  "object": "chat.completion",
+  "created": 1784858329,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n\"predictors\": [\n{\n\"name\": \"Customer Satisfaction\",\n\"construction\": \"Measured through customer reviews and satisfaction surveys from various industries. The measure is created by averaging satisfaction scores for each company and standardizing them within each industry.\",\n\"rationale\": \"Companies with higher customer satisfaction are likely to have an advantage in terms of brand loyalty and repeat business, leading to consistent revenue streams.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Number of Patents\",\n\"construction\": \"Count the number of patents a firm holds over the last fiscal year.\",\n\"rationale\": \"The number of patents a firm holds can be a proxy for its level of innovation, which might lead to higher profitability in the future.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Employee Satisfaction\",\n\"construction\": \"Measured through employee reviews and satisfaction surveys from various industries.\",\n\"rationale\": \"Companies with high employee satisfaction may have better productivity, lower turnover, and therefore lower expenses.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Green Energy Investment\",\n\"construction\": \"The percentage of a company's budget spent on renewable energy and sustainable practices.\",\n\"rationale\": \"As society becomes more focused on sustainability and renewable energy, companies with a commitment to green practices may be able to differentiate themselves and gain market share.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Data Breach Incidents\",\n\"construction\": \"Count the number of reported data breaches a company has experienced over the last fiscal year.\",\n\"rationale\": \"Data breaches can lead to significant financial and reputational damage, potentially affecting future profitability.\",\n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"CEO Tenure\",\n\"construction\": \"The number of years the current CEO has been in position.\",\n\"rationale\": \"Longer-tenured CEOs may have more experience and better knowledge of the company and its industry, potentially leading to better decision making.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Product Recall Incidents\",\n\"construction\": \"Count the number of product recall incidents a company has experienced over the last fiscal year.\",\n\"rationale\": \"Product recalls can lead to substantial costs and reputational damage which might affect a company's profitability.\",\n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"Social Media Engagement\",\n\"construction\": \"Measured through number of likes, shares, comments, and followers on a company's primary social media account.\",\n\"rationale\": \"A higher level of social media engagement may reflect a larger customer base and stronger brand recognition.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Diversity in Leadership\",\n\"construction\": \"Percentage of women and minorities in the board of directors and executive team.\",\n\"rationale\": \"More diverse leadership can bring a range of perspectives and ideas, potentially leading to better decision making and innovation.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Cyber Security Investment\",\n\"construction\": \"The percentage of a company's budget spent on cyber security practices and infrastructure.\",\n\"rationale\": \"As cyber threats become more prevalent, companies that proactively invest in cyber security may be better protected against potential financial losses from data breaches.\",\n\"higher_returns_for\": \"High values of the measure\"\n}\n]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 707,
+   "total_tokens": 977,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:14:00.354671+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 18,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yljABh4JyFFq7Cqhm3MPsd8Vgba",
+  "object": "chat.completion",
+  "created": 1784855615,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"Momentum and Value Combination\",\n      \"mechanism\": \"Combining momentum with a fundamentally strong value factor may capture stocks with ongoing positive revaluations and avoid overvalued momentum traps.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"Mom12m\"},\n          {\"weight\": 0.5, \"primitive\": \"BM\"},\n          {\"weight\": -0.5, \"primitive\": \"EarningsSurprise\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 1.2,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"Quality and Profitability Synergy\",\n      \"mechanism\": \"High-quality firms with strong profitability may deliver robust returns by efficiently generating profits while maintaining low risks.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"OperProfRD\"},\n          {\"weight\": 0.5, \"primitive\": \"GP\"},\n          {\"weight\": -0.5, \"primitive\": \"Beta\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 1.0,\n      \"expected_decay_half_life_months\": null\n    },\n    {\n      \"name\": \"Leverage and Growth Intersection\",\n      \"mechanism\": \"Firms with low leverage and high growth prospects can outperform due to their capacity to capitalize on growth opportunities with lower financial risk.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"AssetGrowth\"},\n          {\"weight\": -0.5, \"primitive\": \"Leverage\"},\n          {\"weight\": 0.5, \"primitive\": \"Cash\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"},\n        {\"type\": \"correlation\", \"primitive\": \"DebtIssuance\", \"bound\": \"below\", \"threshold\": 0.3},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Volatility and Earnings Surprise Blend\",\n      \"mechanism\": \"Stocks with low relative volatility and positive earnings surprises may yield abnormal returns, as the market underreacts to positive news while overpricing risk.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"EarningsSurprise\"},\n          {\"weight\": -0.5, \"primitive\": \"RealizedVol\"},\n          {\"weight\": 0.5, \"primitive\": \"CF\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"BetaTailRisk\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 1.1,\n      \"expected_decay_half_life_months\": 18\n    },\n    {\n      \"name\": \"Contrarian Value and Sentiment\",\n      \"mechanism\": \"Combining value with a contrarian sentiment approach may capture undervalued stocks ignored or disliked by the market.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"BMdec\"},\n          {\"weight\": -0.5, \"primitive\": \"AOP\"},\n          {\"weight\": 0.5, \"primitive\": \"DivYieldST\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 1.3,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"Growth and Debt Management\",\n      \"mechanism\": \"Firms that effectively manage debt while exhibiting growth signals are likely to outperform, leveraging growth without excessive financial burden.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"Investment\"},\n          {\"weight\": -0.5, \"primitive\": \"NetDebtFinance\"},\n          {\"weight\": 0.5, \"primitive\": \"ROAq\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"correlation\", \"primitive\": \"CompositeDebtIssuance\", \"bound\": \"below\", \"threshold\": 0.3},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}\n      ],\n      \"expected_annualized_sharpe\": 0.8,\n      \"expected_decay_half_life_months\": null\n    },\n    {\n      \"name\": \"Seasonality and Earnings Quality\",\n      \"mechanism\": \"Leveraging seasonal return patterns with high earnings quality can exploit predictable anomalies while minimizing exposure to low-quality earnings surprises.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"MomSeason\"},\n          {\"weight\": 0.5, \"primitive\": \"EarningsConsistency\"},\n          {\"weight\": -0.5, \"primitive\": \"AccrualsBM\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 1.0,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"Liquidity and Growth Anomaly\",\n      \"mechanism\": \"Low liquidity stocks with strong growth indicators might illustrate inefficiencies where growth expectations are not fully priced due to trading frictions.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"GrSaleToGrOverhead\"},\n          {\"weight\": -0.5, \"primitive\": \"Illiquidity\"},\n          {\"weight\": 0.5, \"primitive\": \"ChAssetTurnover\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"DolVol\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 1.1,\n      \"expected_decay_half_life_months\": 20\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 1946,
+   "total_tokens": 4747,
+   "prompt_tokens_details": {
+    "cached_tokens": 2560,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

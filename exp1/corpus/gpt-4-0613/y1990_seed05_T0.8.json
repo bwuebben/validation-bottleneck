@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:47:30.009095+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 5,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zIJTcI6oHYjFJq9sXk0ofhwt7QX",
+  "object": "chat.completion",
+  "created": 1784857635,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\"name\": \"Inventory Turnover\", \"construction\": \"Cost of Goods Sold divided by Inventory\", \"rationale\": \"Firms with higher inventory turnover might be managing their resources more efficiently, leading to higher profitability and thus higher stock returns\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Cash to Total Assets\", \"construction\": \"Cash and Cash Equivalents divided by Total Assets\", \"rationale\": \"Firms with more cash could be more financially stable and less reliant on external financing, potentially leading to higher stock returns\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"R&D Intensity\", \"construction\": \"R&D Expenditure divided by Sales\", \"rationale\": \"Firms investing more in R&D might have a higher potential for future growth\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Employee Turnover\", \"construction\": \"Number of employees leaving the company divided by Total number of employees\", \"rationale\": \"Firms with lower employee turnover might have more stable operations and employee expertise, which could translate to higher returns\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Debt Maturity\", \"construction\": \"Long-term Debt divided by Total Debt\", \"rationale\": \"Firms with longer debt maturity might have lower financial distress risk\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Capital Expenditure Intensity\", \"construction\": \"Capital Expenditure divided by Total Assets\", \"rationale\": \"Firms with higher capital expenditure intensity might be investing more in their growth, potentially leading to higher stock returns\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Dividend Payout Ratio\", \"construction\": \"Dividends divided by Net Income\", \"rationale\": \"Firms with higher dividend payout ratios might be more profitable, which could lead to higher stock returns\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Operating Cash Flow Margin\", \"construction\": \"Operating Cash Flow divided by Sales\", \"rationale\": \"Firms with higher operating cash flow margins could be more financially healthy\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Age of Firm\", \"construction\": \"Current Year minus Year of Incorporation\", \"rationale\": \"Older firms might have more established market positions and thus higher stock returns\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Employee Satisfaction\", \"construction\": \"Employee satisfaction survey results\", \"rationale\": \"Firms with higher employee satisfaction might have more productive and loyal employees, leading to better operational performance and higher stock returns\", \"higher_returns_for\": \"high values of the measure\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 594,
+   "total_tokens": 864,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

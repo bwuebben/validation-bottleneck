@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:29:33.066420+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2010_seed03_T0.8.json",
+  "prompt_sha256": "1418f3e8f7475e2fbb81c2985e4b95ea692a77b7f08781e340e4ac53a238a6e4"
+ },
+ "response": {
+  "id": "chatcmpl-E4zxCy26xqaWo6DOlyPHs3kdU29LB",
+  "object": "chat.completion",
+  "created": 1784860170,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses asset growth dispersion or volatility.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses segment revenue growth dispersion.\"},\n  {\"index\": 2, \"match\": \"GrAdExp\", \"strength\": \"close\", \"reason\": \"Both use growth/acceleration in R&D or advertising intensity.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses net operating cycle changes.\"},\n  {\"index\": 4, \"match\": \"AnalystRevision\", \"strength\": \"close\", \"reason\": \"Both use negative analyst EPS revisions, but construction differs.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses deferred tax liability growth.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses skewness of insider sale-buy activity.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses off-balance sheet commitment growth.\"},\n  {\"index\": 8, \"match\": \"CustomerMomentum\", \"strength\": \"related\", \"reason\": \"Both use customer-related data, but signals are different.\"},\n  {\"index\": 9, \"match\": \"DivInit\", \"strength\": \"related\", \"reason\": \"Both focus on dividend initiation, but volume spike is new.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2762,
+   "completion_tokens": 352,
+   "total_tokens": 3114,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

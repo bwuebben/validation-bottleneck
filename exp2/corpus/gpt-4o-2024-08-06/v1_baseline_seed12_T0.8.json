@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:12:10.990761+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 12,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yk7iEk8Vbp0QtBC2g2G1jDqBwrG",
+  "object": "chat.completion",
+  "created": 1784855515,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"GrowthStabilityBlend\",\n      \"mechanism\": \"Combining asset growth and earnings consistency can capture firms with stable yet robust growth profiles, likely to outperform due to prudent management and predictable cash flows.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"AssetGrowth\"},\n          {\"weight\": 0.5, \"primitive\": \"EarningsConsistency\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.8,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"LeverageMomentumMix\",\n      \"mechanism\": \"The interaction between market leverage and intermediate momentum targets firms with leverage-driven growth phases, potentially outperforming as leverage amplifies momentum effects.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"Leverage\"},\n          {\"weight\": 0.5, \"primitive\": \"IntMom\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"Leverage\", \"bound\": \"above\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.75,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"ProfitabilityVolatilityShield\",\n      \"mechanism\": \"Combining operating profitability and idiosyncratic volatility targets firms with strong core operations that can dampen volatility shocks, aiding in risk-adjusted outperformance.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"OperProf\"},\n          {\"weight\": -0.5, \"primitive\": \"IdioVol3F\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.85,\n      \"expected_decay_half_life_months\": 40\n    },\n    {\n      \"name\": \"DebtProfitParadox\",\n      \"mechanism\": \"Firms with high debt issuance but strong profitability may signal leveraging for growth, suggesting mispriced risk and potential alpha generation.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"CompositeDebtIssuance\"},\n          {\"weight\": 0.5, \"primitive\": \"OperProfRD\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"correlation\", \"primitive\": \"DebtIssuance\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.7,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"InnovationMomentum\",\n      \"mechanism\": \"Firms with rising R&D citations and recent positive momentum may reflect genuine innovation, driving sustainable performance increases.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"CitationsRD\"},\n          {\"weight\": 0.5, \"primitive\": \"Mom6m\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_DOWN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": 50\n    },\n    {\n      \"name\": \"ValueVolatilityHarvest\",\n      \"mechanism\": \"Combining book-to-market with low systematic volatility identifies undervalued stocks with less exposure to market shocks, presenting a risk-adjusted return opportunity.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"BM\"},\n          {\"weight\": -0.5, \"primitive\": \"BetaFP\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.8,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"CashFlowConfidence\",\n      \"mechanism\": \"Firms with high cash flow productivity and positive earnings surprises may indicate robust operational efficiency, leading to potential alpha through strong investor confidence.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"CashProd\"},\n          {\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"}\n      ],\n      \"expected_annualized_sharpe\": 0.85,\n      \"expected_decay_half_life_months\": 42\n    },\n    {\n      \"name\": \"QualityRiskArbitrage\",\n      \"mechanism\": \"By offsetting high earnings forecast disparities with low idiosyncratic risk, the composite targets mispriced quality stocks, likely yielding a premium as market perceptions align.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"EarningsForecastDisparity\"},\n          {\"weight\": -1.0, \"primitive\": \"IdioVolAHT\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"correlation\", \"primitive\": \"IdioVol3F\", \"bound\": \"below\", \"threshold\": 0.3},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.75,\n      \"expected_decay_half_life_months\": 28\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 1819,
+   "total_tokens": 4620,
+   "prompt_tokens_details": {
+    "cached_tokens": 2560,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

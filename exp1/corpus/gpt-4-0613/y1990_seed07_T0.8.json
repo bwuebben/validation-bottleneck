@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:48:06.476470+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 7,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zIs9W50Ysf2LgPrtWchYtcD4tF3",
+  "object": "chat.completion",
+  "created": 1784857670,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\n    \"name\": \"Net Debt Issuance\",\n    \"construction\": \"Calculate the change in total debt from last fiscal year. Normalize across the cross-section on each forecast date.\",\n    \"rationale\": \"Firms that increase their leverage could be distressed, signaling lower future performance.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Change in Share of Market Capitalization\",\n    \"construction\": \"Calculate the year-to-date change in a firm's share of total US equity market capitalization.\",\n    \"rationale\": \"Firms gaining a larger share of the total market could be capturing a competitive advantage.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Earnings Announcement Volatility\",\n    \"construction\": \"Calculate the 12-month trailing standard deviation of daily returns surrounding quarterly earnings announcements.\",\n    \"rationale\": \"Firms with stable earnings could have lower risk and higher future returns.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Non-operating Expense Ratio\",\n    \"construction\": \"Calculate the ratio of non-operating expenses to total revenues from the most recent fiscal year.\",\n    \"rationale\": \"Firms with higher non-operating expenses could have less efficient spending, leading to lower future returns.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Employee Growth\",\n    \"construction\": \"Calculate the year-over-year change in the number of employees from the most recent annual report.\",\n    \"rationale\": \"Firms that are expanding their workforce might be anticipating higher future revenues, leading to higher returns.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Change in Institutional Ownership\",\n    \"construction\": \"Calculate the change in institutional ownership from last fiscal year to this fiscal year.\",\n    \"rationale\": \"Institutions may have superior information, so increases in institutional ownership may signal higher future returns.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Customer Concentration\",\n    \"construction\": \"Calculate the revenue from the company's largest customer as a percentage of total revenues from the most recent fiscal year.\",\n    \"rationale\": \"Firms with high customer concentration may have higher business risk and lower future returns.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Short-term Asset Turnover\",\n    \"construction\": \"Calculate the ratio of sales to short-term assets (cash, receivables, and inventory) from the most recent fiscal year.\",\n    \"rationale\": \"Firms that use short-term assets more efficiently may have higher profitability, leading to higher future returns.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Change in Cash Ratio\",\n    \"construction\": \"Calculate the change in the ratio of cash to total assets from last fiscal year to this fiscal year.\",\n    \"rationale\": \"An increase in the cash ratio may signal a firm's improving liquidity, which could predict higher future returns.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Lease Expenses\",\n    \"construction\": \"Calculate the ratio of leasing expenses to total assets from the most recent fiscal year.\",\n    \"rationale\": \"Higher lease expenses may signal a lack of capital for investment, predicting lower future performance.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 757,
+   "total_tokens": 1027,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

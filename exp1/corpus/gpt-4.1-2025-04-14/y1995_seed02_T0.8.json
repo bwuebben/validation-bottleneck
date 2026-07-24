@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:12:50.300977+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 2,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zgrOuSq1we1DUyj7arIt5fEvsXM",
+  "object": "chat.completion",
+  "created": 1784859157,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Short-Term Earnings Acceleration\", \"construction\": \"Compute the change in quarterly earnings growth rate: (most recent quarterly EPS - EPS one quarter ago) minus (EPS one quarter ago - EPS two quarters ago), divided by stock price. Use data from quarterly filings.\", \"rationale\": \"Rapid acceleration in earnings growth may signal improving prospects not yet fully priced in.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Net Buyback Yield\", \"construction\": \"Annual net share repurchases divided by market capitalization, using Compustat data for shares outstanding and CRSP for market cap.\", \"rationale\": \"Firms reducing share count may be signaling undervaluation or strong cash flows.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Labor Efficiency Ratio\", \"construction\": \"Annual sales per employee (from Compustat) divided by total assets.\", \"rationale\": \"Firms generating more revenue per employee relative to their asset base may be more efficient and profitable.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Inventory Change Scaled by Sales\", \"construction\": \"Annual change in inventories divided by annual sales, both from Compustat.\", \"rationale\": \"Rising inventories relative to sales may signal demand overestimation and future underperformance.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Insider Buying Concentration\", \"construction\": \"Number of shares purchased by insiders in the past 6 months divided by total shares outstanding, using SEC Form 4 filings.\", \"rationale\": \"Substantial insider buying may reflect private information about future prospects.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Deferred Tax Asset Ratio\", \"construction\": \"Total deferred tax assets divided by total assets, from Compustat annual statements.\", \"rationale\": \"Low levels may indicate aggressive revenue recognition or fewer tax shields, possibly linked to conservative accounting.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Long-Term Debt Maturity Proximity\", \"construction\": \"Portion of long-term debt due within next 2 years divided by total long-term debt, from Compustat.\", \"rationale\": \"Imminent debt maturities may create refinancing risk, affecting future returns.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Gross Profitability to Market\", \"construction\": \"Gross profit (sales minus cost of goods sold) over the past 12 months divided by market capitalization.\", \"rationale\": \"Firms with higher gross profitability relative to price may be undervalued.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"R&D Scaling Ratio\", \"construction\": \"Annual R&D expense divided by total assets, from Compustat.\", \"rationale\": \"Firms investing more in R&D may experience future innovations and growth not yet priced in.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Change in Working Capital Ratio\", \"construction\": \"Annual change in net working capital divided by total assets, calculated from balance sheet data.\", \"rationale\": \"A declining working capital ratio may indicate improving operational efficiency.\", \"higher_returns_for\": \"low values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 684,
+   "total_tokens": 953,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5e8833dc3f"
+ }
+}

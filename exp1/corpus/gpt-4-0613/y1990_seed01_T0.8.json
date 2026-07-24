@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:46:18.398893+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 1,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zH6W6RkSzd5b9k1pFBXZLqcdwBD",
+  "object": "chat.completion",
+  "created": 1784857560,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Customer Concentration\",\n      \"construction\": \"Calculate the percentage of sales derived from a firm's major customers. Use annual report disclosures.\",\n      \"rationale\": \"Firms with high customer concentration may face higher business risks.\",\n      \"higher_returns_for\": \"Firms with low customer concentration\"\n    },\n    {\n      \"name\": \"Product Diversity\",\n      \"construction\": \"Compute the number of distinct product lines offered by a firm. Use annual report disclosures.\",\n      \"rationale\": \"Firms with a diverse product portfolio may be more resilient to industry shocks.\",\n      \"higher_returns_for\": \"Firms with more diverse product lines\"\n    },\n    {\n      \"name\": \"Employee Satisfaction\",\n      \"construction\": \"Collect data on employee satisfaction from public surveys and compute a firm-level average. Normalize by industry.\",\n      \"rationale\": \"Firms with satisfied employees may have higher productivity.\",\n      \"higher_returns_for\": \"Firms with high employee satisfaction\"\n    },\n    {\n      \"name\": \"M&A Activity\",\n      \"construction\": \"Count the number of M&A deals a firm has completed in the past year. Use SEC filings and news sources.\",\n      \"rationale\": \"Firms actively participating in M&A may be seeking growth or strategic advantages.\",\n      \"higher_returns_for\": \"Firms with higher M&A activity\"\n    },\n    {\n      \"name\": \"Geographic Expansion\",\n      \"construction\": \"Measure the number of countries a firm is operating in. Use annual report disclosures.\",\n      \"rationale\": \"Firms operating internationally may have diversified risks.\",\n      \"higher_returns_for\": \"Firms operating in more countries\"\n    },\n    {\n      \"name\": \"Patent Activity\",\n      \"construction\": \"Count the number of patents a firm has applied for in the past year. Use USPTO data.\",\n      \"rationale\": \"Firms with high patent activity are likely investing in innovation.\",\n      \"higher_returns_for\": \"Firms with higher patent activity\"\n    },\n    {\n      \"name\": \"Political Connections\",\n      \"construction\": \"Measure the number of ex-politicians or high-ranking government officials serving in executive or board positions. Use annual report disclosures.\",\n      \"rationale\": \"Firms with political connections may have competitive advantages.\",\n      \"higher_returns_for\": \"Firms with more political connections\"\n    },\n    {\n      \"name\": \"Quality of Management\",\n      \"construction\": \"Create a score for the quality of management based on surveys or expert opinions. Normalize by industry.\",\n      \"rationale\": \"Firms with high-quality management may perform better.\",\n      \"higher_returns_for\": \"Firms with better management quality\"\n    },\n    {\n      \"name\": \"Environmental Performance\",\n      \"construction\": \"Assess the firm's environmental impact using publicly available data on waste production, energy use, etc. Normalize by industry.\",\n      \"rationale\": \"Firms with better environmental performance may face fewer regulatory risks and may be more sustainable in the long run.\",\n      \"higher_returns_for\": \"Firms with better environmental performance\"\n    },\n    {\n      \"name\": \"Supply Chain Efficiency\",\n      \"construction\": \"Create a score for supply chain efficiency based on factors like inventory turnover, delivery times, etc. Use annual report disclosures and normalize by industry.\",\n      \"rationale\": \"Firms with efficient supply chains may have lower operating costs and higher profit margins.\",\n      \"higher_returns_for\": \"Firms with more efficient supply chains\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 729,
+   "total_tokens": 999,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

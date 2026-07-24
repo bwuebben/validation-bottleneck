@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:22:41.576210+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 6,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yuMmmR1bQvotULS91jkwWkshWdA",
+  "object": "chat.completion",
+  "created": 1784856150,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Profitability-Momentum Quality Overlay\",\n    \"mechanism\": \"Combining long positions in OperProf and Mom12m with a short in Beta, this composite exploits that high-profitability stocks with strong momentum and low market beta reflect persistently improving fundamentals and capital discipline. Beta's inclusion hedges market exposure, capturing a unique risk/behavioral anomaly not targeted by any primitive alone.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"OperProf\"},\n        {\"weight\": 1.0, \"primitive\": \"Mom12m\"},\n        {\"weight\": -1.0, \"primitive\": \"Beta\"}\n      ],\n      \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}\n    ],\n    \"expected_annualized_sharpe\": 1.1,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Analyst Disagreement Defensive Alpha\",\n    \"mechanism\": \"By going long ForecastDispersion and AnalystRevision, while shorting RealizedVol, the composite targets idiosyncratic alpha when analysts disagree but revisions improve, and overall price volatility is low. The interaction suggests greater investor uncertainty resolved positively, distinct from individual effects.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"ForecastDispersion\"},\n        {\"weight\": 1.0, \"primitive\": \"AnalystRevision\"},\n        {\"weight\": -1.0, \"primitive\": \"RealizedVol\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"AnalystRevision\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"}\n    ],\n    \"expected_annualized_sharpe\": 0.8,\n    \"expected_decay_half_life_months\": 18\n  },\n  {\n    \"name\": \"Leverage-Momentum Macro Hedge\",\n    \"mechanism\": \"Long Mom6m and short Leverage combined with long TERM_SPREAD_POSITIVE regime exploits that momentum premiums are stronger for less-levered firms when the yield curve is upward sloping. This synergy offers macro-sensitive exposure, as leverage risk is less penalized in healthy environments.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"Mom6m\"},\n        {\"weight\": -1.0, \"primitive\": \"Leverage\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 1.0,\n    \"expected_decay_half_life_months\": 20\n  },\n  {\n    \"name\": \"Intangible Value and Conservative Investment\",\n    \"mechanism\": \"By combining long IntanBM with short AssetGrowth and long CF, this composite captures undervalued intangible-rich firms that restrain asset growth and generate high cash flow \u2014 a blend reflective of efficient capital allocation and hidden value not fully incorporated into prices.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"IntanBM\"},\n        {\"weight\": -1.0, \"primitive\": \"AssetGrowth\"},\n        {\"weight\": 1.0, \"primitive\": \"CF\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n      {\"type\": \"correlation\", \"primitive\": \"AssetGrowth\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}\n    ],\n    \"expected_annualized_sharpe\": 0.9,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Seasonal Earnings Surprise Enhancer\",\n    \"mechanism\": \"Going long EarningsSurprise and MomSeason, and shorting Illiquidity, this composite isolates stocks with recent positive surprises and persistent seasonal momentum, avoiding illiquid names to reduce noise. This targets repeatable post-earnings drift strengthened by seasonal flows.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"EarningsSurprise\"},\n        {\"weight\": 1.0, \"primitive\": \"MomSeason\"},\n        {\"weight\": -1.0, \"primitive\": \"Illiquidity\"}\n      ],\n      \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"MomSeason\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 1.2,\n    \"expected_decay_half_life_months\": 15\n  },\n  {\n    \"name\": \"Shareholder Return Discipline\",\n    \"mechanism\": \"Long NetPayoutYield and ShareRepurchase, short CompEquIss, this composite favors firms returning capital through dividends and buybacks, while avoiding those funding via equity issuance. The combination captures shareholder-friendly cultures overlooked by single measures.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"NetPayoutYield\"},\n        {\"weight\": 1.0, \"primitive\": \"ShareRepurchase\"},\n        {\"weight\": -1.0, \"primitive\": \"CompEquIss\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 48\n  },\n  {\n    \"name\": \"Organizational and Brand Capital Advantage\",\n    \"mechanism\": \"Combining long OrgCap and BrandInvest, shorting DebtIssuance, this composite targets firms with strong organizational and brand assets that avoid diluting value via new debt. Such intangible investments combined with conservative financing signal sustainable competitive advantage.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"OrgCap\"},\n        {\"weight\": 1.0, \"primitive\": \"BrandInvest\"},\n        {\"weight\": -1.0, \"primitive\": \"DebtIssuance\"}\n      ],\n      \"regime\": \"TERM_SPREAD_NEGATIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"OrgCap\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}\n    ],\n    \"expected_annualized_sharpe\": 0.85,\n    \"expected_decay_half_life_months\": 30\n  },\n  {\n    \"name\": \"Customer Demand and Supply Chain Quality Premium\",\n    \"mechanism\": \"By going long CustomerMomentum and iomom_supp, and shorting Inventory Growth, the composite targets firms with rising end-market demand and robust suppliers, while avoiding those with accumulating inventories, capturing superior supply chain dynamics driving returns.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"CustomerMomentum\"},\n        {\"weight\": 1.0, \"primitive\": \"iomom_supp\"},\n        {\"weight\": -1.0, \"primitive\": \"InvGrowth\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"correlation\", \"primitive\": \"CustomerMomentum\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}\n    ],\n    \"expected_annualized_sharpe\": 1.05,\n    \"expected_decay_half_life_months\": 20\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 2095,
+   "total_tokens": 4896,
+   "prompt_tokens_details": {
+    "cached_tokens": 2560,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5f160af537"
+ }
+}

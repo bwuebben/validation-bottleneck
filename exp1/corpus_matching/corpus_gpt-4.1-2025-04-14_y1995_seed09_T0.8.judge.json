@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:28:07.322919+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y1995_seed09_T0.8.json",
+  "prompt_sha256": "581c0f7eb06adec9b5664e6326e8dadc732f725b83bca3071528f206c9654125"
+ },
+ "response": {
+  "id": "chatcmpl-E4zvnfUwxAOPGl1JK5MnwO8JCPZLE",
+  "object": "chat.completion",
+  "created": 1784860083,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"InvGrowth\", \"strength\": \"exact\", \"reason\": \"Inventory growth scaled by assets matches InvGrowth construction.\"},\n  {\"index\": 1, \"match\": \"DelFINL\", \"strength\": \"close\", \"reason\": \"Change in financial liabilities; short-term focus is a detail difference.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses non-operating income share.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No insider trading/insider buying predictor in library.\"},\n  {\"index\": 4, \"match\": \"DivOmit\", \"strength\": \"exact\", \"reason\": \"Dividend omission indicator matches DivOmit construction.\"},\n  {\"index\": 5, \"match\": \"RevenueSurprise\", \"strength\": \"close\", \"reason\": \"Both use unexpected sales growth; implementation differs (quarterly/annual).\" },\n  {\"index\": 6, \"match\": \"GrAdExp\", \"strength\": \"close\", \"reason\": \"Growth in R&D expense is analogous to GrAdExp for advertising.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No dividend payout volatility or stability measure in library.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No predictor for cash used in acquisitions.\"},\n  {\"index\": 9, \"match\": \"hire\", \"strength\": \"exact\", \"reason\": \"Year-over-year employee growth matches hire construction.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2760,
+   "completion_tokens": 358,
+   "total_tokens": 3118,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

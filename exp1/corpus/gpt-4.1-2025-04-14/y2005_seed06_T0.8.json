@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:16:03.403598+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 6,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zk4DCfjUbXTxoP9x60FS8qF6bxo",
+  "object": "chat.completion",
+  "created": 1784859356,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Customer Concentration Ratio\", \"construction\": \"Sum the percentage of total revenue derived from the firm's top 3 customers, as disclosed in annual filings (10-K).\", \"rationale\": \"Firms highly dependent on a few customers may face higher cash flow risk, which could be priced in expected returns.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Patent Intensity\", \"construction\": \"Number of new patents granted in the past fiscal year divided by total assets, using USPTO data and firm disclosures.\", \"rationale\": \"Firms with intense patent activity may signal innovation and future growth potential not captured by traditional measures.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Quarterly Earnings Volatility\", \"construction\": \"Standard deviation of quarterly earnings per share (EPS) over the past 8 quarters.\", \"rationale\": \"High earnings volatility may indicate risk or mispricing associated with informational uncertainty.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Insider Net Purchase Ratio\", \"construction\": \"Total shares bought minus shares sold by insiders over the past 12 months, divided by shares outstanding, using SEC Form 4 filings.\", \"rationale\": \"Net insider buying may reflect private information about future firm performance.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Segment Revenue Diversification\", \"construction\": \"1 minus the Herfindahl index of revenue by business segment, calculated from segment disclosures in annual reports.\", \"rationale\": \"Firms with more diversified revenue streams may be more resilient and less exposed to idiosyncratic shocks.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Employee Growth Rate\", \"construction\": \"Year-over-year percentage change in total employees as reported in the 10-K filing.\", \"rationale\": \"Rapid hiring may signal expansion and positive firm outlook not yet priced by the market.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Short-Term Asset Turnover Change\", \"construction\": \"Change in the ratio of quarterly sales to short-term assets (cash + receivables + inventory) over the past 4 quarters.\", \"rationale\": \"Improving efficiency in using short-term assets could foreshadow higher profitability and returns.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Dividend Omission Signal\", \"construction\": \"Binary variable equal to 1 if the firm omitted a regular dividend in the most recent quarter, 0 otherwise.\", \"rationale\": \"Dividend omissions may indicate financial distress and risk, which could be associated with higher future returns if markets overreact.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Deferred Tax Asset Ratio\", \"construction\": \"Deferred tax assets divided by total assets, from balance sheet data.\", \"rationale\": \"A high proportion of deferred tax assets might signal aggressive accounting or anticipation of future losses, potentially linked to risk and return.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Sustained CapEx Reduction\", \"construction\": \"Percent decrease in capital expenditures over the last 3 years, provided it is a reduction in each consecutive year.\", \"rationale\": \"Extended cuts in capital spending may indicate underinvestment and neglected firms, which could be undervalued.\", \"higher_returns_for\": \"high values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 713,
+   "total_tokens": 982,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_1adda89cc2"
+ }
+}

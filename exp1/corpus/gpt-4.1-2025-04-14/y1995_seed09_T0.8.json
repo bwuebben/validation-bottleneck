@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:13:52.033848+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 9,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zhwFjFJBlDsH8RUcPQJwPjAwMHg",
+  "object": "chat.completion",
+  "created": 1784859224,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\"name\": \"Inventory Growth Rate\", \"construction\": \"Year-over-year percentage change in inventories (from Compustat annual data: INVT) divided by prior-year total assets (AT).\", \"rationale\": \"Firms aggressively building inventories may be overestimating future demand, leading to subsequent corrections.\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Short-Term Debt Surge\", \"construction\": \"Current year increase in short-term debt (DLC) scaled by total assets (AT), using Compustat annual data.\", \"rationale\": \"A surge in short-term borrowing may signal liquidity stress or poor credit conditions.\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Non-Operating Income Share\", \"construction\": \"Non-operating income (OIBDP - OIADP) divided by total revenues (REVT), using Compustat annual data.\", \"rationale\": \"A high reliance on non-core activities may indicate lower earnings quality and higher risk.\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Past Insider Buying\", \"construction\": \"Net shares bought by insiders (Form 4 SEC filings), aggregated over the prior 12 months and scaled by shares outstanding.\", \"rationale\": \"Insider buying may reflect superior information regarding undervaluation or positive future prospects.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Dividend Omission Indicator\", \"construction\": \"Indicator variable equal to 1 if a firm paid dividends two years ago but omitted dividends in the most recent fiscal year (from CRSP/Compustat).\", \"rationale\": \"Omitting a dividend may signal financial distress or deteriorating fundamentals.\", \"higher_returns_for\": \"firms without recent omissions (i.e., a value of 0)\"},\n  {\"name\": \"Seasonal Sales Momentum\", \"construction\": \"Current quarter sales (SALEQ) minus sales from the same quarter last year, scaled by prior-year quarterly sales (Compustat quarterly data).\", \"rationale\": \"Unexpected improvement in seasonal sales may indicate underestimated growth potential.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"R&D Expense Growth\", \"construction\": \"Year-over-year percentage change in R&D expense (XRD) divided by prior-year total assets (AT), using Compustat annual data.\", \"rationale\": \"Accelerating investment in R&D may signal innovation and future profitability.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Dividend Payout Volatility\", \"construction\": \"Standard deviation of annual dividend per share (DPS, CRSP) over the past five years divided by mean DPS.\", \"rationale\": \"High dividend volatility may indicate unstable earnings or weak governance.\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Cash Acquisition Ratio\", \"construction\": \"Cash used for acquisitions (from Statement of Cash Flows, Compustat CHEQ outflows for acquisitions) divided by total assets (AT), over trailing three years.\", \"rationale\": \"Aggressive acquisition activity may lead to post-merger integration risk and lower returns.\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Employee Growth Rate\", \"construction\": \"Year-over-year percentage change in number of employees (EMP, Compustat annual data), divided by prior-year employees.\", \"rationale\": \"Rapid hiring may reflect overexpansion or management optimism that outpaces market reality.\", \"higher_returns_for\": \"low values of the measure\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 750,
+   "total_tokens": 1019,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5e8833dc3f"
+ }
+}

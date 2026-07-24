@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:38:02.868638+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 2,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yCkqN1RuixSS2O4yNX6a71hj25G",
+  "object": "chat.completion",
+  "created": 1784853446,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Hypothesis 1\",\n    \"mechanism\": \"A combination of firm size and momentum can enhance risk-adjusted returns due to larger firms' better resources and institutional support, and the persistence of trends in stock prices.\",\n    \"expression\": { \n        \"terms\": [\n            {\"weight\": 0.5, \"primitive\": \"Size\"},\n            {\"weight\": 0.5, \"primitive\": \"Mom12m\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \n        \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.65,\n    \"expected_decay_half_life_months\": null\n  },\n  {\n    \"name\": \"Hypothesis 2\",\n    \"mechanism\": \"The combination of high book-to-market ratios and low earnings-to-price ratios can provide superior returns due to mispricing of value stocks and market inefficacies.\",\n    \"expression\": { \n        \"terms\": [\n            {\"weight\": 0.5, \"primitive\": \"BM\"},\n            {\"weight\": -0.5, \"primitive\": \"EP\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 60\n  },\n  {\n    \"name\": \"Hypothesis 3\",\n    \"mechanism\": \"A mix of high dividend yield and low implied volatility can yield higher returns due to profit from dividend payments and lower risk.\",\n    \"expression\": { \n        \"terms\": [\n            {\"weight\": 0.5, \"primitive\": \"DivYieldST\"},\n            {\"weight\": -0.5, \"primitive\": \"betaVIX\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"correlation\", \"primitive\": \"SP\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 72\n  },\n  {\n    \"name\": \"Hypothesis 4\",\n    \"mechanism\": \"A combination of high liquidity and low returns volatility can yield higher returns due to lower transaction costs and less systematic risk.\",\n    \"expression\": { \n        \"terms\": [\n            {\"weight\": 0.5, \"primitive\": \"Illiquidity\"},\n            {\"weight\": -0.5, \"primitive\": \"RealizedVol\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 60\n  },\n  {\n    \"name\": \"Hypothesis 5\",\n    \"mechanism\": \"A combination of high asset growth and high return on equity can lead to higher returns due to companies' investment opportunities and profitability.\",\n    \"expression\": { \n        \"terms\": [\n            {\"weight\": 0.5, \"primitive\": \"AssetGrowth\"},\n            {\"weight\": 0.5, \"primitive\": \"RoE\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.65,\n    \"expected_decay_half_life_months\": 48\n  },\n  {\n    \"name\": \"Hypothesis 6\",\n    \"mechanism\": \"A mix of high profit margin and high sales growth can yield higher returns due to the profitability and growth potential of the company.\",\n    \"expression\": { \n        \"terms\": [\n            {\"weight\": 0.5, \"primitive\": \"OperProf\"},\n            {\"weight\": 0.5, \"primitive\": \"SP\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"medium\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": null\n  },\n  {\n    \"name\": \"Hypothesis 7\",\n    \"mechanism\": \"A combination of high institutional ownership and low short interest can yield higher returns due to institutional support and less potential selling pressure.\",\n    \"expression\": { \n        \"terms\": [\n            {\"weight\": 0.5, \"primitive\": \"IO_ShortInterest\"},\n            {\"weight\": -0.5, \"primitive\": \"ShortInterest\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 48\n  },\n  {\n    \"name\": \"Hypothesis 8\",\n    \"mechanism\": \"The combination of high R&D spending and high sales growth can lead to higher returns due to the innovation potential and growth of the company.\",\n    \"expression\": { \n        \"terms\": [\n            {\"weight\": 0.5, \"primitive\": \"RD\"},\n            {\"weight\": 0.5, \"primitive\": \"SP\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": null\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2864,
+   "completion_tokens": 1708,
+   "total_tokens": 4572,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

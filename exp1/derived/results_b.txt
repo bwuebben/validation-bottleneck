@@ -1,0 +1,25 @@
+=== TEST (b) primary: OLS count ~ fut + controls, model×vintage FE, SE clustered by predictor ===
+  fut           beta=-0.02714  se=0.02071  t=-1.31
+  pre           beta=+0.00061  se=0.00964  t=+0.06
+  pre_missing   beta=-0.18833  se=0.09997  t=-1.88
+  log_cites     beta=+0.04484  se=0.02934  t=+1.53
+  pub_year      beta=+0.01299  se=0.01059  t=+1.23
+  N=2082  clusters=198  FE cells=15
+
+=== TEST (b) rank version: Spearman(count, fut) within model×vintage ===
+  gpt-4-0613           v1990: rho=-0.047 (n=198)
+  gpt-4-0613           v1995: rho=-0.087 (n=184)
+  gpt-4-0613           v2000: rho=-0.038 (n=161)
+  gpt-4-0613           v2005: rho=-0.133 (n=110)
+  gpt-4-0613           v2010: rho=+0.080 (n=41)
+  gpt-4.1-2025-04-14   v1990: rho=-0.072 (n=198)
+  gpt-4.1-2025-04-14   v1995: rho=-0.122 (n=184)
+  gpt-4.1-2025-04-14   v2000: rho=-0.114 (n=161)
+  gpt-4.1-2025-04-14   v2005: rho=+0.007 (n=110)
+  gpt-4.1-2025-04-14   v2010: rho=-0.132 (n=41)
+  gpt-4o-2024-08-06    v1990: rho=-0.077 (n=198)
+  gpt-4o-2024-08-06    v1995: rho=-0.055 (n=184)
+  gpt-4o-2024-08-06    v2000: rho=-0.082 (n=161)
+  gpt-4o-2024-08-06    v2005: rho=-0.126 (n=110)
+  gpt-4o-2024-08-06    v2010: rho=+0.008 (n=41)
+  Fisher-combined z = -3.13

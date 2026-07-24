@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:25:06.968688+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y2000_seed04_T0.8.json",
+  "prompt_sha256": "16472e6f9da1669c79943a13d1c723211090a8549d3c26a12e61a5ae24039495"
+ },
+ "response": {
+  "id": "chatcmpl-E4zsukkt7uxQQi7z76UUZ9bbOauFr",
+  "object": "chat.completion",
+  "created": 1784859904,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee satisfaction or similar data.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses environmental impact or pollution data.\"},\n  {\"index\": 2, \"match\": \"Herf\", \"strength\": \"related\", \"reason\": \"Both relate to concentration/diversification, but Herf is industry, not supply chain.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses cybersecurity investment or related disclosures.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses CSR or social responsibility data.\"},\n  {\"index\": 5, \"match\": \"Herf\", \"strength\": \"related\", \"reason\": \"Herf measures industry concentration; product diversity is a related theme.\"},\n  {\"index\": 6, \"match\": \"Herf\", \"strength\": \"related\", \"reason\": \"Herf covers concentration, but at industry not customer level.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses management tenure or executive stability.\"},\n  {\"index\": 8, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"PatentsRD uses patent counts/citations, similar to proposed construction.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses internet presence or online brand metrics.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2699,
+   "completion_tokens": 362,
+   "total_tokens": 3061,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

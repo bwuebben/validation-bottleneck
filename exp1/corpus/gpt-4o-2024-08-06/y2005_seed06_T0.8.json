@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:09:09.657952+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 6,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zdPM1FwNVktCrSNsbgeVhgdYX0L",
+  "object": "chat.completion",
+  "created": 1784858943,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Sustainability Investment Ratio\",\n      \"construction\": \"Divide the dollar amount spent on sustainability initiatives (from corporate responsibility reports) by total assets, updated annually.\",\n      \"rationale\": \"Firms investing in sustainability may capture long-term growth opportunities not yet priced by the market.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Management Innovation Score\",\n      \"construction\": \"Score companies based on the number of patents filed by management over the past 5 years, scaled by the number of executives.\",\n      \"rationale\": \"Innovative management may lead to strategic advantages and higher future cash flows.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Social Media Sentiment Index\",\n      \"construction\": \"Aggregate positive sentiment scores from major social media platforms over the past 12 months, normalized by volume.\",\n      \"rationale\": \"Public perception on social media may precede formal analyst ratings, offering early signals of firm prospects.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Employee Satisfaction Ratio\",\n      \"construction\": \"Divide the average employee satisfaction score (from surveys) by industry average, updated annually.\",\n      \"rationale\": \"Higher employee satisfaction can lead to improved operational performance and innovation.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Supply Chain Efficiency Score\",\n      \"construction\": \"Calculate the ratio of cost savings from supply chain improvements over total sales, monitored semi-annually.\",\n      \"rationale\": \"Efficient supply chains suggest superior management and cost control, potentially leading to higher margins.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Customer Retention Rate\",\n      \"construction\": \"Ratio of repeat customers to total customers over the past three years, using customer loyalty programs data.\",\n      \"rationale\": \"A high retention rate suggests a stable revenue base and strong customer relationships.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"R&D Tax Credit Utilization\",\n      \"construction\": \"The ratio of R&D tax credits claimed to total R&D expenses over the last fiscal year.\",\n      \"rationale\": \"Effective use of tax credits indicates strong financial management and innovation investment.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Executive Tenure Stability\",\n      \"construction\": \"Average tenure of the top 5 executives, measured in years, updated annually.\",\n      \"rationale\": \"Stable management teams may indicate effective leadership and strategic consistency.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Foreign Revenue Growth Ratio\",\n      \"construction\": \"Percentage change in international sales divided by total revenue growth over the past two years.\",\n      \"rationale\": \"Growing international presence can diversify revenue streams and reduce domestic market risk.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Intellectual Property Intensity\",\n      \"construction\": \"Number of active patents divided by total R&D expenditure over the last five years.\",\n      \"rationale\": \"A higher ratio suggests more efficient R&D processes and a better-protected competitive position.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 729,
+   "total_tokens": 998,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_eb185bfc03"
+ }
+}

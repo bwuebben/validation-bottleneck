@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:11:05.863013+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 8,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yj0lYFS2LAw8dJ0piHQTA40DqTr",
+  "object": "chat.completion",
+  "created": 1784855446,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"Growth Quality Composite\",\n      \"mechanism\": \"Combining growth indicators with quality factors can capture firms with sustainable, high-quality growth, reducing risk of transient growth that doesn't translate to earnings. This composite emphasizes both growth potential and economic resilience.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"AssetGrowth\"},\n          {\"weight\": 0.5, \"primitive\": \"OperProf\"},\n          {\"weight\": -0.5, \"primitive\": \"Accruals\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 1.2,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"Earnings Momentum and Quality\",\n      \"mechanism\": \"This composite combines earnings momentum with quality metrics to identify firms likely to sustain positive earnings surprises, leveraging both past performance and accounting quality.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"},\n          {\"weight\": 0.5, \"primitive\": \"OperProf\"},\n          {\"weight\": -0.5, \"primitive\": \"Accruals\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 1.1,\n      \"expected_decay_half_life_months\": 18\n    },\n    {\n      \"name\": \"Value and Sentiment\",\n      \"mechanism\": \"Combining value metrics with sentiment indicators can better capture undervalued firms with positive market sentiment, potentially leading to revaluation and superior risk-adjusted returns.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"BM\"},\n          {\"weight\": 0.5, \"primitive\": \"AnalystRevision\"},\n          {\"weight\": -0.5, \"primitive\": \"FEPS\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 1.3,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"Leverage and Profitability\",\n      \"mechanism\": \"This hypothesis posits that firms with optimal leverage and high profitability are in a sweet spot for generating excess returns, balancing financial risk with operational efficiency.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"Leverage\"},\n          {\"weight\": 1.0, \"primitive\": \"OperProf\"},\n          {\"weight\": -0.5, \"primitive\": \"BookLeverage\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"OperProf\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 1.0,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Volatility and Earnings Surprise\",\n      \"mechanism\": \"This composite captures firms that are both low volatility and capable of delivering unexpected earnings surprises, thus offering potential for stable yet impressive returns.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": -0.5, \"primitive\": \"RealizedVol\"},\n          {\"weight\": 1.0, \"primitive\": \"EarningsSurprise\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_DOWN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 1.2,\n      \"expected_decay_half_life_months\": 20\n    },\n    {\n      \"name\": \"Momentum and Cash Flow\",\n      \"mechanism\": \"Integrating momentum with cash flow metrics enables capturing trends among firms that not only perform well but also demonstrate strong underlying cash flow generation.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"Mom12m\"},\n          {\"weight\": 0.5, \"primitive\": \"CF\"},\n          {\"weight\": -0.5, \"primitive\": \"TotalAccruals\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 1.4,\n      \"expected_decay_half_life_months\": 15\n    },\n    {\n      \"name\": \"Innovative Value Composite\",\n      \"mechanism\": \"This approach focuses on identifying value stocks with high innovative capacity, expecting these firms to outperform due to market underestimation of their innovation potential.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"BM\"},\n          {\"weight\": 0.5, \"primitive\": \"PatentsRD\"},\n          {\"weight\": -0.5, \"primitive\": \"DebtIssuance\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 1.0,\n      \"expected_decay_half_life_months\": 20\n    },\n    {\n      \"name\": \"Debt and Earnings Momentum\",\n      \"mechanism\": \"By combining debt metrics with earnings momentum, this composite seeks companies that efficiently utilize debt to enhance earnings momentum, creating a potential for sustained performance.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"NetDebtFinance\"},\n          {\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"},\n          {\"weight\": -0.5, \"primitive\": \"DebtIssuance\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"NetDebtFinance\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": 25\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 1911,
+   "total_tokens": 4712,
+   "prompt_tokens_details": {
+    "cached_tokens": 2560,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

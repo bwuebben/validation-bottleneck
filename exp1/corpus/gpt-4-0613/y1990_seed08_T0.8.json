@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:48:26.789702+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 8,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zJ9aP5ReMJAlMFM3zQtFsunZEpK",
+  "object": "chat.completion",
+  "created": 1784857687,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n\"predictors\": [\n{\n\"name\": \"Non-Operating Income\",\n\"construction\": \"Calculated using the difference between total revenue and operating income over the past year.\",\n\"rationale\": \"Firms with higher non-operating income may have more diversified income sources, which could lead to lower risk.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Capital Expenditure Growth\",\n\"construction\": \"Calculated as the year-over-year percentage change in capital expenditures.\",\n\"rationale\": \"Firms that are investing more in their business may have better future growth prospects.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Employee Productivity\",\n\"construction\": \"Calculated as revenue per employee over the past year.\",\n\"rationale\": \"Firms with higher employee productivity may be more efficient, which could lead to higher profitability.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Asset Intangibility\",\n\"construction\": \"Calculated as the ratio of intangible assets to total assets.\",\n\"rationale\": \"Firms with a high proportion of intangible assets may have a competitive advantage that results in higher returns.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"R&D Intensity\",\n\"construction\": \"Calculated as research and development expenses divided by sales over the past year.\",\n\"rationale\": \"Firms with high R&D intensity may be more innovative, which could lead to future growth.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Inventory Turnover\",\n\"construction\": \"Calculated as cost of goods sold divided by average inventory over the past year.\",\n\"rationale\": \"Firms with higher inventory turnover may have better inventory management, which could lead to higher profitability.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Debt Maturity\",\n\"construction\": \"Calculated as long-term debt divided by total debt.\",\n\"rationale\": \"Firms with more long-term debt may have less refinancing risk, which could lead to higher returns.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Tax Rate\",\n\"construction\": \"Calculated as income tax expense divided by pretax income over the past year.\",\n\"rationale\": \"Firms with higher tax rates may have less after-tax income, which could lead to lower returns.\",\n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"Capital Structure\",\n\"construction\": \"Calculated as equity divided by total capital (equity + debt).\",\n\"rationale\": \"Firms with a higher proportion of equity financing may have lower financial risk, which could lead to higher returns.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Foreign Sales Ratio\",\n\"construction\": \"Calculated as foreign sales divided by total sales over the past year.\",\n\"rationale\": \"Firms with a higher proportion of foreign sales may have more diversified revenue sources, which could lead to higher returns.\",\n\"higher_returns_for\": \"High values of the measure\"\n}\n]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 653,
+   "total_tokens": 923,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:54:09.106050+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 2,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zOkPhKLfFyxSZ9Jyhnr29PtkLwV",
+  "object": "chat.completion",
+  "created": 1784858034,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n\"predictors\": [\n{\n\"name\": \"Investment Sentiment\",\n\"construction\": \"Measure the frequency and sentiment of mentions of a firm in media outlets, using text analysis. Include newspapers, television broadcasts, and online articles.\",\n\"rationale\": \"Media sentiment can reflect the public's perception of a company, which may influence its stock returns.\",\n\"higher_returns_for\": \"Firms with positive media sentiment\"\n},\n{\n\"name\": \"Employee Satisfaction\",\n\"construction\": \"Analyze employee reviews from websites such as Glassdoor, focusing on overall satisfaction and management quality.\",\n\"rationale\": \"Satisfied employees might be more productive, leading to better corporate performance and hence higher stock returns.\",\n\"higher_returns_for\": \"Firms with higher average employee satisfaction scores\"\n},\n{\n\"name\": \"Management Age Ratio\",\n\"construction\": \"Calculate the ratio of the average age of company's management to the average age of its employees.\",\n\"rationale\": \"Firms with older management relative to their employees might be less innovative and adaptable, leading to lower stock returns.\",\n\"higher_returns_for\": \"Firms with lower management age ratios\"\n},\n{\n\"name\": \"Product Release Cycle\",\n\"construction\": \"Measure the average time between major product releases. Only include firms that regularly release new products.\",\n\"rationale\": \"Companies that frequently release new products may be more innovative and responsive to market changes, leading to higher stock returns.\",\n\"higher_returns_for\": \"Firms with shorter product release cycles\"\n},\n{\n\"name\": \"CEO Speech Analysis\",\n\"construction\": \"Analyze transcripts of earnings calls and other public speeches by the CEO. Use natural language processing to assess tone, clarity, and use of jargon.\",\n\"rationale\": \"CEOs who communicate effectively with investors might engender more confidence, leading to higher stock returns.\",\n\"higher_returns_for\": \"Firms with higher CEO speech scores\"\n},\n{\n\"name\": \"Patent Applications\",\n\"construction\": \"Count the number of patent applications filed by a company over the past year.\",\n\"rationale\": \"A higher number of patent applications can indicate a firm's investment in innovation, potentially leading to higher stock returns.\",\n\"higher_returns_for\": \"Firms with a higher number of patent applications\"\n},\n{\n\"name\": \"Charitable Giving\",\n\"construction\": \"Calculate the ratio of a company's charitable donations to its pre-tax profits.\",\n\"rationale\": \"Corporate social responsibility might appeal to ethically-minded investors, potentially supporting stock prices.\",\n\"higher_returns_for\": \"Firms with higher ratios of charitable giving\"\n},\n{\n\"name\": \"Cybersecurity Investments\",\n\"construction\": \"Estimate a company's investment in cybersecurity, based on job postings for cybersecurity roles and mentions in annual reports.\",\n\"rationale\": \"Greater investment in cybersecurity might reduce a firm's risk of costly data breaches, potentially leading to higher stock returns.\",\n\"higher_returns_for\": \"Firms with higher estimated cybersecurity investments\"\n},\n{\n\"name\": \"Customer Satisfaction\",\n\"construction\": \"Analyze customer reviews on websites and social media. Use natural language processing to determine overall sentiment.\",\n\"rationale\": \"Companies with satisfied customers may have a stronger brand and higher sales, leading to higher stock returns.\",\n\"higher_returns_for\": \"Firms with higher average customer satisfaction scores\"\n},\n{\n\"name\": \"Supply Chain Efficiency\",\n\"construction\": \"Calculate the ratio of cost of goods sold to total revenue, using data from the company's financial statements.\",\n\"rationale\": \"A lower ratio could indicate more efficient supply chain management, potentially leading to higher stock returns.\",\n\"higher_returns_for\": \"Firms with lower ratios of cost of goods sold to revenue\"\n}\n]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 741,
+   "total_tokens": 1011,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

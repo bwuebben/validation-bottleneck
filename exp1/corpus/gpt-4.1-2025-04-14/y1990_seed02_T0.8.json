@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:11:29.698469+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 2,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zfhYCBHW9auK2IAahbjOnngE7sJ",
+  "object": "chat.completion",
+  "created": 1784859085,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Short-Term Earnings Acceleration\", \"construction\": \"Compute the change in quarterly earnings growth rate: (most recent quarterly EPS - EPS one quarter ago) minus (EPS one quarter ago - EPS two quarters ago), divided by stock price.\", \"rationale\": \"Firms with accelerating earnings growth may signal improving fundamentals not yet fully incorporated in prices.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Inventory Change Ratio\", \"construction\": \"Inventory change over past year divided by average total assets over the same period, using Compustat data.\", \"rationale\": \"Sudden increases in inventories can indicate poor sales prospects or overproduction, while decreases suggest strong demand.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Net Insider Buying\", \"construction\": \"Net purchases of shares by corporate insiders over the past six months, scaled by total shares outstanding, based on SEC filings.\", \"rationale\": \"Insider buying may reveal private information about undervaluation or future positive developments.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"R&D Expense Ratio\", \"construction\": \"R&D expenditures divided by total sales over the past fiscal year, from Compustat.\", \"rationale\": \"Higher R&D spending may signal growth opportunities and management\u2019s confidence in future prospects.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Operating Cash Flow to Price\", \"construction\": \"Operating cash flow over the past year divided by current market capitalization.\", \"rationale\": \"Cash flow is less subject to accounting manipulation than earnings and may better capture firm health.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Dividend Consistency Score\", \"construction\": \"Number of consecutive years with non-decreasing regular dividends, as reported in CRSP and company reports.\", \"rationale\": \"Consistent dividends indicate stable earnings and disciplined management, reducing risk.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Volatility Skew\", \"construction\": \"Difference between stock\u2019s 12-month daily return volatility and average industry volatility over the same period.\", \"rationale\": \"Stocks with idiosyncratic high volatility may be riskier or subject to mispricing.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Receivables Growth\", \"construction\": \"Annual growth rate of accounts receivable divided by sales growth over the same period.\", \"rationale\": \"Faster receivables growth than sales suggests earnings quality issues and potential collection problems.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Employee Productivity\", \"construction\": \"Total sales divided by number of employees at fiscal year-end.\", \"rationale\": \"Firms with higher productivity may be more efficient and profitable, supporting higher returns.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Price Reaction to Earnings Announcement\", \"construction\": \"Cumulative abnormal return over 2 days centered on most recent quarterly earnings announcement.\", \"rationale\": \"Stocks with muted price reactions may reflect delayed information incorporation and underreaction.\", \"higher_returns_for\": \"high values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 665,
+   "total_tokens": 934,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_801206523b"
+ }
+}

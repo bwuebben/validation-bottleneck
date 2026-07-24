@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:25:00.022826+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y2000_seed02_T0.8.json",
+  "prompt_sha256": "ba5cf7132f7ff850555afa2b8cb676884144532e5f7a67ad3ca3518d9a4c621b"
+ },
+ "response": {
+  "id": "chatcmpl-E4zsnpeJLy8ti1bIjyB4JuWCSvdVF",
+  "object": "chat.completion",
+  "created": 1784859897,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses media sentiment or text analysis.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee review data or satisfaction.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses management/employee age ratios.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses product release cycle frequency.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses CEO speech or NLP analysis.\"},\n  {\"index\": 5, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"PatentsRD uses patent counts, but normalizes by R&D, not raw count.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses charitable giving or donations.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses cybersecurity investment or job postings.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer review sentiment.\"},\n  {\"index\": 9, \"match\": \"CashProd\", \"strength\": \"related\", \"reason\": \"Both relate to operational efficiency, but use different constructions.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2719,
+   "completion_tokens": 345,
+   "total_tokens": 3064,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

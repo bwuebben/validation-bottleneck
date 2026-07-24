@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:25:03.573911+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y2000_seed03_T0.8.json",
+  "prompt_sha256": "a48caea187e530eee4d1455fc1481f97c578364a181ec1e1d5740a22b6d4b057"
+ },
+ "response": {
+  "id": "chatcmpl-E4zsq9UbDs0jdm8Axx0uveNJ6XGel",
+  "object": "chat.completion",
+  "created": 1784859900,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses revenue per employee or productivity growth.\"},\n  {\"index\": 1, \"match\": \"AdExp\", \"strength\": \"exact\", \"reason\": \"AdExp uses advertising expense as a return predictor.\"},\n  {\"index\": 2, \"match\": \"grcapx\", \"strength\": \"close\", \"reason\": \"Both use change in capex, but denominator differs.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer concentration or similar.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses debt maturity or similar.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses management ownership or similar.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee turnover or satisfaction.\"},\n  {\"index\": 7, \"match\": \"DivYieldST\", \"strength\": \"related\", \"reason\": \"Both use dividend policy, but not dividend growth.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses change in revenue per change in R&D.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses sales stability or sales growth volatility.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2602,
+   "completion_tokens": 345,
+   "total_tokens": 2947,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

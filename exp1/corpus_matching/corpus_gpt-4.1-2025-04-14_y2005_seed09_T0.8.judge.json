@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:29:18.963166+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2005_seed09_T0.8.json",
+  "prompt_sha256": "493bb78f5c75968d707b376908dcd654546f07cce70632f6e423253fed1eff38"
+ },
+ "response": {
+  "id": "chatcmpl-E4zwyFbmF8o4OktTCumRjBzOkRF6i",
+  "object": "chat.completion",
+  "created": 1784860156,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses inventory change volatility as constructed.\"},\n  {\"index\": 1, \"match\": \"ShareRepurchase\", \"strength\": \"close\", \"reason\": \"Both measure share repurchases, but differ in scaling and period.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor focuses on short-term debt growth specifically.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses high/low price range ratio.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses sales-to-SG&A ratio or similar efficiency.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses R&D to fixed assets ratio.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses sales growth volatility or consistency.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses net insider trading as constructed.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses unrecognized tax benefits accrual.\"},\n  {\"index\": 9, \"match\": \"DivOmit\", \"strength\": \"exact\", \"reason\": \"Both are indicator variables for dividend omission events.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2800,
+   "completion_tokens": 351,
+   "total_tokens": 3151,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:19:00.390592+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 13,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yqgHqa5K6SssdWonTa7DPTDZ3KA",
+  "object": "chat.completion",
+  "created": 1784855922,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"PatentInnovationSpread\",\n      \"mechanism\": \"Firms with high R&D intensity but low patent output might be less efficient innovators. This strategy captures potential excess returns from investing in firms with efficient R&D spending relative to patent output.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"PatentsRD\"},\n          {\"weight\": -0.5, \"primitive\": \"RD\"},\n          {\"weight\": -0.5, \"primitive\": \"RDAbility\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.85,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"LiquidityShockResponse\",\n      \"mechanism\": \"Firms with stable trading volumes despite changes in liquidity conditions may indicate underlying strength. The composite aims to capture returns from firms resilient to liquidity shocks.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"Illiquidity\"},\n          {\"weight\": -1.0, \"primitive\": \"VolMkt\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"correlation\", \"primitive\": \"Illiquidity\", \"bound\": \"below\", \"threshold\": 0.3},\n        {\"type\": \"subperiod_consistency\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"}\n      ],\n      \"expected_annualized_sharpe\": 0.70,\n      \"expected_decay_half_life_months\": null\n    },\n    {\n      \"name\": \"OwnershipSentimentContrarian\",\n      \"mechanism\": \"Contrarian strategies based on changes in institutional ownership breadth may earn returns by exploiting sentiment-driven mispricings that are corrected over time.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"DelBreadth\"},\n          {\"weight\": -0.5, \"primitive\": \"Recomm_ShortInterest\"},\n          {\"weight\": -0.5, \"primitive\": \"IO_ShortInterest\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}\n      ],\n      \"expected_annualized_sharpe\": 0.80,\n      \"expected_decay_half_life_months\": 48\n    },\n    {\n      \"name\": \"DebtAssetExpansion\",\n      \"mechanism\": \"Firms expanding assets with minimal debt may experience superior performance due to sustainable growth. This composite aims to capture these dynamics by penalizing heavy debt issuance.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"AssetGrowth\"},\n          {\"weight\": -1.0, \"primitive\": \"DebtIssuance\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"DebtIssuance\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.90,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"MarketBehavioralAnomalies\",\n      \"mechanism\": \"Exploiting anomalies linked to investor behavior, this composite combines reversal and momentum effects that may persist due to cognitive biases in market participants.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"ResidualMomentum\"},\n          {\"weight\": -0.5, \"primitive\": \"MRreversal\"},\n          {\"weight\": 0.5, \"primitive\": \"STreversal\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_DOWN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"subperiod_consistency\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.95,\n      \"expected_decay_half_life_months\": 18\n    },\n    {\n      \"name\": \"QualityCashFlowDisparity\",\n      \"mechanism\": \"Firms with high-quality earnings but low cash flow predictability may be undervalued due to market inefficiencies in recognizing true earnings quality.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"OperProf\"},\n          {\"weight\": -1.0, \"primitive\": \"VarCF\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"correlation\", \"primitive\": \"VarCF\", \"bound\": \"below\", \"threshold\": 0.3},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"opposite_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.82,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"GrowthEfficiencyAnomaly\",\n      \"mechanism\": \"Firms efficiently converting sales growth into asset growth, without excessive increases in overhead, may outperform due to effective management practices.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"GrSaleToGrOverhead\"},\n          {\"weight\": 1.0, \"primitive\": \"GrSaleToGrInv\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"subperiod_consistency\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.88,\n      \"expected_decay_half_life_months\": 42\n    },\n    {\n      \"name\": \"EarningsSurpriseVolatility\",\n      \"mechanism\": \"Large earnings surprises with concurrent high volatility suggest market overshooting, creating potential for reversal once volatility decreases.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"EarningsSurprise\"},\n          {\"weight\": -1.0, \"primitive\": \"RealizedVol\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"lower\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"opposite_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.78,\n      \"expected_decay_half_life_months\": 12\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2903,
+   "completion_tokens": 1841,
+   "total_tokens": 4744,
+   "prompt_tokens_details": {
+    "cached_tokens": 2688,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

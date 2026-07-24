@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:56:39.663473+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zRC6u07gA3HMLnVtaaFtVQhewcj",
+  "object": "chat.completion",
+  "created": 1784858186,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"CEO Tenure\",\n      \"construction\": \"Number of years the current CEO has been in position.\",\n      \"rationale\": \"Longer-tenured CEOs may have more firm-specific knowledge and experience, leading to better decision-making.\",\n      \"higher_returns_for\": \"Firms with longer-tenured CEOs\"\n    },\n    {\n      \"name\": \"Employee Satisfaction\",\n      \"construction\": \"Measure of employee satisfaction from surveys or third-party ratings.\",\n      \"rationale\": \"Higher employee satisfaction may lead to increased productivity and better firm performance.\",\n      \"higher_returns_for\": \"Firms with higher employee satisfaction\"\n    },\n    {\n      \"name\": \"Social Media Sentiment\",\n      \"construction\": \"Measure of sentiment towards the firm on social media platforms.\",\n      \"rationale\": \"Positive sentiment may indicate strong customer loyalty and brand strength.\",\n      \"higher_returns_for\": \"Firms with more positive social media sentiment\"\n    },\n    {\n      \"name\": \"Patent Activity\",\n      \"construction\": \"Number of patents filed by the firm in the past year.\",\n      \"rationale\": \"Patent activity may indicate innovative capacity and future growth potential.\",\n      \"higher_returns_for\": \"Firms with higher patent activity\"\n    },\n    {\n      \"name\": \"Customer Concentration\",\n      \"construction\": \"Revenue concentration from the firm's largest customer.\",\n      \"rationale\": \"High customer concentration may increase business risk due to dependence on a single customer.\",\n      \"higher_returns_for\": \"Firms with lower customer concentration\"\n    },\n    {\n      \"name\": \"Supplier Concentration\",\n      \"construction\": \"Cost concentration from the firm's largest supplier.\",\n      \"rationale\": \"High supplier concentration may increase business risk due to dependence on a single supplier.\",\n      \"higher_returns_for\": \"Firms with lower supplier concentration\"\n    },\n    {\n      \"name\": \"Product Diversity\",\n      \"construction\": \"Number of distinct product lines or business segments.\",\n      \"rationale\": \"Greater product diversity may reduce business risk and increase growth opportunities.\",\n      \"higher_returns_for\": \"Firms with greater product diversity\"\n    },\n    {\n      \"name\": \"Geographic Diversity\",\n      \"construction\": \"Number of distinct geographic markets in which the firm operates.\",\n      \"rationale\": \"Greater geographic diversity may reduce business risk and increase growth opportunities.\",\n      \"higher_returns_for\": \"Firms with greater geographic diversity\"\n    },\n    {\n      \"name\": \"Board Independence\",\n      \"construction\": \"Proportion of the board of directors that is independent.\",\n      \"rationale\": \"A more independent board may provide better oversight and reduce agency problems.\",\n      \"higher_returns_for\": \"Firms with a higher proportion of independent directors\"\n    },\n    {\n      \"name\": \"Environmental Impact\",\n      \"construction\": \"Measure of the firm's environmental impact from third-party ratings or reports.\",\n      \"rationale\": \"Firms with lower environmental impact may face less regulatory risk and have better public perception.\",\n      \"higher_returns_for\": \"Firms with lower environmental impact\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 643,
+   "total_tokens": 913,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:20:13.915675+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 17,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yrtJo0kK81pakhdUhwEKvJBlrbJ",
+  "object": "chat.completion",
+  "created": 1784855997,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"Liquidity-Risk Valuation Anomaly\",\n      \"mechanism\": \"Combining valuation multiples with liquidity risk measures, this composite captures mispricing in firms with liquidity constraints, potentially leading to higher expected returns as investors demand compensation for liquidity risk.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"EP\"},\n          {\"weight\": 0.5, \"primitive\": \"Amihud's illiquidity\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.75,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Growth Innovation Capture\",\n      \"mechanism\": \"This composite seeks to identify firms with high growth potential and innovation by combining R&D intensity with changes in asset turnover, predicting superior performance as these firms capitalize on growth opportunities.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"RD\"},\n          {\"weight\": 0.5, \"primitive\": \"ChAssetTurnover\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"RDIPO\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.85,\n      \"expected_decay_half_life_months\": 48\n    },\n    {\n      \"name\": \"Debt-Driven Momentum\",\n      \"mechanism\": \"Combining leverage metrics with intermediate momentum, this composite targets firms benefiting from debt-financed growth, potentially leading to outsized returns from efficient capital structuring and market momentum.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"Leverage\"},\n          {\"weight\": 1.0, \"primitive\": \"IntMom\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.65,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"Quality Earnings Projection\",\n      \"mechanism\": \"By blending earnings consistency metrics with forecast optimism, this composite captures firms with reliable earnings and positive analyst outlooks, predicting higher returns as these firms tend to meet or exceed expectations.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"EarningsConsistency\"},\n          {\"weight\": 0.5, \"primitive\": \"AOP\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_DOWN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"correlation\", \"primitive\": \"EarningsSurprise\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.8,\n      \"expected_decay_half_life_months\": 40\n    },\n    {\n      \"name\": \"Behavioral Sentiment Divergence\",\n      \"mechanism\": \"This composite leverages changes in analyst recommendations against short interest to identify stocks where sentiment diverges from fundamental shorting activity, aiming to exploit sentiment-driven mispricing.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"ChangeInRecommendation\"},\n          {\"weight\": -1.0, \"primitive\": \"IO_ShortInterest\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.7,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"Corporate Realignment Advantage\",\n      \"mechanism\": \"Combining variables for changes in net financial assets and composite equity issuance, this composite targets firms undergoing significant balance sheet restructuring, leading to potential undervaluation and future return predictability.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"DelNetFin\"},\n          {\"weight\": 0.5, \"primitive\": \"CompEquIss\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"NetDebtFinance\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.78,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Operational Efficiency Capture\",\n      \"mechanism\": \"This composite focuses on firms with strong operational efficiency by combining asset productivity metrics with changes in capital investment, predicting enhanced returns as efficient firms optimize resource allocation.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"CashProd\"},\n          {\"weight\": 0.5, \"primitive\": \"ChInvIA\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.6,\n      \"expected_decay_half_life_months\": 28\n    },\n    {\n      \"name\": \"Strategic Earnings Management\",\n      \"mechanism\": \"By examining both abnormal accruals and analyst forecast dispersion, this composite identifies firms potentially engaging in earnings management to meet market expectations, leading to predictable return patterns.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"AbnormalAccruals\"},\n          {\"weight\": 1.0, \"primitive\": \"ForecastDispersion\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"subperiod_consistency\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"weaker\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.7,\n      \"expected_decay_half_life_months\": 32\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2903,
+   "completion_tokens": 1869,
+   "total_tokens": 4772,
+   "prompt_tokens_details": {
+    "cached_tokens": 2688,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

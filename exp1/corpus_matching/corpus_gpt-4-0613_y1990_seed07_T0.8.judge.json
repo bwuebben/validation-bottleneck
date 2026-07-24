@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:23:52.180570+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y1990_seed07_T0.8.json",
+  "prompt_sha256": "3f32af43e22d5eb8e575de8c9db5829f4da2243c195f8a3db02a84db3ddb3d0a"
+ },
+ "response": {
+  "id": "chatcmpl-E4zrgNcMzepnwSZFiOhRw2kmntfLG",
+  "object": "chat.completion",
+  "created": 1784859828,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"DebtIssuance\", \"strength\": \"exact\", \"reason\": \"Change in total debt matches DebtIssuance construction.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses market cap share change.\"},\n  {\"index\": 2, \"match\": \"AnnouncementReturn\", \"strength\": \"related\", \"reason\": \"Both use earnings announcement window returns, but focus differs.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses non-operating expense ratio.\"},\n  {\"index\": 4, \"match\": \"hire\", \"strength\": \"exact\", \"reason\": \"Year-over-year employee growth matches hire construction.\"},\n  {\"index\": 5, \"match\": \"DelBreadth\", \"strength\": \"close\", \"reason\": \"Both use change in institutional ownership, but breadth vs. percent differs.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer concentration ratio.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses sales to short-term assets.\"},\n  {\"index\": 8, \"match\": \"Cash\", \"strength\": \"close\", \"reason\": \"Both use cash/assets, but proposal uses change not level.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses lease expenses ratio.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2699,
+   "completion_tokens": 348,
+   "total_tokens": 3047,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

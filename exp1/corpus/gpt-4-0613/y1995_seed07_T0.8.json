@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:52:20.285137+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 7,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zMuSf2r1tV5Fbr4qNLFU0YxVe3z",
+  "object": "chat.completion",
+  "created": 1784857920,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\n    \"name\": \"Net Working Capital Ratio\", \n    \"construction\": \"Calculated by subtracting current liabilities from current assets and dividing by total assets. Data source: quarterly balance sheets.\", \n    \"rationale\": \"Companies with higher net working capital ratios may be better able to weather financial distress, leading to higher expected returns.\", \n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"R&D Intensity\", \n    \"construction\": \"Calculated by dividing R&D expense by total sales. Data source: quarterly income statements.\", \n    \"rationale\": \"Firms with high R&D intensity may have more promising growth potentials, predicting higher future returns.\", \n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"CEO Tenure\", \n    \"construction\": \"Number of years since the current CEO took office. Data source: annual proxy statements.\", \n    \"rationale\": \"Long-tenured CEOs may lead to better company performance due to their experience and knowledge, leading to higher expected returns.\", \n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Employee Turnover Rate\", \n    \"construction\": \"Calculated by dividing the number of employees who left the company by the total number of employees. Data source: annual reports.\", \n    \"rationale\": \"High turnover could indicate internal issues, leading to lower expected returns.\", \n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Inventory Turnover Growth\", \n    \"construction\": \"Year-over-year change in inventory turnover ratio, which is calculated as cost of goods sold divided by average inventory. Data source: quarterly balance sheets and income statements.\", \n    \"rationale\": \"Increasing inventory turnover may indicate strong sales growth, leading to higher expected returns.\", \n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Payout Ratio Stability\", \n    \"construction\": \"Standard deviation of the payout ratio over the past five years. Payout ratio is calculated as dividends per share divided by earnings per share. Data source: quarterly income statements.\", \n    \"rationale\": \"Firms with stable payout ratios may be viewed as less risky, leading to higher expected returns.\", \n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Foreign Sales Ratio\", \n    \"construction\": \"Foreign revenue divided by total revenue. Data source: annual reports.\", \n    \"rationale\": \"Firms with higher foreign sales ratio may offer diversification benefits, leading to higher expected returns.\", \n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Deferred Tax Change\", \n    \"construction\": \"Year-over-year change in deferred tax liabilities. Data source: annual balance sheets.\", \n    \"rationale\": \"Rapidly increasing deferred tax liabilities may indicate potential future tax expenses, leading to lower expected returns.\", \n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Interest Coverage Growth\", \n    \"construction\": \"Year-over-year change in interest coverage ratio, which is calculated as EBIT divided by interest expense. Data source: annual income statements.\", \n    \"rationale\": \"Improving interest coverage may indicate decreasing credit risk, leading to higher expected returns.\", \n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Depreciation/CAPEX Ratio\", \n    \"construction\": \"Depreciation expense divided by capital expenditures. Data source: quarterly cash flow statements.\", \n    \"rationale\": \"A high ratio may indicate under-investment, which could lead to future performance deterioration and lower expected returns.\", \n    \"higher_returns_for\": \"Low values of the measure\"\n  } \n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 826,
+   "total_tokens": 1096,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

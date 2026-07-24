@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:56:23.315782+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 4,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yUULWkNKM8Zzqa1sgT8AZ13erQi",
+  "object": "chat.completion",
+  "created": 1784854546,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\"name\": \"Tax Efficiency\", \"mechanism\": \"Firms with lower tax burdens and higher cash flows tend to have more resources for reinvestment and shareholder return, while higher advertising expenses may signal growth initiatives, potentially driving higher returns.\", \"expression\": {\"terms\": [{\"weight\": -1.0, \"primitive\": \"Tax\"}, {\"weight\": 1.0, \"primitive\": \"CF\"}, {\"weight\": 0.5, \"primitive\": \"AdExp\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": null},\n  {\"name\": \"Asset Efficiency\", \"mechanism\": \"Companies with more efficient assets and lower accruals are likely to be better managed and should therefore generate higher returns.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"AM\"}, {\"weight\": -1.0, \"primitive\": \"Accruals\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"below\", \"threshold\": 0.3}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 36},\n  {\"name\": \"Corporate Governance and Cash Flow\", \"mechanism\": \"Good corporate governance combined with high cash-to-assets ratio can indicate efficient use of resources and better decision making, leading to higher returns.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Governance\"}, {\"weight\": 1.0, \"primitive\": \"Cash\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}, {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": null},\n  {\"name\": \"Debt and Asset Management\", \"mechanism\": \"Firms with lower leverage and higher asset growth may have a better ability to generate returns by managing debt and expanding their asset base.\", \"expression\": {\"terms\": [{\"weight\": -1.0, \"primitive\": \"Leverage\"}, {\"weight\": 0.5, \"primitive\": \"AssetGrowth\"}], \"regime\": \"TERM_SPREAD_NEGATIVE\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.5, \"expected_decay_half_life_months\": 24},\n  {\"name\": \"R&D Investment and Profitability\", \"mechanism\": \"Firms with higher R&D spending and strong operating profitability may generate higher returns as they are likely to be innovative and well-managed.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": 1.0, \"primitive\": \"OperProf\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": null},\n  {\"name\": \"Short Interest and Idiosyncratic Risk\", \"mechanism\": \"Firms with higher short interest combined with lower idiosyncratic risk may produce higher returns because of short squeeze potential and less company-specific risk.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"ShortInterest\"}, {\"weight\": -1.0, \"primitive\": \"IdioVol3F\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 24},\n  {\"name\": \"Quality and Momentum\", \"mechanism\": \"Firms with higher quality (as indicated by earnings consistency) and positive momentum are likely to outperform as they are seen as less risky and have positive sentiment.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"EarningsConsistency\"}, {\"weight\": 1.0, \"primitive\": \"Mom6m\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}, {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}], \"expected_annualized_sharpe\": 0.9, \"expected_decay_half_life_months\": null},\n  {\"name\": \"Analyst Optimism and Value\", \"mechanism\": \"Firms with higher analyst optimism and lower book-to-market ratio may produce higher returns as they are likely to have positive future prospects and are undervalued.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"AOP\"}, {\"weight\": -1.0, \"primitive\": \"BM\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": false}, \"auxiliary_predictions\": [{\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}, {\"type\": \"subperiod_consistency\"}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 18}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2965,
+   "completion_tokens": 1570,
+   "total_tokens": 4535,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

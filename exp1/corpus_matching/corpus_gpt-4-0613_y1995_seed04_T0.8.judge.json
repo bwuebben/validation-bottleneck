@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:24:26.200130+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y1995_seed04_T0.8.json",
+  "prompt_sha256": "5ec8f014a9e0367180d8356d4ddcb21be526f0692234e58fd0fe094fe1eed1b7"
+ },
+ "response": {
+  "id": "chatcmpl-E4zsBUfUuV8XxAXer3nh805WJCtU8",
+  "object": "chat.completion",
+  "created": 1784859859,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"FirmAge\", \"strength\": \"exact\", \"reason\": \"Firm age since IPO matches exactly.\"},\n  {\"index\": 1, \"match\": \"CashProd\", \"strength\": \"related\", \"reason\": \"Both relate to productivity, but different measures.\"},\n  {\"index\": 2, \"match\": \"Herf\", \"strength\": \"related\", \"reason\": \"Both measure concentration, but Herf is industry, not revenue.\"},\n  {\"index\": 3, \"match\": \"RD\", \"strength\": \"close\", \"reason\": \"Both use R&D scaled by firm size; denominator differs.\"},\n  {\"index\": 4, \"match\": \"OPLeverage\", \"strength\": \"exact\", \"reason\": \"Directly matches operating leverage ratio.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No management ownership variable in library.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No employee satisfaction or similar in library.\"},\n  {\"index\": 7, \"match\": \"Herf\", \"strength\": \"related\", \"reason\": \"Both relate to competition, but Herf is industry-wide.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No customer loyalty or similar in library.\"},\n  {\"index\": 9, \"match\": \"FR\", \"strength\": \"exact\", \"reason\": \"Directly matches pension funding status.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2611,
+   "completion_tokens": 338,
+   "total_tokens": 2949,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

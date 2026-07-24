@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:44:27.454349+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yIokJd0QKluAIzpeIL3Kfgmsop7",
+  "object": "chat.completion",
+  "created": 1784853822,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [{\"name\": \"Hypothesis 1\", \"mechanism\": \"Firms with higher earnings surprise and higher asset growth tend to outperform those with lower earnings surprise and lower asset growth, particularly in bullish market conditions. This is due to investor underreaction to positive signals.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"}, {\"weight\": 0.5, \"primitive\": \"AssetGrowth\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"above\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.65, \"expected_decay_half_life_months\": 36},\n\n{\"name\": \"Hypothesis 2\", \"mechanism\": \"Firms with higher book-to-market ratios and higher asset turnover tend to outperform those with lower book-to-market ratios and lower asset turnover, particularly in bearish market conditions. This is due to investor overreaction to negative signals.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"BM\"}, {\"weight\": 0.5, \"primitive\": \"ChAssetTurnover\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 48},\n\n{\"name\": \"Hypothesis 3\", \"mechanism\": \"Firms with higher dividend payouts and lower debt issuance tend to outperform those with lower dividend payouts and higher debt issuance, particularly when the term spread is positive. This is due to the signaling effect of dividends and debt.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"PayoutYield\"}, {\"weight\": -0.5, \"primitive\": \"DebtIssuance\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Leverage\", \"bound\": \"above\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": 60},\n\n{\"name\": \"Hypothesis 4\", \"mechanism\": \"Firms with high short-term reversal and high volume trend tend to outperform those with low short-term reversal and low volume trend, particularly in volatile markets. This is due to the market's tendency to overreact to recent news.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"STreversal\"}, {\"weight\": 0.5, \"primitive\": \"VolumeTrend\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"RealizedVol\", \"bound\": \"above\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.75, \"expected_decay_half_life_months\": null},\n\n{\"name\": \"Hypothesis 5\", \"mechanism\": \"Firms with higher sales-to-price ratios and higher net payout yields tend to outperform those with lower sales-to-price ratios and lower net payout yields, particularly in bullish markets. This is due to the market's tendency to undervalue firms with strong fundamentals.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"SP\"}, {\"weight\": 0.5, \"primitive\": \"NetPayoutYield\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.65, \"expected_decay_half_life_months\": 72},\n\n{\"name\": \"Hypothesis 6\", \"mechanism\": \"Firms with high earnings consistency and low bid-ask spreads tend to outperform those with low earnings consistency and high bid-ask spreads, particularly in bearish markets. This is due to the market's preference for predictable earnings streams in uncertain times.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"EarningsConsistency\"}, {\"weight\": -0.5, \"primitive\": \"BidAskSpread\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"above\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.6, \"expected_decay_half_life_months\": 60},\n\n{\"name\": \"Hypothesis 7\", \"mechanism\": \"Firms with high book leverage and low cash-to-assets ratios tend to outperform those with low book leverage and high cash-to-assets ratios, particularly when the term spread is negative. This is due to the risk premium associated with leveraged firms.\", \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"BookLeverage\"}, {\"weight\": -0.5, \"primitive\": \"Cash\"}], \"regime\": \"TERM_SPREAD_NEGATIVE\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"Leverage\", \"bound\": \"above\", \"threshold\": 0.3}], \"expected_annualized_sharpe\": 0.7, \"expected_decay_half_life_months\": null},\n\n{\"name\": \"Hypothesis 8\", \"mechanism\": \"Firms with high R&D-to-market-cap ratios and high patent-to-R&D-expenses ratios tend to outperform those with low R&D-to-market-cap ratios and low patent-to-R&D-expenses ratios, particularly in bullish markets. This is due to the market's underestimation of the value of innovation.\", \"expression\": {\"terms\": [{\"weight\": 0.5, \"primitive\": \"RD\"}, {\"weight\": 0.5, \"primitive\": \"PatentsRD\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": true}, \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}], \"expected_annualized_sharpe\": 0.8, \"expected_decay_half_life_months\": 84}]}\n",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2864,
+   "completion_tokens": 1817,
+   "total_tokens": 4681,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

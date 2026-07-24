@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:26:45.277228+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y2010_seed08_T0.8.json",
+  "prompt_sha256": "686c253501976589bb718f97e14873cd5700e3d37a6377c356e193e4473198ea"
+ },
+ "response": {
+  "id": "chatcmpl-E4zuUC9bHALjSsbmyGnz8FtYvFqGt",
+  "object": "chat.completion",
+  "created": 1784860002,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer satisfaction or similar data.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses product development cycle time or similar.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee morale or similar survey data.\"},\n  {\"index\": 3, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"CSR overlaps with governance, but CSR is broader (ESG).\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses data breach or cybersecurity incidents.\"},\n  {\"index\": 5, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"PatentsRD uses patents/RD; proposal uses patent applications count.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses supply chain robustness or supplier diversity.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses CEO-worker pay ratio or similar.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses product recalls or similar quality measures.\"},\n  {\"index\": 9, \"match\": \"Governance\", \"strength\": \"exact\", \"reason\": \"Governance index includes board independence as a core component.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2709,
+   "completion_tokens": 355,
+   "total_tokens": 3064,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

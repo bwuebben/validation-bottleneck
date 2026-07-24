@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:31:02.907703+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4o-2024-08-06/y1995_seed09_T0.8.json",
+  "prompt_sha256": "2c90792a3c72b4ead653e133581e9b9c65308d9f61d8485ed94ea04188c8ed32"
+ },
+ "response": {
+  "id": "chatcmpl-E4zyePxG03RRu6pzCqQZTiCkjmXjr",
+  "object": "chat.completion",
+  "created": 1784860260,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"hire\", \"strength\": \"exact\", \"reason\": \"Measures employee growth rate, same as 'hire' in library.\"},\n  {\"index\": 1, \"match\": \"GrAdExp\", \"strength\": \"close\", \"reason\": \"Both capture change in advertising relative to sales.\"},\n  {\"index\": 2, \"match\": \"RDAbility\", \"strength\": \"related\", \"reason\": \"Both relate to R&D quality/consistency, but not identical.\"},\n  {\"index\": 3, \"match\": \"CashProd\", \"strength\": \"close\", \"reason\": \"Both measure cash flow efficiency relative to earnings.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses dividend growth stability.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses supplier diversity or similar.\"},\n  {\"index\": 6, \"match\": \"grcapx\", \"strength\": \"related\", \"reason\": \"Both involve capex, but different denominators/signals.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for international revenue exposure.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for IT adoption or tech spending.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for environmental policy scores.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2696,
+   "completion_tokens": 346,
+   "total_tokens": 3042,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

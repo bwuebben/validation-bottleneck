@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:18:05.022456+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ypog6brn2N8vcmYXzHSAkcUbimM",
+  "object": "chat.completion",
+  "created": 1784855868,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"Cash Flow Liquidity Anomaly\",\n      \"mechanism\": \"This composite combines cash flow and liquidity measures to capture firms with strong cash generation capabilities that are also less liquid, offering a premium for providing liquidity to cash-rich but illiquid firms.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"CF\"},\n          {\"weight\": 1.0, \"primitive\": \"Illiquidity\"},\n          {\"weight\": -0.5, \"primitive\": \"Cash\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Innovation Momentum Effect\",\n      \"mechanism\": \"This hypothesis focuses on firms with a high pace of innovation and momentum, hypothesizing that innovative firms with recent price momentum continue to outperform as they leverage new technologies.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"PatentsRD\"},\n          {\"weight\": 0.5, \"primitive\": \"Mom12m\"},\n          {\"weight\": 1.0, \"primitive\": \"RDAbility\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 1.1,\n      \"expected_decay_half_life_months\": 48\n    },\n    {\n      \"name\": \"Defensive Growth Arbitrage\",\n      \"mechanism\": \"This strategy targets defensive stocks that exhibit strong growth characteristics, exploiting the market's underappreciation of stable growth in low volatility environments.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"LowVol\"},\n          {\"weight\": 0.5, \"primitive\": \"AssetGrowth\"},\n          {\"weight\": -0.5, \"primitive\": \"ROA\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.8,\n      \"expected_decay_half_life_months\": 60\n    },\n    {\n      \"name\": \"Leveraged Efficiency Premium\",\n      \"mechanism\": \"This composite aims to identify firms that effectively utilize leverage to enhance operational efficiency, potentially offering higher returns due to improved performance under optimal leverage conditions.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"BookLeverage\"},\n          {\"weight\": 1.0, \"primitive\": \"OperProf\"},\n          {\"weight\": -0.5, \"primitive\": \"DebtIssuance\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"OperProf\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.75,\n      \"expected_decay_half_life_months\": null\n    },\n    {\n      \"name\": \"Market Sentiment Divergence\",\n      \"mechanism\": \"Combining earnings announcement returns with analyst optimism, this factor captures sentiment-driven mispricings, expecting reversals or continuations in sentiment shifts.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"AnnouncementReturn\"},\n          {\"weight\": 0.5, \"primitive\": \"AOP\"},\n          {\"weight\": -0.5, \"primitive\": \"AnalystRevision\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.85,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"Intangible Asset Excess Returns\",\n      \"mechanism\": \"This hypothesis links the profitability of intangible assets with book-to-market discrepancies, targeting firms that effectively leverage intangible assets to generate excess returns.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"IntanEP\"},\n          {\"weight\": 0.5, \"primitive\": \"BM\"},\n          {\"weight\": -0.5, \"primitive\": \"RD\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_DOWN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.7,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"Supplier-Customer Synergy\",\n      \"mechanism\": \"This composite explores the dynamics between supplier and customer momentum to exploit synergistic effects that may lead to consistent excess returns across the supply chain.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"iomom_supp\"},\n          {\"weight\": 0.5, \"primitive\": \"iomom_cust\"},\n          {\"weight\": -0.5, \"primitive\": \"OrderBacklog\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": null\n    },\n    {\n      \"name\": \"Cyclical Investment Timing\",\n      \"mechanism\": \"By blending investment to revenue and industry momentum, this factor bets on cyclical timing where firms with timely investments outperform during cyclical economic phases.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"Investment\"},\n          {\"weight\": 0.5, \"primitive\": \"IndMom\"},\n          {\"weight\": -0.5, \"primitive\": \"GrSaleToGrOverhead\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n        {\"type\": \"correlation\", \"primitive\": \"IndMom\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 1.0,\n      \"expected_decay_half_life_months\": 36\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2903,
+   "completion_tokens": 1937,
+   "total_tokens": 4840,
+   "prompt_tokens_details": {
+    "cached_tokens": 2688,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

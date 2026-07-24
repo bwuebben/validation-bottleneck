@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:30:05.397012+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4o-2024-08-06/y1990_seed03_T0.8.json",
+  "prompt_sha256": "690ee847d63f1b5803f5358f217f0388488c2863d4ee58537f1b5d2abea2fa7a"
+ },
+ "response": {
+  "id": "chatcmpl-E4zxjjot8yKNuSA0NCLlQqnqtdGMW",
+  "object": "chat.completion",
+  "created": 1784860203,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"iomom_supp\", \"strength\": \"related\", \"reason\": \"Both use supplier network data, but measure different aspects.\"},\n  {\"index\": 1, \"match\": \"CitationsRD\", \"strength\": \"close\", \"reason\": \"Both use patent citations, but proposal uses growth rate.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses media sentiment or CEO mentions.\"},\n  {\"index\": 3, \"match\": \"OrgCap\", \"strength\": \"related\", \"reason\": \"Both relate to organizational/human capital, but measure differently.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses environmental compliance or violations.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses board gender diversity or composition.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee retention or turnover rates.\"},\n  {\"index\": 7, \"match\": \"RDcap\", \"strength\": \"close\", \"reason\": \"Both relate to capitalized R&D, but proposal uses a ratio.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor aggregates CSR or social responsibility scores.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses product recall frequency or CPSC data.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2669,
+   "completion_tokens": 355,
+   "total_tokens": 3024,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

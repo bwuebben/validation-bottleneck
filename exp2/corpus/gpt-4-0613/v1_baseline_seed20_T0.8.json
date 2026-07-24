@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:52:58.982427+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 20,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yQjyR8xwEYVaSvVb2srFCUOUcg3",
+  "object": "chat.completion",
+  "created": 1784854313,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\"name\": \"Hypothesis1\",\n   \"mechanism\": \"Returns from combining stocks with high asset growth and low operating leverage should be higher, as companies with high asset growth are expected to have higher future earnings, and low operating leverage limits downside risk.\",\n   \"expression\": {\n     \"terms\": [{\"weight\": 1.0, \"primitive\": \"AssetGrowth\"}, {\"weight\": -1.0, \"primitive\": \"OperProf\"}],\n     \"regime\": \"MKT_TRAILING_12M_UP\",\n     \"vol_target\": true},\n   \"auxiliary_predictions\": [\n     {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"},\n     {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n     {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}\n   ],\n   \"expected_annualized_sharpe\": 0.8,\n   \"expected_decay_half_life_months\": 36\n  },\n\n  {\"name\": \"Hypothesis2\",\n   \"mechanism\": \"Low R&D spending combined with high book-to-market ratios signal undervalued, neglected stocks that should outperform.\",\n   \"expression\": {\n     \"terms\": [{\"weight\": -1.0, \"primitive\": \"RDS\"}, {\"weight\": 1.0, \"primitive\": \"BM\"}],\n     \"regime\": \"TERM_SPREAD_NEGATIVE\",\n     \"vol_target\": true},\n   \"auxiliary_predictions\": [\n     {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"lower\"},\n     {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n     {\"type\": \"correlation\", \"primitive\": \"Size\", \"bound\": \"below\", \"threshold\": 0.3}\n   ],\n   \"expected_annualized_sharpe\": 0.7,\n   \"expected_decay_half_life_months\": 24\n  },\n\n  {\"name\": \"Hypothesis3\",\n   \"mechanism\": \"Companies showing high sales growth relative to advertising expenses are efficient at converting advertising dollars into sales and thus should provide higher returns.\",\n   \"expression\": {\n     \"terms\": [{\"weight\": 1.0, \"primitive\": \"GrSaleToGrInv\"}, {\"weight\": -1.0, \"primitive\": \"AdExp\"}],\n     \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n     \"vol_target\": false},\n   \"auxiliary_predictions\": [\n     {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"},\n     {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n     {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n   ],\n   \"expected_annualized_sharpe\": 0.6,\n   \"expected_decay_half_life_months\": 48\n  },\n\n  {\"name\": \"Hypothesis4\",\n   \"mechanism\": \"Companies with high return on equity and low debt issuance are effectively using equity to generate returns and are less exposed to debt-related risks, leading to higher returns.\",\n   \"expression\": {\n     \"terms\": [{\"weight\": 1.0, \"primitive\": \"RoE\"}, {\"weight\": -1.0, \"primitive\": \"DebtIssuance\"}],\n     \"regime\": \"TERM_SPREAD_POSITIVE\",\n     \"vol_target\": true},\n   \"auxiliary_predictions\": [\n     {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"},\n     {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n     {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n   ],\n   \"expected_annualized_sharpe\": 0.7,\n   \"expected_decay_half_life_months\": 60\n  },\n\n  {\"name\": \"Hypothesis5\",\n   \"mechanism\": \"High return skewness combined with low trading volume suggest underpriced stocks that should provide higher returns when they're correctly priced by the market.\",\n   \"expression\": {\n     \"terms\": [{\"weight\": 1.0, \"primitive\": \"ReturnSkew\"}, {\"weight\": -1.0, \"primitive\": \"DolVol\"}],\n     \"regime\": \"MKT_TRAILING_12M_UP\",\n     \"vol_target\": false},\n   \"auxiliary_predictions\": [\n     {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"},\n     {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n     {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}\n   ],\n   \"expected_annualized_sharpe\": 0.8,\n   \"expected_decay_half_life_months\": 18\n  },\n\n  {\"name\": \"Hypothesis6\",\n   \"mechanism\": \"Companies with high cash productivity and low market leverage indicate efficient operations and lower risk profile, leading to higher returns.\",\n   \"expression\": {\n     \"terms\": [{\"weight\": 1.0, \"primitive\": \"CashProd\"}, {\"weight\": -1.0, \"primitive\": \"Leverage\"}],\n     \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n     \"vol_target\": true},\n   \"auxiliary_predictions\": [\n     {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"},\n     {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n     {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n   ],\n   \"expected_annualized_sharpe\": 0.9,\n   \"expected_decay_half_life_months\": 30\n  },\n\n  {\"name\": \"Hypothesis7\",\n   \"mechanism\": \"Companies with high earnings forecasts and low stock issuance rates are expected to have higher future earnings and less dilution of shareholder value, leading to higher returns.\",\n   \"expression\": {\n     \"terms\": [{\"weight\": 1.0, \"primitive\": \"fgr5yrLag\"}, {\"weight\": -1.0, \"primitive\": \"ShareIss1Y\"}],\n     \"regime\": \"MKT_TRAILING_12M_UP\",\n     \"vol_target\": false},\n   \"auxiliary_predictions\": [\n     {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"},\n     {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n     {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n   ],\n   \"expected_annualized_sharpe\": 0.7,\n   \"expected_decay_half_life_months\": 24\n  },\n\n  {\"name\": \"Hypothesis8\",\n   \"mechanism\": \"Companies with high R&D spending and low book leverage are likely to have innovative products and less debt-related risks, leading to higher returns.\",\n   \"expression\": {\n     \"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": -1.0, \"primitive\": \"BookLeverage\"}],\n     \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n     \"vol_target\": true},\n   \"auxiliary_predictions\": [\n     {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"},\n     {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n     {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n   ],\n   \"expected_annualized_sharpe\": 0.8,\n   \"expected_decay_half_life_months\": 36\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2864,
+   "completion_tokens": 1757,
+   "total_tokens": 4621,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

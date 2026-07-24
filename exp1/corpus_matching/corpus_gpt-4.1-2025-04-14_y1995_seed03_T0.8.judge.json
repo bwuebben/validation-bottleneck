@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:27:45.921625+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y1995_seed03_T0.8.json",
+  "prompt_sha256": "6900dc75c86b34ed047ada208152386c6f9c0695605308f625f120921da3e130"
+ },
+ "response": {
+  "id": "chatcmpl-E4zvTII7IJ4J2TUU34sJ4od7yGdSy",
+  "object": "chat.completion",
+  "created": 1784860063,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"AssetGrowth\", \"strength\": \"close\", \"reason\": \"Quarterly asset growth is a higher-frequency variant of AssetGrowth.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses operating expenses to revenues directly.\"},\n  {\"index\": 2, \"match\": \"RDcap\", \"strength\": \"exact\", \"reason\": \"RDcap is cumulative R&D to assets; construction matches exactly.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses change in inventory turnover.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses net insider buying.\"},\n  {\"index\": 5, \"match\": \"grcapx3y\", \"strength\": \"close\", \"reason\": \"Both measure capex change over multi-year periods, scaled by assets.\"},\n  {\"index\": 6, \"match\": \"DivOmit\", \"strength\": \"exact\", \"reason\": \"DivOmit is a dividend omission indicator; construction matches.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses late 10-K filing as a signal.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses earnings volatility directly.\"},\n  {\"index\": 9, \"match\": \"ForecastDispersion\", \"strength\": \"exact\", \"reason\": \"ForecastDispersion is analyst EPS forecast dispersion; construction matches.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2812,
+   "completion_tokens": 362,
+   "total_tokens": 3174,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

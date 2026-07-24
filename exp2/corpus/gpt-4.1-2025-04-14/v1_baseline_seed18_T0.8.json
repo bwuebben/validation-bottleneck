@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:25:19.479535+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 18,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ywvP5rfvpWk0xnOCLdTRjEGuMbY",
+  "object": "chat.completion",
+  "created": 1784856309,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Capital Efficiency + Underreaction in High Volatility\",\n    \"mechanism\": \"Combining Cash Productivity (CashProd) and Analyst EPS Forecast Revisions (AnalystRevision) leverages persistent underreaction to improvements in capital efficiency, especially during periods of high investor uncertainty reflected by elevated VIX. Elevated volatility amplifies mispricing due to slower incorporation of positive efficiency signals.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"CashProd\"},\n        {\"weight\": 1.0, \"primitive\": \"AnalystRevision\"}\n      ],\n      \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"AnalystRevision\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.95,\n    \"expected_decay_half_life_months\": 18\n  },\n  {\n    \"name\": \"Intangible Value + Operating Leverage Defensive\",\n    \"mechanism\": \"Combining Intangible-adjusted Book-to-Market (IntanBM) and Operating Leverage (OPLeverage) generates alpha by capturing firms whose asset-light innovative models are undervalued and resilient to downturns, with the effect amplified in negative market regimes as defensive characteristics are rewarded.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"IntanBM\"},\n        {\"weight\": 1.0, \"primitive\": \"OPLeverage\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.85,\n    \"expected_decay_half_life_months\": 30\n  },\n  {\n    \"name\": \"Earnings Consistency + Off-Season Reversal\",\n    \"mechanism\": \"Firms with consistent earnings, when combined with off-season long-term reversal effects, exploit market overreaction to stale information. Off-season reversal helps capture delayed mean-reversion after periods of excessive pessimism or optimism, especially in large firms with analyst coverage.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"EarningsConsistency\"},\n        {\"weight\": 0.5, \"primitive\": \"MomOffSeason06YrPlus\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"MomOffSeason06YrPlus\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.80,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Shareholder Activism and Low Net Equity Financing\",\n    \"mechanism\": \"Pairing measures of active shareholder engagement (Activism2) with low Net Equity Finance (NetEquityFinance) identifies firms under pressure to improve capital allocation while not diluting shareholders, combining governance-driven value creation with conservative financial policy.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"Activism2\"},\n        {\"weight\": -1.0, \"primitive\": \"NetEquityFinance\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.90,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Asset Growth Anomaly + Idiosyncratic Volatility\",\n    \"mechanism\": \"Mixing Asset Growth (AssetGrowth) and idiosyncratic volatility (IdioVol3F) exploits investor overextrapolation and mispricing in high-growth, high-volatility stocks, where behavioral biases are most acute and limits to arbitrage are greatest.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -1.0, \"primitive\": \"AssetGrowth\"},\n        {\"weight\": 0.5, \"primitive\": \"IdioVol3F\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"AssetGrowth\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.92,\n    \"expected_decay_half_life_months\": 18\n  },\n  {\n    \"name\": \"Cash Flow Valuation Gap Arbitrage\",\n    \"mechanism\": \"Combining Cash flow to market (CF) with negative Book Leverage (BookLeverage) identifies underleveraged companies that are undervalued on a cash flow basis, thus targeting balance sheet strength and fundamental mispricing unaddressed by either factor alone.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"CF\"},\n        {\"weight\": -1.0, \"primitive\": \"BookLeverage\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"BookLeverage\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.88,\n    \"expected_decay_half_life_months\": 28\n  },\n  {\n    \"name\": \"R&D Leaders with Positive Customer Momentum\",\n    \"mechanism\": \"Firms that invest heavily in R&D (RD) and simultaneously benefit from positive customer momentum (iomom_cust) achieve outsized returns due to synergistic innovation and demand-driven growth, especially powerful in emerging markets where innovation diffusion is more rapid.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"RD\"},\n        {\"weight\": 0.5, \"primitive\": \"iomom_cust\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n      {\"type\": \"correlation\", \"primitive\": \"RD\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.87,\n    \"expected_decay_half_life_months\": 30\n  },\n  {\n    \"name\": \"Share Repurchases + Earnings Forecast Disagreement\",\n    \"mechanism\": \"Stocks with high share repurchases (ShareRepurchase) and elevated analyst forecast dispersion (ForecastDispersion) outperform as repurchases signal management confidence during times of market uncertainty and investor disagreement, exploiting underappreciated buyback signaling effects.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"ShareRepurchase\"},\n        {\"weight\": 0.5, \"primitive\": \"ForecastDispersion\"}\n      ],\n      \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"ShareRepurchase\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.94,\n    \"expected_decay_half_life_months\": 20\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 2000,
+   "total_tokens": 4801,
+   "prompt_tokens_details": {
+    "cached_tokens": 2560,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5f160af537"
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:15:14.363750+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zjIDGtg0EQXZL68XJ96sa78osFy",
+  "object": "chat.completion",
+  "created": 1784859308,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Insider Net Buying Ratio\", \"construction\": \"Sum of all insider (officers and directors) open-market share purchases over the past 12 months minus insider sales, divided by total shares outstanding.\", \"rationale\": \"Insiders may have superior information on firm prospects; net buyers may signal undervaluation or impending positive developments.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Patent Intensity\", \"construction\": \"Number of new US patents granted to the firm in the previous year divided by total assets at fiscal year-end.\", \"rationale\": \"Firms with high rates of innovation may be better positioned for future growth and profitability.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Voluntary Disclosure Frequency\", \"construction\": \"Count of press releases related to new products, earnings guidance, or strategy (excluding mandatory SEC filings) issued by the firm over the prior 12 months.\", \"rationale\": \"Frequent voluntary disclosures may signal management confidence and transparency, attracting investor interest.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Employee Efficiency Ratio\", \"construction\": \"Total revenue over the past fiscal year divided by the number of employees (from 10-K filings).\", \"rationale\": \"Firms generating more revenue per employee may be more operationally efficient and profitable.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Short-Term Asset Growth\", \"construction\": \"Percentage change in cash and short-term investments over the past fiscal year.\", \"rationale\": \"Rapid growth in liquid assets may reflect asset redeployment or underutilization, potentially predicting lower future returns if not matched by investment.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Dividend Initiation Indicator\", \"construction\": \"Binary variable set to 1 if a firm initiates a regular cash dividend within the last 12 months, 0 otherwise.\", \"rationale\": \"The decision to begin paying dividends may signal management\u2019s confidence in sustainable earnings.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Customer Concentration Risk\", \"construction\": \"Percentage of total sales accounted for by the largest single customer, as disclosed in 10-K filings.\", \"rationale\": \"Firms highly dependent on a single customer may face greater earnings risk and discounting by investors.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Deferred Tax Asset Ratio\", \"construction\": \"Deferred tax assets divided by total assets at fiscal year-end.\", \"rationale\": \"Large deferred tax assets may indicate aggressive accounting or expectations of future losses, which could foreshadow poorer performance.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Earnings Announcement Drift Sensitivity\", \"construction\": \"Stock\u2019s average abnormal return over 3-day windows around the past four quarterly earnings announcements.\", \"rationale\": \"Stocks that strongly react to earnings surprises may have more persistent mispricing or information inefficiency.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"R&D-to-Sales Change\", \"construction\": \"Year-over-year change in R&D expense divided by prior year total sales.\", \"rationale\": \"Increasing R&D intensity may indicate management commitment to innovation and future growth.\", \"higher_returns_for\": \"high values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 701,
+   "total_tokens": 970,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_294c310c0b"
+ }
+}

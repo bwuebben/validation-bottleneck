@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:16:20.643868+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 4,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yo5bH0RO1Rek49IZdKPdSWzfnEC",
+  "object": "chat.completion",
+  "created": 1784855761,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"Intangible Growth-Quality Interaction\",\n      \"mechanism\": \"Firms reinvesting in intangibles like R&D and brand capital might capture growth potential while maintaining quality through efficient investment management. This synergy might outperform the simple sum of growth or quality alone.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"IntanEP\"},\n          {\"weight\": 0.5, \"primitive\": \"BrandInvest\"},\n          {\"weight\": 1.0, \"primitive\": \"OperProf\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.8,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"Operational Efficiency and Momentum\",\n      \"mechanism\": \"Firms efficiently managing cash flow and inventory can sustain momentum, as operational excellence fuels ongoing positive performance.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"CashProd\"},\n          {\"weight\": 0.5, \"primitive\": \"Mom12m\"},\n          {\"weight\": -0.5, \"primitive\": \"ChInv\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"},\n        {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.7,\n      \"expected_decay_half_life_months\": 18\n    },\n    {\n      \"name\": \"Volatility-Tail Risk and Dividend Interaction\",\n      \"mechanism\": \"Stocks with low volatility and tail risk that also initiate dividends might reflect underlying stability and investor confidence, leading to enhanced risk-adjusted returns.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"BetaTailRisk\"},\n          {\"weight\": -0.5, \"primitive\": \"RealizedVol\"},\n          {\"weight\": 0.5, \"primitive\": \"DivInit\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.75,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"Debt Management and Analyst Optimism\",\n      \"mechanism\": \"Firms adeptly managing debt while experiencing analyst optimism tend to outperform, as efficient capital structure and positive sentiment forecast superior future performance.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": -0.5, \"primitive\": \"CompositeDebtIssuance\"},\n          {\"weight\": 1.0, \"primitive\": \"AOP\"},\n          {\"weight\": 0.5, \"primitive\": \"NetDebtFinance\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_DOWN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"AOP\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Liquidity Risk and Growth-Investment Synergy\",\n      \"mechanism\": \"Firms with low liquidity risk and strong sales growth relative to investment suggest efficient capital reallocation, leading to superior returns through strategic growth initiatives.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"BetaLiquidityPS\"},\n          {\"weight\": 0.5, \"primitive\": \"GrSaleToGrInv\"},\n          {\"weight\": -0.5, \"primitive\": \"DelNetFin\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.85,\n      \"expected_decay_half_life_months\": 20\n    },\n    {\n      \"name\": \"Analyst Disparity with Capital Allocation\",\n      \"mechanism\": \"Companies with high disparity in analyst forecasts but efficient capital allocation can exploit market mispricing driven by diverse expectations and effective resource use.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"EarningsForecastDisparity\"},\n          {\"weight\": 0.5, \"primitive\": \"InvestPPEInv\"},\n          {\"weight\": -0.5, \"primitive\": \"EquityDuration\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.95,\n      \"expected_decay_half_life_months\": 28\n    },\n    {\n      \"name\": \"Innovation and Cash Flow Stability\",\n      \"mechanism\": \"Firms investing in patents while maintaining stable cash flow are poised to lead in innovation-driven markets, translating into consistent excess returns.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"PatentsRD\"},\n          {\"weight\": 0.5, \"primitive\": \"VarCF\"},\n          {\"weight\": -0.5, \"primitive\": \"Cash\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"correlation\", \"primitive\": \"PatentsRD\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.92,\n      \"expected_decay_half_life_months\": 22\n    },\n    {\n      \"name\": \"Earnings Streaks with Cost Efficiency\",\n      \"mechanism\": \"Firms demonstrating earnings consistency and cost efficiency reflect robust internal processes and market trust, leading to persistent return advantages.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"EarningsConsistency\"},\n          {\"weight\": 0.5, \"primitive\": \"AdExp\"},\n          {\"weight\": -0.5, \"primitive\": \"ExclExp\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 1.0,\n      \"expected_decay_half_life_months\": 26\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2903,
+   "completion_tokens": 1966,
+   "total_tokens": 4869,
+   "prompt_tokens_details": {
+    "cached_tokens": 2688,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

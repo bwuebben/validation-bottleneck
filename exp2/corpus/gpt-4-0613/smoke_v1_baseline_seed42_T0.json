@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:35:04.668294+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 300,
+  "harness_version": "1.0.0",
+  "smoke": true
+ },
+ "response": {
+  "id": "chatcmpl-E4yAFxJfkqdjFuXrZTM54oKEAeEf2",
+  "object": "chat.completion",
+  "created": 1784853291,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Hypothesis 1\",\n    \"mechanism\": \"Firms with high asset growth and low book-to-market ratios are likely to be overvalued, leading to lower future returns. This effect is amplified in periods of market downturns.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -1.0, \"primitive\": \"AssetGrowth\"},\n        {\"weight\": 0.5, \"primitive\": \"BM\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"AssetGrowth\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Hypothesis 2\",\n    \"mechanism\": \"Firms with high earnings consistency and low analyst optimism are likely to be undervalued, leading to higher future returns. This effect is amplified in periods of market",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "length"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2864,
+   "completion_tokens": 300,
+   "total_tokens": 3164,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

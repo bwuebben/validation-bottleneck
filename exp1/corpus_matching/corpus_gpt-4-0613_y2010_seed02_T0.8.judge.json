@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:26:25.413156+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y2010_seed02_T0.8.json",
+  "prompt_sha256": "e2a394a17754b65f5472cbc0b02da34f657d18b9149e00a244bb3fbe8f098c1e"
+ },
+ "response": {
+  "id": "chatcmpl-E4zu9drBps2DZrc0NWojv7dn9XVtn",
+  "object": "chat.completion",
+  "created": 1784859981,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses social media sentiment data.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses green investment or ESG ratios.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee satisfaction or reviews.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses cybersecurity or breach probability.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer loyalty or survey data.\"},\n  {\"index\": 5, \"match\": \"RDAbility\", \"strength\": \"close\", \"reason\": \"Both relate R&D to output, but efficiency is a different implementation.\"},\n  {\"index\": 6, \"match\": \"Governance\", \"strength\": \"exact\", \"reason\": \"Both use governance reports to create a governance quality score.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses CEO compensation structure.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses product recalls or quality ratios.\"},\n  {\"index\": 9, \"match\": \"Tax\", \"strength\": \"related\", \"reason\": \"Both use tax data, but optimization index is a different signal.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2700,
+   "completion_tokens": 343,
+   "total_tokens": 3043,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

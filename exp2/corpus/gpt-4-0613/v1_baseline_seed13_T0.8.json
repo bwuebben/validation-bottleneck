@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:47:06.642654+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 13,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yLTQ3x8AuLGTGn7MnmkchNtgShs",
+  "object": "chat.completion",
+  "created": 1784853987,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Hypothesis_1\",\n    \"mechanism\": \"Firms with poor performance but strong market expectations may outperform in bear markets as they are more likely to reverse losses through strategic pivots, cost-cutting, or M&A.\",\n    \"expression\": {\n      \"terms\": [{\"weight\": -1.0, \"primitive\": \"Beta\"}, {\"weight\": 0.5, \"primitive\": \"AnalystRevision\"}, {\"weight\": 0.5, \"primitive\": \"Size\"}],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"AnalystRevision\", \"bound\": \"above\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Hypothesis_2\",\n    \"mechanism\": \"Firms with high R&D expense and low market expectations have potential to outperform due to undervalued innovation.\",\n    \"expression\": {\n      \"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": -0.5, \"primitive\": \"AnalystRevision\"}],\n      \"regime\": null,\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n      {\"type\": \"correlation\", \"primitive\": \"RD\", \"bound\": \"above\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": null\n  },\n  {\n    \"name\": \"Hypothesis_3\",\n    \"mechanism\": \"Firms with low book-to-market ratio but high leverage are undervalued and may outperform as they can utilize debt effectively.\",\n    \"expression\": {\n      \"terms\": [{\"weight\": -1.0, \"primitive\": \"BM\"}, {\"weight\": 1.0, \"primitive\": \"Leverage\"}],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n      {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.5,\n    \"expected_decay_half_life_months\": 48\n  },\n  {\n    \"name\": \"Hypothesis_4\",\n    \"mechanism\": \"Firms with high earnings surprise and low analyst optimism tend to outperform due to superior performance against low expectations.\",\n    \"expression\": {\n      \"terms\": [{\"weight\": 1.0, \"primitive\": \"EarningsSurprise\"}, {\"weight\": -1.0, \"primitive\": \"AOP\"}],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n      {\"type\": \"correlation\", \"primitive\": \"AOP\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 60\n  },\n  {\n    \"name\": \"Hypothesis_5\",\n    \"mechanism\": \"Firms with high short interest and low price may outperform due to the potential for a short squeeze.\",\n    \"expression\": {\n      \"terms\": [{\"weight\": 1.0, \"primitive\": \"ShortInterest\"}, {\"weight\": -1.0, \"primitive\": \"Price\"}],\n      \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"ShortInterest\", \"bound\": \"above\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.8,\n    \"expected_decay_half_life_months\": null\n  },\n  {\n    \"name\": \"Hypothesis_6\",\n    \"mechanism\": \"Small firms with high asset growth and low market expectations tend to outperform due to market underestimation of growth potential.\",\n    \"expression\": {\n      \"terms\": [{\"weight\": 1.0, \"primitive\": \"AssetGrowth\"}, {\"weight\": -1.0, \"primitive\": \"Size\"}],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n      {\"type\": \"correlation\", \"primitive\": \"AssetGrowth\", \"bound\": \"above\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.75,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Hypothesis_7\",\n    \"mechanism\": \"Firms with higher gross profits relative to their total assets and high market expectations tend to outperform due to superior operational efficiency.\",\n    \"expression\": {\n      \"terms\": [{\"weight\": 1.0, \"primitive\": \"GP\"}, {\"weight\": 0.5, \"primitive\": \"AnalystRevision\"}],\n      \"regime\": null,\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n      {\"type\": \"correlation\", \"primitive\": \"AnalystRevision\", \"bound\": \"above\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.65,\n    \"expected_decay_half_life_months\": 30\n  },\n  {\n    \"name\": \"Hypothesis_8\",\n    \"mechanism\": \"Firms with high payout yield and high asset growth tend to outperform due to potential undervaluation and effective asset utilization.\",\n    \"expression\": {\n      \"terms\": [{\"weight\": 1.0, \"primitive\": \"PayoutYield\"}, {\"weight\": 0.5, \"primitive\": \"AssetGrowth\"}],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n      {\"type\": \"correlation\", \"primitive\": \"PayoutYield\", \"bound\": \"above\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.55,\n    \"expected_decay_half_life_months\": 12\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2864,
+   "completion_tokens": 1738,
+   "total_tokens": 4602,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

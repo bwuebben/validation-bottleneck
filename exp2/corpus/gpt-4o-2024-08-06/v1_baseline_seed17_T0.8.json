@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:13:33.904035+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 17,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ylRWnrUDbk31hWne1lYRUsOfjFC",
+  "object": "chat.completion",
+  "created": 1784855597,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"Volatility Sentiment Composite\",\n      \"mechanism\": \"This composite captures the premium from mispricing around investor sentiment and volatility shocks. Abnormal accruals and systematic volatility combined with idiosyncratic risk react differently based on sentiment, leading to exploitable inefficiencies.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"AbnormalAccruals\"},\n          {\"weight\": -0.5, \"primitive\": \"betaVIX\"},\n          {\"weight\": 0.5, \"primitive\": \"IdioVol3F\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.8,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"Momentum and Growth Composite\",\n      \"mechanism\": \"Combining momentum and growth captures the synergy between recent performance and improving fundamentals. Momentum signals are enhanced by the concurrent improvement in asset growth.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"Mom12m\"},\n          {\"weight\": 1.0, \"primitive\": \"AssetGrowth\"},\n          {\"weight\": -0.5, \"primitive\": \"InvGrowth\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": 18\n    },\n    {\n      \"name\": \"Liquidity and Leverage Composite\",\n      \"mechanism\": \"This composite exploits the interaction between liquidity constraints and leverage adjustments. High leverage entities with increasing liquidity constraints face more significant adjustments, enhancing return predictability.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"BetaLiquidityPS\"},\n          {\"weight\": -1.0, \"primitive\": \"Leverage\"},\n          {\"weight\": 0.5, \"primitive\": \"BidAskSpread\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"opposite_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.75,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"Profitability and Innovation Composite\",\n      \"mechanism\": \"Combining profitability with innovation proxies aligns firm resource efficiency with future growth potential upward revisions expected in the innovation domain.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"OperProfRD\"},\n          {\"weight\": 0.5, \"primitive\": \"PatentsRD\"},\n          {\"weight\": -0.5, \"primitive\": \"RDAbility\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.85,\n      \"expected_decay_half_life_months\": null\n    },\n    {\n      \"name\": \"Growth Reversal Composite\",\n      \"mechanism\": \"This composite captures mean reversion in growth prospects. Firms with high recent capital investment and inventory growth face over-optimistic future growth revisions.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": -1.0, \"primitive\": \"ChInv\"},\n          {\"weight\": 1.0, \"primitive\": \"grcapx\"},\n          {\"weight\": -0.5, \"primitive\": \"ChAssetTurnover\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_DOWN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"InvGrowth\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 1.0,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Dividend Surprise Composite\",\n      \"mechanism\": \"This composite captures investor overreaction to dividend changes. Initial dividend initiations and omissions drive price reactions, with further insight from earnings surprises.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"DivInit\"},\n          {\"weight\": -1.0, \"primitive\": \"DivOmit\"},\n          {\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"opposite_sign\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.7,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"Analyst and Earnings Composite\",\n      \"mechanism\": \"The composite leverages the predictive power of analyst revisions and their divergence from actual earnings surprises, exploiting cognitive biases in analyst forecasts.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"AnalystRevision\"},\n          {\"weight\": -0.5, \"primitive\": \"ForecastDispersion\"},\n          {\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"correlation\", \"primitive\": \"AOP\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": 12\n    },\n    {\n      \"name\": \"Debt and Market Sentiment Composite\",\n      \"mechanism\": \"Combining debt issuance with market sentiment proxies captures the relative impact of market perceptions on firms' leverage modifications during sentiment shifts.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"DebtIssuance\"},\n          {\"weight\": -0.5, \"primitive\": \"CompEquIss\"},\n          {\"weight\": 0.5, \"primitive\": \"MKT_TRAILING_12M_UP\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.65,\n      \"expected_decay_half_life_months\": 15\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 1924,
+   "total_tokens": 4725,
+   "prompt_tokens_details": {
+    "cached_tokens": 2560,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

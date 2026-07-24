@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:09:16.636867+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 7,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zdXDfgTiHqBlMWtBlPAWqjdcLDD",
+  "object": "chat.completion",
+  "created": 1784858951,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Revenue Growth Stability\",\n      \"construction\": \"Calculate the standard deviation of quarterly revenue growth rates over the past 5 years.\",\n      \"rationale\": \"Firms with stable revenue growth may be better at managing operations and demand, leading to more predictable cash flows.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Employee Productivity\",\n      \"construction\": \"Compute the ratio of revenue to the number of employees from the most recent annual report.\",\n      \"rationale\": \"Firms with higher revenue per employee may be using their resources more efficiently, leading to better profitability.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Insider Trading Volume\",\n      \"construction\": \"Aggregate the total volume of shares traded by insiders over the past year, net of purchases and sales.\",\n      \"rationale\": \"High insider trading volume might indicate management's confidence or concern about future prospects.\",\n      \"higher_returns_for\": \"high net purchase volumes\"\n    },\n    {\n      \"name\": \"Marketing Efficiency\",\n      \"construction\": \"Calculate the ratio of gross profit to advertising expenses from the last annual report.\",\n      \"rationale\": \"Firms that convert advertising spend into gross profit more effectively may have superior market strategies.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Deferred Revenue Change\",\n      \"construction\": \"Measure the change in deferred revenue from the previous to the current fiscal year.\",\n      \"rationale\": \"An increase in deferred revenue may indicate stronger future sales as it reflects prepaid income for goods/services yet to be delivered.\",\n      \"higher_returns_for\": \"large positive changes\"\n    },\n    {\n      \"name\": \"Patent Portfolio Expansion\",\n      \"construction\": \"Count the number of new patents granted in the past year.\",\n      \"rationale\": \"A growing patent portfolio could suggest strong future innovation and competitive advantage.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Supplier Concentration\",\n      \"construction\": \"Calculate the Herfindahl index based on the share of purchases from each supplier reported in the latest 10-K.\",\n      \"rationale\": \"Lower concentration may reduce supplier risk and dependency, potentially leading to more stable margins.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"CEO Tenure Change\",\n      \"construction\": \"Identify changes in CEO tenure by comparing CEO names from the current and previous year's annual reports.\",\n      \"rationale\": \"New executive leadership may bring strategic changes that influence firm performance.\",\n      \"higher_returns_for\": \"recent CEO changes\"\n    },\n    {\n      \"name\": \"Environmental Compliance Costs\",\n      \"construction\": \"Calculate the cost of environmental compliance divided by total operating costs from the annual report.\",\n      \"rationale\": \"Lower costs here may indicate operational efficiencies or lower regulatory burden.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Cash Flow Seasonality\",\n      \"construction\": \"Compute the standard deviation of quarterly operating cash flows over the past 5 years.\",\n      \"rationale\": \"Low seasonality in cash flows may indicate stable operations, reducing business cycle risk.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 710,
+   "total_tokens": 979,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_eb185bfc03"
+ }
+}

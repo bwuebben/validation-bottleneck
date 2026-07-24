@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:29:22.133442+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2005_seed10_T0.8.json",
+  "prompt_sha256": "127744d778b643c29c9d30500d924b9177a6ff267bb6e83f8c5ae6dd8c5444bb"
+ },
+ "response": {
+  "id": "chatcmpl-E4zx1o8lS1OowL2Bi2txxPGgUtTpg",
+  "object": "chat.completion",
+  "created": 1784860159,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses insider option exercise ratio.\"},\n  {\"index\": 1, \"match\": \"DebtIssuance\", \"strength\": \"close\", \"reason\": \"Both use debt issuance spikes, but proposal focuses on long-term and relative change.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses inventory write-offs as a signal.\"},\n  {\"index\": 3, \"match\": \"AgeIPO\", \"strength\": \"related\", \"reason\": \"Both use time since IPO, but different focus (dividend initiation).\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses cash flow predictability or time-series R-squared.\"},\n  {\"index\": 5, \"match\": \"GP\", \"strength\": \"related\", \"reason\": \"Both use gross margin/profit, but proposal uses margin change, not level.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses capex variability or consistency.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses frequency of subsidiary sales.\"},\n  {\"index\": 8, \"match\": \"CitationsRD\", \"strength\": \"close\", \"reason\": \"Both use patent citations, but proposal uses citation growth, not level.\"},\n  {\"index\": 9, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Both use Herfindahl index for concentration/diversification, but proposal uses segment revenue.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2836,
+   "completion_tokens": 379,
+   "total_tokens": 3215,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

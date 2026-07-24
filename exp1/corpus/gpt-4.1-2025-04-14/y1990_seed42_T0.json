@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:11:12.392416+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zfQt0Q9851H5Ij9Vh2tJSPhigUD",
+  "object": "chat.completion",
+  "created": 1784859068,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Inventory Growth Rate\", \"construction\": \"Annual percentage change in inventory (Compustat item INVQ) over the past fiscal year, divided by average total assets.\", \"rationale\": \"Rapid inventory accumulation may signal over-optimism or demand overestimation, while slow or negative growth may indicate prudent management or strong sales.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Short-Term Debt to Total Assets\", \"construction\": \"Ratio of short-term debt (Compustat item DLCQ) to total assets (Compustat item ATQ) at fiscal year-end.\", \"rationale\": \"Firms with higher short-term leverage may face refinancing risk and financial distress, while lower ratios indicate more stable capital structures.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"R&D Intensity Change\", \"construction\": \"Change in R&D expense (Compustat item XRDQ) as a percentage of sales (Compustat item SALEQ) from previous to current fiscal year.\", \"rationale\": \"Increasing R&D intensity may signal innovation and future growth opportunities not yet priced in.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Operating Cash Flow to Market Equity\", \"construction\": \"Operating cash flow (Compustat item OANCFY) divided by market capitalization at fiscal year-end.\", \"rationale\": \"High cash flow relative to market value may indicate undervaluation or strong fundamentals.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Dividend Initiation Dummy\", \"construction\": \"Indicator variable equal to 1 if a firm initiates a regular cash dividend in the past year, 0 otherwise.\", \"rationale\": \"Dividend initiations may signal management confidence in future earnings and financial stability.\", \"higher_returns_for\": \"firms with a value of 1\"}, {\"name\": \"Net Insider Buying\", \"construction\": \"Net number of shares purchased by insiders (Form 4 filings) over the past 12 months, scaled by shares outstanding.\", \"rationale\": \"Insider purchases may reflect private information about undervaluation or positive prospects.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Earnings Announcement Drift\", \"construction\": \"Cumulative abnormal return from 2 days before to 2 days after the most recent quarterly earnings announcement.\", \"rationale\": \"Stocks with strong post-announcement drift may reflect underreaction to news, predicting further returns.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Sales Volatility\", \"construction\": \"Standard deviation of quarterly sales growth rates (Compustat item SALEQ) over the past 8 quarters.\", \"rationale\": \"Lower sales volatility may indicate more predictable business models and lower risk.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Net Share Repurchase Yield\", \"construction\": \"Net shares repurchased (reduction in shares outstanding from Compustat item CSHOQ) over the past year, divided by market capitalization.\", \"rationale\": \"Firms buying back shares may signal undervaluation or excess cash flow.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Employee Growth Rate\", \"construction\": \"Annual percentage change in number of employees (Compustat item EMP) over the past fiscal year.\", \"rationale\": \"Rapid employee growth may signal expansion and optimism, but could also indicate overextension.\", \"higher_returns_for\": \"moderate values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 738,
+   "total_tokens": 1007,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_801206523b"
+ }
+}

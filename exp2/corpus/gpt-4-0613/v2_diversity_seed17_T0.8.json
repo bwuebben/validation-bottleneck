@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:06:12.349744+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 17,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ydtillKLA2DVV7b6xamN0Fm8607",
+  "object": "chat.completion",
+  "created": 1784855129,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n    {\n        \"name\": \"Hypothesis_1\",\n        \"mechanism\": \"Companies with high earnings forecast disparity and abnormal accruals are more likely to have overstated earnings, leading to future price corrections.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 0.5, \"primitive\": \"EarningsForecastDisparity\"},\n                {\"weight\": 0.5, \"primitive\": \"AbnormalAccruals\"}\n            ], \n            \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \n            \"vol_target\": true\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"lower\"},\n            {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n            {\"type\": \"correlation\", \"primitive\": \"EarningsForecastDisparity\", \"bound\": \"below\", \"threshold\": 0.3}\n        ], \n        \"expected_annualized_sharpe\": 0.6, \n        \"expected_decay_half_life_months\": 18\n    },\n    {\n        \"name\": \"Hypothesis_2\",\n        \"mechanism\": \"Firms with high asset growth tend to be overvalued due to investor overreaction, resulting in lower future returns.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": -1.0, \"primitive\": \"AssetGrowth\"}\n            ], \n            \"regime\": \"TERM_SPREAD_NEGATIVE\", \n            \"vol_target\": false\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n            {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n            {\"type\": \"subperiod_consistency\"}\n        ], \n        \"expected_annualized_sharpe\": 0.4, \n        \"expected_decay_half_life_months\": null\n    },\n    {\n        \"name\": \"Hypothesis_3\",\n        \"mechanism\": \"Companies with higher cash reserves and less tangible assets are more flexible and resilient, leading to higher future returns.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 0.5, \"primitive\": \"Cash\"},\n                {\"weight\": -0.5, \"primitive\": \"tang\"}\n            ], \n            \"regime\": \"MKT_TRAILING_12M_DOWN\", \n            \"vol_target\": true\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"lower\"},\n            {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"},\n            {\"type\": \"correlation\", \"primitive\": \"Cash\", \"bound\": \"below\", \"threshold\": 0.3}\n        ], \n        \"expected_annualized_sharpe\": 0.7, \n        \"expected_decay_half_life_months\": 24\n    },\n    {\n        \"name\": \"Hypothesis_4\",\n        \"mechanism\": \"Firms with low R&D expenditure relative to their market cap and high debt issuance are less innovative and carry a higher risk, leading to lower future returns.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": -0.5, \"primitive\": \"RD\"},\n                {\"weight\": -0.5, \"primitive\": \"DebtIssuance\"}\n            ], \n            \"regime\": \"TERM_SPREAD_POSITIVE\", \n            \"vol_target\": false\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n            {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n            {\"type\": \"subperiod_consistency\"}\n        ], \n        \"expected_annualized_sharpe\": 0.5, \n        \"expected_decay_half_life_months\": null\n    },\n    {\n        \"name\": \"Hypothesis_5\",\n        \"mechanism\": \"Firms with high net payouts and high gross profits relative to total assets are more likely to enjoy higher future returns.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 0.5, \"primitive\": \"NetPayoutYield\"},\n                {\"weight\": 0.5, \"primitive\": \"GP\"}\n            ], \n            \"regime\": \"MKT_TRAILING_12M_UP\", \n            \"vol_target\": true\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"},\n            {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n            {\"type\": \"correlation\", \"primitive\": \"NetPayoutYield\", \"bound\": \"below\", \"threshold\": 0.3}\n        ], \n        \"expected_annualized_sharpe\": 0.8, \n        \"expected_decay_half_life_months\": 36\n    },\n    {\n        \"name\": \"Hypothesis_6\",\n        \"mechanism\": \"Companies with a higher proportion of tangible assets and higher operational profitability are more likely to earn higher returns.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 0.5, \"primitive\": \"tang\"},\n                {\"weight\": 0.5, \"primitive\": \"OperProf\"}\n            ], \n            \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \n            \"vol_target\": false\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n            {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n            {\"type\": \"subperiod_consistency\"}\n        ], \n        \"expected_annualized_sharpe\": 0.6, \n        \"expected_decay_half_life_months\": 24\n    },\n    {\n        \"name\": \"Hypothesis_7\",\n        \"mechanism\": \"Firms with high short interest and high analyst optimism are more susceptible to short squeezes, leading to higher future returns.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"ShortInterest\"},\n                {\"weight\": 1.0, \"primitive\": \"AOP\"}\n            ], \n            \"regime\": \"TERM_SPREAD_NEGATIVE\", \n            \"vol_target\": true\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"},\n            {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n            {\"type\": \"correlation\", \"primitive\": \"ShortInterest\", \"bound\": \"below\", \"threshold\": 0.3}\n        ], \n        \"expected_annualized_sharpe\": 0.7, \n        \"expected_decay_half_life_months\": 12\n    },\n    {\n        \"name\": \"Hypothesis_8\",\n        \"mechanism\": \"Firms with low book to market ratios and high advertising expenses are more likely to be overvalued due to investor sentiment, leading to lower future returns.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": -1.0, \"primitive\": \"BM\"},\n                {\"weight\": 1.0, \"primitive\": \"AdExp\"}\n            ], \n            \"regime\": \"TERM_SPREAD_POSITIVE\", \n            \"vol_target\": false\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n            {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n            {\"type\": \"subperiod_consistency\"}\n        ], \n        \"expected_annualized_sharpe\": 0.5, \n        \"expected_decay_half_life_months\": null\n    }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2965,
+   "completion_tokens": 1759,
+   "total_tokens": 4724,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

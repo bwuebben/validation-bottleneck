@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:17:52.821355+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 9,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zlp8RunTeuIvQ2E9HGffm77JSuX",
+  "object": "chat.completion",
+  "created": 1784859465,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\"name\": \"Intangible Asset Growth Rate\",\"construction\": \"Change in total intangible assets (Compustat item INTAN) over the past three fiscal years, divided by total assets at the beginning of the period.\",\"rationale\": \"Firms aggressively growing their intangible asset base (e.g., patents, trademarks) may be investing in future competitive advantages not fully captured in earnings or book value, potentially leading to underappreciated growth.\",\"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Operating Lease Adjustment Yield\",\"construction\": \"EBIT (Compustat EBIT) plus estimated imputed interest expense from operating leases (from footnote disclosures) divided by enterprise value, using the past fiscal year\u2019s lease expense capitalized at 8x as the leased asset value.\",\"rationale\": \"Adjusting for off-balance sheet financing from operating leases may reveal undervalued profitability for firms relying heavily on leases, especially in retail and airlines.\",\"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Supplier Concentration Index\",\"construction\": \"Sum of squared percentage shares of top five suppliers (from 10-K disclosures) relative to total cost of goods sold, measured annually.\",\"rationale\": \"Firms with less supplier concentration may have more bargaining power and stability, reducing risk and possibly leading to higher subsequent returns if the market underestimates this advantage.\",\"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"R&D-to-Depreciation Ratio\",\"construction\": \"R&D expense (Compustat XRD) divided by annual depreciation and amortization (Compustat DP), using trailing twelve months data.\",\"rationale\": \"A high R&D relative to depreciation may signal more forward-looking investment versus replacement of existing assets, potentially leading to mispriced growth opportunities.\",\"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Seasonal Volatility Drop\",\"construction\": \"Change in realized stock return volatility from the three months before to the three months after each firm's fiscal year-end, measured as standard deviation of daily returns.\",\"rationale\": \"A sharp drop in volatility after fiscal year-end may indicate resolution of uncertainty or positive information flow, which could predict stronger future returns if the market underreacts.\",\"higher_returns_for\": \"large decreases in volatility\"},\n  {\"name\": \"Foreign Income Share Change\",\"construction\": \"Change in proportion of total pre-tax income derived from foreign operations (from segment data in 10-K) over the past two years.\",\"rationale\": \"Increasing foreign income share may be a sign of successful international expansion; if markets underappreciate cross-border growth, this could predict higher returns.\",\"higher_returns_for\": \"large positive changes\"},\n  {\"name\": \"Board Tenure Dispersion\",\"construction\": \"Standard deviation of board members\u2019 tenures (years since joining the board) as reported in proxy filings, updated annually.\",\"rationale\": \"A more diverse set of tenures may lead to better governance and adaptability, which is not fully captured by average tenure or board size.\",\"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Short-Term Asset Turnover Change\",\"construction\": \"One-year change in (annual sales / average current assets for the fiscal year), using Compustat SALE and ACT items.\",\"rationale\": \"Improvement in short-term asset efficiency may signal operational improvements missed by broader asset turnover or margins, leading to higher future returns.\",\"higher_returns_for\": \"large positive changes\"},\n  {\"name\": \"Relative Patent Citation Growth\",\"construction\": \"Growth rate of patent citations (from NBER patent data) to a firm\u2019s patents over the past three years, scaled by industry median growth rate.\",\"rationale\": \"Firms whose intellectual property is gaining more recognition than peers may be better positioned for future growth not captured in financials.\",\"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Dividend Initiation Signal\",\"construction\": \"Indicator variable equal to one if the firm initiated a dividend (declared its first dividend in past 12 months), zero otherwise.\",\"rationale\": \"Dividend initiations often signal management confidence in future cash flows; this signal may not be fully incorporated into prices at initiation.\",\"higher_returns_for\": \"indicator equals one\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 876,
+   "total_tokens": 1145,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_245b7c7787"
+ }
+}

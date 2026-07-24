@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:25:42.274924+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y2005_seed02_T0.8.json",
+  "prompt_sha256": "5ba547b34485ba7d8323412bcf921a3e89b32be3a6fed4908ec3b77df011b36d"
+ },
+ "response": {
+  "id": "chatcmpl-E4ztTSuttCM8u10m2CcCcPg6uJCY5",
+  "object": "chat.completion",
+  "created": 1784859939,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses CSR/KLD ratings or similar ESG data.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer satisfaction survey data.\"},\n  {\"index\": 2, \"match\": \"CitationsRD\", \"strength\": \"exact\", \"reason\": \"CitationsRD uses patent citations as a quality measure.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee satisfaction or reviews.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses CEO speech tone or overconfidence.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses website visits or online presence.\"},\n  {\"index\": 6, \"match\": \"ChAssetTurnover\", \"strength\": \"close\", \"reason\": \"Both relate to inventory/asset turnover versus industry.\"},\n  {\"index\": 7, \"match\": \"EarningsConsistency\", \"strength\": \"close\", \"reason\": \"Both use earnings volatility/consistency as a signal.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses M&A transaction counts.\"},\n  {\"index\": 9, \"match\": \"RD\", \"strength\": \"exact\", \"reason\": \"RD is R&D spending scaled by market cap or sales.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2694,
+   "completion_tokens": 351,
+   "total_tokens": 3045,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

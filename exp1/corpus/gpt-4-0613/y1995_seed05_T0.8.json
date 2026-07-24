@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:51:40.421047+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 5,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zMARulvN4UWMuN8E7zX12IcWsAw",
+  "object": "chat.completion",
+  "created": 1784857874,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\"name\": \"Inventory Turnover\", \"construction\": \"Cost of Goods Sold divided by Inventory\", \"rationale\": \"Firms with higher inventory turnover might be managing their resources more efficiently, leading to higher profitability and thus higher stock returns\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Age of Firm\", \"construction\": \"Number of years since the firm's founding\", \"rationale\": \"Older established firms might have more stability and thus less risk, leading to better performance\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Customer Concentration\", \"construction\": \"Revenue from a firm's largest customer divided by total revenue\", \"rationale\": \"Firms with more customer concentration might face higher risk from loss of a key client, affecting their stock returns negatively\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Employee Turnover\", \"construction\": \"Number of employees leaving over a given period divided by the total number of employees\", \"rationale\": \"High employee turnover might indicate internal problems or lack of employee satisfaction, affecting future performance negatively\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"R&D Intensity\", \"construction\": \"R&D expenditure divided by Total Assets\", \"rationale\": \"Firms with higher R&D intensity might have higher growth prospects, leading to higher stock returns\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Tax Payment Intensity\", \"construction\": \"Tax paid divided by Pre-tax profit\", \"rationale\": \"Firms with high tax payments might be more profitable with more stable earnings, leading to higher stock returns\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Lease Obligation Intensity\", \"construction\": \"Lease obligations divided by Total Assets\", \"rationale\": \"Firms with higher lease obligations might face more financial constraints, negatively affecting stock returns\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Currency Exposure\", \"construction\": \"Foreign sales divided by Total Sales\", \"rationale\": \"Firms with higher currency exposure might face more risk due to currency fluctuations, affecting their stock returns negatively\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Litigation Risk\", \"construction\": \"Number of ongoing lawsuits divided by market capitalization\", \"rationale\": \"Firms with higher litigation risk might face more uncertainties, negatively affecting future stock returns\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Geographic Diversification\", \"construction\": \"Number of countries where the firm operates divided by total sales\", \"rationale\": \"Firms with higher geographic diversification might have more growth opportunities, leading to higher stock returns\", \"higher_returns_for\": \"high values of the measure\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 607,
+   "total_tokens": 877,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

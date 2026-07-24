@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:24:48.222389+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y1995_seed10_T0.8.json",
+  "prompt_sha256": "ccbd9269b27edce7651442bde7e66849e0c1e146fea0e8c5ec2e46a504d0e550"
+ },
+ "response": {
+  "id": "chatcmpl-E4zsb1odyjSrAEuNt6XBg0brpHtj5",
+  "object": "chat.completion",
+  "created": 1784859885,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"NetPayoutYield\", \"strength\": \"close\", \"reason\": \"Net stock issues closely related to net payout yield signal.\"},\n  {\"index\": 1, \"match\": \"CompEquIss\", \"strength\": \"exact\", \"reason\": \"Construction matches composite equity issuance definition.\"},\n  {\"index\": 2, \"match\": \"Accruals\", \"strength\": \"exact\", \"reason\": \"Standard accruals construction: net income minus cash flow from operations.\"},\n  {\"index\": 3, \"match\": \"GP\", \"strength\": \"exact\", \"reason\": \"Gross profits to total assets matches GP signal.\"},\n  {\"index\": 4, \"match\": \"AssetGrowth\", \"strength\": \"exact\", \"reason\": \"Asset growth is defined as percentage change in total assets.\"},\n  {\"index\": 5, \"match\": \"roaq\", \"strength\": \"close\", \"reason\": \"Return on assets; proposal uses annual, library uses quarterly.\"},\n  {\"index\": 6, \"match\": \"Investment\", \"strength\": \"exact\", \"reason\": \"Investment to assets matches capital expenditure to assets.\"},\n  {\"index\": 7, \"match\": \"DelFINL\", \"strength\": \"close\", \"reason\": \"Change in leverage relates to change in financial liabilities.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No direct payout ratio change signal in library.\"},\n  {\"index\": 9, \"match\": \"ChNWC\", \"strength\": \"exact\", \"reason\": \"Change in working capital matches ChNWC definition.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2682,
+   "completion_tokens": 360,
+   "total_tokens": 3042,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

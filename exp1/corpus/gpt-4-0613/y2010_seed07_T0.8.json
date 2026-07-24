@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:02:10.442999+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 7,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zWT2LeJ98Zkwl1UwE9LhmIeRtO0",
+  "object": "chat.completion",
+  "created": 1784858513,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\n    \"name\": \"Net Debt Issuance\",\n    \"construction\": \"Calculate the difference between total debt at the end of the previous year and total debt at the end of the current year.\",\n    \"rationale\": \"Companies increasing their debt levels may be investing in growth opportunities that could generate higher future returns.\",\n    \"higher_returns_for\": \"Companies with high net debt issuance\"\n  },\n  {\n    \"name\": \"Equity Turnover\",\n    \"construction\": \"Calculate the ratio of total trading volume over a year to the total number of outstanding shares at the end of that year.\",\n    \"rationale\": \"A higher ratio may indicate more informed trading, leading to more efficient pricing and potentially higher returns.\",\n    \"higher_returns_for\": \"Companies with high equity turnover\"\n  },\n  {\n    \"name\": \"Green Investment\",\n    \"construction\": \"Calculate the proportion of a company's total investment that is dedicated to green, environmentally friendly technologies or practices.\",\n    \"rationale\": \"Companies investing in environmentally friendly practices could be better positioned for future regulatory changes and consumer preferences, leading to higher returns.\",\n    \"higher_returns_for\": \"Companies with high green investment\"\n  },\n  {\n    \"name\": \"CEO Compensation Ratio\",\n    \"construction\": \"Calculate the ratio of CEO's total compensation to the median employee's total compensation.\",\n    \"rationale\": \"A high ratio may signal excessive risk-taking by the CEO, leading to potentially higher returns.\",\n    \"higher_returns_for\": \"Companies with high CEO compensation ratio\"\n  },\n  {\n    \"name\": \"R&D Expenditure Ratio\",\n    \"construction\": \"Calculate the ratio of a company's R&D expenditure to its revenue.\",\n    \"rationale\": \"Companies investing more in R&D may be better positioned to exploit technological advances and could generate higher future returns.\",\n    \"higher_returns_for\": \"Companies with high R&D expenditure ratio\"\n  },\n  {\n    \"name\": \"Corporate Social Responsibility (CSR) Score\",\n    \"construction\": \"Calculate a score based on third-party evaluations of a company's CSR practices, with a focus on environmental, social, and governance (ESG) factors.\",\n    \"rationale\": \"Companies with strong CSR practices may enjoy better reputations and stronger customer loyalty, leading to higher returns.\",\n    \"higher_returns_for\": \"Companies with high CSR score\"\n  },\n  {\n    \"name\": \"Off-Balance Sheet Items\",\n    \"construction\": \"Calculate the total value of a company's off-balance sheet items, such as operating leases and commitments.\",\n    \"rationale\": \"Companies with high levels of off-balance sheet items may be more risky, leading to potentially higher returns.\",\n    \"higher_returns_for\": \"Companies with high amount of off-balance sheet items\"\n  },\n  {\n    \"name\": \"Patent Count\",\n    \"construction\": \"Count the total number of patents a company has applied for and received over the past year.\",\n    \"rationale\": \"A higher patent count may indicate a company's strong innovation capabilities, which could translate into higher future returns.\",\n    \"higher_returns_for\": \"Companies with high patent count\"\n  },\n  {\n    \"name\": \"Executive Age\",\n    \"construction\": \"Calculate the median age of a company's executive team.\",\n    \"rationale\": \"Companies led by younger executives may be more willing to take risks and adapt to changes, leading to potentially higher returns.\",\n    \"higher_returns_for\": \"Companies with low executive age\"\n  },\n  {\n    \"name\": \"Foreign Sales Ratio\",\n    \"construction\": \"Calculate the proportion of a company's sales that are made overseas.\",\n    \"rationale\": \"Companies with a larger proportion of foreign sales may be better positioned to benefit from global growth and diversification, leading to higher returns.\",\n    \"higher_returns_for\": \"Companies with high foreign sales ratio\"\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 799,
+   "total_tokens": 1069,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

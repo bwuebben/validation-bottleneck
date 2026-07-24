@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:45:59.563961+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zGuu9kIoHeC5sQN6B59Y2as6HkL",
+  "object": "chat.completion",
+  "created": 1784857548,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n    {\"name\": \"Debt Maturity Structure\", \"construction\": \"Ratio of long-term debt to total debt\", \"rationale\": \"Firms with longer debt maturity may be less likely to face financial distress, leading to higher stock returns.\", \"higher_returns_for\": \"High values of the measure\"},\n    {\"name\": \"R&D Intensity\", \"construction\": \"Ratio of research and development expenses to total sales\", \"rationale\": \"Firms that invest more in R&D may have higher growth prospects.\", \"higher_returns_for\": \"High values of the measure\"},\n    {\"name\": \"Dividend Payout Consistency\", \"construction\": \"Number of consecutive years a firm has paid dividends\", \"rationale\": \"Firms with consistent dividend payouts may be seen as less risky, leading to higher stock returns.\", \"higher_returns_for\": \"High values of the measure\"},\n    {\"name\": \"Employee Satisfaction\", \"construction\": \"Change in employee count\", \"rationale\": \"Firms that retain employees may have better management and higher productivity.\", \"higher_returns_for\": \"Low values of the measure\"},\n    {\"name\": \"Product Market Competition\", \"construction\": \"Herfindahl-Hirschman Index calculated from industry sales data\", \"rationale\": \"Firms in less competitive industries may have higher profit margins.\", \"higher_returns_for\": \"Low values of the measure\"},\n    {\"name\": \"Capital Expenditure Volatility\", \"construction\": \"Standard deviation of capital expenditures over the past five years\", \"rationale\": \"Firms with more stable investment are likely to be less risky.\", \"higher_returns_for\": \"Low values of the measure\"},\n    {\"name\": \"Tax Rate\", \"construction\": \"Total tax expense divided by pre-tax income\", \"rationale\": \"Firms with lower tax rates may have higher after-tax profits.\", \"higher_returns_for\": \"Low values of the measure\"},\n    {\"name\": \"Inventory Turnover\", \"construction\": \"Cost of goods sold divided by average inventory\", \"rationale\": \"Firms with higher inventory turnover may have better operational efficiency.\", \"higher_returns_for\": \"High values of the measure\"},\n    {\"name\": \"CEO Tenure\", \"construction\": \"Number of years the current CEO has been in position\", \"rationale\": \"Longer CEO tenure may indicate stable leadership and predict higher future returns.\", \"higher_returns_for\": \"High values of the measure\"},\n    {\"name\": \"Foreign Sales Ratio\", \"construction\": \"Foreign sales divided by total sales\", \"rationale\": \"Firms with higher foreign sales may benefit from global diversification.\", \"higher_returns_for\": \"High values of the measure\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 551,
+   "total_tokens": 821,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:54:42.550756+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 4,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zPHXjQsQzVYNpYJeYxb5B3npPx1",
+  "object": "chat.completion",
+  "created": 1784858067,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\"name\": \"Employee Satisfaction Index\", \"construction\": \"Derived from employee review platforms like Glassdoor, and labor-market data from Bureau of Labor Statistics. The index would be built using a mix of job satisfaction, wage rates, and company ratings.\", \"rationale\": \"Firms with high workforce satisfaction tend to have higher productivity, leading to better performance.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Environmental Impact Score\", \"construction\": \"Calculate the Environmental Impact Score using publicly available pollution data and company filings about environmental practices.\", \"rationale\": \"Companies with low environmental impact might be more sustainable in long run and could face fewer regulatory penalties.\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Supply Chain Resilience\", \"construction\": \"Measured by diversification and geographic spread of a company's suppliers, as well as the company's past ability to manage supply shocks.\", \"rationale\": \"Companies with more resilient supply chains are more robust to shocks, and therefore less risky.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Cybersecurity Investment\", \"construction\": \"From annual reports and other filings, measure a firm's investment in cybersecurity infrastructure and personnel.\", \"rationale\": \"Given the increasing importance of digital assets, firms that invest in cybersecurity may be better positioned to protect those assets and avoid costly breaches.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Corporate Social Responsibility (CSR) Index\", \"construction\": \"Use company reports and third party audits to measure a company's commitment to CSR.\", \"rationale\": \"Companies with high CSR could be better positioned to manage social risks and attract socially-conscious customers and investors.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Product Diversity\", \"construction\": \"Measure the number of distinct product lines a company has.\", \"rationale\": \"Companies with a diverse range of products might be less susceptible to industry-specific shocks.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Customer Concentration\", \"construction\": \"Calculated as the revenue percentage coming from the company's largest customer.\", \"rationale\": \"High customer concentration could make a firm more vulnerable to customer-specific shocks.\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Management Tenure\", \"construction\": \"Average tenure of the management team, derived from company reports.\", \"rationale\": \"Long-tenured management could indicate stability, institutional knowledge, and long-term strategic execution.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Patent Portfolio\", \"construction\": \"Number and citation impact of patents held by the company, derived from the US Patent and Trademark Office.\", \"rationale\": \"A strong patent portfolio can indicate a firm's innovation capacity and its ability to generate future cash flows.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Internet Presence\", \"construction\": \"Measure company's web traffic, social media followers, and online brand mentions.\", \"rationale\": \"Companies with a strong internet presence may have greater brand visibility and customer engagement, leading to higher sales.\", \"higher_returns_for\": \"high values of the measure\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 686,
+   "total_tokens": 956,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

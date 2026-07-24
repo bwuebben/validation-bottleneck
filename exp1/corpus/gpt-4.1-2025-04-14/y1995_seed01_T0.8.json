@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:12:36.198685+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 1,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zgjw7PK512kQSyB4065ZnIv69PD",
+  "object": "chat.completion",
+  "created": 1784859149,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Inventory Growth Rate\", \"construction\": \"Annual percentage change in inventories (from Compustat item INVT) over the prior fiscal year.\", \"rationale\": \"Firms with rapidly growing inventories may be overestimating future demand or accumulating unsold goods, leading to poorer future performance.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Cash Flow Consistency\", \"construction\": \"Standard deviation of annual operating cash flow (Compustat OANCF) over the past five years, divided by average total assets (AT); lower values indicate more consistent cash flow.\", \"rationale\": \"Firms with more stable cash flows are less likely to face financial distress, possibly commanding a return premium.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Short-Term Debt Surge\", \"construction\": \"Year-over-year percentage increase in short-term debt (Compustat DLC) relative to total assets (AT).\", \"rationale\": \"A sudden surge in short-term debt may indicate liquidity stress or upcoming financial difficulties.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Marketing Expense Intensity\", \"construction\": \"Advertising expense (from 10-K footnotes or Compustat XAD if available) divided by sales (SALE).\", \"rationale\": \"Firms investing heavily in marketing may be able to build brand and drive future growth, or may be compensating for weak products.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"CEO Tenure\", \"construction\": \"Number of years since the most recent CEO appointment (from company filings and annual reports).\", \"rationale\": \"Longer-tenured CEOs may indicate management stability, while very new CEOs might signal upcoming strategic change or risk.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Downward Earnings Revision Frequency\", \"construction\": \"Count of downward changes in consensus analyst earnings estimates (I/B/E/S data) over the previous 12 months.\", \"rationale\": \"Frequent negative earnings revisions may indicate deteriorating fundamentals unpriced by the market.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Asset Sale Frequency\", \"construction\": \"Number of non-core asset sales (disclosed in 10-K or press releases) in past two years.\", \"rationale\": \"Frequent asset sales could signal attempts to boost short-term results or financial stress.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Patent Count Growth\", \"construction\": \"Percentage growth in cumulative US patents granted to the firm over the past three years (USPTO data).\", \"rationale\": \"Increasing patent counts may indicate innovation pipelines that drive future growth.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Dividend Omission Indicator\", \"construction\": \"Binary indicator equal to one if the firm has omitted a regular cash dividend in the past year.\", \"rationale\": \"Dividend omissions may be a distress signal not fully reflected in stock prices.\", \"higher_returns_for\": \"zero values of the measure\"}, {\"name\": \"Year-over-Year Insider Net Buying\", \"construction\": \"Net number of shares bought by insiders (officer and director Form 4 filings) over the prior 12 months, scaled by shares outstanding.\", \"rationale\": \"Insider buying can signal undervaluation or managerial confidence in future prospects.\", \"higher_returns_for\": \"high values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 724,
+   "total_tokens": 993,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5e8833dc3f"
+ }
+}

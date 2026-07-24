@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:23:24.513751+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y1990_seed01_T0.8.json",
+  "prompt_sha256": "c5878bf900397b4a4bc885628adb62f2696b534f43752c92d9ac5c530a5eb8a2"
+ },
+ "response": {
+  "id": "chatcmpl-E4zrEdIpQpejzWmmp44Pg73k16Fa1",
+  "object": "chat.completion",
+  "created": 1784859800,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"Herf\", \"strength\": \"related\", \"reason\": \"Both relate to customer concentration/industry structure, but signal is distinct.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor measures product line diversity.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee satisfaction or similar surveys.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor counts M&A activity.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor measures geographic expansion.\"},\n  {\"index\": 5, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Both use patent counts, but denominator and focus differ.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor measures political connections.\"},\n  {\"index\": 7, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Both relate to management/board quality, but construction differs.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses environmental performance data.\"},\n  {\"index\": 9, \"match\": \"ChAssetTurnover\", \"strength\": \"related\", \"reason\": \"Both relate to operational efficiency, but construction differs.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2651,
+   "completion_tokens": 341,
+   "total_tokens": 2992,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

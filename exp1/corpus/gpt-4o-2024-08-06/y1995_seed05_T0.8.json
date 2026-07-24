@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:05:49.382652+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 5,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zaA8Nc8bio2GoCtPX95xszcJVT0",
+  "object": "chat.completion",
+  "created": 1784858742,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"R&D Intensity Surprise\",\n      \"construction\": \"Calculate the year-over-year change in R&D expenditure scaled by total assets, using Compustat data.\",\n      \"rationale\": \"Unexpected increases in R&D intensity may signal new growth opportunities and innovative potential.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Insider Trading Volume\",\n      \"construction\": \"Aggregate the absolute volume of insider trades over the past 6 months from SEC Form 4 filings.\",\n      \"rationale\": \"High insider trading activity may indicate private information about future performance.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Supplier Concentration Risk\",\n      \"construction\": \"Use 10-K filings to determine the percentage of purchases from top suppliers over the past fiscal year.\",\n      \"rationale\": \"Dependence on a few suppliers might imply vulnerability to supply chain disruptions and bargaining power issues.\",\n      \"higher_returns_for\": \"Low values of the measure\"\n    },\n    {\n      \"name\": \"Employee Productivity Growth\",\n      \"construction\": \"Measure the change in revenue per employee over the past 3 years using Compustat data.\",\n      \"rationale\": \"Improving productivity can indicate efficiency gains and potential margin expansion.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Dividend Coverage Ratio Change\",\n      \"construction\": \"Calculate the change in earnings per share divided by dividends per share over the past 2 years.\",\n      \"rationale\": \"An improving ratio suggests stronger earnings capacity relative to dividend payments, potentially signaling financial health.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Climate Change Preparedness\",\n      \"construction\": \"Assess the number of mentions of climate change and sustainability initiatives in the annual report compared to the previous year.\",\n      \"rationale\": \"Firms that proactively address climate risks may better adapt to regulatory and environmental challenges.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Debt Maturity Extension\",\n      \"construction\": \"Calculate the average maturity of debt in years and track changes over the past year using debt schedules in 10-K filings.\",\n      \"rationale\": \"Extending debt maturity may indicate improved financial stability and lower refinancing risk.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Patent Citation Growth\",\n      \"construction\": \"Track the percentage change in the number of citations received by a firm's patents over the past 3 years from USPTO data.\",\n      \"rationale\": \"Growth in patent citations may reflect valuable and influential innovations.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Advertising Efficiency\",\n      \"construction\": \"Calculate the ratio of sales growth to advertising expense growth over the past 2 years.\",\n      \"rationale\": \"Efficient advertising should lead to higher sales growth for the same or reduced advertising spend.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Management Turnover Frequency\",\n      \"construction\": \"Count the number of senior management changes over the past 5 years from corporate announcements and filings.\",\n      \"rationale\": \"Frequent turnover can signal instability and potential strategic misalignment.\",\n      \"higher_returns_for\": \"Low values of the measure\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 736,
+   "total_tokens": 1005,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_94cd41efba"
+ }
+}

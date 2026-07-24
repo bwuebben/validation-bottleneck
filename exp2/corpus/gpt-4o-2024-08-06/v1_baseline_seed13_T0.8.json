@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:12:26.340108+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 13,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ykOrBOPw7AcS3PtCO6Iy8v4xxDE",
+  "object": "chat.completion",
+  "created": 1784855532,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"Momentum and Growth Consistency\",\n      \"mechanism\": \"Combining consistent momentum with asset growth identifies firms maintaining both growth and positive investor sentiment, reducing the prevalence of speculative bubbles associated with momentum alone.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"Mom12m\"},\n          {\"weight\": 0.5, \"primitive\": \"AssetGrowth\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 1.0,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"Revenue and Cash Synergy\",\n      \"mechanism\": \"Firms with both strong revenue surprises and cash productivity are likely to have robust operational efficiencies and are less reliant on external financing, leading to sustained outperformance.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"RevenueSurprise\"},\n          {\"weight\": 0.5, \"primitive\": \"CashProd\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"NetEquityFinance\", \"bound\": \"below\", \"threshold\": 0.3},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": 18\n    },\n    {\n      \"name\": \"Efficient Capital Allocation\",\n      \"mechanism\": \"Firms optimizing their capital by issuing debt for productive investments and higher returns on equity are likely to outperform due to better capital allocation practices.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"CompositeDebtIssuance\"},\n          {\"weight\": -0.5, \"primitive\": \"CF\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n        {\"type\": \"correlation\", \"primitive\": \"Leverage\", \"bound\": \"above\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.85,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"Intangible Capital Advantage\",\n      \"mechanism\": \"Firms investing heavily in intangible assets coupled with high R&D productivity likely have competitive advantages that are not fully captured by traditional valuation metrics.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"IntanBM\"},\n          {\"weight\": 0.5, \"primitive\": \"PatentsRD\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 1.1,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Defensive Quality\",\n      \"mechanism\": \"Combining dividend yield and earnings consistency creates a defensive strategy focusing on high-quality firms that offer stable returns during market volatility.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"DivYieldST\"},\n          {\"weight\": 0.5, \"primitive\": \"EarningsConsistency\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"}\n      ],\n      \"expected_annualized_sharpe\": 0.95,\n      \"expected_decay_half_life_months\": 20\n    },\n    {\n      \"name\": \"Growth and Profitability Fusion\",\n      \"mechanism\": \"Firms with rapid growth and high operating profitability are likely to sustain performance through superior business models and market leadership.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"OperProf\"},\n          {\"weight\": 0.5, \"primitive\": \"GrSaleToGrInv\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"correlation\", \"primitive\": \"Investment\", \"bound\": \"below\", \"threshold\": 0.3},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 1.2,\n      \"expected_decay_half_life_months\": 28\n    },\n    {\n      \"name\": \"Contrarian Income Play\",\n      \"mechanism\": \"Firms with high cash flow but low earnings expectations may be undervalued by the market, offering contrarian investment opportunities that are not reflected in current prices.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"CF\"},\n          {\"weight\": -0.5, \"primitive\": \"DownRecomm\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_DOWN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"AnalystRevision\", \"bound\": \"below\", \"threshold\": 0.3},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 1.0,\n      \"expected_decay_half_life_months\": 22\n    },\n    {\n      \"name\": \"Innovation Momentum\",\n      \"mechanism\": \"Firms that are actively increasing their R&D and experiencing positive momentum are likely to capitalize on innovation-driven growth, sustaining returns as they convert research into marketable products.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"SurpriseRD\"},\n          {\"weight\": 0.5, \"primitive\": \"Mom12m\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"},\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}\n      ],\n      \"expected_annualized_sharpe\": 1.1,\n      \"expected_decay_half_life_months\": 25\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 1787,
+   "total_tokens": 4588,
+   "prompt_tokens_details": {
+    "cached_tokens": 2560,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

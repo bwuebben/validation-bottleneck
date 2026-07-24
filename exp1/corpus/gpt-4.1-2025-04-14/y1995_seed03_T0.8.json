@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:12:57.857070+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 3,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zh5S1Jy8qs8RpOssIkh4PSHbLjN",
+  "object": "chat.completion",
+  "created": 1784859171,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Short-Term Asset Growth\", \"construction\": \"Percentage change in total assets (Compustat ATQ) over the most recent fiscal quarter.\", \"rationale\": \"Rapid asset growth may indicate empire building or overinvestment, potentially leading to lower future returns due to inefficient capital deployment.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Operating Expense Ratio\", \"construction\": \"Total operating expenses (Compustat XOPR) divided by total revenues (Compustat REVT) from the latest annual report.\", \"rationale\": \"Firms with higher operating efficiency may generate better margins and be more competitively positioned, leading to superior returns.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"R&D Capitalization Ratio\", \"construction\": \"Cumulative R&D expenditures (Compustat XRD) over past 3 years divided by total assets (Compustat AT) at the latest fiscal year-end.\", \"rationale\": \"Firms investing more in R&D may be positioned for innovation-driven growth and higher future returns.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Inventory Turnover Acceleration\", \"construction\": \"Change in inventory turnover ratio (annual cost of goods sold (COGS, Compustat COGS) divided by average inventories (Compustat INVT)) over the past two years.\", \"rationale\": \"Improving inventory management may indicate operational improvements and demand strength.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Net Insider Buying\", \"construction\": \"Net shares bought by insiders over the past 6 months, from SEC Form 4 filings, scaled by shares outstanding.\", \"rationale\": \"Executives with superior information may buy stock ahead of positive developments, signaling undervaluation.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Capex Deviation\", \"construction\": \"Current year's capital expenditures (Compustat CAPX) minus average of previous three years' CAPX, scaled by total assets (Compustat AT).\", \"rationale\": \"Sudden increases or decreases in investment may signal strategic shifts; negative deviations could reflect caution or underinvestment, while positive may reflect over-optimism.\", \"higher_returns_for\": \"moderate or near-zero values of the measure\"}, {\"name\": \"Dividend Omission Indicator\", \"construction\": \"Dummy variable: 1 if a company paid dividends last year, but omitted dividends this year; 0 otherwise (Compustat DV/annual reports).\", \"rationale\": \"Dividend omission often signals financial distress, which may lead to higher required returns as compensation for risk.\", \"higher_returns_for\": \"high values of the measure (i.e., recent dividend omissions)\"}, {\"name\": \"Late 10-K Filing Flag\", \"construction\": \"Dummy variable: 1 if the company files its annual 10-K report later than the SEC deadline; 0 otherwise (public SEC EDGAR data).\", \"rationale\": \"Late filings may signal accounting or operational issues, which could increase risk and expected returns.\", \"higher_returns_for\": \"high values of the measure (i.e., late filers)\"}, {\"name\": \"Earnings Volatility\", \"construction\": \"Standard deviation of quarterly earnings per share (EPS, Compustat EPSPX) over the last eight quarters.\", \"rationale\": \"Higher earnings volatility may indicate business risk, leading to higher required compensation.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Analyst Dispersion\", \"construction\": \"Standard deviation of one-year-ahead EPS forecasts across analysts (I/B/E/S) at fiscal year-end.\", \"rationale\": \"Greater disagreement among analysts may signal higher uncertainty and risk, potentially leading to higher required returns.\", \"higher_returns_for\": \"high values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 803,
+   "total_tokens": 1072,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5e8833dc3f"
+ }
+}

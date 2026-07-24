@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:32:13.860533+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4o-2024-08-06/y2005_seed08_T0.8.json",
+  "prompt_sha256": "ed9a37e97eba3328748381ec2cb265b395ecaae2d53aaf100935e4d07d828ac0"
+ },
+ "response": {
+  "id": "chatcmpl-E4zzmJxtBilURajwCYbzWINdwRv5j",
+  "object": "chat.completion",
+  "created": 1784860330,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Both use patent counts scaled by firm size/assets.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No insider trading-based predictor in the library.\"},\n  {\"index\": 2, \"match\": \"iomom_cust\", \"strength\": \"related\", \"reason\": \"Both use customer-supplier network data, but different signals.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No employee satisfaction or survey-based predictor.\"},\n  {\"index\": 4, \"match\": \"BrandInvest\", \"strength\": \"related\", \"reason\": \"Both capture brand/marketing, but via different data sources.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No climate or emissions-based predictor in the library.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No CEO/media sentiment-based predictor in the library.\"},\n  {\"index\": 7, \"match\": \"Herf\", \"strength\": \"related\", \"reason\": \"Both measure concentration, but Herf is industry, not customers.\"},\n  {\"index\": 8, \"match\": \"SurpriseRD\", \"strength\": \"related\", \"reason\": \"Both use R&D time-series, but SurpriseRD is unexpected increase.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No predictor combining analyst and social sentiment divergence.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2693,
+   "completion_tokens": 356,
+   "total_tokens": 3049,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

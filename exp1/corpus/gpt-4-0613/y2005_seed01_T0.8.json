@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:57:07.165101+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 1,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zRQ4hjdUGlPvpUIOoZv9MTun09U",
+  "object": "chat.completion",
+  "created": 1784858200,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Customer Satisfaction Index\",\n      \"construction\": \"Use third-party customer satisfaction survey data, average the past 12 months.\",\n      \"rationale\": \"High customer satisfaction may lead to repeat business and stronger competitive advantage.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Internet Traffic\",\n      \"construction\": \"Use third-party internet traffic data, normalize it by the firm's market capitalization, average the past 12 months.\",\n      \"rationale\": \"Web traffic can be a measure of the firm's popularity and brand strength.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"CEO Age\",\n      \"construction\": \"Use CEO age from public filings.\",\n      \"rationale\": \"Younger CEOs might lead to innovative, high-growth strategies.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Executive Compensation Ratio\",\n      \"construction\": \"Calculate the ratio of total executive compensation to total employee compensation, using data from public filings.\",\n      \"rationale\": \"High executive pay relative to employees might signal agency problems, leading to lower firm value.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"R&D Intensity\",\n      \"construction\": \"Calculate R&D expense divided by total assets, using data from public filings.\",\n      \"rationale\": \"High R&D intensity may signal future growth opportunities.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Social Media Sentiment\",\n      \"construction\": \"Use a natural language processing model to score the sentiment of social media posts about the firm, average the past 12 months.\",\n      \"rationale\": \"Positive sentiment might indicate strong customer relationships and predict future business success.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Supplier Diversity\",\n      \"construction\": \"Use data from public filings to calculate the diversity of a company's suppliers, e.g. geographical distribution, industry distribution.\",\n      \"rationale\": \"Firms with diverse suppliers might be better able to manage supply chain risks.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Employee Turnover Ratio\",\n      \"construction\": \"Calculate the ratio of the number of departing employees to the total number of employees, using data from public filings.\",\n      \"rationale\": \"High employee turnover might indicate internal problems and lead to lower productivity.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Cybersecurity Investment\",\n      \"construction\": \"Estimate the firm's expenditure on cybersecurity, e.g., from disclosures in public filings.\",\n      \"rationale\": \"Heavy investment in cybersecurity might predict lower risk of damaging breaches.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Environmental Responsibility Score\",\n      \"construction\": \"Use third-party environmental impact scores, average the past 12 months.\",\n      \"rationale\": \"High environmental responsibility might predict customer loyalty and regulatory support.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 695,
+   "total_tokens": 965,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

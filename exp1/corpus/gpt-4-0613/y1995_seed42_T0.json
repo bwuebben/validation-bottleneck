@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:49:40.113739+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zK7tke7cZ1b9P1hX9pnDYMgHSbe",
+  "object": "chat.completion",
+  "created": 1784857747,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\n    \"name\": \"CEO Tenure\",\n    \"construction\": \"Number of years the current CEO has been in position, data sourced from company reports.\",\n    \"rationale\": \"Longer CEO tenure may indicate stability and effective leadership, potentially leading to better future performance.\",\n    \"higher_returns_for\": \"Stocks with longer-serving CEOs\"\n  },\n  {\n    \"name\": \"Product Diversity\",\n    \"construction\": \"Number of distinct product lines or services offered by the company, data sourced from company reports.\",\n    \"rationale\": \"Companies with a diverse product portfolio may be better insulated against sector-specific downturns.\",\n    \"higher_returns_for\": \"Stocks of companies with more diverse product portfolios\"\n  },\n  {\n    \"name\": \"Patent Count\",\n    \"construction\": \"Number of patents held by the company, data sourced from the US Patent and Trademark Office.\",\n    \"rationale\": \"A high number of patents may indicate a company's innovative capacity and competitive advantage.\",\n    \"higher_returns_for\": \"Stocks of companies with more patents\"\n  },\n  {\n    \"name\": \"Employee Satisfaction\",\n    \"construction\": \"Average employee satisfaction score, data sourced from company internal surveys if available.\",\n    \"rationale\": \"Higher employee satisfaction may lead to better productivity and lower turnover, potentially improving future performance.\",\n    \"higher_returns_for\": \"Stocks of companies with higher employee satisfaction scores\"\n  },\n  {\n    \"name\": \"Customer Concentration\",\n    \"construction\": \"Revenue concentration from top 5 customers, data sourced from company reports.\",\n    \"rationale\": \"High customer concentration may indicate vulnerability to the loss of key customers.\",\n    \"higher_returns_for\": \"Stocks of companies with lower customer concentration\"\n  },\n  {\n    \"name\": \"Supplier Dependence\",\n    \"construction\": \"Percentage of supplies sourced from top 3 suppliers, data sourced from company reports.\",\n    \"rationale\": \"High supplier dependence may indicate vulnerability to supply chain disruptions.\",\n    \"higher_returns_for\": \"Stocks of companies with lower supplier dependence\"\n  },\n  {\n    \"name\": \"Geographic Diversification\",\n    \"construction\": \"Number of countries in which the company operates, data sourced from company reports.\",\n    \"rationale\": \"Companies operating in multiple countries may be better insulated against country-specific risks.\",\n    \"higher_returns_for\": \"Stocks of companies operating in more countries\"\n  },\n  {\n    \"name\": \"R&D Intensity\",\n    \"construction\": \"R&D expenditure as a percentage of total revenue, data sourced from company reports.\",\n    \"rationale\": \"High R&D intensity may indicate a company's commitment to innovation and future growth.\",\n    \"higher_returns_for\": \"Stocks of companies with higher R&D intensity\"\n  },\n  {\n    \"name\": \"Debt Maturity Structure\",\n    \"construction\": \"Average maturity of the company's debt, data sourced from company reports.\",\n    \"rationale\": \"Companies with longer debt maturities may be less vulnerable to short-term financial distress.\",\n    \"higher_returns_for\": \"Stocks of companies with longer average debt maturities\"\n  },\n  {\n    \"name\": \"Social Responsibility Score\",\n    \"construction\": \"Score based on company's environmental, social, and governance (ESG) practices, data sourced from company reports and third-party ESG rating agencies.\",\n    \"rationale\": \"Companies with higher ESG scores may be better positioned for long-term sustainability and risk management.\",\n    \"higher_returns_for\": \"Stocks of companies with higher social responsibility scores\"\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 742,
+   "total_tokens": 1012,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

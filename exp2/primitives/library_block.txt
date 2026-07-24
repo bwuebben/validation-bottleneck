@@ -1,0 +1,212 @@
+AbnormalAccruals: Abnormal Accruals
+Accruals: Accruals
+AccrualsBM: Book-to-market and accruals
+Activism1: Takeover vulnerability
+Activism2: Active shareholders
+AdExp: Advertising Expense
+AgeIPO: IPO and age
+AM: Total assets to market
+AnalystRevision: EPS forecast revision
+AnalystValue: Analyst Value
+AnnouncementReturn: Earnings announcement return
+AOP: Analyst Optimism
+AssetGrowth: Asset growth
+Beta: CAPM beta
+BetaFP: Frazzini-Pedersen Beta
+BetaLiquidityPS: Pastor-Stambaugh liquidity beta
+BetaTailRisk: Tail risk beta
+betaVIX: Systematic volatility
+BidAskSpread: Bid-ask spread
+BM: Book to market, original (Stattman 1980)
+BMdec: Book to market using December ME
+BookLeverage: Book leverage (annual)
+BPEBM: Leverage component of BM
+BrandInvest: Brand capital investment
+Cash: Cash to assets
+CashProd: Cash Productivity
+CBOperProf: Cash-based operating profitability
+CF: Cash flow to market
+cfp: Operating Cash flows to price
+ChangeInRecommendation: Change in recommendation
+ChAssetTurnover: Change in Asset Turnover
+ChEQ: Growth in book equity
+ChForecastAccrual: Change in Forecast and Accrual
+ChInv: Inventory Growth
+ChInvIA: Change in capital inv (ind adj)
+ChNAnalyst: Decline in Analyst Coverage
+ChNNCOA: Change in Net Noncurrent Op Assets
+ChNWC: Change in Net Working Capital
+ChTax: Change in Taxes
+CitationsRD: Citations to RD expenses
+CompEquIss: Composite equity issuance
+CompositeDebtIssuance: Composite debt issuance
+ConsRecomm: Consensus Recommendation
+ConvDebt: Convertible debt indicator
+CoskewACX: Coskewness using daily returns
+Coskewness: Coskewness
+CPVolSpread: Call minus Put Vol
+CredRatDG: Credit Rating Downgrade
+CustomerMomentum: Customer momentum
+dCPVolSpread: Change in put vol minus change in call vol
+DebtIssuance: Debt Issuance
+DelBreadth: Breadth of ownership
+DelCOA: Change in current operating assets
+DelCOL: Change in current operating liabilities
+DelDRC: Deferred Revenue
+DelEqu: Change in equity to assets
+DelFINL: Change in financial liabilities
+DelLTI: Change in long-term investment
+DelNetFin: Change in net financial assets
+DivInit: Dividend Initiation
+DivOmit: Dividend Omission
+DivSeason: Dividend seasonality
+DivYieldST: Predicted div yield next month
+dNoa: change in net operating assets
+DolVol: Past trading volume
+DownRecomm: Down forecast EPS
+dVolCall: Change in call vol
+dVolPut: Change in put vol
+EarningsConsistency: Earnings consistency
+EarningsForecastDisparity: Long-vs-short EPS forecasts
+EarningsStreak: Earnings surprise streak
+EarningsSurprise: Earnings Surprise
+EarnSupBig: Earnings surprise of big firms
+EBM: Enterprise component of BM
+EntMult: Enterprise Multiple
+EP: Earnings-to-Price Ratio
+EquityDuration: Equity Duration
+ExchSwitch: Exchange Switch
+ExclExp: Excluded Expenses
+FEPS: Analyst earnings per share
+fgr5yrLag: Long-term EPS forecast
+FirmAge: Firm age based on CRSP
+FirmAgeMom: Firm Age - Momentum
+ForecastDispersion: EPS Forecast Dispersion
+FR: Pension Funding Status
+Frontier: Efficient frontier index
+Governance: Governance Index
+GP: gross profits / total assets
+GrAdExp: Growth in advertising expenses
+grcapx: Change in capex (two years)
+grcapx3y: Change in capex (three years)
+GrLTNOA: Growth in long term operating assets
+GrSaleToGrInv: Sales growth over inventory growth
+GrSaleToGrOverhead: Sales growth over overhead growth
+Herf: Industry concentration (sales)
+HerfAsset: Industry concentration (assets)
+HerfBE: Industry concentration (equity)
+High52: 52 week high
+hire: Employment growth
+IdioVol3F: Idiosyncratic risk (3 factor)
+IdioVolAHT: Idiosyncratic risk (AHT)
+Illiquidity: Amihud's illiquidity
+IndIPO: Initial Public Offerings
+IndMom: Industry Momentum
+IndRetBig: Industry return of big firms
+IntanBM: Intangible return using BM
+IntanCFP: Intangible return using CFtoP
+IntanEP: Intangible return using EP
+IntanSP: Intangible return using Sale2P
+IntMom: Intermediate Momentum
+Investment: Investment to revenue
+InvestPPEInv: change in ppe and inv/assets
+InvGrowth: Inventory Growth
+IO_ShortInterest: Inst own among high short interest
+iomom_cust: Customers momentum
+iomom_supp: Suppliers momentum
+Leverage: Market leverage
+LRreversal: Long-run reversal
+MaxRet: Maximum return over month
+MeanRankRevGrowth: Revenue Growth Rank
+Mom12m: Momentum (12 month)
+Mom12mOffSeason: Momentum without the seasonal part
+Mom6m: Momentum (6 month)
+Mom6mJunk: Junk Stock Momentum
+MomOffSeason: Off season long-term reversal
+MomOffSeason06YrPlus: Off season reversal years 6 to 10
+MomOffSeason11YrPlus: Off season reversal years 11 to 15
+MomOffSeason16YrPlus: Off season reversal years 16 to 20
+MomRev: Momentum and LT Reversal
+MomSeason: Return seasonality years 2 to 5
+MomSeason06YrPlus: Return seasonality years 6 to 10
+MomSeason11YrPlus: Return seasonality years 11 to 15
+MomSeason16YrPlus: Return seasonality years 16 to 20
+MomSeasonShort: Return seasonality last year
+MomVol: Momentum in high volume stocks
+MRreversal: Medium-run reversal
+MS: Mohanram G-score
+NetDebtFinance: Net debt financing
+NetDebtPrice: Net debt to price
+NetEquityFinance: Net equity financing
+NetPayoutYield: Net Payout Yield
+NOA: Net Operating Assets
+NumEarnIncrease: Earnings streak length
+OperProf: operating profits / book equity
+OperProfRD: Operating profitability R&D adjusted
+OPLeverage: Operating leverage
+OptionVolume1: Option to stock volume
+OptionVolume2: Option volume to average
+OrderBacklog: Order backlog
+OrderBacklogChg: Change in order backlog
+OrgCap: Organizational capital
+OScore: O Score
+PatentsRD: Patents to RD expenses
+PayoutYield: Payout Yield
+PctAcc: Percent Operating Accruals
+PctTotAcc: Percent Total Accruals
+PredictedFE: Predicted Analyst forecast error
+Price: Price
+PriceDelayRsq: Price delay r square
+PriceDelaySlope: Price delay coeff
+PriceDelayTstat: Price delay SE adjusted
+ProbInformedTrading: Probability of Informed Trading
+PS: Piotroski F-score
+RD: R&D over market cap
+RDAbility: R&D ability
+RDcap: R&D capital-to-assets
+RDIPO: IPO and no R&D spending
+RDS: Real dirty surplus
+realestate: Real estate holdings
+RealizedVol: Realized (Total) Volatility
+Recomm_ShortInterest: Analyst Recommendations and Short-Interest
+ResidualMomentum: Momentum based on FF3 residuals
+retConglomerate: Conglomerate return
+ReturnSkew: Return skewness
+ReturnSkew3F: Idiosyncratic skewness (3F model)
+REV6: Earnings forecast revisions
+RevenueSurprise: Revenue Surprise
+RIO_Disp: Inst Own and Forecast Dispersion
+RIO_MB: Inst Own and Market to Book
+RIO_Turnover: Inst Own and Turnover
+RIO_Volatility: Inst Own and Idio Vol
+RIVolSpread: Realized minus Implied Vol
+roaq: Return on assets (qtrly)
+RoE: net income / book equity
+sfe: Earnings Forecast to price
+ShareIss1Y: Share issuance (1 year)
+ShareIss5Y: Share issuance (5 year)
+ShareRepurchase: Share repurchases
+ShareVol: Share Volume
+ShortInterest: Short Interest
+sinAlgo: Sin Stock (selection criteria)
+Size: Size
+skew1: Volatility smirk near the money
+SmileSlope: Put volatility minus call volatility
+SP: Sales-to-price
+Spinoff: Spinoffs
+std_turn: Share turnover volatility
+STreversal: Short term reversal
+SurpriseRD: Unexpected R&D increase
+tang: Tangibility
+Tax: Taxable income to income
+TotalAccruals: Total accruals
+TrendFactor: Trend Factor
+UpRecomm: Up Forecast
+VarCF: Cash-flow to price variance
+VolMkt: Volume to market equity
+VolSD: Volume Variance
+VolumeTrend: Volume Trend
+XFIN: Net external financing
+zerotrade12M: Days with zero trades
+zerotrade1M: Days with zero trades
+zerotrade6M: Days with zero trades

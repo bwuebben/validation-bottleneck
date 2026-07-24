@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:52:56.815474+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 9,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zNXw2Gkp5OBJyOl6D21w33SkMsb",
+  "object": "chat.completion",
+  "created": 1784857959,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n\"predictors\": \n[\n  {\n    \"name\": \"Employee Satisfaction\",\n    \"construction\": \"Collect data from available firm-level surveys on employee satisfaction, normalize the scores, and calculate the percentile rank for each firm.\",\n    \"rationale\": \"Firms with higher employee satisfaction might have more productive workers, leading to better future performance.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Product Market Share\",\n    \"construction\": \"Use industry reports to calculate the firm's share in its respective product market.\",\n    \"rationale\": \"Firms with higher market share may have competitive advantages that lead to higher profitability.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Customer Satisfaction\",\n    \"construction\": \"Collect data from available customer surveys or reviews on firms' products or services, normalize scores and calculate the percentile rank for each firm.\",\n    \"rationale\": \"Firms with high customer satisfaction might have stronger brand loyalty, leading to stable future cash flows.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Age of the Firm\",\n    \"construction\": \"Calculate the number of years since the firm's incorporation.\",\n    \"rationale\": \"Older firms may have more established business models and infrastructure, which could contribute to stability and predictability of returns.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Management Tenure\",\n    \"construction\": \"Calculate the average number of years of tenure of the top management team.\",\n    \"rationale\": \"Firms with longer-tenured management might have more experienced leadership, leading to better decision making.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Patent Count\",\n    \"construction\": \"Count the number of patents owned by a firm.\",\n    \"rationale\": \"Firms with more patents might have more innovative potential, leading to future growth opportunities.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Revenue Diversification\",\n    \"construction\": \"Calculate the Herfindahl index of a firm's revenue sources, based on segment reporting.\",\n    \"rationale\": \"Firms with more diversified revenue streams might have lower risk due to not being reliant on a single source of income.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Salary Ratio\",\n    \"construction\": \"Calculate the ratio of the CEO's salary to the median employee's salary.\",\n    \"rationale\": \"Firms with lower salary ratios might have better employee morale and lower employee turnover, leading to more stable operations.\",\n    \"higher_returns_for\": \"Low values of the measure\"\n  },\n  {\n    \"name\": \"Internet Presence\",\n    \"construction\": \"Use available web tracking services to measure the number of unique visitors to a firm's website over a given period, normalize this number by firm size.\",\n    \"rationale\": \"Firms with more online traffic might be gaining market share in the digital economy, signalling higher future profitability.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  },\n  {\n    \"name\": \"Charitable Giving\",\n    \"construction\": \"Calculate the amount of charitable contributions made by the firm as a percentage of gross income.\",\n    \"rationale\": \"Firms that give more to charity may be viewed more favorably by the public, leading to stronger brand loyalty and potentially higher future profits.\",\n    \"higher_returns_for\": \"High values of the measure\"\n  }\n]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 763,
+   "total_tokens": 1033,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

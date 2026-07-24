@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:28:41.276108+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2000_seed08_T0.8.json",
+  "prompt_sha256": "4b86de2fb02c3cb70bb9d68960d5b4a8caee2a4769756eb0b450e3848f5efc1d"
+ },
+ "response": {
+  "id": "chatcmpl-E4zwMFi1XhqkHolhOOzATcYKtOrDM",
+  "object": "chat.completion",
+  "created": 1784860118,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"Accruals\", \"strength\": \"close\", \"reason\": \"Both use accruals, but proposal focuses on variability.\"},\n  {\"index\": 1, \"match\": \"hire\", \"strength\": \"close\", \"reason\": \"Both measure employment growth, but proposal uses 2-year window.\"},\n  {\"index\": 2, \"match\": \"HerfAsset\", \"strength\": \"related\", \"reason\": \"Both relate to concentration, but proposal is supplier-based.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor measures dividend smoothing persistence.\"},\n  {\"index\": 4, \"match\": \"Tax\", \"strength\": \"related\", \"reason\": \"Both use tax-related balance sheet items, but different signals.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for off-balance sheet operating leases.\"},\n  {\"index\": 6, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Both relate to governance, but proposal is transaction-based.\"},\n  {\"index\": 7, \"match\": \"RDcap\", \"strength\": \"close\", \"reason\": \"Both relate to R&D capitalization, but proposal uses a ratio.\"},\n  {\"index\": 8, \"match\": \"ChInv\", \"strength\": \"close\", \"reason\": \"Both measure inventory changes, but proposal is seasonal.\"},\n  {\"index\": 9, \"match\": \"AnnouncementReturn\", \"strength\": \"close\", \"reason\": \"Both use returns around earnings announcements, but proposal is pre-announcement.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2763,
+   "completion_tokens": 367,
+   "total_tokens": 3130,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

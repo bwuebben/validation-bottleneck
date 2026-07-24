@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:28:31.265658+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2000_seed05_T0.8.json",
+  "prompt_sha256": "431bda345dffebe87619012b29056c5f4053ebd6a3442ac2e3a75f80273bc0e8"
+ },
+ "response": {
+  "id": "chatcmpl-E4zwBvbAao1VuD7LnBC6mnAxObjJr",
+  "object": "chat.completion",
+  "created": 1784860107,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"GrAdExp\", \"strength\": \"close\", \"reason\": \"Both capture growth/acceleration in innovation-related expenses.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No insider trading-based predictor in the library.\"},\n  {\"index\": 2, \"match\": \"AssetGrowth\", \"strength\": \"close\", \"reason\": \"Both use short-term asset growth, but sign and horizon differ.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No dividend surprise or change-based predictor present.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No deferred tax liability growth or similar tax accrual signal.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No inventory turnover trend or slope-based predictor.\"},\n  {\"index\": 6, \"match\": \"NetPayoutYield\", \"strength\": \"close\", \"reason\": \"NetPayoutYield includes net repurchases and dividends.\"},\n  {\"index\": 7, \"match\": \"ChNWC\", \"strength\": \"related\", \"reason\": \"Both relate to working capital changes, but not the same signal.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No predictor uses operating lease obligations or off-balance-sheet debt.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No CEO tenure or management staleness variable in the library.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2727,
+   "completion_tokens": 360,
+   "total_tokens": 3087,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

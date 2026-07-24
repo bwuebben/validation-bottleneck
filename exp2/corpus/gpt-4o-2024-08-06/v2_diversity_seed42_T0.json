@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:14:54.944788+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ymjwvBFHUUpdEmIXNbvDAiNQ6st",
+  "object": "chat.completion",
+  "created": 1784855677,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"Liquidity-Driven Earnings Surprise\",\n      \"mechanism\": \"Combining earnings surprise with liquidity measures can capture mispricing due to investor attention constraints, where less liquid stocks with positive surprises are underreacted to, leading to subsequent price corrections.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"EarningsSurprise\"},\n          {\"weight\": -0.5, \"primitive\": \"Illiquidity\"},\n          {\"weight\": 0.5, \"primitive\": \"BidAskSpread\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.8,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"Growth-Driven Asset Turnover\",\n      \"mechanism\": \"Firms with improving asset turnover and strong sales growth may indicate efficient use of resources, leading to superior future performance as the market underestimates the sustainability of growth.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"ChAssetTurnover\"},\n          {\"weight\": 0.5, \"primitive\": \"GrSaleToGrInv\"},\n          {\"weight\": -0.5, \"primitive\": \"Investment\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.7,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Volatility-Driven Analyst Optimism\",\n      \"mechanism\": \"Stocks with high analyst optimism and low volatility may be undervalued due to risk aversion, leading to positive future returns as the market corrects its risk assessment.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"AOP\"},\n          {\"weight\": -0.5, \"primitive\": \"RealizedVol\"},\n          {\"weight\": 0.5, \"primitive\": \"AnalystRevision\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": 18\n    },\n    {\n      \"name\": \"Debt-Driven Profitability\",\n      \"mechanism\": \"Firms with high profitability and increasing debt issuance may signal confidence in future growth, leading to positive returns as the market recognizes the strategic use of leverage.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"OperProf\"},\n          {\"weight\": 0.5, \"primitive\": \"DebtIssuance\"},\n          {\"weight\": -0.5, \"primitive\": \"BookLeverage\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.75,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"Innovation-Driven Market Sentiment\",\n      \"mechanism\": \"Firms with high R&D spending and positive market sentiment may be undervalued due to the market's underestimation of innovation potential, leading to future outperformance.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"RD\"},\n          {\"weight\": 0.5, \"primitive\": \"AnalystValue\"},\n          {\"weight\": -0.5, \"primitive\": \"Beta\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.85,\n      \"expected_decay_half_life_months\": 20\n    },\n    {\n      \"name\": \"Cash Flow-Driven Market Anomalies\",\n      \"mechanism\": \"Combining cash flow metrics with market anomalies can capture mispricing due to investor overreaction to short-term market movements, leading to corrections as fundamentals reassert.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"CF\"},\n          {\"weight\": 0.5, \"primitive\": \"Mom12mOffSeason\"},\n          {\"weight\": -0.5, \"primitive\": \"STreversal\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_DOWN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"opposite_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.65,\n      \"expected_decay_half_life_months\": 40\n    },\n    {\n      \"name\": \"Operational Efficiency and Market Dynamics\",\n      \"mechanism\": \"Firms with improving operational efficiency and favorable market dynamics may be undervalued due to the market's focus on short-term earnings, leading to future outperformance.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"OperProfRD\"},\n          {\"weight\": 0.5, \"primitive\": \"IndMom\"},\n          {\"weight\": -0.5, \"primitive\": \"VolSD\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.78,\n      \"expected_decay_half_life_months\": 28\n    },\n    {\n      \"name\": \"Sentiment-Driven Financial Stability\",\n      \"mechanism\": \"Firms with strong financial stability and positive sentiment may be undervalued due to the market's focus on short-term volatility, leading to future outperformance as stability is recognized.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"NetPayoutYield\"},\n          {\"weight\": 0.5, \"primitive\": \"UpRecomm\"},\n          {\"weight\": -0.5, \"primitive\": \"IdioVol3F\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"weaker\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.72,\n      \"expected_decay_half_life_months\": 32\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2903,
+   "completion_tokens": 2013,
+   "total_tokens": 4916,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:14:12.306647+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 1,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ziIQCaN7sivxaisxht6gEK2WL9S",
+  "object": "chat.completion",
+  "created": 1784859246,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Inventory Adjustment Ratio\", \"construction\": \"Annual change in inventories divided by prior year total assets (from Compustat).\", \"rationale\": \"Firms with large inventory reductions may signal operational efficiency or demand shocks, potentially impacting future profitability.\", \"higher_returns_for\": \"firms with high negative (large reductions) inventory adjustment ratios\"}, {\"name\": \"Quarterly Insider Option Exercise Rate\", \"construction\": \"Number of stock options exercised by insiders in the previous quarter (from SEC filings) divided by the number of options outstanding.\", \"rationale\": \"High exercise rates may indicate insiders believe the stock is fairly or overvalued, while low rates could indicate undervaluation.\", \"higher_returns_for\": \"firms with low insider option exercise rates\"}, {\"name\": \"Dividend Smoothing Index\", \"construction\": \"Standard deviation of annual dividend per share over the past 5 years divided by mean dividend per share (from CRSP/Compustat).\", \"rationale\": \"Lower variability may signal stable management and reliable cash flows, while higher variability may point to riskier future prospects.\", \"higher_returns_for\": \"firms with low dividend smoothing index\"}, {\"name\": \"R&D Scaling Factor\", \"construction\": \"R&D expense (Compustat item XRD) divided by current market capitalization.\", \"rationale\": \"Firms investing heavily in R&D relative to their size may have greater growth opportunities, not fully priced by the market.\", \"higher_returns_for\": \"firms with high R&D scaling factor\"}, {\"name\": \"Short-Term Asset Turnover Change\", \"construction\": \"Change in asset turnover ratio (sales/total assets) from previous year to current year.\", \"rationale\": \"Improving asset turnover may reflect enhanced operational efficiency, which could lead to higher future returns.\", \"higher_returns_for\": \"firms with large positive changes in asset turnover\"}, {\"name\": \"Negative Earnings Surprise Persistence\", \"construction\": \"Count of consecutive quarters with negative earnings surprises (actual EPS below consensus, from I/B/E/S) over past 2 years.\", \"rationale\": \"Extended negative surprises might result in undervaluation due to market overreaction.\", \"higher_returns_for\": \"firms with high counts of negative earnings surprise persistence\"}, {\"name\": \"Late 10-K Filing Penalty\", \"construction\": \"Indicator variable for firms filing 10-K reports more than 90 days after fiscal year-end (SEC/EDGAR data).\", \"rationale\": \"Late filings may indicate accounting or operational troubles, but may also lead to excessive discounting by the market.\", \"higher_returns_for\": \"firms with recent late 10-K filings\"}, {\"name\": \"Long-Term Depreciation Policy Aggressiveness\", \"construction\": \"Ratio of accumulated depreciation to gross property, plant, and equipment (PP&E) over the past 10 years.\", \"rationale\": \"Aggressive depreciation could create hidden value by understating book assets and earnings.\", \"higher_returns_for\": \"firms with high depreciation policy aggressiveness ratio\"}, {\"name\": \"Supplier Concentration Index\", \"construction\": \"Top supplier purchases divided by total purchases (from 10-K segment disclosures or industry sources).\", \"rationale\": \"High concentration may expose firms to idiosyncratic risk, affecting future returns depending on market perception.\", \"higher_returns_for\": \"firms with low supplier concentration index\"}, {\"name\": \"CEO Tenure Stability\", \"construction\": \"Number of consecutive years current CEO has held position, from annual reports.\", \"rationale\": \"Stable leadership may foster long-term strategies that are undervalued by the market.\", \"higher_returns_for\": \"firms with high CEO tenure stability\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 761,
+   "total_tokens": 1030,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_294c310c0b"
+ }
+}

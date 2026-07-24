@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:27:32.771179+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y1990_seed10_T0.8.json",
+  "prompt_sha256": "475dfe98fc0c250115abd6e72c6fdb5a578faf495b065e772c4772d898a2bf5b"
+ },
+ "response": {
+  "id": "chatcmpl-E4zvDFiXgZbtCG3YzQfhvjteveFvb",
+  "object": "chat.completion",
+  "created": 1784860047,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No insider trading-based predictor in library.\"},\n  {\"index\": 1, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Both use patent counts scaled by firm size.\"},\n  {\"index\": 2, \"match\": \"hire\", \"strength\": \"exact\", \"reason\": \"Both measure employment growth rate.\"},\n  {\"index\": 3, \"match\": \"DelFINL\", \"strength\": \"related\", \"reason\": \"Both involve changes in financial liabilities.\"},\n  {\"index\": 4, \"match\": \"ChInv\", \"strength\": \"close\", \"reason\": \"Both use inventory change, but denominator differs.\"},\n  {\"index\": 5, \"match\": \"DivOmit\", \"strength\": \"exact\", \"reason\": \"Both indicate dividend omission events.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No segment diversification or similar index in library.\"},\n  {\"index\": 7, \"match\": \"RD\", \"strength\": \"close\", \"reason\": \"Both scale R&D by market value.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No CEO tenure or management duration predictor.\"},\n  {\"index\": 9, \"match\": \"EarningsConsistency\", \"strength\": \"related\", \"reason\": \"Both measure earnings/profit stability over time.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2686,
+   "completion_tokens": 330,
+   "total_tokens": 3016,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

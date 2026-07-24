@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:25:22.653195+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y2000_seed08_T0.8.json",
+  "prompt_sha256": "8c1b66fbf19dd2e6ba10784843f0dde5d44fa651cd8569be2acb7eb2b0cf8eed"
+ },
+ "response": {
+  "id": "chatcmpl-E4zt8vle5PbwOWZ1U8hxmHtK68wfA",
+  "object": "chat.completion",
+  "created": 1784859918,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses internet adoption as a signal.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No direct product lifecycle or stage-based predictor in library.\"},\n  {\"index\": 2, \"match\": \"Governance\", \"strength\": \"exact\", \"reason\": \"Governance is scored from filings and proxies; same construction.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No predictor uses workforce education or similar demographic data.\"},\n  {\"index\": 4, \"match\": \"BrandInvest\", \"strength\": \"close\", \"reason\": \"BrandInvest proxies brand value via investment; similar core idea.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No predictor uses employee satisfaction or similar review data.\"},\n  {\"index\": 6, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"PatentsRD uses patent/citation data; similar to IP portfolio strength.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses environmental sustainability scores.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No predictor uses customer retention or similar loyalty measures.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No predictor directly measures supply chain efficiency.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2679,
+   "completion_tokens": 348,
+   "total_tokens": 3027,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

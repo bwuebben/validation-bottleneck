@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:23:47.787616+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y1990_seed06_T0.8.json",
+  "prompt_sha256": "9a99e1131567e6d127a8e5f6eada89a4d337afc76e520dc83478f62e5026c763"
+ },
+ "response": {
+  "id": "chatcmpl-E4zrb4kUXuLySrlzzD2PLbcRTkhHA",
+  "object": "chat.completion",
+  "created": 1784859823,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses dividend coverage ratio construction.\"},\n  {\"index\": 1, \"match\": \"VarCF\", \"strength\": \"close\", \"reason\": \"Both use variability/volatility of a fundamental (revenue/cash flow).\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses P/E volatility or similar construction.\"},\n  {\"index\": 3, \"match\": \"grcapx\", \"strength\": \"exact\", \"reason\": \"Year-over-year capex growth matches grcapx construction.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses interest coverage ratio construction.\"},\n  {\"index\": 5, \"match\": \"RD\", \"strength\": \"close\", \"reason\": \"Both scale R&D by firm size (revenue/market cap).\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses sales per employee or similar.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses earnings yield minus T-bill yield.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses inventory turnover construction.\"},\n  {\"index\": 9, \"match\": \"cfp\", \"strength\": \"close\", \"reason\": \"Both scale cash flow by a size variable (revenue/price).\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2661,
+   "completion_tokens": 358,
+   "total_tokens": 3019,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:01:03.200027+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 3,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zVKpm0c75Wwe0okMBImNRbdQofr",
+  "object": "chat.completion",
+  "created": 1784858442,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\n    \"name\": \"Social Media Buzz\",\n    \"construction\": \"Measure the frequency and sentiment of a company's mentions on top social media platforms over the past quarter.\",\n    \"rationale\": \"Increased attention on social media may predict demand from retail investors.\",\n    \"higher_returns_for\": \"Companies with positive and high frequency social media attention\"\n  },\n  {\n    \"name\": \"Product Release Cycle\",\n    \"construction\": \"Look at the time since the last major product release. Measurable using company press releases and media reports.\",\n    \"rationale\": \"Companies may experience a boost in revenues following a product release.\",\n    \"higher_returns_for\": \"Companies that have recently released major products\"\n  },\n  {\n    \"name\": \"Employee Satisfaction\",\n    \"construction\": \"Measure using aggregate employee reviews and ratings on job websites over the past six months.\",\n    \"rationale\": \"High employee satisfaction could indicate effective management and positive company culture, potentially leading to better performance.\",\n    \"higher_returns_for\": \"Companies with high employee satisfaction ratings\"\n  },\n  {\n    \"name\": \"Patent Activity\",\n    \"construction\": \"Count the number of patents a company has applied for in the past year, using data from the United States Patent and Trademark Office.\",\n    \"rationale\": \"Active patenting may be a sign of innovative activity, which could lead to future growth.\",\n    \"higher_returns_for\": \"Companies with higher patent activity\"\n  },\n  {\n    \"name\": \"Customer Loyalty\",\n    \"construction\": \"Measure using data from customer satisfaction surveys and company-specific loyalty programs.\",\n    \"rationale\": \"Customer loyalty can predict future sales stability and growth.\",\n    \"higher_returns_for\": \"Companies with high customer loyalty\"\n  },\n  {\n    \"name\": \"Supply Chain Resilience\",\n    \"construction\": \"Measure using data on number of suppliers, geographic distribution, and supplier reliability.\",\n    \"rationale\": \"Companies with resilient supply chains may be better equipped to handle shocks and disruptions.\",\n    \"higher_returns_for\": \"Companies with more resilient supply chains\"\n  },\n  {\n    \"name\": \"Environmental Impact\",\n    \"construction\": \"Measure using data on company's carbon footprint, waste production, and other environmental factors.\",\n    \"rationale\": \"Companies with lower environmental impact may attract socially responsible investors.\",\n    \"higher_returns_for\": \"Companies with lower environmental impact\"\n  },\n  {\n    \"name\": \"C-Suite Diversity\",\n    \"construction\": \"Measure the racial and gender diversity in the company's C-suite leadership using publicly available biographical data.\",\n    \"rationale\": \"Diversity in leadership can lead to more innovative decision-making and is increasingly valued by investors.\",\n    \"higher_returns_for\": \"Companies with more diverse C-suite leadership\"\n  },\n  {\n    \"name\": \"Cybersecurity Investment\",\n    \"construction\": \"Measure using data on company's investment in cybersecurity technology and personnel.\",\n    \"rationale\": \"High cybersecurity investment may reduce risk of costly data breaches.\",\n    \"higher_returns_for\": \"Companies with higher investments in cybersecurity\"\n  },\n  {\n    \"name\": \"Remote Work Capability\",\n    \"construction\": \"Measure using data on percentage of employees able to work remotely, and company investment in remote work technology.\",\n    \"rationale\": \"Companies with strong remote work capabilities may be more resilient to disruptions that require employees to work from home.\",\n    \"higher_returns_for\": \"Companies with better remote work capabilities\"\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 717,
+   "total_tokens": 987,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

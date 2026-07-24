@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:30:08.267711+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4o-2024-08-06/y1990_seed04_T0.8.json",
+  "prompt_sha256": "63c65e897d42f3656bb58e02d51a3fd0387df0c2487a2a04a71c3fb537eeb66f"
+ },
+ "response": {
+  "id": "chatcmpl-E4zxmf3I8BwVaYAg48iE0X7LWjgbv",
+  "object": "chat.completion",
+  "created": 1784860206,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"RD\", \"strength\": \"close\", \"reason\": \"Both use R&D scaled by firm size; denominator differs (sales vs. market cap).\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses sales per employee or similar construction.\"},\n  {\"index\": 2, \"match\": \"grcapx3y\", \"strength\": \"exact\", \"reason\": \"Both measure capex growth over three years from 10-K data.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses insider trading activity or Form 4 data.\"},\n  {\"index\": 4, \"match\": \"AdExp\", \"strength\": \"exact\", \"reason\": \"Both use advertising expense scaled by sales from 10-K filings.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses dividend growth stability or its standard deviation.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor combines ROE and earnings growth in this way.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses COGS in-house production proportion.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses market share growth within industry.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses energy consumption scaled by sales.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2742,
+   "completion_tokens": 369,
+   "total_tokens": 3111,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

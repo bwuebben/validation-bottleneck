@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:32:39.481280+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4o-2024-08-06/y2010_seed04_T0.8.json",
+  "prompt_sha256": "ea303fd3229e88c54dc4eb2e05a5641c08346fc6736815af4c4e6a177cee18ad"
+ },
+ "response": {
+  "id": "chatcmpl-E500CAYeahRrrn8c10kIhsMLApFrb",
+  "object": "chat.completion",
+  "created": 1784860356,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"grcapx3y\", \"strength\": \"close\", \"reason\": \"Both use multi-year growth in investment intensity, but for R&D specifically here.\"},\n  {\"index\": 1, \"match\": \"HerfAsset\", \"strength\": \"related\", \"reason\": \"Both measure concentration, but HerfAsset is for industry assets, not suppliers.\"},\n  {\"index\": 2, \"match\": \"hire\", \"strength\": \"exact\", \"reason\": \"hire is employment growth, matching employee growth rate construction.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor isolates green capex from sustainability disclosures.\"},\n  {\"index\": 4, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Governance index includes board independence, but is broader in scope.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer sentiment from online reviews.\"},\n  {\"index\": 6, \"match\": \"CitationsRD\", \"strength\": \"close\", \"reason\": \"Both use patent citations, but CitationsRD is citations per R&D dollar.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor tracks insider trading momentum from Form 4.\"},\n  {\"index\": 8, \"match\": \"BrandInvest\", \"strength\": \"close\", \"reason\": \"Both relate brand investment to outcomes, but BrandInvest uses capitalized brand investment.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor measures foreign revenue share from segment data.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2728,
+   "completion_tokens": 383,
+   "total_tokens": 3111,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

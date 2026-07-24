@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:16:18.401479+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 8,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zkJgJfmOEXofJnfCCay9raAvzRg",
+  "object": "chat.completion",
+  "created": 1784859371,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Short-Term Insider Purchase Ratio\", \"construction\": \"Number of shares purchased by corporate insiders over the past 3 months divided by total shares outstanding, using Form 4 filings.\", \"rationale\": \"Recent insider purchases may signal undervaluation and superior information about the firm\u2019s near-term prospects.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Inventory Growth Volatility\", \"construction\": \"Standard deviation of quarterly percentage changes in inventory over the past 3 years, using Compustat data.\", \"rationale\": \"High volatility in inventory growth may reflect uncertainty in demand forecasting or operational inefficiency, potentially linked to mispricing.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"R&D Capitalization Ratio\", \"construction\": \"Current R&D expense (Compustat item XRDQ) divided by the average of the past 3 years\u2019 capital expenditures (CAPX), for firms with nonzero R&D.\", \"rationale\": \"Firms investing more in intangible innovation relative to tangible assets may be undervalued if markets underappreciate future growth from R&D.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Delayed Analyst Coverage\", \"construction\": \"Number of days between fiscal year-end and first analyst forecast update (IBES), measured for the most recent fiscal year.\", \"rationale\": \"Longer delays may indicate neglect or lack of attention, possibly leading to mispricing due to information diffusion effects.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Supplier Concentration Exposure\", \"construction\": \"Sum of top 3 supplier purchase percentages as disclosed in 10-K filings, for firms that report supplier concentration.\", \"rationale\": \"High supplier concentration may involve operational risk, with potential for under- or over-valuation depending on market recognition.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Earnings Season Return Drift\", \"construction\": \"Cumulative return from the day after earnings announcement to 20 trading days after, over the past 4 quarters.\", \"rationale\": \"Persistent post-announcement drift may reveal investor inattention or slow information incorporation.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Capital Raise Discount\", \"construction\": \"Percentage discount of recent (past year) secondary equity issue price to pre-announcement market price.\", \"rationale\": \"A greater discount may reflect adverse selection or desperation to raise capital, implicating future underperformance.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Dividend Change Consistency\", \"construction\": \"Number of consecutive quarters with unchanged dividend per share, capped at 8.\", \"rationale\": \"Long streaks of unchanged dividends may signal conservatism and stable management, which could be underappreciated by the market.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Customer Geographic Expansion\", \"construction\": \"Growth in number of countries reported as sales destinations in annual 10-K, current year minus previous year.\", \"rationale\": \"Firms expanding geographically may achieve higher growth and diversification benefits that are not fully priced in.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Patent Citation Intensity\", \"construction\": \"Number of forward citations to patents granted to the firm in the past 5 years, normalized by total patents granted (USPTO data).\", \"rationale\": \"High citation intensity may signal technological leadership and future cash flow growth not fully incorporated by investors.\", \"higher_returns_for\": \"high values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 751,
+   "total_tokens": 1020,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_1adda89cc2"
+ }
+}

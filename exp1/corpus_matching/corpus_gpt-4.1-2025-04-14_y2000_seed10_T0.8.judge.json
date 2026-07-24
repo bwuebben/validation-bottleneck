@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:28:47.954478+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2000_seed10_T0.8.json",
+  "prompt_sha256": "362ba02d5c23b0f8cf75c2d7488edbb87bf59f0887d0463a5dbb04b7c0c78036"
+ },
+ "response": {
+  "id": "chatcmpl-E4zwTSBd8GEg9GyAEtMm2DdciDd2C",
+  "object": "chat.completion",
+  "created": 1784860125,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No insider trading-based predictor in library.\"},\n  {\"index\": 1, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Both use patents normalized by firm size or R&D.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No voluntary disclosure frequency measure in library.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No revenue-per-employee or employee efficiency predictor.\"},\n  {\"index\": 4, \"match\": \"Cash\", \"strength\": \"close\", \"reason\": \"Both relate to cash/short-term assets, but one is growth, one is level.\"},\n  {\"index\": 5, \"match\": \"DivInit\", \"strength\": \"exact\", \"reason\": \"Binary indicator for dividend initiation matches exactly.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No customer concentration or single-customer risk predictor.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No deferred tax asset ratio or similar tax asset measure.\"},\n  {\"index\": 8, \"match\": \"AnnouncementReturn\", \"strength\": \"close\", \"reason\": \"Both use abnormal returns around earnings announcements.\"},\n  {\"index\": 9, \"match\": \"SurpriseRD\", \"strength\": \"close\", \"reason\": \"Both capture unexpected or changing R&D intensity.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2731,
+   "completion_tokens": 347,
+   "total_tokens": 3078,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:29:15.968021+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2005_seed08_T0.8.json",
+  "prompt_sha256": "6f2b3536370c1974de12a3b017a3acec11e0ff5fbf119b6e7f4d0b9d8f9a8cce"
+ },
+ "response": {
+  "id": "chatcmpl-E4zwvtKqgTuSCBZZupp3nPz23QOfH",
+  "object": "chat.completion",
+  "created": 1784860153,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No insider trading-based predictor in library.\"},\n  {\"index\": 1, \"match\": \"InvGrowth\", \"strength\": \"related\", \"reason\": \"Both use inventory growth, but volatility is a new angle.\"},\n  {\"index\": 2, \"match\": \"RDcap\", \"strength\": \"related\", \"reason\": \"Both relate R&D to capital, but denominator differs.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No analyst coverage delay or neglect measure in library.\"},\n  {\"index\": 4, \"match\": \"iomom_supp\", \"strength\": \"related\", \"reason\": \"Both use supplier data, but different signals.\"},\n  {\"index\": 5, \"match\": \"EarningsSurprise\", \"strength\": \"related\", \"reason\": \"Both use post-earnings returns, but drift window differs.\"},\n  {\"index\": 6, \"match\": \"CompEquIss\", \"strength\": \"close\", \"reason\": \"Both relate to equity issuance, but discount is more granular.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No dividend streak or consistency measure in library.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No predictor based on geographic sales expansion.\"},\n  {\"index\": 9, \"match\": \"CitationsRD\", \"strength\": \"close\", \"reason\": \"Both use patent citations, but normalization differs.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2784,
+   "completion_tokens": 354,
+   "total_tokens": 3138,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

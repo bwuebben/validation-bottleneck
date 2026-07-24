@@ -1,0 +1,616 @@
+model,expr,regime,vol_target,multiplicity,n_months,mean_ann_pct,sharpe,t,p,by_pass,aux_tested,aux_pass,full_survivor,alpha6_t
+gpt-4-0613,+1*AssetGrowth + +1*Investment,TERM_SPREAD_POSITIVE,true,1,32,1.878,0.271,0.443,0.33041,false,2,2,false,1.524
+gpt-4-0613,+1*BM + +1*EP,TERM_SPREAD_POSITIVE,true,1,32,0.404,0.142,0.232,0.40888,false,2,2,false,0.561
+gpt-4-0613,-1*DebtIssuance + -1*Leverage,TERM_SPREAD_NEGATIVE,true,1,32,14.586,0.771,1.259,0.10872,false,2,0,false,1.303
+gpt-4-0613,+1*MRreversal + +1*STreversal,MKT_TRAILING_12M_UP,true,1,32,-3.686,-0.336,-0.548,0.70626,false,1,1,false,-0.486
+gpt-4-0613,+1*AOP + +1*REV6,MKT_TRAILING_12M_UP,true,1,32,0.814,0.101,0.164,0.4353,false,1,1,false,0.515
+gpt-4-0613,-1*BidAskSpread + -1*Illiquidity,MKT_TRAILING_12M_DOWN,true,1,32,10.581,0.685,1.118,0.13601,false,2,0,false,0.829
+gpt-4-0613,+1*AdExp + +1*BrandInvest,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,-3.783,-0.703,-1.148,0.87018,false,2,2,false,-0.677
+gpt-4-0613,+0.5*Mom12m + +0.5*Size,VIX_BELOW_TRAILING_MEDIAN,true,1,32,31.873,1.602,2.615,0.00682,false,1,0,false,1.978
+gpt-4-0613,+0.5*BM + -0.5*EP,TERM_SPREAD_POSITIVE,false,1,32,0.387,0.116,0.189,0.42573,false,1,0,false,1.088
+gpt-4-0613,+0.5*DivYieldST + -0.5*betaVIX,VIX_ABOVE_TRAILING_MEDIAN,false,1,32,-3.082,-0.879,-1.435,0.91936,false,1,1,false,-1.569
+gpt-4-0613,+0.5*Illiquidity + -0.5*RealizedVol,VIX_BELOW_TRAILING_MEDIAN,true,1,32,5.489,0.332,0.542,0.29592,false,2,0,false,0.428
+gpt-4-0613,+0.5*AssetGrowth + +0.5*RoE,TERM_SPREAD_POSITIVE,false,1,32,0.718,0.2,0.327,0.37301,false,1,0,false,0.527
+gpt-4-0613,+0.5*OperProf + +0.5*SP,MKT_TRAILING_12M_UP,true,1,32,2.894,0.456,0.745,0.23095,false,1,1,false,0.235
+gpt-4-0613,+0.5*IO_ShortInterest + -0.5*ShortInterest,VIX_BELOW_TRAILING_MEDIAN,false,1,32,44.018,1.292,2.109,0.02155,false,1,1,true,1.701
+gpt-4-0613,+0.5*RD + +0.5*SP,MKT_TRAILING_12M_UP,true,1,32,-3.79,-0.407,-0.665,0.74443,false,1,0,false,-0.284
+gpt-4-0613,+1*GrAdExp + +0.5*Mom12m,MKT_TRAILING_12M_UP,true,1,32,13.256,1.502,2.453,0.00999,false,1,1,true,1.834
+gpt-4-0613,-1*BM + -0.5*Leverage,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,0.211,0.051,0.084,0.46693,false,1,0,false,-0.375
+gpt-4-0613,+0.5*EarningsSurprise + +1*Mom6m,MKT_TRAILING_12M_UP,true,1,32,9.639,0.829,1.354,0.0927,false,1,1,false,0.917
+gpt-4-0613,+0.5*Mom6m + -1*STreversal,MKT_TRAILING_12M_DOWN,true,1,32,-2.159,-0.166,-0.271,0.60578,false,1,0,false,-0.775
+gpt-4-0613,+1*DivYieldST + +0.5*Mom12m,MKT_TRAILING_12M_UP,true,1,32,16.105,1.453,2.373,0.01202,false,1,1,true,1.911
+gpt-4-0613,+1*ChangeInRecommendation + +0.5*Mom12m,MKT_TRAILING_12M_UP,true,1,32,12.597,1.116,1.822,0.03907,false,1,1,false,1.482
+gpt-4-0613,-1*EarningsSurprise + +0.5*LRreversal,MKT_TRAILING_12M_DOWN,true,1,32,-4.352,-0.406,-0.663,0.74395,false,1,1,false,0.479
+gpt-4-0613,+1*Illiquidity + -0.5*Size,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,3.087,0.518,0.845,0.20221,false,1,0,false,1.32
+gpt-4-0613,-0.5*BM + +0.5*Mom12m,MKT_TRAILING_12M_UP,false,1,32,13.735,1.122,1.832,0.03828,false,2,1,false,1.343
+gpt-4-0613,+0.5*EarningsSurprise + +0.5*Mom12m,VIX_BELOW_TRAILING_MEDIAN,true,1,32,37.689,1.569,2.563,0.00773,false,1,1,true,1.821
+gpt-4-0613,-0.5*LRreversal + +0.5*STreversal,TERM_SPREAD_POSITIVE,true,1,32,1.877,0.472,0.771,0.22319,false,2,0,false,-0.294
+gpt-4-0613,+0.5*BM + -0.5*BidAskSpread,MKT_TRAILING_12M_UP,false,1,32,5.284,0.572,0.935,0.17863,false,2,1,false,0.39
+gpt-4-0613,+1*ShareIss1Y + -1*ShareVol,TERM_SPREAD_POSITIVE,true,1,32,5.372,1.015,1.658,0.0537,false,1,1,false,1.094
+gpt-4-0613,-0.5*AssetGrowth + +0.5*Mom12m,MKT_TRAILING_12M_UP,true,1,32,15.088,1.092,1.782,0.04224,false,2,1,false,1.35
+gpt-4-0613,+0.5*EarningsSurprise + -0.5*STreversal,VIX_BELOW_TRAILING_MEDIAN,false,1,32,0.046,0.006,0.01,0.49594,false,2,1,false,0.61
+gpt-4-0613,+0.5*High52 + +0.5*Mom12m,MKT_TRAILING_12M_UP,false,1,32,16.392,1.147,1.873,0.03529,false,1,1,false,1.139
+gpt-4-0613,-0.5*BM + +0.5*Mom12m,VIX_BELOW_TRAILING_MEDIAN,true,1,32,30.603,1.517,2.477,0.00946,false,2,1,false,1.769
+gpt-4-0613,+1*AssetGrowth + -0.5*SP,TERM_SPREAD_POSITIVE,true,1,32,-0.415,-0.148,-0.241,0.59443,false,2,2,false,1.495
+gpt-4-0613,+0.5*EarningsConsistency + +0.5*OperProf,MKT_TRAILING_12M_UP,false,1,32,4.145,0.61,0.996,0.16348,false,0,0,false,0.16
+gpt-4-0613,-1*NOA + +1*ShortInterest,TERM_SPREAD_NEGATIVE,true,1,32,30.453,1.116,1.822,0.03903,false,2,2,false,1.404
+gpt-4-0613,-0.5*BM + +1*IdioVolAHT,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,-1.395,-0.264,-0.43,0.66504,false,1,0,false,-0.641
+gpt-4-0613,-1*AssetGrowth + +1*Leverage,MKT_TRAILING_12M_DOWN,true,1,32,-4.322,-0.199,-0.326,0.6266,false,2,1,false,-1.756
+gpt-4-0613,+1*ForecastDispersion + -1*Price,NONE,false,1,32,31.293,0.762,1.244,0.11134,false,1,1,false,0.539
+gpt-4-0613,+0.5*Accruals + +0.5*CF,NONE,false,1,32,7.146,0.6,0.979,0.16753,false,1,1,false,0.249
+gpt-4-0613,+1*DivYieldST + -0.5*ShareVol,MKT_TRAILING_12M_DOWN,true,1,32,1.184,0.198,0.324,0.37408,false,1,0,false,-0.168
+gpt-4-0613,-0.5*BidAskSpread + +1*STreversal,MKT_TRAILING_12M_UP,false,1,32,7.497,0.572,0.934,0.17873,false,2,1,false,-0.156
+gpt-4-0613,+0.5*AssetGrowth + -1*Cash,VIX_ABOVE_TRAILING_MEDIAN,true,2,32,1.423,0.196,0.32,0.37557,false,1,0,false,-0.229
+gpt-4-0613,-0.5*ShortInterest + +0.5*fgr5yrLag,NONE,false,1,32,-8.643,-0.94,-1.534,0.93247,false,2,2,false,-1.481
+gpt-4-0613,+1*BookLeverage + -0.5*ShareIss1Y,VIX_BELOW_TRAILING_MEDIAN,true,1,32,-16.631,-1.014,-1.655,0.946,false,1,0,false,-1.135
+gpt-4-0613,-0.5*PayoutYield + +1*RD,MKT_TRAILING_12M_UP,false,1,32,-11.583,-0.73,-1.192,0.87882,false,2,0,false,-0.458
+gpt-4-0613,+0.5*BM + +0.5*GP + -0.5*STreversal,MKT_TRAILING_12M_DOWN,true,1,32,7.3,0.238,0.389,0.35001,false,1,0,false,0.318
+gpt-4-0613,+1*Mom12m + -1*ShareIss1Y,NONE,false,1,32,15.429,0.703,1.147,0.12998,false,2,0,false,0.929
+gpt-4-0613,+0.5*BM + +0.5*GP + +0.5*Mom12m,MKT_TRAILING_12M_UP,true,1,32,12.676,1.646,2.687,0.00574,false,2,1,false,1.889
+gpt-4-0613,+1*BidAskSpread + -1*IdioVolAHT,VIX_BELOW_TRAILING_MEDIAN,false,1,32,-23.45,-0.698,-1.14,0.86853,false,1,0,false,-0.681
+gpt-4-0613,+1*Mom12m + +1*RDcap,MKT_TRAILING_12M_UP,true,1,32,11.743,0.997,1.629,0.05673,false,1,0,false,1.452
+gpt-4-0613,+1*BM + +1*Leverage,MKT_TRAILING_12M_UP,true,1,32,0.644,0.112,0.183,0.4281,false,2,1,false,0.08
+gpt-4-0613,+0.5*GP + +0.5*Mom12m + -0.5*ShareIss1Y,NONE,false,1,32,17.23,1.18,1.927,0.0316,false,1,1,false,1.405
+gpt-4-0613,+0.5*Beta + -1*IdioVolAHT + +1*Mom12m,MKT_TRAILING_12M_DOWN,true,1,32,0.729,0.051,0.083,0.46714,false,1,1,false,-0.609
+gpt-4-0613,+0.5*AssetGrowth + +0.5*IntanEP,VIX_BELOW_TRAILING_MEDIAN,true,1,32,-4.697,-0.24,-0.391,0.65082,false,2,1,false,-0.013
+gpt-4-0613,-0.5*Leverage + +0.5*MeanRankRevGrowth,TERM_SPREAD_POSITIVE,true,1,32,-0.754,-0.261,-0.427,0.66376,false,1,0,false,-0.317
+gpt-4-0613,+1*BM + -1*BidAskSpread,MKT_TRAILING_12M_DOWN,false,1,32,15.499,0.609,0.994,0.1639,false,1,0,false,1.444
+gpt-4-0613,+1*DelBreadth + +1*EarningsSurprise,MKT_TRAILING_12M_UP,true,1,32,10.017,0.933,1.523,0.06892,false,2,2,false,1.127
+gpt-4-0613,+1*EarningsConsistency + -1*IdioVolAHT,VIX_ABOVE_TRAILING_MEDIAN,true,2,32,3.62,0.569,0.93,0.1798,false,2,2,false,0.604
+gpt-4-0613,+1*AssetGrowth + -0.5*Leverage,TERM_SPREAD_POSITIVE,true,2,32,-0.475,-0.234,-0.382,0.6476,false,1,0,false,1.22
+gpt-4-0613,-0.5*Price + +0.5*RevenueSurprise,MKT_TRAILING_12M_DOWN,false,1,32,8.019,0.578,0.943,0.1764,false,2,1,false,0.494
+gpt-4-0613,+0.5*AdExp + +0.5*GrSaleToGrInv,TERM_SPREAD_POSITIVE,true,1,32,-2.885,-1.096,-1.79,0.95836,false,1,0,false,-0.954
+gpt-4-0613,+0.5*BookLeverage + +0.5*Cash,VIX_BELOW_TRAILING_MEDIAN,true,1,32,-1.367,-0.08,-0.131,0.55172,false,2,0,false,0.247
+gpt-4-0613,+0.5*Beta + +0.5*Mom12m,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,5.373,0.489,0.798,0.21549,false,2,1,false,-0.059
+gpt-4-0613,+0.5*DivYieldST + -0.5*Price,TERM_SPREAD_POSITIVE,true,1,32,3.072,0.815,1.332,0.09633,false,1,1,false,0.86
+gpt-4-0613,+0.5*GP + +0.5*GrSaleToGrInv,TERM_SPREAD_NEGATIVE,false,1,32,9.336,1.092,1.783,0.0422,false,2,1,false,1.602
+gpt-4-0613,-0.5*BidAskSpread + +0.5*Mom12m,MKT_TRAILING_12M_UP,true,1,32,9.178,0.965,1.576,0.06256,false,0,0,false,1.029
+gpt-4-0613,+0.5*EarningsConsistency + -0.5*Price,MKT_TRAILING_12M_DOWN,false,1,32,10.292,0.732,1.195,0.12055,false,2,1,false,0.615
+gpt-4-0613,+0.5*ConsRecomm + +0.5*ShareVol,VIX_BELOW_TRAILING_MEDIAN,true,1,32,-17.042,-0.949,-1.55,0.93438,false,1,0,false,-1.06
+gpt-4-0613,+0.5*MRreversal + -0.5*SP,VIX_ABOVE_TRAILING_MEDIAN,false,1,32,-3.701,-0.464,-0.758,0.77278,false,2,1,false,0.484
+gpt-4-0613,+0.5*AssetGrowth + +0.5*EarningsSurprise,MKT_TRAILING_12M_UP,true,1,32,-0.418,-0.052,-0.085,0.5334,false,2,0,false,-0.26
+gpt-4-0613,+0.5*BM + +0.5*ChAssetTurnover,MKT_TRAILING_12M_DOWN,true,1,32,2.874,0.377,0.616,0.27118,false,1,1,false,1.022
+gpt-4-0613,-0.5*DebtIssuance + +1*PayoutYield,TERM_SPREAD_POSITIVE,true,1,32,0.996,0.292,0.476,0.3187,false,2,2,false,0.392
+gpt-4-0613,+0.5*STreversal + +0.5*VolumeTrend,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,4.229,0.461,0.753,0.22861,false,2,2,false,1.268
+gpt-4-0613,+0.5*NetPayoutYield + +0.5*SP,MKT_TRAILING_12M_UP,true,1,32,6.924,1.143,1.867,0.03568,false,2,1,false,1.084
+gpt-4-0613,-0.5*BidAskSpread + +0.5*EarningsConsistency,MKT_TRAILING_12M_DOWN,true,1,32,11.252,0.775,1.266,0.10753,false,1,1,false,1.083
+gpt-4-0613,+1*BookLeverage + -0.5*Cash,TERM_SPREAD_NEGATIVE,true,1,32,-14.558,-0.782,-1.277,0.89447,false,2,1,false,-1.347
+gpt-4-0613,+1*AssetGrowth + -0.5*Illiquidity,MKT_TRAILING_12M_UP,false,1,32,-4.076,-0.455,-0.743,0.76835,false,1,0,false,-0.719
+gpt-4-0613,-0.5*Leverage + +1*Mom12m,MKT_TRAILING_12M_UP,true,1,32,13.251,1.038,1.695,0.05006,false,1,0,false,1.305
+gpt-4-0613,+1*BM + -0.5*BidAskSpread,TERM_SPREAD_POSITIVE,true,1,32,2.028,0.516,0.843,0.20296,false,1,1,false,1.445
+gpt-4-0613,-1*AssetGrowth + +0.5*BookLeverage,MKT_TRAILING_12M_DOWN,false,1,32,-5.827,-0.528,-0.863,0.80258,false,2,2,false,-2.22
+gpt-4-0613,+1*AdExp + -0.5*Price,VIX_BELOW_TRAILING_MEDIAN,true,1,32,-1.36,-0.055,-0.09,0.53574,false,2,0,false,-0.248
+gpt-4-0613,+1*AnalystRevision + -0.5*ShortInterest,TERM_SPREAD_NEGATIVE,true,1,32,-12.575,-0.516,-0.842,0.79683,false,2,0,false,-1.429
+gpt-4-0613,-0.5*BidAskSpread + +1*GP,TERM_SPREAD_POSITIVE,false,1,32,2.638,0.294,0.48,0.31745,false,2,0,false,-0.124
+gpt-4-0613,-0.5*Illiquidity + +1*SP,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,2.693,0.507,0.829,0.20685,false,2,1,false,-0.088
+gpt-4-0613,-0.5*Illiquidity + +1*Mom12m,MKT_TRAILING_12M_DOWN,true,1,32,8.651,0.432,0.706,0.24287,false,2,1,false,0.123
+gpt-4-0613,+0.5*BM + +0.5*Mom12m,TERM_SPREAD_POSITIVE,false,1,32,5.619,0.578,0.944,0.1763,false,1,1,false,1.166
+gpt-4-0613,+1*AssetGrowth + -0.5*Illiquidity,TERM_SPREAD_NEGATIVE,true,1,32,14.339,0.537,0.876,0.19377,false,1,0,false,1.493
+gpt-4-0613,+0.5*Mom12m + +0.5*tang,MKT_TRAILING_12M_DOWN,false,1,32,5.087,0.501,0.818,0.20978,false,2,1,false,0.803
+gpt-4-0613,+0.5*Mom12m + +0.5*RD,MKT_TRAILING_12M_UP,true,1,32,8.849,0.757,1.236,0.11293,false,0,0,false,1.353
+gpt-4-0613,+1*AOP + -0.5*Illiquidity,MKT_TRAILING_12M_DOWN,false,1,32,0.881,0.147,0.24,0.40592,false,1,1,false,-0.667
+gpt-4-0613,+0.5*AssetGrowth + +0.5*BM,TERM_SPREAD_POSITIVE,true,1,32,0.359,0.093,0.152,0.44017,false,1,1,false,1.033
+gpt-4-0613,+1*AssetGrowth + -0.5*BidAskSpread,MKT_TRAILING_12M_UP,true,2,32,0.629,0.101,0.165,0.4351,false,0,0,false,-0.454
+gpt-4-0613,+0.5*AnalystRevision + -1*Beta + +0.5*Size,MKT_TRAILING_12M_DOWN,true,1,32,0.074,0.009,0.015,0.49424,false,2,1,false,0.847
+gpt-4-0613,-0.5*AnalystRevision + +1*RD,NONE,false,1,32,-17.463,-0.782,-1.277,0.89448,false,1,1,false,-0.145
+gpt-4-0613,-1*BM + +1*Leverage,NONE,true,1,32,-0.702,-0.108,-0.177,0.56948,false,1,1,false,-0.632
+gpt-4-0613,-1*AOP + +1*EarningsSurprise,NONE,true,1,32,1.726,0.224,0.366,0.35837,false,1,0,false,0.172
+gpt-4-0613,-1*Price + +1*ShortInterest,VIX_ABOVE_TRAILING_MEDIAN,false,1,32,9.908,0.38,0.621,0.2695,false,2,1,false,0.471
+gpt-4-0613,+1*AssetGrowth + -1*Size,NONE,true,1,32,11.26,1.013,1.654,0.05412,false,1,1,false,1.864
+gpt-4-0613,+0.5*AnalystRevision + +1*GP,NONE,false,1,32,20.354,1.105,1.804,0.04044,false,1,0,false,1.373
+gpt-4-0613,+0.5*AssetGrowth + +1*PayoutYield,NONE,true,1,32,-0.775,-0.118,-0.193,0.57588,false,1,1,false,-0.244
+gpt-4-0613,+1*AssetGrowth + -0.5*STreversal,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,0.802,0.096,0.157,0.43794,false,3,3,false,0.738
+gpt-4-0613,-1*DebtIssuance + +1*OperProf,TERM_SPREAD_POSITIVE,false,1,32,2.542,0.268,0.437,0.33261,false,2,1,false,-0.445
+gpt-4-0613,+0.5*AssetGrowth + +0.5*EarningsForecastDisparity,MKT_TRAILING_12M_UP,true,1,32,-1.108,-0.179,-0.292,0.61372,false,1,0,false,-0.778
+gpt-4-0613,+1*BM + +1*OperProf,NONE,false,1,32,10.965,0.514,0.839,0.204,false,2,2,false,0.875
+gpt-4-0613,-1*AssetGrowth + +1*RD,NONE,true,1,32,-6.801,-0.644,-1.052,0.84958,false,1,0,false,-0.58
+gpt-4-0613,+1*Leverage + -0.5*STreversal,TERM_SPREAD_NEGATIVE,false,1,32,-6.417,-0.337,-0.55,0.70696,false,2,0,false,-0.737
+gpt-4-0613,+1*AssetGrowth + +1*EarningsForecastDisparity,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,1.918,0.33,0.538,0.2971,false,2,2,false,1.272
+gpt-4-0613,+0.5*AssetGrowth + +1*GP,NONE,false,1,32,19.45,0.963,1.573,0.06289,false,2,2,false,1.483
+gpt-4-0613,-0.5*Illiquidity + +1*roaq,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,3.359,0.482,0.787,0.21872,false,1,1,false,-0.481
+gpt-4-0613,+1*Accruals + -0.5*Leverage,MKT_TRAILING_12M_UP,false,1,32,-5.796,-0.665,-1.086,0.85708,false,1,0,false,-1.656
+gpt-4-0613,+1*Cash + -0.5*Illiquidity,TERM_SPREAD_POSITIVE,true,1,32,0.444,0.104,0.169,0.43332,false,1,0,false,0.567
+gpt-4-0613,+1*AdExp + -0.5*Leverage,MKT_TRAILING_12M_UP,false,1,32,-7.426,-0.731,-1.194,0.8793,false,1,0,false,-1.0
+gpt-4-0613,+0.5*Illiquidity + +1*Mom12m,VIX_BELOW_TRAILING_MEDIAN,false,1,32,30.436,1.47,2.401,0.01127,false,1,1,true,1.736
+gpt-4-0613,-0.5*Leverage + +1*NetEquityFinance,TERM_SPREAD_POSITIVE,false,1,32,4.335,0.588,0.96,0.17219,false,1,1,false,0.392
+gpt-4-0613,-0.5*Leverage + +1*SP,TERM_SPREAD_POSITIVE,false,1,32,0.854,0.13,0.212,0.41665,false,1,0,false,-0.791
+gpt-4-0613,-0.5*Leverage + +1*RD,MKT_TRAILING_12M_UP,false,1,32,-12.279,-0.671,-1.096,0.85917,false,1,0,false,-0.556
+gpt-4-0613,-0.5*Illiquidity + +1*Mom12m,VIX_BELOW_TRAILING_MEDIAN,true,1,32,42.6,1.479,2.415,0.01091,false,2,1,false,1.736
+gpt-4-0613,+1*AssetGrowth + -1*FirmAge,NONE,false,1,32,5.812,0.305,0.499,0.31074,false,1,0,false,0.656
+gpt-4-0613,+1*BM + +0.5*EarningsSurprise,TERM_SPREAD_POSITIVE,false,1,32,1.897,0.187,0.306,0.38095,false,2,1,false,0.839
+gpt-4-0613,+0.5*FirmAge + -1*Size,MKT_TRAILING_12M_UP,true,1,32,12.27,1.087,1.776,0.04281,false,2,2,false,1.341
+gpt-4-0613,+1*EarningsConsistency + -0.5*RealizedVol,MKT_TRAILING_12M_DOWN,false,1,32,9.193,0.964,1.574,0.06288,false,1,1,false,1.187
+gpt-4-0613,-1*AssetGrowth + +1*BM,VIX_BELOW_TRAILING_MEDIAN,false,1,32,6.512,0.692,1.129,0.13372,false,2,2,false,0.925
+gpt-4-0613,-0.5*Illiquidity + +1*Size,TERM_SPREAD_NEGATIVE,true,1,32,-16.252,-0.639,-1.043,0.84756,false,2,1,false,-0.301
+gpt-4-0613,+1*EarningsSurprise + -1*RealizedVol,VIX_BELOW_TRAILING_MEDIAN,false,1,32,11.415,0.487,0.795,0.2164,false,2,1,false,0.647
+gpt-4-0613,-0.5*LRreversal + +1*Mom6m,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,1.965,0.23,0.376,0.35464,false,2,0,false,-0.246
+gpt-4-0613,-1*AssetGrowth + +0.5*STreversal,MKT_TRAILING_12M_UP,false,1,32,5.33,0.537,0.877,0.19358,false,0,0,false,0.414
+gpt-4-0613,+0.5*BM + +1*RD,TERM_SPREAD_POSITIVE,true,1,32,-0.756,-0.218,-0.356,0.63774,false,2,2,false,0.678
+gpt-4-0613,+1*Illiquidity + -0.5*ShortInterest,MKT_TRAILING_12M_DOWN,false,1,32,-1.293,-0.419,-0.684,0.75032,false,1,1,false,-0.032
+gpt-4-0613,+1*EarningsConsistency + -0.5*Leverage,VIX_BELOW_TRAILING_MEDIAN,true,1,32,23.773,1.088,1.776,0.04276,false,2,0,false,1.261
+gpt-4-0613,+0.5*MRreversal + -1*PriceDelayRsq,VIX_ABOVE_TRAILING_MEDIAN,false,1,28,4.511,0.541,0.826,0.20802,false,2,1,false,0.232
+gpt-4-0613,+1*CF + +0.5*TotalAccruals,TERM_SPREAD_POSITIVE,true,1,32,1.275,0.836,1.366,0.09089,false,1,0,false,0.87
+gpt-4-0613,+1*BM + -0.5*STreversal,TERM_SPREAD_NEGATIVE,false,1,32,-2.863,-0.19,-0.31,0.62065,false,2,0,false,-0.275
+gpt-4-0613,+0.5*Mom12m + +0.5*STreversal + -1*betaVIX,NONE,true,1,32,7.033,0.74,1.209,0.11789,false,2,0,false,0.582
+gpt-4-0613,-0.5*AssetGrowth + +1*BM,MKT_TRAILING_12M_DOWN,true,1,32,-0.187,-0.031,-0.051,0.52011,false,2,0,false,0.048
+gpt-4-0613,+0.5*EarningsConsistency + -0.5*ShortInterest,MKT_TRAILING_12M_UP,true,1,32,-0.026,-0.003,-0.005,0.5018,false,1,0,false,-0.252
+gpt-4-0613,+1*BookLeverage + +1*Cash,TERM_SPREAD_POSITIVE,true,1,32,-0.746,-0.185,-0.303,0.6179,false,2,0,false,0.224
+gpt-4-0613,+1*EarningsSurprise + -1*Size,MKT_TRAILING_12M_UP,false,1,32,11.824,1.122,1.832,0.03828,false,1,1,false,1.159
+gpt-4-0613,+1*BM + +1*RD,MKT_TRAILING_12M_UP,false,1,32,-11.434,-0.7,-1.144,0.86924,false,1,0,false,-0.577
+gpt-4-0613,-1*AssetGrowth + -1*ShareIss1Y,MKT_TRAILING_12M_DOWN,true,1,32,-22.245,-0.884,-1.443,0.92044,false,1,0,false,-1.866
+gpt-4-0613,-0.5*BidAskSpread + +1*EarningsSurprise,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,1.323,0.213,0.347,0.36533,false,2,1,false,0.261
+gpt-4-0613,+0.5*Beta + +0.5*Mom12m,NONE,true,1,32,15.874,1.178,1.923,0.03184,false,1,0,false,1.77
+gpt-4-0613,+0.5*AnalystRevision + +0.5*AssetGrowth,MKT_TRAILING_12M_UP,true,1,32,-1.341,-0.151,-0.247,0.59684,false,0,0,false,-0.367
+gpt-4-0613,-0.5*BM + +1*OperProf,MKT_TRAILING_12M_DOWN,true,1,32,7.798,0.676,1.104,0.1391,false,2,2,false,-0.068
+gpt-4-0613,-0.5*Leverage + +1*RD,NONE,true,1,32,-5.371,-0.621,-1.014,0.84087,false,1,0,false,-0.023
+gpt-4-0613,-0.5*BookLeverage + +1*RDAbility,MKT_TRAILING_12M_UP,true,1,32,0.507,0.058,0.095,0.46259,false,0,0,false,-0.682
+gpt-4-0613,-0.5*Mom12m + -0.5*RealizedVol,MKT_TRAILING_12M_DOWN,true,1,32,-2.642,-0.144,-0.235,0.59212,false,2,2,false,0.083
+gpt-4-0613,-0.5*Beta + +1*Cash,MKT_TRAILING_12M_DOWN,true,1,32,4.834,0.347,0.567,0.28741,false,1,1,false,1.923
+gpt-4-0613,+1*AssetGrowth + -1*OperProf,MKT_TRAILING_12M_UP,true,1,32,-3.301,-0.427,-0.698,0.75472,false,2,0,false,-0.405
+gpt-4-0613,+1*BM + -1*RDS,TERM_SPREAD_NEGATIVE,true,1,32,8.237,0.523,0.854,0.19989,false,2,0,false,0.493
+gpt-4-0613,-1*AdExp + +1*GrSaleToGrInv,VIX_BELOW_TRAILING_MEDIAN,false,1,32,9.888,0.716,1.169,0.12564,false,1,1,false,1.222
+gpt-4-0613,-1*DebtIssuance + +1*RoE,TERM_SPREAD_POSITIVE,true,1,32,0.788,0.186,0.303,0.38178,false,1,0,false,-0.722
+gpt-4-0613,-1*DolVol + +1*ReturnSkew,MKT_TRAILING_12M_UP,false,1,32,8.71,0.988,1.613,0.05848,false,2,2,false,0.592
+gpt-4-0613,+1*CashProd + -1*Leverage,VIX_BELOW_TRAILING_MEDIAN,true,1,32,2.527,0.14,0.229,0.41011,false,1,1,false,0.373
+gpt-4-0613,-1*ShareIss1Y + +1*fgr5yrLag,MKT_TRAILING_12M_UP,false,1,32,-16.487,-1.269,-2.071,0.97664,false,1,1,false,-1.122
+gpt-4-0613,-1*BookLeverage + +1*RD,VIX_BELOW_TRAILING_MEDIAN,true,1,32,-9.716,-0.427,-0.697,0.75464,false,1,0,false,0.012
+gpt-4-0613,+1*AssetGrowth + -1*EarningsSurprise,MKT_TRAILING_12M_DOWN,true,1,32,5.198,0.231,0.377,0.35421,false,2,1,false,2.468
+gpt-4-0613,-1*AOP + +1*BM,MKT_TRAILING_12M_UP,true,1,32,-0.192,-0.039,-0.063,0.52507,false,0,0,false,-0.41
+gpt-4-0613,-1*CF + +1*Leverage,MKT_TRAILING_12M_DOWN,true,1,32,-7.252,-0.666,-1.088,0.8575,false,2,1,false,-0.892
+gpt-4-0613,+1*RD + -1*Size,MKT_TRAILING_12M_UP,true,1,32,-2.474,-0.281,-0.46,0.67549,false,0,0,false,-0.069
+gpt-4-0613,-1*BookLeverage + +1*EarningsConsistency,MKT_TRAILING_12M_UP,true,1,32,8.547,1.238,2.021,0.026,false,1,0,false,1.16
+gpt-4-0613,+1*ShareIss1Y + -1*fgr5yrLag,MKT_TRAILING_12M_DOWN,true,1,32,25.222,1.309,2.137,0.02031,false,1,1,true,1.179
+gpt-4-0613,+1*Cash + -1*Leverage,MKT_TRAILING_12M_UP,true,1,32,-0.364,-0.047,-0.076,0.53012,false,1,0,false,0.25
+gpt-4-0613,-1*BM + +1*SP,MKT_TRAILING_12M_UP,true,1,32,3.976,0.617,1.008,0.16071,false,0,0,false,0.67
+gpt-4-0613,+1*AdExp + -0.5*Mom6m,TERM_SPREAD_POSITIVE,true,1,32,-3.674,-1.073,-1.753,0.95524,false,0,0,false,-1.405
+gpt-4-0613,+1*AssetGrowth + -0.5*RoE,VIX_BELOW_TRAILING_MEDIAN,true,1,32,-11.939,-0.664,-1.085,0.85688,false,1,0,false,-0.805
+gpt-4-0613,+1*BookLeverage + -1*Leverage,MKT_TRAILING_12M_DOWN,false,1,32,0.24,0.013,0.021,0.49173,false,1,1,false,0.766
+gpt-4-0613,+1*Cash + +1*ShareRepurchase,NONE,true,1,32,9.637,0.967,1.579,0.06222,false,1,1,false,2.352
+gpt-4-0613,+1*GP + -0.5*Leverage,TERM_SPREAD_NEGATIVE,false,1,32,22.325,1.13,1.845,0.03733,false,1,0,false,2.729
+gpt-4-0613,+1*AbnormalAccruals + -0.5*ShortInterest,MKT_TRAILING_12M_UP,true,1,32,-4.998,-0.429,-0.7,0.75557,false,1,0,false,-0.62
+gpt-4-0613,+0.5*EarningsSurprise + +1*RD,MKT_TRAILING_12M_UP,true,1,32,-5.776,-0.593,-0.968,0.8298,false,2,1,false,-0.419
+gpt-4-0613,-1*Leverage + +1*ShortInterest,MKT_TRAILING_12M_DOWN,true,1,32,0.75,0.057,0.093,0.46338,false,0,0,false,1.18
+gpt-4-0613,+1*AssetGrowth + -0.5*IdioVol3F,TERM_SPREAD_POSITIVE,true,1,32,-1.121,-0.326,-0.533,0.70097,false,2,0,false,0.605
+gpt-4-0613,+1*AdExp + -0.5*tang,MKT_TRAILING_12M_UP,true,1,32,-5.107,-0.577,-0.942,0.82327,false,2,1,false,-0.958
+gpt-4-0613,-0.5*BidAskSpread + +1*GP,VIX_BELOW_TRAILING_MEDIAN,true,1,32,16.24,1.18,1.927,0.03162,false,2,1,false,1.368
+gpt-4-0613,+1*Cash + -1*Price,MKT_TRAILING_12M_DOWN,true,1,32,14.513,1.231,2.01,0.02662,false,0,0,false,2.314
+gpt-4-0613,+1*AOP + -0.5*ReturnSkew,TERM_SPREAD_POSITIVE,true,1,32,1.095,0.214,0.35,0.36449,false,2,1,false,0.272
+gpt-4-0613,+1*ChAssetTurnover + -1*IdioVolAHT,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,2.326,0.382,0.624,0.26873,false,2,1,false,0.497
+gpt-4-0613,+1*AssetGrowth + +1*Beta,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,3.335,0.566,0.924,0.18125,false,2,2,false,1.012
+gpt-4-0613,+1*BidAskSpread + -1*STreversal + +1*VolSD,VIX_BELOW_TRAILING_MEDIAN,true,1,32,-18.496,-1.167,-1.905,0.96695,false,2,1,false,-0.772
+gpt-4-0613,-1*EarningsSurprise + +1*RD,MKT_TRAILING_12M_UP,true,1,32,-8.456,-1.047,-1.71,0.95135,false,0,0,false,-0.882
+gpt-4-0613,+1*BM + +1*Herf,TERM_SPREAD_POSITIVE,true,1,32,-0.349,-0.157,-0.257,0.60059,false,2,2,false,0.954
+gpt-4-0613,+1*IntanCFP + -1*ShortInterest,TERM_SPREAD_NEGATIVE,true,1,32,-5.397,-0.318,-0.519,0.69636,false,2,0,false,-0.245
+gpt-4-0613,+1*Mom6m + +1*hire,MKT_TRAILING_12M_DOWN,true,1,32,3.396,0.187,0.306,0.38094,false,2,2,false,-0.044
+gpt-4-0613,+1*CitationsRD + -1*ShareIss5Y,NONE,true,1,32,-16.361,-1.611,-2.63,0.99341,false,1,1,false,-1.908
+gpt-4-0613,+1*ChNNCOA + -1*TotalAccruals,MKT_TRAILING_12M_UP,true,1,32,0.889,0.103,0.168,0.43375,false,1,1,false,-0.348
+gpt-4-0613,+0.5*AdExp + +1*CF + -1*Tax,MKT_TRAILING_12M_UP,true,1,32,3.247,0.326,0.532,0.29911,false,1,1,false,-0.098
+gpt-4-0613,+1*AM + -1*Accruals,MKT_TRAILING_12M_DOWN,false,1,32,-0.61,-0.066,-0.108,0.54258,false,2,0,false,-0.083
+gpt-4-0613,+0.5*AssetGrowth + -1*Leverage,TERM_SPREAD_NEGATIVE,false,1,32,3.004,0.2,0.326,0.37321,false,2,1,false,0.795
+gpt-4-0613,+1*OperProf + +1*RD,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,2.095,0.296,0.484,0.31593,false,0,0,false,1.178
+gpt-4-0613,-1*IdioVol3F + +1*ShortInterest,VIX_BELOW_TRAILING_MEDIAN,true,1,32,14.656,0.557,0.91,0.18495,false,2,2,false,0.813
+gpt-4-0613,+1*EarningsConsistency + +1*Mom6m,MKT_TRAILING_12M_UP,false,1,32,21.742,1.07,1.747,0.04527,false,1,1,false,0.991
+gpt-4-0613,+1*AOP + -1*BM,TERM_SPREAD_POSITIVE,false,1,32,0.973,0.078,0.128,0.44942,false,2,1,false,-0.349
+gpt-4-0613,+1*InvGrowth + +1*RD,MKT_TRAILING_12M_UP,true,1,32,-7.112,-0.764,-1.247,0.88922,false,1,1,false,-0.531
+gpt-4-0613,+1*BM + +1*Cash,MKT_TRAILING_12M_DOWN,false,1,32,6.627,0.504,0.823,0.20837,false,2,0,false,2.597
+gpt-4-0613,+1*ShareIss1Y + +1*ShortInterest,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,2.147,0.398,0.65,0.26028,false,1,1,false,0.932
+gpt-4-0613,+1*AdExp + +1*FirmAge,TERM_SPREAD_POSITIVE,true,1,32,-3.593,-1.058,-1.727,0.95295,false,2,2,false,-0.873
+gpt-4-0613,+1*AssetGrowth + -1*EarningsConsistency,MKT_TRAILING_12M_UP,false,1,32,-10.868,-1.051,-1.716,0.95194,false,2,1,false,-1.05
+gpt-4-0613,+1*BookLeverage + +1*Leverage,VIX_ABOVE_TRAILING_MEDIAN,false,1,32,-0.552,-0.073,-0.119,0.54714,false,1,1,false,0.406
+gpt-4-0613,+1*DolVol + +1*ShareVol,VIX_BELOW_TRAILING_MEDIAN,false,1,32,-6.915,-0.44,-0.719,0.7613,false,2,1,false,-0.175
+gpt-4-0613,+1*AdExp + +1*RD,MKT_TRAILING_12M_UP,true,1,32,-8.773,-0.892,-1.457,0.92242,false,1,1,false,-0.942
+gpt-4-0613,+1*AssetGrowth + -1*Leverage,MKT_TRAILING_12M_DOWN,true,1,32,4.322,0.199,0.326,0.3734,false,2,1,false,1.756
+gpt-4-0613,-0.5*IdioVolAHT + -0.5*STreversal,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,-2.168,-0.233,-0.38,0.64668,false,2,1,false,-0.678
+gpt-4-0613,-1*Illiquidity + +1*OperProf,VIX_BELOW_TRAILING_MEDIAN,true,1,32,3.526,0.245,0.4,0.34585,false,2,1,false,0.128
+gpt-4-0613,-1*ChNNCOA + +1*GrSaleToGrInv,TERM_SPREAD_POSITIVE,true,1,32,-0.558,-0.086,-0.14,0.5553,false,2,1,false,0.079
+gpt-4-0613,+1*EarningsConsistency + -1*ShortInterest,TERM_SPREAD_NEGATIVE,true,1,32,3.543,0.156,0.255,0.40036,false,2,0,false,-0.517
+gpt-4-0613,-0.5*ChTax + -0.5*IntanSP,MKT_TRAILING_12M_UP,true,1,32,-4.377,-0.571,-0.932,0.82064,false,1,0,false,-0.977
+gpt-4-0613,-1*BookLeverage + +1*TotalAccruals,MKT_TRAILING_12M_DOWN,true,1,32,2.248,0.097,0.158,0.43781,false,2,1,false,0.292
+gpt-4-0613,+1*AssetGrowth + +1*IdioVol3F,MKT_TRAILING_12M_UP,true,1,32,-3.268,-0.484,-0.79,0.78219,false,1,0,false,-1.35
+gpt-4-0613,-1*BM + +1*RD,MKT_TRAILING_12M_UP,true,1,32,-5.129,-0.692,-1.131,0.86655,false,1,0,false,-0.487
+gpt-4-0613,+1*PayoutYield + +1*STreversal,MKT_TRAILING_12M_UP,false,1,32,2.229,0.128,0.209,0.41791,false,1,1,false,-0.497
+gpt-4-0613,+1*IO_ShortInterest + -1*Illiquidity,MKT_TRAILING_12M_DOWN,false,1,32,21.649,0.386,0.63,0.2667,false,1,1,false,1.268
+gpt-4-0613,+1*CustomerMomentum + -1*FirmAge,NONE,true,1,32,-1.526,-0.173,-0.282,0.61022,false,1,0,false,-0.078
+gpt-4-0613,+1*AssetGrowth + -1*Cash,MKT_TRAILING_12M_UP,false,1,32,-3.788,-0.18,-0.294,0.61454,false,1,0,false,-0.742
+gpt-4-0613,+1*EarningsSurprise + -1*Price,MKT_TRAILING_12M_UP,true,1,32,5.009,0.505,0.825,0.20784,false,1,0,false,0.316
+gpt-4-0613,+1*BM + -1*IdioVolAHT,NONE,false,1,32,-4.907,-0.186,-0.304,0.61827,false,1,0,false,0.502
+gpt-4-0613,-0.5*RealizedVol + +0.5*iomom_cust + +1*roaq,MKT_TRAILING_12M_UP,true,1,32,15.985,1.455,2.376,0.01193,false,2,1,false,1.258
+gpt-4-0613,+0.5*GrAdExp + +0.5*RDAbility,MKT_TRAILING_12M_UP,false,1,32,0.718,0.137,0.223,0.41235,false,2,0,false,-0.532
+gpt-4-0613,+0.5*EquityDuration + -0.5*IdioVolAHT,MKT_TRAILING_12M_DOWN,true,1,32,-11.781,-1.111,-1.815,0.96039,false,1,0,false,-1.76
+gpt-4-0613,+0.5*CashProd + +0.5*iomom_cust,NONE,true,1,32,3.941,0.382,0.624,0.26861,false,2,0,false,0.448
+gpt-4-0613,-0.5*Beta + +0.5*RDAbility,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,-1.995,-0.287,-0.469,0.67896,false,1,0,false,0.066
+gpt-4-0613,+0.5*ConsRecomm + -0.5*IdioVol3F,MKT_TRAILING_12M_DOWN,false,1,32,1.143,0.137,0.223,0.4124,false,2,0,false,1.192
+gpt-4-0613,+0.5*BM + -0.5*RealizedVol,VIX_ABOVE_TRAILING_MEDIAN,false,1,32,6.312,0.599,0.978,0.16779,false,2,2,false,1.401
+gpt-4-0613,+1*EarningsConsistency + +1*GrLTNOA + -1*tang,MKT_TRAILING_12M_UP,true,1,32,-0.24,-0.03,-0.049,0.51948,false,1,0,false,-0.422
+gpt-4-0613,-1*BM + +1*EarningsSurprise,MKT_TRAILING_12M_DOWN,true,1,32,-1.553,-0.289,-0.472,0.67973,false,1,0,false,-1.453
+gpt-4-0613,-1*IdioVol3F + +1*TotalAccruals,MKT_TRAILING_12M_UP,true,1,32,-0.211,-0.025,-0.041,0.51626,false,1,0,false,0.337
+gpt-4-0613,+1*BidAskSpread + -1*BookLeverage,TERM_SPREAD_POSITIVE,true,1,32,-2.182,-0.587,-0.958,0.8273,false,1,0,false,-1.62
+gpt-4-0613,+1*RoE + -1*tang,TERM_SPREAD_POSITIVE,true,1,32,0.552,0.112,0.183,0.42805,false,1,0,false,-0.719
+gpt-4-0613,-1*IdioVolAHT + +1*IntanEP,MKT_TRAILING_12M_UP,true,1,32,1.351,0.145,0.237,0.40699,false,1,1,false,1.139
+gpt-4-0613,-1*BM + +1*OrgCap,MKT_TRAILING_12M_DOWN,true,1,32,-3.183,-0.252,-0.412,0.65825,false,1,0,false,-0.689
+gpt-4-0613,-0.5*BetaFP + -0.5*CF + +1*OPLeverage,VIX_BELOW_TRAILING_MEDIAN,false,1,32,-16.269,-1.136,-1.854,0.96339,false,2,1,false,-1.701
+gpt-4-0613,+1*EarningsConsistency + -1*Leverage,TERM_SPREAD_POSITIVE,false,1,32,1.492,0.16,0.261,0.39809,false,2,0,false,-0.043
+gpt-4-0613,-1*Beta + +1*RDcap,TERM_SPREAD_NEGATIVE,true,1,32,-3.674,-0.234,-0.382,0.64738,false,2,0,false,-0.321
+gpt-4-0613,-1*BidAskSpread + +1*ShareVol,VIX_BELOW_TRAILING_MEDIAN,true,1,32,8.185,0.588,0.961,0.172,false,1,1,false,0.724
+gpt-4-0613,-1*Beta + +1*EarningsSurprise,MKT_TRAILING_12M_UP,false,1,32,-1.938,-0.112,-0.183,0.57191,false,2,0,false,-0.718
+gpt-4-0613,-1*Leverage + +1*RDAbility,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,-0.426,-0.09,-0.146,0.55773,false,2,1,false,0.552
+gpt-4-0613,-1*BidAskSpread + +1*CashProd,MKT_TRAILING_12M_DOWN,false,1,32,12.299,0.676,1.103,0.13922,false,2,2,false,1.527
+gpt-4-0613,-0.5*AssetGrowth + +1*OperProf,TERM_SPREAD_POSITIVE,true,1,32,1.289,0.336,0.549,0.29334,false,2,1,false,-0.658
+gpt-4-0613,+0.5*EquityDuration + +0.5*Mom12m,VIX_BELOW_TRAILING_MEDIAN,true,1,32,34.596,1.446,2.362,0.01232,false,1,1,true,1.571
+gpt-4-0613,+0.5*AssetGrowth + +0.5*IdioVol3F,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,-1.119,-0.162,-0.264,0.6034,false,1,0,false,-0.217
+gpt-4-0613,-1*Investment + +1*OperProf,MKT_TRAILING_12M_UP,false,1,32,1.379,0.106,0.174,0.43156,false,2,0,false,-0.749
+gpt-4-0613,+0.5*BM + +0.5*Mom6m,TERM_SPREAD_POSITIVE,true,1,32,2.326,0.457,0.746,0.23071,false,1,0,false,1.119
+gpt-4-0613,+0.5*Illiquidity + +1*OperProf,MKT_TRAILING_12M_UP,false,1,32,1.498,0.138,0.225,0.41172,false,1,0,false,-0.314
+gpt-4-0613,-0.5*IdioVol3F + +0.5*Mom12m,VIX_BELOW_TRAILING_MEDIAN,false,1,32,13.612,1.234,2.014,0.02636,false,1,1,true,1.78
+gpt-4-0613,-1*AssetGrowth + +1*OperProf,MKT_TRAILING_12M_UP,true,1,32,3.301,0.427,0.698,0.24528,false,1,0,false,0.405
+gpt-4-0613,+0.5*Mom12m + +0.5*ShareVol,TERM_SPREAD_POSITIVE,false,1,32,3.115,0.464,0.758,0.22719,false,1,1,false,0.87
+gpt-4-0613,-1*EarningsSurprise + +1*InvestPPEInv,TERM_SPREAD_POSITIVE,true,1,32,-2.854,-0.83,-1.355,0.90737,false,1,0,false,-0.273
+gpt-4-0613,-0.5*Cash + +1*IntanBM + +0.5*Leverage,MKT_TRAILING_12M_UP,true,1,32,-1.034,-0.141,-0.23,0.59004,false,1,1,false,-0.15
+gpt-4-0613,+1*AnalystRevision + -1*fgr5yrLag,VIX_BELOW_TRAILING_MEDIAN,false,1,32,7.234,0.715,1.167,0.12605,false,1,0,false,0.923
+gpt-4-0613,+1*Herf + -0.5*Mom6m,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,-2.531,-0.292,-0.477,0.68159,false,1,0,false,0.147
+gpt-4-0613,+1*FR + -1*betaVIX,MKT_TRAILING_12M_DOWN,false,1,32,-3.649,-0.23,-0.376,0.64534,false,1,0,false,-0.763
+gpt-4-0613,-1*IO_ShortInterest + +1*hire,TERM_SPREAD_NEGATIVE,true,1,32,-27.978,-1.377,-2.249,0.9841,false,0,0,false,-2.994
+gpt-4-0613,+1*AssetGrowth + -1*ChInv,VIX_BELOW_TRAILING_MEDIAN,false,1,32,-1.166,-0.121,-0.198,0.57774,false,1,0,false,-0.478
+gpt-4-0613,-1*ChInv + +1*ChNNCOA,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,1.015,0.177,0.289,0.38737,false,0,0,false,-0.504
+gpt-4-0613,+1*CustomerMomentum + -0.5*Herf + -0.5*IndMom,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,-0.919,-0.136,-0.223,0.5874,false,2,1,false,0.551
+gpt-4-0613,-0.5*BetaTailRisk + +1*Illiquidity,VIX_ABOVE_TRAILING_MEDIAN,false,1,32,-4.215,-0.65,-1.061,0.85154,false,2,1,false,-0.123
+gpt-4-0613,+0.5*FirmAge + +1*Investment,NONE,false,1,32,3.009,0.2,0.326,0.37337,false,1,0,false,1.858
+gpt-4-0613,-1*Tax + +0.5*XFIN,MKT_TRAILING_12M_DOWN,false,1,32,5.234,0.578,0.944,0.17618,false,1,1,false,0.684
+gpt-4-0613,+1*AOP + +0.5*DolVol,VIX_BELOW_TRAILING_MEDIAN,true,1,32,-7.907,-0.456,-0.745,0.76919,false,1,1,false,-0.053
+gpt-4-0613,+1*AssetGrowth + +0.5*FirmAge + -0.5*Leverage,NONE,false,1,32,-1.375,-0.085,-0.139,0.5548,false,1,0,false,1.032
+gpt-4-0613,+1*AssetGrowth + -1*CredRatDG,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,1.008,0.236,0.386,0.3512,false,2,2,false,1.579
+gpt-4-0613,+0.5*IdioVol3F + +0.5*RD,VIX_BELOW_TRAILING_MEDIAN,true,1,32,-14.533,-0.659,-1.076,0.85487,false,1,0,false,-0.69
+gpt-4-0613,+1*AdExp + -1*sinAlgo,MKT_TRAILING_12M_UP,false,1,32,8.436,0.82,1.339,0.09509,false,1,1,false,0.925
+gpt-4-0613,-1*CompEquIss + +0.5*FEPS,TERM_SPREAD_NEGATIVE,true,1,32,-3.778,-0.201,-0.328,0.62749,false,1,0,false,-1.005
+gpt-4-0613,+1*OrgCap + -0.5*RealizedVol,NONE,false,1,32,14.938,0.735,1.2,0.11967,false,2,2,false,1.765
+gpt-4-0613,+0.5*BidAskSpread + +1*CF,TERM_SPREAD_POSITIVE,true,1,32,-0.473,-0.257,-0.419,0.66112,false,1,0,false,-1.645
+gpt-4-0613,+1*OrderBacklog + -0.5*ReturnSkew3F,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,0.77,0.173,0.283,0.38959,false,1,0,false,0.626
+gpt-4-0613,+1*AdExp + -0.5*Leverage + -0.5*betaVIX,MKT_TRAILING_12M_DOWN,true,1,32,-14.658,-0.925,-1.51,0.92946,false,2,1,false,-1.346
+gpt-4-0613,-1*IO_ShortInterest + -1*ShortInterest,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,-2.276,-0.604,-0.987,0.83439,false,1,1,false,-1.289
+gpt-4-0613,-1*AOP + -1*STreversal,NONE,false,1,32,-10.471,-0.364,-0.595,0.72191,false,2,0,false,-0.516
+gpt-4-0613,+1*DivYieldST + +0.5*STreversal,NONE,false,1,32,7.708,0.517,0.845,0.2024,false,1,0,false,0.937
+gpt-4-0613,+1*AssetGrowth + +0.5*std_turn,NONE,true,1,32,1.977,0.202,0.33,0.37168,false,2,0,false,1.028
+gpt-4-0613,+0.5*AOP + +1*RD,NONE,true,1,32,-6.614,-0.674,-1.101,0.86035,false,1,1,false,-0.02
+gpt-4-0613,+1*ConsRecomm + +1*IO_ShortInterest,MKT_TRAILING_12M_UP,true,1,32,8.235,1.071,1.75,0.04503,false,1,1,false,1.435
+gpt-4-0613,-1*IntanEP + +1*RDAbility,VIX_BELOW_TRAILING_MEDIAN,false,1,32,-4.08,-0.27,-0.441,0.66894,false,2,1,false,-1.301
+gpt-4-0613,-1*AbnormalAccruals + +1*OPLeverage,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,0.762,0.116,0.19,0.4254,false,2,2,false,1.198
+gpt-4-0613,-0.5*Cash + +1*GrAdExp,MKT_TRAILING_12M_UP,false,1,32,4.662,0.358,0.585,0.28152,false,1,0,false,0.067
+gpt-4-0613,-1*AssetGrowth + -1*ShareIss1Y,TERM_SPREAD_NEGATIVE,true,1,32,-34.494,-0.755,-1.233,0.8865,false,2,1,false,-1.043
+gpt-4-0613,-0.5*IdioVol3F + +1*OperProf,MKT_TRAILING_12M_DOWN,false,1,32,7.782,0.873,1.426,0.08191,false,2,2,false,1.391
+gpt-4-0613,+0.5*GrSaleToGrOverhead + +1*InvGrowth,TERM_SPREAD_POSITIVE,false,1,32,-1.286,-0.248,-0.405,0.65601,false,1,0,false,-0.26
+gpt-4-0613,+1*STreversal + -0.5*tang,NONE,true,1,32,3.081,0.305,0.498,0.31115,false,1,0,false,0.055
+gpt-4-0613,-1*DebtIssuance + -1*RDcap,MKT_TRAILING_12M_DOWN,false,1,32,1.09,0.081,0.133,0.44769,false,2,1,false,-0.515
+gpt-4-0613,+0.5*AbnormalAccruals + +0.5*EarningsForecastDisparity,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,-0.341,-0.047,-0.077,0.53047,false,2,0,false,-0.838
+gpt-4-0613,+0.5*Cash + -0.5*tang,MKT_TRAILING_12M_DOWN,true,1,32,13.969,1.155,1.886,0.03435,false,1,0,false,2.49
+gpt-4-0613,-0.5*DebtIssuance + -0.5*RD,TERM_SPREAD_POSITIVE,false,1,32,1.46,0.203,0.331,0.37136,false,1,0,false,-0.421
+gpt-4-0613,+0.5*GP + +0.5*NetPayoutYield,MKT_TRAILING_12M_UP,true,1,32,8.857,1.448,2.364,0.01226,false,2,0,false,1.569
+gpt-4-0613,+0.5*OperProf + +0.5*tang,VIX_BELOW_TRAILING_MEDIAN,false,1,32,6.07,0.973,1.59,0.06104,false,1,1,false,1.189
+gpt-4-0613,+1*AOP + +1*ShortInterest,TERM_SPREAD_NEGATIVE,true,1,32,12.119,0.557,0.91,0.18494,false,2,1,false,1.378
+gpt-4-0613,+1*AdExp + -1*BM,TERM_SPREAD_POSITIVE,false,1,32,-6.292,-0.712,-1.163,0.87305,false,1,0,false,-1.594
+gpt-4-0613,+1*BidAskSpread + +1*VolMkt,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,-3.804,-0.575,-0.938,0.82233,false,2,1,false,-0.704
+gpt-4-0613,+1*IntanBM + +1*OrgCap,MKT_TRAILING_12M_UP,true,1,32,0.383,0.04,0.065,0.4741,false,1,0,false,0.516
+gpt-4-0613,+1*IO_ShortInterest + +1*PayoutYield,TERM_SPREAD_POSITIVE,true,1,32,-0.678,-0.673,-1.099,0.85997,false,1,0,false,-1.787
+gpt-4-0613,-1*BM + +1*Leverage,MKT_TRAILING_12M_DOWN,true,1,32,-2.303,-0.609,-0.994,0.83615,false,1,0,false,-2.624
+gpt-4-0613,+1*AOP + +1*EarningsSurprise,VIX_BELOW_TRAILING_MEDIAN,true,1,32,4.514,0.215,0.351,0.36412,false,1,1,false,0.406
+gpt-4-0613,-1*DebtIssuance + +1*EarningsConsistency,VIX_BELOW_TRAILING_MEDIAN,true,1,32,20.737,1.393,2.275,0.01499,false,1,1,true,1.337
+gpt-4-0613,+1*IO_ShortInterest + +1*IdioVol3F,MKT_TRAILING_12M_DOWN,true,1,32,3.692,0.168,0.274,0.393,false,0,0,false,0.65
+gpt-4-0613,-0.5*DebtIssuance + +1*RD,MKT_TRAILING_12M_UP,true,1,32,-7.228,-0.769,-1.256,0.89072,false,2,0,false,-0.626
+gpt-4-0613,+1*OperProf + -0.5*ShareIss1Y,MKT_TRAILING_12M_UP,true,1,32,-6.086,-0.456,-0.745,0.76894,false,1,1,false,-0.782
+gpt-4-0613,+1*Cash + -0.5*ShortInterest,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,-0.383,-0.063,-0.103,0.54084,false,1,0,false,0.566
+gpt-4-0613,-0.5*BidAskSpread + +1*EarningsConsistency,TERM_SPREAD_NEGATIVE,true,1,32,13.543,0.594,0.97,0.16989,false,2,1,false,0.217
+gpt-4-0613,-0.5*AOP + +1*BM,MKT_TRAILING_12M_DOWN,true,1,32,1.104,0.143,0.234,0.40843,false,0,0,false,0.938
+gpt-4-0613,+1*OrgCap + -0.5*XFIN,TERM_SPREAD_POSITIVE,true,1,32,-2.789,-0.498,-0.813,0.78882,false,2,0,false,-0.532
+gpt-4-0613,+1*DivYieldST + -0.5*ShareIss5Y,VIX_BELOW_TRAILING_MEDIAN,true,1,32,-15.424,-1.013,-1.654,0.94591,false,1,1,false,-0.957
+gpt-4-0613,+1*AdExp + +0.5*RD,MKT_TRAILING_12M_UP,true,1,32,-8.017,-0.786,-1.284,0.89566,false,1,0,false,-0.973
+gpt-4-0613,+1*GP + +1*Size,MKT_TRAILING_12M_DOWN,true,1,32,-0.522,-0.031,-0.05,0.51972,false,2,2,false,0.181
+gpt-4-0613,-1*Illiquidity + +1*Leverage,TERM_SPREAD_NEGATIVE,true,1,32,-5.814,-0.329,-0.537,0.70258,false,2,0,false,-0.832
+gpt-4-0613,-0.5*AgeIPO + +1*OrgCap,VIX_BELOW_TRAILING_MEDIAN,false,1,32,-6.946,-0.739,-1.207,0.88175,false,2,1,false,-1.573
+gpt-4-0613,+1*AOP + -1*BidAskSpread,MKT_TRAILING_12M_UP,true,1,32,3.712,0.487,0.795,0.21639,false,1,0,false,0.477
+gpt-4-0613,+1*CF + +1*GrSaleToGrInv,TERM_SPREAD_POSITIVE,true,1,32,1.114,0.779,1.272,0.10635,false,2,1,false,0.725
+gpt-4-0613,-1*ShareIss1Y + +1*roaq,MKT_TRAILING_12M_DOWN,false,1,32,-3.605,-0.333,-0.543,0.70449,false,2,1,false,-2.423
+gpt-4-0613,+1*AssetGrowth + -1*EarningsConsistency,MKT_TRAILING_12M_UP,true,1,32,-6.852,-1.011,-1.652,0.94566,false,2,1,false,-1.014
+gpt-4-0613,-1*Leverage + +1*RD,TERM_SPREAD_POSITIVE,false,1,32,-4.793,-0.286,-0.467,0.67811,false,1,0,false,-0.043
+gpt-4-0613,+1*BookLeverage + -1*CF,VIX_ABOVE_TRAILING_MEDIAN,true,1,32,-0.78,-0.129,-0.211,0.58301,false,2,1,false,0.417
+gpt-4-0613,+1*EarningsSurprise + -1*ShortInterest,MKT_TRAILING_12M_UP,false,1,32,-3.989,-0.264,-0.431,0.6653,false,1,0,false,-0.374
+gpt-4-0613,+1*AdExp + -1*BM,TERM_SPREAD_NEGATIVE,true,1,32,-11.726,-0.429,-0.7,0.75557,false,2,1,false,-0.962
+gpt-4-0613,+1*ChAssetTurnover + -1*EarningsForecastDisparity,VIX_BELOW_TRAILING_MEDIAN,false,1,32,-1.014,-0.187,-0.305,0.61874,false,1,0,false,0.037
+gpt-4-0613,+1*Cash + -1*XFIN,TERM_SPREAD_POSITIVE,true,1,32,-1.322,-0.29,-0.474,0.68054,false,2,0,false,0.064
+gpt-4-0613,-1*BidAskSpread + +1*FEPS,MKT_TRAILING_12M_UP,false,1,32,19.47,0.628,1.026,0.15634,false,1,0,false,0.318
+gpt-4o-2024-08-06,-0.5*Leverage + +1*Mom12m + +0.5*Mom6m,MKT_TRAILING_12M_UP,true,1,11,13.629,0.636,0.609,0.27818,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AOP + +1*AnalystRevision + +1*EarningsSurprise,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,-0.5*Accruals + +1*BM + +1*OperProf,VIX_BELOW_TRAILING_MEDIAN,false,1,11,9.594,0.698,0.668,0.25964,false,0,0,false,
+gpt-4o-2024-08-06,+1*GrAdExp + -0.5*IdioVol3F + +0.5*RDcap,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,11.984,1.044,1.0,0.17045,false,1,0,false,
+gpt-4o-2024-08-06,+1*BM + +0.5*CF + -1*Illiquidity,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,-0.5*Beta + +0.5*DivSeason + +1*IndRetBig,VIX_BELOW_TRAILING_MEDIAN,false,1,11,2.884,0.206,0.197,0.42379,false,0,0,false,
+gpt-4o-2024-08-06,+1*EarningsForecastDisparity + -1*RealizedVol + +0.5*VolumeTrend,MKT_TRAILING_12M_UP,true,1,11,21.919,1.761,1.686,0.06139,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*EarningsSurprise + +0.5*Mom12m,MKT_TRAILING_12M_UP,true,3,11,20.196,1.132,1.084,0.15192,false,1,1,false,
+gpt-4o-2024-08-06,+1*EP + -0.5*RealizedVol,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,5.52,1.044,1.0,0.17045,false,0,0,false,
+gpt-4o-2024-08-06,+1*AnalystRevision + -0.5*ChForecastAccrual,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*BetaTailRisk + +1*OperProf,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,-3.664,-1.044,-1.0,0.82955,false,0,0,false,
+gpt-4o-2024-08-06,+1*AssetGrowth + -0.5*BookLeverage,TERM_SPREAD_NEGATIVE,false,1,11,-7.135,-0.659,-0.631,0.72895,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*Illiquidity + +1*Mom6m,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+1*DebtIssuance + +0.5*GrSaleToGrInv,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*IntanBM + +0.5*Mom12m,MKT_TRAILING_12M_UP,true,3,11,6.836,0.459,0.439,0.33484,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*AssetGrowth + +0.5*EarningsSurprise,VIX_BELOW_TRAILING_MEDIAN,true,1,11,0.618,0.032,0.031,0.48802,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*Leverage + -0.5*STreversal,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*BetaLiquidityPS + +0.5*OperProf,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,0.33,1.044,1.0,0.17045,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*GrSaleToGrOverhead + +0.5*RDcap,TERM_SPREAD_NEGATIVE,false,1,11,6.416,0.609,0.583,0.28628,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*BM + +0.5*ChangeInRecommendation,NONE,true,1,11,5.581,0.676,0.648,0.26592,false,1,1,false,
+gpt-4o-2024-08-06,-0.5*Leverage + +1*Mom12m,MKT_TRAILING_12M_UP,true,1,11,16.145,0.779,0.746,0.23641,false,0,0,false,
+gpt-4o-2024-08-06,-1*AnalystRevision + +1*RealizedVol,VIX_BELOW_TRAILING_MEDIAN,false,1,11,-31.045,-1.227,-1.174,0.86628,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*Illiquidity + +1*OperProf,NONE,true,1,11,-0.344,-0.069,-0.066,0.52561,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*AOP + +1*AssetGrowth,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*CitationsRD + -1*EarningsConsistency,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,-1*CredRatDG + +0.5*DivOmit,TERM_SPREAD_NEGATIVE,false,1,11,15.003,1.612,1.543,0.0769,false,1,1,false,
+gpt-4o-2024-08-06,+1*CashProd + -0.5*ChInvIA,NONE,false,1,11,2.706,0.191,0.183,0.42938,false,0,0,false,
+gpt-4o-2024-08-06,+1*Mom12m + -0.5*betaVIX,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,2.098,1.044,1.0,0.17045,false,0,0,false,
+gpt-4o-2024-08-06,+1*BM + +0.5*DivYieldST,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*AssetGrowth + +1*OperProf,MKT_TRAILING_12M_UP,true,1,11,-3.989,-0.629,-0.602,0.71976,false,0,0,false,
+gpt-4o-2024-08-06,+1*EarningsConsistency + -0.5*Leverage,TERM_SPREAD_NEGATIVE,false,1,11,9.12,1.229,1.176,0.13332,false,1,1,false,
+gpt-4o-2024-08-06,+0.5*AnalystRevision + +1*OperProfRD,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+1*BidAskSpread + +0.5*EarningsSurprise,VIX_BELOW_TRAILING_MEDIAN,false,1,11,-2.493,-0.111,-0.106,0.54119,false,1,0,false,
+gpt-4o-2024-08-06,-1*DebtIssuance + +1*OperProf,NONE,false,1,11,2.891,0.265,0.254,0.40231,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*Accruals + +1*Mom12m + +0.5*OperProf,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+1*AssetGrowth + +1*BetaFP + -0.5*BetaTailRisk,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,8.591,1.044,1.0,0.17045,false,0,0,false,
+gpt-4o-2024-08-06,+1*BM + +0.5*DivYieldST + +0.5*MRreversal,MKT_TRAILING_12M_DOWN,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*DebtIssuance + +0.5*EarningsSurprise + +1*RD,TERM_SPREAD_NEGATIVE,true,1,11,-9.418,-0.689,-0.66,0.73792,false,0,0,false,
+gpt-4o-2024-08-06,+1*CashProd + -0.5*ChInv + +0.5*Leverage,MKT_TRAILING_12M_UP,false,1,11,2.594,0.127,0.121,0.45297,false,0,0,false,
+gpt-4o-2024-08-06,+1*BetaLiquidityPS + -0.5*Illiquidity + +1*RDAbility,NONE,false,1,11,7.871,0.54,0.517,0.30817,false,1,0,false,
+gpt-4o-2024-08-06,+1*EarningsConsistency + +0.5*GP + -0.5*NetDebtFinance,MKT_TRAILING_12M_DOWN,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+1*EarningsSurprise + +0.5*IntanBM,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*Leverage + +1*Mom12mOffSeason,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*EarningsConsistency + +1*IdioVolAHT,VIX_BELOW_TRAILING_MEDIAN,true,1,11,7.775,0.735,0.704,0.24873,false,1,1,false,
+gpt-4o-2024-08-06,+0.5*AssetGrowth + +1*RevenueSurprise,MKT_TRAILING_12M_UP,false,1,11,0.138,0.021,0.02,0.49203,false,0,0,false,
+gpt-4o-2024-08-06,+1*Cash + +0.5*GrAdExp,NONE,true,1,11,0.994,0.09,0.086,0.46659,false,1,0,false,
+gpt-4o-2024-08-06,-0.5*BetaFP + +1*RoE,TERM_SPREAD_NEGATIVE,false,1,11,-3.0,-0.169,-0.162,0.56261,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AnalystValue + +1*CustomerMomentum,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,-2.549,-1.044,-1.0,0.82955,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*ChAssetTurnover + +1*OperProf,NONE,false,2,11,-0.421,-0.05,-0.047,0.51847,false,1,0,false,
+gpt-4o-2024-08-06,-0.5*Accruals + +0.5*AssetGrowth + +0.5*OperProf,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*Accruals + +0.5*EarningsSurprise + +0.5*OperProf,MKT_TRAILING_12M_UP,false,1,11,9.004,1.572,1.505,0.0816,false,1,1,false,
+gpt-4o-2024-08-06,+0.5*AnalystRevision + +0.5*BM + -0.5*FEPS,VIX_BELOW_TRAILING_MEDIAN,true,1,11,0.729,0.072,0.069,0.47327,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*BookLeverage + +0.5*Leverage + +1*OperProf,TERM_SPREAD_NEGATIVE,false,1,11,3.263,0.248,0.237,0.40869,false,0,0,false,
+gpt-4o-2024-08-06,+1*EarningsSurprise + -0.5*RealizedVol,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*CF + +0.5*Mom12m + -0.5*TotalAccruals,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,-1.242,-1.044,-1.0,0.82955,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*DebtIssuance + +0.5*EarningsSurprise + +0.5*NetDebtFinance,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AssetGrowth + +0.5*CashProd,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+1*AdExp + +1*RDAbility,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,-6.186,-1.044,-1.0,0.82955,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*DelDRC + +0.5*OrgCap,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,+1*Leverage + +1*OperProf,MKT_TRAILING_12M_UP,false,1,11,0.64,0.044,0.042,0.48348,false,0,0,false,
+gpt-4o-2024-08-06,+1*BidAskSpread + -0.5*ShortInterest,TERM_SPREAD_NEGATIVE,true,1,11,-4.659,-0.496,-0.475,0.67751,false,0,0,false,
+gpt-4o-2024-08-06,+1*GrSaleToGrInv + +1*Mom6m,MKT_TRAILING_12M_UP,true,1,11,3.288,0.17,0.163,0.4369,false,1,1,false,
+gpt-4o-2024-08-06,-1*CredRatDG + +1*IndMom,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,0.192,1.044,1.0,0.17045,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*ChAssetTurnover + +1*OPLeverage,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*BM + +0.5*Mom12m,MKT_TRAILING_12M_UP,true,2,11,12.42,0.948,0.908,0.19259,false,1,1,false,
+gpt-4o-2024-08-06,+0.5*BetaLiquidityPS + +0.5*ReturnSkew,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,-2.513,-1.044,-1.0,0.82955,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*EP + +0.5*OperProf,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*IntMom + +0.5*RD,MKT_TRAILING_12M_UP,false,1,11,19.72,1.161,1.112,0.14617,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*BM + +0.5*betaVIX,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,-1.465,-1.044,-1.0,0.82955,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AnalystRevision + +0.5*AssetGrowth,TERM_SPREAD_NEGATIVE,false,1,11,-0.5,-0.069,-0.066,0.52563,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*Cash + +0.5*NetPayoutYield,NONE,true,1,11,4.59,0.335,0.321,0.37742,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*EarningsSurprise + +0.5*ResidualMomentum,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*Mom12m + +0.5*OperProfRD,MKT_TRAILING_12M_UP,true,1,11,16.673,1.293,1.238,0.12208,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*BM + +0.5*Mom6m,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AssetGrowth + -0.5*RealizedVol,NONE,true,1,11,9.845,0.822,0.787,0.22484,false,1,1,false,
+gpt-4o-2024-08-06,+0.5*EarningsSurprise + +0.5*Mom12mOffSeason,VIX_BELOW_TRAILING_MEDIAN,false,1,11,3.669,0.28,0.269,0.39688,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*EarningsConsistency + +0.5*cfp,TERM_SPREAD_NEGATIVE,true,1,11,12.187,1.285,1.23,0.12342,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AnalystRevision + +0.5*AnalystValue,NONE,false,1,11,1.961,0.203,0.195,0.42477,false,1,1,false,
+gpt-4o-2024-08-06,-0.5*Leverage + +0.5*OperProf,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*EarningsStreak + +0.5*GrAdExp,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,3.238,1.044,1.0,0.17045,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AssetGrowth + +0.5*EarningsConsistency,MKT_TRAILING_12M_UP,true,1,11,-1.376,-0.105,-0.101,0.53922,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*IntMom + +0.5*Leverage,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*IdioVol3F + +0.5*OperProf,VIX_BELOW_TRAILING_MEDIAN,true,1,11,-4.248,-0.29,-0.278,0.60661,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*CompositeDebtIssuance + +0.5*OperProfRD,TERM_SPREAD_NEGATIVE,false,1,11,5.856,0.445,0.426,0.33952,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*CitationsRD + +0.5*Mom6m,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*BM + -0.5*BetaFP,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,-9.186,-1.044,-1.0,0.82955,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*CashProd + +0.5*EarningsSurprise,MKT_TRAILING_12M_UP,true,1,11,7.889,1.139,1.091,0.15051,false,0,0,false,
+gpt-4o-2024-08-06,+1*EarningsForecastDisparity + -1*IdioVolAHT,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*AssetGrowth + +1*Mom12m,MKT_TRAILING_12M_UP,true,1,11,12.629,0.786,0.753,0.2344,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*CashProd + +1*RevenueSurprise,VIX_BELOW_TRAILING_MEDIAN,true,1,11,15.534,1.048,1.004,0.16958,false,1,1,false,
+gpt-4o-2024-08-06,-0.5*CF + +1*CompositeDebtIssuance,TERM_SPREAD_NEGATIVE,true,1,11,-2.032,-0.192,-0.184,0.57113,false,0,0,false,
+gpt-4o-2024-08-06,+1*DivYieldST + +0.5*EarningsConsistency,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,5.42,1.044,1.0,0.17045,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*GrSaleToGrInv + +1*OperProf,MKT_TRAILING_12M_UP,false,1,11,-0.225,-0.028,-0.027,0.5104,false,0,0,false,
+gpt-4o-2024-08-06,+1*CF + -0.5*DownRecomm,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*Mom12m + +1*SurpriseRD,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*Mom6m + +0.5*MomSeason16YrPlus,MKT_TRAILING_12M_UP,true,1,11,1.572,0.086,0.083,0.46783,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*BM + +0.5*OperProfRD,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*AssetGrowth + +1*STreversal,VIX_BELOW_TRAILING_MEDIAN,false,1,11,20.379,1.146,1.097,0.14914,false,0,0,false,
+gpt-4o-2024-08-06,+1*GrSaleToGrOverhead + -0.5*Leverage,TERM_SPREAD_NEGATIVE,false,1,11,18.442,1.83,1.752,0.05515,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*EarningsSurprise + +1*OperProf,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*IdioVol3F + +1*RealizedVol,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,-11.32,-1.044,-1.0,0.82955,false,0,0,false,
+gpt-4o-2024-08-06,+1*CF + -0.5*CompositeDebtIssuance,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+1*Leverage + +1*Mom12m + -0.5*Size,MKT_TRAILING_12M_UP,true,1,11,11.019,0.798,0.764,0.23134,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*GrSaleToGrInv + +1*RD + -0.5*grcapx,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*EarningsSurprise + +1*IdioVol3F + -0.5*ReturnSkew3F,VIX_BELOW_TRAILING_MEDIAN,true,1,11,5.934,0.74,0.708,0.24748,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*DebtIssuance + +1*OperProf + +0.5*PctAcc,TERM_SPREAD_NEGATIVE,false,1,11,1.025,0.111,0.106,0.45871,false,1,0,false,
+gpt-4o-2024-08-06,-0.5*BetaLiquidityPS + +0.5*Illiquidity + +1*STreversal,NONE,true,1,11,-0.787,-0.112,-0.107,0.54164,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*CashProd + +1*ChAssetTurnover + -0.5*ExclExp,MKT_TRAILING_12M_DOWN,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+1*AnalystRevision + -0.5*DownRecomm + +0.5*EarningsConsistency,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,0.397,1.044,1.0,0.17045,false,0,0,false,
+gpt-4o-2024-08-06,+1*BM + +0.5*OperProf,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+1*AssetGrowth + +0.5*RoE,VIX_BELOW_TRAILING_MEDIAN,false,1,11,-11.648,-0.902,-0.863,0.79589,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*Leverage + +1*Mom12m,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,1.69,1.044,1.0,0.17045,false,1,0,false,
+gpt-4o-2024-08-06,-0.5*Illiquidity + +1*RealizedVol,TERM_SPREAD_NEGATIVE,false,1,11,-40.615,-1.495,-1.431,0.9086,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AnalystRevision + +1*RevenueSurprise,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*DebtIssuance + -1*OScore,VIX_BELOW_TRAILING_MEDIAN,false,1,11,-27.906,-1.639,-1.569,0.92617,false,0,0,false,
+gpt-4o-2024-08-06,+1*AssetGrowth + -0.5*MomSeason,NONE,true,1,11,3.916,0.361,0.345,0.36856,false,1,1,false,
+gpt-4o-2024-08-06,+1*AbnormalAccruals + +0.5*IdioVol3F + -0.5*betaVIX,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,-3.49,-1.044,-1.0,0.82955,false,0,0,false,
+gpt-4o-2024-08-06,+1*AssetGrowth + -0.5*InvGrowth + +1*Mom12m,MKT_TRAILING_12M_UP,false,1,11,16.784,0.607,0.581,0.2871,false,1,0,false,
+gpt-4o-2024-08-06,+1*BetaLiquidityPS + +0.5*BidAskSpread + -1*Leverage,TERM_SPREAD_NEGATIVE,true,1,11,12.439,1.091,1.045,0.1604,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*ChAssetTurnover + -1*ChInv + +1*grcapx,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+1*DivInit + -1*DivOmit + +0.5*EarningsSurprise,NONE,true,1,11,-4.06,-0.465,-0.445,0.66726,false,1,0,false,
+gpt-4o-2024-08-06,+1*AnalystRevision + +0.5*EarningsSurprise + -0.5*ForecastDispersion,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*BM + -0.5*EarningsSurprise + +1*Mom12m,MKT_TRAILING_12M_UP,true,1,11,13.291,0.778,0.745,0.23666,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*Beta + +0.5*GP + +1*OperProfRD,VIX_BELOW_TRAILING_MEDIAN,false,1,11,40.149,1.235,1.183,0.13213,false,1,1,false,
+gpt-4o-2024-08-06,+1*AssetGrowth + +0.5*Cash + -0.5*Leverage,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*CF + +1*EarningsSurprise + -0.5*RealizedVol,VIX_BELOW_TRAILING_MEDIAN,false,1,11,24.969,1.621,1.552,0.0759,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*AOP + +1*BMdec + +0.5*DivYieldST,TERM_SPREAD_NEGATIVE,true,1,11,16.879,0.728,0.697,0.2509,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*AccrualsBM + +0.5*EarningsConsistency + +1*MomSeason,TERM_SPREAD_NEGATIVE,true,1,11,-31.653,-1.369,-1.311,0.89035,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*ChAssetTurnover + +1*GrSaleToGrOverhead + -0.5*Illiquidity,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,6.662,1.044,1.0,0.17045,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*GP + +0.5*Mom6m,VIX_BELOW_TRAILING_MEDIAN,false,1,11,11.883,0.77,0.738,0.23886,false,1,1,false,
+gpt-4o-2024-08-06,+1*BM + -0.5*RealizedVol,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*AssetGrowth + -0.5*RealizedVol,MKT_TRAILING_12M_UP,true,1,11,12.023,0.814,0.78,0.22685,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*BookLeverage + +1*OperProf,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,-1.729,-1.044,-1.0,0.82955,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*AOP + +1*AnalystRevision,NONE,true,1,11,14.669,1.329,1.273,0.11597,false,1,1,false,
+gpt-4o-2024-08-06,+0.5*CredRatDG + +1*DebtIssuance,TERM_SPREAD_NEGATIVE,false,1,11,-6.914,-0.616,-0.59,0.71584,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*EarningsSurprise + +0.5*UpRecomm,NONE,true,1,11,17.874,2.054,1.966,0.03881,false,1,1,false,
+gpt-4o-2024-08-06,+1*BidAskSpread + -0.5*Leverage,VIX_BELOW_TRAILING_MEDIAN,true,1,11,-2.762,-0.205,-0.196,0.57583,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AssetGrowth + -1*BM + +0.5*Mom12m,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*EarningsConsistency + +0.5*Mom12m + +1*OperProf,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+1*AnalystRevision + -0.5*EarningsSurprise,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,0.278,1.044,1.0,0.17045,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*EarningsSurprise + +1*Mom6m,TERM_SPREAD_NEGATIVE,true,1,11,4.026,0.354,0.339,0.37075,false,0,0,false,
+gpt-4o-2024-08-06,-1*NetDebtFinance + +1*NetEquityFinance,MKT_TRAILING_12M_UP,false,1,11,-1.292,-0.083,-0.08,0.53095,false,0,0,false,
+gpt-4o-2024-08-06,+1*ChangeInRecommendation + +0.5*ShortInterest,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,2.138,1.044,1.0,0.17045,false,0,0,false,
+gpt-4o-2024-08-06,+1*CashProd + +0.5*cfp,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*BM + +0.5*OperProf,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AssetGrowth + +0.5*GrSaleToGrInv,VIX_BELOW_TRAILING_MEDIAN,false,1,11,-3.85,-0.604,-0.578,0.71212,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*EarningsConsistency + +0.5*Leverage,TERM_SPREAD_NEGATIVE,true,1,11,6.348,0.443,0.424,0.34018,false,1,1,false,
+gpt-4o-2024-08-06,+0.5*BidAskSpread + +0.5*IdioVol3F,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,-4.15,-1.044,-1.0,0.82955,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AOP + +0.5*AnalystRevision,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*DebtIssuance + +0.5*OperProf,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*AnalystValue + +0.5*RD,VIX_BELOW_TRAILING_MEDIAN,true,1,11,-40.015,-2.12,-2.029,0.96506,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*IntMom + +0.5*IntanEP,MKT_TRAILING_12M_UP,true,1,11,22.752,2.517,2.41,0.01835,false,0,0,false,
+gpt-4o-2024-08-06,+1*CashProd + +1*Leverage,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*RDAbility + +0.5*grcapx3y,TERM_SPREAD_NEGATIVE,false,1,11,-10.077,-1.534,-1.469,0.91372,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*MomVol + -0.5*std_turn,VIX_BELOW_TRAILING_MEDIAN,true,1,11,38.012,2.929,2.804,0.00933,false,0,0,false,
+gpt-4o-2024-08-06,+1*ConvDebt + +0.5*NetDebtFinance,MKT_TRAILING_12M_DOWN,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*GrLTNOA + +0.5*OrgCap,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,3.986,1.044,1.0,0.17045,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*GrAdExp + +0.5*Tax,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+1*EarningsConsistency + +0.5*HerfBE,NONE,true,1,11,7.128,1.069,1.023,0.16511,false,1,1,false,
+gpt-4o-2024-08-06,+1*AssetGrowth + -0.5*ChInvIA + +1*GrSaleToGrOverhead,MKT_TRAILING_12M_UP,true,1,11,9.514,0.641,0.614,0.27641,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*OperProfRD + -0.5*RD + +1*SurpriseRD,VIX_BELOW_TRAILING_MEDIAN,true,1,11,25.029,1.936,1.853,0.04677,false,1,1,false,
+gpt-4o-2024-08-06,+0.5*ChNWC + -0.5*DelFINL + +1*OPLeverage,MKT_TRAILING_12M_UP,false,1,11,-13.525,-0.855,-0.819,0.78408,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*BetaLiquidityPS + +1*BidAskSpread + +0.5*betaVIX,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,1.686,1.044,1.0,0.17045,false,1,0,false,
+gpt-4o-2024-08-06,-1*AnalystRevision + +0.5*ChForecastAccrual + +1*ChangeInRecommendation,TERM_SPREAD_NEGATIVE,false,1,11,-0.297,-0.026,-0.025,0.50969,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*ChTax + -0.5*IntanSP + +1*OperProf,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,-0.5*Beta + +0.5*IntanBM + +0.5*Mom12m,MKT_TRAILING_12M_UP,true,1,11,0.972,0.083,0.08,0.46906,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*Accruals + +0.5*EarningsSurprise + +1*OperProf,VIX_BELOW_TRAILING_MEDIAN,true,1,11,9.286,1.086,1.04,0.1615,false,1,1,false,
+gpt-4o-2024-08-06,+1*Cash + -0.5*Leverage + +0.5*NetDebtFinance,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+1*CustomerMomentum + +0.5*RevenueSurprise + -0.5*VolSD,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,-2.027,-1.044,-1.0,0.82955,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*IntanEP + +1*OrgCap + +0.5*RD,TERM_SPREAD_NEGATIVE,false,1,11,-4.13,-0.242,-0.232,0.58942,false,1,0,false,
+gpt-4o-2024-08-06,+1*AnalystRevision + -1*ConsRecomm + +0.5*EarningsStreak,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*BrandInvest + -0.5*ChInv + +1*RDAbility,NONE,false,1,11,-19.434,-1.372,-1.314,0.89085,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*DelCOL + -0.5*EarningsSurprise + -1*Illiquidity,VIX_BELOW_TRAILING_MEDIAN,true,1,11,-13.844,-1.142,-1.093,0.85002,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*BrandInvest + +0.5*IntanEP + +1*OperProf,MKT_TRAILING_12M_UP,true,1,11,-3.844,-0.362,-0.346,0.63179,false,0,0,false,
+gpt-4o-2024-08-06,+1*CashProd + -0.5*ChInv + +0.5*Mom12m,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+1*BetaTailRisk + +0.5*DivInit + -0.5*RealizedVol,VIX_BELOW_TRAILING_MEDIAN,false,1,11,14.593,0.821,0.786,0.22493,false,1,1,false,
+gpt-4o-2024-08-06,+1*AOP + -0.5*CompositeDebtIssuance + +0.5*NetDebtFinance,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+1*BetaLiquidityPS + -0.5*DelNetFin + +0.5*GrSaleToGrInv,TERM_SPREAD_NEGATIVE,false,1,11,22.319,2.514,2.407,0.01844,false,0,0,false,
+gpt-4o-2024-08-06,+1*EarningsForecastDisparity + -0.5*EquityDuration + +0.5*InvestPPEInv,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,3.491,1.044,1.0,0.17045,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*AdExp + +1*EarningsConsistency + -0.5*ExclExp,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*ChAssetTurnover + -0.5*GrSaleToGrOverhead,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*IntanBM + +0.5*IntanCFP,VIX_BELOW_TRAILING_MEDIAN,false,1,11,-8.72,-0.752,-0.72,0.75603,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*DebtIssuance + +0.5*NetEquityFinance,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*iomom_cust + +0.5*iomom_supp,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,7.689,1.044,1.0,0.17045,false,1,0,false,
+gpt-4o-2024-08-06,+1*RD + +0.5*SurpriseRD,NONE,false,1,11,-23.082,-1.019,-0.976,0.82398,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*BidAskSpread + +0.5*ChNWC,MKT_TRAILING_12M_UP,true,1,11,0.238,0.026,0.025,0.49041,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*AOP + +0.5*ChangeInRecommendation,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,0.246,1.044,1.0,0.17045,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*CashProd + +0.5*IntMom,MKT_TRAILING_12M_UP,true,1,11,22.597,2.515,2.408,0.01841,false,0,0,false,
+gpt-4o-2024-08-06,+1*RDAbility + -0.5*VolSD,VIX_BELOW_TRAILING_MEDIAN,true,1,11,-18.502,-0.95,-0.91,0.80776,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*AssetGrowth + +1*PS,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,-0.5*ChTax + +1*OPLeverage,TERM_SPREAD_NEGATIVE,true,1,11,-15.147,-1.131,-1.083,0.84781,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*AbnormalAccruals + +1*ResidualMomentum,MKT_TRAILING_12M_DOWN,false,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*BookLeverage + -1*ChEQ,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,1.807,1.044,1.0,0.17045,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*BrandInvest + +1*GrAdExp,MKT_TRAILING_12M_UP,false,1,11,14.375,1.153,1.104,0.14766,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*EarnSupBig + +0.5*EarningsConsistency,VIX_BELOW_TRAILING_MEDIAN,false,1,11,5.58,1.519,1.454,0.08828,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*CredRatDG + -0.5*PayoutYield,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*EarningsSurprise + +0.5*Illiquidity,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,0.324,1.044,1.0,0.17045,false,0,0,false,
+gpt-4o-2024-08-06,+1*AOP + -0.5*CustomerMomentum,MKT_TRAILING_12M_UP,true,1,11,2.441,0.192,0.184,0.42898,false,1,0,false,
+gpt-4o-2024-08-06,-0.5*InvestPPEInv + +0.5*RD,TERM_SPREAD_NEGATIVE,false,1,11,-9.201,-0.893,-0.855,0.79379,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*BetaLiquidityPS + +1*DebtIssuance,VIX_BELOW_TRAILING_MEDIAN,true,1,11,13.022,0.992,0.95,0.18236,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*EarningsConsistency + +1*ShareVol,MKT_TRAILING_12M_DOWN,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*OPLeverage + +0.5*ReturnSkew,NONE,false,1,11,6.014,0.661,0.633,0.27058,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*AnalystRevision + +0.5*Leverage,TERM_SPREAD_NEGATIVE,false,1,11,-4.108,-0.584,-0.56,0.70593,false,0,0,false,
+gpt-4o-2024-08-06,+1*AssetGrowth + +1*OperProf,VIX_BELOW_TRAILING_MEDIAN,true,1,11,-7.9,-0.703,-0.674,0.74206,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*BetaTailRisk + -1*Illiquidity,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,-3.006,-1.044,-1.0,0.82955,false,0,0,false,
+gpt-4o-2024-08-06,+1*BM + +0.5*RD,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,-1*CredRatDG + -0.5*EarningsForecastDisparity,MKT_TRAILING_12M_DOWN,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*ChAssetTurnover + +1*Mom6m,NONE,true,1,11,1.648,0.15,0.144,0.44423,false,1,1,false,
+gpt-4o-2024-08-06,+1*Cash + -0.5*DebtIssuance,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,-12.491,-1.044,-1.0,0.82955,false,0,0,false,
+gpt-4o-2024-08-06,+1*AnalystRevision + -1*AssetGrowth,NONE,true,1,11,13.913,1.502,1.438,0.09055,false,1,1,false,
+gpt-4o-2024-08-06,+0.5*OrgCap + +0.5*SurpriseRD,MKT_TRAILING_12M_UP,false,1,11,0.731,0.127,0.122,0.45269,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*DebtIssuance + +0.5*IntanBM,TERM_SPREAD_NEGATIVE,true,1,11,-9.71,-0.627,-0.601,0.71931,false,1,0,false,
+gpt-4o-2024-08-06,-0.5*BidAskSpread + +1*UpRecomm,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,-1.223,-1.044,-1.0,0.82955,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*DivOmit + +0.5*RealizedVol,NONE,true,1,11,-13.64,-1.46,-1.398,0.90377,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*DolVol + +0.5*EarningsForecastDisparity,NONE,false,1,11,4.458,0.583,0.558,0.29451,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*BrandInvest + +0.5*ResidualMomentum,MKT_TRAILING_12M_DOWN,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*CF + -0.5*Cash + +1*Illiquidity,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*BookLeverage + -0.5*DebtIssuance + +1*OperProf,TERM_SPREAD_NEGATIVE,false,1,11,-1.94,-0.204,-0.196,0.57564,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AOP + -0.5*AnalystRevision + +1*AnnouncementReturn,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,-3.945,-1.044,-1.0,0.82955,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*BM + +1*IntanEP + -0.5*RD,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*OrderBacklog + +0.5*iomom_cust + +1*iomom_supp,NONE,false,1,11,15.548,0.641,0.614,0.27658,false,1,0,false,
+gpt-4o-2024-08-06,-0.5*GrSaleToGrOverhead + +0.5*IndMom + +1*Investment,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+1*EarningsSurprise + -1*Illiquidity,VIX_BELOW_TRAILING_MEDIAN,false,1,11,9.995,0.804,0.77,0.22959,false,1,1,false,
+gpt-4o-2024-08-06,+1*AssetGrowth + +0.5*BookLeverage,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*ChInvIA + +1*RD,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,1.703,1.044,1.0,0.17045,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*CompEquIss + +0.5*CustomerMomentum,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*CredRatDG + +0.5*IndMom,TERM_SPREAD_NEGATIVE,true,1,11,8.997,0.749,0.717,0.24488,false,1,1,false,
+gpt-4o-2024-08-06,+1*CompositeDebtIssuance + +0.5*EarningsConsistency,NONE,false,1,11,3.583,0.603,0.577,0.28833,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*Accruals + +1*EarningsConsistency + +0.5*TotalAccruals,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*DolVol + -0.5*Illiquidity + +1*Mom12m,MKT_TRAILING_12M_UP,false,1,11,26.743,0.871,0.834,0.21178,false,0,0,false,
+gpt-4o-2024-08-06,+1*CF + +0.5*Cash + -0.5*NetDebtPrice,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,-5.963,-1.044,-1.0,0.82955,false,1,0,false,
+gpt-4o-2024-08-06,-0.5*ChAssetTurnover + +0.5*GrSaleToGrOverhead + +1*OperProf,TERM_SPREAD_NEGATIVE,false,1,11,9.028,1.292,1.237,0.12217,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AOP + -0.5*AnalystRevision + +1*Leverage,MKT_TRAILING_12M_UP,true,1,11,-1.794,-0.212,-0.203,0.5784,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*AdExp + +1*BrandInvest + +0.5*SP,VIX_BELOW_TRAILING_MEDIAN,false,1,11,-6.141,-0.301,-0.288,0.61036,false,0,0,false,
+gpt-4o-2024-08-06,+1*AssetGrowth + -0.5*DelCOL + +0.5*DelLTI,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,+1*Illiquidity + -1*VolMkt,VIX_BELOW_TRAILING_MEDIAN,true,1,11,-10.451,-0.611,-0.585,0.71409,false,1,0,false,
+gpt-4o-2024-08-06,+1*DelBreadth + -0.5*IO_ShortInterest + -0.5*Recomm_ShortInterest,MKT_TRAILING_12M_UP,false,1,11,-51.688,-1.1,-1.053,0.84154,false,0,0,false,
+gpt-4o-2024-08-06,+1*AssetGrowth + -1*DebtIssuance,TERM_SPREAD_NEGATIVE,true,1,11,-7.07,-0.61,-0.584,0.7139,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*MRreversal + +1*ResidualMomentum + +0.5*STreversal,MKT_TRAILING_12M_DOWN,false,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,+1*OperProf + -1*VarCF,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,-2.368,-1.044,-1.0,0.82955,false,0,0,false,
+gpt-4o-2024-08-06,+1*GrSaleToGrInv + +1*GrSaleToGrOverhead,NONE,true,1,11,16.508,1.641,1.572,0.07356,false,1,1,false,
+gpt-4o-2024-08-06,+1*EarningsSurprise + -1*RealizedVol,VIX_BELOW_TRAILING_MEDIAN,false,1,11,32.323,1.184,1.133,0.14176,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*ForecastDispersion + +0.5*Mom12m,MKT_TRAILING_12M_UP,true,1,11,8.613,0.523,0.5,0.31382,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AOP + +1*CashProd,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*EarningsSurprise + +1*RD,VIX_BELOW_TRAILING_MEDIAN,true,1,11,-11.549,-0.677,-0.649,0.73438,false,1,0,false,
+gpt-4o-2024-08-06,-0.5*AssetGrowth + +1*EarningsConsistency,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,1.221,1.044,1.0,0.17045,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*DivInit + +1*OrgCap,TERM_SPREAD_NEGATIVE,true,1,11,7.198,0.532,0.51,0.31067,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*DebtIssuance + +1*ReturnSkew,MKT_TRAILING_12M_DOWN,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AnalystRevision + +1*Coskewness,VIX_BELOW_TRAILING_MEDIAN,true,1,11,40.77,2.113,2.023,0.03529,false,0,0,false,
+gpt-4o-2024-08-06,+1*IntanEP + +0.5*OPLeverage,TERM_SPREAD_NEGATIVE,false,1,11,-6.274,-0.633,-0.606,0.72098,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*BetaLiquidityPS + +1*BidAskSpread + -0.5*Illiquidity,VIX_BELOW_TRAILING_MEDIAN,true,1,11,2.341,0.18,0.172,0.43339,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AnalystRevision + -1*BM + +0.5*GrSaleToGrOverhead,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*MRreversal + -0.5*Mom12m + +1*MomOffSeason,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+1*ChAssetTurnover + -0.5*ChTax + +0.5*OperProf,TERM_SPREAD_NEGATIVE,false,1,11,-5.915,-0.857,-0.821,0.78448,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*DebtIssuance + +1*NetDebtFinance + -1*NetEquityFinance,NONE,true,1,11,-0.014,-0.002,-0.002,0.50062,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AbnormalAccruals + +0.5*RDcap,TERM_SPREAD_NEGATIVE,true,1,11,-10.111,-0.675,-0.647,0.7338,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*Herf + +0.5*RealizedVol,VIX_BELOW_TRAILING_MEDIAN,true,1,11,-21.213,-1.473,-1.41,0.90558,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*CompositeDebtIssuance + -0.5*DivYieldST,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*CashProd + +0.5*betaVIX,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,0.67,1.044,1.0,0.17045,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AOP + +0.5*ChNNCOA,MKT_TRAILING_12M_UP,false,1,11,-4.161,-1.142,-1.093,0.84997,false,0,0,false,
+gpt-4o-2024-08-06,+1*ChInvIA + -0.5*DelCOL,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*BetaLiquidityPS + +0.5*EarningsSurprise,VIX_BELOW_TRAILING_MEDIAN,false,1,11,15.92,2.788,2.669,0.01176,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*ChAssetTurnover + +1*RD,MKT_TRAILING_12M_UP,true,1,11,-14.043,-1.055,-1.01,0.83188,false,0,0,false,
+gpt-4o-2024-08-06,+1*IntMom + +0.5*Leverage,VIX_BELOW_TRAILING_MEDIAN,false,1,11,57.927,2.185,2.092,0.03147,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AOP + +1*EarningsConsistency,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*ChangeInRecommendation + -1*IO_ShortInterest,VIX_ABOVE_TRAILING_MEDIAN,false,1,11,-27.622,-1.044,-1.0,0.82955,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*CompEquIss + +0.5*DelNetFin,TERM_SPREAD_NEGATIVE,true,1,11,12.033,1.096,1.05,0.15927,false,0,0,false,
+gpt-4o-2024-08-06,+1*CashProd + +0.5*ChInvIA,VIX_BELOW_TRAILING_MEDIAN,false,1,11,-1.888,-0.167,-0.16,0.56203,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AbnormalAccruals + +1*ForecastDispersion,NONE,true,1,11,-8.781,-1.324,-1.268,0.88316,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*BrandInvest + +1*Cash,MKT_TRAILING_12M_UP,true,1,11,-4.32,-0.411,-0.394,0.64893,false,0,0,false,
+gpt-4o-2024-08-06,+1*AnalystRevision + +0.5*ChInv,TERM_SPREAD_NEGATIVE,true,1,11,19.063,1.065,1.019,0.16601,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*DelDRC + +1*Mom6m,VIX_BELOW_TRAILING_MEDIAN,true,1,11,3.306,0.151,0.145,0.44383,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*Leverage + +1*OperProf,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,+1*AssetGrowth + -1*CompEquIss,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,0.478,1.044,1.0,0.17045,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*Mom12m + +1*OperProfRD,VIX_BELOW_TRAILING_MEDIAN,false,1,11,39.793,2.166,2.074,0.03241,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*OrgCap + +1*RD,MKT_TRAILING_12M_DOWN,true,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,+1*CompositeDebtIssuance + -0.5*NetEquityFinance,MKT_TRAILING_12M_UP,false,1,11,-8.107,-1.503,-1.439,0.90971,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*EarningsConsistency + +1*OperProfRD + -0.5*RealizedVol,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,-3.151,-1.044,-1.0,0.82955,false,0,0,false,
+gpt-4o-2024-08-06,+1*Cash + -0.5*Leverage + +0.5*NetDebtFinance,TERM_SPREAD_NEGATIVE,false,1,11,-1.194,-0.037,-0.035,0.51371,false,1,0,false,
+gpt-4o-2024-08-06,+1*AdExp + +0.5*CustomerMomentum + -0.5*IntanSP,VIX_BELOW_TRAILING_MEDIAN,true,1,11,-3.67,-0.182,-0.174,0.56736,false,0,0,false,
+gpt-4o-2024-08-06,+1*ChInv + -0.5*DelFINL + +0.5*GrSaleToGrInv,MKT_TRAILING_12M_DOWN,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*CompositeDebtIssuance + +1*EquityDuration + -0.5*NetEquityFinance,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,+0.5*DelCOL + +1*Leverage + -0.5*iomom_supp,VIX_BELOW_TRAILING_MEDIAN,false,1,11,-0.9,-0.063,-0.06,0.52341,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*BrandInvest + +1*IntanBM + -0.5*SP,NONE,true,1,11,-14.668,-1.559,-1.493,0.91681,false,1,0,false,
+gpt-4o-2024-08-06,-0.5*BidAskSpread + +1*Illiquidity + +0.5*VolumeTrend,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,-2.103,-1.044,-1.0,0.82955,false,0,0,false,
+gpt-4o-2024-08-06,+1*MeanRankRevGrowth + -1*RealizedVol,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,1,0,false,
+gpt-4o-2024-08-06,+1*AnalystValue + -0.5*AnnouncementReturn,MKT_TRAILING_12M_UP,false,1,11,-3.586,-0.21,-0.201,0.5777,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*Investment + +1*OperProf,TERM_SPREAD_NEGATIVE,true,1,11,-2.48,-0.279,-0.267,0.60255,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*BookLeverage + +1*CompositeDebtIssuance,NONE,true,1,11,1.168,0.164,0.157,0.43928,false,1,0,false,
+gpt-4o-2024-08-06,+1*Spinoff + +0.5*realestate,MKT_TRAILING_12M_DOWN,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*BidAskSpread + +1*EarningsSurprise + -0.5*Illiquidity,VIX_BELOW_TRAILING_MEDIAN,true,1,11,10.733,0.56,0.536,0.30188,false,0,0,false,
+gpt-4o-2024-08-06,+1*ChAssetTurnover + +0.5*GrSaleToGrInv + -0.5*Investment,TERM_SPREAD_POSITIVE,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+1*AOP + +0.5*AnalystRevision + -0.5*RealizedVol,MKT_TRAILING_12M_UP,true,1,11,18.086,1.798,1.721,0.05796,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*BookLeverage + +0.5*DebtIssuance + +1*OperProf,TERM_SPREAD_NEGATIVE,false,1,11,1.055,0.138,0.132,0.4489,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*AnalystValue + -0.5*Beta + +1*RD,VIX_ABOVE_TRAILING_MEDIAN,true,1,11,-3.709,-1.044,-1.0,0.82955,false,0,0,false,
+gpt-4o-2024-08-06,+1*CF + +0.5*Mom12mOffSeason + -0.5*STreversal,MKT_TRAILING_12M_DOWN,false,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,+0.5*IndMom + +1*OperProfRD + -0.5*VolSD,TERM_SPREAD_POSITIVE,true,1,11,0.0,0.0,0.0,0.5,false,0,0,false,
+gpt-4o-2024-08-06,-0.5*IdioVol3F + +1*NetPayoutYield + +0.5*UpRecomm,VIX_BELOW_TRAILING_MEDIAN,false,1,11,13.352,1.185,1.134,0.14158,false,0,0,false,

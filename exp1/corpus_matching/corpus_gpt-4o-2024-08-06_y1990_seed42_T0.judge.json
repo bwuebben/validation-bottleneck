@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:30:31.222205+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4o-2024-08-06/y1990_seed42_T0.json",
+  "prompt_sha256": "69cf2a3cca1839f0226ba2b6597218dfd699b9b9b76cf67e4945e2f56e30fc7e"
+ },
+ "response": {
+  "id": "chatcmpl-E4zy8wcK1nSnvE1KL9ueHHArCnodg",
+  "object": "chat.completion",
+  "created": 1784860228,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"RD\", \"strength\": \"exact\", \"reason\": \"RD is R&D over market cap; RD intensity is R&D/sales.\"},\n  {\"index\": 1, \"match\": \"hire\", \"strength\": \"exact\", \"reason\": \"hire is employment growth, same as employee growth rate.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No insider trading volume predictor in library.\"},\n  {\"index\": 3, \"match\": \"HerfAsset\", \"strength\": \"related\", \"reason\": \"HerfAsset is industry asset concentration; both relate to supplier concentration.\"},\n  {\"index\": 4, \"match\": \"PatentsRD\", \"strength\": \"related\", \"reason\": \"PatentsRD uses patent counts, but not growth rate.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No environmental compliance or ESG predictor in library.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No customer satisfaction or similar survey-based predictor.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No foreign revenue or international exposure predictor.\"},\n  {\"index\": 8, \"match\": \"EarningsConsistency\", \"strength\": \"related\", \"reason\": \"EarningsConsistency is similar in spirit to dividend consistency.\"},\n  {\"index\": 9, \"match\": \"AdExp\", \"strength\": \"exact\", \"reason\": \"AdExp is advertising expense; advertising intensity is AdExp/sales.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2683,
+   "completion_tokens": 360,
+   "total_tokens": 3043,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

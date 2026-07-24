@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:53:35.135970+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zO8UcbRV1zS7eRtyXakGPMjoHwm",
+  "object": "chat.completion",
+  "created": 1784857996,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Internet Presence\",\n      \"construction\": \"Measure the number of mentions of the company on internet search engines over the past month.\",\n      \"rationale\": \"Companies with a higher internet presence may be more likely to attract investor attention and demand, leading to higher stock returns.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Employee Satisfaction\",\n      \"construction\": \"Use data from job review websites to calculate an average employee satisfaction score for each company.\",\n      \"rationale\": \"Companies with satisfied employees may have higher productivity and better performance, leading to higher stock returns.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Patent Activity\",\n      \"construction\": \"Count the number of patents filed by the company in the past year.\",\n      \"rationale\": \"Companies with more patent activity may be more innovative, leading to higher future growth and stock returns.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Product Diversity\",\n      \"construction\": \"Calculate the number of distinct product categories the company operates in.\",\n      \"rationale\": \"Companies with a diverse product portfolio may be more resilient to industry-specific shocks, leading to higher stock returns.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Customer Loyalty\",\n      \"construction\": \"Use customer survey data to calculate a customer loyalty score for each company.\",\n      \"rationale\": \"Companies with loyal customers may have more stable future revenues, leading to higher stock returns.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Environmental Impact\",\n      \"construction\": \"Calculate a score based on the company's carbon emissions, waste production, and other environmental factors.\",\n      \"rationale\": \"Companies with a lower environmental impact may be more attractive to socially conscious investors, leading to higher stock returns.\",\n      \"higher_returns_for\": \"Low values of the measure\"\n    },\n    {\n      \"name\": \"Executive Age\",\n      \"construction\": \"Calculate the average age of the company's executive team.\",\n      \"rationale\": \"Companies with younger executives may be more innovative and adaptable, leading to higher stock returns.\",\n      \"higher_returns_for\": \"Low values of the measure\"\n    },\n    {\n      \"name\": \"Supplier Diversity\",\n      \"construction\": \"Calculate a score based on the diversity of the company's suppliers in terms of geography and industry.\",\n      \"rationale\": \"Companies with a diverse supplier base may be more resilient to supply chain disruptions, leading to higher stock returns.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Cybersecurity Investment\",\n      \"construction\": \"Estimate the company's investment in cybersecurity based on its IT spending and other factors.\",\n      \"rationale\": \"Companies with strong cybersecurity may be less likely to suffer damaging data breaches, leading to higher stock returns.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Brand Strength\",\n      \"construction\": \"Calculate a score based on the company's brand recognition and reputation, using survey data and media mentions.\",\n      \"rationale\": \"Companies with strong brands may be able to charge higher prices and earn higher profits, leading to higher stock returns.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 733,
+   "total_tokens": 1003,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:45:39.202174+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 300,
+  "harness_version": "1.0.0",
+  "smoke": true
+ },
+ "response": {
+  "id": "chatcmpl-E4zGfDnIKnRtxbJ5tNn9NDJTgNluq",
+  "object": "chat.completion",
+  "created": 1784857533,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n\"predictors\": [\n    {\n        \"name\": \"Debt Maturity Structure\",\n        \"construction\": \"Ratio of long-term debt to total debt\",\n        \"rationale\": \"Firms with a higher proportion of long-term debt may be more stable and less risky, leading to higher returns.\",\n        \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n        \"name\": \"R&D Intensity\",\n        \"construction\": \"Research and development expenditure divided by total assets\",\n        \"rationale\": \"Firms that invest more in R&D may be more innovative, leading to higher future growth and returns.\",\n        \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n        \"name\": \"Inventory Turnover\",\n        \"construction\": \"Cost of goods sold divided by average inventory\",\n        \"rationale\": \"Firms with higher inventory turnover may have better operational efficiency, leading to higher returns.\",\n        \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n        \"name\": \"Dividend Payout Ratio\",\n        \"construction\": \"Dividends per share divided by earnings per share\",\n        \"rationale\": \"Firms with higher dividend payout ratios may be more profitable, leading to higher returns.\",\n        \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n        \"name\": \"Asset Utilization\",\n        \"construction\": \"Sales divided by total assets\",\n        \"ration",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "length"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 300,
+   "total_tokens": 570,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

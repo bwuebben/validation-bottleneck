@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:51:15.311762+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 18,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yPQja8re6Xl25wqWap8Y3l6Hrqu",
+  "object": "chat.completion",
+  "created": 1784854232,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Hypothesis_1\",\n    \"mechanism\": \"The interaction between mispricing and market volatility (VIX) can be exploited by combining momentum and short-term reversal strategies, weighted against the volatility index. High volatility could lead to more mispricing, aiding the momentum strategy, while reversal benefits from overreactions in the low volatility regime.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 0.5, \"primitive\": \"Mom12m\"},\n        {\"weight\": 0.5, \"primitive\": \"STreversal\"},\n        {\"weight\": -1.0, \"primitive\": \"betaVIX\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"betaVIX\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 36\n  },\n\n  {\n    \"name\": \"Hypothesis_2\",\n    \"mechanism\": \"Asset growth and book-to-market ratio could signal the future performance of a company, especially during market downturns. High asset growth might indicate overinvestment and future underperformance, while high book-to-market ratio could reflect undervaluation.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -0.5, \"primitive\": \"AssetGrowth\"},\n        {\"weight\": 1.0, \"primitive\": \"BM\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.4,\n    \"expected_decay_half_life_months\": 60\n  },\n\n  {\n    \"name\": \"Hypothesis_3\",\n    \"mechanism\": \"The combination of earnings consistency and short interest can provide a sign of potential stock overpricing, especially in an up market. Firms with consistent earnings but high short interest might be targeted by informed investors expecting a price correction.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 0.5, \"primitive\": \"EarningsConsistency\"},\n        {\"weight\": -0.5, \"primitive\": \"ShortInterest\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_UP\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.5,\n    \"expected_decay_half_life_months\": 48\n  },\n\n  {\n    \"name\": \"Hypothesis_4\",\n    \"mechanism\": \"Firms with a high ratio of cash to assets and book leverage could be undervalued, signaling a potential increase in profitability during periods when the term spread is positive.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"Cash\"},\n        {\"weight\": 1.0, \"primitive\": \"BookLeverage\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": null\n  },\n\n  {\n    \"name\": \"Hypothesis_5\",\n    \"mechanism\": \"Combining the firm size and earnings surprise, smaller firms with positive earnings surprises could outperform in up markets as investors update their expectations.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -1.0, \"primitive\": \"Size\"},\n        {\"weight\": 1.0, \"primitive\": \"EarningsSurprise\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_UP\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.8,\n    \"expected_decay_half_life_months\": 24\n  },\n\n  {\n    \"name\": \"Hypothesis_6\",\n    \"mechanism\": \"High book-to-market ratio and R&D expenditure (relative to market cap) could signal undervaluation and innovation potential, especially in up markets.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"BM\"},\n        {\"weight\": 1.0, \"primitive\": \"RD\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_UP\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 18\n  },\n\n  {\n    \"name\": \"Hypothesis_7\",\n    \"mechanism\": \"High asset growth and share issuance can signal overvaluation and future underperformance, especially in down markets\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -1.0, \"primitive\": \"AssetGrowth\"},\n        {\"weight\": -1.0, \"primitive\": \"ShareIss1Y\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.9,\n    \"expected_decay_half_life_months\": 12\n  },\n\n  {\n    \"name\": \"Hypothesis_8\",\n    \"mechanism\": \"Firms with low liquidity (high bid-ask spread) and high earnings surprise could experience price pressure and information asymmetry, contributing to higher future returns, particularly in high volatility regimes.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -0.5, \"primitive\": \"BidAskSpread\"},\n        {\"weight\": 1.0, \"primitive\": \"EarningsSurprise\"}\n      ],\n      \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"BidAskSpread\", \"bound\": \"above\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 30\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2864,
+   "completion_tokens": 1803,
+   "total_tokens": 4667,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

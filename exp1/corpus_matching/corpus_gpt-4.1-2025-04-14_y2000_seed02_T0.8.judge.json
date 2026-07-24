@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:28:20.734610+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2000_seed02_T0.8.json",
+  "prompt_sha256": "4ce903f27a8207276d344b3bc9c01cd9396dd1430433ce1258a3fc8aaccdfea0"
+ },
+ "response": {
+  "id": "chatcmpl-E4zw2Wz99VpZJE85XQludB6N8hgqk",
+  "object": "chat.completion",
+  "created": 1784860098,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"EarningsSurprise\", \"strength\": \"close\", \"reason\": \"Both use changes in earnings, but construction differs.\"},\n  {\"index\": 1, \"match\": \"NetDebtPrice\", \"strength\": \"close\", \"reason\": \"Both use net debt scaled by price; this uses change.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses sales per employee scaled by market cap.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses insider transaction ratio.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses off-balance sheet commitments.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses late filing indicator.\"},\n  {\"index\": 6, \"match\": \"DivInit\", \"strength\": \"close\", \"reason\": \"Both use dividend initiation, but proposal adds industry context.\"},\n  {\"index\": 7, \"match\": \"EarningsSurprise\", \"strength\": \"close\", \"reason\": \"Both use management guidance vs. analyst forecast.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses inventory write-down frequency.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses auditor tenure or its relative value.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2784,
+   "completion_tokens": 348,
+   "total_tokens": 3132,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

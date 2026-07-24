@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:17:10.792048+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 4,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zlBc3a4AwUHykB6dJ4lhD8ugw4n",
+  "object": "chat.completion",
+  "created": 1784859425,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Employee Growth Acceleration\", \"construction\": \"Year-over-year change in total employee count acceleration, calculated as the difference between the most recent annual employee growth rate and the prior year's employee growth rate, divided by the absolute value of prior year employee growth rate. Source: 10-K filings (Item 1: Employees).\", \"rationale\": \"Accelerating hiring may signal firm optimism about future opportunities and demand, reflecting management's private information.\", \"higher_returns_for\": \"high values of employee growth acceleration\"}, {\"name\": \"Patent Intensity\", \"construction\": \"Number of new patents granted in the trailing 12 months divided by total assets at fiscal year-end. Patent data from USPTO, assets from Compustat.\", \"rationale\": \"A high rate of patenting relative to assets may capture innovative activity not reflected in current financials.\", \"higher_returns_for\": \"high values of patent intensity\"}, {\"name\": \"Supplier Concentration Risk\", \"construction\": \"Sum of top 3 suppliers' percent of total procurement costs (from 10-K business risk disclosures) in the most recent fiscal year.\", \"rationale\": \"Higher concentration indicates vulnerability to supply chain shocks, which may carry systematic risk premium.\", \"higher_returns_for\": \"high supplier concentration risk\"}, {\"name\": \"Social Media Sentiment Skewness\", \"construction\": \"Skewness of daily social media sentiment scores (using Twitter and finance forums) over the past quarter.\", \"rationale\": \"Greater negative skewness in sentiment may indicate underappreciated upside potential if adverse sentiment is overreactive.\", \"higher_returns_for\": \"more negatively skewed sentiment\"}, {\"name\": \"Earnings Guidance Dispersion\", \"construction\": \"Standard deviation of management earnings guidance (per-share EPS) updates issued in the past 12 months, normalized by the mean guidance.\", \"rationale\": \"Higher dispersion can indicate information asymmetry or managerial uncertainty, potentially leading to greater risk premia.\", \"higher_returns_for\": \"high guidance dispersion\"}, {\"name\": \"Effective Tax Rate Volatility\", \"construction\": \"Standard deviation of quarterly effective tax rates over the last 3 years.\", \"rationale\": \"Firms with volatile tax rates may face unrecognized policy risk, leading to higher required returns.\", \"higher_returns_for\": \"high tax rate volatility\"}, {\"name\": \"Green Capital Expenditure Ratio\", \"construction\": \"Capital expenditures related to environmental initiatives (as disclosed in 10-K or sustainability reports) divided by total capital expenditures, trailing year.\", \"rationale\": \"High green investment may be underappreciated by the market and can signal future adaptability or regulatory advantage.\", \"higher_returns_for\": \"high green capex ratio\"}, {\"name\": \"Customer Prepayment Proportion\", \"construction\": \"Customer prepayments (from balance sheet: advances from customers or deferred revenue) divided by total revenue over the trailing 12 months.\", \"rationale\": \"High prepayments provide financing flexibility and signal demand visibility, reducing downside risk.\", \"higher_returns_for\": \"high customer prepayment proportion\"}, {\"name\": \"Gross Margin Resilience\", \"construction\": \"Change in gross margin during the most recent recession or downturn quarter divided by industry median change, using Compustat quarterly data.\", \"rationale\": \"Firms whose margins deteriorate less in downturns demonstrate pricing power and cost control.\", \"higher_returns_for\": \"high gross margin resilience\"}, {\"name\": \"Dividend Omission Count\", \"construction\": \"Number of omitted or skipped regular dividends in the past 5 years, as recorded in CRSP distribution records.\", \"rationale\": \"Omitting dividends may indicate financial distress and negative sentiment, which could be over-penalized by the market.\", \"higher_returns_for\": \"high dividend omission count\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 773,
+   "total_tokens": 1042,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_245b7c7787"
+ }
+}

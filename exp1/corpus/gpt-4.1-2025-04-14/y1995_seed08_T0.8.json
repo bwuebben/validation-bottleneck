@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:13:43.125409+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 8,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zhpNaienMvgZVaXLBtrOLyqg1LX",
+  "object": "chat.completion",
+  "created": 1784859217,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Short-Term Earnings Acceleration\", \"construction\": \"Difference between the most recent quarter's year-over-year earnings growth rate and the previous quarter's year-over-year earnings growth rate, using Compustat quarterly earnings data.\", \"rationale\": \"Firms with accelerating earnings growth may signal improved fundamentals not yet reflected in prices.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Unexpected Inventory Change\", \"construction\": \"Current quarter's change in inventory (from Compustat) minus average quarterly inventory change over the past 8 quarters, scaled by total assets.\", \"rationale\": \"Unexpected inventory buildups or drawdowns may indicate future sales surprises or supply chain signals.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Cash Flow Over Accruals\", \"construction\": \"Ratio of operating cash flow (from Statement of Cash Flows) to total accruals (earnings minus cash flow), measured over the trailing four quarters.\", \"rationale\": \"Firms generating a larger share of their earnings in cash may be less prone to earnings manipulation and future disappointments.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Insider Purchase Intensity\", \"construction\": \"Number of shares purchased by insiders over the past six months divided by total shares outstanding, using SEC Form 4 data.\", \"rationale\": \"Insider buying may reflect private information about undervaluation or positive future prospects.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"R&D to Capex Shift\", \"construction\": \"Change in the ratio of R&D expense to capital expenditures over the past three years, using Compustat annual data.\", \"rationale\": \"A shift toward R&D investment may signal a firm\u2019s strategic pivot to high-growth opportunities.\", \"higher_returns_for\": \"high positive changes in the measure\"}, {\"name\": \"Relative Analyst Forecast Dispersion\", \"construction\": \"Standard deviation of one-year-ahead analyst earnings forecasts divided by mean forecast, using I/B/E/S data, relative to the firm\u2019s own 3-year history.\", \"rationale\": \"Decreasing forecast dispersion relative to history may indicate emerging consensus and reduced uncertainty.\", \"higher_returns_for\": \"firms with lower current dispersion vs their own history\"}, {\"name\": \"Deferred Tax Asset Proportion\", \"construction\": \"Deferred tax assets as a percent of total assets, from Compustat annual data.\", \"rationale\": \"High deferred tax assets may reflect aggressive accounting or persistent losses, potentially predicting lower returns.\", \"higher_returns_for\": \"firms with low values of the measure\"}, {\"name\": \"Gross Margin Stability\", \"construction\": \"Standard deviation of gross margin (gross profit/sales) over trailing 12 quarters.\", \"rationale\": \"Stable gross margins may indicate strong competitive positioning and pricing power.\", \"higher_returns_for\": \"firms with low values of the measure\"}, {\"name\": \"Share Repurchase Yield\", \"construction\": \"Cash spent on share repurchases during the past year divided by average market capitalization, using Compustat and CRSP data.\", \"rationale\": \"Firms actively repurchasing shares may signal undervaluation or confidence in future cash flows.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Dividend Initiation Signal\", \"construction\": \"Binary indicator for firms that initiate a regular cash dividend in the past four quarters (Compustat dividend data).\", \"rationale\": \"Dividend initiation can serve as a signal of management\u2019s confidence in future profitability and cash flows.\", \"higher_returns_for\": \"firms that recently initiated a dividend\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 755,
+   "total_tokens": 1024,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5e8833dc3f"
+ }
+}

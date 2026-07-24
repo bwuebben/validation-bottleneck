@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:31:06.337282+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4o-2024-08-06/y1995_seed10_T0.8.json",
+  "prompt_sha256": "4a120529b6f481723f625df02f6f94015ebc74e1216e8782cafedfd319f62325"
+ },
+ "response": {
+  "id": "chatcmpl-E4zyhZw9zdyjXU9yPf8b2HzbbWRMv",
+  "object": "chat.completion",
+  "created": 1784860263,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"DivInit\", \"strength\": \"exact\", \"reason\": \"Dividend initiation within a recent period matches DivInit construction.\"},\n  {\"index\": 1, \"match\": \"hire\", \"strength\": \"exact\", \"reason\": \"Annual employee growth rate matches hire's construction.\"},\n  {\"index\": 2, \"match\": \"SurpriseRD\", \"strength\": \"close\", \"reason\": \"Change in R&D relative to assets is similar to unexpected R&D increase.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses off-balance-sheet leverage from footnotes.\"},\n  {\"index\": 4, \"match\": \"CitationsRD\", \"strength\": \"close\", \"reason\": \"Patent citation growth is a variant of CitationsRD.\"},\n  {\"index\": 5, \"match\": \"Herf\", \"strength\": \"related\", \"reason\": \"Supplier concentration is thematically related to industry concentration.\"},\n  {\"index\": 6, \"match\": \"Tax\", \"strength\": \"related\", \"reason\": \"Tax rate variability relates to effective tax rate, but is a different signal.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No predictor combines insider trading with sentiment adjustment.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No predictor uses inventory method changes from footnotes.\"},\n  {\"index\": 9, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Geographic revenue diversity is a Herfindahl index, similar to Herf.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2706,
+   "completion_tokens": 368,
+   "total_tokens": 3074,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

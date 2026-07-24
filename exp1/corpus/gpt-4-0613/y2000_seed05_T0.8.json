@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:54:56.261026+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 5,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zPXsC1a5ymOOu2h9j1xncAHRTZQ",
+  "object": "chat.completion",
+  "created": 1784858083,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\"name\": \"Online Presence\", \"construction\": \"Measure the number of visits to a company's website over a month.\", \"rationale\": \"Firms with a strong online presence may see increased customer engagement and thus higher future sales growth.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Patent Activity\", \"construction\": \"Count the number of patents filed by a company in the prior year.\", \"rationale\": \"Firms with higher patent activity may be more innovative, leading to new products and services.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Employee Satisfaction\", \"construction\": \"Survey data from a firm's employees rating their job satisfaction on a scale of 1-10.\", \"rationale\": \"Firms with high employee satisfaction may have lower turnover and higher productivity, leading to better performance.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Supply Chain Efficiency\", \"construction\": \"Calculate the ratio of completed orders to total orders over the past year.\", \"rationale\": \"Companies with efficient supply chains can minimize costs and deliver goods and services faster to the market.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Customer Retention\", \"construction\": \"Measure the percentage of customers retained from the prior year.\", \"rationale\": \"Companies with high customer retention may be more stable and have a loyal customer base.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Brand Strength\", \"construction\": \"Survey data measuring brand recognition and perception on a scale of 1-10.\", \"rationale\": \"Firms with strong brands may have a competitive advantage, leading to higher future sales.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Board Independence\", \"construction\": \"Calculate the percentage of independent directors on a firm's board.\", \"rationale\": \"A more independent board may lead to better governance and decision-making.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Product Diversity\", \"construction\": \"Count the number of distinct product or service categories a company has.\", \"rationale\": \"Companies with diverse product lines may be better able to adapt to changing market conditions.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Capital Expenditure Growth\", \"construction\": \"Calculate the year-over-year percentage change in a company's capital expenditures.\", \"rationale\": \"Firms investing heavily in their own growth may see higher future earnings.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Executive Turnover\", \"construction\": \"Count the number of executive-level departures in the past year.\", \"rationale\": \"High executive turnover may indicate instability or internal issues within the firm.\", \"higher_returns_for\": \"low values of the measure\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 607,
+   "total_tokens": 877,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

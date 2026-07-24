@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:07:33.281929+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 5,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zboBIUO5WxL3TyFAJM2LsAmx60a",
+  "object": "chat.completion",
+  "created": 1784858844,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"R&D Efficiency Ratio\",\n      \"construction\": \"Total Sales (Compustat item 12) divided by R&D Expense (Compustat item 46), averaged over the last 3 fiscal years.\",\n      \"rationale\": \"Companies that generate more sales per dollar of R&D expenditure may have more effective innovation processes, indicating potentially higher competitive advantages.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Dividend Consistency Score\",\n      \"construction\": \"A score based on the consistency of dividend payments over the past 10 years, with higher scores for uninterrupted payments and consistent growth in dividends.\",\n      \"rationale\": \"Firms with a strong track record of consistent dividends may signal financial stability and efficient capital management.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Environmental Compliance Ratio\",\n      \"construction\": \"Environmental Compliance Expenses as a percentage of Total Operating Expenses, captured from industry reports and company filings.\",\n      \"rationale\": \"Firms investing in compliance may avoid future regulatory costs and capture consumer preferences for sustainable practices.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Customer Concentration Risk\",\n      \"construction\": \"Percentage of revenue derived from the top 3 customers, averaged over the last fiscal year, as reported in company filings.\",\n      \"rationale\": \"Firms with lower customer concentration are less exposed to risks from losing a major customer, potentially leading to more stable future cash flows.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Insider Buy-Sell Ratio\",\n      \"construction\": \"Ratio of insider purchases to insider sales, using data from Form 4 filings over the past 6 months.\",\n      \"rationale\": \"High insider buying relative to selling may indicate confidence in the firm\u2019s prospects by those with the most information.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Patents per R&D Dollar\",\n      \"construction\": \"Number of patents filed over the past 5 years divided by total R&D expenditure over the same period.\",\n      \"rationale\": \"Firms that produce more patents per R&D dollar may be more efficient innovators, potentially leading to future growth.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Supplier Dependence Index\",\n      \"construction\": \"Proportion of cost of goods sold (COGS) from single-sourced suppliers, as a percentage of total COGS, averaged over the previous fiscal year.\",\n      \"rationale\": \"Lower dependence on single suppliers may reduce supply chain risks and increase operational resilience.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Market Sentiment Index\",\n      \"construction\": \"Net positive sentiment score derived from the tone of news articles mentioning the firm over the past year, using text analysis.\",\n      \"rationale\": \"Positive sentiment in media may enhance brand reputation and investor confidence, potentially leading to higher returns.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Executive Tenure Stability\",\n      \"construction\": \"Average tenure of top executives as listed in the firm\u2019s proxy statements, measured in years.\",\n      \"rationale\": \"Firms with stable executive teams may benefit from consistent leadership and strategic direction, supporting long-term performance.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Litigation Risk Exposure\",\n      \"construction\": \"Count of lawsuits filed against the company in the past year, obtained from legal databases and company disclosures.\",\n      \"rationale\": \"High litigation risk can lead to unpredictable costs and reputational damage, negatively impacting future returns.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 834,
+   "total_tokens": 1103,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2079a33cc7"
+ }
+}

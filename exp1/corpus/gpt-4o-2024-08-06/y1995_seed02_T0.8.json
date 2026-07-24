@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:05:17.641178+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 2,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zZbJ3UdeENI3kM1ToMRGfyD4XBI",
+  "object": "chat.completion",
+  "created": 1784858707,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n    \"predictors\": [\n        {\n            \"name\": \"Digital Presence Intensity\",\n            \"construction\": \"Calculate the number of mentions a company receives in online forums and digital newspapers over the past year, scaled by its market capitalization.\",\n            \"rationale\": \"Firms with higher digital presence might signal increased investor interest and potential demand shifts.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"R&D to Market Cap Ratio\",\n            \"construction\": \"Divide the firm's annual Research and Development expenses by its market capitalization at the end of the fiscal year.\",\n            \"rationale\": \"Firms investing heavily in R&D relative to their size could be undervalued if markets underestimate their growth potential.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Strategic Alliances Count\",\n            \"construction\": \"Count the number of strategic alliances and partnerships announced by a firm over the past year.\",\n            \"rationale\": \"Firms forming more alliances may gain competitive advantages and enhanced market positioning.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Customer Concentration Risk\",\n            \"construction\": \"Calculate the percentage of revenue attributed to the top 5 customers, based on the last annual report.\",\n            \"rationale\": \"High customer concentration might imply risk which, if resolved, leads to higher returns.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        },\n        {\n            \"name\": \"Patent Citation Impact\",\n            \"construction\": \"Assess the number of citations per patent a firm has received in the last 5 years.\",\n            \"rationale\": \"Highly cited patents suggest technological leadership and potential for future earnings growth.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Environmental Compliance Ratio\",\n            \"construction\": \"Divide the number of positive environmental compliance reports by total reports over the past three years.\",\n            \"rationale\": \"A better compliance record can indicate effective management and potential cost savings.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Employee Satisfaction Index\",\n            \"construction\": \"Use surveys or third-party reports to score employee satisfaction on a scale from 1 to 10.\",\n            \"rationale\": \"Higher employee satisfaction can lead to increased productivity and innovation.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Foreign Revenue Proportion\",\n            \"construction\": \"Calculate the percentage of revenue derived from foreign markets as stated in the latest financial report.\",\n            \"rationale\": \"Higher foreign revenue can indicate diversification and potential growth in emerging markets.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Corporate Social Responsibility Score\",\n            \"construction\": \"Aggregate a score based on various social responsibility initiatives and community engagement metrics.\",\n            \"rationale\": \"Firms with strong CSR initiatives may attract more investors and enjoy better reputational capital.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"CEO Media Exposure\",\n            \"construction\": \"Count the number of media appearances by the CEO in major outlets over the past year.\",\n            \"rationale\": \"Increased CEO visibility can enhance firm reputation and signal transparency to investors.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        }\n    ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 728,
+   "total_tokens": 997,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_94cd41efba"
+ }
+}

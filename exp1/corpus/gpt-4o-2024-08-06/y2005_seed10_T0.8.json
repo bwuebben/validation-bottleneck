@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:09:38.513162+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zdtDbLTL8HKaX9rFI7UP9wuyB5i",
+  "object": "chat.completion",
+  "created": 1784858973,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Employee Satisfaction Score\",\n      \"construction\": \"Use textual analysis on annual reports and company news to construct a sentiment score related to employee satisfaction over the past year.\",\n      \"rationale\": \"Companies with more satisfied employees may have higher productivity and lower turnover, leading to better performance.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Product Recall Frequency\",\n      \"construction\": \"Count the number of product recalls reported by a company in the last five years using company press releases and regulatory filings.\",\n      \"rationale\": \"Frequent product recalls may indicate operational inefficiencies or quality control issues.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Customer Churn Rate\",\n      \"construction\": \"Estimate churn rate using subscription and service cancellation data from company filings over the past year.\",\n      \"rationale\": \"Lower churn rates suggest strong customer loyalty and stable revenue streams.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Patents Filed Growth Rate\",\n      \"construction\": \"Calculate the annual growth rate of the number of patents filed by the company over the last three years.\",\n      \"rationale\": \"An increasing number of patents may indicate strong innovation and future growth potential.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Board Diversity Index\",\n      \"construction\": \"Create an index based on gender, ethnicity, and age diversity of board members as reported in proxy statements.\",\n      \"rationale\": \"Greater diversity on corporate boards may lead to better decision-making and corporate governance.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Environmental Violation Count\",\n      \"construction\": \"Count the number of environmental violations reported against the company in the last five years.\",\n      \"rationale\": \"Frequent violations may indicate poor environmental management and potential for reputational damage.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"CEO Media Presence\",\n      \"construction\": \"Measure the frequency of CEO mentions in major financial news outlets over the past year.\",\n      \"rationale\": \"Higher media presence of a CEO might indicate aggressive promotion strategies and leadership visibility.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Supply Chain Disruption Count\",\n      \"construction\": \"Count reported supply chain disruptions in company press releases and industry news over the past two years.\",\n      \"rationale\": \"Fewer disruptions suggest robust supply chain management and operational efficiency.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Cybersecurity Incident Frequency\",\n      \"construction\": \"Count the number of reported cybersecurity incidents affecting the company over the past three years.\",\n      \"rationale\": \"Frequent incidents may indicate vulnerabilities and potential financial and reputational losses.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Innovation Sentiment Score\",\n      \"construction\": \"Use textual analysis on earnings calls and company reports to derive sentiment related to innovation over the past year.\",\n      \"rationale\": \"Positive sentiment regarding innovation could signal future growth and competitive advantage.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 719,
+   "total_tokens": 988,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_eb185bfc03"
+ }
+}

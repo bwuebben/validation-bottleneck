@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:32:17.575717+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4o-2024-08-06/y2005_seed09_T0.8.json",
+  "prompt_sha256": "71cd605cc7bbdc413bd5bbaaa9251fb00951a4943ad65a542b6ce028a98141a5"
+ },
+ "response": {
+  "id": "chatcmpl-E4zzqSHCBn2wE0K0v1oUe9049pLjR",
+  "object": "chat.completion",
+  "created": 1784860334,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"hire\", \"strength\": \"exact\", \"reason\": \"Same as employment growth: employee count change over prior year.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses revenue volatility or similar construction.\"},\n  {\"index\": 2, \"match\": \"EarningsConsistency\", \"strength\": \"related\", \"reason\": \"Both measure payout/earnings streaks, but not the same construction.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses product launch frequency or similar.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses insider trading activity or similar.\"},\n  {\"index\": 5, \"match\": \"CitationsRD\", \"strength\": \"close\", \"reason\": \"Both use patent citations, but proposal uses growth, not level.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses supplier diversification or similar.\"},\n  {\"index\": 7, \"match\": \"AdExp\", \"strength\": \"related\", \"reason\": \"Both use marketing/advertising expenses, but not same construction.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer concentration or similar.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses environmental compliance or similar.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2724,
+   "completion_tokens": 354,
+   "total_tokens": 3078,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

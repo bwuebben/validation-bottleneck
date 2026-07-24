@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:24:44.528551+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y1995_seed09_T0.8.json",
+  "prompt_sha256": "2a5c896e23e9307c3b0094899a754b82bc4a19b951bd0bf4018bb0013980282f"
+ },
+ "response": {
+  "id": "chatcmpl-E4zsXrOK77Rte4k5QBznnCOeAAQJW",
+  "object": "chat.completion",
+  "created": 1784859881,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee satisfaction survey data.\"},\n  {\"index\": 1, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Both use industry concentration/market share as core signal.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer satisfaction survey data.\"},\n  {\"index\": 3, \"match\": \"FirmAge\", \"strength\": \"exact\", \"reason\": \"FirmAge is years since incorporation; construction matches exactly.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses management tenure as a signal.\"},\n  {\"index\": 5, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"PatentsRD uses patent counts, but scaled by R&D; core signal similar.\"},\n  {\"index\": 6, \"match\": \"Herf\", \"strength\": \"related\", \"reason\": \"Both use Herfindahl index, but on different data (industry vs. revenue segments).\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses CEO/employee salary ratio.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses web traffic or internet presence.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses charitable giving as a signal.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2699,
+   "completion_tokens": 359,
+   "total_tokens": 3058,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

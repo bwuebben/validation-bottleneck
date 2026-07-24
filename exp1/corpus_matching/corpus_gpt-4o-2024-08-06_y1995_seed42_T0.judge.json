@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:31:09.670112+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4o-2024-08-06/y1995_seed42_T0.json",
+  "prompt_sha256": "2494ccf3c881a5804a1246c11f615a20cc8cd6104dfdd8db61e41fa7fe196e16"
+ },
+ "response": {
+  "id": "chatcmpl-E4zyk1ZOrz3IzVypPAUX1cKA8g4u4",
+  "object": "chat.completion",
+  "created": 1784860266,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee satisfaction survey data.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses environmental compliance or violations.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses CEO tenure or stability.\"},\n  {\"index\": 3, \"match\": \"RD\", \"strength\": \"exact\", \"reason\": \"RD is R&D over market cap; construction matches exactly.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses supplier diversity or procurement data.\"},\n  {\"index\": 5, \"match\": \"CitationsRD\", \"strength\": \"close\", \"reason\": \"CitationsRD uses patent citations, but not growth rate.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer retention rates.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses insider trading activity.\"},\n  {\"index\": 8, \"match\": \"BrandInvest\", \"strength\": \"related\", \"reason\": \"BrandInvest uses brand capital; both relate to brand strength.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses technology adoption or new product revenue.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2695,
+   "completion_tokens": 341,
+   "total_tokens": 3036,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

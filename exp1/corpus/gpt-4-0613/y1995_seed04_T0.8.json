@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:51:13.044165+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 4,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zLjSTqJf1jAeVKoPgjZi5br08OI",
+  "object": "chat.completion",
+  "created": 1784857847,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\"name\": \"Age of the firm\", \n   \"construction\": \"Calculate the number of years since the firm's initial public offering (IPO).\", \n   \"rationale\": \"Older firms may be more stable and less risky, leading to potentially higher returns.\", \n   \"higher_returns_for\": \"Older firms\"},\n\n  {\"name\": \"Productivity Growth\", \n   \"construction\": \"Calculate the year-over-year percentage change in revenue per employee.\", \n   \"rationale\": \"Firms with growing productivity may be more efficient and competitive, leading to potentially higher returns.\", \n   \"higher_returns_for\": \"Firms with high productivity growth\"},\n\n  {\"name\": \"Revenue Concentration\", \n   \"construction\": \"Calculate revenue concentration as the percentage of total revenue derived from a single customer or client.\", \n   \"rationale\": \"A high concentration could indicate customer captivity but also customer concentration risk.\", \n   \"higher_returns_for\": \"Firms with low revenue concentration\"},\n\n  {\"name\": \"R&D Intensity\", \n   \"construction\": \"Calculate R&D expense divided by total revenues.\", \n   \"rationale\": \"Firms with high R&D intensity may be more innovative and have greater growth opportunities.\", \n   \"higher_returns_for\": \"Firms with high R&D intensity\"},\n\n  {\"name\": \"Operating Leverage\", \n   \"construction\": \"Calculate the ratio of fixed costs to variable costs.\", \n   \"rationale\": \"Firms with high operating leverage may have higher profit margins in good times, but higher risk in bad times.\", \n   \"higher_returns_for\": \"Firms with low operating leverage\"},\n\n  {\"name\": \"Management Ownership\", \n   \"construction\": \"Calculate the percentage of shares owned by management.\", \n   \"rationale\": \"Firms where management has significant ownership may be better aligned with shareholder interests.\", \n   \"higher_returns_for\": \"Firms where management has high ownership\"},\n\n  {\"name\": \"Employee Satisfaction\", \n   \"construction\": \"Use surveys or other public data to calculate a measure of employee satisfaction.\", \n   \"rationale\": \"Firms with happier employees may have lower turnover and higher productivity, leading to higher returns.\", \n   \"higher_returns_for\": \"Firms with high employee satisfaction\"},\n\n  {\"name\": \"Product Market Competition\", \n   \"construction\": \"Calculate the firm's market share in its primary industry.\", \n   \"rationale\": \"Firms facing less competition may have higher pricing power, potentially leading to higher returns.\", \n   \"higher_returns_for\": \"Firms with higher market share\"},\n\n  {\"name\": \"Customer Loyalty\", \n   \"construction\": \"Use surveys or other public data to calculate a measure of customer loyalty.\", \n   \"rationale\": \"Firms with loyal customers may have more predictable revenue streams and potentially higher returns.\", \n   \"higher_returns_for\": \"Firms with high customer loyalty\"},\n\n  {\"name\": \"Pension Fund Status\", \n   \"construction\": \"Calculate the funded status of the company's pension plan (pension assets - pension obligations).\", \n   \"rationale\": \"Underfunded pension obligations may pose financial risk.\", \n   \"higher_returns_for\": \"Firms with more fully funded pensions\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 681,
+   "total_tokens": 951,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

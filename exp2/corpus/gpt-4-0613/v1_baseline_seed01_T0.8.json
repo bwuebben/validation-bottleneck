@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:37:25.017657+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 1,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yBt4GgWoln9fdEFIlbfkwm052l6",
+  "object": "chat.completion",
+  "created": 1784853393,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n    {\n        \"name\": \"Hypothesis_1\",\n        \"mechanism\": \"Firms with high asset growth and investment to revenue are more likely to have higher returns in a positive term spread environment due to favorable economic conditions promoting growth.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"AssetGrowth\"},\n                {\"weight\": 1.0, \"primitive\": \"Investment\"}\n            ], \n            \"regime\": \"TERM_SPREAD_POSITIVE\", \n            \"vol_target\": true\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n            {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n            {\"type\": \"correlation\", \"primitive\": \"AssetGrowth\", \"bound\": \"above\", \"threshold\": 0.3}\n        ], \n        \"expected_annualized_sharpe\": 0.6, \n        \"expected_decay_half_life_months\": 36\n    },\n    {\n        \"name\": \"Hypothesis_2\",\n        \"mechanism\": \"Firms with high book to market and earnings to price ratios are more likely to have higher returns in a positive term spread environment due to investor preference for value stocks.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"BM\"},\n                {\"weight\": 1.0, \"primitive\": \"EP\"}\n            ], \n            \"regime\": \"TERM_SPREAD_POSITIVE\", \n            \"vol_target\": true\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n            {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n            {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"above\", \"threshold\": 0.3}\n        ], \n        \"expected_annualized_sharpe\": 0.8, \n        \"expected_decay_half_life_months\": null\n    },\n    {\n        \"name\": \"Hypothesis_3\",\n        \"mechanism\": \"Firms with high debt issuance and leverage are more likely to underperform in a negative term spread environment due to higher borrowing costs and financial distress.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": -1.0, \"primitive\": \"DebtIssuance\"},\n                {\"weight\": -1.0, \"primitive\": \"Leverage\"}\n            ], \n            \"regime\": \"TERM_SPREAD_NEGATIVE\", \n            \"vol_target\": true\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"},\n            {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n            {\"type\": \"correlation\", \"primitive\": \"DebtIssuance\", \"bound\": \"above\", \"threshold\": 0.3}\n        ], \n        \"expected_annualized_sharpe\": 0.7, \n        \"expected_decay_half_life_months\": 48\n    },\n    {\n        \"name\": \"Hypothesis_4\",\n        \"mechanism\": \"Firms with high short-term reversal and medium-term reversal are more likely to have higher returns in a market trailing up environment, as investor sentiment and momentum shifts.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"STreversal\"},\n                {\"weight\": 1.0, \"primitive\": \"MRreversal\"}\n            ], \n            \"regime\": \"MKT_TRAILING_12M_UP\", \n            \"vol_target\": true\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n            {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n            {\"type\": \"correlation\", \"primitive\": \"STreversal\", \"bound\": \"above\", \"threshold\": 0.3}\n        ], \n        \"expected_annualized_sharpe\": 0.9, \n        \"expected_decay_half_life_months\": 24\n    },\n    {\n        \"name\": \"Hypothesis_5\",\n        \"mechanism\": \"Firms with high analysts' optimism and earnings forecast revisions are more likely to have higher returns in a market trailing up environment, as positive expectations drive investor sentiment and demand.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"AOP\"},\n                {\"weight\": 1.0, \"primitive\": \"REV6\"}\n            ], \n            \"regime\": \"MKT_TRAILING_12M_UP\", \n            \"vol_target\": true\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n            {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n            {\"type\": \"correlation\", \"primitive\": \"AOP\", \"bound\": \"above\", \"threshold\": 0.3}\n        ], \n        \"expected_annualized_sharpe\": 0.7, \n        \"expected_decay_half_life_months\": 12\n    },\n    {\n        \"name\": \"Hypothesis_6\",\n        \"mechanism\": \"Firms with high illiquidity and bid-ask spread are more likely to underperform in a market trailing down environment due to increased selling pressure and transaction costs.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": -1.0, \"primitive\": \"Illiquidity\"},\n                {\"weight\": -1.0, \"primitive\": \"BidAskSpread\"}\n            ], \n            \"regime\": \"MKT_TRAILING_12M_DOWN\", \n            \"vol_target\": true\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"},\n            {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n            {\"type\": \"correlation\", \"primitive\": \"Illiquidity\", \"bound\": \"above\", \"threshold\": 0.3}\n        ], \n        \"expected_annualized_sharpe\": 0.6, \n        \"expected_decay_half_life_months\": 18\n    },\n    {\n        \"name\": \"Hypothesis_7\",\n        \"mechanism\": \"Firms with high advertising expense and brand investment are more likely to have higher returns in a positive VIX environment as advertising and brand-driven demand stabilizes revenues.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"AdExp\"},\n                {\"weight\": 1.0, \"primitive\": \"BrandInvest\"}\n            ], \n            \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \n            \"vol_target\": true\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n            {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n            {\"type\": \"correlation\", \"primitive\": \"AdExp\", \"bound\": \"above\", \"threshold\": 0.3}\n        ], \n        \"expected_annualized_sharpe\": 0.7, \n        \"expected_decay_half_life_months\": 60\n    },\n    {\n        \"name\": \"Hypothesis_8\",\n        \"mechanism\": \"Firms with high governance index and active shareholders are more likely to have higher returns in a positive VIX environment as strong governance and active shareholders provide assurance to investors.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"Governance\"},\n                {\"weight\": 1.0, \"primitive\": \"Activism2\"}\n            ], \n            \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \n            \"vol_target\": true\n        }, \n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n            {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n            {\"type\": \"correlation\", \"primitive\": \"Governance\", \"bound\": \"above\", \"threshold\": 0.3}\n        ], \n        \"expected_annualized_sharpe\": 0.7, \n        \"expected_decay_half_life_months\": null\n    }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2864,
+   "completion_tokens": 1932,
+   "total_tokens": 4796,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

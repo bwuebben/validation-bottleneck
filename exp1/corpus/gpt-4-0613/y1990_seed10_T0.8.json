@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:49:06.643303+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zJrSVEEIuS75Aks0X2ecksMUYUi",
+  "object": "chat.completion",
+  "created": 1784857731,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n\"predictors\": [\n{\n\"name\": \"Employee Satisfaction Index\",\n\"construction\": \"Survey data from employees about job satisfaction, benefits, work-life balance, etc. Standardized and averaged across firms.\",\n\"rationale\": \"Higher employee satisfaction may lead to increased productivity and better firm performance.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Customer Loyalty Score\",\n\"construction\": \"Survey data from customers about brand loyalty. Standardized and averaged across firms.\",\n\"rationale\": \"Strong customer loyalty may indicate a durable competitive advantage, driving higher firm profitability.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"R&D Expenditure Ratio\",\n\"construction\": \"R&D Expenditure divided by Total Sales, annually.\",\n\"rationale\": \"High R&D investment may lead to future innovations and revenue growth.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"CEO Tenure\",\n\"construction\": \"Number of years the current CEO has been in position.\",\n\"rationale\": \"Longer CEO tenures may indicate stability and deep firm knowledge, potentially leading to better decision making.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Capital Expenditure to Operating Cash Flow\",\n\"construction\": \"Capital Expenditures divided by Operating Cash Flow, annually.\",\n\"rationale\": \"High reinvestment rates could signal future growth.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"International Sales Ratio\",\n\"construction\": \"International Sales divided by Total Sales, annually.\",\n\"rationale\": \"Firms with more international exposure may benefit from greater market opportunities and diversification.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Product Diversity Index\",\n\"construction\": \"The number of distinct product lines or business segments of a firm, normalized by firm size.\",\n\"rationale\": \"Firms with a wider range of products may be more resilient to sector-specific shocks.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Patent Application Growth\",\n\"construction\": \"Year-over-year change in the number of patent applications filed.\",\n\"rationale\": \"Rapid growth in patent applications could indicate a firm's strong innovation pipeline.\",\n\"higher_returns_for\": \"High values of the measure\"\n},\n{\n\"name\": \"Environmental Impact Score\",\n\"construction\": \"Standardized score based on firm's carbon footprint, waste production, energy usage, etc.\",\n\"rationale\": \"Firms with lower environmental impact may face fewer regulatory risks and public backlash.\",\n\"higher_returns_for\": \"Low values of the measure\"\n},\n{\n\"name\": \"Supplier Concentration Ratio\",\n\"construction\": \"Herfindahl-Hirschman Index calculated from the firm's supplier base.\",\n\"rationale\": \"Firms reliant on a smaller number of suppliers may face higher supply-chain risks.\",\n\"higher_returns_for\": \"Low values of the measure\"\n}\n]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 613,
+   "total_tokens": 883,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

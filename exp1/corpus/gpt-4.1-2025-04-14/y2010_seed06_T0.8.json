@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:17:25.947068+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 6,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zlQGnbK0zM0GdQFj3YXeBj01r33",
+  "object": "chat.completion",
+  "created": 1784859440,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Customer Concentration Ratio\", \"construction\": \"Sum the revenue attributed to the firm's top 3 customers (from 10-K disclosures), divided by total revenues, measured annually.\", \"rationale\": \"Firms with lower customer concentration are less exposed to idiosyncratic shocks and have more diversified revenue streams, potentially making them less risky and more likely to be undervalued.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Short-Term Asset Reinvestment Rate\", \"construction\": \"Annual change in short-term investments (balance sheet) divided by total assets at the start of the year.\", \"rationale\": \"Firms aggressively reinvesting in liquid assets may signal underutilization of capital or lack of investment opportunities.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Patent Intensity\", \"construction\": \"Number of new patents granted to a firm in the past 12 months (USPTO data) divided by total assets.\", \"rationale\": \"Innovative firms may be undervalued if the market underappreciates the value of intellectual property.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Cash Conversion Cycle Change\", \"construction\": \"Change in cash conversion cycle (days inventory outstanding + days sales outstanding - days payables outstanding) over the last year.\", \"rationale\": \"Firms that improve their cash conversion cycles may be improving operational efficiency, which the market may not immediately price.\", \"higher_returns_for\": \"large negative changes (i.e., improvements)\"}, {\"name\": \"Dividend Cut Frequency\", \"construction\": \"Number of dividend cuts in the past 5 years divided by number of years with positive dividends.\", \"rationale\": \"Frequent dividend cuts may indicate management instability or poor capital allocation, leading to persistent undervaluation.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"R&D-to-Depreciation Ratio\", \"construction\": \"R&D expense (income statement) divided by depreciation expense, measured annually.\", \"rationale\": \"A higher ratio suggests forward-looking investment relative to replacement of old assets, potentially linked to future growth underestimated by the market.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Management Tenure Consistency\", \"construction\": \"Standard deviation of CEO tenure (in years) among S&P 1500 firms in the same GICS industry; assign this industry-level measure to each firm.\", \"rationale\": \"Industries with less management churn may enable long-term strategy and better firm performance not yet reflected in prices.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Legal Expense Ratio\", \"construction\": \"Total legal expenses (from footnotes in 10-K) divided by sales, measured annually.\", \"rationale\": \"High legal expenses may indicate persistent underlying risks or inefficiencies not fully priced in.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Inventory Obsolescence Provision Trend\", \"construction\": \"Three-year trend (slope) in inventory obsolescence provisions (from 10-K footnotes) as a percent of total inventory.\", \"rationale\": \"Decreasing provisions may signal improving inventory quality and better sales prospects overlooked by the market.\", \"higher_returns_for\": \"strong negative slopes (declining provisions)\"}, {\"name\": \"Board Director Age Dispersion\", \"construction\": \"Standard deviation of ages of board directors, measured annually from proxy statements.\", \"rationale\": \"Greater age diversity may indicate a broader range of perspectives and better governance, potentially resulting in superior performance.\", \"higher_returns_for\": \"high values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 760,
+   "total_tokens": 1029,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_245b7c7787"
+ }
+}

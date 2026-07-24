@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:29:58.714150+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 11,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4z1KV5JVvWxoJFpF4aQAI9HW2T2h",
+  "object": "chat.completion",
+  "created": 1784856582,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Intangible Enhancement in Capital-Constrained Firms\",\n    \"mechanism\": \"Firms with high R&D over market cap (RD) but low external financing (XFIN) may be constrained in capital, so their intangible investments are more selective and thus higher quality. Weighting these two primitives captures firms that maximize intangible efficiency, yielding a premium not captured by each factor alone.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"RD\"},\n        {\"weight\": 1.0, \"primitive\": \"IntanCFP\"},\n        {\"weight\": -0.5, \"primitive\": \"XFIN\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"RD\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.85,\n    \"expected_decay_half_life_months\": 18\n  },\n  {\n    \"name\": \"Customer Momentum with Organizational Capital\",\n    \"mechanism\": \"Firms benefiting from positive customer momentum (iomom_cust) and strong organizational capital (OrgCap) may experience reinforcing effects, as sticky customer gains amplify when supported by robust internal processes, but this is distinct from typical momentum or quality blends.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"iomom_cust\"},\n        {\"weight\": 0.5, \"primitive\": \"OrgCap\"},\n        {\"weight\": -0.5, \"primitive\": \"LRreversal\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_UP\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n      {\"type\": \"correlation\", \"primitive\": \"OrgCap\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.78,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Analyst Disagreement and Market Microstructure\",\n    \"mechanism\": \"Stocks with both high EPS forecast dispersion (ForecastDispersion) and wide bid-ask spreads (BidAskSpread) often reflect uncertainty and information frictions. Combining these targets mispricings not captured by either alone, as both investor disagreement and illiquidity amplify inefficiency.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"ForecastDispersion\"},\n        {\"weight\": 1.0, \"primitive\": \"BidAskSpread\"},\n        {\"weight\": -0.5, \"primitive\": \"ExchSwitch\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"BidAskSpread\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.68,\n    \"expected_decay_half_life_months\": 12\n  },\n  {\n    \"name\": \"Operating Leverage with Deferred Revenue Growth\",\n    \"mechanism\": \"Firms exhibiting both high operating leverage (OPLeverage) and rising deferred revenues (DelDRC) are positioned for outsized profit expansion when demand surprises to the upside, especially in environments with term spread inversion when risk appetite is low.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"OPLeverage\"},\n        {\"weight\": 1.0, \"primitive\": \"DelDRC\"},\n        {\"weight\": -0.5, \"primitive\": \"BookLeverage\"}\n      ],\n      \"regime\": \"TERM_SPREAD_NEGATIVE\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"OPLeverage\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.63,\n    \"expected_decay_half_life_months\": 20\n  },\n  {\n    \"name\": \"Post-IPO Age and Intangible Investment Differential\",\n    \"mechanism\": \"Younger post-IPO firms with higher R&D ability (R&DAbility) but shorter seasoning (AgeIPO) and lower tangible asset ratios (tang) may be mispriced due to the market's inability to correctly value novel, intangible-driven business models.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"RDAbility\"},\n        {\"weight\": -1.0, \"primitive\": \"AgeIPO\"},\n        {\"weight\": -0.5, \"primitive\": \"tang\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.74,\n    \"expected_decay_half_life_months\": 30\n  },\n  {\n    \"name\": \"Unexpected Cash Productivity with Idiosyncratic Volatility\",\n    \"mechanism\": \"Stocks with positive cash productivity (CashProd) but abnormally high idiosyncratic volatility (IdioVol3F), particularly when realized volatility (RealizedVol) is low, may be systematically underappreciated due to the masking effect of noise on fundamental improvement.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"CashProd\"},\n        {\"weight\": 1.0, \"primitive\": \"IdioVol3F\"},\n        {\"weight\": -0.5, \"primitive\": \"RealizedVol\"}\n      ],\n      \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"IdioVol3F\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}\n    ],\n    \"expected_annualized_sharpe\": 0.57,\n    \"expected_decay_half_life_months\": 14\n  },\n  {\n    \"name\": \"Deferred Tax Signaling in Asset Light Firms\",\n    \"mechanism\": \"Growth in deferred tax liabilities (ChTax) combined with low tangibility (tang) and strong asset turnover (ChAssetTurnover) may signal earnings management among asset-light firms, which the market may underappreciate, particularly in up markets.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"ChTax\"},\n        {\"weight\": -0.5, \"primitive\": \"tang\"},\n        {\"weight\": 1.0, \"primitive\": \"ChAssetTurnover\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_UP\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"ChTax\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.60,\n    \"expected_decay_half_life_months\": 16\n  },\n  {\n    \"name\": \"Real Estate Holdings and Credit Quality in Down Markets\",\n    \"mechanism\": \"Companies with substantial real estate assets (realestate) and low credit risk downgrades (CredRatDG) may provide downside protection and hidden collateral value, especially when market returns have recently been negative.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"realestate\"},\n        {\"weight\": -0.5, \"primitive\": \"CredRatDG\"},\n        {\"weight\": 1.0, \"primitive\": \"Cash\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.51,\n    \"expected_decay_half_life_months\": 26\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2903,
+   "completion_tokens": 2149,
+   "total_tokens": 5052,
+   "prompt_tokens_details": {
+    "cached_tokens": 2688,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_b5121c360f"
+ }
+}

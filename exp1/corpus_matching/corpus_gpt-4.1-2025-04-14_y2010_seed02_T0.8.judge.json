@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:29:30.100626+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2010_seed02_T0.8.json",
+  "prompt_sha256": "42582dce849e1fff5a187769ceacf1cfc6491461523a2b55d97edd60ee63465c"
+ },
+ "response": {
+  "id": "chatcmpl-E4zx9hQ0DCBq8SqnikstIQDAbWZbU",
+  "object": "chat.completion",
+  "created": 1784860167,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"DelBreadth\", \"strength\": \"related\", \"reason\": \"Both use changes in institutional ownership, but insider component is new.\"},\n  {\"index\": 1, \"match\": \"TotalAccruals\", \"strength\": \"close\", \"reason\": \"Uses total accruals, but focuses on magnitude, not level or sign.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses debt maturity structure changes.\"},\n  {\"index\": 3, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Both use Herfindahl index for diversification, but on different segment types.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses inventory write-down frequency.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses dividend change asymmetry.\"},\n  {\"index\": 6, \"match\": \"CitationsRD\", \"strength\": \"close\", \"reason\": \"Both use patent citations relative to R&D, but time window differs.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses tax rate volatility.\"},\n  {\"index\": 8, \"match\": \"Herf\", \"strength\": \"related\", \"reason\": \"Both measure concentration, but on customers not industry.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses guidance surprise persistence.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2849,
+   "completion_tokens": 361,
+   "total_tokens": 3210,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

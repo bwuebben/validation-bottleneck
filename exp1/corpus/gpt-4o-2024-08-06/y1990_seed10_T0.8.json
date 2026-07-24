@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:04:46.864089+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zZ8Jzrx09JDMmuw8ggdGlD2FLDN",
+  "object": "chat.completion",
+  "created": 1784858678,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Employee Growth Rate\",\n      \"construction\": \"Annual percentage change in total number of employees reported by the firm in its 10-K filings over the past year.\",\n      \"rationale\": \"Rapid employee growth may indicate expansion and investment in future growth opportunities, leading to higher future returns.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"R&D to Revenue Ratio\",\n      \"construction\": \"The ratio of research and development expenditure to total revenue, both sourced from the company's annual financial statements.\",\n      \"rationale\": \"High R&D spending relative to revenue may signal innovation and future competitive advantages, potentially increasing future returns.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Dividend Growth Stability\",\n      \"construction\": \"Standard deviation of annual percentage change in dividends paid over the past five years, using data from company financial statements.\",\n      \"rationale\": \"Stocks with stable dividend growth may be perceived as financially robust, offering more predictable returns.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Insider Trading Volume\",\n      \"construction\": \"The volume of insider purchases minus insider sales over the past year, gathered from insider trading reports.\",\n      \"rationale\": \"Net insider buying may indicate confidence in the firm's future prospects, predicting higher returns.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Asset Turnover Trend\",\n      \"construction\": \"Three-year trend in asset turnover ratio, calculated as revenue divided by total assets, using annual financial statements.\",\n      \"rationale\": \"An improving asset turnover trend can indicate increasing operational efficiency, which may lead to higher future profitability and returns.\",\n      \"higher_returns_for\": \"increasing values of the measure\"\n    },\n    {\n      \"name\": \"International Revenue Exposure\",\n      \"construction\": \"Percentage of total revenue derived from international operations, as reported in annual financial reports.\",\n      \"rationale\": \"Firms with significant international revenues may benefit from global diversification and growth opportunities, enhancing future returns.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Cash Flow Consistency\",\n      \"construction\": \"Standard deviation of operating cash flow over the past five years, using data from annual financial statements.\",\n      \"rationale\": \"Consistent cash flow may indicate stable business operations, reducing risk and potentially increasing future returns.\",\n      \"higher_returns_for\": \"low values of the measure\"\n    },\n    {\n      \"name\": \"Market Share Trend\",\n      \"construction\": \"Three-year trend in market share, estimated from the company's revenue as a proportion of total industry revenue.\",\n      \"rationale\": \"An increasing market share may suggest competitive strength and growth potential, leading to higher future returns.\",\n      \"higher_returns_for\": \"increasing values of the measure\"\n    },\n    {\n      \"name\": \"Deferred Revenue Ratio\",\n      \"construction\": \"Ratio of deferred revenue to total revenue, both from the company's annual financial statements.\",\n      \"rationale\": \"A higher deferred revenue ratio can indicate strong future sales commitments, potentially leading to higher future returns.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Patent Citation Impact\",\n      \"construction\": \"Number of citations of the firm's patents in the past year, obtained from patent databases.\",\n      \"rationale\": \"High citation counts may indicate valuable and influential technology, suggesting future growth and higher returns.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 764,
+   "total_tokens": 1033,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_94cd41efba"
+ }
+}

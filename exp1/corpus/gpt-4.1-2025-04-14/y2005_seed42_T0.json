@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:15:21.428650+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zjP1f4EBuK0yU6Rvd2SZdsvyrth",
+  "object": "chat.completion",
+  "created": 1784859315,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Inventory Growth Volatility\", \"construction\": \"Standard deviation of quarterly percentage changes in inventory (from Compustat) over the past 3 years.\", \"rationale\": \"Firms with more volatile inventory growth may face greater uncertainty or operational inefficiency, which could be priced by the market.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Short-Term Debt Issuance Acceleration\", \"construction\": \"Change in short-term debt (Compustat: DLCQ) over the past year divided by total assets, minus the same change in the prior year.\", \"rationale\": \"A rapid acceleration in short-term borrowing may signal financial distress or aggressive expansion, potentially leading to higher risk premia.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"R&D Capitalization Ratio\", \"construction\": \"R&D expense (Compustat: XRD) over the past year divided by the sum of R&D expense and capital expenditures (CAPX) over the same period.\", \"rationale\": \"Firms investing more in R&D relative to physical capital may be riskier or have more growth opportunities, which could be rewarded.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Dividend Omission Frequency\", \"construction\": \"Number of quarters in the past 5 years where a firm omitted a regular dividend payment, divided by the number of expected payments.\", \"rationale\": \"Frequent dividend omissions may indicate financial instability, which could be associated with higher expected returns as compensation for risk.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Operating Lease Intensity\", \"construction\": \"Estimated annual operating lease expense (from footnotes) divided by total assets.\", \"rationale\": \"Firms with higher off-balance-sheet leverage via operating leases may be riskier and thus command higher returns.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Customer Concentration Exposure\", \"construction\": \"Percentage of sales to the largest customer (from 10-K disclosures) in the most recent fiscal year.\", \"rationale\": \"High customer concentration increases business risk, which may be compensated by higher expected returns.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Patent Application Growth\", \"construction\": \"Year-over-year percentage change in the number of patent applications filed (from USPTO data) by the firm.\", \"rationale\": \"Rapid growth in patent applications may signal innovation and future growth potential, possibly leading to higher returns.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Deferred Tax Asset Ratio\", \"construction\": \"Deferred tax assets (Compustat: TXDB) divided by total assets.\", \"rationale\": \"Large deferred tax assets may indicate aggressive accounting or past losses, which could be associated with higher risk and returns.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Supplier Payment Stretch\", \"construction\": \"Change in accounts payable days (accounts payable / cost of goods sold * 365) over the past year.\", \"rationale\": \"Firms stretching payments to suppliers may be facing liquidity issues, which could be priced by the market.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"CEO Tenure Change\", \"construction\": \"Indicator variable equal to 1 if the CEO has changed in the past 12 months, 0 otherwise.\", \"rationale\": \"Recent CEO turnover may signal uncertainty or transition risk, potentially leading to higher expected returns.\", \"higher_returns_for\": \"high values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 750,
+   "total_tokens": 1019,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_1adda89cc2"
+ }
+}

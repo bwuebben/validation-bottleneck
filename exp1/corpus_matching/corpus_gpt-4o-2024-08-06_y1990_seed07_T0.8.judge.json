@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:30:18.249240+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4o-2024-08-06/y1990_seed07_T0.8.json",
+  "prompt_sha256": "6062a2a690b3eb5a9f3423445856b2b14ea9f685c51a2488ab8f1eeb683bab0c"
+ },
+ "response": {
+  "id": "chatcmpl-E4zxv89dfNpENSzK6yVsla4UJcD3Y",
+  "object": "chat.completion",
+  "created": 1784860215,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"CashProd\", \"strength\": \"close\", \"reason\": \"Both measure productivity using revenue and a resource input.\"},\n  {\"index\": 1, \"match\": \"RD\", \"strength\": \"exact\", \"reason\": \"Both use R&D divided by sales/market cap as intensity.\"},\n  {\"index\": 2, \"match\": \"Herf\", \"strength\": \"related\", \"reason\": \"Both use Herfindahl index, but for different relationships.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for merger activity indicator.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for technology adoption mentions.\"},\n  {\"index\": 5, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Both relate to governance, but CEO stake is not included.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for environmental policy disclosure.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor for foreign sales proportion.\"},\n  {\"index\": 8, \"match\": \"AdExp\", \"strength\": \"close\", \"reason\": \"Both relate sales to advertising expense, but inverse construction.\"},\n  {\"index\": 9, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Both use patent activity, but denominator differs (RD vs industry).\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2680,
+   "completion_tokens": 350,
+   "total_tokens": 3030,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

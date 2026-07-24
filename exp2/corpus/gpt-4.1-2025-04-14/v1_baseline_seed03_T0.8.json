@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:22:03.074398+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 3,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ythoAGkdZQYp5hKnjdIJL8EpuPp",
+  "object": "chat.completion",
+  "created": 1784856109,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Contrarian Profitability Across Volatility Regimes\",\n    \"mechanism\": \"Profitability (OperProf) and long-term reversal (LRreversal) capture distinct market anomalies. Combining them and applying only when implied equity volatility (VIX) is below its trailing median targets environments where behavioral underreaction to fundamentals and mean reversion both prevail, potentially enhancing risk-adjusted returns beyond the individual effects.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"OperProf\"},\n        {\"weight\": 1.0, \"primitive\": \"LRreversal\"}\n      ],\n      \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"OperProf\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.95,\n    \"expected_decay_half_life_months\": 30\n  },\n  {\n    \"name\": \"Intangible Value-Momentum Synergy\",\n    \"mechanism\": \"Intangible value (IntanBM) and off-season momentum (MomOffSeason) exploit different inefficiencies: mispricing of intangibles and behavioral persistence outside typical momentum windows. Their combination should reduce cyclicality and improve performance\u2014particularly in small caps where such inefficiencies are more pronounced.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"IntanBM\"},\n        {\"weight\": 0.5, \"primitive\": \"MomOffSeason\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"IntanBM\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.80,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Low Leverage High Organizational Capital\",\n    \"mechanism\": \"Firms with high organizational capital (OrgCap) and low market leverage (Leverage, negatively weighted) may deliver superior returns due to efficient resource utilization and reduced risk of distress, especially during periods of positive term spread indicating healthy economic conditions.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"OrgCap\"},\n        {\"weight\": -1.0, \"primitive\": \"Leverage\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.75,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Analyst Disagreement Defensive Overlay\",\n    \"mechanism\": \"Combining high forecast dispersion (ForecastDispersion) with defensive profitability (OperProfRD) and applying only when the market has declined over the prior 12 months (MKT_TRAILING_12M_DOWN) creates a composite that should benefit from mispricings exacerbated by uncertainty, while defensive quality limits drawdowns.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"ForecastDispersion\"},\n        {\"weight\": 1.0, \"primitive\": \"OperProfRD\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"ForecastDispersion\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.70,\n    \"expected_decay_half_life_months\": 18\n  },\n  {\n    \"name\": \"Anti-Equity Issuance Quality Mix\",\n    \"mechanism\": \"Firms with low net equity financing (NetEquityFinance, negative) and high Piotroski F-score (PS) combine capital discipline with robust fundamentals, potentially yielding excess returns by avoiding dilution and favoring operational strength. This should be especially effective when credit spreads are low (TERM_SPREAD_POSITIVE).\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -1.0, \"primitive\": \"NetEquityFinance\"},\n        {\"weight\": 1.0, \"primitive\": \"PS\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"NetEquityFinance\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.85,\n    \"expected_decay_half_life_months\": 20\n  },\n  {\n    \"name\": \"Liquidity Contrarian in Bear Markets\",\n    \"mechanism\": \"Stocks with wide bid-ask spreads (BidAskSpread, negative) and high short-term reversal (STreversal) are likely to be oversold during down markets. Combining these and activating only after market declines (MKT_TRAILING_12M_DOWN) should capture liquidity-driven mispricings more effectively than either alone.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -1.0, \"primitive\": \"BidAskSpread\"},\n        {\"weight\": 1.0, \"primitive\": \"STreversal\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"BidAskSpread\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.72,\n    \"expected_decay_half_life_months\": 15\n  },\n  {\n    \"name\": \"Asset Growth and Customer Momentum Divergence\",\n    \"mechanism\": \"Combining low asset growth (AssetGrowth, negative) with positive customer momentum (CustomerMomentum) yields a portfolio likely to avoid overinvestment traps while capturing supply-chain-driven outperformance\u2014an effect that should be more robust in the US than in emerging markets.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -1.0, \"primitive\": \"AssetGrowth\"},\n        {\"weight\": 1.0, \"primitive\": \"CustomerMomentum\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"},\n      {\"type\": \"subperiod_consistency\"},\n      {\"type\": \"correlation\", \"primitive\": \"AssetGrowth\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.78,\n    \"expected_decay_half_life_months\": 28\n  },\n  {\n    \"name\": \"Share Repurchase and High Volatility Quality\",\n    \"mechanism\": \"Firms engaging in share repurchases (ShareRepurchase) and exhibiting high volume variance (VolSD) often signal undervaluation and attract contrarian capital. Activating this combination only in high VIX regimes should amplify the premium by exploiting heightened risk aversion.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"ShareRepurchase\"},\n        {\"weight\": 1.0, \"primitive\": \"VolSD\"}\n      ],\n      \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.82,\n    \"expected_decay_half_life_months\": 20\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 2041,
+   "total_tokens": 4842,
+   "prompt_tokens_details": {
+    "cached_tokens": 2560,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5f160af537"
+ }
+}

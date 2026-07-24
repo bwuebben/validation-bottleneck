@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:00:41.273115+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 2,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zV1gxR67NSpkN0K9NnDKXbL12T6",
+  "object": "chat.completion",
+  "created": 1784858423,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n\"predictors\": [\n{\n\"name\": \"Social Media Sentiment\",\n\"construction\": \"Measure the sentiment of social media posts about a company over the past month, using natural language processing algorithms.\",\n\"rationale\": \"The sentiment of social media posts can reflect the public\u2019s view on a company, which can influence its stock price.\",\n\"higher_returns_for\": \"Companies with positive social media sentiment\"\n},\n{\n\"name\": \"Green Investment Ratio\",\n\"construction\": \"Calculate the ratio of a company\u2019s investments in green/eco-friendly technologies to its total investments over the past year.\",\n\"rationale\": \"Companies that invest in green technologies are likely to benefit from increasing environmental regulations and public demand for sustainable products.\",\n\"higher_returns_for\": \"Companies with a higher green investment ratio\"\n},\n{\n\"name\": \"Employee Satisfaction Index\",\n\"construction\": \"Use employee reviews from online platforms to create an index of employee satisfaction.\",\n\"rationale\": \"Happy employees can lead to higher productivity and better company performance.\",\n\"higher_returns_for\": \"Companies with a high employee satisfaction index\"\n},\n{\n\"name\": \"Cybersecurity Breach Probability\",\n\"construction\": \"Use historical data on cybersecurity breaches and a company\u2019s current cybersecurity measures to estimate the probability of a future breach.\",\n\"rationale\": \"Cybersecurity breaches can cause significant financial and reputational damage to a company.\",\n\"higher_returns_for\": \"Companies with a low probability of a cybersecurity breach\"\n},\n{\n\"name\": \"Customer Loyalty Score\",\n\"construction\": \"Use customer survey data to calculate a score representing customer loyalty.\",\n\"rationale\": \"Companies with loyal customers are likely to have more stable and predictable revenue streams.\",\n\"higher_returns_for\": \"Companies with a high customer loyalty score\"\n},\n{\n\"name\": \"R&D Efficiency\",\n\"construction\": \"Calculate the R&D expenditure as a percentage of new product revenue over the last year.\",\n\"rationale\": \"High R&D efficiency can indicate a company\u2019s ability to bring profitable new products to market.\",\n\"higher_returns_for\": \"Companies with a lower R&D expenditure to new product revenue ratio\"\n},\n{\n\"name\": \"Corporate Governance Score\",\n\"construction\": \"Use data from corporate governance reports to create a score representing the quality of a company\u2019s governance.\",\n\"rationale\": \"Good corporate governance can help protect shareholder interests and improve company performance.\",\n\"higher_returns_for\": \"Companies with a high corporate governance score\"\n},\n{\n\"name\": \"Managerial Compensation Structure\",\n\"construction\": \"Calculate the ratio of a CEO\u2019s performance-based compensation (like stock options) to their total compensation.\",\n\"rationale\": \"A higher ratio could align the CEO\u2019s interests more closely with shareholders and incentivize better company performance.\",\n\"higher_returns_for\": \"Companies where a larger portion of CEO compensation is performance-based\"\n},\n{\n\"name\": \"Product Recalls Ratio\",\n\"construction\": \"Calculate the ratio of the number of product recalls over the past year to the total number of products sold.\",\n\"rationale\": \"A high ratio can indicate quality control issues that could harm a company\u2019s reputation and financial performance.\",\n\"higher_returns_for\": \"Companies with a lower product recalls ratio\"\n},\n{\n\"name\": \"Tax Optimization Index\",\n\"construction\": \"Use data on a company\u2019s tax payments and tax planning strategies to create an index representing its tax optimization level.\",\n\"rationale\": \"Effective tax optimization can increase a company\u2019s net profit and therefore its stock return.\",\n\"higher_returns_for\": \"Companies with a high tax optimization index\"\n}\n]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 709,
+   "total_tokens": 979,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

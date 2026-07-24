@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:55:02.304734+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 2,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yT8CuIp5h1Sj0Dh9LCjrPOH7y3k",
+  "object": "chat.completion",
+  "created": 1784854462,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\"name\": \"Hypothesis 1\",\n   \"mechanism\": \"Firms with high R&D investment and positive recent earnings surprises (EP) are likely to outperform, especially when market sentiment is bullish.\",\n   \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"RD\"}, {\"weight\": 0.5, \"primitive\": \"EarningsSurprise\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": true},\n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"EarningsSurprise\", \"bound\": \"below\", \"threshold\": 0.3}],\n   \"expected_annualized_sharpe\": 0.7,\n   \"expected_decay_half_life_months\": null\n  },\n  {\"name\": \"Hypothesis 2\",\n   \"mechanism\": \"Companies with low leverage (Leverage) and high short interest (ShortInterest) are likely to outperform especially during bear markets due to potential short squeezes.\",\n   \"expression\": {\"terms\": [{\"weight\": -1.0, \"primitive\": \"Leverage\"}, {\"weight\": 1.0, \"primitive\": \"ShortInterest\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": true},\n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}],\n   \"expected_annualized_sharpe\": 0.8,\n   \"expected_decay_half_life_months\": 60\n  },\n  {\"name\": \"Hypothesis 3\",\n   \"mechanism\": \"Firms with high asset growth (AssetGrowth) and low idiosyncratic risk (IdioVol3F) may outperform during periods of positive term spread due to increased investment efficiency.\",\n   \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"AssetGrowth\"}, {\"weight\": -0.5, \"primitive\": \"IdioVol3F\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": true},\n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"IdioVol3F\", \"bound\": \"below\", \"threshold\": 0.3}],\n   \"expected_annualized_sharpe\": 0.6,\n   \"expected_decay_half_life_months\": 48\n  },\n  {\"name\": \"Hypothesis 4\",\n   \"mechanism\": \"Firms with high advertising expense (AdExp) and low tangible assets (tang) may outperform, especially during bullish markets, due to brand value and innovation.\",\n   \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"AdExp\"}, {\"weight\": -0.5, \"primitive\": \"tang\"}], \"regime\": \"MKT_TRAILING_12M_UP\", \"vol_target\": true},\n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"AdExp\", \"bound\": \"above\", \"threshold\": 0.3}],\n   \"expected_annualized_sharpe\": 0.75,\n   \"expected_decay_half_life_months\": 36\n  },\n  {\"name\": \"Hypothesis 5\",\n   \"mechanism\": \"Companies with high gross profits (GP) and low bid-ask spread (BidAskSpread) are likely to outperform during periods of low market volatility due to efficient operations and high liquidity.\",\n   \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"GP\"}, {\"weight\": -0.5, \"primitive\": \"BidAskSpread\"}], \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"vol_target\": true},\n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"GP\", \"bound\": \"above\", \"threshold\": 0.3}],\n   \"expected_annualized_sharpe\": 0.65,\n   \"expected_decay_half_life_months\": 24\n  },\n  {\"name\": \"Hypothesis 6\",\n   \"mechanism\": \"Firms with high cash reserves (Cash) and low price (Price) will outperform especially in bearish markets due to financial stability and undervaluation.\",\n   \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"Cash\"}, {\"weight\": -1.0, \"primitive\": \"Price\"}], \"regime\": \"MKT_TRAILING_12M_DOWN\", \"vol_target\": true},\n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}, {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}],\n   \"expected_annualized_sharpe\": 0.85,\n   \"expected_decay_half_life_months\": 72\n  },\n  {\"name\": \"Hypothesis 7\",\n   \"mechanism\": \"Firms with high analyst optimism (AOP) and low return skewness (ReturnSkew) may outperform during periods of positive term spread due to market sentiment and symmetrical return distribution.\",\n   \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"AOP\"}, {\"weight\": -0.5, \"primitive\": \"ReturnSkew\"}], \"regime\": \"TERM_SPREAD_POSITIVE\", \"vol_target\": true},\n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}, {\"type\": \"correlation\", \"primitive\": \"AOP\", \"bound\": \"below\", \"threshold\": 0.3}],\n   \"expected_annualized_sharpe\": 0.6,\n   \"expected_decay_half_life_months\": 60\n  },\n  {\"name\": \"Hypothesis 8\",\n   \"mechanism\": \"Companies with high asset turnover (ChAssetTurnover) and low idiosyncratic volatility (IdioVolAHT) will outperform, especially in volatile markets, due to operational efficiency and lower risk.\",\n   \"expression\": {\"terms\": [{\"weight\": 1.0, \"primitive\": \"ChAssetTurnover\"}, {\"weight\": -1.0, \"primitive\": \"IdioVolAHT\"}], \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"vol_target\": true},\n   \"auxiliary_predictions\": [{\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"lower\"}, {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}, {\"type\": \"correlation\", \"primitive\": \"ChAssetTurnover\", \"bound\": \"above\", \"threshold\": 0.3}],\n   \"expected_annualized_sharpe\": 0.75,\n   \"expected_decay_half_life_months\": 18\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2965,
+   "completion_tokens": 1774,
+   "total_tokens": 4739,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

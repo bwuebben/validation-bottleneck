@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:28:57.958948+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2005_seed02_T0.8.json",
+  "prompt_sha256": "4256b806d0ee383a56095f995fbb4c773173cd11cf51eb489d8cd7075587e892"
+ },
+ "response": {
+  "id": "chatcmpl-E4zwdgIqAbKWj6QlnwzmpNcm8Bxn1",
+  "object": "chat.completion",
+  "created": 1784860135,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses inventory volatility as signal.\"},\n  {\"index\": 1, \"match\": \"GrAdExp\", \"strength\": \"close\", \"reason\": \"Both use change in advertising scaled by assets.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses debt acceleration.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses NWC to market value.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses gross margin volatility.\"},\n  {\"index\": 5, \"match\": \"Herf\", \"strength\": \"related\", \"reason\": \"Both use industry sales, but Herf is concentration, not dispersion.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses R&D streak/consistency.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses off-balance sheet asset growth.\"},\n  {\"index\": 8, \"match\": \"ShareRepurchase\", \"strength\": \"close\", \"reason\": \"Both capture share buyback activity, but frequency vs. amount.\"},\n  {\"index\": 9, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Both use patent activity scaled by assets, but construction differs.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2806,
+   "completion_tokens": 350,
+   "total_tokens": 3156,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

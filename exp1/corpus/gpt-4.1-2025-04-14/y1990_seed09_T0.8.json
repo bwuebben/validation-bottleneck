@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:12:12.500403+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 9,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zgNXEwu7HLoQ9C1XZpHzBqXpalj",
+  "object": "chat.completion",
+  "created": 1784859127,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\"name\": \"Inventory Change Rate\", \"construction\": \"Change in inventory (Compustat item INV) over the past year divided by average total assets (AT) over the same period.\", \"rationale\": \"Firms aggressively building inventories may be overoptimistic about future sales, leading to subsequent corrections.\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Short-Term Debt Surge\", \"construction\": \"Growth in short-term debt (DLC) over the prior fiscal year, scaled by total assets (AT).\", \"rationale\": \"Sudden increases in short-term debt may signal financial distress or impending dilution.\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"R&D Intensity Change\", \"construction\": \"Change in R&D expenditure (XRD) as a percent of sales (SALE), over the past two fiscal years.\", \"rationale\": \"Increasing R&D intensity may indicate management\u2019s confidence in future growth and innovation.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Unusual Accruals\", \"construction\": \"Total accruals (change in current assets (ACT) minus change in current liabilities (LCT) minus depreciation (DP)) divided by average total assets (AT) over the prior year.\", \"rationale\": \"High accruals can indicate earnings management, which may foreshadow future underperformance.\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Dividend Initiation\", \"construction\": \"Indicator variable equal to one if a firm initiates a cash dividend (DV) in the past year and zero otherwise.\", \"rationale\": \"Dividend initiations may signal management confidence in stable future cash flows.\", \"higher_returns_for\": \"firms that have just initiated a dividend\"},\n  {\"name\": \"Sales Volatility\", \"construction\": \"Standard deviation of quarterly sales (SALE) growth rates over the past three years.\", \"rationale\": \"Lower sales volatility may reflect stable operations and less uncertainty about future earnings.\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Management Share Purchases\", \"construction\": \"Net insider buying: number of insider share purchases minus insider sales over the prior year, as reported in SEC filings, scaled by shares outstanding.\", \"rationale\": \"Net buying by management may indicate undervaluation or positive private information.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Operating Lease Commitments\", \"construction\": \"Operating lease expense (as reported in footnotes) divided by total assets (AT).\", \"rationale\": \"High off-balance-sheet lease commitments may signal hidden leverage and risk.\", \"higher_returns_for\": \"low values of the measure\"},\n  {\"name\": \"Retained Earnings Ratio\", \"construction\": \"Retained earnings (RE) divided by total equity (CEQ) at fiscal year-end.\", \"rationale\": \"A high ratio suggests a track record of profitability and prudent reinvestment.\", \"higher_returns_for\": \"high values of the measure\"},\n  {\"name\": \"Segment Diversification Discount\", \"construction\": \"Number of distinct business segments reported in annual filings minus industry average, normalized by firm size.\", \"rationale\": \"Firms more diversified than their peers may suffer from a 'conglomerate discount' due to complexity and lack of focus.\", \"higher_returns_for\": \"low values of the measure\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 717,
+   "total_tokens": 986,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_801206523b"
+ }
+}

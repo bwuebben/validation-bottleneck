@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:25:08.207625+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 17,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ywi5mGJmtDnhGhe7oJ0tIMFSHwL",
+  "object": "chat.completion",
+  "created": 1784856296,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Analyst Revision\u2013Profitability Synergy\",\n    \"mechanism\": \"Analyst earnings forecast revisions capture timely information while profitability factors represent fundamental strength. Their combination exploits both forward-looking analyst insights and stable business quality. This synergy may compound return predictability, as analysts are more effective when fundamentals support their optimism or pessimism, yielding excess returns versus each alone.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"AnalystRevision\"},\n        {\"weight\": 1.0, \"primitive\": \"OperProf\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_UP\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"AnalystRevision\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 1.0,\n    \"expected_decay_half_life_months\": 48\n  },\n  {\n    \"name\": \"Volatility-Resistant Quality-Momentum\",\n    \"mechanism\": \"In periods of high market volatility, quality and momentum signals can become more distinct as risk-averse and risk-seeking investors react differently. A composite that is long quality (OperProfRD) and momentum (Mom12m), but only when VIX is above its trailing median, should capture volatility-driven mispricings.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"OperProfRD\"},\n        {\"weight\": 1.0, \"primitive\": \"Mom12m\"}\n      ],\n      \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.8,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Value-Momentum Volatility Switch\",\n    \"mechanism\": \"Momentum and value signals often cyclically offset each other\u2019s drawdowns. By going long value (BM) and short momentum (Mom12m) only when market volatility is below median, the composite aims to exploit the regime-dependent risk appetite of investors, increasing the risk-adjusted premium.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"BM\"},\n        {\"weight\": -1.0, \"primitive\": \"Mom12m\"}\n      ],\n      \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Asset Growth\u2013Short Interest Contrarian\",\n    \"mechanism\": \"Firms with high asset growth and high short interest tend to underperform due to overinvestment and informed negative sentiment. Shorting both via a composite should amplify the negative return premium as it combines fundamental and sentiment-based mispricing.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -1.0, \"primitive\": \"AssetGrowth\"},\n        {\"weight\": -1.0, \"primitive\": \"ShortInterest\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n      {\"type\": \"correlation\", \"primitive\": \"ShortInterest\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.85,\n    \"expected_decay_half_life_months\": 30\n  },\n  {\n    \"name\": \"Leverage\u2013Low Volatility Defensive\",\n    \"mechanism\": \"Stocks with low leverage and low realized volatility are less susceptible to distress risk and market shocks, especially when the yield curve is positive, making them more attractive defensively. Combining these should enhance downside protection beyond either alone.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -1.0, \"primitive\": \"Leverage\"},\n        {\"weight\": -1.0, \"primitive\": \"RealizedVol\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.75,\n    \"expected_decay_half_life_months\": 40\n  },\n  {\n    \"name\": \"Earnings Surprise\u2013Illiquidity Premium\",\n    \"mechanism\": \"Positive earnings surprises in illiquid stocks are slow to be reflected in prices due to trading frictions. A composite that is long both earnings surprise and illiquidity signals should capture delayed price reactions, yielding a premium not present in liquid stocks or in either factor separately.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"EarningsSurprise\"},\n        {\"weight\": 1.0, \"primitive\": \"Illiquidity\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"EarningsSurprise\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.9,\n    \"expected_decay_half_life_months\": 20\n  },\n  {\n    \"name\": \"Organizational Capital\u2013Long-Term Reversal\",\n    \"mechanism\": \"Firms with high organizational capital but poor past long-term returns are subject to underappreciated recovery opportunities. Combining organizational capital (OrgCap) with long-term reversal (LRreversal) captures both persistent intangible value and mean-reverting mispricing.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"OrgCap\"},\n        {\"weight\": 1.0, \"primitive\": \"LRreversal\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"correlation\", \"primitive\": \"OrgCap\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 60\n  },\n  {\n    \"name\": \"Share Repurchase\u2013Low Accruals Compounder\",\n    \"mechanism\": \"Firms repurchasing shares and with low accruals tend to have disciplined capital allocation and high earnings quality. The composite exploits the persistent undervaluation from high-quality capital return and cash earnings, creating a premium distinct from either factor alone.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"ShareRepurchase\"},\n        {\"weight\": -1.0, \"primitive\": \"Accruals\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.75,\n    \"expected_decay_half_life_months\": 36\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 1997,
+   "total_tokens": 4798,
+   "prompt_tokens_details": {
+    "cached_tokens": 2560,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5f160af537"
+ }
+}

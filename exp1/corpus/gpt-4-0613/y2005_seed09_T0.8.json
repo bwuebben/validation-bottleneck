@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:59:37.387510+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 9,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zTsNHLtdUPwdqMaqEK0eBCxPf9F",
+  "object": "chat.completion",
+  "created": 1784858352,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Employee Satisfaction\",\n      \"construction\": \"Use data from online job review platforms to create a measure of employee satisfaction for each publicly traded company.\",\n      \"rationale\": \"Firms with high employee satisfaction may be more productive and innovative, leading to higher future returns.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Customer Loyalty\",\n      \"construction\": \"Use data from customer satisfaction surveys to create a measure of customer loyalty for each publicly traded company.\",\n      \"rationale\": \"Firms with high customer loyalty may have more stable future revenues, leading to higher future returns.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Supply Chain Complexity\",\n      \"construction\": \"Use data from SEC filings to create a measure of supply chain complexity for each publicly traded company.\",\n      \"rationale\": \"Firms with complex supply chains may be more vulnerable to shocks, leading to lower future returns.\",\n      \"higher_returns_for\": \"Low values of the measure\"\n    },\n    {\n      \"name\": \"Data Breach Risk\",\n      \"construction\": \"Use data from cybersecurity ratings agencies to create a measure of data breach risk for each publicly traded company.\",\n      \"rationale\": \"Firms with high data breach risk may face future costs and reputational damage, leading to lower future returns.\",\n      \"higher_returns_for\": \"Low values of the measure\"\n    },\n    {\n      \"name\": \"Executive Health\",\n      \"construction\": \"Use data from executive physical exam disclosures to create a measure of executive health for each publicly traded company.\",\n      \"rationale\": \"Firms with unhealthy executives may face leadership instability, leading to lower future returns.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Political Risk Exposure\",\n      \"construction\": \"Use data from lobbying disclosures and geographic revenue breakdowns in SEC filings to create a measure of political risk exposure for each publicly traded company.\",\n      \"rationale\": \"Firms with high political risk exposure may face future costs and uncertainty, leading to lower future returns.\",\n      \"higher_returns_for\": \"Low values of the measure\"\n    },\n    {\n      \"name\": \"Media Sentiment\",\n      \"construction\": \"Use data from news articles and social media sentiment analysis to create a measure of media sentiment for each publicly traded company.\",\n      \"rationale\": \"Firms with positive media sentiment may have higher investor confidence, leading to higher future returns.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"ESG Score\",\n      \"construction\": \"Use data from environmental, social, and governance (ESG) ratings agencies to create a measure of ESG score for each publicly traded company.\",\n      \"rationale\": \"Firms with high ESG scores may attract more sustainable investing, leading to higher future returns.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    },\n    {\n      \"name\": \"Product Recall History\",\n      \"construction\": \"Use data from product recall databases to create a measure of product recall history for each publicly traded company.\",\n      \"rationale\": \"Firms with a history of product recalls may face future costs and reputational damage, leading to lower future returns.\",\n      \"higher_returns_for\": \"Low values of the measure\"\n    },\n    {\n      \"name\": \"Diversity Score\",\n      \"construction\": \"Use data from diversity and inclusion reports to create a measure of diversity score for each publicly traded company.\",\n      \"rationale\": \"Firms with high diversity scores may be more innovative and resilient, leading to higher future returns.\",\n      \"higher_returns_for\": \"High values of the measure\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 790,
+   "total_tokens": 1060,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

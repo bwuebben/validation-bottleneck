@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:00:21.939417+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 1,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zUkPk8T4AcL3GI546EaVsdLBeOm",
+  "object": "chat.completion",
+  "created": 1784858406,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n    {\"name\": \"Earnings Surprise Momentum\", \n     \"construction\": \"Change in earnings surprise (last 4 quarters earnings per share - analyst estimates) over the last 4 quarters\", \n     \"rationale\": \"Firms that consistently beat earnings estimates may have strong underlying growth or superior management\",\n     \"higher_returns_for\": \"High values of the measure\"}, \n     \n    {\"name\": \"Dividend Increase Frequency\", \n     \"construction\": \"Number of dividend increases over the last 10 years\", \n     \"rationale\": \"Firms that consistently increase dividends may have strong cash flows and be investor-friendly\", \n     \"higher_returns_for\": \"High values of the measure\"},\n     \n    {\"name\": \"CEO Tenure Return\", \n     \"construction\": \"Cumulative stock return during current CEO's tenure\", \n     \"rationale\": \"Long-tenured CEOs who have delivered strong returns may continue to outperform\", \n     \"higher_returns_for\": \"High values of the measure\"},\n     \n    {\"name\": \"Red Flag Ratio\", \n     \"construction\": \"Number of 'red flag' events (restatements, SEC investigations, lawsuits) over the last 5 years divided by total revenue\", \n     \"rationale\": \"Firms with a high ratio of 'red flags' to revenue may have governance or operational issues\", \n     \"higher_returns_for\": \"Low values of the measure\"},\n     \n    {\"name\": \"Industry Sentiment Shift\", \n     \"construction\": \"Change in industry sentiment (average analyst rating) over the last year\", \n     \"rationale\": \"Firms in industries where sentiment is improving may outperform\", \n     \"higher_returns_for\": \"High values of the measure\"},\n     \n    {\"name\": \"Product Cycle Momentum\", \n     \"construction\": \"Change in sales over the last year divided by number of new product introductions\", \n     \"rationale\": \"Firms that can efficiently drive sales through new products may have competitive advantages\", \n     \"higher_returns_for\": \"High values of the measure\"},\n     \n    {\"name\": \"Social Media Sentiment\", \n     \"construction\": \"Positive to negative sentiment ratio on social media platforms over the last quarter\", \n     \"rationale\": \"Companies with positive sentiment on social media may have strong customer loyalty and brand value\", \n     \"higher_returns_for\": \"High values of the measure\"},\n     \n    {\"name\": \"Shareholder Yield\", \n     \"construction\": \"Dividends plus share repurchases divided by market capitalization\", \n     \"rationale\": \"Firms that return a high proportion of capital to shareholders may outperform\", \n     \"higher_returns_for\": \"High values of the measure\"},\n     \n    {\"name\": \"Employee Satisfaction\", \n     \"construction\": \"Average employee rating on online job review sites\", \n     \"rationale\": \"Firms with high employee satisfaction may have better morale and productivity\", \n     \"higher_returns_for\": \"High values of the measure\"},\n     \n    {\"name\": \"Green Score\", \n     \"construction\": \"Environmental sustainability score from third-party ESG rating agencies\", \n     \"rationale\": \"Companies with strong environmental practices may be better positioned for future regulatory and societal changes\", \n     \"higher_returns_for\": \"High values of the measure\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 682,
+   "total_tokens": 952,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

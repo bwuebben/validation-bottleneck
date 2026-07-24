@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:27:48.849174+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y1995_seed04_T0.8.json",
+  "prompt_sha256": "1c5c31111dbad9de7746d932997b008bba7d4aa96d477b0d24d1df624af4dc53"
+ },
+ "response": {
+  "id": "chatcmpl-E4zvWflDZWC15vPSpz1WwcoF6gKHa",
+  "object": "chat.completion",
+  "created": 1784860066,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"hire\", \"strength\": \"close\", \"reason\": \"Both measure employment growth, but hire uses Compustat, not 10-K headcount.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses inventory volatility as constructed.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses operating lease expense intensity.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses debt repayment ratio as constructed.\"},\n  {\"index\": 4, \"match\": \"OperProf\", \"strength\": \"related\", \"reason\": \"Both relate to cost efficiency and profitability, but use different formulas.\"},\n  {\"index\": 5, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Both use patent counts, but PatentsRD is patents-to-R&D, not change.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses net non-operating income ratio.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses foreign sales proportion.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses change in receivables turnover.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses CEO tenure or similar executive tenure.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2747,
+   "completion_tokens": 360,
+   "total_tokens": 3107,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

@@ -1,0 +1,32 @@
+You are given a library of 212 published cross-sectional equity return predictors. Each is available as a monthly long-short portfolio return series, identified by its acronym.
+
+YOUR TASK: propose 8 NOVEL composite factor hypotheses. Each must be a new combination expressed in the grammar below — not a restatement of any single published predictor.
+
+DIVERSITY CONSTRAINTS (these are hard requirements):
+- Avoid canonical combinations that appear in textbooks or well-known practitioner literature (for example, generic value-plus-momentum blends or quality-minus-junk lookalikes).
+- Across your 8 hypotheses, use 8 DISTINCT economic channels — no two hypotheses may share the same underlying mechanism family.
+- Do not use the same primitive in more than 2 of the 8 hypotheses.
+- Prefer less-studied primitives whenever the mechanism genuinely justifies them.
+
+GRAMMAR (one expression per hypothesis):
+- "terms": 2 to 4 entries, each {"weight": w, "primitive": "<ACRONYM>"} with w in {-1.0, -0.5, 0.5, 1.0}. The composite's monthly return is the weighted sum of the primitives' long-short returns.
+- "regime": condition the position on an indicator observable at the end of the prior month, or null. One of: "VIX_ABOVE_TRAILING_MEDIAN", "VIX_BELOW_TRAILING_MEDIAN", "TERM_SPREAD_POSITIVE", "TERM_SPREAD_NEGATIVE", "MKT_TRAILING_12M_UP", "MKT_TRAILING_12M_DOWN". When set, the composite holds its position only in months where the indicator was true at the prior month-end, and holds zero otherwise.
+- "vol_target": true or false. If true, the monthly position is scaled to a 10% annualized volatility target using trailing 36-month volatility measured through the prior month-end.
+
+REQUIREMENTS FOR EACH HYPOTHESIS:
+1. ONE economic mechanism (at most 80 words) explaining WHY the composite should earn returns beyond what its components earn alone. Exactly one mechanism per hypothesis — do not offer alternative mechanisms.
+2. At least 3 auxiliary predictions IMPLIED BY THE MECHANISM, using at least 2 distinct types from this vocabulary:
+   - {"type": "regime_interaction", "regime": <one of the six indicators>, "direction": "higher"|"lower"} — the composite's mean return is higher/lower in that regime.
+   - {"type": "size_segment", "segment": "mega"|"large"|"small"|"micro", "direction": "stronger"|"weaker"} — the effect concentrates in that size segment.
+   - {"type": "international", "region": "developed_ex_us"|"emerging", "direction": "same_sign"|"opposite_sign"} — the composite's premium in that region relative to the US.
+   - {"type": "correlation", "primitive": "<ACRONYM>", "bound": "below"|"above", "threshold": 0.3} — the absolute correlation of the composite's returns with that primitive's returns.
+   - {"type": "subperiod_consistency"} — the premium is positive in both halves of any future evaluation window.
+   If the mechanism is true, ALL of its auxiliary predictions should hold. They are falsification criteria: if any fails, the mechanism is rejected even if the composite's average return is positive.
+3. "expected_annualized_sharpe": your honest point estimate, as a number.
+4. "expected_decay_half_life_months": how quickly you expect the premium to halve once the strategy is widely known, as a number of months, or null if you expect no decay.
+
+OUTPUT: valid JSON only, exactly this shape:
+{"hypotheses": [{"name": str, "mechanism": str, "expression": {"terms": [{"weight": float, "primitive": str}, ...], "regime": str_or_null, "vol_target": bool}, "auxiliary_predictions": [ ... ], "expected_annualized_sharpe": float, "expected_decay_half_life_months": float_or_null}, ... exactly 8 items]}
+
+THE PRIMITIVE LIBRARY (acronym: description):
+{LIBRARY}

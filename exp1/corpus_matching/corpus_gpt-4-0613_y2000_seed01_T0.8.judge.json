@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:24:56.851061+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y2000_seed01_T0.8.json",
+  "prompt_sha256": "c0a10ff8547be4f4e9649bc45fdf9e2007929dfcbfaeac3d34b11bd60d295eea"
+ },
+ "response": {
+  "id": "chatcmpl-E4zsihdociiL6JUcalqFJCucbBCpY",
+  "object": "chat.completion",
+  "created": 1784859892,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer satisfaction survey data.\"},\n  {\"index\": 1, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Both use patent counts relative to firm size/assets.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee turnover data.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor counts non-GAAP metrics in reports.\"},\n  {\"index\": 4, \"match\": \"Tax\", \"strength\": \"related\", \"reason\": \"Both use effective tax rate, but construction differs.\"},\n  {\"index\": 5, \"match\": \"Herf\", \"strength\": \"related\", \"reason\": \"Both relate to business diversification/segments, but measure differently.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses executive age diversity.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses gender pay gap data.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses derivatives usage as constructed.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses internet/web presence measures.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2675,
+   "completion_tokens": 336,
+   "total_tokens": 3011,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

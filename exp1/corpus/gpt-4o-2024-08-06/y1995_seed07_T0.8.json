@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:06:07.344529+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 7,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zaRImXBQTQhfK6Qt40XWg7wdO0d",
+  "object": "chat.completion",
+  "created": 1784858759,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"predictors\": [\n    {\n      \"name\": \"CashFlowVolatility\",\n      \"construction\": \"Standard deviation of quarterly cash flow from operations over the past three years, divided by average total assets over the same period.\",\n      \"rationale\": \"Firms with more volatile cash flows might face higher financing costs or signal management's inability to control operations, leading to risk compensation.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"R&DIntensityTrend\",\n      \"construction\": \"Linear trend coefficient of R&D expenses divided by sales over the last 5 years.\",\n      \"rationale\": \"Increasing R&D intensity might indicate a firm's commitment to innovation, potentially leading to future growth.\",\n      \"higher_returns_for\": \"positive trends\"\n    },\n    {\n      \"name\": \"EmployeeGrowth\",\n      \"construction\": \"Percentage change in total number of employees over the previous two years.\",\n      \"rationale\": \"Rapid growth in employee numbers may signal expanding operations and future revenue growth.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"SupplierConcentration\",\n      \"construction\": \"Herfindahl index based on the proportion of COGS attributed to the top three suppliers.\",\n      \"rationale\": \"High supplier concentration may indicate potential supply chain risks, requiring higher returns as compensation.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"OperationalEfficiency\",\n      \"construction\": \"Ratio of sales to administrative and selling expenses, calculated annually.\",\n      \"rationale\": \"Higher ratios indicate better cost management, potentially leading to higher profitability.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"DividendDiscontinuity\",\n      \"construction\": \"Binary variable indicating a dividend cut or omission in the past year.\",\n      \"rationale\": \"Dividend cuts may signal financial distress or restructuring, leading to uncertainty and higher required returns.\",\n      \"higher_returns_for\": \"presence of dividend discontinuity\"\n    },\n    {\n      \"name\": \"DeferredRevenueGrowth\",\n      \"construction\": \"Annual percentage change in deferred revenue from the balance sheet.\",\n      \"rationale\": \"Increasing deferred revenue might indicate higher future revenue recognition and potential growth.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"CapitalExpenditureChange\",\n      \"construction\": \"Change in capital expenditures as a percentage of total assets over the last two years.\",\n      \"rationale\": \"Increased capital expenditure can signal future growth opportunities that the market hasn't fully priced in.\",\n      \"higher_returns_for\": \"positive changes\"\n    },\n    {\n      \"name\": \"ForeignSalesExposure\",\n      \"construction\": \"Proportion of total sales generated from foreign markets in the most recent fiscal year.\",\n      \"rationale\": \"Firms with higher foreign sales might benefit from diversified market exposure and potential currency gains.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"ShortInterestRatio\",\n      \"construction\": \"Monthly short interest divided by average daily trading volume over the past month.\",\n      \"rationale\": \"High short interest might indicate potential overvaluation, leading to higher future returns as the market corrects.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 706,
+   "total_tokens": 975,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_94cd41efba"
+ }
+}

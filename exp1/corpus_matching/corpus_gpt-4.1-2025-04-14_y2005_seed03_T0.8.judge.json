@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:29:00.830731+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2005_seed03_T0.8.json",
+  "prompt_sha256": "839570a822f616f96ed5d57a684ddf611205d853106fec44367264cf992a6e54"
+ },
+ "response": {
+  "id": "chatcmpl-E4zwgXwrsRv4SsKCtb7BbB39iJeP4",
+  "object": "chat.completion",
+  "created": 1784860138,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses asset growth dispersion or volatility.\"},\n  {\"index\": 1, \"match\": \"RD\", \"strength\": \"close\", \"reason\": \"Both scale R&D by cash flow, but denominator differs (market cap vs FCF).\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses late filing or filing timeliness.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses net insider trading activity.\"},\n  {\"index\": 4, \"match\": \"AnalystRevision\", \"strength\": \"related\", \"reason\": \"Both use analyst forecast revisions, but not skewness specifically.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor measures cost stickiness or cost/revenue elasticity.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor counts new product announcements or launches.\"},\n  {\"index\": 7, \"match\": \"OrderBacklogChg\", \"strength\": \"exact\", \"reason\": \"Both use year-over-year change in order backlog.\"},\n  {\"index\": 8, \"match\": \"DivInit\", \"strength\": \"close\", \"reason\": \"Both flag dividend initiations, but proposal adds surprise/amount.\"},\n  {\"index\": 9, \"match\": \"CitationsRD\", \"strength\": \"close\", \"reason\": \"Both scale patent citations, but proposal uses assets, not RD expense.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2746,
+   "completion_tokens": 369,
+   "total_tokens": 3115,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

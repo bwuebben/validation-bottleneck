@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:10:53.190400+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 8,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zf5oIXjMeG7buZTgfuH8UZyeSmv",
+  "object": "chat.completion",
+  "created": 1784859047,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n    \"predictors\": [\n        {\n            \"name\": \"Patent Innovation Intensity\",\n            \"construction\": \"Number of new patents granted in the past year divided by total assets.\",\n            \"rationale\": \"Firms with higher patenting activity relative to their size may be more innovative and possess better growth prospects.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Employee Growth Rate\",\n            \"construction\": \"Annual percentage change in the number of employees reported by the firm.\",\n            \"rationale\": \"Rapidly expanding workforce may indicate strong business growth and future revenue increases.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Customer Concentration Risk\",\n            \"construction\": \"Revenue from the top 3 customers divided by total revenue.\",\n            \"rationale\": \"Firms with diversified customer bases are less vulnerable to losing key clients, indicating stability.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        },\n        {\n            \"name\": \"Board Independence Ratio\",\n            \"construction\": \"Number of independent board members divided by total board members.\",\n            \"rationale\": \"Greater board independence may lead to better governance and decision-making, enhancing shareholder value.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Operational Efficiency Change\",\n            \"construction\": \"Recent change in operating margin over the past year.\",\n            \"rationale\": \"Improvements in operational efficiency can signal enhanced profitability and competitive advantage.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"ESG Controversy Score\",\n            \"construction\": \"Negative news incidents related to environmental, social, and governance issues over the past year.\",\n            \"rationale\": \"Lower controversy scores indicate stronger ESG practices, which may reduce risk and improve reputation.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        },\n        {\n            \"name\": \"Supply Chain Diversity Index\",\n            \"construction\": \"Herfindahl-Hirschman Index of supplier expenditures.\",\n            \"rationale\": \"Diverse supply chains reduce dependency on single suppliers, mitigating risk and ensuring stability.\",\n            \"higher_returns_for\": \"low values of the measure\"\n        },\n        {\n            \"name\": \"R&D Expense Growth\",\n            \"construction\": \"Year-over-year percentage change in research and development expenditure.\",\n            \"rationale\": \"Increased investment in R&D could lead to future product innovations and enhanced market positions.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Social Media Sentiment Score\",\n            \"construction\": \"Net sentiment score from social media mentions over the past quarter, normalized by total mentions.\",\n            \"rationale\": \"Positive social media sentiment can reflect good consumer perception and potential demand growth.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        },\n        {\n            \"name\": \"Insider Trading Activity\",\n            \"construction\": \"Net shares bought by insiders over the past year divided by total shares outstanding.\",\n            \"rationale\": \"Insider buying suggests that management has confidence in the firm's future prospects and undervaluation.\",\n            \"higher_returns_for\": \"high values of the measure\"\n        }\n    ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 684,
+   "total_tokens": 953,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_8772b5f549"
+ }
+}

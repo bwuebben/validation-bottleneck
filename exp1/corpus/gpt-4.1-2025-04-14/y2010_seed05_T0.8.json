@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:17:19.393587+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 5,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zlIYB7N3jKbjqZTBqDFYPRtFP0h",
+  "object": "chat.completion",
+  "created": 1784859432,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"R&D Acceleration\", \"construction\": \"Year-over-year change in R&D expenditure (Compustat item XRD) as a percentage of total assets (AT), calculated as: [(XRD_t / AT_t) - (XRD_{t-1} / AT_{t-1})].\", \"rationale\": \"Firms accelerating investment in research may signal future growth opportunities ahead of observable results.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Earnings Season Momentum\", \"construction\": \"Cumulative stock return from the day before the most recent quarterly earnings announcement to 10 trading days after the announcement.\", \"rationale\": \"Stocks with strong post-earnings drift may be underreacted to by the market, offering return continuation.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Unusual Inventory Change\", \"construction\": \"Absolute value of percentage change in inventory (Compustat INVT) from previous fiscal year, divided by sales (SALE): |(INVT_t - INVT_{t-1}) / SALE_t|.\", \"rationale\": \"Large, atypical inventory changes may precede significant business developments not yet incorporated in price.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Net Insider Option Exercise Ratio\", \"construction\": \"Number of insider option exercises minus insider option grants over the past year, divided by total shares outstanding (from SEC Form 4 filings and Compustat CSHO).\", \"rationale\": \"A high net exercise rate may signal insider confidence about future stock performance.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Customer Concentration Exposure\", \"construction\": \"Sum of customer-specific revenues divided by total revenues, for customers accounting for >10% of sales (from 10-K segment disclosures).\", \"rationale\": \"Firms reliant on a few customers may face undiversified demand risk, which could be incorrectly priced by the market.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Employee Expense Growth\", \"construction\": \"Year-over-year growth rate of SG&A expenses per employee, computed as (SGA_t / EMP_t) - (SGA_{t-1} / EMP_{t-1}), using Compustat SGA and EMP.\", \"rationale\": \"Rapid growth in per-employee expense may signal competition for talent and possible future profit pressure.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Delayed Dividend Initiation\", \"construction\": \"Years since IPO before first dividend payment (CRSP IPO date, Compustat DV initiation), for firms that recently started paying dividends.\", \"rationale\": \"Firms that wait longer before initiating dividends may do so only after strong, sustainable cash flow is established.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Shareholder Proposal Intensity\", \"construction\": \"Count of shareholder proposals submitted in the last proxy season, normalized by market capitalization (from SEC DEF 14A filings and CRSP market cap).\", \"rationale\": \"Firms targeted by frequent proposals may face governance headwinds that impede performance.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Supplier Payment Stretch\", \"construction\": \"Change in days payable outstanding (DPO: Accounts Payable/AP divided by Cost of Goods Sold/COGS times 365) over the past year.\", \"rationale\": \"Firms increasing payment duration may be managing liquidity stress, raising risk.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Patent Citation Momentum\", \"construction\": \"Year-over-year growth in forward patent citations received by a firm\u2019s patents, normalized by total assets (patent data from USPTO and Compustat AT).\", \"rationale\": \"Rising citations may indicate increasing technological relevance not yet reflected in market value.\", \"higher_returns_for\": \"high values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 832,
+   "total_tokens": 1101,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_245b7c7787"
+ }
+}

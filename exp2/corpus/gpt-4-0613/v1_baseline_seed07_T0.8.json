@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T00:41:47.385300+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 7,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yGDvbJDOYTTzAnGi6Eq2L1xM7az",
+  "object": "chat.completion",
+  "created": 1784853661,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n    {\n        \"name\": \"Composite_A\",\n        \"mechanism\": \"Leverages the value and profitability factors for long positions, while mitigating risk with the short-term reversal factor. The strategy should outperform in a down market, as short-term reversals are more pronounced.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 0.5, \"primitive\": \"BM\"},\n                {\"weight\": 0.5, \"primitive\": \"GP\"},\n                {\"weight\": -0.5, \"primitive\": \"STreversal\"}\n            ],\n            \"regime\": \"MKT_TRAILING_12M_DOWN\",\n            \"vol_target\": true\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"lower\"},\n            {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n            {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}\n        ],\n        \"expected_annualized_sharpe\": 0.8,\n        \"expected_decay_half_life_months\": 36\n    },\n    {\n        \"name\": \"Composite_B\",\n        \"mechanism\": \"Momentum is combined with share issuance to identify growth companies. The strategy ignores companies that issue additional shares, as they are often overvalued.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"Mom12m\"},\n                {\"weight\": -1.0, \"primitive\": \"ShareIss1Y\"}\n            ],\n            \"regime\": null,\n            \"vol_target\": false\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n            {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"above\", \"threshold\": 0.3},\n            {\"type\": \"subperiod_consistency\"}\n        ],\n        \"expected_annualized_sharpe\": 1.0,\n        \"expected_decay_half_life_months\": 24\n    },\n    {\n        \"name\": \"Composite_C\",\n        \"mechanism\": \"Profitable companies (high GP) that are undervalued (low BM) and have strong momentum (high Mom12m) are expected to outperform. The strategy is more effective during market upturns.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 0.5, \"primitive\": \"BM\"},\n                {\"weight\": 0.5, \"primitive\": \"GP\"},\n                {\"weight\": 0.5, \"primitive\": \"Mom12m\"}\n            ],\n            \"regime\": \"MKT_TRAILING_12M_UP\",\n            \"vol_target\": true\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"},\n            {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n            {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}\n        ],\n        \"expected_annualized_sharpe\": 0.9,\n        \"expected_decay_half_life_months\": 30\n    },\n    {\n        \"name\": \"Composite_D\",\n        \"mechanism\": \"In low volatility regimes, the strategy is to short firms with high idiosyncratic volatility and go long on firms with low bid-ask spread, as these are typically more liquid and less risky.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": -1.0, \"primitive\": \"IdioVolAHT\"},\n                {\"weight\": 1.0, \"primitive\": \"BidAskSpread\"}\n            ],\n            \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n            \"vol_target\": false\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n            {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3},\n            {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n        ],\n        \"expected_annualized_sharpe\": 0.7,\n        \"expected_decay_half_life_months\": null\n    },\n    {\n        \"name\": \"Composite_E\",\n        \"mechanism\": \"The strategy exploits the mispricing of firms with high R&D capital-to-assets (undervalued) and high momentum (trending upwards). It's expected to perform better in up markets.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"RDcap\"},\n                {\"weight\": 1.0, \"primitive\": \"Mom12m\"}\n            ],\n            \"regime\": \"MKT_TRAILING_12M_UP\",\n            \"vol_target\": true\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n            {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n            {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"above\", \"threshold\": 0.3}\n        ],\n        \"expected_annualized_sharpe\": 0.8,\n        \"expected_decay_half_life_months\": 18\n    },\n    {\n        \"name\": \"Composite_F\",\n        \"mechanism\": \"Combines the value factor (BM) with the leverage factor (Leverage) to identify undervalued companies with high leverage. The strategy should perform better during market upturns.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"BM\"},\n                {\"weight\": 1.0, \"primitive\": \"Leverage\"}\n            ],\n            \"regime\": \"MKT_TRAILING_12M_UP\",\n            \"vol_target\": true\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n            {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"above\", \"threshold\": 0.3},\n            {\"type\": \"subperiod_consistency\"}\n        ],\n        \"expected_annualized_sharpe\": 0.7,\n        \"expected_decay_half_life_months\": 24\n    },\n    {\n        \"name\": \"Composite_G\",\n        \"mechanism\": \"Leverages the profitability factor (GP) and the momentum factor (Mom12m) for long positions, while shorting firms with high share issuance (ShareIss1Y), which are typically overvalued.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 0.5, \"primitive\": \"GP\"},\n                {\"weight\": 0.5, \"primitive\": \"Mom12m\"},\n                {\"weight\": -0.5, \"primitive\": \"ShareIss1Y\"}\n            ],\n            \"regime\": null,\n            \"vol_target\": false\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n            {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n            {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"above\", \"threshold\": 0.3}\n        ],\n        \"expected_annualized_sharpe\": 0.8,\n        \"expected_decay_half_life_months\": 36\n    },\n    {\n        \"name\": \"Composite_H\",\n        \"mechanism\": \"The strategy shorts firms with high idiosyncratic risk and low momentum, and goes long on firms with high momentum and low risk. It's expected to perform better in down markets.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": -1.0, \"primitive\": \"IdioVolAHT\"},\n                {\"weight\": 1.0, \"primitive\": \"Mom12m\"},\n                {\"weight\": 0.5, \"primitive\": \"Beta\"}\n            ],\n            \"regime\": \"MKT_TRAILING_12M_DOWN\",\n            \"vol_target\": true\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n            {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"lower\"},\n            {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"above\", \"threshold\": 0.3}\n        ],\n        \"expected_annualized_sharpe\": 0.9,\n        \"expected_decay_half_life_months\": 24\n    }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2864,
+   "completion_tokens": 1920,
+   "total_tokens": 4784,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

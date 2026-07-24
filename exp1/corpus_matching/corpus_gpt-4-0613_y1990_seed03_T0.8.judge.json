@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:23:32.429507+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y1990_seed03_T0.8.json",
+  "prompt_sha256": "435e917a5bc22ccf848ca621290e84fcab0f7fb258180d1aa0c7b06d9a597b61"
+ },
+ "response": {
+  "id": "chatcmpl-E4zrMYfWqdhzC8FlnWrnSMHFOBjra",
+  "object": "chat.completion",
+  "created": 1784859808,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"DivSeason\", \"strength\": \"close\", \"reason\": \"Both use dividend changes; DivSeason is seasonal, proposal is annual.\"},\n  {\"index\": 1, \"match\": \"ChAssetTurnover\", \"strength\": \"close\", \"reason\": \"Both measure change in asset turnover, but proposal uses COGS/inventory.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses change in debt coverage ratio.\"},\n  {\"index\": 3, \"match\": \"ChAssetTurnover\", \"strength\": \"exact\", \"reason\": \"Both measure change in sales/total assets over time.\"},\n  {\"index\": 4, \"match\": \"NetPayoutYield\", \"strength\": \"close\", \"reason\": \"NetPayoutYield includes dividends and buybacks, matching construction.\"},\n  {\"index\": 5, \"match\": \"VarCF\", \"strength\": \"exact\", \"reason\": \"Both use cash-flow to price variance/volatility.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses CEO tenure or similar.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses tax rate stability/persistence.\"},\n  {\"index\": 8, \"match\": \"hire\", \"strength\": \"exact\", \"reason\": \"Both measure employment growth as percent change in employees.\"},\n  {\"index\": 9, \"match\": \"RDcap\", \"strength\": \"exact\", \"reason\": \"Both use R&D expenses to total assets ratio.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2643,
+   "completion_tokens": 368,
+   "total_tokens": 3011,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

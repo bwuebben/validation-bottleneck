@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:00:05.347631+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zUVX0S3YRoK9BQj8LGio4vVbaqG",
+  "object": "chat.completion",
+  "created": 1784858391,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\n    \"name\": \"Social Media Sentiment\",\n    \"construction\": \"Measure the sentiment of social media posts about a company over the past month using natural language processing techniques.\",\n    \"rationale\": \"Positive sentiment on social media may indicate positive future performance.\",\n    \"higher_returns_for\": \"Companies with high positive sentiment\"\n  },\n  {\n    \"name\": \"CEO Compensation Ratio\",\n    \"construction\": \"Calculate the ratio of CEO compensation to median employee compensation.\",\n    \"rationale\": \"A high ratio may indicate overcompensation of the CEO and potential misallocation of resources.\",\n    \"higher_returns_for\": \"Companies with low CEO compensation ratios\"\n  },\n  {\n    \"name\": \"Product Review Score\",\n    \"construction\": \"Aggregate and average product review scores from online retailers over the past quarter.\",\n    \"rationale\": \"High product review scores may indicate high product quality and customer satisfaction, leading to increased sales.\",\n    \"higher_returns_for\": \"Companies with high product review scores\"\n  },\n  {\n    \"name\": \"Patent Application Count\",\n    \"construction\": \"Count the number of patent applications filed by a company over the past year.\",\n    \"rationale\": \"A high number of patent applications may indicate a strong research and development pipeline.\",\n    \"higher_returns_for\": \"Companies with a high number of patent applications\"\n  },\n  {\n    \"name\": \"Employee Turnover Rate\",\n    \"construction\": \"Calculate the annual employee turnover rate.\",\n    \"rationale\": \"A high turnover rate may indicate employee dissatisfaction and potential operational issues.\",\n    \"higher_returns_for\": \"Companies with low employee turnover rates\"\n  },\n  {\n    \"name\": \"Customer Complaint Count\",\n    \"construction\": \"Count the number of customer complaints received over the past quarter.\",\n    \"rationale\": \"A high number of complaints may indicate poor product quality or customer service, potentially impacting future sales.\",\n    \"higher_returns_for\": \"Companies with low customer complaint counts\"\n  },\n  {\n    \"name\": \"Supplier Concentration\",\n    \"construction\": \"Calculate the percentage of supplies sourced from the company's largest supplier.\",\n    \"rationale\": \"High supplier concentration may indicate vulnerability to supply chain disruptions.\",\n    \"higher_returns_for\": \"Companies with low supplier concentration\"\n  },\n  {\n    \"name\": \"Environmental Impact Score\",\n    \"construction\": \"Calculate an environmental impact score based on publicly available data on a company's carbon emissions, waste production, and water usage.\",\n    \"rationale\": \"Companies with low environmental impact may be more attractive to socially conscious investors.\",\n    \"higher_returns_for\": \"Companies with low environmental impact scores\"\n  },\n  {\n    \"name\": \"Cybersecurity Incident Count\",\n    \"construction\": \"Count the number of reported cybersecurity incidents over the past year.\",\n    \"rationale\": \"A high number of incidents may indicate poor cybersecurity practices and potential future liabilities.\",\n    \"higher_returns_for\": \"Companies with low cybersecurity incident counts\"\n  },\n  {\n    \"name\": \"Diversity Score\",\n    \"construction\": \"Calculate a diversity score based on the representation of different demographic groups in a company's workforce.\",\n    \"rationale\": \"Companies with diverse workforces may benefit from a wider range of perspectives and ideas.\",\n    \"higher_returns_for\": \"Companies with high diversity scores\"\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 686,
+   "total_tokens": 956,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

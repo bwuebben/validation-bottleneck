@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:25:14.133379+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y2000_seed06_T0.8.json",
+  "prompt_sha256": "04465927b60940d5c2d206d1ad3171f6de54dc48d865e6a9f25bf328e441978f"
+ },
+ "response": {
+  "id": "chatcmpl-E4zt0sgM5SbHgbgWEn4YhkG3kwuDt",
+  "object": "chat.completion",
+  "created": 1784859910,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses dividend coverage volatility or similar construction.\"},\n  {\"index\": 1, \"match\": \"ChAssetTurnover\", \"strength\": \"close\", \"reason\": \"Both measure changes in inventory efficiency, though via different ratios.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses dispersion of sales forecasts.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses customer concentration or similar construction.\"},\n  {\"index\": 4, \"match\": \"CashProd\", \"strength\": \"related\", \"reason\": \"Both relate to productivity, but use different numerator (sales vs. cash).\"},\n  {\"index\": 5, \"match\": \"FR\", \"strength\": \"exact\", \"reason\": \"FR is pension funding status: assets minus obligations.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses discounted off-balance sheet liabilities.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses geographic diversification or segment count.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses environmental compliance cost.\"},\n  {\"index\": 9, \"match\": \"grcapx\", \"strength\": \"close\", \"reason\": \"Both measure change in capex relative to assets or PPE.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2668,
+   "completion_tokens": 353,
+   "total_tokens": 3021,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

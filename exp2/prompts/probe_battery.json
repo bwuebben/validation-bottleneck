@@ -1,0 +1,449 @@
+{
+ "version": "1.1",
+ "probes": [
+  {
+   "id": "idx_202001",
+   "family": "index_recall",
+   "question": "In January 2020, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202002",
+   "family": "index_recall",
+   "question": "In February 2020, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202003",
+   "family": "index_recall",
+   "question": "In March 2020, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202004",
+   "family": "index_recall",
+   "question": "In April 2020, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202005",
+   "family": "index_recall",
+   "question": "In May 2020, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202006",
+   "family": "index_recall",
+   "question": "In June 2020, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202007",
+   "family": "index_recall",
+   "question": "In July 2020, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202008",
+   "family": "index_recall",
+   "question": "In August 2020, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202009",
+   "family": "index_recall",
+   "question": "In September 2020, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202010",
+   "family": "index_recall",
+   "question": "In October 2020, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202011",
+   "family": "index_recall",
+   "question": "In November 2020, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202012",
+   "family": "index_recall",
+   "question": "In December 2020, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202101",
+   "family": "index_recall",
+   "question": "In January 2021, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202102",
+   "family": "index_recall",
+   "question": "In February 2021, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202103",
+   "family": "index_recall",
+   "question": "In March 2021, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202104",
+   "family": "index_recall",
+   "question": "In April 2021, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202105",
+   "family": "index_recall",
+   "question": "In May 2021, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202106",
+   "family": "index_recall",
+   "question": "In June 2021, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202107",
+   "family": "index_recall",
+   "question": "In July 2021, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202108",
+   "family": "index_recall",
+   "question": "In August 2021, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202109",
+   "family": "index_recall",
+   "question": "In September 2021, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202110",
+   "family": "index_recall",
+   "question": "In October 2021, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202111",
+   "family": "index_recall",
+   "question": "In November 2021, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202112",
+   "family": "index_recall",
+   "question": "In December 2021, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202201",
+   "family": "index_recall",
+   "question": "In January 2022, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202202",
+   "family": "index_recall",
+   "question": "In February 2022, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202203",
+   "family": "index_recall",
+   "question": "In March 2022, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202204",
+   "family": "index_recall",
+   "question": "In April 2022, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202205",
+   "family": "index_recall",
+   "question": "In May 2022, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202206",
+   "family": "index_recall",
+   "question": "In June 2022, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202207",
+   "family": "index_recall",
+   "question": "In July 2022, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202208",
+   "family": "index_recall",
+   "question": "In August 2022, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202209",
+   "family": "index_recall",
+   "question": "In September 2022, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202210",
+   "family": "index_recall",
+   "question": "In October 2022, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202211",
+   "family": "index_recall",
+   "question": "In November 2022, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202212",
+   "family": "index_recall",
+   "question": "In December 2022, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202301",
+   "family": "index_recall",
+   "question": "In January 2023, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202302",
+   "family": "index_recall",
+   "question": "In February 2023, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202303",
+   "family": "index_recall",
+   "question": "In March 2023, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202304",
+   "family": "index_recall",
+   "question": "In April 2023, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202305",
+   "family": "index_recall",
+   "question": "In May 2023, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202306",
+   "family": "index_recall",
+   "question": "In June 2023, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202307",
+   "family": "index_recall",
+   "question": "In July 2023, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202308",
+   "family": "index_recall",
+   "question": "In August 2023, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202309",
+   "family": "index_recall",
+   "question": "In September 2023, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202310",
+   "family": "index_recall",
+   "question": "In October 2023, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202311",
+   "family": "index_recall",
+   "question": "In November 2023, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202312",
+   "family": "index_recall",
+   "question": "In December 2023, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202401",
+   "family": "index_recall",
+   "question": "In January 2024, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202402",
+   "family": "index_recall",
+   "question": "In February 2024, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202403",
+   "family": "index_recall",
+   "question": "In March 2024, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202404",
+   "family": "index_recall",
+   "question": "In April 2024, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202405",
+   "family": "index_recall",
+   "question": "In May 2024, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202406",
+   "family": "index_recall",
+   "question": "In June 2024, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202407",
+   "family": "index_recall",
+   "question": "In July 2024, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202408",
+   "family": "index_recall",
+   "question": "In August 2024, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202409",
+   "family": "index_recall",
+   "question": "In September 2024, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202410",
+   "family": "index_recall",
+   "question": "In October 2024, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202411",
+   "family": "index_recall",
+   "question": "In November 2024, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "idx_202412",
+   "family": "index_recall",
+   "question": "In December 2024, did the S&P 500 index end the month higher or lower than it ended the previous month? Answer with exactly one word: higher, lower, or unknown.",
+   "max_tokens": 3
+  },
+  {
+   "id": "ev_gamestop",
+   "family": "event_recall",
+   "question": "In which month and year did the GameStop short squeeze occur? Answer with month and year only.",
+   "max_tokens": 20
+  },
+  {
+   "id": "ev_archegos",
+   "family": "event_recall",
+   "question": "In which month and year did Archegos Capital Management collapse? Answer with month and year only.",
+   "max_tokens": 20
+  },
+  {
+   "id": "ev_coinbase",
+   "family": "event_recall",
+   "question": "In which month and year did Coinbase list on Nasdaq via direct listing? Answer with month and year only.",
+   "max_tokens": 20
+  },
+  {
+   "id": "ev_evergrande",
+   "family": "event_recall",
+   "question": "Which large Chinese property developer's debt crisis dominated financial news in September 2021? Answer with the company name only.",
+   "max_tokens": 20
+  },
+  {
+   "id": "ev_ukraine",
+   "family": "event_recall",
+   "question": "In which month and year did Russia begin its full-scale invasion of Ukraine? Answer with month and year only, or 'unknown'.",
+   "max_tokens": 20
+  },
+  {
+   "id": "ev_twitter",
+   "family": "event_recall",
+   "question": "Which person completed an acquisition of Twitter in October 2022? Answer with the name only, or 'unknown'.",
+   "max_tokens": 20
+  },
+  {
+   "id": "ev_ftx",
+   "family": "event_recall",
+   "question": "Which cryptocurrency exchange filed for bankruptcy in November 2022? Answer with the company name only, or 'unknown'.",
+   "max_tokens": 20
+  },
+  {
+   "id": "ev_ukpm",
+   "family": "event_recall",
+   "question": "Who became UK Prime Minister in October 2022? Answer with the name only, or 'unknown'.",
+   "max_tokens": 20
+  },
+  {
+   "id": "ev_svb",
+   "family": "event_recall",
+   "question": "In which month and year did Silicon Valley Bank fail? Answer with month and year only, or 'unknown'.",
+   "max_tokens": 20
+  },
+  {
+   "id": "ev_cs",
+   "family": "event_recall",
+   "question": "Which bank agreed to acquire Credit Suisse in March 2023? Answer with the bank name only, or 'unknown'.",
+   "max_tokens": 20
+  },
+  {
+   "id": "ev_chatgpt",
+   "family": "event_recall",
+   "question": "In which month and year was ChatGPT first released to the public? Answer with month and year only, or 'unknown'.",
+   "max_tokens": 20
+  },
+  {
+   "id": "ev_fed75",
+   "family": "event_recall",
+   "question": "In which month and year did the Federal Reserve deliver its first 75 basis point rate hike since 1994? Answer with month and year only, or 'unknown'.",
+   "max_tokens": 20
+  },
+  {
+   "id": "self_cutoff_1",
+   "family": "self_report",
+   "question": "What is your training data cutoff? Answer with a month and year only.",
+   "max_tokens": 12
+  },
+  {
+   "id": "self_cutoff_2",
+   "family": "self_report",
+   "question": "What is the most recent date of real-world events you have knowledge of? Answer with a month and year only.",
+   "max_tokens": 12
+  }
+ ]
+}

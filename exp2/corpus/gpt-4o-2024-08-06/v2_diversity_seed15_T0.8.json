@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:19:38.771231+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 15,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yrJnep5QYo82TGK7MYDbIMDp8fJ",
+  "object": "chat.completion",
+  "created": 1784855961,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"Liquidity-Driven Anomaly\",\n      \"mechanism\": \"This composite strategy exploits liquidity-driven mispricing by combining funding illiquidity and market-wide liquidity risk, which tend to be priced differently across market regimes.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"BetaLiquidityPS\"},\n          {\"weight\": -0.5, \"primitive\": \"Illiquidity\"},\n          {\"weight\": 1.0, \"primitive\": \"BidAskSpread\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.8,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"Growth-Value Discrepancy\",\n      \"mechanism\": \"This composite captures the mispricing between growth prospects and value metrics, which can arise in different economic environments due to differences in risk perception and investor sentiment.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"GrSaleToGrOverhead\"},\n          {\"weight\": -1.0, \"primitive\": \"BM\"},\n          {\"weight\": 0.5, \"primitive\": \"AnalystRevision\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"AnalystRevision\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.7,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"Innovation vs. Traditional Returns\",\n      \"mechanism\": \"This strategy identifies discrepancies between traditional industry performance and innovation-driven sectors, capitalizing on slow investor adaptation to technological change.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"PatentsRD\"},\n          {\"weight\": -0.5, \"primitive\": \"IndRetBig\"},\n          {\"weight\": 0.5, \"primitive\": \"RDAbility\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": 18\n    },\n    {\n      \"name\": \"Financial Distress Mispricing\",\n      \"mechanism\": \"This hypothesis combines indicators of financial distress and leverage to capture mispriced risk of default or financial instability, which can be exacerbated during market downturns.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"OScore\"},\n          {\"weight\": -0.5, \"primitive\": \"Leverage\"},\n          {\"weight\": 0.5, \"primitive\": \"CreditRatDG\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.75,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Contrarian Momentum Shift\",\n      \"mechanism\": \"By mixing elements of contrarian and momentum strategies, this composite seeks to exploit shifts in investor sentiment and herd behavior, especially following extreme market movements.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"MRreversal\"},\n          {\"weight\": -0.5, \"primitive\": \"Mom12m\"},\n          {\"weight\": 1.0, \"primitive\": \"MomOffSeason\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_DOWN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n        {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"opposite_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.85,\n      \"expected_decay_half_life_months\": 20\n    },\n    {\n      \"name\": \"Operational Efficiency Premium\",\n      \"mechanism\": \"This strategy captures the premium associated with firms improving their operational efficiency, leveraging changes in asset turnover and tax policy as convergence indicators.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"ChAssetTurnover\"},\n          {\"weight\": -0.5, \"primitive\": \"ChTax\"},\n          {\"weight\": 0.5, \"primitive\": \"OperProf\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.65,\n      \"expected_decay_half_life_months\": 40\n    },\n    {\n      \"name\": \"Debt-Equity Interplay\",\n      \"mechanism\": \"This composite exploits the differential pricing of debt and equity issuance signals, which can reflect varying investor risk perceptions and corporate financing policies.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"NetDebtFinance\"},\n          {\"weight\": -1.0, \"primitive\": \"NetEquityFinance\"},\n          {\"weight\": 0.5, \"primitive\": \"DebtIssuance\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"correlation\", \"primitive\": \"DebtIssuance\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.78,\n      \"expected_decay_half_life_months\": 28\n    },\n    {\n      \"name\": \"Corporate Governance Arbitrage\",\n      \"mechanism\": \"This strategy captures inconsistencies in market pricing of governance quality by leveraging activism and governance index disparities, which may not be immediately observable.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"Activism2\"},\n          {\"weight\": -0.5, \"primitive\": \"Governance\"},\n          {\"weight\": 0.5, \"primitive\": \"DelBreadth\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"subperiod_consistency\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.73,\n      \"expected_decay_half_life_months\": 22\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2903,
+   "completion_tokens": 1920,
+   "total_tokens": 4823,
+   "prompt_tokens_details": {
+    "cached_tokens": 2688,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

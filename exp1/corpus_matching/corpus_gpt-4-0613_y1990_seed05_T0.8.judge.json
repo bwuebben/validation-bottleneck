@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:23:43.088154+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y1990_seed05_T0.8.json",
+  "prompt_sha256": "890b5c3b26a654e84ea2cfa966086d3b9db42e2f3a0afaff2866e7389101c578"
+ },
+ "response": {
+  "id": "chatcmpl-E4zrWMUoU2G26MDLW1ADZJiRuLDN5",
+  "object": "chat.completion",
+  "created": 1784859818,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No inventory turnover or similar ratio in library.\"},\n  {\"index\": 1, \"match\": \"Cash\", \"strength\": \"exact\", \"reason\": \"Cash to assets is in the library as 'Cash'.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No R&D to sales or similar in library.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No employee turnover or related labor metric in library.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No debt maturity or long-term debt ratio in library.\"},\n  {\"index\": 5, \"match\": \"grcapx\", \"strength\": \"close\", \"reason\": \"Both use capex, but grcapx is growth, not intensity.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No dividend payout ratio or similar in library.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No operating cash flow margin or similar in library.\"},\n  {\"index\": 8, \"match\": \"FirmAge\", \"strength\": \"exact\", \"reason\": \"FirmAge is defined as firm age in library.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No employee satisfaction or similar survey-based metric in library.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2594,
+   "completion_tokens": 348,
+   "total_tokens": 2942,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:27:52.812481+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y1995_seed05_T0.8.json",
+  "prompt_sha256": "33b04e6c1f2fa258f4534cac12dc910d1b64eb5d75f26150eabf89836d878a1b"
+ },
+ "response": {
+  "id": "chatcmpl-E4zvZDYAEd22tCc0qwGfHfj0Z7WDV",
+  "object": "chat.completion",
+  "created": 1784860069,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"grcapx\", \"strength\": \"close\", \"reason\": \"Both measure change in investment; grcapx is for capex, proposal for R&D.\"},\n  {\"index\": 1, \"match\": \"DelFINL\", \"strength\": \"close\", \"reason\": \"DelFINL covers change in financial liabilities, includes short-term debt.\"},\n  {\"index\": 2, \"match\": \"ChAssetTurnover\", \"strength\": \"related\", \"reason\": \"Both reflect operational efficiency; turnover vs. change in turnover.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses insider net purchases as constructed.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses non-operating income share as constructed.\"},\n  {\"index\": 5, \"match\": \"DivInit\", \"strength\": \"exact\", \"reason\": \"DivInit is dividend initiation, same as unexpected dividend initiations.\"},\n  {\"index\": 6, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"PatentsRD is patents to R&D; proposal is patent growth, both innovation signals.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses related-party transactions ratio.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses auditor tenure or change.\"},\n  {\"index\": 9, \"match\": \"LRreversal\", \"strength\": \"related\", \"reason\": \"Both exploit post-event long-run reversal, but proposal is IPO-specific.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2778,
+   "completion_tokens": 383,
+   "total_tokens": 3161,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

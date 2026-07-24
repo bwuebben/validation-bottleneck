@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:30:17.638262+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 12,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4z1c9K9srVE5pcKtLZTaKbjrG70r",
+  "object": "chat.completion",
+  "created": 1784856600,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Supply Chain Shock Absorbers\",\n    \"mechanism\": \"Combining the customer and supplier momentum factors exploits firms resilient to supply chain disruptions. Firms excelling in both suggest robust supply-demand linkages, amplifying their ability to weather exogenous shocks. The interaction captures spillover and persistence effects not present in either channel alone.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"iomom_cust\"},\n        {\"weight\": 1.0, \"primitive\": \"iomom_supp\"},\n        {\"weight\": -0.5, \"primitive\": \"BetaTailRisk\"}\n      ],\n      \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.90,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Intangible Efficiency Spread\",\n    \"mechanism\": \"This composite captures firms excelling in both brand investments and R&D efficiency, but penalizes those that only accumulate intangible assets without profitability. The interaction should pick up firms converting intangibles into actual business advantages, not just spending.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"BrandInvest\"},\n        {\"weight\": 0.5, \"primitive\": \"RDAbility\"},\n        {\"weight\": -1.0, \"primitive\": \"IntanBM\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n      {\"type\": \"correlation\", \"primitive\": \"CF\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"}\n    ],\n    \"expected_annualized_sharpe\": 0.70,\n    \"expected_decay_half_life_months\": 18\n  },\n  {\n    \"name\": \"Procyclical Governance Premium\",\n    \"mechanism\": \"Firms with strong governance and high payout yields exhibit amplified procyclical returns when credit markets are loose. The combination should outperform each component when economic confidence is high and capital allocation is both disciplined and shareholder-friendly.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"Governance\"},\n        {\"weight\": 1.0, \"primitive\": \"PayoutYield\"},\n        {\"weight\": 0.5, \"primitive\": \"NetPayoutYield\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"subperiod_consistency\"},\n      {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.65,\n    \"expected_decay_half_life_months\": 30\n  },\n  {\n    \"name\": \"Contrarian Analyst Revision-Dispersion\",\n    \"mechanism\": \"Firms with rising EPS forecast revisions but high forecast dispersion are often overlooked due to perceived risk. This composite bets on positive revisions when the analyst base is divided, exploiting delayed consensus formation.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"AnalystRevision\"},\n        {\"weight\": 1.0, \"primitive\": \"EarningsForecastDisparity\"},\n        {\"weight\": -0.5, \"primitive\": \"ForecastDispersion\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_UP\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"AnalystValue\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.75,\n    \"expected_decay_half_life_months\": 20\n  },\n  {\n    \"name\": \"Inventory-Cycle Risk Aversion\",\n    \"mechanism\": \"Combining inventory growth, Amihud illiquidity, and short-term reversal, this composite bets against firms with rising inventories and illiquidity, except when mean reversion dominates. The interaction captures inventory-cycle risk mispricing amplified by liquidity constraints.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"InvGrowth\"},\n        {\"weight\": 0.5, \"primitive\": \"Illiquidity\"},\n        {\"weight\": -1.0, \"primitive\": \"STreversal\"}\n      ],\n      \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"AssetGrowth\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.80,\n    \"expected_decay_half_life_months\": 12\n  },\n  {\n    \"name\": \"IPO Posture Paradox\",\n    \"mechanism\": \"Firms recently public (young IPO age) but with high organizational capital and minimal short interest balance novelty and embedded know-how with skepticism. The composite exploits cases where market underappreciates operational readiness amid debut uncertainty.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"AgeIPO\"},\n        {\"weight\": 1.0, \"primitive\": \"OrgCap\"},\n        {\"weight\": -1.0, \"primitive\": \"ShortInterest\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.60,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Capital Discipline under Stress\",\n    \"mechanism\": \"Firms with high cash productivity and low composite equity issuance (i.e., returning capital rather than raising it) outperform specifically during falling markets. The discipline to produce cash and avoid dilutive actions signals resilience.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"CashProd\"},\n        {\"weight\": -1.0, \"primitive\": \"CompEquIss\"},\n        {\"weight\": 0.5, \"primitive\": \"DelEqu\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n      {\"type\": \"correlation\", \"primitive\": \"CBOperProf\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.80,\n    \"expected_decay_half_life_months\": 16\n  },\n  {\n    \"name\": \"Smirk-Skew Volatility Mispricing\",\n    \"mechanism\": \"Combining the volatility smirk and realized skewness factors, this composite arbitrages option market mispricings related to tail risk that are not captured by linear volatility strategies. It bets on stocks with extreme implied skew but low realized skewness, exploiting behavioral risk misestimation.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"skew1\"},\n        {\"weight\": -1.0, \"primitive\": \"ReturnSkew\"},\n        {\"weight\": 0.5, \"primitive\": \"SmileSlope\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"RealizedVol\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.70,\n    \"expected_decay_half_life_months\": 10\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2903,
+   "completion_tokens": 2105,
+   "total_tokens": 5008,
+   "prompt_tokens_details": {
+    "cached_tokens": 2688,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_b5121c360f"
+ }
+}

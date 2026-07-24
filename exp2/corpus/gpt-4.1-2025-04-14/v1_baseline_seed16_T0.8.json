@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:24:55.073228+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "prompt_variant": "v1_baseline",
+  "prompt_sha256": "986accfec998f1a81a30e28bf28d9a21ecde83597eed1d15c26325a4aa755784",
+  "seed": 16,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ywXOfR6cgaPLbFnvl9l2RTcZXGV",
+  "object": "chat.completion",
+  "created": 1784856285,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\n    \"name\": \"Intangible Value-Momentum Synergy\",\n    \"mechanism\": \"Firms with high intangible assets (IntanBM) often face valuation uncertainty, but when combined with momentum (Mom12m), positive price trends may indicate market recognition of intangible value. This composite exploits periods when both value (intangible BM) and momentum signals align, capturing returns missed by using either alone.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 0.5, \"primitive\": \"IntanBM\"},\n        {\"weight\": 0.5, \"primitive\": \"Mom12m\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_UP\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.7,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"Low Leverage, High Profitability in Volatile Markets\",\n    \"mechanism\": \"Leveraging the tendency for low-leverage (Leverage) and highly profitable (OperProf) firms to outperform during high-volatility periods, this composite captures risk-off rotation into quality stocks when VIX is elevated.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": -0.5, \"primitive\": \"Leverage\"},\n        {\"weight\": 1.0, \"primitive\": \"OperProf\"}\n      ],\n      \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.65,\n    \"expected_decay_half_life_months\": 18\n  },\n  {\n    \"name\": \"Cash-Efficient Growth in Low Rate Environments\",\n    \"mechanism\": \"This composite benefits from the synergy between asset growth (AssetGrowth) and cash productivity (CashProd), but only when the term spread is positive\u2014indicating a normal yield curve and supportive credit conditions for growth firms that are also efficient in cash usage.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"AssetGrowth\"},\n        {\"weight\": 0.5, \"primitive\": \"CashProd\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.55,\n    \"expected_decay_half_life_months\": 24\n  },\n  {\n    \"name\": \"Earnings Momentum with Analyst Disagreement\",\n    \"mechanism\": \"Firms with strong earnings surprise (EarningsSurprise) but high analyst forecast dispersion (ForecastDispersion) indicate situations where the market is slow to fully incorporate positive information, enabling further drift in price.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"EarningsSurprise\"},\n        {\"weight\": 0.5, \"primitive\": \"ForecastDispersion\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n      {\"type\": \"correlation\", \"primitive\": \"EarningsSurprise\", \"bound\": \"below\", \"threshold\": 0.3},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 30\n  },\n  {\n    \"name\": \"Liquidity Value with Sentiment Overhang\",\n    \"mechanism\": \"Combining book-to-market (BM) with the negative of Amihud\u2019s illiquidity (Illiquidity) captures the premium from neglected value stocks that are also less liquid, especially potent in periods when VIX is low and risk aversion is muted.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"BM\"},\n        {\"weight\": -0.5, \"primitive\": \"Illiquidity\"}\n      ],\n      \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 40\n  },\n  {\n    \"name\": \"Short-Term Reversal in Junk Momentum\",\n    \"mechanism\": \"Negative momentum in 'junk' stocks (Mom6mJunk), when paired with short-term reversal (STreversal), exploits the tendency for the most beaten-down low-quality stocks to mean-revert, especially after sharp declines.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"Mom6mJunk\"},\n        {\"weight\": 1.0, \"primitive\": \"STreversal\"}\n      ],\n      \"regime\": \"MKT_TRAILING_12M_DOWN\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"STreversal\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.55,\n    \"expected_decay_half_life_months\": 12\n  },\n  {\n    \"name\": \"Organizational Capital and Repurchases\",\n    \"mechanism\": \"Firms with high organizational capital (OrgCap) that are also actively repurchasing shares (ShareRepurchase) may signal both internal quality and external shareholder alignment, resulting in persistent future returns as both attributes reinforce each other.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"OrgCap\"},\n        {\"weight\": 0.5, \"primitive\": \"ShareRepurchase\"}\n      ],\n      \"regime\": null,\n      \"vol_target\": false\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n      {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n      {\"type\": \"subperiod_consistency\"}\n    ],\n    \"expected_annualized_sharpe\": 0.5,\n    \"expected_decay_half_life_months\": 36\n  },\n  {\n    \"name\": \"R&D Efficiency and Capital Discipline\",\n    \"mechanism\": \"Firms with high R&D-to-market cap (RD) and low net equity financing (NetEquityFinance) combine innovative investment with prudent capital management, capturing the premium for disciplined growth. The edge is greatest in positive term spread regimes, which support external funding.\",\n    \"expression\": {\n      \"terms\": [\n        {\"weight\": 1.0, \"primitive\": \"RD\"},\n        {\"weight\": -0.5, \"primitive\": \"NetEquityFinance\"}\n      ],\n      \"regime\": \"TERM_SPREAD_POSITIVE\",\n      \"vol_target\": true\n    },\n    \"auxiliary_predictions\": [\n      {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n      {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n      {\"type\": \"correlation\", \"primitive\": \"RD\", \"bound\": \"below\", \"threshold\": 0.3}\n    ],\n    \"expected_annualized_sharpe\": 0.6,\n    \"expected_decay_half_life_months\": 30\n  }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2801,
+   "completion_tokens": 1985,
+   "total_tokens": 4786,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5f160af537"
+ }
+}

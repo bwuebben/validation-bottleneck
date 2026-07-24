@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:28:45.024175+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2000_seed09_T0.8.json",
+  "prompt_sha256": "0b4b44afa9b0c14d03105586de1732ee04b1a7ffbde8469a6c76fb91ed4e65f9"
+ },
+ "response": {
+  "id": "chatcmpl-E4zwPWZ85a5vYDM6MFyUXwIa4rjpb",
+  "object": "chat.completion",
+  "created": 1784860121,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"AssetGrowth\", \"strength\": \"close\", \"reason\": \"Both use asset growth, but proposal uses volatility not level.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses cash flow persistence or R-squared.\"},\n  {\"index\": 2, \"match\": \"Herf\", \"strength\": \"related\", \"reason\": \"Both measure concentration, but Herf is industry, not supplier.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No insider trading or Form 4-based predictor in library.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses dividend volatility or smoothing.\"},\n  {\"index\": 5, \"match\": \"RDcap\", \"strength\": \"close\", \"reason\": \"Both capitalize R&D, but details of accumulation/depreciation may differ.\"},\n  {\"index\": 6, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Both scale patent activity by assets, but proposal uses applications not granted patents.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No environmental incident or violation count in library.\"},\n  {\"index\": 8, \"match\": \"DelCOL\", \"strength\": \"related\", \"reason\": \"Both relate to payables/liabilities, but proposal uses DPO, not change.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses geographic expansion or market entry count.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2819,
+   "completion_tokens": 371,
+   "total_tokens": 3190,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:00:28.048952+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yYIbCoMxQfy4K4HmPgRCY8c4Tw0",
+  "object": "chat.completion",
+  "created": 1784854782,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n    {\n        \"name\": \"Composite 1\",\n        \"mechanism\": \"Firms with higher operational efficiency and low systematic risk, in a low-volatility market, should outperform due to the tendency of such firms to have steady returns and resilience to market shocks.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"OPLeverage\"},\n                {\"weight\": -0.5, \"primitive\": \"CF\"},\n                {\"weight\": -0.5, \"primitive\": \"BetaFP\"}\n            ],\n            \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n            \"vol_target\": false\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n            {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n            {\"type\": \"correlation\", \"primitive\": \"BetaFP\", \"bound\": \"below\", \"threshold\": 0.3}\n        ],\n        \"expected_annualized_sharpe\": 0.7,\n        \"expected_decay_half_life_months\": null\n    },\n    {\n        \"name\": \"Composite 2\",\n        \"mechanism\": \"Firms with higher earnings consistency and lower leverage should outperform in a market with positive term spread, due to their ability to utilize the higher spread efficiently.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"EarningsConsistency\"},\n                {\"weight\": -1.0, \"primitive\": \"Leverage\"}\n            ],\n            \"regime\": \"TERM_SPREAD_POSITIVE\",\n            \"vol_target\": false\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n            {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n            {\"type\": \"correlation\", \"primitive\": \"EarningsConsistency\", \"bound\": \"below\", \"threshold\": 0.3}\n        ],\n        \"expected_annualized_sharpe\": 0.6,\n        \"expected_decay_half_life_months\": 60\n    },\n    {\n        \"name\": \"Composite 3\",\n        \"mechanism\": \"Firms with higher R&D capacity and lower risk should outperform in a market with negative term spread, due to their innovative capacity to adapt to changing market conditions.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"RDcap\"},\n                {\"weight\": -1.0, \"primitive\": \"Beta\"}\n            ],\n            \"regime\": \"TERM_SPREAD_NEGATIVE\",\n            \"vol_target\": true\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n            {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n            {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n            {\"type\": \"subperiod_consistency\"}\n        ],\n        \"expected_annualized_sharpe\": 1.0,\n        \"expected_decay_half_life_months\": null\n    },\n    {\n        \"name\": \"Composite 4\",\n        \"mechanism\": \"In a low-volatility market, firms with higher share volume and lower bid-ask spread should outperform due to the increased liquidity and lower transaction costs.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"ShareVol\"},\n                {\"weight\": -1.0, \"primitive\": \"BidAskSpread\"}\n            ],\n            \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n            \"vol_target\": true\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n            {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n            {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n        ],\n        \"expected_annualized_sharpe\": 0.8,\n        \"expected_decay_half_life_months\": 50\n    },\n    {\n        \"name\": \"Composite 5\",\n        \"mechanism\": \"Firms with higher earnings surprise and lower systematic risk should outperform in a market with a positive return in the trailing 12 months, due to the positive sentiment around such firms.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"EarningsSurprise\"},\n                {\"weight\": -1.0, \"primitive\": \"Beta\"}\n            ],\n            \"regime\": \"MKT_TRAILING_12M_UP\",\n            \"vol_target\": false\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n            {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n            {\"type\": \"correlation\", \"primitive\": \"EarningsSurprise\", \"bound\": \"below\", \"threshold\": 0.3},\n            {\"type\": \"subperiod_consistency\"}\n        ],\n        \"expected_annualized_sharpe\": 0.9,\n        \"expected_decay_half_life_months\": null\n    },\n    {\n        \"name\": \"Composite 6\",\n        \"mechanism\": \"In a high-volatility market, firms with high R&D ability and low leverage should outperform due to their ability to innovate and adapt to unpredictable market trends.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"RDAbility\"},\n                {\"weight\": -1.0, \"primitive\": \"Leverage\"}\n            ],\n            \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n            \"vol_target\": true\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n            {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n            {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n            {\"type\": \"subperiod_consistency\"}\n        ],\n        \"expected_annualized_sharpe\": 1.1,\n        \"expected_decay_half_life_months\": 40\n    },\n    {\n        \"name\": \"Composite 7\",\n        \"mechanism\": \"Firms with higher cash productivity and lower bid-ask spread should outperform in a market with a negative return in trailing 12 months due to their better liquidity and lower transaction costs.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"CashProd\"},\n                {\"weight\": -1.0, \"primitive\": \"BidAskSpread\"}\n            ],\n            \"regime\": \"MKT_TRAILING_12M_DOWN\",\n            \"vol_target\": false\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n            {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n            {\"type\": \"correlation\", \"primitive\": \"CashProd\", \"bound\": \"below\", \"threshold\": 0.3}\n        ],\n        \"expected_annualized_sharpe\": 0.6,\n        \"expected_decay_half_life_months\": 70\n    },\n    {\n        \"name\": \"Composite 8\",\n        \"mechanism\": \"Firms with higher operational profitability and lower asset growth should outperform in a market with positive term spread, as they efficiently utilize the spread between their operating returns and growth investment.\",\n        \"expression\": {\n            \"terms\": [\n                {\"weight\": 1.0, \"primitive\": \"OperProf\"},\n                {\"weight\": -0.5, \"primitive\": \"AssetGrowth\"}\n            ],\n            \"regime\": \"TERM_SPREAD_POSITIVE\",\n            \"vol_target\": true\n        },\n        \"auxiliary_predictions\": [\n            {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n            {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n            {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n            {\"type\": \"subperiod_consistency\"}\n        ],\n        \"expected_annualized_sharpe\": 0.8,\n        \"expected_decay_half_life_months\": 50\n    }\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2965,
+   "completion_tokens": 1918,
+   "total_tokens": 4883,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

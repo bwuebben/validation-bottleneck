@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:02:43.700613+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 9,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zX3JYQkn7Z9chxnKACJx6LOgKC0",
+  "object": "chat.completion",
+  "created": 1784858549,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n\"predictors\": \n[\n  {\n    \"name\": \"CEO Tenure\", \n    \"construction\": \"Calculate the number of years since the current CEO took the position.\", \n    \"rationale\": \"CEOs with longer tenures may have more experience and knowledge about the company and industry, potentially leading to better performance.\", \n    \"higher_returns_for\": \"Longer CEO tenure\"\n  },\n  {\n    \"name\": \"Environmental Impact Score\", \n    \"construction\": \"Quantify a firm's environmental impact based on publicly available reports and third-party evaluations.\", \n    \"rationale\": \"Firms that prioritize environmental sustainability may attract more socially responsible investors, potentially driving up stock price.\", \n    \"higher_returns_for\": \"Lower environmental impact\"\n  },\n  {\n    \"name\": \"Diversity Index\", \n    \"construction\": \"Compute a diversity score based on employee demographic data disclosed in company reports.\", \n    \"rationale\": \"Diverse firms may benefit from varied perspectives and be more innovative, leading to better performance.\", \n    \"higher_returns_for\": \"Higher diversity index\"\n  },\n  {\n    \"name\": \"Cybersecurity Investment\", \n    \"construction\": \"Measure investment in cybersecurity as a portion of total expenditure from annual financial statements.\", \n    \"rationale\": \"Companies prioritizing cybersecurity may be less likely to suffer from damaging breaches, protecting their brand and bottom line.\", \n    \"higher_returns_for\": \"Higher investment in cybersecurity\"\n  },\n  {\n    \"name\": \"Employee Satisfaction\", \n    \"construction\": \"Aggregate employee reviews from online platforms like Glassdoor.\", \n    \"rationale\": \"Satisfied employees might be more productive and loyal, contributing to a stronger business.\", \n    \"higher_returns_for\": \"Higher employee satisfaction\"\n  },\n  {\n    \"name\": \"Customer Satisfaction\", \n    \"construction\": \"Aggregate customer reviews from online platforms.\", \n    \"rationale\": \"Satisfied customers may increase sales through repeat purchases and referrals.\", \n    \"higher_returns_for\": \"Higher customer satisfaction\"\n  },\n  {\n    \"name\": \"Social Media Sentiment\", \n    \"construction\": \"Use natural language processing to analyze sentiment about the company on social media platforms.\", \n    \"rationale\": \"Positive sentiment may indicate strong brand recognition and loyalty, potentially driving sales.\", \n    \"higher_returns_for\": \"Positive social media sentiment\"\n  },\n  {\n    \"name\": \"Data Breach Occurrence\", \n    \"construction\": \"Track incidents of data breaches and consequent regulatory fines.\", \n    \"rationale\": \"Firms with past data breaches might underperform due to the costs of the breach and damaged reputation.\", \n    \"higher_returns_for\": \"No history of data breaches\"\n  },\n  {\n    \"name\": \"Product Recalls\", \n    \"construction\": \"Count the number of product recalls from company and regulatory reports.\", \n    \"rationale\": \"Frequent product recalls may indicate quality control issues which may lead to financial losses and reputation damage.\", \n    \"higher_returns_for\": \"Fewer product recalls\"\n  },\n  {\n    \"name\": \"Research and Development Intensity\", \n    \"construction\": \"Calculate R&D expenditure as a percentage of sales.\", \n    \"rationale\": \"Higher R&D intensity may indicate future growth opportunities.\", \n    \"higher_returns_for\": \"Higher R&D intensity\"\n  }\n]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 697,
+   "total_tokens": 967,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

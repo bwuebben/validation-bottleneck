@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:28:27.272805+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2000_seed04_T0.8.json",
+  "prompt_sha256": "f48628055c4e0412b9d87ec70cd0658995082cdaf985f016756b4941889f5565"
+ },
+ "response": {
+  "id": "chatcmpl-E4zw8wmWQ2tnheD6OUwMkEqg0s3MG",
+  "object": "chat.completion",
+  "created": 1784860104,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"hire\", \"strength\": \"exact\", \"reason\": \"Year-over-year employee growth matches 'hire' construction.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses net insider option grants.\"},\n  {\"index\": 2, \"match\": \"Herf\", \"strength\": \"related\", \"reason\": \"Both relate to industry concentration/diversification, but measure different exposures.\"},\n  {\"index\": 3, \"match\": \"Accruals\", \"strength\": \"close\", \"reason\": \"Short-term accruals ratio is a variant of accruals measures.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses supplier concentration from COGS.\"},\n  {\"index\": 5, \"match\": \"Tax\", \"strength\": \"related\", \"reason\": \"Both use effective tax rates, but deviation from peers is new.\"},\n  {\"index\": 6, \"match\": \"RDcap\", \"strength\": \"related\", \"reason\": \"Both scale R&D by capital, but denominator differs.\"},\n  {\"index\": 7, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Both use board characteristics, but not tenure dispersion.\"},\n  {\"index\": 8, \"match\": \"ChNWC\", \"strength\": \"related\", \"reason\": \"Both involve changes in working capital, but focus differs.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses segment margin dispersion.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2788,
+   "completion_tokens": 363,
+   "total_tokens": 3151,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

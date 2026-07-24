@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:16:49.828126+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 1,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zkp7NnAL3PgF3MDzJNZ1YgQA7vP",
+  "object": "chat.completion",
+  "created": 1784859403,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Inventory Adjustment Slope\", \"construction\": \"Slope of quarterly change in inventories (from Compustat, quarterly data) over the past eight quarters, normalized by beginning total assets.\", \"rationale\": \"Firms that begin to systematically reduce inventories may be signaling improved operational efficiency or anticipating demand trends before competitors.\", \"higher_returns_for\": \"firms with a large negative inventory adjustment slope\"}, {\"name\": \"Insider Option Grant Timing Abnormality\", \"construction\": \"Count of executive or director stock option grants (from SEC Form 4) during the 10 trading days following a 52-week stock price low, divided by the total number of option grants in the year.\", \"rationale\": \"Clustering of insider grants after price lows may signal superior information and undervaluation.\", \"higher_returns_for\": \"firms with a higher proportion of grants following price lows\"}, {\"name\": \"Unrecognized R&D Growth\", \"construction\": \"Trailing three-year compound annual growth rate of R&D expense (from Compustat), scaled by lagged total assets, for firms not classified in tech or healthcare GICS sectors.\", \"rationale\": \"Rising R&D in non-traditional sectors may indicate a shift toward innovation undervalued by investors.\", \"higher_returns_for\": \"firms with high unrecognized R&D growth\"}, {\"name\": \"Cash Conversion Lag\", \"construction\": \"Difference in days between average receivables collection period (accounts receivable / sales * 365) and average payables period (accounts payable / cost of goods sold * 365), averaged over the last two fiscal years.\", \"rationale\": \"Shorter lags indicate better cash management and potentially greater flexibility in downturns.\", \"higher_returns_for\": \"firms with low cash conversion lag\"}, {\"name\": \"Credit Market Spread Sensitivity\", \"construction\": \"Slope coefficient from rolling regression (36 monthly observations) of firm excess returns on monthly changes in the Baa-Treasury spread.\", \"rationale\": \"Stocks more negatively sensitive to credit spread widening may be underpriced in periods of credit stress.\", \"higher_returns_for\": \"firms with more negative spread sensitivity\"}, {\"name\": \"Normalized Ad Spend Intensity\", \"construction\": \"Advertising expense (from income statement, Compustat item XAD), averaged over past three fiscal years, divided by average total assets, for firms outside the media and consumer discretionary GICS sectors.\", \"rationale\": \"Firms in overlooked sectors investing in advertising may be building brand value unappreciated by the market.\", \"higher_returns_for\": \"firms with high normalized ad spend intensity\"}, {\"name\": \"Dividend Consistency Gap\", \"construction\": \"Absolute difference between the number of quarters with dividend increases and the number with dividend decreases, over the past 10 years.\", \"rationale\": \"Firms with consistently increasing dividends may enjoy higher investor trust and command a premium.\", \"higher_returns_for\": \"firms with high consistency gap (many more increases than decreases)\"}, {\"name\": \"Patent Citation Momentum\", \"construction\": \"Trailing one-year change in the number of patent citations received (from USPTO data), normalized by previous year's citation count and lagged total assets.\", \"rationale\": \"Faster-growing patent citation rates may signal accelerating innovation not yet reflected in prices.\", \"higher_returns_for\": \"firms with high patent citation momentum\"}, {\"name\": \"Short-Term Lease Growth\", \"construction\": \"Year-over-year growth rate in operating lease obligations due within one year (from annual 10-K footnotes), divided by lagged total assets.\", \"rationale\": \"Rising short-term lease obligations may reflect management anticipation of near-term expansion or flexibility.\", \"higher_returns_for\": \"firms with high short-term lease growth\"}, {\"name\": \"Customer Concentration Delta\", \"construction\": \"Change in the percentage of revenue from the firm's largest customer, as disclosed in 10-K, over the past three years.\", \"rationale\": \"Firms reducing dependence on a single customer may be improving business stability and bargaining power.\", \"higher_returns_for\": \"firms with large negative customer concentration delta\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 849,
+   "total_tokens": 1118,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_245b7c7787"
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:13:35.558726+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 7,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zhf4EorOL1ygW6D6oMbqCTdD63L",
+  "object": "chat.completion",
+  "created": 1784859207,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Short-Term Operating Leverage\", \"construction\": \"Change in operating income divided by change in sales over the past 12 months, as reported in quarterly filings.\", \"rationale\": \"Firms with high operating leverage are more sensitive to economic shocks, which may be underappreciated and thus mispriced by investors.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Inventory Growth Deceleration\", \"construction\": \"One-year change in inventory growth rate: (Inventory_t - Inventory_{t-1}) / Inventory_{t-1} minus (Inventory_{t-1} - Inventory_{t-2}) / Inventory_{t-2}, using annual Compustat items.\", \"rationale\": \"A deceleration in inventory growth may signal improving demand-supply balance and potential positive future surprises.\", \"higher_returns_for\": \"high deceleration (i.e., negative values)\"}, {\"name\": \"Seasonal Sales Momentum\", \"construction\": \"Sales growth in the most recent fiscal quarter relative to the same quarter last year: (Sales_{q,t} - Sales_{q,t-4}) / Sales_{q,t-4}.\", \"rationale\": \"Seasonal patterns in sales growth may provide more timely signals about business momentum than annual growth rates.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Dividend Omission Indicator\", \"construction\": \"A binary variable indicating whether a firm has omitted dividends this year after paying in each of the previous three years.\", \"rationale\": \"Dividend omissions may be viewed overly negatively by the market, resulting in return reversals for omitted firms.\", \"higher_returns_for\": \"firms with recent dividend omissions\"}, {\"name\": \"Relative Employee Productivity\", \"construction\": \"Total sales over the past year divided by the number of employees (from 10-K filings), normalized by industry median.\", \"rationale\": \"Higher productivity may indicate better management practices or operational efficiency not yet reflected in prices.\", \"higher_returns_for\": \"high values relative to industry median\"}, {\"name\": \"Deferred Tax Asset Ratio\", \"construction\": \"Deferred tax assets divided by total assets, from the most recent annual balance sheet.\", \"rationale\": \"Firms with high deferred tax assets might have future tax shields leading to higher after-tax profits.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Insider Option Grant Intensity\", \"construction\": \"Number of stock options granted to insiders over the past 12 months divided by shares outstanding, as reported in proxy statements.\", \"rationale\": \"Large insider grants may signal undervaluation or future growth expectations that external investors have not yet priced in.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Receivables Accruals Ratio\", \"construction\": \"Change in accounts receivable over the past year divided by average total assets, from annual financial statements.\", \"rationale\": \"Receivables growth may indicate aggressive revenue recognition, which can predict lower future returns if overestimated.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"R&D Intensity Surprise\", \"construction\": \"Current year R&D expenditure divided by sales, minus the mean of this ratio over the prior three years.\", \"rationale\": \"A sudden jump in R&D intensity may signal new growth initiatives or product cycles not yet recognized by the market.\", \"higher_returns_for\": \"high positive surprises\"}, {\"name\": \"Supplier Concentration Ratio\", \"construction\": \"Sum of the top three suppliers' purchase percentages (from 10-K disclosures) as a fraction of total purchases.\", \"rationale\": \"Firms with low supplier concentration may have more bargaining power and supply chain resilience, which could boost future returns.\", \"higher_returns_for\": \"low values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 787,
+   "total_tokens": 1056,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5e8833dc3f"
+ }
+}

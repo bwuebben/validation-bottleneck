@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:05:27.733478+00:00",
+  "model_requested": "gpt-4-0613",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 16,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ydB95EtBbzZpo7080t4gToeIHkW",
+  "object": "chat.completion",
+  "created": 1784855085,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"hypotheses\": [\n  {\"name\": \"Hypothesis 1\", \n   \"mechanism\": \"Firms with higher operational leverage and low accruals are likely to have more stable cash flows, making them less sensitive to business cycles. The impact is more pronounced during high VIX periods.\", \n   \"expression\": {\n     \"terms\": [\n       {\"weight\": 1.0, \"primitive\": \"OPLeverage\"}, \n       {\"weight\": -1.0, \"primitive\": \"AbnormalAccruals\"}\n     ], \n     \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \n     \"vol_target\": true\n   }, \n   \"auxiliary_predictions\": [\n     {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n     {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n     {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}\n   ], \n   \"expected_annualized_sharpe\": 0.7, \n   \"expected_decay_half_life_months\": 36},\n  {\"name\": \"Hypothesis 2\", \n   \"mechanism\": \"Companies with high growth in advertising expenses and low cash/assets ratio may be sacrificing short-term profitability for visibility and future growth, this effect is stronger when market is up.\", \n   \"expression\": {\n     \"terms\": [\n       {\"weight\": 1.0, \"primitive\": \"GrAdExp\"}, \n       {\"weight\": -0.5, \"primitive\": \"Cash\"}\n     ], \n     \"regime\": \"MKT_TRAILING_12M_UP\", \n     \"vol_target\": false\n   }, \n   \"auxiliary_predictions\": [\n     {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n     {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n     {\"type\": \"subperiod_consistency\"}\n   ], \n   \"expected_annualized_sharpe\": 0.6, \n   \"expected_decay_half_life_months\": 48},\n  {\"name\": \"Hypothesis 3\", \n   \"mechanism\": \"Firms with higher share issuance and larger asset growth tend to underperform due to dilution and overinvestment, especially in negative term spread environment.\", \n   \"expression\": {\n     \"terms\": [\n       {\"weight\": -1.0, \"primitive\": \"ShareIss1Y\"}, \n       {\"weight\": -1.0, \"primitive\": \"AssetGrowth\"}\n     ], \n     \"regime\": \"TERM_SPREAD_NEGATIVE\", \n     \"vol_target\": true\n   }, \n   \"auxiliary_predictions\": [\n     {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n     {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n     {\"type\": \"correlation\", \"primitive\": \"BM\", \"bound\": \"above\", \"threshold\": 0.3}\n   ], \n   \"expected_annualized_sharpe\": 0.8, \n   \"expected_decay_half_life_months\": 60},\n  {\"name\": \"Hypothesis 4\", \n   \"mechanism\": \"Firms with high operating profitability and low idiosyncratic risk are less likely to experience financial distress, resulting in higher returns, especially when market is down.\", \n   \"expression\": {\n     \"terms\": [\n       {\"weight\": 1.0, \"primitive\": \"OperProf\"}, \n       {\"weight\": -0.5, \"primitive\": \"IdioVol3F\"}\n     ], \n     \"regime\": \"MKT_TRAILING_12M_DOWN\", \n     \"vol_target\": false\n   }, \n   \"auxiliary_predictions\": [\n     {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n     {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n     {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"below\", \"threshold\": 0.3}\n   ], \n   \"expected_annualized_sharpe\": 0.9, \n   \"expected_decay_half_life_months\": null},\n  {\"name\": \"Hypothesis 5\", \n   \"mechanism\": \"Firms with high governance index and low intangible return using EP are likely to have stronger corporate discipline and less speculative growth, leading to higher returns.\", \n   \"expression\": {\n     \"terms\": [\n       {\"weight\": 1.0, \"primitive\": \"Governance\"}, \n       {\"weight\": -1.0, \"primitive\": \"IntanEP\"}\n     ], \n     \"regime\": null, \n     \"vol_target\": true\n   }, \n   \"auxiliary_predictions\": [\n     {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n     {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n     {\"type\": \"correlation\", \"primitive\": \"Size\", \"bound\": \"above\", \"threshold\": 0.3}\n   ], \n   \"expected_annualized_sharpe\": 0.75, \n   \"expected_decay_half_life_months\": 24},\n  {\"name\": \"Hypothesis 6\", \n   \"mechanism\": \"Firms with high inventory and sales growth relative to overhead growth tend to outperform, especially in positive term spread environment.\", \n   \"expression\": {\n     \"terms\": [\n       {\"weight\": 1.0, \"primitive\": \"InvGrowth\"}, \n       {\"weight\": 0.5, \"primitive\": \"GrSaleToGrOverhead\"}\n     ], \n     \"regime\": \"TERM_SPREAD_POSITIVE\", \n     \"vol_target\": false\n   }, \n   \"auxiliary_predictions\": [\n     {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n     {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n     {\"type\": \"subperiod_consistency\"}\n   ], \n   \"expected_annualized_sharpe\": 0.85, \n   \"expected_decay_half_life_months\": 36},\n  {\"name\": \"Hypothesis 7\", \n   \"mechanism\": \"Companies with high short-term reversal and low tangible assets might exhibit strong mean-reversion patterns in returns due to overreaction in the market, particularly effective in developed markets outside the US.\", \n   \"expression\": {\n     \"terms\": [\n       {\"weight\": 1.0, \"primitive\": \"STreversal\"}, \n       {\"weight\": -0.5, \"primitive\": \"tang\"}\n     ], \n     \"regime\": null, \n     \"vol_target\": true\n   }, \n   \"auxiliary_predictions\": [\n     {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n     {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n     {\"type\": \"correlation\", \"primitive\": \"Mom12m\", \"bound\": \"below\", \"threshold\": 0.3}\n   ], \n   \"expected_annualized_sharpe\": 0.65, \n   \"expected_decay_half_life_months\": 48},\n  {\"name\": \"Hypothesis 8\", \n   \"mechanism\": \"Firms with low R&D capital-to-assets and high debt issuance tend to underperform due to overleverage and lack of innovation, particularly during market downturns.\", \n   \"expression\": {\n     \"terms\": [\n       {\"weight\": -1.0, \"primitive\": \"RDcap\"}, \n       {\"weight\": -1.0, \"primitive\": \"DebtIssuance\"}\n     ], \n     \"regime\": \"MKT_TRAILING_12M_DOWN\", \n     \"vol_target\": false\n   }, \n   \"auxiliary_predictions\": [\n     {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n     {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n     {\"type\": \"correlation\", \"primitive\": \"Beta\", \"bound\": \"above\", \"threshold\": 0.3}\n   ], \n   \"expected_annualized_sharpe\": 0.8, \n   \"expected_decay_half_life_months\": 60}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2965,
+   "completion_tokens": 1860,
+   "total_tokens": 4825,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

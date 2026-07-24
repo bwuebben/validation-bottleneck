@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:12:27.843215+00:00",
+  "model_requested": "gpt-4.1-2025-04-14",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zga166ayrYkGspXunwcM69ekrgz",
+  "object": "chat.completion",
+  "created": 1784859140,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [{\"name\": \"Inventory Growth Rate\", \"construction\": \"Annual percentage change in inventory (Compustat item INVQ) over the past fiscal year.\", \"rationale\": \"Rapid inventory accumulation may signal over-optimism or demand overestimation, while slow or negative growth may indicate prudent management or strong sales.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Short-Term Debt to Total Assets\", \"construction\": \"Ratio of short-term debt (Compustat item DLCQ) to total assets (Compustat item ATQ) at fiscal year-end.\", \"rationale\": \"Firms with higher short-term leverage may face refinancing risk and financial distress, while lower ratios suggest more stable capital structures.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"R&D Intensity Change\", \"construction\": \"Change in R&D expense (Compustat item XRDQ) as a percentage of sales (Compustat item SALEQ) over the past two fiscal years.\", \"rationale\": \"Increasing R&D intensity may signal management's confidence in future growth opportunities.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Operating Cash Flow Volatility\", \"construction\": \"Standard deviation of quarterly operating cash flow (Compustat item OANCF) over the past 8 quarters.\", \"rationale\": \"Lower volatility in operating cash flows may indicate more stable and predictable businesses.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Net Insider Buying Ratio\", \"construction\": \"Net shares purchased by insiders (Form 4 filings, SEC) over the past 12 months divided by total shares outstanding.\", \"rationale\": \"Insider buying may reflect private information about undervaluation or positive prospects.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Dividend Initiation Dummy\", \"construction\": \"Indicator variable equal to 1 if a firm initiates a regular cash dividend in the past 12 months, 0 otherwise.\", \"rationale\": \"Dividend initiations may signal management's confidence in sustainable future earnings.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Customer Concentration\", \"construction\": \"Sum of sales to top three customers (from 10-K disclosures) divided by total sales for the most recent fiscal year.\", \"rationale\": \"High customer concentration increases business risk due to reliance on a few clients.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Employee Productivity Growth\", \"construction\": \"Annual percentage change in sales (Compustat item SALEQ) per employee (from 10-K headcount disclosures) over the past year.\", \"rationale\": \"Improving productivity may reflect operational efficiency and competitive advantage.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Deferred Tax Asset Ratio\", \"construction\": \"Deferred tax assets (Compustat item TXDB) divided by total assets (Compustat item ATQ) at fiscal year-end.\", \"rationale\": \"High deferred tax assets may indicate aggressive accounting or past unprofitable operations.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Seasonal Sales Growth\", \"construction\": \"Percentage change in sales (Compustat item SALEQ) from the same fiscal quarter in the prior year.\", \"rationale\": \"Strong year-over-year quarterly sales growth may signal robust demand and momentum.\", \"higher_returns_for\": \"high values of the measure\"}]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 728,
+   "total_tokens": 997,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_5e8833dc3f"
+ }
+}

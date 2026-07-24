@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:32:42.590328+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4o-2024-08-06/y2010_seed05_T0.8.json",
+  "prompt_sha256": "65c046af3d5cd7e6f56fe5c910798e9ce0feeabe6f2986e647dbf8da1e5fdcf5"
+ },
+ "response": {
+  "id": "chatcmpl-E500Gd0W4RHIJfT8z2xfBkriLCxFR",
+  "object": "chat.completion",
+  "created": 1784860360,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses digital engagement or social media metrics.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor based on sustainability report frequency.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses CEO-specific media sentiment.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses employee review sentiment data.\"},\n  {\"index\": 4, \"match\": \"SurpriseRD\", \"strength\": \"close\", \"reason\": \"Both use R&D activity, but SurpriseRD is about unexpected R&D increases.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses board diversity as a signal.\"},\n  {\"index\": 6, \"match\": \"AdExp\", \"strength\": \"related\", \"reason\": \"Both use marketing/sales expenses, but AdExp ignores customer acquisition.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor scores revenue from new technologies.\"},\n  {\"index\": 8, \"match\": \"CitationsRD\", \"strength\": \"close\", \"reason\": \"Both use patent citations, but CitationsRD normalizes by R&D expense.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses consumer word-of-mouth or online discussion.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2734,
+   "completion_tokens": 358,
+   "total_tokens": 3092,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

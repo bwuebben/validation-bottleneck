@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:01:20.141526+00:00",
+  "model_requested": "gpt-4-0613",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 4,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zVgstIbo5LuCdk3V73amGUvlCfm",
+  "object": "chat.completion",
+  "created": 1784858464,
+  "model": "gpt-4-0613",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"predictors\": [\n  {\"name\": \"Employee Satisfaction Index\", \"construction\": \"Derived from publically available employee review websites like Glassdoor. Normalized by industry.\", \"rationale\": \"Companies with happier employees might be more productive, leading to higher profitability.\", \"higher_returns_for\": \"High values of the measure\"},\n  {\"name\": \"Social Media Sentiment\", \"construction\": \"Aggregate sentiment of posts about the company on social media platforms, computed using natural language processing techniques.\", \"rationale\": \"Positive social media sentiment might indicate strong brand and customer loyalty, which could drive higher sales and earnings.\", \"higher_returns_for\": \"High values of the measure\"},\n  {\"name\": \"CEO Market Confidence\", \"construction\": \"Calculated from the ratio of CEO's publicly disclosed holdings of company stock to total compensation.\", \"rationale\": \"A CEO who holds a large proportion of her wealth in company stock might have high confidence in her company's future prospects.\", \"higher_returns_for\": \"High values of the measure\"},\n  {\"name\": \"Customer Churn\", \"construction\": \"Obtained from industry reports and third-party data providers. Normalized by industry.\", \"rationale\": \"High customer churn might signal dissatisfaction with a company's products or services, potentially hurting future sales and earnings.\", \"higher_returns_for\": \"Low values of the measure\"},\n  {\"name\": \"Corporate Social Responsibility Rating\", \"construction\": \"Scores obtained from corporate social responsibility rating agencies.\", \"rationale\": \"Companies with high CSR ratings may have better relationships with stakeholders, which could support strong performance.\", \"higher_returns_for\": \"High values of the measure\"},\n  {\"name\": \"Product Pipeline\", \"construction\": \"Number of products in development or awaiting regulatory approval, obtained from company reports. Relevant for certain sectors like pharmaceuticals.\", \"rationale\": \"A robust product pipeline might suggest strong future earnings potential.\", \"higher_returns_for\": \"High values of the measure\"},\n  {\"name\": \"Cybersecurity Risk Score\", \"construction\": \"Scores obtained from cybersecurity rating services.\", \"rationale\": \"Companies with high cybersecurity risk may face costly breaches and reputational damage, potentially hurting future returns.\", \"higher_returns_for\": \"Low values of the measure\"},\n  {\"name\": \"Foreign Sales Ratio\", \"construction\": \"Foreign sales divided by total sales, calculated from company filings.\", \"rationale\": \"Companies with higher foreign sales might benefit from geographic diversification and growth in emerging markets.\", \"higher_returns_for\": \"High values of the measure\"},\n  {\"name\": \"R&D Intensity\", \"construction\": \"R&D expenditure divided by sales, calculated from company filings.\", \"rationale\": \"High R&D intensity might indicate innovation potential, which could lead to strong future earnings.\", \"higher_returns_for\": \"High values of the measure\"},\n  {\"name\": \"Corporate Governance Score\", \"construction\": \"Scores obtained from corporate governance rating agencies.\", \"rationale\": \"Better governed companies might make more shareholder-friendly decisions, supporting higher stock prices.\", \"higher_returns_for\": \"High values of the measure\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 270,
+   "completion_tokens": 628,
+   "total_tokens": 898,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+ }
+}

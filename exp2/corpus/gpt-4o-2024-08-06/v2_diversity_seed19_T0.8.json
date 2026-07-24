@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:20:49.076910+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 19,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ysSP0uNqmX8gq0UJ7TUF6lNvLuC",
+  "object": "chat.completion",
+  "created": 1784856032,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"Operational Volatility Arbitrage\",\n      \"mechanism\": \"Firms with stable operations but high market volatility may be mispriced due to market overreaction, creating a premium for stability seekers.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"OperProfRD\"},\n          {\"weight\": -0.5, \"primitive\": \"RealizedVol\"},\n          {\"weight\": 0.5, \"primitive\": \"EarningsConsistency\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.8,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"Innovative Growth Surprise\",\n      \"mechanism\": \"Unexpected growth in firms with strong R&D and patent portfolios signals underappreciated innovation potential, leading to a revaluation premium.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"RD\"},\n          {\"weight\": 0.5, \"primitive\": \"PatentsRD\"},\n          {\"weight\": -0.5, \"primitive\": \"MeanRankRevGrowth\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"PatentsRD\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"Financial Flexibility Premium\",\n      \"mechanism\": \"Firms with flexible financial structures, as indicated by cash reserves and low debt, can better adapt to economic shocks, earning a resilience premium.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"Cash\"},\n          {\"weight\": -0.5, \"primitive\": \"Leverage\"},\n          {\"weight\": 0.5, \"primitive\": \"NetDebtFinance\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.7,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"Consumer Sentiment Momentum\",\n      \"mechanism\": \"Companies with improving consumer sentiment, as measured by increasing advertising spend and customer momentum, are likely to see future positive returns due to rising demand.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"AdExp\"},\n          {\"weight\": 0.5, \"primitive\": \"CustomerMomentum\"},\n          {\"weight\": -0.5, \"primitive\": \"IntanSP\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"opposite_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.85,\n      \"expected_decay_half_life_months\": 18\n    },\n    {\n      \"name\": \"Cost Efficiency Anomaly\",\n      \"mechanism\": \"Firms that improve cost efficiency by reducing inventory and financial liabilities without harming sales growth can sustain higher profitability, leading to excess returns.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"ChInv\"},\n          {\"weight\": -0.5, \"primitive\": \"DelFINL\"},\n          {\"weight\": 0.5, \"primitive\": \"GrSaleToGrInv\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_DOWN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"ChInv\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.75,\n      \"expected_decay_half_life_months\": 20\n    },\n    {\n      \"name\": \"Strategic Capital Allocation\",\n      \"mechanism\": \"Firms strategically increasing equity over debt financing in positive term spread environments can yield a flexibility advantage, translating to a valuation premium.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"EquityDuration\"},\n          {\"weight\": -0.5, \"primitive\": \"NetEquityFinance\"},\n          {\"weight\": 0.5, \"primitive\": \"CompositeDebtIssuance\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"weaker\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.8,\n      \"expected_decay_half_life_months\": null\n    },\n    {\n      \"name\": \"Supplier Leverage Effect\",\n      \"mechanism\": \"Firms heavily reliant on suppliers, but maintaining low financial leverage, are less vulnerable to supplier-induced shocks, leading to a resilience premium.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"Leverage\"},\n          {\"weight\": -0.5, \"primitive\": \"iomom_supp\"},\n          {\"weight\": 0.5, \"primitive\": \"DelCOL\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.9,\n      \"expected_decay_half_life_months\": 12\n    },\n    {\n      \"name\": \"Intangible Value Creation\",\n      \"mechanism\": \"Firms with high intangible assets that convert them effectively into sales may capture a premium due to undervalued innovation and brand strength.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"IntanBM\"},\n          {\"weight\": 0.5, \"primitive\": \"BrandInvest\"},\n          {\"weight\": -0.5, \"primitive\": \"SP\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.75,\n      \"expected_decay_half_life_months\": null\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2903,
+   "completion_tokens": 1908,
+   "total_tokens": 4811,
+   "prompt_tokens_details": {
+    "cached_tokens": 2688,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

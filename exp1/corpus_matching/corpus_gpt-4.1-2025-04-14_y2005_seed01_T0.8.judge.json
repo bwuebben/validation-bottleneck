@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:28:55.000490+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2005_seed01_T0.8.json",
+  "prompt_sha256": "e45650b9d8196aba0597bf410172bf894cd4421b3a6355d342c9b9e9c7ed9920"
+ },
+ "response": {
+  "id": "chatcmpl-E4zwaNhvRAphuwKGPzT3nwxAyRxHI",
+  "object": "chat.completion",
+  "created": 1784860132,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"ChInv\", \"strength\": \"exact\", \"reason\": \"Annual inventory change scaled by assets matches ChInv construction.\"},\n  {\"index\": 1, \"match\": \"ChTax\", \"strength\": \"close\", \"reason\": \"Both use change in tax-related balance sheet items.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No supplier concentration or similar risk measure in library.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No lease commitment or similar short-term obligation ratio.\"},\n  {\"index\": 4, \"match\": \"CashProd\", \"strength\": \"related\", \"reason\": \"Both relate to productivity, but different numerator/denominator.\"},\n  {\"index\": 5, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Both scale patent activity by firm size or R&D.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No working capital volatility or similar time-series measure.\"},\n  {\"index\": 7, \"match\": \"Governance\", \"strength\": \"related\", \"reason\": \"Both relate to governance, but different specific signals.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No foreign income share or geographic segment measure.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No R&D capitalization ratio or similar signal in library.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2728,
+   "completion_tokens": 350,
+   "total_tokens": 3078,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

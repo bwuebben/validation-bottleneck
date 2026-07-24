@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:08:15.738304+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 10,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zcViDuYXhhPzRQdp2AGAGT5Q03C",
+  "object": "chat.completion",
+  "created": 1784858887,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Recent Dividend Initiation\",\n      \"construction\": \"Indicator variable equal to 1 if a firm initiated a dividend payment in the last 12 months, 0 otherwise.\",\n      \"rationale\": \"Dividend initiations signal management's confidence in future cash flows and financial stability.\",\n      \"higher_returns_for\": \"stocks with a recent dividend initiation.\"\n    },\n    {\n      \"name\": \"Earnings Estimate Dispersion\",\n      \"construction\": \"Standard deviation of analyst earnings forecasts for a firm, scaled by the absolute mean forecast, over the past 12 months.\",\n      \"rationale\": \"Higher dispersion indicates greater uncertainty, which might lead to mispricing and subsequent correction.\",\n      \"higher_returns_for\": \"low values of the measure.\"\n    },\n    {\n      \"name\": \"Industry Concentration Ratio\",\n      \"construction\": \"Herfindahl-Hirschman Index of revenue shares within the firm's industry, calculated annually.\",\n      \"rationale\": \"Firms in less concentrated industries may have more competitive pressures and risk, affecting returns.\",\n      \"higher_returns_for\": \"stocks in less concentrated industries.\"\n    },\n    {\n      \"name\": \"CEO Tenure\",\n      \"construction\": \"Number of years the current CEO has been in position, updated annually.\",\n      \"rationale\": \"Shorter-tenured CEOs might pursue more aggressive growth strategies to establish their leadership.\",\n      \"higher_returns_for\": \"firms with shorter CEO tenure.\"\n    },\n    {\n      \"name\": \"Relative Workforce Growth\",\n      \"construction\": \"Annual percentage change in number of employees relative to the industry average.\",\n      \"rationale\": \"Rapid workforce expansion could signal growth opportunities or overextension.\",\n      \"higher_returns_for\": \"firms with higher relative workforce growth.\"\n    },\n    {\n      \"name\": \"Supplier Dependency Ratio\",\n      \"construction\": \"Proportion of a firm's cost of goods sold attributed to its top three suppliers, reported annually.\",\n      \"rationale\": \"High dependency on suppliers may indicate vulnerability to supply chain disruptions.\",\n      \"higher_returns_for\": \"firms with lower supplier dependency ratios.\"\n    },\n    {\n      \"name\": \"R&D Intensity Change\",\n      \"construction\": \"Annual percentage change in R&D expenses divided by total sales.\",\n      \"rationale\": \"Increasing R&D intensity may reflect strategic investment in future innovation and growth.\",\n      \"higher_returns_for\": \"firms with increasing R&D intensity.\"\n    },\n    {\n      \"name\": \"Foreign Revenue Exposure\",\n      \"construction\": \"Percentage of total revenue derived from foreign operations, updated annually.\",\n      \"rationale\": \"Firms with higher foreign exposure may benefit from global market opportunities and diversification.\",\n      \"higher_returns_for\": \"firms with higher foreign revenue exposure.\"\n    },\n    {\n      \"name\": \"Patent Approval Rate\",\n      \"construction\": \"Ratio of patents approved to patents filed over the last three years.\",\n      \"rationale\": \"Higher approval rates may indicate a firm's ability to innovate and protect intellectual property effectively.\",\n      \"higher_returns_for\": \"firms with higher patent approval rates.\"\n    },\n    {\n      \"name\": \"Insider Trading Volume\",\n      \"construction\": \"Total volume of insider trades as a percentage of shares outstanding, over the past 6 months.\",\n      \"rationale\": \"High insider trading activity could signal private information about future prospects.\",\n      \"higher_returns_for\": \"firms with higher insider trading volumes.\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 714,
+   "total_tokens": 983,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2079a33cc7"
+ }
+}

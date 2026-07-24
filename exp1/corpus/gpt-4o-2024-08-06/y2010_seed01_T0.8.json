@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:09:56.062345+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 1,
+  "temperature": 0.8,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4ze8815wCgxFbazJISZhkzF4GhBh",
+  "object": "chat.completion",
+  "created": 1784858988,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\n  \"predictors\": [\n    {\n      \"name\": \"Earnings Stability Surprise\",\n      \"construction\": \"Calculate the standard deviation of quarterly earnings over the past five years and compare it to analyst forecast dispersion in the last quarter.\",\n      \"rationale\": \"Stocks with unexpectedly stable earnings compared to analyst forecasts might be undervalued due to mispricing of risk.\",\n      \"higher_returns_for\": \"stocks with lower-than-expected earnings volatility.\"\n    },\n    {\n      \"name\": \"Innovation Intensity Change\",\n      \"construction\": \"Compute the change in R&D expense as a percentage of sales over the last three years.\",\n      \"rationale\": \"Firms increasing their innovation efforts could be positioning for future growth, which the market might not immediately price in.\",\n      \"higher_returns_for\": \"stocks with a significant increase in R&D intensity.\"\n    },\n    {\n      \"name\": \"Social Media Sentiment Divergence\",\n      \"construction\": \"Analyze the sentiment score of a stock from social media platforms over the past year and compare it to analyst ratings.\",\n      \"rationale\": \"Discrepancies between analyst assessments and broader public sentiment may indicate mispricing.\",\n      \"higher_returns_for\": \"stocks with positive social sentiment and neutral or negative analyst ratings.\"\n    },\n    {\n      \"name\": \"Environmental Compliance Lag\",\n      \"construction\": \"Measure the time lag between new environmental regulations and firm compliance announcements.\",\n      \"rationale\": \"Firms quicker to comply may avoid future regulatory costs and disruptions, thus offering better risk-adjusted returns.\",\n      \"higher_returns_for\": \"stocks with shorter compliance lags.\"\n    },\n    {\n      \"name\": \"Supplier Dependency Ratio\",\n      \"construction\": \"Calculate the ratio of purchases from top three suppliers to total cost of goods sold, using the last fiscal year data.\",\n      \"rationale\": \"Firms less dependent on a few suppliers might have better supply chain resilience and negotiating power.\",\n      \"higher_returns_for\": \"stocks with lower supplier dependency ratios.\"\n    },\n    {\n      \"name\": \"Board Diversity Progression\",\n      \"construction\": \"Compute the annual change in diversity percentage on the board over the past three years.\",\n      \"rationale\": \"Increasing board diversity could lead to better decision-making and improved firm performance.\",\n      \"higher_returns_for\": \"stocks with increasing board diversity percentages.\"\n    },\n    {\n      \"name\": \"Customer Satisfaction Momentum\",\n      \"construction\": \"Track the changes in customer satisfaction scores over the last four quarters.\",\n      \"rationale\": \"Improving customer satisfaction may signal future revenue growth and competitive strength.\",\n      \"higher_returns_for\": \"stocks with increasing customer satisfaction scores.\"\n    },\n    {\n      \"name\": \"Patent Citation Growth\",\n      \"construction\": \"Calculate the annual growth rate of patent citations over the past three years.\",\n      \"rationale\": \"Firms with growing patent citations could enjoy stronger intellectual property advantages and future cash flows.\",\n      \"higher_returns_for\": \"stocks with high patent citation growth rates.\"\n    },\n    {\n      \"name\": \"Corporate Wellness Initiatives\",\n      \"construction\": \"Count the number of new wellness programs introduced in the last two years.\",\n      \"rationale\": \"Firms investing in employee wellness might experience improved productivity and reduced turnover costs.\",\n      \"higher_returns_for\": \"stocks with a higher rate of new wellness initiatives.\"\n    },\n    {\n      \"name\": \"Tax Efficiency Shift\",\n      \"construction\": \"Calculate the year-over-year change in the effective tax rate over the past three years.\",\n      \"rationale\": \"Improving tax efficiency can lead to higher net profits and shareholder returns.\",\n      \"higher_returns_for\": \"stocks with decreasing effective tax rates.\"\n    }\n  ]\n}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 756,
+   "total_tokens": 1025,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_8772b5f549"
+ }
+}

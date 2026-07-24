@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:04:57.039881+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 42,
+  "temperature": 0.0,
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4zZIuBmnIK4Gc9XObbTjSYbIVXIY",
+  "object": "chat.completion",
+  "created": 1784858688,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"predictors\": [\n    {\n      \"name\": \"Employee Satisfaction Index\",\n      \"construction\": \"Average employee satisfaction score from annual surveys conducted by the company, scaled by total number of employees.\",\n      \"rationale\": \"Firms with higher employee satisfaction may experience higher productivity and lower turnover, leading to better financial performance.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Environmental Compliance Ratio\",\n      \"construction\": \"Number of environmental compliance certifications divided by total number of environmental violations reported in the past year.\",\n      \"rationale\": \"Companies with better environmental compliance may face fewer regulatory fines and enjoy a better public image, potentially leading to higher returns.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"CEO Tenure Stability\",\n      \"construction\": \"Number of years the current CEO has been in position divided by the average tenure of CEOs in the same industry.\",\n      \"rationale\": \"Longer CEO tenure may indicate stable leadership and strategic consistency, which can be beneficial for long-term performance.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"R&D to Market Cap Ratio\",\n      \"construction\": \"Total R&D expenditure over the past year divided by current market capitalization.\",\n      \"rationale\": \"High R&D investment relative to market size may signal innovation potential and future growth opportunities.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Supplier Diversity Index\",\n      \"construction\": \"Proportion of total procurement budget spent on diverse suppliers (minority-owned, women-owned, etc.) over the past year.\",\n      \"rationale\": \"Supplier diversity can enhance supply chain resilience and open new market opportunities, potentially boosting returns.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Patent Citation Growth\",\n      \"construction\": \"Annual growth rate in the number of citations received by the firm's patents over the past three years.\",\n      \"rationale\": \"Increasing patent citations may indicate valuable innovations and a strong competitive position.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Customer Retention Rate\",\n      \"construction\": \"Percentage of customers retained from the previous year, as reported in company filings or industry reports.\",\n      \"rationale\": \"High customer retention can lead to stable revenue streams and reduced marketing costs, enhancing profitability.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Insider Trading Activity\",\n      \"construction\": \"Net number of shares bought by insiders over the past six months divided by total shares outstanding.\",\n      \"rationale\": \"Insider buying may signal confidence in the firm's future prospects, potentially leading to higher returns.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Brand Equity Score\",\n      \"construction\": \"Score derived from consumer surveys and market research reports on brand strength and recognition.\",\n      \"rationale\": \"Strong brand equity can lead to pricing power and customer loyalty, supporting higher profitability.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    },\n    {\n      \"name\": \"Technology Adoption Rate\",\n      \"construction\": \"Proportion of revenue derived from products or services introduced in the past three years.\",\n      \"rationale\": \"Firms that rapidly adopt new technologies may gain competitive advantages and capture market share.\",\n      \"higher_returns_for\": \"high values of the measure\"\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 269,
+   "completion_tokens": 752,
+   "total_tokens": 1021,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_94cd41efba"
+ }
+}

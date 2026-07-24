@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "utc": "2026-07-24T01:16:36.209944+00:00",
+  "model_requested": "gpt-4o-2024-08-06",
+  "prompt_variant": "v2_diversity",
+  "prompt_sha256": "c50dfba772df5db1c161a567732614831d05ae6e7040973019de6d55385eef00",
+  "seed": 5,
+  "temperature": 0.8,
+  "max_tokens": 4800,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "id": "chatcmpl-E4yoQS7OYVteCDu5Xc8Dkd02yqjj3",
+  "object": "chat.completion",
+  "created": 1784855782,
+  "model": "gpt-4o-2024-08-06",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "```json\n{\n  \"hypotheses\": [\n    {\n      \"name\": \"OperationalEfficiencyFactor\",\n      \"mechanism\": \"This composite factor identifies firms with improving operational efficiency by combining changes in asset turnover with changes in overhead growth. It takes advantage of market inefficiencies in pricing operational improvements.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"ChAssetTurnover\"},\n          {\"weight\": -0.5, \"primitive\": \"GrSaleToGrOverhead\"}\n        ],\n        \"regime\": \"TERM_SPREAD_POSITIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_POSITIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.85,\n      \"expected_decay_half_life_months\": 18\n    },\n    {\n      \"name\": \"IntangibleValueFactor\",\n      \"mechanism\": \"This factor captures the market's mispricing of firms' intangible assets by combining intangible returns using book-to-market and cash flow-to-price ratios. It thrives when traditional valuation metrics fail to price intangibles correctly.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"IntanBM\"},\n          {\"weight\": 0.5, \"primitive\": \"IntanCFP\"}\n        ],\n        \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_BELOW_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.75,\n      \"expected_decay_half_life_months\": 24\n    },\n    {\n      \"name\": \"DebtSignalingFactor\",\n      \"mechanism\": \"This composite identifies firms with strong signaling from debt issuance and net equity financing, suggesting mispricing due to asymmetric information about firms' financial health.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": -0.5, \"primitive\": \"DebtIssuance\"},\n          {\"weight\": 0.5, \"primitive\": \"NetEquityFinance\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_DOWN\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_DOWN\", \"direction\": \"lower\"},\n        {\"type\": \"size_segment\", \"segment\": \"large\", \"direction\": \"stronger\"},\n        {\"type\": \"correlation\", \"primitive\": \"Leverage\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.80,\n      \"expected_decay_half_life_months\": null\n    },\n    {\n      \"name\": \"CustomerSatisfactionFactor\",\n      \"mechanism\": \"By combining customer and supplier momentum, this factor captures the effect of customer satisfaction on stock prices, as satisfied customers are likely to drive future earnings growth.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"iomom_cust\"},\n          {\"weight\": 0.5, \"primitive\": \"iomom_supp\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.70,\n      \"expected_decay_half_life_months\": 30\n    },\n    {\n      \"name\": \"CorporateGovernanceFactor\",\n      \"mechanism\": \"This factor combines the governance index with earnings forecast dispersion to capture the market's underestimation of governance quality's impact on future firm performance.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"Governance\"},\n          {\"weight\": -0.5, \"primitive\": \"ForecastDispersion\"}\n        ],\n        \"regime\": \"TERM_SPREAD_NEGATIVE\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"TERM_SPREAD_NEGATIVE\", \"direction\": \"higher\"},\n        {\"type\": \"size_segment\", \"segment\": \"mega\", \"direction\": \"weaker\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"}\n      ],\n      \"expected_annualized_sharpe\": 0.90,\n      \"expected_decay_half_life_months\": 36\n    },\n    {\n      \"name\": \"InnovationPotentialFactor\",\n      \"mechanism\": \"This factor exploits the combination of R&D over market cap with unexpected R&D increases to identify firms with high innovation potential that the market has not fully appreciated.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 1.0, \"primitive\": \"RD\"},\n          {\"weight\": 0.5, \"primitive\": \"SurpriseRD\"}\n        ],\n        \"regime\": null,\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"size_segment\", \"segment\": \"small\", \"direction\": \"stronger\"},\n        {\"type\": \"international\", \"region\": \"emerging\", \"direction\": \"same_sign\"},\n        {\"type\": \"correlation\", \"primitive\": \"IntanEP\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.65,\n      \"expected_decay_half_life_months\": 20\n    },\n    {\n      \"name\": \"LiquidityAnomalyFactor\",\n      \"mechanism\": \"This composite captures liquidity anomalies by combining bid-ask spread with change in net working capital, exploiting inefficiencies in liquidity pricing.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": -0.5, \"primitive\": \"BidAskSpread\"},\n          {\"weight\": 0.5, \"primitive\": \"ChNWC\"}\n        ],\n        \"regime\": \"MKT_TRAILING_12M_UP\",\n        \"vol_target\": true\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"MKT_TRAILING_12M_UP\", \"direction\": \"lower\"},\n        {\"type\": \"size_segment\", \"segment\": \"micro\", \"direction\": \"stronger\"},\n        {\"type\": \"subperiod_consistency\"}\n      ],\n      \"expected_annualized_sharpe\": 0.60,\n      \"expected_decay_half_life_months\": 12\n    },\n    {\n      \"name\": \"SentimentMispricingFactor\",\n      \"mechanism\": \"This factor mixes analyst optimism with change in recommendation to exploit market sentiment mispricing, particularly in environments with shifting investor sentiment.\",\n      \"expression\": {\n        \"terms\": [\n          {\"weight\": 0.5, \"primitive\": \"AOP\"},\n          {\"weight\": 0.5, \"primitive\": \"ChangeInRecommendation\"}\n        ],\n        \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\",\n        \"vol_target\": false\n      },\n      \"auxiliary_predictions\": [\n        {\"type\": \"regime_interaction\", \"regime\": \"VIX_ABOVE_TRAILING_MEDIAN\", \"direction\": \"higher\"},\n        {\"type\": \"international\", \"region\": \"developed_ex_us\", \"direction\": \"same_sign\"},\n        {\"type\": \"correlation\", \"primitive\": \"AnalystValue\", \"bound\": \"below\", \"threshold\": 0.3}\n      ],\n      \"expected_annualized_sharpe\": 0.78,\n      \"expected_decay_half_life_months\": 16\n    }\n  ]\n}\n```",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2903,
+   "completion_tokens": 1832,
+   "total_tokens": 4735,
+   "prompt_tokens_details": {
+    "cached_tokens": 2688,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_96b36f6c70"
+ }
+}

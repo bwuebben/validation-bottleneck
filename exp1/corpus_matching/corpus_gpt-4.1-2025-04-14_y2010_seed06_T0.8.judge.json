@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:29:41.795500+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4.1-2025-04-14/y2010_seed06_T0.8.json",
+  "prompt_sha256": "b1bf2e0a8c69fcdbbdf32652469f1af3d3bca9c406598f529cd80afcee05d777"
+ },
+ "response": {
+  "id": "chatcmpl-E4zxLBU7PNZFKX4p5zv2MfIMKK75u",
+  "object": "chat.completion",
+  "created": 1784860179,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"Herf\", \"strength\": \"related\", \"reason\": \"Both measure concentration, but Herf is industry not customer.\"},\n  {\"index\": 1, \"match\": \"DelNetFin\", \"strength\": \"related\", \"reason\": \"Both involve changes in financial assets, but not identical.\"},\n  {\"index\": 2, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Both scale patents by firm size, but denominator differs.\"},\n  {\"index\": 3, \"match\": \"ChAssetTurnover\", \"strength\": \"related\", \"reason\": \"Both reflect operational efficiency changes, but via different metrics.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses dividend cut frequency.\"},\n  {\"index\": 5, \"match\": \"RDcap\", \"strength\": \"related\", \"reason\": \"Both scale R&D by firm resources, but not by depreciation.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses industry CEO tenure dispersion.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses legal expenses as a ratio.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses inventory obsolescence provision trends.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses board age dispersion.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2784,
+   "completion_tokens": 353,
+   "total_tokens": 3137,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

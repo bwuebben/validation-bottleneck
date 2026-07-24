@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-24T02:26:41.888831+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/gpt-4-0613/y2010_seed07_T0.8.json",
+  "prompt_sha256": "5028e5c4f4acbd37daa81c0ea10755c773a10f4155dabebe96c53adac784fc9a"
+ },
+ "response": {
+  "id": "chatcmpl-E4zuR8dA8dt606erl1geOekhdnap0",
+  "object": "chat.completion",
+  "created": 1784859999,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"NetDebtFinance\", \"strength\": \"exact\", \"reason\": \"Net debt issuance matches net change in total debt.\"},\n  {\"index\": 1, \"match\": \"ShareVol\", \"strength\": \"close\", \"reason\": \"Share volume to shares outstanding is similar to equity turnover.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses green investment proportion.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses CEO/employee pay ratio.\"},\n  {\"index\": 4, \"match\": \"Investment\", \"strength\": \"close\", \"reason\": \"R&D to revenue is a form of investment to revenue.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses third-party CSR/ESG scores.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses off-balance sheet item value.\"},\n  {\"index\": 7, \"match\": \"PatentsRD\", \"strength\": \"close\", \"reason\": \"Patent count is closely related to patents-to-R&D.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses executive team age.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses foreign sales ratio.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2734,
+   "completion_tokens": 345,
+   "total_tokens": 3079,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_20ca29c7a2"
+ }
+}

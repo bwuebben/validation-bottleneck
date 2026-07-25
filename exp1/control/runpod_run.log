@@ -1,0 +1,21 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+model built on cuda
+=== manelalab/chrono-gpt-instruct-v1-19991231 ===
+  y1990: 11 generations in 151s
+  y1995: 11 generations in 148s
+  y2000: 11 generations in 148s
+  y2005: 11 generations in 148s
+  y2010: 11 generations in 152s
+=== manelalab/chrono-gpt-instruct-v1-20041231 ===
+  y1990: 11 generations in 149s
+  y1995: 11 generations in 149s
+  y2000: 11 generations in 149s
+  y2005: 11 generations in 149s
+  y2010: 11 generations in 148s
+=== manelalab/chrono-gpt-instruct-v1-20091231 ===
+  y1990: 11 generations in 149s
+  y1995: 11 generations in 125s
+  y2000: 11 generations in 148s
+  y2005: 11 generations in 133s
+  y2010: 11 generations in 149s
+control generation complete

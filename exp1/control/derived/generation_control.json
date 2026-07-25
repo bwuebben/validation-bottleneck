@@ -1,0 +1,1371 @@
+{
+ "summary": {
+  "total_generations": 165,
+  "category_counts": {
+   "other": 142,
+   "template_echo": 14,
+   "fragment": 9
+  },
+  "valid_proposals_extracted": 0,
+  "fragment_name_values": [
+   "a short description of",
+   "predictors",
+   "predictors",
+   "clearcase[",
+   "[correctly: p, m, o, u, o, w, u]",
+   "Marshall's",
+   "name",
+   "costly",
+   "str",
+   "str,",
+   "str,",
+   "Strassburg, Missouri",
+   "- Name"
+  ],
+  "verdict": "No valid proposals in any of the generations: the chronologically clean 1.5B generator cannot execute the registered proposal task. Fragment 'name' values are incoherent (listed above), not predictors."
+ },
+ "rows": [
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1990",
+   "run": "greedy",
+   "chars": 2284,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1990",
+   "run": "sampled_1",
+   "chars": 221,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1990",
+   "run": "sampled_2",
+   "chars": 1055,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1990",
+   "run": "sampled_3",
+   "chars": 2722,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1990",
+   "run": "sampled_4",
+   "chars": 59,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1990",
+   "run": "sampled_5",
+   "chars": 2470,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1990",
+   "run": "sampled_6",
+   "chars": 2137,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1990",
+   "run": "sampled_7",
+   "chars": 1078,
+   "category": "template_echo",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1990",
+   "run": "sampled_8",
+   "chars": 2381,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1990",
+   "run": "sampled_9",
+   "chars": 1138,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1990",
+   "run": "sampled_10",
+   "chars": 391,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1995",
+   "run": "greedy",
+   "chars": 949,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1995",
+   "run": "sampled_1",
+   "chars": 646,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1995",
+   "run": "sampled_2",
+   "chars": 761,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1995",
+   "run": "sampled_3",
+   "chars": 2839,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1995",
+   "run": "sampled_4",
+   "chars": 79,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1995",
+   "run": "sampled_5",
+   "chars": 2334,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1995",
+   "run": "sampled_6",
+   "chars": 61,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1995",
+   "run": "sampled_7",
+   "chars": 2187,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1995",
+   "run": "sampled_8",
+   "chars": 3481,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1995",
+   "run": "sampled_9",
+   "chars": 2323,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y1995",
+   "run": "sampled_10",
+   "chars": 1088,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2000",
+   "run": "greedy",
+   "chars": 2348,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2000",
+   "run": "sampled_1",
+   "chars": 3057,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2000",
+   "run": "sampled_2",
+   "chars": 3167,
+   "category": "fragment",
+   "nontemplate_names": [
+    "a short description of"
+   ]
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2000",
+   "run": "sampled_3",
+   "chars": 1341,
+   "category": "fragment",
+   "nontemplate_names": [
+    "predictors",
+    "predictors"
+   ]
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2000",
+   "run": "sampled_4",
+   "chars": 126,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2000",
+   "run": "sampled_5",
+   "chars": 1661,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2000",
+   "run": "sampled_6",
+   "chars": 2733,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2000",
+   "run": "sampled_7",
+   "chars": 2252,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2000",
+   "run": "sampled_8",
+   "chars": 2293,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2000",
+   "run": "sampled_9",
+   "chars": 3384,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2000",
+   "run": "sampled_10",
+   "chars": 3262,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2005",
+   "run": "greedy",
+   "chars": 2284,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2005",
+   "run": "sampled_1",
+   "chars": 485,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2005",
+   "run": "sampled_2",
+   "chars": 2978,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2005",
+   "run": "sampled_3",
+   "chars": 197,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2005",
+   "run": "sampled_4",
+   "chars": 505,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2005",
+   "run": "sampled_5",
+   "chars": 1184,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2005",
+   "run": "sampled_6",
+   "chars": 174,
+   "category": "fragment",
+   "nontemplate_names": [
+    "clearcase["
+   ]
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2005",
+   "run": "sampled_7",
+   "chars": 1982,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2005",
+   "run": "sampled_8",
+   "chars": 830,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2005",
+   "run": "sampled_9",
+   "chars": 1401,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2005",
+   "run": "sampled_10",
+   "chars": 2425,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2010",
+   "run": "greedy",
+   "chars": 2106,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2010",
+   "run": "sampled_1",
+   "chars": 523,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2010",
+   "run": "sampled_2",
+   "chars": 2234,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2010",
+   "run": "sampled_3",
+   "chars": 1441,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2010",
+   "run": "sampled_4",
+   "chars": 2718,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2010",
+   "run": "sampled_5",
+   "chars": 702,
+   "category": "fragment",
+   "nontemplate_names": [
+    "[correctly: p, m, o, u, o, w, u]",
+    "Marshall's"
+   ]
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2010",
+   "run": "sampled_6",
+   "chars": 6,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2010",
+   "run": "sampled_7",
+   "chars": 1002,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2010",
+   "run": "sampled_8",
+   "chars": 3087,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2010",
+   "run": "sampled_9",
+   "chars": 287,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-19991231",
+   "cell": "y2010",
+   "run": "sampled_10",
+   "chars": 1373,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1990",
+   "run": "greedy",
+   "chars": 1887,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1990",
+   "run": "sampled_1",
+   "chars": 1242,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1990",
+   "run": "sampled_2",
+   "chars": 130,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1990",
+   "run": "sampled_3",
+   "chars": 3402,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1990",
+   "run": "sampled_4",
+   "chars": 2990,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1990",
+   "run": "sampled_5",
+   "chars": 1712,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1990",
+   "run": "sampled_6",
+   "chars": 1834,
+   "category": "fragment",
+   "nontemplate_names": [
+    "name"
+   ]
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1990",
+   "run": "sampled_7",
+   "chars": 2839,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1990",
+   "run": "sampled_8",
+   "chars": 656,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1990",
+   "run": "sampled_9",
+   "chars": 1663,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1990",
+   "run": "sampled_10",
+   "chars": 343,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1995",
+   "run": "greedy",
+   "chars": 1908,
+   "category": "template_echo",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1995",
+   "run": "sampled_1",
+   "chars": 103,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1995",
+   "run": "sampled_2",
+   "chars": 688,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1995",
+   "run": "sampled_3",
+   "chars": 335,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1995",
+   "run": "sampled_4",
+   "chars": 2944,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1995",
+   "run": "sampled_5",
+   "chars": 673,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1995",
+   "run": "sampled_6",
+   "chars": 3172,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1995",
+   "run": "sampled_7",
+   "chars": 177,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1995",
+   "run": "sampled_8",
+   "chars": 850,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1995",
+   "run": "sampled_9",
+   "chars": 1331,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y1995",
+   "run": "sampled_10",
+   "chars": 906,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2000",
+   "run": "greedy",
+   "chars": 1144,
+   "category": "template_echo",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2000",
+   "run": "sampled_1",
+   "chars": 1009,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2000",
+   "run": "sampled_2",
+   "chars": 265,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2000",
+   "run": "sampled_3",
+   "chars": 396,
+   "category": "fragment",
+   "nontemplate_names": [
+    "costly"
+   ]
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2000",
+   "run": "sampled_4",
+   "chars": 2973,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2000",
+   "run": "sampled_5",
+   "chars": 2301,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2000",
+   "run": "sampled_6",
+   "chars": 1353,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2000",
+   "run": "sampled_7",
+   "chars": 3185,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2000",
+   "run": "sampled_8",
+   "chars": 1298,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2000",
+   "run": "sampled_9",
+   "chars": 2390,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2000",
+   "run": "sampled_10",
+   "chars": 298,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2005",
+   "run": "greedy",
+   "chars": 1599,
+   "category": "template_echo",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2005",
+   "run": "sampled_1",
+   "chars": 1170,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2005",
+   "run": "sampled_2",
+   "chars": 2509,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2005",
+   "run": "sampled_3",
+   "chars": 3450,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2005",
+   "run": "sampled_4",
+   "chars": 1270,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2005",
+   "run": "sampled_5",
+   "chars": 3105,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2005",
+   "run": "sampled_6",
+   "chars": 2341,
+   "category": "fragment",
+   "nontemplate_names": [
+    "str",
+    "str,",
+    "str,"
+   ]
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2005",
+   "run": "sampled_7",
+   "chars": 2692,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2005",
+   "run": "sampled_8",
+   "chars": 2069,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2005",
+   "run": "sampled_9",
+   "chars": 2811,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2005",
+   "run": "sampled_10",
+   "chars": 2611,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2010",
+   "run": "greedy",
+   "chars": 2098,
+   "category": "template_echo",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2010",
+   "run": "sampled_1",
+   "chars": 1814,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2010",
+   "run": "sampled_2",
+   "chars": 1608,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2010",
+   "run": "sampled_3",
+   "chars": 2720,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2010",
+   "run": "sampled_4",
+   "chars": 1820,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2010",
+   "run": "sampled_5",
+   "chars": 3480,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2010",
+   "run": "sampled_6",
+   "chars": 1084,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2010",
+   "run": "sampled_7",
+   "chars": 2433,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2010",
+   "run": "sampled_8",
+   "chars": 2979,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2010",
+   "run": "sampled_9",
+   "chars": 2104,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20041231",
+   "cell": "y2010",
+   "run": "sampled_10",
+   "chars": 152,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1990",
+   "run": "greedy",
+   "chars": 3163,
+   "category": "template_echo",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1990",
+   "run": "sampled_1",
+   "chars": 993,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1990",
+   "run": "sampled_2",
+   "chars": 663,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1990",
+   "run": "sampled_3",
+   "chars": 806,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1990",
+   "run": "sampled_4",
+   "chars": 682,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1990",
+   "run": "sampled_5",
+   "chars": 1606,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1990",
+   "run": "sampled_6",
+   "chars": 269,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1990",
+   "run": "sampled_7",
+   "chars": 1773,
+   "category": "template_echo",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1990",
+   "run": "sampled_8",
+   "chars": 592,
+   "category": "template_echo",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1990",
+   "run": "sampled_9",
+   "chars": 761,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1990",
+   "run": "sampled_10",
+   "chars": 111,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1995",
+   "run": "greedy",
+   "chars": 568,
+   "category": "template_echo",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1995",
+   "run": "sampled_1",
+   "chars": 942,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1995",
+   "run": "sampled_2",
+   "chars": 3403,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1995",
+   "run": "sampled_3",
+   "chars": 771,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1995",
+   "run": "sampled_4",
+   "chars": 1098,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1995",
+   "run": "sampled_5",
+   "chars": 1329,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1995",
+   "run": "sampled_6",
+   "chars": 17,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1995",
+   "run": "sampled_7",
+   "chars": 2344,
+   "category": "template_echo",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1995",
+   "run": "sampled_8",
+   "chars": 512,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1995",
+   "run": "sampled_9",
+   "chars": 3158,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y1995",
+   "run": "sampled_10",
+   "chars": 1345,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2000",
+   "run": "greedy",
+   "chars": 3151,
+   "category": "template_echo",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2000",
+   "run": "sampled_1",
+   "chars": 2996,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2000",
+   "run": "sampled_2",
+   "chars": 500,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2000",
+   "run": "sampled_3",
+   "chars": 103,
+   "category": "fragment",
+   "nontemplate_names": [
+    "Strassburg, Missouri"
+   ]
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2000",
+   "run": "sampled_4",
+   "chars": 1896,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2000",
+   "run": "sampled_5",
+   "chars": 420,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2000",
+   "run": "sampled_6",
+   "chars": 870,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2000",
+   "run": "sampled_7",
+   "chars": 1229,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2000",
+   "run": "sampled_8",
+   "chars": 545,
+   "category": "template_echo",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2000",
+   "run": "sampled_9",
+   "chars": 2102,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2000",
+   "run": "sampled_10",
+   "chars": 894,
+   "category": "fragment",
+   "nontemplate_names": [
+    "- Name"
+   ]
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2005",
+   "run": "greedy",
+   "chars": 1767,
+   "category": "template_echo",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2005",
+   "run": "sampled_1",
+   "chars": 353,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2005",
+   "run": "sampled_2",
+   "chars": 389,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2005",
+   "run": "sampled_3",
+   "chars": 388,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2005",
+   "run": "sampled_4",
+   "chars": 2793,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2005",
+   "run": "sampled_5",
+   "chars": 2130,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2005",
+   "run": "sampled_6",
+   "chars": 24,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2005",
+   "run": "sampled_7",
+   "chars": 615,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2005",
+   "run": "sampled_8",
+   "chars": 161,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2005",
+   "run": "sampled_9",
+   "chars": 73,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2005",
+   "run": "sampled_10",
+   "chars": 1430,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2010",
+   "run": "greedy",
+   "chars": 3163,
+   "category": "template_echo",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2010",
+   "run": "sampled_1",
+   "chars": 1618,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2010",
+   "run": "sampled_2",
+   "chars": 281,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2010",
+   "run": "sampled_3",
+   "chars": 3353,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2010",
+   "run": "sampled_4",
+   "chars": 2599,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2010",
+   "run": "sampled_5",
+   "chars": 3166,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2010",
+   "run": "sampled_6",
+   "chars": 3297,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2010",
+   "run": "sampled_7",
+   "chars": 23,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2010",
+   "run": "sampled_8",
+   "chars": 15,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2010",
+   "run": "sampled_9",
+   "chars": 241,
+   "category": "other",
+   "nontemplate_names": []
+  },
+  {
+   "vintage": "chrono-20091231",
+   "cell": "y2010",
+   "run": "sampled_10",
+   "chars": 1385,
+   "category": "other",
+   "nontemplate_names": []
+  }
+ ]
+}

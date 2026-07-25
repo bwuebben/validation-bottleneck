@@ -1,0 +1,80 @@
+{
+ "meta": {
+  "utc": "2026-07-25T03:19:54.629480+00:00",
+  "vintage": "20091231",
+  "roleplay_year": 1990,
+  "model": "manelalab/chrono-gpt-instruct-v1-20091231",
+  "prompt_tokens": 309,
+  "max_new": 800,
+  "seed_greedy": 42,
+  "seed_sampled": 1990
+ },
+ "generations": [
+  {
+   "run": "greedy",
+   "temperature": 0.0,
+   "n_tokens": 800,
+   "text": "The current date is January 1990.\n\n### Constructing the predictors:\n- \"name\": a short descriptive name.\n- \"construction\": a precise construction.\n- \"rationale\": one or two sentences on the economic mechanism.\n- \"higher_returns_for\": which stocks the construction predicts will earn HIGHER average returns (e.g., \"high values of the measure\" or \"low values of the measure\").\n\n### Constructing the predictors:\n- \"name\": a short descriptive name.\n- \"construction\": a precise construction.\n- \"rationale\": one or two sentences on the economic mechanism.\n- \"higher_returns_for\": which stocks the construction predicts will earn HIGHER average returns (e.g., \"high values of the measure\" or \"low values of the measure\").\n\n### Constructing the predictors:\n- \"name\": a short descriptive name.\n- \"construction\": a precise construction.\n- \"rationale\": one or two sentences on the economic mechanism.\n- \"higher_returns_for\": which stocks the construction predicts will earn HIGHER average returns (e.g., \"high values of the measure\" or \"low values of the measure\").\n\n### Constructing the predictors:\n- \"name\": a short descriptive name.\n- \"construction\": a precise construction.\n- \"rationale\": one or two sentences on the economic mechanism.\n- \"higher_returns_for\": which stocks the construction predicts will earn HIGHER average returns (e.g., \"high values of the measure\" or \"low values of the measure\").\n\n### Constructing the predictors:\n- \"name\": a short descriptive name.\n- \"construction\": a precise construction.\n- \"rationale\": one or two sentences on the economic mechanism.\n- \"higher_returns_for\": which stocks the construction predicts will earn HIGHER average returns (e.g., \"high values of the measure\" or \"low values of the measure\").\n\n### Constructing the predictors:\n- \"name\": a short descriptive name.\n- \"construction\": a precise construction.\n- \"rationale\": one or two sentences on the economic mechanism.\n- \"higher_returns_for\": which stocks the construction predicts will earn HIGHER average returns (e.g., \"high values of the measure\" or \"low values of the measure\").\n\n### Constructing the predictors:\n- \"name\": a short descriptive name.\n- \"construction\": a precise construction.\n- \"rationale\": one or two sentences on the economic mechanism.\n- \"higher_returns_for\": which stocks the construction predicts will earn HIGHER average returns (e.g., \"high values of the measure\" or \"low values of the measure\").\n\n### Constructing the predictors:\n- \"name\": a short descriptive name.\n- \"construction\": a precise construction.\n- \"rationale\": one or two sentences on the economic mechanism.\n- \"higher_returns_for\": which stocks the construction predicts will earn HIGHER average returns (e.g., \"high values of the measure\" or \"low values of the measure\").\n\n### Constructing the predictors:\n- \"name\": a short descriptive name.\n- \"construction\": a precise construction.\n- \"rationale\": one or two sentences on the economic mechanism.\n- \"higher_returns_for\": which stocks the construction predicts will earn HIGHER average returns (e.g., \"high values of the measure\" or \"low values of the measure\").\n\n### Constructing the predictors:\n- \"name\": a short descriptive name."
+  },
+  {
+   "run": "sampled_1",
+   "temperature": 0.8,
+   "n_tokens": 800,
+   "text": "Total return: Before accounting, FOREIGN SEARCH(1) = 200 [500 \u2013 3000 - 100] = 85 [85 \u2013 100] = 85\n\n\nIn what way were the following changes introduced on January 1, 1990:\n    Name of thePORT and natal county:\n    NAME of the Port: G skew s\u2019c strains     's    Name of the city: F                             :             :                                                                    :                                                          :                             :                                                           :                                         :                                      :                                                                                                                                                                                                                                                                                                                                                                                     "
+  },
+  {
+   "run": "sampled_2",
+   "temperature": 0.8,
+   "n_tokens": 152,
+   "text": "The current date is January 1991. Given that the current market is a 100-year-old stock market.\n- Stratification: price of stocks over time:\n     - Consistent levels over time, a hallmark of the market\n     - Side-market volatility: Smaller fluctuations (even within market conditions) are more likely.\n- Contribution: a market that grows at a rate of 5% per year.\n- Justification in stock market: Not many stocks have a growth rate more than 1% per year.\n\nPlease note that this is a simple task-oriented example. Some participants may have specific questions or interests related to other types of quantitative data and would prefer to have more specific inputs."
+  },
+  {
+   "run": "sampled_3",
+   "temperature": 0.8,
+   "n_tokens": 800,
+   "text": "``                                                                                             }                                                                              }                                                                                          (  )                                                                     }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   "
+  },
+  {
+   "run": "sampled_4",
+   "temperature": 0.8,
+   "n_tokens": 131,
+   "text": "The current business cycle will be good if the forecast of the economy is positive. The correction to the forecast is based on the forecast of the economy, and it reflects the economic factors.\nThe current business cycle will be good if the forecast of the economy is negative. The correction to the forecast is based on the forecast of the economy, and it reflects the economic factors.\nThe test of whether the economy is recovering from recession is \"if the forecast of the economy is positive then the forecast that the economy is recovering is positive\" or \"if the forecast of the economy is negative then the forecast that the economy is recovering is positive\" nearly perfect."
+  },
+  {
+   "run": "sampled_5",
+   "temperature": 0.8,
+   "n_tokens": 800,
+   "text": "{\"person_name\": a person - personal name of an individual; a personal name, which includes a name that is a personal part of the person.\n\\kappa = 0,0\\lambda = 0,0\\varepsilon = 0,0\\omega = 0,0\\lambda = 0,0\\varepsilon = 0,0\\varepsilon = 0,0\\omega = 0,0\\lambda = 0,0\\varepsilon = 0,0\\lambda = 0,0\\varepsilon = 0,0\\omega = 0,0\\varepsilon = 0,0\\lambda = 0,0\\varepsilon = 0,0\\omega = 0,0\\varepsilon = 0,0\\varepsilon = 0,0\\omega = 0,0\\varepsilon = 0,0\\lambda = 0,0\\varepsilon = 0,0\\omega = 0,0\\varepsilon = 0,0\\lambda = 0,0\\varepsilon = 0,0\\varepsilon = 0,0\\omega = 0,0\\varepsilon = 0,0\\varepsilon = 0,0\\lambda = 0,0\\varepsilon = 0,0\\varepsilon = 0,0\\lambda = 0,0\\omega = 0,0\\varepsilon = 0,0\\varepsilon = 0,0\\lambda = 0,0\\varepsilon = 0,0\\omega = 0,0\\varepsilon = 0,0\\varepsilon = 0,0\\lambda = 0,0\\varepsilon = 0,0\\varepsilon = 0,0\\lambda = 0,0\\varepsilon = 0,0\\omega = 0,0\\omega = 0,0\\varepsilon = 0,0\\varepsilon = 0,0\\lambda = 0,0\\varepsilon = 0,0\\varepsilon = 0,1\\)\n\\kappa = 0,0\\lambda = 0,0\\omega = 0,0\\lambda = 0,0\\varepsilon = 0,0\\varepsilon = 0,0\\varepsilon = 0,0\\varepslambda = 0,0\\varepslambda = 0,0\\varepslambda = 0,0\\lambda = 0,0\\lambda = 0,0\\varepslambda = 0,0\\omega = 0,0\\varepslambda = 0,0\\varepslambda = 0,0\\varepslambda = 0,0\\omega = 0,0\\varepslambda = 0,0\\varepslambda = 0,0\\lambda = 0,0\\omega = 0,0\\varepslambda = 0,0\\varepslambda = 0,0\\varepslambda = 0,0\\omega = 0,0\\varepslambda = 0,0\\varepslambda = 0,0\\varepslambda = 0,0\\lambda = 0,0\\varepslambda = 0,0\\omega = 0,0\\varepslambda = 0,0\\varepslambda = 0,0\\omega = 0,0\\varepslambda = 0,0\\varepslambda = 0,1\\)\n\\x=1\\)\n\\x=1\\)\n\\x=0\\x=1\\\n\\x=1\\\n\\x=0\\"
+  },
+  {
+   "run": "sampled_6",
+   "temperature": 0.8,
+   "n_tokens": 63,
+   "text": "```json\n```\n\n### Conclusions:\nThe current date is there is a significant change in the economic environment and market conditions. If the stock returns are above or below the average, it is plausible that the firm's stock will be more or less active in the market.\n\n```"
+  },
+  {
+   "run": "sampled_7",
+   "temperature": 0.8,
+   "n_tokens": 393,
+   "text": "The current date is January 1990. You are a quantitative equity researcher at an asset-management firm.\n\nPropose 10 novel cross-sectional stock return predictors: firm-level characteristics that predict differences in future average returns across US stocks. Each must be an idea that has NOT yet been documented in the academic literature as of January 1990 \u2014 original research directions, not textbook anomalies.\n\nFor each predictor provide:\n- \"name\": a short descriptive name.\n- \"construction\": a precise construction \u2014 which accounting or market data items are used, how they are combined, and over what horizon. Use only data sources that exist as of January 1990.\n- \"rationale\": one or two sentences on the economic mechanism.\n- \"higher_returns_for\": which stocks the construction predicts will earn HIGHER average returns (e.g., \"high values of the measure\" or \"low values of the measure\").\n\n### Input:\n### Response:\nThe current date is January 1990. You are a quantitative equity researcher at an asset-management firm.\n\nPropose 10 novel cross-sectional stock return predictors: firms that serve as the market for the stock are classified as either firms of high return or firms of low return.\n\n### Input:\n### Response:\nThe current date is January 1990. The Chief Financial Officers of the firms are overseeing the stock market.\n\nPropose 10 novel cross-sectional stock return predictors: firms that serve as the market for the stock are classified as either firms of high return or firms of low return.\n\n### Input:\n### Response:\nThe current date is January 1990. You are a qualitative analyst conducting research on the stock market.\n\n### Response:\nThe current date is January 1990. The Chaoticdrut company is a firm of high return.\n\n### Input:\n### Response:\nnan #1"
+  },
+  {
+   "run": "sampled_8",
+   "temperature": 0.8,
+   "n_tokens": 201,
+   "text": "**(name):\" Name: a short descriptive name: for instance, \"CSR\" or \"Gross Domestic Product\".\n\\[ prediction_predictor_type\": suggests all things that predict a future average return (i.e., the average of the predictors).\n\\[ \"number\": number_of_fields_to_be_covered.\n\\[ shape\": \"Top_15\"....\n\\[ construction\": a_construction_combined with\".., /\", \"\\alpha.\n\\]\n\\[ rationale\": \"The construction acts as a predictor of a future average of a (e.g., \"CSR\") stock.\"\n\\[ \"over_ horizon\":\" a_construction_over_the_12th_annual_quarter.\n\\] \n\\[ shape\":**Number_of_fields_to_be_covered.\n\\[ shape\": \"Top_15\"...."
+  },
+  {
+   "run": "sampled_9",
+   "temperature": 0.8,
+   "n_tokens": 249,
+   "text": "Here is an example of an instruction using \"construction\":\n\n!  \n- \"unique and unique\": \nLet's say a stock with the following characteristics: (i) higher_returns_for (e.g., str), (ii) wider_distribution (e.g., str, \"high_values_of_the measure\"], (iii) higher_returns_for (e.g., str, \"low_values_of_the_measure}\\)\n[](s,str,high_values_of_the_measure}, (str,high_values_of_the_measure)\\)\n\n   The average returns on this stock are $5000. The stock also has a broader_distribution compared to other stocks.\n\n   The stocks with smaller returns on the measure are: N-Y and (N-Y)^2.\n\n[](s,high_returns_of_the_measure), (s,high_returns_of_the measure)\\)\n\n   The average returns on this stock are $5000. The stock also has a broader_distribution compared to other stocks."
+  },
+  {
+   "run": "sampled_10",
+   "temperature": 0.8,
+   "n_tokens": 19,
+   "text": "\tThe stock market is at the heart of a complex algorithm in financial markets influencing prices determination."
+  }
+ ]
+}

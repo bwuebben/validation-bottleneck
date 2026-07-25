@@ -75,6 +75,9 @@ direct downloads from the providers above.
 
 - Chen, A. Y., and T. Zimmermann (2022). "Open Source Cross-Sectional Asset Pricing."
   *Critical Finance Review* 11(2), 207–264. https://www.openassetpricing.com
+- He, S., L. Lv, A. Manela, and J. Wu (2025). "Chronologically Consistent Large
+  Language Models" (ChronoGPT vintage models, https://huggingface.co/manelalab) —
+  used for the vintage-model control arm in `exp1/control/`.
 - Kenneth French Data Library.
 - FRED (Federal Reserve Economic Data), series VIXCLS; U.S. Treasury yields.
 

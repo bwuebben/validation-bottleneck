@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:50:54.149190+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y2010_seed09_Tdefault.json",
+  "prompt_sha256": "c47ccbca6630dc727c6290328a568aa3728500d1bec113649b3b1aca52b29230"
+ },
+ "response": {
+  "id": "chatcmpl-E5QVg3ybRKh7lq09eAyjXPoGenDP9",
+  "object": "chat.completion",
+  "created": 1784962252,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"Herf\", \"strength\": \"related\", \"reason\": \"Both use customer concentration, but Herf is industry-level, not firm drift.\"},\n  {\"index\": 1, \"match\": \"TotalAccruals\", \"strength\": \"close\", \"reason\": \"Both use accruals, but proposal adds volatility scaling.\"},\n  {\"index\": 2, \"match\": \"OrderBacklogChg\", \"strength\": \"exact\", \"reason\": \"Both use change in order backlog scaled by assets.\"},\n  {\"index\": 3, \"match\": \"IntanBM\", \"strength\": \"close\", \"reason\": \"Both adjust BM for intangibles, but proposal adds gap focus.\"},\n  {\"index\": 4, \"match\": \"RealizedVol\", \"strength\": \"related\", \"reason\": \"Both use intraday volatility, but proposal uses dispersion of ranges.\"},\n  {\"index\": 5, \"match\": \"GrSaleToGrInv\", \"strength\": \"close\", \"reason\": \"Both compare inventory and sales growth, but proposal focuses on finished goods.\"},\n  {\"index\": 6, \"match\": \"NetEquityFinance\", \"strength\": \"related\", \"reason\": \"Both use external financing, but proposal uses persistence/consistency.\"},\n  {\"index\": 7, \"match\": \"GP\", \"strength\": \"related\", \"reason\": \"Both use gross margin, but proposal focuses on stability, not level.\"},\n  {\"index\": 8, \"match\": \"Tax\", \"strength\": \"close\", \"reason\": \"Both use tax expense, but proposal uses surprise vs. expected.\"},\n  {\"index\": 9, \"match\": \"ChNAnalyst\", \"strength\": \"exact\", \"reason\": \"Both use change in analyst coverage over recent period.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3162,
+   "completion_tokens": 397,
+   "total_tokens": 3559,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

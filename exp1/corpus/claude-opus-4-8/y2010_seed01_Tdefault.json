@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:42:49.568569+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 1,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNKZd7e4cyL6pU1Bf4HP",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Supplier Concentration Fragility\", \"construction\": \"From 10-K MD&A and note disclosures, count the number of named major suppliers accounting for >10% of cost of goods sold. Construct a Herfindahl-style concentration index of disclosed supplier dependence, scaled by COGS/total assets. Rank firms cross-sectionally each June using the most recent annual filing.\", \"rationale\": \"Firms dependent on few suppliers face uninsurable input-disruption risk that is slow to be priced, commanding a risk premium once supply-chain fragility materializes.\", \"higher_returns_for\": \"high supplier concentration\"}, {\"name\": \"Order Backlog Growth Acceleration\", \"construction\": \"Using Compustat item order backlog (OB), compute the second difference of log backlog scaled by sales over the trailing four annual reports (acceleration = current backlog growth minus prior-year backlog growth). Rank firms with reported backlog each June.\", \"rationale\": \"Accelerating backlog signals demand momentum that analysts underweight relative to earnings, generating underreaction and subsequent positive drift.\", \"higher_returns_for\": \"high backlog growth acceleration\"}, {\"name\": \"Intraday Range Compression\", \"construction\": \"For each stock, compute the average daily (high-low)/close range over the prior 60 trading days, then divide by the same range measured over the prior 250 days. Values below 1 indicate volatility compression. Rank cross-sectionally monthly.\", \"rationale\": \"Compressed intraday ranges reflect building latent uncertainty and reduced liquidity provision, which precede volatility expansion and demand a premium.\", \"higher_returns_for\": \"low range compression ratio (most compressed)\"}, {\"name\": \"Deferred Revenue Momentum\", \"construction\": \"From quarterly balance sheets, compute the year-over-year growth in deferred/unearned revenue (Compustat DRC/DRLT) scaled by total assets, using the four most recent quarters. Rank firms with nonzero deferred revenue monthly following the earnings filing.\", \"rationale\": \"Rising deferred revenue is a leading indicator of future recognized sales and cash flows that is under-scrutinized versus headline earnings, causing predictable drift.\", \"higher_returns_for\": \"high deferred revenue growth\"}, {\"name\": \"Capex Timing Asymmetry\", \"construction\": \"Compute the ratio of fourth-quarter capital expenditures to full-year capital expenditures (from quarterly cash-flow statements). Firms concentrating investment in Q4 score high. Rank annually each March.\", \"rationale\": \"Year-end concentrated capex reflects opportunistic, less-disciplined budget-exhausting spending associated with weaker future returns on investment.\", \"higher_returns_for\": \"low Q4 capex concentration\"}, {\"name\": \"Analyst Coverage Dispersion Decay\", \"construction\": \"Using I/B/E/S, measure the change in the standard deviation of analyst long-term growth forecasts over the trailing 6 months, scaled by consensus growth. Negative values (converging opinions) rank high. Update monthly.\", \"rationale\": \"Converging analyst opinions signal resolving uncertainty and declining ambiguity risk, which is followed by positive returns as disagreement-based discounts unwind.\", \"higher_returns_for\": \"large decline in forecast dispersion\"}, {\"name\": \"Working Capital Efficiency Shock\", \"construction\": \"Compute the cash conversion cycle (days inventory + days receivable - days payable) from quarterly data, then measure its year-over-year change. Firms with large improvements (declines) rank high. Update after each quarterly filing.\", \"rationale\": \"Sudden improvements in working-capital efficiency reveal operational discipline and free cash generation that markets are slow to capitalize.\", \"higher_returns_for\": \"large improvement (decline) in cash conversion cycle\"}, {\"name\": \"Debt Maturity Wall Proximity\", \"construction\": \"From long-term debt maturity schedules in 10-K notes, compute the fraction of total debt maturing within the next 24 months, scaled by trailing operating cash flow. Rank firms annually each March.\", \"rationale\": \"A near-term maturity wall relative to internal cash generation embeds refinancing risk that commands a premium when credit conditions are uncertain.\", \"higher_returns_for\": \"high near-term maturity share relative to cash flow\"}, {\"name\": \"Employee Productivity Trend\", \"construction\": \"Compute sales per employee (Compustat SALE/EMP) and measure its three-year compound growth rate. Rank firms with reported employee counts each June.\", \"rationale\": \"Sustained gains in labor productivity reflect improving operating leverage and competitive advantage that are underpriced due to the low salience of headcount data.\", \"higher_returns_for\": \"high sales-per-employee growth\"}, {\"name\": \"Return Seasonality Persistence\", \"construction\": \"For each stock, compute the average return in the same calendar month over the prior five years, then form the cross-sectional rank of this historical same-month average each month. Trade the stocks with the highest historical same-month returns.\", \"rationale\": \"Firm-specific seasonal patterns in cash flows and information releases recur but are neglected by investors focused on recent overall performance.\", \"higher_returns_for\": \"high historical same-calendar-month average return\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1795,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

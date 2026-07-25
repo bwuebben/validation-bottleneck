@@ -90,3 +90,75 @@ provider returns no logprobs): **WALL = 2024-03**; OSAP window 2024-04 → 2024-
 generation call (1 of 42) is excluded at Stage 0 as an invalid response. For Experiment 1,
 the same judge, matching protocol, and tests (a)/(b) extend to this model (Fisher
 combination now over 20 model×vintage cells). No other changes.
+
+---
+
+## Amendment 3 (2026-07-25) — grammar randomization test (registered before running)
+
+Purpose: the noise benchmark for the realized maximum t. The √(2lnM) expression used in
+the paper is the leading-order extreme-value term, not E[max]; and composite t-statistics
+are cross-sectionally dependent, which no closed form absorbs. The correct null is the
+**grammar monkey**: does the model's selection of M expressions beat M uniform draws from
+the same grammar, evaluated on the identical window and pipeline?
+
+- **Pool:** R = 10,000 expressions drawn uniformly from the registered grammar, seed 42:
+  k ~ U{2,3,4}; k distinct primitives uniform without replacement from the 212; each
+  weight iid U{−1, −0.5, +0.5, +1}; regime ~ U{six regimes, NONE} (7 equally likely);
+  vol_target ~ Bernoulli(1/2). No dedup (draws are iid; a monkey may repeat itself).
+- **Evaluation:** the registered Stage-1/Stage-2 pipeline verbatim (same gating, vol
+  targeting, sufficiency: ≥ MIN_MONTHS and ≥80% of the model's post-wall window; draws
+  failing sufficiency for a model are excluded from that model's pool, count reported).
+- **Null distribution of the maximum:** per model, B = 10,000 resamples with replacement
+  of size M_model (registered distinct-M: 330 / 318 / 294) from the model's pool
+  t-statistics; the resample maxima form the null. Report the realized max t, the null's
+  mean and 50/90/95/99 percentiles, and the realized max's percentile in the null.
+- **Role:** descriptive benchmark replacing the √(2lnM)-vs-max comparison in the text;
+  the BY-FDR stage remains the confirmatory multiplicity control. Registered reading:
+  a realized max at or below the null median indicates the generator's ranking carries
+  no exploitable information relative to uniform sampling from its own grammar.
+
+---
+
+## Amendment 4 (2026-07-25) — auxiliary-battery positive control (registered before running)
+
+Purpose: establish whether the auxiliary test types have power on the short post-wall
+windows, by running the identical test mechanics on implications documented as true in
+the published literature. Pinned ex ante; the list below is frozen at this commit.
+
+**Test mechanics:** identical to the registered Stage-3 aux code (05_evaluate):
+regime_interaction = sign of (mean in-regime − mean out) on post-wall raw LS months,
+≥6 obs per side; correlation = |corr| vs 0.3 on ≥12 joint post-wall months, bound
+above/below; subperiod_consistency = both halves of the post-wall window positive.
+Windows: all three registered model windows (2022-04, 2024-01, 2024-03 walls → Dec 2024).
+
+**Pinned implications (OSAP signalnames; direction; source):**
+Regime interactions:
+ R1 Mom12m lower in MKT_TRAILING_12M_DOWN — momentum follows up-markets, crashes after
+    down-markets (Cooper–Gutierrez–Hameed 2004; Daniel–Moskowitz 2016)
+ R2 Mom12m lower in VIX_ABOVE_TRAILING_MEDIAN — momentum weak in high-vol states
+    (Barroso–Santa-Clara 2015)
+ R3 STreversal higher in VIX_ABOVE_TRAILING_MEDIAN — reversal = liquidity provision,
+    paid more in stress (Nagel 2012)
+ R4 Illiquidity lower in VIX_ABOVE_TRAILING_MEDIAN — illiquid-minus-liquid realized
+    returns fall in liquidity crises (Acharya–Pedersen 2005; Amihud 2002)
+ R5 Size lower in VIX_ABOVE_TRAILING_MEDIAN — small caps underperform in
+    flight-to-quality states
+Correlations (|corr| ≥ 0.3 unless noted):
+ C1 Mom12m × BM — strong negative value–momentum correlation
+    (Asness–Moskowitz–Pedersen 2013)
+ C2 Mom12m × LRreversal — long-run reversal is value-like/anti-momentum
+    (De Bondt–Thaler 1985; AMP 2013)
+ C3 BM × BMdec — near-duplicate constructions of one signal (structural)
+ C4 GP × BM — profitability negatively correlated with value (Novy-Marx 2013)
+ C5 Size × Illiquidity — size and illiquidity intertwined (Amihud 2002)
+ C6 Accruals × AssetGrowth — accruals/investment kinship (Fairfield et al. 2003;
+    Cooper–Gulen–Schill 2008)
+Subperiod consistency (both halves positive — deliberately included although true
+premia are underpowered here; the per-type pass-rate decomposition is the point):
+ S1 Mom12m   S2 BM   S3 STreversal
+
+**Registered reading:** per-type pass rates of documented-true implications on the same
+windows. High structural-type rates with low subperiod rates would establish that the
+battery's power resides in structure-testing implications; uniform ~50% rates would
+establish the battery is uninformative at these horizons and Section 3.2's protocol
+claim must be weakened accordingly. Either outcome is reported.

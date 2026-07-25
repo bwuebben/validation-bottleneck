@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:35:26.342826+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 7,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJzcYFASruPv7JwW4V6",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory Efficiency Divergence\", \"construction\": \"For each fiscal year, compute the ratio of inventory growth (Compustat item INVT year-over-year change) to sales growth (SALE year-over-year change). Rank firms cross-sectionally; the measure is inventory growth minus sales growth, scaled by lagged total assets (AT). Rebalance annually four months after fiscal year end.\", \"rationale\": \"Inventory building that outpaces sales signals weakening demand and future write-downs or margin pressure that the market is slow to fully price.\", \"higher_returns_for\": \"low values of the measure (inventory growing slower than sales)\"},\n{\"name\": \"Accrual-Weighted Earnings Volatility\", \"construction\": \"Compute the standard deviation of quarterly earnings (Compustat IBQ scaled by lagged assets ATQ) over the prior 12 quarters, then multiply by the ratio of total accruals (change in non-cash working capital minus depreciation, from balance-sheet items) to net income for the most recent fiscal year. Rank cross-sectionally, rebalance quarterly.\", \"rationale\": \"Firms with volatile earnings driven by high accruals have low-quality, less persistent earnings that investors overvalue, leading to lower subsequent returns.\", \"higher_returns_for\": \"low values of the measure\"},\n{\"name\": \"Order Backlog Intensity\", \"construction\": \"For firms reporting order backlog (Compustat item OB), compute backlog scaled by total sales (SALE) for the most recent fiscal year, and the year-over-year change in this ratio. The predictor is the change in scaled backlog. Rebalance annually four months after fiscal year end; universe limited to firms disclosing OB.\", \"rationale\": \"Rising order backlog relative to sales is a leading indicator of future revenue growth that is not yet reflected in reported earnings and is underweighted by investors.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Capital Expenditure Acceleration\", \"construction\": \"Compute the second difference of capital expenditures (Compustat CAPX): (CAPX_t - CAPX_{t-1}) minus (CAPX_{t-1} - CAPX_{t-2}), scaled by lagged total assets (AT). Rank cross-sectionally, rebalance annually.\", \"rationale\": \"Accelerating investment reflects managerial overconfidence and empire-building that tends to precede disappointing returns as overinvestment erodes future profitability.\", \"higher_returns_for\": \"low values of the measure (decelerating capex)\"},\n{\"name\": \"Dividend Initiation Persistence Gap\", \"construction\": \"For firms paying dividends (DVC > 0), compute the ratio of dividends paid to free cash flow (operating cash flow OANCF minus CAPX). Combine with the number of consecutive years of dividend increases. The predictor ranks firms by the gap between dividend commitment and free-cash-flow coverage. Rebalance annually.\", \"rationale\": \"Firms sustaining dividends with weak free-cash-flow coverage signal management confidence in future cash flows or, alternatively, unsustainable payouts; the well-covered persistent payers earn a quality premium.\", \"higher_returns_for\": \"high free-cash-flow coverage of a persistent dividend\"},\n{\"name\": \"Selling Expense Operating Leverage\", \"construction\": \"Compute selling, general and administrative expense (Compustat XSGA) as a fraction of sales (SALE), then take the year-over-year change in this ratio during a period of positive sales growth. The predictor is the negative of the change (i.e., SG&A ratio falling while sales rise). Rebalance annually.\", \"rationale\": \"Declining SG&A intensity during revenue expansion reveals improving operating leverage and cost discipline not yet capitalized into prices.\", \"higher_returns_for\": \"high values (falling SG&A ratio amid growth)\"},\n{\"name\": \"Return-on-Equity Trend Consistency\", \"construction\": \"Compute quarterly ROE (IBQ divided by lagged common equity CEQQ) for the prior 8 quarters. Fit the sign consistency of quarter-over-quarter changes: the measure is the fraction of quarters with non-decreasing ROE. Rank cross-sectionally, rebalance quarterly.\", \"rationale\": \"Monotonically improving profitability reflects durable competitive advantage that the market underappreciates relative to a single-period ROE level.\", \"higher_returns_for\": \"high values of the measure\"},\n{\"name\": \"Asset-Liquidity Mispricing\", \"construction\": \"Compute the fraction of total assets held as cash and short-term investments (CHE / AT), and interact it with the book-to-market ratio. The predictor identifies value firms (high B/M) that also hold large liquid balances. Rank cross-sectionally, rebalance annually.\", \"rationale\": \"High cash holdings within apparently cheap value firms indicate hidden financial flexibility and downside protection that the market discounts excessively.\", \"higher_returns_for\": \"high cash-holding value firms\"},\n{\"name\": \"Share Issuance Timing Signal\", \"construction\": \"Compute the year-over-year change in split-adjusted shares outstanding (Compustat CSHO adjusted by AJEX) over the prior fiscal year, and combine with the firm's prior 12-month stock return. The predictor is negative net issuance following high returns (i.e., low share growth after price run-ups). Rebalance annually.\", \"rationale\": \"Managers issue equity when they perceive their stock is overvalued; firms that refrain from issuing after strong price appreciation signal management belief in continued undervaluation.\", \"higher_returns_for\": \"low share issuance following high past returns\"},\n{\"name\": \"Tax-Book Income Divergence\", \"construction\": \"Estimate taxable income as current tax expense (Compustat TXT minus deferred tax TXDI) divided by the statutory tax rate, then compute the ratio of this estimated taxable income to reported pre-tax book income (PI). The predictor is one minus this ratio (book-tax gap), scaled. Rank cross-sectionally, rebalance annually.\", \"rationale\": \"A large excess of book income over taxable income signals aggressive accrual-based earnings management and lower earnings quality, predicting lower future returns.\", \"higher_returns_for\": \"low book-tax income gap (book income close to taxable income)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 2150,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

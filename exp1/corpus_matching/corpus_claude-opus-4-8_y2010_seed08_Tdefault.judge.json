@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:50:51.457532+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y2010_seed08_Tdefault.json",
+  "prompt_sha256": "2f188fbe6a08b4911aea58736c4c1a1358fef9ef3416fe439aff17b6eda1601e"
+ },
+ "response": {
+  "id": "chatcmpl-E5QVdF43Cwb0xPcnGeZIB7goTj9l9",
+  "object": "chat.completion",
+  "created": 1784962249,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Both use Herfindahl index for customer concentration.\"},\n  {\"index\": 1, \"match\": \"ChNWC\", \"strength\": \"close\", \"reason\": \"Both use changes in non-cash working capital.\"},\n  {\"index\": 2, \"match\": \"EarningsForecastDisparity\", \"strength\": \"related\", \"reason\": \"Both use earnings volatility/dispersion, but different construction.\"},\n  {\"index\": 3, \"match\": \"DolVol\", \"strength\": \"related\", \"reason\": \"Both use order flow/volume, but different signal focus.\"},\n  {\"index\": 4, \"match\": \"GrAdExp\", \"strength\": \"related\", \"reason\": \"Both use R&D growth, but proposal interacts with margins.\"},\n  {\"index\": 5, \"match\": \"DelLTI\", \"strength\": \"related\", \"reason\": \"Both relate to changes in long-term debt, but proposal focuses on maturity.\"},\n  {\"index\": 6, \"match\": \"ChNAnalyst\", \"strength\": \"close\", \"reason\": \"Both use change in analyst coverage.\"},\n  {\"index\": 7, \"match\": \"BookLeverage\", \"strength\": \"related\", \"reason\": \"Both measure leverage, but proposal focuses on leases.\"},\n  {\"index\": 8, \"match\": \"DivSeason\", \"strength\": \"related\", \"reason\": \"Both use seasonality, but proposal uses sales not dividends.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses insider agreement/dispersion.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3193,
+   "completion_tokens": 373,
+   "total_tokens": 3566,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

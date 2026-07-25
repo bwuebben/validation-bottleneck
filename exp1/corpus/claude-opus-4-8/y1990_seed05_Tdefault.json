@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:24:42.495620+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 5,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJBdn6q1VzTiQot9cjN",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory Growth Divergence\", \"construction\": \"Compute year-over-year growth in inventories (Compustat item INVT) minus year-over-year growth in sales (item SALE). Rank stocks cross-sectionally each June using the most recent fiscal-year data.\", \"rationale\": \"Inventory accumulating faster than sales signals overproduction and weakening demand, presaging future markdowns and lower earnings that the market underappreciates.\", \"higher_returns_for\": \"low values of the measure (inventory growing slower than sales)\"},\n{\"name\": \"Accrual-to-Cash-Flow Ratio\", \"construction\": \"For each firm compute (net income minus operating cash flow) scaled by absolute operating cash flow. Operating cash flow approximated as net income (item NI) plus depreciation (item DP) minus change in non-cash working capital (change in ACT minus CHE, less change in LCT minus DLC). Rank annually.\", \"rationale\": \"Firms whose earnings are driven by accruals rather than cash have lower earnings quality and tend to see subsequent negative earnings surprises.\", \"higher_returns_for\": \"low values of the measure (cash-backed earnings)\"},\n{\"name\": \"Capital Expenditure Intensity Shock\", \"construction\": \"Compute capital expenditures (item CAPX) scaled by lagged total assets (item AT), then take the deviation from the firm's own prior three-year average of the same ratio. Rank cross-sectionally each June.\", \"rationale\": \"Sharp increases in investment relative to a firm's norm often reflect empire-building and overoptimism, leading to disappointing returns on the new capital.\", \"higher_returns_for\": \"low values of the measure (below-trend investment)\"},\n{\"name\": \"Gross Margin Trend\", \"construction\": \"Compute gross margin as (SALE minus COGS)/SALE for the current and prior fiscal year; the predictor is the change in gross margin year over year. Rank annually.\", \"rationale\": \"Improving gross margins indicate strengthening competitive position and pricing power not yet fully reflected in valuation.\", \"higher_returns_for\": \"high values of the measure (improving margins)\"},\n{\"name\": \"Employee Productivity Growth\", \"construction\": \"Compute sales per employee (SALE divided by item EMP) for current and prior year; predictor is the year-over-year growth rate. Rank stocks annually in June.\", \"rationale\": \"Rising output per worker signals operational efficiency gains and cost discipline that translate into higher future profitability.\", \"higher_returns_for\": \"high values of the measure (rising productivity)\"},\n{\"name\": \"Dividend Initiation/Growth Signal\", \"construction\": \"Compute the year-over-year change in total dividends paid (item DVT) scaled by lagged market equity (price times shares from CRSP). Rank cross-sectionally each June, giving special weight to firms moving from zero to positive dividends.\", \"rationale\": \"Managers raise or initiate dividends only when confident about sustainable future cash flows, a credible signal the market underreacts to.\", \"higher_returns_for\": \"high values of the measure (dividend increases/initiations)\"},\n{\"name\": \"Share Issuance Contraction\", \"construction\": \"Compute the annual percentage change in split-adjusted shares outstanding using CRSP (shares times cumulative adjustment factor). Rank stocks each June by this net issuance measure.\", \"rationale\": \"Net share repurchases signal managerial belief that equity is undervalued, while heavy issuance reflects overvaluation and dilutes future per-share returns.\", \"higher_returns_for\": \"low values of the measure (net repurchasers)\"},\n{\"name\": \"Return Volatility Change\", \"construction\": \"Compute daily return standard deviation (CRSP) over the most recent 3 months minus that over the prior 3-month window (months 4 to 6 back). Rank cross-sectionally each month.\", \"rationale\": \"A recent decline in idiosyncratic volatility signals resolving uncertainty and stabilizing fundamentals, which precedes positive risk-adjusted returns.\", \"higher_returns_for\": \"low values of the measure (falling volatility)\"},\n{\"name\": \"Volume-Weighted Momentum Consistency\", \"construction\": \"Over months t-12 to t-2, count the fraction of months with positive returns, then interact this consistency score with cumulative return. Higher-turnover consistency is measured using CRSP monthly returns and volume. Rank monthly.\", \"rationale\": \"Momentum that arises from steady monthly gains reflects durable information diffusion, whereas momentum from a few large jumps mean-reverts.\", \"higher_returns_for\": \"high values of the measure (consistent positive momentum)\"},\n{\"name\": \"Debt Maturity Rollover Risk\", \"construction\": \"Compute short-term debt (item DLC) divided by total debt (DLC plus DLTT). Rank cross-sectionally each June, controlling for leverage level.\", \"rationale\": \"Firms reliant on short-term debt face refinancing and rollover risk; investors demand a premium for bearing this exposure to funding-market conditions.\", \"higher_returns_for\": \"high values of the measure (greater short-term debt reliance)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1734,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:49:21.461988+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y1995_seed08_Tdefault.json",
+  "prompt_sha256": "86c5fa2c949a751069ce5ae326238dc15a78ad65a55644a6d190c8825e9e672c"
+ },
+ "response": {
+  "id": "chatcmpl-E5QUBI0aVWxI5GjjusIZKo8vzm1k8",
+  "object": "chat.completion",
+  "created": 1784962159,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"GrSaleToGrInv\", \"strength\": \"close\", \"reason\": \"Both compare sales and inventory growth, but proposal uses difference not ratio.\"},\n  {\"index\": 1, \"match\": \"CBOperProf\", \"strength\": \"close\", \"reason\": \"Both adjust profitability for accruals, but differ in accruals calculation details.\"},\n  {\"index\": 2, \"match\": \"DivInit\", \"strength\": \"exact\", \"reason\": \"Dividend initiation indicator matches DivInit construction.\"},\n  {\"index\": 3, \"match\": \"grcapx3y\", \"strength\": \"close\", \"reason\": \"Both use multi-year capex/asset averages, but proposal uses three-year mean.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses sales/employee or its trend.\"},\n  {\"index\": 5, \"match\": \"IdioVol3F\", \"strength\": \"close\", \"reason\": \"Both use idiosyncratic volatility, but proposal uses contraction ratio.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses gross margin stability or its volatility.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses short-term debt to total debt ratio.\"},\n  {\"index\": 8, \"match\": \"MomVol\", \"strength\": \"close\", \"reason\": \"Both combine momentum and turnover, but proposal uses turnover-adjusted return.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses tax-book income gap as constructed.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3075,
+   "completion_tokens": 387,
+   "total_tokens": 3462,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

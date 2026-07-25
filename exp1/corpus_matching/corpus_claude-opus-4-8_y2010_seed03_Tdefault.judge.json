@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:50:38.392928+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y2010_seed03_Tdefault.json",
+  "prompt_sha256": "947932cf9ab3a1685b7e5b32735c594b039c2c1e9a5ec0a58b923f48351520f1"
+ },
+ "response": {
+  "id": "chatcmpl-E5QVQ8FsOU8nNOaMC7UQJ3q7YEz9Y",
+  "object": "chat.completion",
+  "created": 1784962236,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"iomom_supp\", \"strength\": \"related\", \"reason\": \"Both use supplier-customer linkages, but construction and signal differ.\"},\n  {\"index\": 1, \"match\": \"ChNWC\", \"strength\": \"close\", \"reason\": \"Both use change in net working capital, but this is acceleration.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses intra-year sales seasonality shift.\"},\n  {\"index\": 3, \"match\": \"RDAbility\", \"strength\": \"related\", \"reason\": \"Both use intangible investment, but dispersion is a new angle.\"},\n  {\"index\": 4, \"match\": \"OrderBacklogChg\", \"strength\": \"exact\", \"reason\": \"Year-over-year change in order backlog is identical.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses debt maturity wall or its interaction.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses gross margin volatility or stability.\"},\n  {\"index\": 7, \"match\": \"Tax\", \"strength\": \"related\", \"reason\": \"Both use effective tax rates, but reversal/mean-reversion is new.\"},\n  {\"index\": 8, \"match\": \"CashProd\", \"strength\": \"related\", \"reason\": \"Both use productivity, but this is sales-per-employee surprise.\"},\n  {\"index\": 9, \"match\": \"DelBreadth\", \"strength\": \"close\", \"reason\": \"Both use change in institutional ownership breadth, but this is acceleration.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3156,
+   "completion_tokens": 377,
+   "total_tokens": 3533,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

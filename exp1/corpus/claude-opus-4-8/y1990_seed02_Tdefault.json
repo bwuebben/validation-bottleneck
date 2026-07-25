@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:23:24.782595+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 2,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJ5sj5AFjiQs7FPBQp7",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory Growth Divergence\", \"construction\": \"For each fiscal year, compute the growth rate of inventories (Compustat item INVT) minus the growth rate of sales (item SALE), both year-over-year. Rank stocks cross-sectionally each June using the most recent fiscal year data.\", \"rationale\": \"Inventory building faster than sales signals overproduction and weak future demand, presaging margin compression and negative earnings surprises.\", \"higher_returns_for\": \"low values of the measure (inventories growing slower than sales)\"},\n{\"name\": \"Accrual-to-Cash-Flow Ratio\", \"construction\": \"Compute total accruals as the change in non-cash working capital minus depreciation, using balance-sheet items: change in current assets (ACT) minus change in cash (CHE), minus change in current liabilities (LCT) minus change in debt in current liabilities (DLC), minus depreciation (DP). Divide by operating cash flow proxied by net income (IB) plus depreciation. Rank each June.\", \"rationale\": \"Earnings driven by accruals rather than cash are less persistent and are systematically over-extrapolated by investors, reversing in future periods.\", \"higher_returns_for\": \"low values of the measure (cash-based earnings)\"},\n{\"name\": \"Capital Expenditure Intensity Shock\", \"construction\": \"Compute capital expenditures (CAPX) scaled by lagged net property, plant and equipment (PPENT), then subtract the firm's own prior three-year average of this ratio. Rank cross-sectionally each June.\", \"rationale\": \"Abnormal investment surges reflect empire-building and overoptimism about growth, leading to poor subsequent returns as returns on new capital disappoint.\", \"higher_returns_for\": \"low values of the measure (below-normal investment)\"},\n{\"name\": \"Dividend Initiation Momentum\", \"construction\": \"Flag firms that paid zero cash dividends (DVC) in the prior fiscal year but positive dividends in the most recent fiscal year. Compare their subsequent 12-month returns to continuing payers and non-payers.\", \"rationale\": \"Managers initiate dividends when confident in sustainable cash flows; the signal is under-reacted to by investors accustomed to the prior no-dividend regime.\", \"higher_returns_for\": \"high values (dividend initiators)\"},\n{\"name\": \"Gross Margin Trend\", \"construction\": \"Compute gross margin as (SALE minus COGS)/SALE for each of the last two fiscal years and take the change. Rank stocks each June by this year-over-year change in gross margin.\", \"rationale\": \"Improving gross margins signal strengthening pricing power and operational efficiency not yet fully impounded into prices.\", \"higher_returns_for\": \"high values (rising gross margin)\"},\n{\"name\": \"Share Issuance Net of Buybacks\", \"construction\": \"Compute the annual change in split-adjusted shares outstanding using CRSP shares (SHROUT) adjusted by the cumulative adjustment factor. Rank firms each June by percentage change over the prior fiscal year.\", \"rationale\": \"Net share issuance dilutes existing holders and reflects managerial timing of overvalued equity; net repurchasers are relatively undervalued.\", \"higher_returns_for\": \"low values (net repurchasers / shrinking share count)\"},\n{\"name\": \"Volatility of Monthly Turnover\", \"construction\": \"Using CRSP daily or monthly volume divided by shares outstanding, compute monthly turnover for the prior 12 months and take its standard deviation, scaled by mean turnover. Rank each month.\", \"rationale\": \"Unstable trading intensity reflects heterogeneous investor disagreement and speculative demand that command lower future returns as attention fades.\", \"higher_returns_for\": \"low values (stable turnover)\"},\n{\"name\": \"Debt Maturity Structure Shift\", \"construction\": \"Compute the ratio of debt in current liabilities (DLC) to total debt (DLC plus DLTT). Take the year-over-year change in this ratio each June.\", \"rationale\": \"A rising share of short-term debt increases rollover and refinancing risk, so firms shifting toward short maturities face elevated distress-related discount, but well-financed firms lengthening maturities signal stability.\", \"higher_returns_for\": \"low values (shift toward long-term debt)\"},\n{\"name\": \"Return-on-Assets Acceleration\", \"construction\": \"Compute ROA as income before extraordinary items (IB) divided by lagged total assets (AT) for the last three fiscal years, then measure the second difference (this year's change in ROA minus last year's change). Rank each June.\", \"rationale\": \"Accelerating profitability indicates improving fundamentals that investors extrapolate too slowly, producing continued positive surprises.\", \"higher_returns_for\": \"high values (accelerating ROA)\"},\n{\"name\": \"Idiosyncratic Return Skewness\", \"construction\": \"For each stock, regress prior 60 monthly returns on the market return, and compute the skewness of the regression residuals. Rank stocks cross-sectionally each month.\", \"rationale\": \"Investors overpay for lottery-like stocks with positively skewed idiosyncratic returns, driving their prices up and future returns down.\", \"higher_returns_for\": \"low values (negative idiosyncratic skewness)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1779,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

@@ -1,12 +1,17 @@
 === TEST (b) primary: OLS count ~ fut + controls, model×vintage FE, SE clustered by predictor ===
-  fut           beta=-0.02493  se=0.01596  t=-1.56
-  pre           beta=-0.00311  se=0.00793  t=-0.39
-  pre_missing   beta=-0.21602  se=0.10247  t=-2.11
-  log_cites     beta=+0.04497  se=0.02536  t=+1.77
-  pub_year      beta=+0.01354  se=0.01058  t=+1.28
-  N=2776  clusters=198  FE cells=20
+  fut           beta=-0.02193  se=0.01263  t=-1.74
+  pre           beta=-0.00373  se=0.00715  t=-0.52
+  pre_missing   beta=-0.22183  se=0.08909  t=-2.49
+  log_cites     beta=+0.01038  se=0.02348  t=+0.44
+  pub_year      beta=+0.00173  se=0.00919  t=+0.19
+  N=3470  clusters=198  FE cells=25
 
 === TEST (b) rank version: Spearman(count, fut) within model×vintage ===
+  claude-opus-4-8      v1990: rho=-0.113 (n=198)
+  claude-opus-4-8      v1995: rho=-0.055 (n=184)
+  claude-opus-4-8      v2000: rho=-0.069 (n=161)
+  claude-opus-4-8      v2005: rho=-0.056 (n=110)
+  claude-opus-4-8      v2010: rho=+0.057 (n=41)
   gpt-4-0613           v1990: rho=-0.047 (n=198)
   gpt-4-0613           v1995: rho=-0.087 (n=184)
   gpt-4-0613           v2000: rho=-0.038 (n=161)
@@ -27,4 +32,4 @@
   meta-llama/Llama-3.3 v2000: rho=-0.068 (n=161)
   meta-llama/Llama-3.3 v2005: rho=-0.103 (n=110)
   meta-llama/Llama-3.3 v2010: rho=+0.087 (n=41)
-  Fisher-combined z = -3.57
+  Fisher-combined z = -3.88

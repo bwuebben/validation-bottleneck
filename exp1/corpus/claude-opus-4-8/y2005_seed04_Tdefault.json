@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:39:10.379633+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 4,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNKHWjiNmSccQavPsv1p",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Supplier Concentration Risk\", \"construction\": \"From 10-K filings, count the number of distinct major suppliers disclosed (firms with concentrated purchasing report reliance on few suppliers). Construct a Herfindahl-style measure using the fraction of cost of goods sold attributable to the top disclosed suppliers; where explicit percentages are unavailable, use a dummy for disclosed dependence on a single supplier providing >10% of inputs. Rank cross-sectionally annually.\", \"rationale\": \"Firms dependent on few suppliers bear input-disruption and hold-up risk that is underappreciated and slowly incorporated, commanding a risk premium.\", \"higher_returns_for\": \"high supplier concentration\"}, {\"name\": \"Order Backlog Momentum\", \"construction\": \"Using Compustat data item order backlog (BACKLOG), compute the year-over-year change in backlog scaled by lagged total assets. Form cross-sectional deciles each fiscal year on the change.\", \"rationale\": \"Rising order backlog signals accelerating future demand not yet in reported earnings, and investors underreact to this leading indicator of revenue.\", \"higher_returns_for\": \"high increase in order backlog\"}, {\"name\": \"Deferred Revenue Growth\", \"construction\": \"Compute the year-over-year growth in the deferred/unearned revenue balance sheet liability, scaled by lagged total assets. Rank firms cross-sectionally each quarter using the most recent quarterly balance.\", \"rationale\": \"Growth in deferred revenue reflects prepaid future sales (a hidden order book), signaling demand strength that the market underweights because it sits in liabilities.\", \"higher_returns_for\": \"high deferred revenue growth\"}, {\"name\": \"Advertising-to-Sales Surprise\", \"construction\": \"Compute advertising expense (Compustat XAD) divided by sales. Regress this ratio on its own industry-year average and firm history; take the residual as the abnormal advertising intensity. Rank cross-sectionally annually.\", \"rationale\": \"Abnormally high advertising builds intangible brand capital not capitalized on the balance sheet, leading to underpricing of future cash flows.\", \"higher_returns_for\": \"high abnormal advertising intensity\"}, {\"name\": \"Effective Tax Rate Volatility\", \"construction\": \"Using the last 5 years of annual data, compute the standard deviation of the firm's effective tax rate (total income taxes / pretax income), winsorized to [0,1]. Rank cross-sectionally each year.\", \"rationale\": \"Volatile effective tax rates proxy for opaque earnings management and tax-planning uncertainty, generating a risk premium and mispricing.\", \"higher_returns_for\": \"high tax rate volatility\"}, {\"name\": \"Employee Productivity Trend\", \"construction\": \"Compute sales per employee (SALE/EMP) and take its two-year change scaled by the prior level. Rank firms cross-sectionally annually.\", \"rationale\": \"Accelerating labor productivity signals operational improvement and operating leverage that is slowly reflected in prices.\", \"higher_returns_for\": \"high improvement in sales-per-employee\"}, {\"name\": \"Capital Expenditure Acceleration\", \"construction\": \"Compute the second difference (acceleration) in capital expenditures (CAPX) scaled by lagged total assets: (CAPX_t - CAPX_{t-1}) minus (CAPX_{t-1} - CAPX_{t-2}). Rank cross-sectionally annually.\", \"rationale\": \"Sharply accelerating investment tends to precede overexpansion and subsequent low returns, capturing empire-building and overinvestment beyond the level of investment.\", \"higher_returns_for\": \"low (most negative) capex acceleration\"}, {\"name\": \"Inventory-Sales Divergence\", \"construction\": \"Compute the difference between year-over-year inventory growth (INVT) and year-over-year sales growth (SALE). Positive values indicate inventory building faster than sales. Rank cross-sectionally annually.\", \"rationale\": \"Inventory outpacing sales signals demand weakness and future markdowns, predicting lower returns as the deterioration becomes visible.\", \"higher_returns_for\": \"low inventory-sales divergence (inventory growing slower than sales)\"}, {\"name\": \"Intra-Year Return Consistency\", \"construction\": \"Over the past 12 months, compute the fraction of months with positive returns minus fraction with negative returns, holding total 12-month return roughly constant by residualizing against past 12-month cumulative return. Rank the consistency residual cross-sectionally monthly.\", \"rationale\": \"Steady, consistent gainers reflect stable improving fundamentals that continue, whereas lumpy returns reflect one-off events; the market underprices smooth improvers.\", \"higher_returns_for\": \"high return consistency\"}, {\"name\": \"Pension Funding Change\", \"construction\": \"Compute the year-over-year change in pension funded status (fair value of plan assets minus projected benefit obligation, from pension footnotes) scaled by lagged total assets. Rank cross-sectionally annually.\", \"rationale\": \"Improving pension funding frees future cash flows and signals reduced hidden leverage that investors are slow to reprice given footnote opacity.\", \"higher_returns_for\": \"high improvement in pension funded status\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1793,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:22:59.623912+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 1,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJ3y5Ut2FpPEH951Jy7",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory Growth Divergence\", \"construction\": \"Compute year-over-year growth in inventories (Compustat item INVT) minus year-over-year growth in cost of goods sold (item COGS), measured from annual financials lagged at least 4 months to ensure public availability. Sort stocks into deciles on this spread.\", \"rationale\": \"Inventory building faster than sales throughput signals overproduction and weak future demand, which the market is slow to incorporate into prices.\", \"higher_returns_for\": \"low values of the measure (inventories growing slower than COGS)\"}, {\"name\": \"Accrual-to-Cash-Flow Ratio\", \"construction\": \"For each firm compute total accruals as the change in non-cash working capital minus depreciation, using annual balance sheet items (change in current assets minus change in cash, minus change in current liabilities plus change in short-term debt, minus depreciation from item DP). Scale by cash flow from operations (net income minus accruals). Rank cross-sectionally.\", \"rationale\": \"Earnings composed of high accruals relative to cash are less persistent, and investors overweight reported earnings without discounting accrual quality.\", \"higher_returns_for\": \"low values of the measure (cash-rich, low-accrual earnings)\"}, {\"name\": \"Asset Turnover Acceleration\", \"construction\": \"Compute asset turnover as sales (item SALE) divided by average total assets (item AT), then take the change in this ratio over the most recent fiscal year versus the prior year. Sort into deciles.\", \"rationale\": \"Improving efficiency in generating sales per dollar of assets reflects operational momentum not yet priced, forecasting stronger future profitability.\", \"higher_returns_for\": \"high values of the measure (accelerating asset turnover)\"}, {\"name\": \"Selling Expense Intensity Change\", \"construction\": \"Compute selling, general and administrative expense (item XSGA) divided by sales, then the year-over-year change in this ratio. Rank firms cross-sectionally.\", \"rationale\": \"A falling SG&A-to-sales ratio indicates operating leverage and disciplined cost control that the market underappreciates, predicting margin expansion.\", \"higher_returns_for\": \"low values of the measure (declining SG&A intensity)\"}, {\"name\": \"Trading Volume Trend Reversal\", \"construction\": \"Using CRSP daily/monthly volume, compute the ratio of average share turnover (volume/shares outstanding) over the most recent month to average turnover over the prior 12 months. Sort into deciles.\", \"rationale\": \"A sudden surge in turnover relative to normal activity often reflects transient attention and overpricing that subsequently reverses.\", \"higher_returns_for\": \"low values of the measure (turnover contracting relative to history)\"}, {\"name\": \"Dividend Initiation Momentum\", \"construction\": \"Flag firms that began paying a cash dividend within the prior 12 months (first non-zero CRSP dividend after a dry period) and compute the change in dividend payout. Compare newly-initiating firms to non-payers.\", \"rationale\": \"Dividend initiation is a costly signal of managerial confidence in sustainable cash flows, and the positive information diffuses gradually into prices.\", \"higher_returns_for\": \"high values of the measure (recent dividend initiators)\"}, {\"name\": \"Gross Margin Stability\", \"construction\": \"Compute gross margin ((SALE-COGS)/SALE) for each of the last 5 fiscal years and take the standard deviation. Rank firms; lower volatility indicates more stable margins.\", \"rationale\": \"Firms with stable gross margins have more predictable and higher-quality earnings streams that are underpriced relative to their lower fundamental risk.\", \"higher_returns_for\": \"low values of the measure (stable gross margins)\"}, {\"name\": \"Capital Expenditure Restraint\", \"construction\": \"Compute capital expenditures (item CAPX) scaled by lagged total assets, and measure the deviation from the firm's own 3-year average capex ratio. Sort into deciles.\", \"rationale\": \"Firms cutting investment below their historical norm return cash discipline that the market discounts, while overinvesting firms empire-build and destroy value.\", \"higher_returns_for\": \"low values of the measure (capex below historical norm)\"}, {\"name\": \"Debt Maturity Shift\", \"construction\": \"Compute the ratio of long-term debt (item DLTT) to total debt (DLTT plus debt in current liabilities item DLC), and take the year-over-year change. Rank cross-sectionally.\", \"rationale\": \"A shift toward long-term financing reduces rollover and refinancing risk, signaling financial stability that lowers required returns' unpriced risk premium and improves future performance.\", \"higher_returns_for\": \"high values of the measure (increasing long-term debt share)\"}, {\"name\": \"Return-Volatility Efficiency\", \"construction\": \"Over the trailing 12 months compute cumulative stock return divided by the standard deviation of monthly returns (a firm-level Sharpe-like ratio) using CRSP data. Sort into deciles.\", \"rationale\": \"Stocks delivering returns with low volatility exhibit persistent risk-adjusted performance that momentum-chasing investors fail to reward proportionally.\", \"higher_returns_for\": \"high values of the measure (high return per unit of volatility)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1784,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

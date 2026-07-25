@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:49:42.706149+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y2000_seed05_Tdefault.json",
+  "prompt_sha256": "d7e377e023109767677022366900bb4e8d34f18f03ad0aec027844c69a2932e6"
+ },
+ "response": {
+  "id": "chatcmpl-E5QUWhFaZggNsHHhRza6hHEyogtLv",
+  "object": "chat.completion",
+  "created": 1784962180,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"ChInv\", \"strength\": \"close\", \"reason\": \"Both use inventory/sales changes; proposal uses acceleration.\"},\n  {\"index\": 1, \"match\": \"OrderBacklog\", \"strength\": \"close\", \"reason\": \"Both use order backlog scaled by firm size.\"},\n  {\"index\": 2, \"match\": \"AdExp\", \"strength\": \"related\", \"reason\": \"Both use advertising expense, but persistence is new.\"},\n  {\"index\": 3, \"match\": \"DivInit\", \"strength\": \"close\", \"reason\": \"Both focus on dividend initiations; proposal adds payout ratio.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses capex smoothness/volatility.\"},\n  {\"index\": 5, \"match\": \"DelCOL\", \"strength\": \"close\", \"reason\": \"Both use change in accounts payable; proposal scales by COGS.\"},\n  {\"index\": 6, \"match\": \"Illiquidity\", \"strength\": \"related\", \"reason\": \"Both measure price impact of trading; regression method differs.\"},\n  {\"index\": 7, \"match\": \"EarningsConsistency\", \"strength\": \"close\", \"reason\": \"Both use streaks of positive earnings growth; proposal is seasonal.\"},\n  {\"index\": 8, \"match\": \"tang\", \"strength\": \"close\", \"reason\": \"Both use PP&E/Assets; proposal uses change, not level.\"},\n  {\"index\": 9, \"match\": \"VarCF\", \"strength\": \"close\", \"reason\": \"Both use cash flow yield and volatility; proposal uses ratio.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3075,
+   "completion_tokens": 374,
+   "total_tokens": 3449,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

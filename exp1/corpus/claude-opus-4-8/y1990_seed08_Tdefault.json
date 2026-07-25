@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:26:01.668595+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 8,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJHAGYYqrL1jGLRuT6g",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory Growth Divergence\", \"construction\": \"For each firm, compute year-over-year growth in inventories (Compustat item INVT) minus year-over-year growth in sales (item SALE), using the most recent fiscal-year annual data lagged at least 4 months. Rank stocks cross-sectionally each June.\", \"rationale\": \"When inventories build up faster than sales, it signals unsold goods and weakening demand that managers have not yet impaired, presaging future markdowns and lower earnings.\", \"higher_returns_for\": \"low values of the measure (inventories growing slower than sales)\"}, {\"name\": \"Accrual-to-Cashflow Quality Gap\", \"construction\": \"Compute net income (item NI) minus operating cash flow proxied by (funds from operations, item FOPT, or NI plus depreciation item DP minus change in noncash working capital) scaled by average total assets (item AT). Rank firms each June on this accrual component.\", \"rationale\": \"Earnings composed largely of accruals rather than cash are less persistent and more prone to reversal, so high-accrual firms subsequently disappoint.\", \"higher_returns_for\": \"low values of the measure (low accruals relative to cash earnings)\"}, {\"name\": \"Selling Expense Intensity Change\", \"construction\": \"Compute the change in SG&A expense (item XSGA) scaled by sales (item SALE) from the prior fiscal year to the current fiscal year, lagged at least 4 months. Rank cross-sectionally.\", \"rationale\": \"A rising ratio of overhead to sales flags deteriorating operating efficiency and margin pressure that the market underweights.\", \"higher_returns_for\": \"low values of the measure (falling or stable SG&A intensity)\"}, {\"name\": \"Dividend Initiation Momentum\", \"construction\": \"Flag firms that paid zero dividends (item DVC=0) in the prior fiscal year but positive dividends in the current year; among dividend payers, also rank on the percentage increase in dividends per share. Form portfolios each June.\", \"rationale\": \"Dividend initiations and large increases credibly signal management confidence in sustainable future cash flows, and the market underreacts to this signal.\", \"higher_returns_for\": \"high values (initiators and large increasers)\"}, {\"name\": \"Capital Intensity Reversal\", \"construction\": \"Compute capital expenditures (item CAPX) scaled by lagged property plant and equipment (item PPENT) or total assets, averaged over the trailing three fiscal years, then rank firms in the highest and lowest deciles. Rebalance annually in June.\", \"rationale\": \"Firms on prolonged aggressive investment sprees tend to overexpand and earn low subsequent returns as capacity outstrips profitable opportunities.\", \"higher_returns_for\": \"low values of the measure (low sustained capital intensity)\"}, {\"name\": \"Volume-Weighted Price Range Compression\", \"construction\": \"For each stock over the trailing 60 trading days from CRSP daily data, compute the ratio of the average daily high-low range (or absolute daily return) in the most recent 20 days to that in the prior 40 days, weighting by daily volume. Rank each month.\", \"rationale\": \"Compressing volatility on rising relative volume reflects accumulation and reduced information uncertainty, which precedes positive drift.\", \"higher_returns_for\": \"low values of the measure (contracting range)\"}, {\"name\": \"Tax Burden Anomaly\", \"construction\": \"Compute effective tax rate as total income taxes (item TXT) divided by pretax income (item PI), and separately the change in this rate year over year, lagged 4 months. Rank firms with unusually low or declining effective tax rates.\", \"rationale\": \"Declining effective tax rates often reflect one-time benefits or aggressive tax positions that inflate current earnings unsustainably, leading to future reversals.\", \"higher_returns_for\": \"high (rising or normalizing effective tax rate) firms with sustainable earnings\"}, {\"name\": \"Book Equity Momentum Consistency\", \"construction\": \"Compute the number of consecutive fiscal years (up to 5) in which book equity (item CEQ) grew, using annual Compustat data, and combine with the average annual growth rate. Rank firms each June.\", \"rationale\": \"Persistent, steady equity accumulation reflects durable profitability and reinvestment discipline that the market prices with a lag.\", \"higher_returns_for\": \"high values (consistent multi-year book equity growth)\"}, {\"name\": \"Short-Term Reversal within Industry\", \"construction\": \"For each stock, compute the prior one-month return minus the equal-weighted average one-month return of its 2-digit SIC industry peers (industry-adjusted return). Rank monthly and buy losers, sell winners on this adjusted measure.\", \"rationale\": \"Idiosyncratic one-month overreaction relative to industry peers reverses as liquidity providers are compensated, isolating the reversal from industry momentum.\", \"higher_returns_for\": \"low values (biggest industry-adjusted one-month losers)\"}, {\"name\": \"Receivables Aging Signal\", \"construction\": \"Compute change in accounts receivable (item RECT) growth minus sales (item SALE) growth year over year, scaled by total assets, lagged 4 months. Rank cross-sectionally each June.\", \"rationale\": \"Receivables growing faster than sales indicate loosened credit terms or channel-stuffing that boosts current revenue but foreshadows collection problems and revenue reversals.\", \"higher_returns_for\": \"low values (receivables growing slower than sales)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1862,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

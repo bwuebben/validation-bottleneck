@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:50:10.130103+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y2005_seed04_Tdefault.json",
+  "prompt_sha256": "9caa15ad71075d5b7730bdc7c1c32d780b01333cb2b23c652a265000f4ccc093"
+ },
+ "response": {
+  "id": "chatcmpl-E5QUxWLfmkVQBy1uxPKJ4eSN25XgU",
+  "object": "chat.completion",
+  "created": 1784962207,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"HerfAsset\", \"strength\": \"close\", \"reason\": \"Both measure supplier/customer concentration using Herfindahl-style metrics.\"},\n  {\"index\": 1, \"match\": \"OrderBacklogChg\", \"strength\": \"exact\", \"reason\": \"Both use change in order backlog scaled by assets.\"},\n  {\"index\": 2, \"match\": \"DelDRC\", \"strength\": \"close\", \"reason\": \"Both use change in deferred revenue, but scaling and frequency may differ.\"},\n  {\"index\": 3, \"match\": \"AdExp\", \"strength\": \"close\", \"reason\": \"Both use advertising-to-sales, but proposal uses abnormal/residualized version.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses tax rate volatility or similar construction.\"},\n  {\"index\": 5, \"match\": \"CashProd\", \"strength\": \"related\", \"reason\": \"Both relate to productivity, but CashProd uses cash, not sales/employee.\"},\n  {\"index\": 6, \"match\": \"grcapx3y\", \"strength\": \"close\", \"reason\": \"Both use higher-order changes in capex, but proposal uses second difference.\"},\n  {\"index\": 7, \"match\": \"GrSaleToGrInv\", \"strength\": \"close\", \"reason\": \"Both compare inventory and sales growth, but proposal uses difference not ratio.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses intra-year return consistency or similar.\"},\n  {\"index\": 9, \"match\": \"FR\", \"strength\": \"close\", \"reason\": \"Both use pension funding status, but proposal uses change not level.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3046,
+   "completion_tokens": 392,
+   "total_tokens": 3438,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:29:03.954839+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 4,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJWyexda7yGBjv6R3HW",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory Growth Divergence\", \"construction\": \"Compute year-over-year growth in inventories (Compustat item INVT) minus year-over-year growth in cost of goods sold (COGS). Rank firms cross-sectionally each June using the prior fiscal year's annual data.\", \"rationale\": \"Inventory building faster than sales throughput signals demand overestimation and impending markdowns, foreshadowing weaker future earnings and returns.\", \"higher_returns_for\": \"low values of the measure (inventory growth below COGS growth)\"}, {\"name\": \"Accrual-Adjusted Profitability\", \"construction\": \"Take operating income before depreciation (OIBDP) minus the change in non-cash working capital (change in receivables plus inventory minus payables), scaled by average total assets (AT). Rank annually at fiscal year end.\", \"rationale\": \"Cash-backed profitability is more persistent and less subject to earnings management than accrual-laden profitability, so the market underprices cash-rich earners.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Selling Expense Efficiency\", \"construction\": \"Compute the ratio of sales (SALE) to selling, general and administrative expense (XSGA), then measure the one-year change in this ratio. Rank firms cross-sectionally each June.\", \"rationale\": \"Rising sales per dollar of SG&A reveals improving operating leverage and marketing efficiency that analysts are slow to incorporate.\", \"higher_returns_for\": \"high values (improving efficiency)\"}, {\"name\": \"Dividend Initiation Momentum Overlay\", \"construction\": \"Identify firms that initiated or increased dividends per share (DVPSX) in the trailing 12 months and interact this with prior 6-month price momentum; form a composite score. Rank cross-sectionally monthly.\", \"rationale\": \"Dividend increases signal managerial confidence, and when combined with price strength the underreaction to the credible signal is largest.\", \"higher_returns_for\": \"high composite score (dividend increaser with positive momentum)\"}, {\"name\": \"Capital Intensity Reversal\", \"construction\": \"Compute gross property, plant and equipment (PPEGT) divided by sales (SALE), and rank the two-year change. Sort firms each June on this change.\", \"rationale\": \"Firms rapidly increasing capital intensity tend to overinvest at cycle peaks, leading to depressed future returns as capacity outruns demand.\", \"higher_returns_for\": \"low values (declining capital intensity)\"}, {\"name\": \"Earnings Announcement Volume Shock\", \"construction\": \"Measure average daily trading volume (CRSP) in the 3-day window around the most recent quarterly earnings announcement relative to the firm's trailing 60-day average volume. Rank cross-sectionally.\", \"rationale\": \"Abnormal volume at earnings reflects information arrival and attention; high shock stocks experience persistent post-announcement drift.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Long-Term Debt Contraction\", \"construction\": \"Compute the one-year change in long-term debt (DLTT) scaled by total assets (AT). Rank firms annually at fiscal year end.\", \"rationale\": \"Voluntary deleveraging signals disciplined management and reduced financial risk that the market rewards with a delay.\", \"higher_returns_for\": \"low values (debt contraction)\"}, {\"name\": \"Gross Margin Stability\", \"construction\": \"Compute gross margin ((SALE - COGS)/SALE) for each of the past five fiscal years and take the inverse of its standard deviation. Rank firms cross-sectionally.\", \"rationale\": \"Stable gross margins indicate pricing power and defensible competitive position, which is undervalued relative to volatile-margin firms.\", \"higher_returns_for\": \"high values (stable margins)\"}, {\"name\": \"Idiosyncratic Volatility Trend\", \"construction\": \"Estimate residual volatility from a market-model regression using daily returns over each of the last two 6-month windows; compute the change (recent minus prior). Rank cross-sectionally monthly.\", \"rationale\": \"Declining idiosyncratic volatility signals resolving firm-specific uncertainty, and prices rise as the risk discount unwinds.\", \"higher_returns_for\": \"low values (declining idiosyncratic volatility)\"}, {\"name\": \"Tax-Book Income Gap\", \"construction\": \"Estimate taxable income as total income tax expense (TXT) divided by the top statutory rate, then compute the ratio of this estimated taxable income to pretax book income (PI). Rank firms annually.\", \"rationale\": \"When book income substantially exceeds tax-inferred income, earnings quality is poor and future returns are lower; convergence signals conservative, sustainable earnings.\", \"higher_returns_for\": \"high values (taxable income high relative to book income)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1633,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

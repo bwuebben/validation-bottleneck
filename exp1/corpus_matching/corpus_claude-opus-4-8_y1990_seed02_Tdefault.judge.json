@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:48:35.107048+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y1990_seed02_Tdefault.json",
+  "prompt_sha256": "1123fcc242ff6c6b20b1da4884e5af8e07da38c3409bae20690fb53203ffbd52"
+ },
+ "response": {
+  "id": "chatcmpl-E5QTQ8M9IkjvYQWvJnB2cZB2Ljsf5",
+  "object": "chat.completion",
+  "created": 1784962112,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"GrSaleToGrInv\", \"strength\": \"close\", \"reason\": \"Both compare sales and inventory growth, but construction differs slightly.\"},\n  {\"index\": 1, \"match\": \"PctTotAcc\", \"strength\": \"close\", \"reason\": \"Both scale accruals by a cash flow measure; implementation details differ.\"},\n  {\"index\": 2, \"match\": \"grcapx3y\", \"strength\": \"close\", \"reason\": \"Both measure abnormal capex relative to past; differ in scaling and window.\"},\n  {\"index\": 3, \"match\": \"DivInit\", \"strength\": \"exact\", \"reason\": \"Both flag firms initiating dividends after a period of no dividends.\"},\n  {\"index\": 4, \"match\": \"OperProf\", \"strength\": \"related\", \"reason\": \"Both use profitability trends, but gross margin trend is distinct.\"},\n  {\"index\": 5, \"match\": \"ShareIss1Y\", \"strength\": \"close\", \"reason\": \"Both use net share issuance over one year; proposal nets buybacks explicitly.\"},\n  {\"index\": 6, \"match\": \"std_turn\", \"strength\": \"exact\", \"reason\": \"Both use standard deviation of monthly turnover.\"},\n  {\"index\": 7, \"match\": \"DelFINL\", \"strength\": \"related\", \"reason\": \"Both involve changes in debt structure, but focus differs (maturity vs. level).\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses ROA acceleration (second difference).\"},\n  {\"index\": 9, \"match\": \"ReturnSkew3F\", \"strength\": \"close\", \"reason\": \"Both use idiosyncratic return skewness, but regression model differs (market vs. 3F).\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3057,
+   "completion_tokens": 406,
+   "total_tokens": 3463,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:22:33.646345+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 0,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJ1vWPjB6gGhyszU45L",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory Growth Divergence\", \"construction\": \"Compute year-over-year growth in inventories (Compustat item INVT) minus year-over-year growth in sales (item SALE), using the most recent fiscal year annual data. Rank firms cross-sectionally each June after annual reports are public.\", \"rationale\": \"Inventory building that outpaces sales signals demand overestimation and future write-downs or margin pressure, so subsequent returns are depressed.\", \"higher_returns_for\": \"low values of the measure (inventory growing slower than sales)\"},\n{\"name\": \"Accrual Intensity of Earnings\", \"construction\": \"For each fiscal year, compute (change in non-cash current assets minus change in current liabilities excluding short-term debt minus depreciation) scaled by average total assets (Compustat items ACT, CHE, LCT, DLC, DP, AT). This isolates the accrual component of earnings. Rank firms each June.\", \"rationale\": \"Earnings driven more by accruals than by cash flows are less persistent and prone to reversal, and investors overvalue such firms initially.\", \"higher_returns_for\": \"low values of the measure (low accruals / cash-based earnings)\"},\n{\"name\": \"Capital Expenditure Surge\", \"construction\": \"Compute capital expenditure (Compustat CAPX) scaled by average net property, plant and equipment (PPENT), then subtract the firm's own prior three-year average of that ratio. Rank cross-sectionally each June.\", \"rationale\": \"Abnormal spikes in investment reflect empire-building and overoptimism; heavy investors subsequently underperform as returns on new capital disappoint.\", \"higher_returns_for\": \"low values of the measure (firms cutting or below-trend investment)\"},\n{\"name\": \"Gross Margin Momentum\", \"construction\": \"Compute gross profitability margin as (SALE minus COGS)/SALE for the two most recent fiscal years and take the change. Rank firms cross-sectionally each June by the year-over-year improvement in gross margin.\", \"rationale\": \"Improving unit economics reflects strengthening competitive position and pricing power that the market is slow to fully price.\", \"higher_returns_for\": \"high values of the measure (improving gross margin)\"},\n{\"name\": \"Selling Expense Efficiency\", \"construction\": \"Compute SG&A expense (Compustat XSGA) divided by sales (SALE), then take the change relative to the prior fiscal year. Rank firms each June by declining SG&A-to-sales ratio.\", \"rationale\": \"Firms achieving operating leverage by growing sales faster than overhead show improving efficiency that predicts higher future profitability and returns.\", \"higher_returns_for\": \"low (declining) values of SG&A-to-sales change\"},\n{\"name\": \"Dividend Initiation Coverage\", \"construction\": \"For dividend-paying firms, compute payout coverage as earnings per share (EPSPX) divided by dividends per share (DVPSX), combined with the one-year change in the dividend rate. Rank firms with rising dividends that remain well-covered (high coverage times positive dividend change).\", \"rationale\": \"Rising but comfortably covered dividends credibly signal management confidence in sustainable cash flows, an underappreciated positive signal.\", \"higher_returns_for\": \"high values (rising, well-covered dividends)\"},\n{\"name\": \"Volume-Adjusted Price Reversal\", \"construction\": \"Over the most recent month, compute the stock's return divided by its average daily share turnover (volume/shares outstanding) from CRSP. Rank firms cross-sectionally each month-end.\", \"rationale\": \"Large price moves on low volume reflect illiquidity-driven pressure that reverses, whereas moves on high volume reflect information; low-volume losers rebound.\", \"higher_returns_for\": \"low values (recent losers on thin volume)\"},\n{\"name\": \"Idiosyncratic Volatility Trend\", \"construction\": \"Estimate residual (idiosyncratic) volatility from a market-model regression of daily returns over the trailing 60 days, and compare to the same measure computed over the prior 60-day window; rank firms by the decline in idiosyncratic volatility each month.\", \"rationale\": \"Falling firm-specific volatility signals resolution of uncertainty and stabilizing fundamentals, which precedes positive risk-adjusted returns.\", \"higher_returns_for\": \"firms with declining idiosyncratic volatility\"},\n{\"name\": \"Debt Maturity Shift\", \"construction\": \"Compute the ratio of debt in current liabilities (Compustat DLC) to total debt (DLC plus DLTT), then take the change from the prior fiscal year. Rank firms each June by increases in the short-term share of debt.\", \"rationale\": \"A rising reliance on short-term debt increases rollover and refinancing risk, so such firms carry elevated distress risk and, when constrained, deliver lower returns.\", \"higher_returns_for\": \"low values (declining short-term debt share)\"},\n{\"name\": \"Asset Turnover Acceleration\", \"construction\": \"Compute asset turnover as sales (SALE) divided by average total assets (AT) for the two most recent fiscal years, and take the year-over-year change. Rank firms cross-sectionally each June by the improvement.\", \"rationale\": \"Improving productivity of assets reflects better capacity utilization and operational execution that the market underweights relative to headline earnings.\", \"higher_returns_for\": \"high values (accelerating asset turnover)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1826,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

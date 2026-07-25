@@ -1,0 +1,54 @@
+{
+ "spec": {
+  "R": 10000,
+  "B": 10000,
+  "seed": 42
+ },
+ "models": {
+  "gpt-4-0613": {
+   "pool_evaluable": 8099,
+   "pool_excluded": 1901,
+   "pool_t_mean": -0.009084037451135871,
+   "pool_t_sd": 1.0860240048148662,
+   "pool_t_max": 4.670260844986889,
+   "M": 330,
+   "null_max_mean": 3.3262275868950733,
+   "null_max_p50": 3.2643569562834354,
+   "null_max_p90": 3.942205166580313,
+   "null_max_p95": 4.277456950035282,
+   "null_max_p99": 4.670260844986889,
+   "realized_max_t": 2.687,
+   "realized_max_percentile": 9.15
+  },
+  "gpt-4o-2024-08-06": {
+   "pool_evaluable": 7749,
+   "pool_excluded": 2251,
+   "pool_t_mean": -0.013276458492378818,
+   "pool_t_sd": 0.842076451004992,
+   "pool_t_max": 4.032022677105241,
+   "M": 318,
+   "null_max_mean": 2.865711375541155,
+   "null_max_p50": 2.7478123548346183,
+   "null_max_p90": 3.81467999745923,
+   "null_max_p95": 3.9382669005271165,
+   "null_max_p99": 4.032022677105241,
+   "realized_max_t": 2.804,
+   "realized_max_percentile": 58.29
+  },
+  "meta-llama_Llama-3.3-70B-Instruct-Turbo": {
+   "pool_evaluable": 7749,
+   "pool_excluded": 2251,
+   "pool_t_mean": -0.014121776307372234,
+   "pool_t_sd": 0.8901848181337089,
+   "pool_t_max": 5.101996939343427,
+   "M": 294,
+   "null_max_mean": 3.1501209554177656,
+   "null_max_p50": 3.0893307658933535,
+   "null_max_p90": 4.353091603599895,
+   "null_max_p95": 4.595567222792393,
+   "null_max_p99": 5.101996939343427,
+   "realized_max_t": 2.518,
+   "realized_max_percentile": 16.28
+  }
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:48:38.107514+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y1990_seed03_Tdefault.json",
+  "prompt_sha256": "537b04eefde37ab62d91e4a084c6c9b0e2f17b1cca896dcbfa9cf50e21a36998"
+ },
+ "response": {
+  "id": "chatcmpl-E5QTUvM5PocFvwI0BqcyAqc9UfHFD",
+  "object": "chat.completion",
+  "created": 1784962116,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"GrSaleToGrInv\", \"strength\": \"close\", \"reason\": \"Both compare inventory and sales growth, but construction differs slightly.\"},\n  {\"index\": 1, \"match\": \"TotalAccruals\", \"strength\": \"exact\", \"reason\": \"Construction matches standard total accruals definition.\"},\n  {\"index\": 2, \"match\": \"grcapx\", \"strength\": \"close\", \"reason\": \"Both measure change in capex intensity, but scaling and window differ.\"},\n  {\"index\": 3, \"match\": \"GP\", \"strength\": \"related\", \"reason\": \"Both use gross margin, but proposal uses momentum (change) not level.\"},\n  {\"index\": 4, \"match\": \"DivInit\", \"strength\": \"exact\", \"reason\": \"Dividend initiation indicator; proposal adds yield, but core is identical.\"},\n  {\"index\": 5, \"match\": \"SP\", \"strength\": \"exact\", \"reason\": \"Sales-to-price ratio; construction matches library definition.\"},\n  {\"index\": 6, \"match\": \"STreversal\", \"strength\": \"close\", \"reason\": \"Short-term reversal, but proposal interacts with turnover.\"},\n  {\"index\": 7, \"match\": \"IdioVol3F\", \"strength\": \"related\", \"reason\": \"Both use idiosyncratic volatility, but proposal uses change not level.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses sales-per-employee growth.\"},\n  {\"index\": 9, \"match\": \"BookLeverage\", \"strength\": \"close\", \"reason\": \"Both use book leverage, but proposal uses change, not level.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3081,
+   "completion_tokens": 385,
+   "total_tokens": 3466,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

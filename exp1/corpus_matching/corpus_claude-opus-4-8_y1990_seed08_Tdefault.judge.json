@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:48:52.332553+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y1990_seed08_Tdefault.json",
+  "prompt_sha256": "616e2f962a4c51f6e5a2ec1ca5d51d5cf924c7c6824b868c30af97c3497dde50"
+ },
+ "response": {
+  "id": "chatcmpl-E5QTi0uEGmgjrgC3tn8EqZl7jqLES",
+  "object": "chat.completion",
+  "created": 1784962130,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"GrSaleToGrInv\", \"strength\": \"close\", \"reason\": \"Both compare inventory and sales growth, but differ in construction details.\"},\n  {\"index\": 1, \"match\": \"Accruals\", \"strength\": \"exact\", \"reason\": \"Standard accruals: net income minus cash flow, scaled by assets.\"},\n  {\"index\": 2, \"match\": \"GrSaleToGrOverhead\", \"strength\": \"close\", \"reason\": \"Both relate SG&A/overhead to sales growth, but differ in change vs. ratio.\"},\n  {\"index\": 3, \"match\": \"DivInit\", \"strength\": \"close\", \"reason\": \"Dividend initiation is in library; proposal adds momentum aspect.\"},\n  {\"index\": 4, \"match\": \"grcapx3y\", \"strength\": \"close\", \"reason\": \"Both use multi-year capex intensity, but proposal focuses on reversal/extremes.\"},\n  {\"index\": 5, \"match\": \"VolumeTrend\", \"strength\": \"related\", \"reason\": \"Both use volume and volatility trends, but signals differ.\"},\n  {\"index\": 6, \"match\": \"Tax\", \"strength\": \"close\", \"reason\": \"Both use effective tax rates, but proposal focuses on changes/anomalies.\"},\n  {\"index\": 7, \"match\": \"NumEarnIncrease\", \"strength\": \"related\", \"reason\": \"Both count consecutive increases, but proposal uses book equity not earnings.\"},\n  {\"index\": 8, \"match\": \"STreversal\", \"strength\": \"close\", \"reason\": \"Short-term reversal, but proposal is industry-adjusted.\"},\n  {\"index\": 9, \"match\": \"ChNNCOA\", \"strength\": \"close\", \"reason\": \"Both use change in receivables vs. sales, but proposal scales by assets.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3107,
+   "completion_tokens": 412,
+   "total_tokens": 3519,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

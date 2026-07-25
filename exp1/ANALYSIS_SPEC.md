@@ -64,3 +64,42 @@ Stage 1's reserved audit executed: the RNG(7) 40-decision sample (regenerated ov
 The judge's category-boundary wobble on customer-concentration items (related vs none)
 falls entirely within the unmatched pool and does not affect any scored quantity.
 **Audit PASSED — the Experiment 1 results are final.**
+
+---
+
+## Amendment 2 (2026-07-25) — third-lineage arm: Anthropic claude-opus-4-8
+
+Registered BEFORE any claude-opus-4-8 generation call (the commit of this amendment
+precedes the first request; manifest timestamps verify).
+
+- **Model:** `claude-opus-4-8` (Anthropic Messages API) — a third independent training
+  lineage after OpenAI and Meta. **Experiment 1 only:** the model's reported training
+  cutoff (2025) leaves no evaluable post-cutoff factor-data window, so no Experiment 2
+  universe is generated for it.
+- **Prompts:** the registered prompts verbatim (same `task_roleplay.txt`, same SYSTEM;
+  `prompt_sha256` unchanged).
+- **Sampling deviation (flagged):** this API accepts neither `temperature` nor `seed`
+  (removed on this model family); thinking is disabled by omission. The registered
+  1-greedy + 10-seeded-samples design becomes **11 runs at provider-default sampling**.
+  File labels keep the `seed00–seed10` slot as run indices only; `meta` records
+  `temperature: null` and `sampling: provider_default`. The analysis pools all 110
+  proposals per vintage, unchanged.
+- **Cutoff wall:** not used by any Experiment-1 statistic (post-date pools are defined by
+  SignalDoc publication year vs. roleplay vintage). For the panel table the vendor-reported
+  cutoff (2025) is recorded; it postdates the latest roleplay vintage (2010) by ≥15 years.
+  No probe battery is run for this arm (logprobs are unavailable regardless; the
+  answer-based fallback would apply if a wall were ever needed).
+- **Judge and tests:** unchanged — gpt-4.1-2025-04-14, temperature 0, same instructions;
+  tests (a), (b), and effective-M identical. Supplemental audit: 10 RNG(seed 7) judge
+  decisions from this arm reserved for author review, reported alongside the original 40.
+- **Interpretation registered up front:** a positive or less-negative tilt for a
+  2025-cutoff model does not indicate foresight — post-2010 factor performance through
+  2024 lies inside its training corpus, so any tilt improvement measures better
+  exploitation of the in-corpus performance record. The arm is a capability
+  dose-response on the selection variable, not a forecast test.
+
+### Amendment 2 — audit closure (2026-07-25)
+
+The 10-row RNG(7) supplemental sample from the claude-opus-4-8 arm
+(`derived/audit_sample_claude.jsonl`) was reviewed by the author: **PASSED, 0/10
+disagreement** ("opus audit pass is good"). Five-model results are final.

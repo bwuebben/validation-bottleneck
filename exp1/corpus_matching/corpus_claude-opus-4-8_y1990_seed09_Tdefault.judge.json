@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:48:54.743285+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y1990_seed09_Tdefault.json",
+  "prompt_sha256": "9b0eeab7e92a7c6b75128c1f41add7ce3e1cdac86959ba32a79b6451a4147d5d"
+ },
+ "response": {
+  "id": "chatcmpl-E5QTkM9BjX4ZLQntbpwiTB8XaszKo",
+  "object": "chat.completion",
+  "created": 1784962132,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"ChInv\", \"strength\": \"close\", \"reason\": \"Both use inventory changes; proposal uses acceleration, library uses growth.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses gross margin volatility or stability.\"},\n  {\"index\": 2, \"match\": \"grcapx\", \"strength\": \"close\", \"reason\": \"Both use change in capex intensity; proposal allows two denominators.\"},\n  {\"index\": 3, \"match\": \"EarningsStreak\", \"strength\": \"related\", \"reason\": \"Both use streaks, but library uses earnings, proposal uses dividends.\"},\n  {\"index\": 4, \"match\": \"Accruals\", \"strength\": \"close\", \"reason\": \"Both use accruals scaled by assets; proposal adds cash flow divergence.\"},\n  {\"index\": 5, \"match\": \"MomVol\", \"strength\": \"close\", \"reason\": \"Both emphasize momentum confirmed by volume, but implementation differs.\"},\n  {\"index\": 6, \"match\": \"ChAssetTurnover\", \"strength\": \"exact\", \"reason\": \"Both use year-over-year change in asset turnover.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses change in debt maturity structure.\"},\n  {\"index\": 8, \"match\": \"MomSeasonShort\", \"strength\": \"close\", \"reason\": \"Both use same-month return seasonality, but proposal is firm-specific.\"},\n  {\"index\": 9, \"match\": \"GrSaleToGrOverhead\", \"strength\": \"related\", \"reason\": \"Both use R&D/sales growth, but library uses sales to overhead growth.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3122,
+   "completion_tokens": 390,
+   "total_tokens": 3512,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

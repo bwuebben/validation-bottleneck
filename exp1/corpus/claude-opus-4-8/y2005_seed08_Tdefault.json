@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:41:02.043929+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 8,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNKRi5Zk4RFxKnDhmQfJ",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Supplier Concentration Fragility\", \"construction\": \"Using 10-K segment and MD&A disclosures on major customers (SFAS 131), compute the fraction of revenue attributable to the largest single customer. Rank firms cross-sectionally; use the trailing fiscal year. Combine with revenue volatility (std of YoY quarterly sales growth over 8 quarters) into a composite z-score.\", \"rationale\": \"Firms dependent on a few large customers bear undiversified demand risk and bargaining-power disadvantages; investors underprice this fragility, so it commands a risk premium.\", \"higher_returns_for\": \"high customer-concentration firms\"}, {\"name\": \"Inventory-Sales Divergence\", \"construction\": \"Compute YoY growth in inventory (Compustat INVT) minus YoY growth in sales (SALE), measured at the most recent fiscal quarter. Rank cross-sectionally each month using the latest available quarterly data.\", \"rationale\": \"Inventory building faster than sales signals demand overestimation and future markdowns/write-offs that the market is slow to incorporate.\", \"higher_returns_for\": \"low inventory-minus-sales growth (inventory lean relative to sales)\"}, {\"name\": \"Accrual Reversal Acceleration\", \"construction\": \"For each firm compute total accruals (change in non-cash working capital minus depreciation, from balance sheet) for the two most recent fiscal years; take the second difference (this year's accruals minus last year's accruals). Rank cross-sectionally.\", \"rationale\": \"Beyond the level of accruals, the acceleration of accruals captures the point at which earnings quality is deteriorating fastest, predicting sharper future earnings disappointments.\", \"higher_returns_for\": \"low accrual acceleration\"}, {\"name\": \"Capex Burst Relative to History\", \"construction\": \"Compute current-year capital expenditure (CAPX) divided by the average CAPX over the prior three years. Rank firms cross-sectionally at fiscal year-end.\", \"rationale\": \"Sudden capital-spending bursts reflect empire-building and overinvestment that erode future returns on capital, which investors extrapolate too optimistically.\", \"higher_returns_for\": \"low capex-burst ratio\"}, {\"name\": \"Dividend Initiation Persistence Score\", \"construction\": \"Flag firms that initiated a cash dividend within the last 4 quarters (from CRSP distribution codes) and scale by the payout as a fraction of trailing free cash flow (OANCF minus CAPX). Rank the continuous payout-coverage measure among initiators.\", \"rationale\": \"Dividend initiations backed by ample free-cash-flow coverage signal credible, sustainable profitability improvements that the market underreacts to.\", \"higher_returns_for\": \"high free-cash-flow-covered initiators\"}, {\"name\": \"Order Backlog Momentum\", \"construction\": \"Using disclosed order backlog (Compustat OB) scaled by total assets, compute the YoY change. Rank firms cross-sectionally at fiscal year-end; restrict to firms that report backlog.\", \"rationale\": \"Rising backlog is a leading indicator of future revenue that is not yet in reported earnings, and analysts underweight this soft-order information.\", \"higher_returns_for\": \"high increase in scaled backlog\"}, {\"name\": \"R&D Reversal Post-Cut\", \"construction\": \"Compute YoY change in R&D expense (XRD) scaled by sales for the most recent fiscal year. Rank firms; focus on firms cutting R&D (negative change).\", \"rationale\": \"Cutting R&D to hit near-term earnings targets sacrifices future growth and signals managerial short-termism, leading to lower long-run returns.\", \"higher_returns_for\": \"high (increasing or stable) R&D-to-sales change\"}, {\"name\": \"Geographic Revenue Dispersion\", \"construction\": \"From segment geographic disclosures (SFAS 131), compute a Herfindahl index across geographic revenue segments (sum of squared revenue shares). Rank cross-sectionally; higher index = more geographically concentrated.\", \"rationale\": \"Geographically concentrated firms carry undiversified macro and regulatory exposure that investors underprice, earning a risk premium.\", \"higher_returns_for\": \"high geographic concentration\"}, {\"name\": \"Selling Expense Efficiency Trend\", \"construction\": \"Compute SG&A (XSGA) divided by sales for the current and prior fiscal year; take the change. Rank cross-sectionally, favoring firms whose SG&A-to-sales ratio is declining.\", \"rationale\": \"Improving operating efficiency (falling SG&A intensity) reflects durable margin expansion that the market recognizes only gradually.\", \"higher_returns_for\": \"firms with declining SG&A-to-sales\"}, {\"name\": \"Short-Term Debt Rollover Pressure\", \"construction\": \"Compute debt in current liabilities (DLC) divided by total debt (DLC + DLTT) at fiscal year-end. Rank firms cross-sectionally; higher ratio = greater near-term rollover need.\", \"rationale\": \"High reliance on short-maturity debt exposes firms to refinancing and rollover risk in tightening credit conditions, commanding a risk premium.\", \"higher_returns_for\": \"high short-term-debt share\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1793,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

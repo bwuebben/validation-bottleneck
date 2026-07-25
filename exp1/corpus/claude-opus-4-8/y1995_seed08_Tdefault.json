@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:30:49.908761+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 8,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJefx5J6kjMcmMkkbj2",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory Growth Divergence\", \"construction\": \"For each fiscal year, compute the growth rate of inventories (Compustat item INVT) minus the growth rate of sales (item SALE), both year-over-year. Rank stocks cross-sectionally each June using the most recent fiscal year data.\", \"rationale\": \"Inventory building faster than sales signals demand overestimation and future markdowns, foreshadowing declining earnings; the market underreacts to this operational signal.\", \"higher_returns_for\": \"low values of the measure (inventory growing slower than sales)\"}, {\"name\": \"Accrual-Adjusted Profitability\", \"construction\": \"Compute operating income (item OIADP) scaled by total assets (item AT), then subtract total accruals scaled by assets, where accruals = change in non-cash current assets minus change in current liabilities excluding short-term debt and taxes payable (Compustat balance-sheet items ACT, CHE, LCT, DLC, TXP). Rank cross-sectionally each June.\", \"rationale\": \"High profitability backed by cash rather than accruals reflects sustainable earnings quality that the market values with a lag.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Dividend Initiation Momentum\", \"construction\": \"Identify firms that paid zero cash dividends (item DVC=0) in the prior fiscal year but a positive dividend in the current year. Construct an indicator equal to 1 for such initiators, refreshed annually.\", \"rationale\": \"Dividend initiations credibly signal managers' confidence in persistent future cash flows, and prices adjust gradually to this reduction in information asymmetry.\", \"higher_returns_for\": \"initiator firms (indicator = 1)\"}, {\"name\": \"Capital Expenditure Intensity Reversal\", \"construction\": \"Compute the ratio of capital expenditures (item CAPX) to total assets (item AT), and rank firms by the three-year average of this ratio each June.\", \"rationale\": \"Firms with persistently high investment tend to overexpand and subsequently earn lower returns as growth options fail to deliver, an agency-driven overinvestment effect.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Sales-per-Employee Trend\", \"construction\": \"Compute sales (item SALE) divided by number of employees (item EMP). Take the year-over-year change and rank stocks cross-sectionally each June.\", \"rationale\": \"Improving labor productivity is a leading indicator of margin expansion and operational efficiency that is only slowly incorporated into prices.\", \"higher_returns_for\": \"high values of the measure (rising sales per employee)\"}, {\"name\": \"Idiosyncratic Volatility Contraction\", \"construction\": \"For each stock, estimate the residual variance from a market-model regression of daily returns (CRSP) over months t-12 to t-7, and again over months t-6 to t-1. Compute the ratio of recent to prior residual variance. Rank cross-sectionally monthly.\", \"rationale\": \"A decline in firm-specific volatility reflects resolving uncertainty and lower future risk premia demanded, but sluggish repricing yields temporarily elevated returns.\", \"higher_returns_for\": \"low values of the ratio (contracting idiosyncratic volatility)\"}, {\"name\": \"Gross Margin Stability\", \"construction\": \"Compute gross margin = (SALE - COGS)/SALE for each of the past five fiscal years, then take the negative of the standard deviation of these margins. Rank cross-sectionally each June.\", \"rationale\": \"Stable gross margins indicate durable competitive advantage and pricing power, characteristics associated with lower distress risk yet underpriced growth persistence.\", \"higher_returns_for\": \"high values of the measure (more stable margins)\"}, {\"name\": \"Short-Term Debt Reliance\", \"construction\": \"Compute debt in current liabilities (item DLC) divided by total debt (DLC + DLTT). Rank stocks cross-sectionally each June.\", \"rationale\": \"Heavy reliance on short-term financing exposes firms to rollover and refinancing risk, commanding a risk premium the market only partially prices.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Turnover-Adjusted Momentum\", \"construction\": \"Compute the 12-month past return (skipping the most recent month) using CRSP, then divide by the average monthly share turnover (volume/shares outstanding) over the same window. Rank cross-sectionally monthly.\", \"rationale\": \"Momentum accompanied by low trading activity reflects gradual information diffusion among inattentive investors and stronger continuation, whereas high-turnover momentum is more prone to reversal.\", \"higher_returns_for\": \"high values of the measure (strong momentum with low turnover)\"}, {\"name\": \"Tax-Book Income Gap\", \"construction\": \"Estimate taxable income as the current tax expense (item TXT minus deferred taxes item TXDI) grossed up by the statutory corporate tax rate, then subtract this from pretax book income (item PI). Scale the difference by total assets and rank cross-sectionally each June.\", \"rationale\": \"A large excess of book income over estimated taxable income indicates aggressive accounting or non-recurring items that overstate earnings quality, predicting lower future returns.\", \"higher_returns_for\": \"low values of the measure (small book-tax gap)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1808,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

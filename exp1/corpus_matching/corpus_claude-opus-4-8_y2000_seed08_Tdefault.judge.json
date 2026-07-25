@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:49:51.113926+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y2000_seed08_Tdefault.json",
+  "prompt_sha256": "1dcae8189c01bf53337ba8f4f7cde635373d18e234794b3ccfe6ddbbddd237c1"
+ },
+ "response": {
+  "id": "chatcmpl-E5QUfmxSjSfJ9a3bRvYAxXcDItnUH",
+  "object": "chat.completion",
+  "created": 1784962189,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"ChInv\", \"strength\": \"close\", \"reason\": \"Both use inventory/sales growth acceleration, but implementation details differ.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses AP/COGS or trade credit dependence.\"},\n  {\"index\": 2, \"match\": \"Mom12m\", \"strength\": \"related\", \"reason\": \"Both capture return persistence, but sign dispersion is a distinct signal.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses capex volatility or investment lumpiness.\"},\n  {\"index\": 4, \"match\": \"DivInit\", \"strength\": \"exact\", \"reason\": \"Dividend initiation indicator with 12-month holding is identical.\"},\n  {\"index\": 5, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses change in SG&A/sales ratio.\"},\n  {\"index\": 6, \"match\": \"Illiquidity\", \"strength\": \"close\", \"reason\": \"Amihud illiquidity is core, but turnover adjustment is a new twist.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses DP minus CAPX scaled by assets.\"},\n  {\"index\": 8, \"match\": \"AnnouncementReturn\", \"strength\": \"close\", \"reason\": \"Both use cumulative earnings announcement returns, but clustering is a new angle.\"},\n  {\"index\": 9, \"match\": \"AssetGrowth\", \"strength\": \"close\", \"reason\": \"Both use asset growth, but deceleration (second difference) is a new implementation.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3167,
+   "completion_tokens": 384,
+   "total_tokens": 3551,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

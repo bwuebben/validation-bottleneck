@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:29:31.705032+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 5,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJYjWUCz6ZKjDfki2Qp",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory Growth Divergence\", \"construction\": \"Compute year-over-year growth in inventories (Compustat item INVT) minus year-over-year growth in sales (item SALE), using annual data. Rank firms cross-sectionally each June following fiscal year end.\", \"rationale\": \"Inventory building faster than sales signals demand overestimation and future markdowns, forecasting lower operating performance and returns.\", \"higher_returns_for\": \"low values of the measure (inventory growing slower than sales)\"},\n{\"name\": \"Selling Expense Intensity Change\", \"construction\": \"Compute the change in SG&A (Compustat item XSGA) scaled by sales (item SALE) from the prior fiscal year to the current fiscal year. Rank cross-sectionally each June.\", \"rationale\": \"Rising selling and administrative intensity without commensurate revenue growth indicates deteriorating operating efficiency and empire-building, predicting lower returns.\", \"higher_returns_for\": \"low values of the measure (declining SG&A intensity)\"},\n{\"name\": \"Accrual-to-Cashflow Discordance\", \"construction\": \"Compute total accruals as change in non-cash current assets minus change in current liabilities excluding short-term debt (from Compustat balance-sheet items ACT, CHE, LCT, DLC), scaled by average total assets (item AT). Combine with cash flow from operations proxied by net income (item NI) minus accruals. Rank on accruals for firms where cash flow is falling.\", \"rationale\": \"High accruals coupled with weakening cash flows reflect low earnings quality and mean-reverting profitability, forecasting lower future returns.\", \"higher_returns_for\": \"low values of the measure (low accruals, strong cash flow)\"},\n{\"name\": \"Capital Expenditure Acceleration\", \"construction\": \"Compute capital expenditures (Compustat item CAPX) scaled by lagged property plant and equipment (item PPENT) in the current year minus the same ratio in the prior year. Rank cross-sectionally each June.\", \"rationale\": \"Accelerating investment relative to existing asset base reflects overinvestment and lower marginal returns on capital, predicting lower average returns.\", \"higher_returns_for\": \"low values of the measure (decelerating capex)\"},\n{\"name\": \"Dividend Initiation Persistence Gap\", \"construction\": \"Using CRSP monthly distribution codes, identify firms that paid a dividend in each of the last eight quarters. Among these, compute the trailing 3-year dividend growth rate and rank. Only include stable dividend payers.\", \"rationale\": \"Firms with persistent but stagnant dividends signal committed cash return and mature stability that the market underprices for its low risk of dividend cuts.\", \"higher_returns_for\": \"high values of the measure (stable payers with growing dividends)\"},\n{\"name\": \"Turnover-Adjusted Momentum\", \"construction\": \"Compute the past 6-month cumulative return (skipping the most recent month) from CRSP, then divide by the average monthly share turnover (volume/shares outstanding) over the same window. Rank cross-sectionally each month.\", \"rationale\": \"Momentum accompanied by low turnover reflects underreaction with slower information diffusion, producing stronger continuation than high-turnover momentum.\", \"higher_returns_for\": \"high values of the measure (high momentum per unit turnover)\"},\n{\"name\": \"Gross Margin Stability\", \"construction\": \"Compute gross margin (Compustat (SALE - COGS)/SALE) for each of the past five fiscal years; take the standard deviation of gross margin across those years. Rank cross-sectionally each June.\", \"rationale\": \"Firms with stable gross margins possess durable pricing power and predictable cash flows that the market undervalues relative to volatile-margin firms.\", \"higher_returns_for\": \"low values of the measure (stable margins)\"},\n{\"name\": \"Financing Deficit Reliance\", \"construction\": \"Compute the sum of net equity issuance (change in item CEQ adjusted for retained earnings) and net debt issuance (change in items DLTT and DLC) scaled by total assets (item AT) over the fiscal year. Rank cross-sectionally each June.\", \"rationale\": \"Firms funding operations through heavy external financing tend to overinvest and dilute owners, forecasting lower subsequent returns.\", \"higher_returns_for\": \"low values of the measure (low external financing)\"},\n{\"name\": \"Analyst Coverage Scarcity Value\", \"construction\": \"Using I/B/E/S, count the number of analysts providing FY1 earnings estimates. Within size deciles (CRSP market cap), rank firms by residual coverage relative to size expectation; select firms with abnormally low coverage.\", \"rationale\": \"Stocks with sparse analyst coverage relative to their size are underfollowed and subject to slower information incorporation, earning a neglect premium.\", \"higher_returns_for\": \"low values of the measure (low analyst coverage for their size)\"},\n{\"name\": \"Earnings Torpedo Sensitivity\", \"construction\": \"Using I/B/E/S, compute the dispersion of FY1 analyst estimates (standard deviation) scaled by absolute mean estimate, combined with the trailing sign of estimate revisions over 3 months. Rank cross-sectionally each month, favoring low dispersion with upward revisions.\", \"rationale\": \"Low forecast dispersion signals consensus clarity, and when paired with positive revisions indicates reliably improving fundamentals that are underpriced, while high dispersion firms face torpedo risk of large negative surprises.\", \"higher_returns_for\": \"low dispersion with upward revisions\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1890,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

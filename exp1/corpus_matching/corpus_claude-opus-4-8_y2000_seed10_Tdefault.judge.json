@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:49:56.446019+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y2000_seed10_Tdefault.json",
+  "prompt_sha256": "1b2cd7374bf17d9bac4256d7057ead6e44d5d89476212f1ae4b3f12b272fc014"
+ },
+ "response": {
+  "id": "chatcmpl-E5QUkaUO81nD8qIrYa1sgNCcq8wiI",
+  "object": "chat.completion",
+  "created": 1784962194,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"ChInv\", \"strength\": \"close\", \"reason\": \"Both use inventory growth, but proposal uses acceleration.\"},\n  {\"index\": 1, \"match\": \"OrderBacklogChg\", \"strength\": \"close\", \"reason\": \"Both use change in order backlog, but proposal deflates by assets.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses sales per employee growth.\"},\n  {\"index\": 3, \"match\": \"Accruals\", \"strength\": \"related\", \"reason\": \"Both use accruals and cash flows, but proposal uses trend difference.\"},\n  {\"index\": 4, \"match\": \"PriceDelayRsq\", \"strength\": \"related\", \"reason\": \"Both use price range/volatility, but proposal uses range compression.\"},\n  {\"index\": 5, \"match\": \"grcapx\", \"strength\": \"related\", \"reason\": \"Both use capex scaled by assets, but proposal is industry-adjusted.\"},\n  {\"index\": 6, \"match\": \"XFIN\", \"strength\": \"close\", \"reason\": \"Both measure external financing need, but proposal includes dividends.\"},\n  {\"index\": 7, \"match\": \"roaq\", \"strength\": \"related\", \"reason\": \"Both use ROA, but proposal uses ROA stability (volatility).\" },\n  {\"index\": 8, \"match\": \"Tax\", \"strength\": \"related\", \"reason\": \"Both use tax/book income, but proposal uses divergence ratio.\"},\n  {\"index\": 9, \"match\": \"STreversal\", \"strength\": \"close\", \"reason\": \"Both use short-term reversal, proposal interacts with turnover.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3050,
+   "completion_tokens": 387,
+   "total_tokens": 3437,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

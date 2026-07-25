@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:23:50.579303+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 3,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJ7jSJsVXto6HShMvBE",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory Growth Divergence\", \"construction\": \"Compute the year-over-year growth rate of inventories (Compustat item INVT) minus the year-over-year growth rate of sales (item SALE) using the most recent annual financial statements. Rank stocks cross-sectionally each June following the fiscal year-end.\", \"rationale\": \"Inventory building faster than sales signals overinvestment and weakening demand that the market is slow to price, foreshadowing lower future profitability.\", \"higher_returns_for\": \"low values of the measure (inventories growing slower than sales)\"},\n{\"name\": \"Accrual-Adjusted Earnings Quality\", \"construction\": \"Compute total accruals as the change in non-cash current assets minus change in current liabilities excluding short-term debt, minus depreciation, scaled by average total assets (Compustat items ACT, CHE, LCT, DLC, DP, AT). Rank stocks annually.\", \"rationale\": \"Earnings driven by accruals rather than cash flows are less persistent, and investors overweight reported earnings, leading to overpricing of high-accrual firms.\", \"higher_returns_for\": \"low values of the measure (low accruals)\"},\n{\"name\": \"Capital Expenditure Intensity Change\", \"construction\": \"Compute capital expenditures (Compustat item CAPX) scaled by lagged net property plant and equipment (item PPENT), then take the change relative to the prior year's ratio. Sort annually after fiscal year-end.\", \"rationale\": \"Sharp increases in capital spending reflect managerial empire-building and overinvestment during optimistic periods, which subsequently disappoints, while capital discipline is rewarded.\", \"higher_returns_for\": \"low values of the measure (declining capex intensity)\"},\n{\"name\": \"Gross Margin Momentum\", \"construction\": \"Compute gross profit margin as (SALE minus COGS)/SALE for the most recent fiscal year and the prior fiscal year (Compustat items SALE, COGS). Take the difference. Rank cross-sectionally.\", \"rationale\": \"Improving gross margins indicate strengthening competitive position and pricing power that predicts rising future profitability not yet fully impounded in prices.\", \"higher_returns_for\": \"high values of the measure (improving margins)\"},\n{\"name\": \"Dividend Initiation Yield Surprise\", \"construction\": \"Identify firms that paid zero dividends in the prior fiscal year but positive dividends in the most recent year (Compustat item DVC), and rank the initiators by the initiated dividend divided by price (CRSP). Long the initiating firms.\", \"rationale\": \"Dividend initiations credibly signal management confidence in sustainable cash flows and reduce free-cash-flow agency costs, mechanisms the market underreacts to.\", \"higher_returns_for\": \"firms initiating dividends (versus non-initiators)\"},\n{\"name\": \"Sales-to-Price Ratio\", \"construction\": \"Divide the most recent annual sales (Compustat item SALE) by market capitalization (CRSP price times shares outstanding) measured at fiscal year-end. Rank cross-sectionally each June.\", \"rationale\": \"Sales are less subject to accounting distortion than earnings or book value, so a high sales-to-price ratio identifies cheaply valued firms with unrecognized turnaround potential.\", \"higher_returns_for\": \"high values of the measure (high sales-to-price)\"},\n{\"name\": \"Volume-Adjusted Return Reversal\", \"construction\": \"For each stock compute the prior one-month return (CRSP) and the average daily turnover (volume divided by shares outstanding) over the same month. Within turnover terciles, rank by prior-month return. Long low-prior-return, high-turnover stocks.\", \"rationale\": \"Short-term price reversals reflect liquidity-driven overreaction, and high turnover amplifies the transient price pressure that subsequently reverses.\", \"higher_returns_for\": \"low prior-month returns combined with high turnover\"},\n{\"name\": \"Idiosyncratic Volatility Contraction\", \"construction\": \"Estimate residual volatility from a market-model regression of daily returns over the prior 60 trading days (CRSP), then compute the change versus the prior 60-day window. Rank cross-sectionally.\", \"rationale\": \"Declining idiosyncratic volatility signals resolution of firm-specific uncertainty and stabilizing fundamentals, which precedes positive revaluation as risk premia compress.\", \"higher_returns_for\": \"low values of the measure (declining idiosyncratic volatility)\"},\n{\"name\": \"Employee Productivity Growth\", \"construction\": \"Compute sales per employee as SALE divided by number of employees (Compustat items SALE, EMP), then take the year-over-year growth rate. Rank annually after fiscal year-end.\", \"rationale\": \"Rising sales per employee reflects improving operating efficiency and scalable competitive advantage that predicts future earnings growth underappreciated by investors.\", \"higher_returns_for\": \"high values of the measure (rising productivity)\"},\n{\"name\": \"Debt Reduction Signal\", \"construction\": \"Compute the change in total book leverage, defined as (DLC plus DLTT)/AT, from the prior fiscal year to the most recent (Compustat items DLC, DLTT, AT). Rank cross-sectionally each June.\", \"rationale\": \"Active deleveraging signals management's private information about improving cash-flow prospects and lowers financial distress risk, a favorable change the market prices with a lag.\", \"higher_returns_for\": \"low values of the measure (largest leverage reductions)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1868,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

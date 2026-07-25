@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:49:16.117308+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y1995_seed06_Tdefault.json",
+  "prompt_sha256": "cc57a7b3c7aee423bb5a073dbd35507be613b191b7e644edb80e8e9b3a01154b"
+ },
+ "response": {
+  "id": "chatcmpl-E5QU6AHYAzBnC7hWesZjWoyZeXwL9",
+  "object": "chat.completion",
+  "created": 1784962154,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"GrSaleToGrInv\", \"strength\": \"close\", \"reason\": \"Both compare inventory and sales growth, but differ in construction details.\"},\n  {\"index\": 1, \"match\": \"ChNWC\", \"strength\": \"close\", \"reason\": \"Both measure change in non-cash working capital scaled by assets.\"},\n  {\"index\": 2, \"match\": \"grcapx3y\", \"strength\": \"close\", \"reason\": \"Both capture acceleration in capex relative to prior years, but differ in scaling/industry adjustment.\"},\n  {\"index\": 3, \"match\": \"EarningsConsistency\", \"strength\": \"related\", \"reason\": \"Both use time-series stability of profitability, but on different metrics.\"},\n  {\"index\": 4, \"match\": \"VolumeTrend\", \"strength\": \"close\", \"reason\": \"Both measure recent vs. past volume/turnover trends.\"},\n  {\"index\": 5, \"match\": \"Coskewness\", \"strength\": \"exact\", \"reason\": \"Directly matches coskewness: regression on squared market returns.\"},\n  {\"index\": 6, \"match\": \"DelFINL\", \"strength\": \"related\", \"reason\": \"Both relate to debt structure, but DelFINL is about change, not maturity profile.\"},\n  {\"index\": 7, \"match\": \"DivInit\", \"strength\": \"related\", \"reason\": \"Both involve dividend initiation, but proposal focuses on payout persistence gap.\"},\n  {\"index\": 8, \"match\": \"IdioVol3F\", \"strength\": \"close\", \"reason\": \"Both use idiosyncratic volatility, but proposal uses compression ratio.\"},\n  {\"index\": 9, \"match\": \"ChNAnalyst\", \"strength\": \"related\", \"reason\": \"Both involve analyst coverage, but proposal scales by size, not change.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3095,
+   "completion_tokens": 415,
+   "total_tokens": 3510,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

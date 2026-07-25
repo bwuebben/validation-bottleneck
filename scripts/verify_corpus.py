@@ -2,7 +2,7 @@
 """Standalone integrity + reproduction check for the Validation Bottleneck archive.
 
 Stdlib only. Verifies:
-  1. Corpus counts: 220 Experiment-1 generation files / 2,200 proposals;
+  1. Corpus counts: 275 Experiment-1 generation files / 2,750 proposals;
      168 Experiment-2 generation files / 1,336 well-formed hypotheses (one archived
      response is malformed JSON and contributes zero, per the registered specification).
   2. Manifest integrity: every manifest line's output hash matches the SHA-256 of the
@@ -38,7 +38,11 @@ def strip_fences(c):
 
 
 def content_of(env):
-    return (env["response"].get("choices") or [{}])[0].get("message", {}).get("content", "") or ""
+    resp = env["response"]
+    if isinstance(resp.get("content"), list):  # anthropic response shape
+        return "".join(b.get("text", "") for b in resp["content"]
+                       if b.get("type") == "text")
+    return (resp.get("choices") or [{}])[0].get("message", {}).get("content", "") or ""
 
 
 print("== 1. Corpus counts ==")
@@ -52,8 +56,8 @@ for f in e1_files:
     except json.JSONDecodeError:
         j = json.loads(strip_fences(content_of(env)))
     props += len(j.get("predictors", []))
-check("exp1 generation files == 220", len(e1_files) == 220, str(len(e1_files)))
-check("exp1 proposals == 2200", props == 2200, str(props))
+check("exp1 generation files == 275", len(e1_files) == 275, str(len(e1_files)))
+check("exp1 proposals == 2750", props == 2750, str(props))
 
 e2_files = [f for f in sorted((ROOT / "exp2" / "corpus").glob("*/v*_seed*.json"))
             if not f.name.startswith("smoke_")]
@@ -136,7 +140,7 @@ with open(ROOT / "exp1" / "derived" / "results_a.csv") as fh:
             ok = ok and abs(d["post"] / matched - float(r["share_post_of_matched"])) < 1e-9
         if not ok:
             bad += 1
-check("results_a.csv reproduced from raw corpus (20 model×vintage cells)", bad == 0,
+check("results_a.csv reproduced from raw corpus (25 model×vintage cells)", bad == 0,
       f"{bad} cell mismatches")
 
 print()

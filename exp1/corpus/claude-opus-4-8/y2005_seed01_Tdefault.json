@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:37:41.208019+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 1,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNKAuZi23tbE9dNAHsHh",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Supplier Concentration Fragility\", \"construction\": \"From the 10-K, count the number of major suppliers or customers disclosed under SFAS 131 segment/customer disclosures. Compute a Herfindahl index of revenue dependence on the largest disclosed customers (percent of sales to customers exceeding 10% threshold). Rank firms cross-sectionally by this concentration each June using prior fiscal-year filings.\", \"rationale\": \"Firms dependent on few large customers bear concentrated demand and bargaining-power risk that is underpriced by investors focused on aggregate revenue growth.\", \"higher_returns_for\": \"high customer concentration (as compensation for undiversified demand risk)\"}, {\"name\": \"Accrual Volatility\", \"construction\": \"For each firm compute total accruals (change in non-cash current assets minus change in current liabilities excluding short-term debt, minus depreciation) scaled by average total assets for each of the prior 5 fiscal years. Take the standard deviation of this series. Rank firms cross-sectionally in June.\", \"rationale\": \"Unstable accruals signal low earnings quality and estimation uncertainty; investors underappreciate the persistence advantage of firms with smooth accrual generation.\", \"higher_returns_for\": \"low accrual volatility\"}, {\"name\": \"Order Backlog Growth\", \"construction\": \"Extract reported order backlog (Compustat item ORDB or from 10-K where available) and compute year-over-year growth in backlog scaled by lagged total assets. Form deciles each June.\", \"rationale\": \"Backlog is a forward-looking demand indicator that is slowly incorporated into prices because it is not a headline income-statement figure.\", \"higher_returns_for\": \"high backlog growth\"}, {\"name\": \"R&D Acceleration\", \"construction\": \"Compute the change in R&D-to-sales ratio between the two most recent fiscal years minus the change over the prior two years (second difference of R&D intensity). Rank firms with positive R&D cross-sectionally each June.\", \"rationale\": \"Accelerating innovation investment predicts future intangible payoffs that markets discount too heavily given conservative accounting expensing of R&D.\", \"higher_returns_for\": \"high (positive) R&D acceleration\"}, {\"name\": \"Working Capital Efficiency Trend\", \"construction\": \"Compute the cash conversion cycle (days inventory + days receivables - days payables) for the current and prior fiscal year. Measure the year-over-year improvement (decrease). Rank firms cross-sectionally each June by improvement.\", \"rationale\": \"Managers who tighten working capital signal operational discipline and free up cash flow that the market recognizes only gradually.\", \"higher_returns_for\": \"large improvement (decrease) in cash conversion cycle\"}, {\"name\": \"Dispersion of Intraday Return Signs\", \"construction\": \"Using daily CRSP data over the prior 12 months, compute the fraction of positive-return days minus negative-return days, then measure how clustered runs are versus random using a runs-test z-statistic. Rank firms by the runs-test statistic each month.\", \"rationale\": \"Non-random clustering of return signs reflects sluggish information diffusion among a limited investor base, predicting continued drift.\", \"higher_returns_for\": \"high positive-run clustering\"}, {\"name\": \"Seasonality-Adjusted Volume Shock\", \"construction\": \"For each month compute average daily dollar volume, deseasonalize by subtracting the same calendar-month average over the prior 3 years, and scale by its historical standard deviation. Rank firms each month by this volume z-score.\", \"rationale\": \"Abnormal volume relative to a stock's own seasonal norm reveals arriving information not yet reflected in price, generating short-horizon continuation.\", \"higher_returns_for\": \"high positive volume shock\"}, {\"name\": \"Deferred Revenue Buildup\", \"construction\": \"Compute year-over-year change in deferred/unearned revenue (Compustat) scaled by lagged sales. Rank firms cross-sectionally each June.\", \"rationale\": \"Growth in deferred revenue represents prepaid future sales already collected in cash, an underappreciated leading indicator of recognized revenue and cash-flow quality.\", \"higher_returns_for\": \"high deferred revenue growth\"}, {\"name\": \"Capital Expenditure Smoothness\", \"construction\": \"Compute capex-to-assets for each of the prior 5 years and take the coefficient of variation. Rank firms cross-sectionally each June by inverse volatility.\", \"rationale\": \"Firms with steady, disciplined investment programs avoid value-destroying overinvestment cycles; markets overweight lumpy expansion stories.\", \"higher_returns_for\": \"low capex volatility (smooth investment)\"}, {\"name\": \"Gross Margin Stability Premium\", \"construction\": \"Compute gross margin (sales minus COGS over sales) for the prior 8 quarters and take the standard deviation. Combine into a signal that ranks firms by low margin volatility conditional on above-median margin level, each June.\", \"rationale\": \"Persistent, stable gross margins indicate durable competitive moats and pricing power that the market undervalues relative to reported growth.\", \"higher_returns_for\": \"low gross margin volatility with high margin level\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1764,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

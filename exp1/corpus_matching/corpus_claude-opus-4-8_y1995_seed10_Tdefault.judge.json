@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:49:26.700201+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y1995_seed10_Tdefault.json",
+  "prompt_sha256": "c63e3fdc1e99993afd3530a113fd1160a99438803006b4a3de789de5a0690baf"
+ },
+ "response": {
+  "id": "chatcmpl-E5QUGemKM9qswQY8zybACYJO5cLKd",
+  "object": "chat.completion",
+  "created": 1784962164,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"GrSaleToGrInv\", \"strength\": \"close\", \"reason\": \"Both compare inventory and sales growth, but differ in construction details.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor combines depreciation and capex this way.\"},\n  {\"index\": 2, \"match\": \"OPLeverage\", \"strength\": \"related\", \"reason\": \"Both relate to operating leverage, but use different variables and construction.\"},\n  {\"index\": 3, \"match\": \"DivInit\", \"strength\": \"related\", \"reason\": \"Both use dividend initiation/increase, but persistence gap is a new twist.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses share-count stability or its volatility.\"},\n  {\"index\": 5, \"match\": \"EarningsSurprise\", \"strength\": \"close\", \"reason\": \"Both use SUE, but proposal adjusts for accruals, unlike library.\"},\n  {\"index\": 6, \"match\": \"VolumeTrend\", \"strength\": \"exact\", \"reason\": \"Both use recent vs trailing average dollar volume as signal.\"},\n  {\"index\": 7, \"match\": \"DelFINL\", \"strength\": \"close\", \"reason\": \"Both use change in leverage, but proposal adds asset growth filter.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses gross-margin trend stability over time.\"},\n  {\"index\": 9, \"match\": \"ReturnSkew3F\", \"strength\": \"close\", \"reason\": \"Both use idiosyncratic return skewness, but proposal uses CAPM not 3F.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3085,
+   "completion_tokens": 394,
+   "total_tokens": 3479,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

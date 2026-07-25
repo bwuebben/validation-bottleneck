@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:33:32.792015+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 3,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJrRWVrdFy93wd8VUqj",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory-to-Sales Acceleration\", \"construction\": \"For each firm, compute the ratio of inventories (Compustat INVT) to sales (SALE) at fiscal year end. Then take the change in this ratio from t-2 to t-1 minus the change from t-3 to t-2, i.e. the second difference (acceleration) of the inventory-to-sales ratio. Rank cross-sectionally each June using the most recent annual data.\", \"rationale\": \"Accelerating inventory buildup relative to sales signals demand disappointment and future markdowns/writeoffs that the market underappreciates, while decelerating inventory signals tightening supply and pricing power.\", \"higher_returns_for\": \"low values of the measure (decelerating inventory-to-sales)\"}, {\"name\": \"Order Backlog Yield\", \"construction\": \"Take reported order backlog (Compustat OB) scaled by market capitalization (PRCC_F times CSHO) at fiscal year end. Rank firms cross-sectionally; firms with no reported backlog are excluded. Reform portfolios each June.\", \"rationale\": \"Order backlog represents contracted future revenue not yet in reported earnings; a high backlog-to-price ratio reflects undervalued future cash flows that the market prices with delay.\", \"higher_returns_for\": \"high values of the measure (high backlog yield)\"}, {\"name\": \"Selling Expense Efficiency Trend\", \"construction\": \"Compute the ratio of SG&A expense (Compustat XSGA) to sales (SALE) for each of the last three fiscal years. Fit the slope of this ratio over time (or take the two-year change). Standardize cross-sectionally each June.\", \"rationale\": \"A declining SG&A-to-sales ratio indicates improving operating leverage and management discipline that predicts positive future earnings surprises not yet capitalized.\", \"higher_returns_for\": \"low (declining) values of the measure\"}, {\"name\": \"Dividend Initiation Persistence Score\", \"construction\": \"Using CRSP distribution codes, identify firms that initiated or resumed a cash dividend within the trailing 12 months, and scale the annualized initiated dividend by prior-year earnings (Compustat IB). Rank initiators by this payout intensity each month; non-initiators score zero.\", \"rationale\": \"Dividend initiations credibly signal management confidence in sustainable earnings, and the size of the initiation relative to earnings sharpens the signal; the market underreacts to this commitment.\", \"higher_returns_for\": \"high values of the measure (large-intensity initiators)\"}, {\"name\": \"Cash Flow Volatility Discount\", \"construction\": \"Compute the standard deviation of quarterly operating cash flow (Compustat OANCF, or IB plus depreciation DP for quarters) scaled by average total assets (AT) over the trailing 12\u201316 quarters. Rank cross-sectionally each quarter.\", \"rationale\": \"Firms with more volatile cash flows are harder to value and carry higher distress/financing risk, so they must offer a return premium to compensate holders.\", \"higher_returns_for\": \"high values of the measure (high cash flow volatility)\"}, {\"name\": \"Analyst Coverage Change Momentum\", \"construction\": \"Using I/B/E/S, count the number of analysts issuing FY1 EPS estimates in the current month versus 12 months prior. Compute the net change in coverage. Rank cross-sectionally each month.\", \"rationale\": \"Rising analyst coverage reflects growing institutional attention and improving information flow that precedes positive price drift as the investor base broadens.\", \"higher_returns_for\": \"high values of the measure (increasing coverage)\"}, {\"name\": \"Gross Margin Stability\", \"construction\": \"Compute gross margin (SALE minus COGS, divided by SALE) for each of the last five fiscal years and take the coefficient of variation (standard deviation divided by mean). Rank cross-sectionally each June; low CV means stable margins.\", \"rationale\": \"Stable gross margins indicate durable competitive advantage and lower fundamental risk, and the market underprices the earnings predictability such firms provide.\", \"higher_returns_for\": \"low values of the measure (stable margins)\"}, {\"name\": \"Debt Maturity Refinancing Pressure\", \"construction\": \"Compute the ratio of debt in current liabilities (Compustat DLC) to total debt (DLC plus DLTT) at fiscal year end, interacted with leverage (total debt over AT). Rank cross-sectionally each June.\", \"rationale\": \"Firms with a large fraction of short-term debt face near-term rollover and refinancing risk; this exposure commands a risk premium especially when overall leverage is high.\", \"higher_returns_for\": \"high values of the measure (high short-term refinancing pressure)\"}, {\"name\": \"Tax Expense Surprise\", \"construction\": \"Compute the effective tax rate (Compustat TXT divided by pretax income PI) for the current year and the trailing three-year average. Take the current rate minus the average. Rank cross-sectionally each June; unusually low current rate is a positive score.\", \"rationale\": \"An abnormally low current-year effective tax rate often reflects favorable, persistent operating changes or credits that the market treats as transitory, causing subsequent positive earnings surprises.\", \"higher_returns_for\": \"low values of the measure (effective tax rate below its own history)\"}, {\"name\": \"Capital Expenditure Deceleration\", \"construction\": \"Compute capital expenditures (Compustat CAPX) scaled by lagged property, plant and equipment (PPENT). Take the change in this investment rate from the prior year to the current year. Rank cross-sectionally each June.\", \"rationale\": \"Firms cutting their investment rate free up cash flow and signal capital discipline, and the market underappreciates the resulting improvement in free cash flow yield relative to firms ramping investment.\", \"higher_returns_for\": \"low values of the measure (decelerating capex)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1990,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

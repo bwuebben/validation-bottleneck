@@ -9,16 +9,19 @@ The paper argues that large language models have made investment hypotheses effe
 free, moving the binding constraint of quantitative research to out-of-sample time the
 generating model has provably not seen: the model's (verified) training cutoff is the only
 valid evaluation boundary. Two pre-registered experiments on public data supply the
-evidence. In Experiment 1, frontier models asked to roleplay past dates (1990–2010) and
-propose "novel" cross-sectional predictors reproduce the post-date anomaly literature at up
-to 3.3× the base rate, and their proposal frequency is *negatively* related to post-date
-factor performance (Fisher-combined z = −3.13): the models reproduce prominence, not
-returns. In Experiment 2, models with recall-verified cutoffs generated 1,008 composite
-factors inside an enumerable grammar (making the trial count exact; M = 330 for the
-longest-window model) and were evaluated strictly after their cutoffs: nothing survives
-Benjamini–Yekutieli false-discovery control, the best composite attains t = 2.69 against a
-pure-noise expected maximum of 3.41, and mechanism-implied auxiliary predictions hold at
-coin-flip rates.
+evidence. In Experiment 1, five models spanning three training lineages (OpenAI, Meta,
+Anthropic), asked to roleplay past dates (1990–2010) and propose "novel" cross-sectional
+predictors, cannot leave the literature they have read — 26–55% of proposals match
+already-documented predictors — and proposal frequency is *negatively* related to
+post-date factor performance (Fisher-combined z = −3.88, negative in 21 of 25
+model-vintage cells): the models reproduce prominence, not returns. In Experiment 2,
+models with recall-verified cutoffs generated 1,008 composite factors inside an
+enumerable grammar (making the trial count exact; M = 330 for the longest-window model)
+and were evaluated strictly after their cutoffs: nothing survives Benjamini–Yekutieli
+false-discovery control; against 10,000 uniform draws from the same grammar the best
+machine-selected composite lands at the 9th/58th/16th percentile of the best-of-M null;
+and mechanism-implied auxiliary predictions hold at 46% where fourteen documented-true
+implications, run through the identical battery, pass at 70%.
 
 ## Repository layout
 

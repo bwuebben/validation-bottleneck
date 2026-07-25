@@ -25,7 +25,12 @@ def main() -> None:
             continue
         env = json.loads(f.read_text())
         meta = env["meta"]
-        content = env["response"]["choices"][0]["message"]["content"]
+        resp = env["response"]
+        if isinstance(resp.get("content"), list):  # anthropic shape
+            content = "".join(b.get("text", "") for b in resp["content"]
+                              if b.get("type") == "text")
+        else:
+            content = resp["choices"][0]["message"]["content"]
         try:
             j = json.loads(content)
         except json.JSONDecodeError:

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:38:09.710689+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 2,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNKCsKag7K2jTios7dBQ",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Supplier Concentration Risk\", \"construction\": \"From annual 10-K segment and MD&A disclosures, count the number of major customers/suppliers a firm reports as accounting for >10% of revenues or purchases. Construct a concentration index equal to 1 minus the Herfindahl of disclosed customer revenue shares; rank cross-sectionally each June and rebalance annually.\", \"rationale\": \"Firms dependent on a few large customers bear undiversified demand risk and hold-up risk that is not fully priced by investors focused on aggregate fundamentals.\", \"higher_returns_for\": \"high customer-concentration (more dependent) firms, as compensation for concentration risk\"}, {\"name\": \"Accrual Reversal Acceleration\", \"construction\": \"Compute working-capital accruals (change in non-cash current assets minus change in current liabilities excluding debt, from Compustat) for the most recent quarter minus the same quarter one year prior, scaled by average total assets. Rank the change in the accrual rate (second difference of accruals) cross-sectionally each quarter.\", \"rationale\": \"Accelerating accruals signal deteriorating earnings quality and impending reversals faster than the level of accruals alone, so investors underreact to the rate of change.\", \"higher_returns_for\": \"low (most negative) accrual-acceleration firms\"}, {\"name\": \"Inventory-to-Sales Divergence\", \"construction\": \"Compute year-over-year growth in inventory minus year-over-year growth in sales, using quarterly Compustat data averaged over the last four quarters. Rank the divergence cross-sectionally each quarter and rebalance.\", \"rationale\": \"When inventory builds faster than sales, it foreshadows future markdowns, weak demand, and negative earnings surprises that the market is slow to incorporate.\", \"higher_returns_for\": \"low divergence (inventory growing slower than sales) firms\"}, {\"name\": \"Dividend Initiation Persistence Score\", \"construction\": \"Track the number of consecutive quarters a firm has paid dividends and whether the most recent dividend was raised, using CRSP distribution data. Build a score combining streak length and recent increase; rank firms with new or growing dividend commitments each quarter.\", \"rationale\": \"Firms establishing a durable, growing dividend signal credible future cash flows, and the market underappreciates the informational value of sustained payout commitment versus one-time payments.\", \"higher_returns_for\": \"high persistence/growing-dividend firms\"}, {\"name\": \"Capital Expenditure Volatility\", \"construction\": \"Compute the standard deviation of annual capital expenditures scaled by total assets over the trailing five fiscal years from Compustat. Rank cross-sectionally each June and rebalance annually.\", \"rationale\": \"Lumpy, unpredictable investment reflects poor internal planning and higher real-option uncertainty; smooth investors underreact to the elevated risk embedded in erratic capex.\", \"higher_returns_for\": \"high capex-volatility firms, as risk compensation\"}, {\"name\": \"Analyst Coverage Decline\", \"construction\": \"Using I/B/E/S, compute the change in the number of analysts covering a firm over the trailing 12 months. Rank firms by net analyst departures each month and form portfolios.\", \"rationale\": \"Losing analyst coverage increases information asymmetry and reduces investor recognition, raising expected returns as neglected stocks command a premium.\", \"higher_returns_for\": \"firms with the largest declines in analyst coverage\"}, {\"name\": \"Selling Expense Efficiency\", \"construction\": \"Compute the ratio of gross profit growth to SG&A growth over the trailing year using Compustat annual data, restricted to firms with positive SG&A. Rank cross-sectionally each June.\", \"rationale\": \"Firms generating profit growth without proportional increases in selling and administrative spending exhibit operating leverage and management discipline that predict future profitability improvements the market underreacts to.\", \"higher_returns_for\": \"high efficiency (profit growth exceeding SG&A growth) firms\"}, {\"name\": \"Share Issuance Timing Relative to Price Run-up\", \"construction\": \"For each firm, compute net share issuance (change in split-adjusted shares outstanding from CRSP) over the trailing year, interacted with the firm's trailing 12-month return. Flag firms that issued heavily after strong price appreciation; rank the interaction term each month.\", \"rationale\": \"Managers opportunistically issue equity when they perceive their stock is overvalued after run-ups, so heavy issuance following gains signals overvaluation and predicts low returns.\", \"higher_returns_for\": \"low values (net repurchasers or non-issuers after run-ups)\"}, {\"name\": \"Effective Tax Rate Change\", \"construction\": \"Compute the change in the effective tax rate (tax expense divided by pretax income) from the prior fiscal year to the current, using Compustat, winsorizing extreme values and excluding loss firms. Rank cross-sectionally each June.\", \"rationale\": \"A declining effective tax rate can boost reported earnings unsustainably and reflects aggressive tax positions or timing benefits that reverse, so investors overvalue the temporary earnings lift.\", \"higher_returns_for\": \"firms with rising effective tax rates (conservative earnings)\"}, {\"name\": \"Order Backlog Momentum\", \"construction\": \"Using the order backlog item disclosed in Compustat (BACKLG), compute year-over-year growth in backlog scaled by sales, for firms reporting the item. Rank cross-sectionally each quarter and rebalance.\", \"rationale\": \"Growing order backlog is a forward-looking indicator of future revenue that is buried in footnotes and underweighted by investors focused on current earnings.\", \"higher_returns_for\": \"high backlog-growth firms\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1945,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

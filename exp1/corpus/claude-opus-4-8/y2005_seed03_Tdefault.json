@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:38:44.181970+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 3,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNKF1fgFXEMLX8DCXz3f",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Supplier Concentration Fragility\", \"construction\": \"Using 10-K disclosures under SFAS 131 segment reporting and item disclosures of major customers, compute the fraction of firm revenue attributable to its single largest customer (customers accounting for >10% of sales must be disclosed). Rank firms cross-sectionally each June by this concentration ratio, using the most recent fiscal-year filing.\", \"rationale\": \"Firms dependent on a few large customers bear undiversified demand risk and hold-up risk; investors underprice this fragility until shocks materialize, so it commands a risk premium.\", \"higher_returns_for\": \"high customer-concentration values\"}, {\"name\": \"Inventory-to-Sales Acceleration\", \"construction\": \"Compute the change in the ratio of inventory (Compustat INVT) to sales (SALE) over the trailing four quarters, then the change in that change (second difference) across the last two fiscal quarters. Sort stocks cross-sectionally each quarter after earnings release.\", \"rationale\": \"Accelerating inventory buildup signals demand overestimation and future markdowns/write-offs that the market is slow to incorporate, predicting lower returns.\", \"higher_returns_for\": \"low (most negative) inventory-to-sales acceleration\"}, {\"name\": \"R&D Reversal Growth\", \"construction\": \"Scale R&D expense (Compustat XRD) by lagged total assets (AT), then compute the two-year change in this ratio. Each June, form deciles on the magnitude of the increase in R&D intensity, restricting to firms with positive R&D in both years.\", \"rationale\": \"Rising R&D intensity reflects intangible investment expensed immediately, understating current earnings and book value; the market undervalues the option-like future payoff, yielding higher subsequent returns.\", \"higher_returns_for\": \"high increases in R&D intensity\"}, {\"name\": \"Dispersion of Intra-Year Return Volatility\", \"construction\": \"For each stock, compute monthly realized volatility from daily returns (CRSP) for each of the trailing 12 months, then take the standard deviation of those 12 monthly volatilities. Rank cross-sectionally each month.\", \"rationale\": \"Volatility-of-volatility captures instability in the firm's risk environment that is not spanned by average volatility; uncertainty-averse investors demand compensation, so high vol-of-vol earns higher returns after controlling for level.\", \"higher_returns_for\": \"high volatility-of-volatility\"}, {\"name\": \"Deferred Revenue Momentum\", \"construction\": \"Compute the year-over-year growth in deferred revenue / unearned revenue (Compustat balance-sheet items, current plus long-term) scaled by total assets. Sort firms each quarter after filing; restrict to firms reporting nonzero deferred revenue.\", \"rationale\": \"Growing deferred revenue represents cash collected for undelivered goods/services, a forward-looking indicator of contracted future sales that the market underweights relative to reported revenue.\", \"higher_returns_for\": \"high deferred-revenue growth\"}, {\"name\": \"Selling Expense Efficiency\", \"construction\": \"Compute the ratio of gross profit (SALE minus COGS) to selling, general & administrative expense (XSGA), then take its trailing-four-quarter change. Rank stocks cross-sectionally each quarter after earnings.\", \"rationale\": \"Improving gross profit generated per dollar of SG&A signals operating leverage and managerial efficiency gains not yet reflected in valuation, predicting higher returns.\", \"higher_returns_for\": \"high improvement in gross-profit-to-SG&A\"}, {\"name\": \"Order Flow Persistence Asymmetry\", \"construction\": \"Using TAQ intraday data, classify trades via the Lee-Ready algorithm and compute the ratio of net buy-initiated to sell-initiated dollar volume over the trailing 60 trading days, then measure its serial autocorrelation over the same window. Rank stocks monthly.\", \"rationale\": \"Persistent one-sided order flow reflects gradual institutional accumulation or distribution ahead of public information, so high positive buy-side persistence predicts higher returns.\", \"higher_returns_for\": \"high buy-side order-flow persistence\"}, {\"name\": \"Pension Underfunding Surprise\", \"construction\": \"From 10-K pension footnotes (SFAS 87/132), compute the change in the funded status of defined-benefit plans (fair value of plan assets minus projected benefit obligation) scaled by market equity, year over year. Sort firms annually each June.\", \"rationale\": \"Deteriorating pension funded status is an off-income-statement liability the market processes slowly; worsening funding predicts lower future returns as the obligation is eventually recognized.\", \"higher_returns_for\": \"improving (rising) pension funded status\"}, {\"name\": \"Analyst Coverage Loss\", \"construction\": \"Using I/B/E/S, count the number of distinct analysts issuing FY1 estimates each month and compute the twelve-month change in coverage count, scaled by prior coverage. Rank stocks monthly, focusing on firms experiencing coverage declines.\", \"rationale\": \"A drop in analyst coverage reduces information production and increases neglect; if not driven by fundamentals, neglected stocks become underpriced and earn higher subsequent returns.\", \"higher_returns_for\": \"large declines in analyst coverage\"}, {\"name\": \"Capital Expenditure Smoothness\", \"construction\": \"Compute the coefficient of variation (standard deviation divided by mean) of annual capital expenditures (Compustat CAPX) scaled by total assets over the trailing five fiscal years. Rank firms each June, requiring five years of positive capex.\", \"rationale\": \"Firms with lumpy, volatile investment face higher adjustment costs and financing frictions, embedding real-option and risk premia; erratic investors underprice such firms so high capex volatility earns higher returns.\", \"higher_returns_for\": \"high capital-expenditure volatility\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 2015,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

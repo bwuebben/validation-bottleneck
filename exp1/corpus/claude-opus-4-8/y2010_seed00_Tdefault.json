@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:42:22.740015+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 0,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNKXfG567HeF4xGbNYyx",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Customer Concentration Fragility\", \"construction\": \"From firm 10-K disclosures under SFAS 131, identify major customers accounting for >10% of revenue. Compute a Herfindahl index of disclosed customer revenue shares. Rank firms cross-sectionally each June on this concentration index, updated annually.\", \"rationale\": \"Firms dependent on a few large customers bear undiversified cash-flow risk from customer bargaining power and potential loss, which is not fully priced and commands a risk premium.\", \"higher_returns_for\": \"high customer concentration (high Herfindahl)\"},\n{\"name\": \"Inventory-Sales Momentum Divergence\", \"construction\": \"Compute year-over-year growth in inventory (Compustat INVT) minus year-over-year growth in sales (SALE) using the most recent quarterly data. Rank firms each month on this divergence.\", \"rationale\": \"Inventory building faster than sales signals demand overestimation by management and impending markdowns, so high-divergence firms subsequently underperform.\", \"higher_returns_for\": \"low inventory-sales divergence (inventory growing slower than sales)\"},\n{\"name\": \"Order Flow Roundness Clustering\", \"construction\": \"Using TAQ intraday trade data over the prior month, compute the fraction of a stock's share volume executed in round-lot sizes that are multiples of 1000 shares. Rank stocks cross-sectionally each month.\", \"rationale\": \"A high fraction of round-number institutional block trades proxies for informed institutional accumulation, predicting positive future returns.\", \"higher_returns_for\": \"high fraction of large round-lot volume\"},\n{\"name\": \"Analyst Forecast Dispersion Acceleration\", \"construction\": \"From I/B/E/S, compute the monthly change in the standard deviation of analyst EPS forecasts scaled by price (change in dispersion). Rank firms on the two-month acceleration in forecast dispersion.\", \"rationale\": \"Rising disagreement combined with short-sale constraints (Miller effect) leads to overpricing that reverses, so accelerating dispersion predicts lower returns.\", \"higher_returns_for\": \"declining or low dispersion acceleration\"},\n{\"name\": \"Capex Timing Concentration\", \"construction\": \"Using quarterly Compustat capital expenditures (CAPXY differenced), compute the coefficient of variation of the firm's four quarterly capex figures over the trailing year. Rank firms on this seasonality/lumpiness measure.\", \"rationale\": \"Lumpy, poorly-timed investment spikes reflect agency-driven or reactive capital allocation that destroys value, predicting lower future returns.\", \"higher_returns_for\": \"smooth (low coefficient of variation) capex\"},\n{\"name\": \"Deferred Revenue Growth\", \"construction\": \"Compute year-over-year growth in the deferred revenue liability (Compustat DRC plus DRLT) scaled by total assets. Rank firms annually each June.\", \"rationale\": \"Growing deferred revenue reflects prepaid customer commitments and future recognized sales that the market underweights relative to reported earnings, predicting higher returns.\", \"higher_returns_for\": \"high deferred revenue growth\"},\n{\"name\": \"Working Capital Efficiency Trend\", \"construction\": \"Compute the cash conversion cycle (days inventory + days receivables - days payables) using Compustat INVT, RECT, AP, COGS, SALE, and take the change over the trailing two years. Rank firms on the improvement (decrease) in the cycle.\", \"rationale\": \"Firms shortening their cash conversion cycle are improving operational efficiency and liquidity generation ahead of market recognition, predicting higher returns.\", \"higher_returns_for\": \"large improvement (decrease) in cash conversion cycle\"},\n{\"name\": \"Geographic Revenue Diffusion\", \"construction\": \"From segment disclosures in 10-Ks, count the number of distinct geographic segments and compute a diversification Herfindahl of foreign vs domestic revenue. Rank firms on foreign revenue share change year-over-year.\", \"rationale\": \"Rising foreign revenue share exposes firms to underpriced currency and macro risks and demand shifts, commanding a return premium not captured by domestic beta.\", \"higher_returns_for\": \"high foreign revenue share\"},\n{\"name\": \"Short-Interest Velocity\", \"construction\": \"Using semi-monthly short interest data from exchanges, compute the change in shares-short scaled by shares outstanding over the most recent two settlement periods (the velocity of short accumulation). Rank stocks each month.\", \"rationale\": \"Rapid new short accumulation reflects informed negative sentiment that predicts subsequent underperformance beyond the level of short interest.\", \"higher_returns_for\": \"low or negative short-interest velocity\"},\n{\"name\": \"Employee Productivity Shock\", \"construction\": \"Compute sales per employee (Compustat SALE / EMP) and take the year-over-year growth, then subindustry-adjust by subtracting the median growth of the firm's 3-digit SIC peers. Rank firms annually each June.\", \"rationale\": \"Above-peer improvement in labor productivity signals durable operational quality and margin expansion that the market is slow to incorporate, predicting higher returns.\", \"higher_returns_for\": \"high peer-adjusted productivity growth\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1792,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

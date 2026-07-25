@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:50:43.032393+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y2010_seed05_Tdefault.json",
+  "prompt_sha256": "60145b9c727dbe01a973165121cd585e45faede9affa714b6d5df40ed6c6a226"
+ },
+ "response": {
+  "id": "chatcmpl-E5QVVwir6eb727Fbp1lieHBZzG5GT",
+  "object": "chat.completion",
+  "created": 1784962241,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"HerfAsset\", \"strength\": \"close\", \"reason\": \"Herfindahl concentration, but for assets not suppliers/costs.\"},\n  {\"index\": 1, \"match\": \"ChInv\", \"strength\": \"related\", \"reason\": \"Inventory growth, but not inventory composition shift.\"},\n  {\"index\": 2, \"match\": \"DelDRC\", \"strength\": \"related\", \"reason\": \"Change in deferred revenue, but not acceleration.\"},\n  {\"index\": 3, \"match\": \"MomSeason\", \"strength\": \"close\", \"reason\": \"Seasonal return/earnings patterns, but different implementation.\"},\n  {\"index\": 4, \"match\": \"RDcap\", \"strength\": \"related\", \"reason\": \"R&D capital, but not vintage composition.\"},\n  {\"index\": 5, \"match\": \"DivSeason\", \"strength\": \"related\", \"reason\": \"Dividend seasonality, not punctuality/consistency.\"},\n  {\"index\": 6, \"match\": \"BM\", \"strength\": \"related\", \"reason\": \"Book-to-market proxies value, but not liquidation value.\"},\n  {\"index\": 7, \"match\": \"VolSD\", \"strength\": \"related\", \"reason\": \"Volume and volatility, but not their correlation.\"},\n  {\"index\": 8, \"match\": \"Tax\", \"strength\": \"related\", \"reason\": \"Tax variables, but not NOL utilization momentum.\"},\n  {\"index\": 9, \"match\": \"Herf\", \"strength\": \"exact\", \"reason\": \"Herfindahl index of revenue concentration by region.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3142,
+   "completion_tokens": 359,
+   "total_tokens": 3501,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

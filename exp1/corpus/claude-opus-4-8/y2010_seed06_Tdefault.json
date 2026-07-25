@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:45:26.741731+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 6,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNKkZG2aL8PGhaMECsC9",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Supplier Concentration Fragility\", \"construction\": \"Using 10-K disclosures under SFAS 131 that require reporting of major customers accounting for >10% of revenue, and Compustat segment data, construct a Herfindahl index of a firm's customer-revenue concentration. Combine with the customer firms' trailing 12-month stock return volatility (from CRSP) weighted by revenue share to form a 'demand fragility' score. Reconstitute annually after fiscal-year 10-K filings.\", \"rationale\": \"Firms dependent on a few volatile customers bear undiversified demand risk that is slow to be priced because customer linkages are disclosed only in footnotes; investors underweight this concentration risk.\", \"higher_returns_for\": \"high customer concentration combined with high customer volatility\"}, {\"name\": \"Intra-Year Earnings Seasonality Persistence\", \"construction\": \"For each firm, regress quarterly earnings surprises (actual minus seasonal-random-walk expectation, scaled by price) over the prior 20 quarters on calendar-quarter dummies. Measure the fraction of a firm's earnings surprise historically concentrated in its strongest fiscal quarter. Rank stocks in the month before that historically strong quarter's earnings announcement.\", \"rationale\": \"Firms with a persistent same-quarter positive surprise pattern have predictable earnings news that a slow-moving market does not fully anticipate ahead of the announcement.\", \"higher_returns_for\": \"high historical surprise concentration in the upcoming quarter\"}, {\"name\": \"Working Capital Acceleration\", \"construction\": \"Compute the second difference (acceleration) of non-cash net working capital scaled by average total assets: change in the year-over-year change of (current assets minus cash minus current liabilities plus short-term debt). Use annual Compustat. Rank cross-sectionally each June.\", \"rationale\": \"Accelerating working capital investment signals aggressive over-expansion and lower-quality growth that reverses, extending the accruals anomaly to its rate of change rather than its level.\", \"higher_returns_for\": \"low (most negative) working capital acceleration\"}, {\"name\": \"Text-Based Risk Factor Growth\", \"construction\": \"Parse the Item 1A 'Risk Factors' section (mandated for 10-Ks since 2005) and count the number of distinct risk-factor bullet items and total word count. Compute the year-over-year percentage change in risk-section length after removing boilerplate. Rank firms annually.\", \"rationale\": \"A rising volume of disclosed risk language reflects managers signaling deteriorating fundamentals and rising uncertainty that the market underreacts to given the qualitative, unstructured nature of the disclosure.\", \"higher_returns_for\": \"low growth in risk-factor disclosure length\"}, {\"name\": \"Dispersion of Intraday Return Signs\", \"construction\": \"Using TAQ or daily high-low-open-close data, for each stock compute over the prior quarter the fraction of days where the intraday (open-to-close) return sign differs from the overnight (prior close-to-open) return sign. Standardize cross-sectionally each month.\", \"rationale\": \"Frequent disagreement between overnight (information-driven) and intraday (liquidity/noise-trader-driven) returns indicates information asymmetry and unresolved uncertainty, commanding a risk premium.\", \"higher_returns_for\": \"high sign-disagreement fraction\"}, {\"name\": \"Capitalized R&D Vintage Skew\", \"construction\": \"Build a stock of R&D capital using a 20% annual depreciation of the prior five years of R&D expense (Compustat XRD). Compute the share of the R&D capital stock that is from the most recent year ('young R&D fraction'). Rank R&D-active firms annually each June.\", \"rationale\": \"Firms whose innovation capital is dominated by recent, unproven spending carry greater intangible-value uncertainty that is mispriced because standard accounting expenses R&D immediately, obscuring the age profile.\", \"higher_returns_for\": \"low young-R&D fraction (mature, seasoned innovation capital)\"}, {\"name\": \"Institutional Ownership Breadth Momentum\", \"construction\": \"From 13F filings, compute the quarter-over-quarter change in the number of distinct institutions holding a stock, scaled by prior count. Take a two-quarter change to capture the trajectory of breadth. Rank stocks the month after 13F filing deadlines.\", \"rationale\": \"Accelerating breadth of institutional ownership signals gradual relaxation of short-sale and information constraints, predicting continued positive revaluation as more investors enter, extending breadth-of-ownership effects to their dynamics.\", \"higher_returns_for\": \"high increase in ownership breadth\"}, {\"name\": \"Cost Stickiness Asymmetry\", \"construction\": \"Estimate for each firm, over rolling 16 quarters, the differential response of SG&A costs to sales increases versus sales decreases (regress log change in SG&A on log change in sales plus an interaction with a sales-decrease dummy). The stickiness coefficient measures how slowly costs fall when sales fall. Rank annually.\", \"rationale\": \"Firms with sticky costs have operating leverage that amplifies earnings declines during downturns; this asymmetric risk is underpriced because it only manifests in bad states.\", \"higher_returns_for\": \"high cost stickiness (higher compensation for downside operating risk)\"}, {\"name\": \"Pension Discount Rate Aggressiveness\", \"construction\": \"From 10-K pension footnotes, extract the assumed discount rate and expected return on plan assets. Compute the firm's assumptions minus the industry median for the same year. Higher positive deviations indicate aggressive assumptions that understate liabilities and inflate reported earnings. Rank firms with defined-benefit plans annually.\", \"rationale\": \"Aggressive pension assumptions inflate current earnings quality and mask future funding obligations; the market underweights these footnote assumptions, so aggressive firms subsequently underperform.\", \"higher_returns_for\": \"low assumption aggressiveness (conservative pension assumptions)\"}, {\"name\": \"Order Backlog Conversion Ratio\", \"construction\": \"For firms reporting order backlog (Compustat item OB), compute the ratio of current-year revenue to prior-year-end backlog, and its change versus the prior year. A declining conversion ratio indicates backlog growth outpacing realized sales. Rank annually among backlog-reporting firms.\", \"rationale\": \"Growing backlog that is not converting into revenue signals either demand strength not yet in earnings (positive) or execution problems; the disclosed but non-standard backlog data is slow to be incorporated into prices.\", \"higher_returns_for\": \"high backlog relative to realized revenue (unconverted demand pipeline)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 2295,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

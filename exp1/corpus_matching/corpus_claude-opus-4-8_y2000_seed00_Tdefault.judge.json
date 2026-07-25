@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:49:29.715961+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y2000_seed00_Tdefault.json",
+  "prompt_sha256": "860bb3be425db03d30cf93580f5729048774134d5cd94bfb70da36ecd1c6385d"
+ },
+ "response": {
+  "id": "chatcmpl-E5QUJ0dKsh6vHIH5a5LurWRVSyI1E",
+  "object": "chat.completion",
+  "created": 1784962167,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"GrAdExp\", \"strength\": \"close\", \"reason\": \"Both use acceleration in R&D/ad expense scaled by assets.\"},\n  {\"index\": 1, \"match\": \"GrSaleToGrInv\", \"strength\": \"close\", \"reason\": \"Both compare inventory growth to sales growth.\"},\n  {\"index\": 2, \"match\": \"OrderBacklog\", \"strength\": \"exact\", \"reason\": \"Order backlog scaled by assets matches OrderBacklog.\"},\n  {\"index\": 3, \"match\": \"EarningsStreak\", \"strength\": \"related\", \"reason\": \"Both use streaks, but this adds dividend yield interaction.\"},\n  {\"index\": 4, \"match\": \"MomSeason\", \"strength\": \"related\", \"reason\": \"Both use return seasonality, but this is earnings-month specific.\"},\n  {\"index\": 5, \"match\": \"ChAssetTurnover\", \"strength\": \"exact\", \"reason\": \"Change in asset turnover matches ChAssetTurnover.\"},\n  {\"index\": 6, \"match\": \"IdioVol3F\", \"strength\": \"related\", \"reason\": \"Both use idiosyncratic volatility, but this uses its trend.\"},\n  {\"index\": 7, \"match\": \"ShareIss1Y\", \"strength\": \"close\", \"reason\": \"Both use share issuance, but this uses acceleration.\"},\n  {\"index\": 8, \"match\": \"CashProd\", \"strength\": \"exact\", \"reason\": \"Sales to cash matches Cash Productivity.\"},\n  {\"index\": 9, \"match\": \"ChNAnalyst\", \"strength\": \"close\", \"reason\": \"Both use change in analyst coverage, but this scales by size.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3153,
+   "completion_tokens": 381,
+   "total_tokens": 3534,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

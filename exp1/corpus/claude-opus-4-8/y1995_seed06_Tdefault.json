@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:29:58.461201+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 6,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJan9XCtK9hrtzXDNPm",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory Growth Divergence\", \"construction\": \"For each fiscal year, compute the growth rate of inventories (Compustat item INVT) minus the growth rate of sales (item SALE), both year-over-year. Rank firms cross-sectionally each June after the reporting lag. Restrict to firms carrying meaningful inventory (exclude financials and pure service firms).\", \"rationale\": \"Inventory building faster than sales signals demand overestimation and future markdowns, while lean inventory relative to sales signals efficient operations and hidden demand strength.\", \"higher_returns_for\": \"low values of the measure (inventory growth well below sales growth)\"}, {\"name\": \"Accrued Working Capital Intensity\", \"construction\": \"Compute the annual change in non-cash working capital = change in (current assets - cash) minus change in (current liabilities - short-term debt), scaled by average total assets, using Compustat items ACT, CHE, LCT, DLC, AT. Rank each June.\", \"rationale\": \"Large non-cash working-capital accruals reflect low-quality earnings that revert, so firms bloating working capital tend to underperform relative to those generating cash-backed earnings.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Capital Expenditure Acceleration\", \"construction\": \"Compute the ratio of current-year capital expenditures (Compustat CAPX) to the three-year prior average of CAPX, then subtract the industry-median of this ratio. Rank each June after reporting lag.\", \"rationale\": \"Firms sharply accelerating investment tend to overinvest at cyclical peaks and subsequently disappoint, consistent with q-theory and empire-building frictions.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Gross Margin Trend Stability\", \"construction\": \"Using quarterly Compustat, compute gross margin = (SALEQ - COGSQ)/SALEQ for the last 8 quarters, then take the slope of a linear trend divided by the standard deviation of the quarterly margins. Rank cross-sectionally.\", \"rationale\": \"A steadily rising, low-volatility gross margin signals durable competitive positioning that the market underappreciates, while deteriorating margins forecast earnings shortfalls.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Trading Volume Trend Decay\", \"construction\": \"For each stock, compute average daily share turnover (CRSP volume divided by shares outstanding) over the most recent 3 months minus average turnover over months 4 through 12. Rank monthly.\", \"rationale\": \"Declining relative turnover reflects fading investor attention and neglect, and neglected stocks earn a premium as attention eventually re-normalizes.\", \"higher_returns_for\": \"low values of the measure (declining turnover)\"}, {\"name\": \"Return Convexity to Market\", \"construction\": \"Regress a stock's monthly excess returns on market excess returns and squared market excess returns over trailing 60 months. Rank stocks by the coefficient on the squared term (coskewness proxy).\", \"rationale\": \"Stocks whose returns are convex in the market provide crash protection that investors overpay for, so low-convexity stocks command higher expected returns.\", \"higher_returns_for\": \"low values of the convexity coefficient\"}, {\"name\": \"Debt Maturity Concentration\", \"construction\": \"Compute the fraction of total debt maturing within one year = DLC / (DLC + DLTT) from Compustat. Rank each June, controlling for leverage quintile.\", \"rationale\": \"High reliance on short-term debt exposes firms to rollover and refinancing risk that is not fully priced, commanding a risk premium.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Dividend Initiation Persistence Gap\", \"construction\": \"Identify firms that have paid dividends (CRSP distribution codes) for at least 3 consecutive years but whose payout ratio (dividends/earnings) declined in the most recent year while earnings rose. Flag this divergence as a binary/continuous signal.\", \"rationale\": \"Managers holding payout flat while earnings grow are conservatively signaling and building slack, and such quietly strengthening firms are underpriced relative to full-payout peers.\", \"higher_returns_for\": \"firms with rising retained earnings and lagging payout\"}, {\"name\": \"Idiosyncratic Volatility Compression\", \"construction\": \"Estimate idiosyncratic volatility as the standard deviation of residuals from a market-model regression over the trailing 12 months, and separately over the prior 12 months. Compute the ratio (recent/prior). Rank monthly.\", \"rationale\": \"A sharp compression in idiosyncratic volatility signals resolution of firm-specific uncertainty and stabilizing fundamentals that the market prices with delay.\", \"higher_returns_for\": \"low values of the ratio (volatility falling)\"}, {\"name\": \"Analyst Coverage Scaled by Size\", \"construction\": \"Compute the number of I/B/E/S analysts issuing FY1 estimates divided by the log of market capitalization (CRSP price times shares). Rank cross-sectionally each month.\", \"rationale\": \"Low coverage relative to firm size indicates neglect and weaker information flow, and such under-followed stocks earn a premium as information asymmetry resolves.\", \"higher_returns_for\": \"low values of the measure (under-covered for their size)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1819,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

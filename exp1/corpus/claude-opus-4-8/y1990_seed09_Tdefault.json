@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:26:27.691977+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 9,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJKJYSDYnBpqhfJje3v",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory-to-Sales Acceleration\", \"construction\": \"For each fiscal year, compute the ratio of inventories (Compustat item INVT) to sales (SALE). Take the year-over-year change in this ratio, then subtract the prior-year change to obtain the second difference (acceleration). Rank stocks cross-sectionally each June using the most recent fiscal-year data.\", \"rationale\": \"Accelerating inventory relative to sales signals unexpected demand weakness and future markdowns/write-offs that the market is slow to price, forecasting lower earnings and returns.\", \"higher_returns_for\": \"low values of the measure (decelerating or declining inventory-to-sales)\"}, {\"name\": \"Gross Margin Stability\", \"construction\": \"Using the past 5 fiscal years of Compustat data, compute gross margin as (SALE - COGS)/SALE each year. Measure the standard deviation of the annual gross margin. Rank firms by the inverse of this volatility (low volatility = high stability).\", \"rationale\": \"Firms with stable margins have durable competitive advantages and lower cash-flow uncertainty, which the market underprices relative to the persistence of their profitability.\", \"higher_returns_for\": \"high stability (low margin volatility)\"}, {\"name\": \"Capital Expenditure Intensity Change\", \"construction\": \"Compute capital expenditures (CAPX) scaled by lagged net PP&E (PPENT) or total assets (AT). Take the change in this ratio from the prior fiscal year. Sort stocks each June into portfolios based on this change.\", \"rationale\": \"Sharp increases in capital spending intensity often reflect empire-building and over-investment that erode future returns on capital, while spending restraint precedes stronger free cash flow.\", \"higher_returns_for\": \"low values of the measure (declining capex intensity)\"}, {\"name\": \"Dividend Growth Persistence\", \"construction\": \"Using CRSP dividend history, compute the number of consecutive years (up to 5) in which cash dividends per share increased. Combine with the average annual dividend growth rate over that window. Rank firms into high vs low persistence groups.\", \"rationale\": \"Consistent dividend growth signals management confidence in sustainable cash flows and disciplines managers, a quality dimension not fully reflected in prices.\", \"higher_returns_for\": \"high values of the measure (persistent dividend growth)\"}, {\"name\": \"Accruals-to-Cash-Flow Divergence\", \"construction\": \"Compute total accruals as the change in non-cash working capital minus depreciation, using balance-sheet Compustat items (change in ACT minus CHE, minus change in LCT minus DLC, minus DP). Scale by average total assets. Separately compute operating cash flow proxy as net income minus accruals. Rank firms by the ratio of accruals to the magnitude of cash flow.\", \"rationale\": \"Earnings driven largely by accruals rather than cash are less persistent and tend to reverse, so high-accrual firms subsequently underperform.\", \"higher_returns_for\": \"low values of the measure (cash-backed earnings)\"}, {\"name\": \"Volume-Adjusted Price Trend\", \"construction\": \"Over the trailing 6 months, compute the cumulative return weighted by the ratio of each month's dollar volume to average dollar volume, from CRSP monthly returns and volume. This emphasizes price moves that occurred on high volume.\", \"rationale\": \"Price trends confirmed by high trading volume reflect stronger informed conviction and continue, whereas low-volume moves are noise that reverse.\", \"higher_returns_for\": \"high values of the measure (strong volume-confirmed uptrend)\"}, {\"name\": \"Asset Turnover Improvement\", \"construction\": \"Compute asset turnover as SALE / average total assets (AT) each fiscal year. Take the year-over-year change. Sort firms each June by the improvement in asset turnover.\", \"rationale\": \"Improving efficiency in generating sales from assets signals operational momentum and rising future profitability that the market underreacts to.\", \"higher_returns_for\": \"high values of the measure (improving asset turnover)\"}, {\"name\": \"Debt Maturity Shift\", \"construction\": \"Compute the ratio of debt in current liabilities (DLC) to total debt (DLC + DLTT) each fiscal year. Take the change from the prior year. Rank firms by the increase in short-term debt reliance.\", \"rationale\": \"A shift toward short-term financing raises rollover and refinancing risk and often signals constrained access to long-term capital, foreshadowing distress and lower returns.\", \"higher_returns_for\": \"low values of the measure (declining short-term debt reliance)\"}, {\"name\": \"Return Seasonality Consistency\", \"construction\": \"For each stock, using the past 5 years of CRSP monthly returns, compute the average return in the same calendar month as the upcoming month. Rank stocks by this historical same-month average return.\", \"rationale\": \"Firm-specific seasonal patterns in returns (from recurring information releases or demand cycles) persist and are not arbitraged away by the market.\", \"higher_returns_for\": \"high values of the measure (historically strong same-calendar-month returns)\"}, {\"name\": \"R&D Growth Relative to Sales\", \"construction\": \"Compute research and development expense (XRD) scaled by sales (SALE). Take the growth in this ratio over the prior fiscal year, restricting to firms with positive R&D. Rank firms by the increase in R&D intensity.\", \"rationale\": \"Rising R&D intensity reflects investment in future innovation whose payoff is systematically underpriced because accounting expenses R&D immediately and analysts undervalue intangibles.\", \"higher_returns_for\": \"high values of the measure (rising R&D intensity)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1925,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

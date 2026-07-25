@@ -1,0 +1,10 @@
+{"file": "corpus/claude-opus-4-8/y2005_seed00_Tdefault.json", "index": 1, "match": "OrderBacklogChg", "strength": "exact", "reason": "Both use change in order backlog as signal."}
+{"file": "corpus/claude-opus-4-8/y1995_seed04_Tdefault.json", "index": 4, "match": "InvestPPEInv", "strength": "related", "reason": "Both involve changes in capital intensity/investment."}
+{"file": "corpus/claude-opus-4-8/y2005_seed07_Tdefault.json", "index": 4, "match": "EarningsConsistency", "strength": "related", "reason": "Both use earnings sign changes, but proposal counts reversals."}
+{"file": "corpus/claude-opus-4-8/y1990_seed04_Tdefault.json", "index": 9, "match": null, "strength": "none", "reason": "No library predictor penalizes profitability by leverage in this way."}
+{"file": "corpus/claude-opus-4-8/y1990_seed07_Tdefault.json", "index": 4, "match": "IdioVol3F", "strength": "exact", "reason": "Same construction: idiosyncratic volatility from market model residuals."}
+{"file": "corpus/claude-opus-4-8/y2010_seed10_Tdefault.json", "index": 8, "match": null, "strength": "none", "reason": "No library predictor uses Herfindahl of debt maturity schedule."}
+{"file": "corpus/claude-opus-4-8/y1990_seed09_Tdefault.json", "index": 6, "match": "ChAssetTurnover", "strength": "exact", "reason": "Both use year-over-year change in asset turnover."}
+{"file": "corpus/claude-opus-4-8/y2005_seed04_Tdefault.json", "index": 4, "match": null, "strength": "none", "reason": "No library predictor uses tax rate volatility or similar construction."}
+{"file": "corpus/claude-opus-4-8/y1990_seed05_Tdefault.json", "index": 9, "match": null, "strength": "none", "reason": "No library predictor uses short-term debt ratio or rollover risk."}
+{"file": "corpus/claude-opus-4-8/y2010_seed07_Tdefault.json", "index": 9, "match": null, "strength": "none", "reason": "No library predictor uses margin volatility compression."}

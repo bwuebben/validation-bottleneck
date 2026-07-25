@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:33:03.870011+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 2,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJpZGm61ZvLME6YmQ8v",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory Growth Divergence\", \"construction\": \"Compute year-over-year growth in inventories (Compustat item INVT) minus year-over-year growth in cost of goods sold (item COGS), using annual data with a 6-month reporting lag. Rank stocks cross-sectionally each June.\", \"rationale\": \"Inventory building that outpaces sales growth signals demand overestimation by management and future markdowns, leading to lower subsequent earnings and returns.\", \"higher_returns_for\": \"low values of the measure (inventories growing slower than COGS)\"}, {\"name\": \"Accrued Interest Burden Ratio\", \"construction\": \"Interest expense (Compustat item XINT) scaled by total debt (item DLTT + DLC) at fiscal year end, then take the change in this implied cost-of-debt from year t-1 to year t, with a 6-month lag. Rank cross-sectionally.\", \"rationale\": \"A rising effective borrowing cost reflects deteriorating creditworthiness perceived by lenders before it is fully priced by equity holders, predicting lower future returns.\", \"higher_returns_for\": \"low values of the change in implied cost of debt\"}, {\"name\": \"Selling Intensity Ramp\", \"construction\": \"SG&A expense (Compustat item XSGA) divided by sales (item SALE); compute the two-year change in this ratio with a 6-month lag. Rank cross-sectionally each June.\", \"rationale\": \"Firms sharply increasing selling/administrative spending relative to revenue often mask declining organic demand, foreshadowing margin compression and weak returns.\", \"higher_returns_for\": \"low values of the two-year change in SG&A/sales\"}, {\"name\": \"Dividend Coverage Stability\", \"construction\": \"Compute the ratio of operating cash flow (Compustat item OANCF, or income before extraordinary items + depreciation if unavailable) to common dividends paid (item DVC), averaged over the trailing three fiscal years, restricted to dividend payers. Rank cross-sectionally.\", \"rationale\": \"Firms whose cash flows comfortably and consistently cover dividends are financially resilient and less prone to dividend cuts that trigger price declines.\", \"higher_returns_for\": \"high values of the coverage ratio\"}, {\"name\": \"Volume-Weighted Price Reversal\", \"construction\": \"For each stock, regress daily returns on daily share turnover (volume/shares outstanding) over the prior 60 trading days using CRSP data; take the estimated slope coefficient. Rank cross-sectionally monthly.\", \"rationale\": \"A strongly negative return-volume slope indicates transient liquidity-driven price pressure that mean-reverts, so these stocks earn higher subsequent returns.\", \"higher_returns_for\": \"low (most negative) values of the slope\"}, {\"name\": \"Earnings Announcement Volatility Premium\", \"construction\": \"Using CRSP daily data, compute the ratio of the average absolute return in the 3-day window around the last four quarterly earnings announcements to the average absolute daily return in non-announcement periods over the same year. Rank cross-sectionally.\", \"rationale\": \"Stocks with disproportionately large announcement-period moves carry elevated information-event risk that investors demand compensation to bear.\", \"higher_returns_for\": \"high values of the ratio\"}, {\"name\": \"Capital Intensity Shift\", \"construction\": \"Gross property, plant & equipment (Compustat item PPEGT) scaled by total assets (item AT); compute the year-over-year change with a 6-month lag. Rank cross-sectionally each June.\", \"rationale\": \"Rapid increases in fixed-asset intensity reflect aggressive expansion that historically precedes overcapacity and disappointing returns on capital.\", \"higher_returns_for\": \"low values of the change in capital intensity\"}, {\"name\": \"Tax-Book Income Gap\", \"construction\": \"Estimate taxable income as current tax expense (Compustat item TXT - deferred taxes TXDI) divided by the statutory rate (35%), then compute the difference between pretax book income (item PI) and this estimated taxable income, scaled by total assets. Rank cross-sectionally with a 6-month lag.\", \"rationale\": \"A large excess of book income over taxable income signals aggressive accounting or low-quality earnings that reverse and depress future returns.\", \"higher_returns_for\": \"low values of the book-minus-taxable income gap\"}, {\"name\": \"Order-Flow Persistence Signature\", \"construction\": \"Compute the first-order autocorrelation of daily signed volume (return sign times volume) over the prior 120 trading days using CRSP data. Rank cross-sectionally monthly.\", \"rationale\": \"High persistence in signed order flow indicates ongoing informed accumulation, and such stocks continue to drift in the direction of that flow.\", \"higher_returns_for\": \"high values of signed-volume autocorrelation combined with positive recent flow\"}, {\"name\": \"Receivables Quality Deterioration\", \"construction\": \"Compute accounts receivable (Compustat item RECT) divided by sales (item SALE), and take the two-year change with a 6-month lag. Rank cross-sectionally each June.\", \"rationale\": \"Receivables growing faster than sales suggest channel-stuffing or loosening credit terms that overstate current revenue and forecast negative earnings surprises.\", \"higher_returns_for\": \"low values of the two-year change in receivables/sales\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1818,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

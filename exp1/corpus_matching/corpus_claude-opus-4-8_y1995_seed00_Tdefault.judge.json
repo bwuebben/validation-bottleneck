@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:48:59.926450+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y1995_seed00_Tdefault.json",
+  "prompt_sha256": "67718c37f0fcc98beed27397e9ce20443fb6278d242c8ab213ff51d962e876ad"
+ },
+ "response": {
+  "id": "chatcmpl-E5QTqnTr3l82bLkI9ZsizNtv0T1Q5",
+  "object": "chat.completion",
+  "created": 1784962138,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"GrSaleToGrInv\", \"strength\": \"close\", \"reason\": \"Both compare inventory growth to sales or related cost growth.\"},\n  {\"index\": 1, \"match\": \"PctTotAcc\", \"strength\": \"close\", \"reason\": \"Both scale accruals by cash flow; implementation details differ.\"},\n  {\"index\": 2, \"match\": \"grcapx3y\", \"strength\": \"close\", \"reason\": \"Both measure capex intensity changes over time.\"},\n  {\"index\": 3, \"match\": \"GP\", \"strength\": \"exact\", \"reason\": \"Gross profits divided by total assets is the GP variable.\"},\n  {\"index\": 4, \"match\": \"ShareIss1Y\", \"strength\": \"exact\", \"reason\": \"Both use 1-year net share issuance (log growth in shares).\"},\n  {\"index\": 5, \"match\": \"AssetGrowth\", \"strength\": \"exact\", \"reason\": \"Year-over-year asset growth is the AssetGrowth variable.\"},\n  {\"index\": 6, \"match\": \"IdioVol3F\", \"strength\": \"close\", \"reason\": \"Both use idiosyncratic volatility, but factor model differs.\"},\n  {\"index\": 7, \"match\": \"DivInit\", \"strength\": \"exact\", \"reason\": \"Dividend initiation is the DivInit variable.\"},\n  {\"index\": 8, \"match\": \"SP\", \"strength\": \"close\", \"reason\": \"Sales-to-price, but adds margin filter for profitability.\"},\n  {\"index\": 9, \"match\": \"High52\", \"strength\": \"exact\", \"reason\": \"52-week high proximity is the High52 variable.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3024,
+   "completion_tokens": 377,
+   "total_tokens": 3401,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

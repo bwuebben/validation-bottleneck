@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:43:19.423009+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 2,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNKbbuXASYANZ9R9cFtJ",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Supplier-Customer Inventory Divergence\", \"construction\": \"Using Compustat quarterly data, compute year-over-year growth in a firm's finished-goods inventory (INVFG) minus year-over-year growth in its raw-materials inventory (INVRM). Rank firms cross-sectionally each quarter after a 3-month reporting lag.\", \"rationale\": \"Rising finished goods relative to raw materials signals weakening demand and future markdowns not yet reflected in prices, so investors underreact to this early warning of deteriorating sales.\", \"higher_returns_for\": \"low values of the measure (raw-materials growth exceeding finished-goods growth)\"}, {\"name\": \"Order Backlog Acceleration\", \"construction\": \"From Compustat annual item Order Backlog (OB), scale by total assets, then take the change in this ratio over the prior year minus the change the year before (second difference). Form deciles annually with a 4-month lag.\", \"rationale\": \"Accelerating backlog is a leading indicator of future revenue that the market prices with delay, especially for firms with sparse analyst coverage.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Deferred Revenue Momentum\", \"construction\": \"Using Compustat quarterly deferred/unearned revenue (current portion), compute the four-quarter change scaled by lagged sales. Rank cross-sectionally each quarter with a 3-month lag.\", \"rationale\": \"Growing deferred revenue represents cash collected for goods/services yet to be delivered, a hard-to-manipulate signal of contracted future sales that investors underweight relative to reported earnings.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Intra-Industry Return Dispersion Beta\", \"construction\": \"For each month, compute the cross-sectional standard deviation of returns within each firm's Fama-French 48 industry using daily data. Then estimate each stock's sensitivity (beta) of its daily returns to daily changes in its own-industry dispersion over a rolling 12-month window. Sort into deciles.\", \"rationale\": \"Stocks that suffer most when their industry's return dispersion spikes bear idiosyncratic disruption risk and should command a premium.\", \"higher_returns_for\": \"high sensitivity (positive dispersion beta stocks that co-move with dispersion earn higher returns, low/negative beta stocks are hedges)\"}, {\"name\": \"Capitalized R&D Vintage Ratio\", \"construction\": \"Build an R&D capital stock via perpetual inventory (15% annual depreciation) from Compustat XRD. Compute the fraction of that stock created in the most recent two fiscal years versus the total. Scale nothing further; rank annually with a 4-month lag among R&D-positive firms.\", \"rationale\": \"Firms with a young R&D stock have innovation whose payoff is furthest from realization and most uncertain, so investors demand higher compensation while systematically underpricing near-term commercialization.\", \"higher_returns_for\": \"high values of the measure (young R&D vintage)\"}, {\"name\": \"Selling Expense Efficiency Change\", \"construction\": \"From Compustat, compute SG&A (XSGA) minus R&D (XRD) minus advertising (XAD), divided by sales, then take the year-over-year change. Rank cross-sectionally annually with a 4-month lag.\", \"rationale\": \"A declining selling-and-administrative cost ratio reveals improving operating leverage and management discipline that translates into future margin expansion the market is slow to recognize.\", \"higher_returns_for\": \"low values of the measure (declining selling-cost ratio)\"}, {\"name\": \"Working Capital Turnover Shock\", \"construction\": \"Compute non-cash working capital (current assets minus cash minus current liabilities) from Compustat. Calculate sales-to-working-capital turnover, then measure the standardized change relative to the firm's own prior 8-quarter mean and standard deviation. Sort quarterly with a 3-month lag.\", \"rationale\": \"A positive shock to working-capital turnover indicates the firm is generating more sales per unit of tied-up capital, a sign of improving operational efficiency underappreciated in the short run.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Dividend Announcement Timing Consistency\", \"construction\": \"Using CRSP distribution history, measure the standard deviation (in calendar days) of the announcement date of regular dividends over the prior 12 quarters for dividend payers. Sort into deciles.\", \"rationale\": \"Firms with highly regular dividend announcement timing signal managerial stability and low information uncertainty; erratic timing proxies for governance and cash-flow uncertainty that requires a risk premium.\", \"higher_returns_for\": \"high values of the measure (erratic timing)\"}, {\"name\": \"Tax-Book Income Gap Trend\", \"construction\": \"Estimate taxable income as current tax expense (TXT minus deferred TXDI) divided by the statutory rate. Compute the ratio of estimated taxable income to pretax book income (PI), then take its three-year trend (slope of a regression on time). Rank annually with a 4-month lag.\", \"rationale\": \"A rising taxable-to-book income ratio indicates book earnings are becoming higher quality and less inflated by accruals, predicting fewer future write-downs and positive earnings persistence.\", \"higher_returns_for\": \"high values of the measure (rising ratio)\"}, {\"name\": \"Geographic Revenue Concentration\", \"construction\": \"From Compustat geographic segment data, compute a Herfindahl index of sales across reported geographic segments each year. Rank firms into deciles annually with a 4-month lag, within multi-segment reporters.\", \"rationale\": \"Geographically concentrated firms carry undiversified demand and regulatory risk that is not spanned by standard factors, commanding a return premium, while diversified firms are more insulated.\", \"higher_returns_for\": \"high values of the measure (geographically concentrated firms)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 2010,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

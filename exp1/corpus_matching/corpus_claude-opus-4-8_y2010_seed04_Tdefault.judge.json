@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:50:40.829564+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y2010_seed04_Tdefault.json",
+  "prompt_sha256": "d5b82d1370f9d3580408ce781c4814ecbb7bb3daa4167b8cfb1d7a7c5e750ddc"
+ },
+ "response": {
+  "id": "chatcmpl-E5QVTQrqZ0SncBhdD83RVS0pnrB0B",
+  "object": "chat.completion",
+  "created": 1784962239,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"iomom_supp\", \"strength\": \"related\", \"reason\": \"Both use supplier-customer links, but different signals (inventory vs. returns).\"},\n  {\"index\": 1, \"match\": \"OrderBacklogChg\", \"strength\": \"close\", \"reason\": \"Both use order backlog changes, but proposal uses acceleration (second difference).\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses intra-firm segment return dispersion.\"},\n  {\"index\": 3, \"match\": \"DelDRC\", \"strength\": \"close\", \"reason\": \"Both use deferred revenue growth, but proposal controls for sales growth.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses round-number price volume clustering.\"},\n  {\"index\": 5, \"match\": \"RDcap\", \"strength\": \"close\", \"reason\": \"Both use capitalized R&D to market, but proposal interacts with momentum.\"},\n  {\"index\": 6, \"match\": \"ChNAnalyst\", \"strength\": \"close\", \"reason\": \"Both use change in analyst coverage, but proposal is peer-adjusted.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses cash conversion cycle trend.\"},\n  {\"index\": 8, \"match\": \"IdioVol3F\", \"strength\": \"related\", \"reason\": \"Both use idiosyncratic volatility, but proposal splits up/down days.\"},\n  {\"index\": 9, \"match\": \"FR\", \"strength\": \"related\", \"reason\": \"Both use pension data, but proposal focuses on asset allocation aggressiveness.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3327,
+   "completion_tokens": 391,
+   "total_tokens": 3718,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:27:18.859675+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 0,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJP8XHn8QrEKrZBSsjj",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory Growth Divergence\", \"construction\": \"Compute year-over-year growth in inventories (Compustat item INVT) minus year-over-year growth in cost of goods sold (COGS). Rank firms cross-sectionally each June using the most recent fiscal year data.\", \"rationale\": \"When inventories accumulate faster than sales-driven costs, it signals weakening demand and future markdowns that the market is slow to price, depressing subsequent returns.\", \"higher_returns_for\": \"low values of the measure (inventory growing slower than COGS)\"}, {\"name\": \"Accruals-to-Cashflow Quality\", \"construction\": \"For each firm compute (Net Income minus Cash Flow from Operations) scaled by absolute Cash Flow from Operations, using Compustat funds-flow items. Where a cash flow statement is unavailable, derive operating cash flow from changes in working-capital balance sheet items minus depreciation. Sort annually.\", \"rationale\": \"Earnings composed largely of non-cash accruals are less persistent and more likely to reverse, so the market overvalues high-accrual firms.\", \"higher_returns_for\": \"low values of the measure (earnings backed by cash)\"}, {\"name\": \"Capital Expenditure Intensity Shock\", \"construction\": \"Compute current-year capital expenditures (CAPX) scaled by average gross PP&E, minus the prior three-year average of the same ratio. Rank each June.\", \"rationale\": \"Firms sharply ramping investment tend to overinvest at cyclical peaks and subsequently deliver lower returns as free cash flow deteriorates.\", \"higher_returns_for\": \"low values of the measure (restrained investment)\"}, {\"name\": \"Gross Profitability Scaled by Assets\", \"construction\": \"Compute (Revenue minus Cost of Goods Sold) divided by total assets (AT), using annual Compustat data. Sort firms cross-sectionally.\", \"rationale\": \"Gross profit is a cleaner measure of economic productivity than net income and is not yet reflected in valuations, so highly productive firms earn higher returns.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Net Share Issuance\", \"construction\": \"Compute the log growth in split-adjusted shares outstanding over the prior 12 months, using CRSP shares outstanding adjusted by the cumulative adjustment factor. Sort firms each month.\", \"rationale\": \"Managers issue shares when equity is overpriced and repurchase when underpriced, so net issuance is a signal of managerial market timing predicting lower future returns for issuers.\", \"higher_returns_for\": \"low values of the measure (net repurchasers)\"}, {\"name\": \"Asset Growth\", \"construction\": \"Compute year-over-year percentage growth in total assets (Compustat AT). Rank firms cross-sectionally each June.\", \"rationale\": \"Rapid balance-sheet expansion through acquisitions, investment, and working capital reflects overinvestment and diminishing marginal returns, leading to underperformance.\", \"higher_returns_for\": \"low values of the measure (low asset growth)\"}, {\"name\": \"Idiosyncratic Volatility from Market Model\", \"construction\": \"For each stock, estimate a market-model regression of daily excess returns on the CRSP value-weighted market return over the prior 60 trading days; take the standard deviation of residuals. Sort monthly.\", \"rationale\": \"If arbitrage is limited and investors underdiversify, high-idiosyncratic-risk stocks may be overpriced by lottery-seeking investors, earning lower subsequent returns.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Dividend Initiation Momentum\", \"construction\": \"Flag firms that changed from paying no dividend in the prior 12 months to paying a positive dividend in the most recent quarter (from CRSP distribution codes). Hold a long portfolio of initiators for 12 months.\", \"rationale\": \"Dividend initiation is a credible signal of sustainable earnings and disciplined capital allocation that the market underreacts to.\", \"higher_returns_for\": \"firms initiating dividends\"}, {\"name\": \"Sales-to-Price with Margin Filter\", \"construction\": \"Rank firms on annual Revenue divided by market capitalization, but interact this with operating margin (operating income before depreciation / sales). Go long high sales-to-price firms that also have above-median margins.\", \"rationale\": \"Cheap-on-sales firms are undervalued, but conditioning on healthy margins screens out value traps with structurally impaired profitability, sharpening the value premium.\", \"higher_returns_for\": \"high sales-to-price combined with high margins\"}, {\"name\": \"52-Week High Proximity\", \"construction\": \"Compute the ratio of current price to the highest price over the trailing 52 weeks using CRSP daily/weekly data. Rank stocks cross-sectionally each month.\", \"rationale\": \"The 52-week high serves as an anchor; investors are reluctant to bid prices past it, causing underreaction to good news and continued outperformance for stocks near their highs.\", \"higher_returns_for\": \"high values of the measure (price near 52-week high)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1730,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

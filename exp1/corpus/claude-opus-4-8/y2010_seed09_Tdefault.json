@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:46:59.027445+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 9,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNKsjSeKA5HjvtP6m6mh",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Customer Concentration Drift\", \"construction\": \"Using SFAS 131 segment disclosures from 10-K filings, identify firms reporting major customers (each >10% of sales). Compute the fraction of total sales attributable to named major customers for the current and prior fiscal year, and take the year-over-year change (drift). Sort stocks cross-sectionally on this drift each June.\", \"rationale\": \"Rising dependence on a few customers increases cash-flow fragility and bargaining-power risk that is slow to be priced, so firms whose customer base is diversifying should earn a premium reduction while concentrating firms carry undercompensated risk.\", \"higher_returns_for\": \"high (increasing) customer concentration drift\"}, {\"name\": \"Accrual Volatility Scaled by Cash Flow\", \"construction\": \"For each firm compute total accruals (change in non-cash working capital minus depreciation) each quarter for the trailing 12 quarters. Take the standard deviation of quarterly accruals and divide by the mean absolute operating cash flow over the same window. Rank stocks each quarter.\", \"rationale\": \"Erratic accruals relative to stable cash generation signal low earnings quality and information risk that investors underappreciate, leading to future underperformance.\", \"higher_returns_for\": \"low accrual volatility relative to cash flow\"}, {\"name\": \"Order Backlog Momentum\", \"construction\": \"Extract reported order backlog (Compustat item OB) at fiscal year end, scale by total assets, and compute the change in backlog-to-assets from the prior fiscal year. Form cross-sectional deciles each year using data with a 4-month reporting lag.\", \"rationale\": \"Growing backlog is a forward-looking demand signal that predicts future revenue and earnings but is buried in filings and slowly incorporated into prices.\", \"higher_returns_for\": \"high (increasing) order backlog momentum\"}, {\"name\": \"Intangible-Adjusted Book-to-Market Gap\", \"construction\": \"Capitalize R&D and advertising expenses using a perpetual-inventory method (R&D amortized over 5 years, advertising over 2), add the capitalized stock to reported book equity, and compute an adjusted book-to-market. Take the difference between adjusted and unadjusted book-to-market as the gap and rank stocks.\", \"rationale\": \"Firms whose value is understated by GAAP due to expensed intangibles are systematically underpriced, and the size of the accounting distortion proxies for the mispricing.\", \"higher_returns_for\": \"high intangible-adjusted book-to-market gap\"}, {\"name\": \"Dispersion of Intraday Returns\", \"construction\": \"Using daily open, high, low, close prices over the prior month, compute the Parkinson high-low range volatility for each day and take the standard deviation of these daily range measures across the month, scaled by average price. Sort stocks monthly.\", \"rationale\": \"Instability in intraday price ranges reflects heightened disagreement and lottery-like demand that leads to overpricing and subsequent low returns.\", \"higher_returns_for\": \"low dispersion of intraday returns\"}, {\"name\": \"Supplier-Side Inventory Buildup\", \"construction\": \"Decompose inventory into raw materials, work-in-process, and finished goods using Compustat detail items. Compute the growth in finished-goods inventory relative to sales growth over the trailing year. Rank firms on this excess finished-goods growth.\", \"rationale\": \"Finished-goods accumulation outpacing sales signals weakening demand and future markdowns that the market prices with a lag.\", \"higher_returns_for\": \"low excess finished-goods inventory buildup\"}, {\"name\": \"Financing Activity Consistency\", \"construction\": \"Over the trailing 5 years, count the number of years in which the firm was a net issuer of equity plus debt (positive external financing from the cash flow statement). Combine with the sign persistence to build a consistency score, then rank firms.\", \"rationale\": \"Persistent reliance on external financing indicates value-destroying overinvestment and agency problems that erode future returns, beyond a single-year issuance signal.\", \"higher_returns_for\": \"low financing activity consistency (persistent net repurchasers/de-levering firms)\"}, {\"name\": \"Gross Margin Stability\", \"construction\": \"Compute quarterly gross margin (gross profit / sales) over trailing 16 quarters and measure the coefficient of variation. Combine with the trailing average margin level and rank on the ratio of average margin to its volatility (a margin Sharpe ratio).\", \"rationale\": \"Stable high margins reflect durable competitive advantage that is undervalued relative to volatile margins, generating persistent excess returns.\", \"higher_returns_for\": \"high gross margin stability (high margin-to-volatility ratio)\"}, {\"name\": \"Tax Expense Surprise\", \"construction\": \"Estimate an expected effective tax rate from the trailing 3-year average, apply it to current pretax income to get expected tax, and compute the standardized difference between actual and expected tax expense. Rank stocks quarterly using the sign and magnitude of the surprise (unexpectedly low taxes = positive signal).\", \"rationale\": \"Lower-than-expected tax burdens reveal favorable private information about future profitability that management manages into taxes before it appears elsewhere in earnings.\", \"higher_returns_for\": \"high positive tax expense surprise (unexpectedly low taxes)\"}, {\"name\": \"Analyst Coverage Momentum\", \"construction\": \"Using IBES, compute the change in the number of distinct analysts issuing estimates over the trailing 6 months, scaled by the beginning count. Sort stocks monthly into deciles on this coverage growth.\", \"rationale\": \"Rising analyst attention brings previously neglected, underpriced stocks into investor awareness, resolving information frictions and driving positive drift.\", \"higher_returns_for\": \"high analyst coverage momentum\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1977,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:50:46.152146+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y2010_seed06_Tdefault.json",
+  "prompt_sha256": "7ffc2938108e270f83565dcab24cdcffb1da88eefa8a6bf4ed82d32e91426ca7"
+ },
+ "response": {
+  "id": "chatcmpl-E5QVX4lEMD1YFTNTucB38uLZmzNqR",
+  "object": "chat.completion",
+  "created": 1784962243,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Herf covers concentration, but not customer volatility fragility.\"},\n  {\"index\": 1, \"match\": \"EarningsConsistency\", \"strength\": \"close\", \"reason\": \"Both measure persistence in earnings surprise patterns by quarter.\"},\n  {\"index\": 2, \"match\": \"ChNWC\", \"strength\": \"close\", \"reason\": \"ChNWC is level; proposal uses acceleration (second difference).\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses text-based risk disclosure growth.\"},\n  {\"index\": 4, \"match\": \"RealizedVol\", \"strength\": \"related\", \"reason\": \"Both use intraday/overnight return variation, but signals differ.\"},\n  {\"index\": 5, \"match\": \"RDcap\", \"strength\": \"close\", \"reason\": \"Both construct R&D capital stock, but proposal focuses on vintage skew.\"},\n  {\"index\": 6, \"match\": \"DelBreadth\", \"strength\": \"close\", \"reason\": \"DelBreadth is level; proposal uses momentum (change in breadth).\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor measures cost stickiness asymmetry.\"},\n  {\"index\": 8, \"match\": \"FR\", \"strength\": \"related\", \"reason\": \"FR uses pension funding; proposal uses discount rate aggressiveness.\"},\n  {\"index\": 9, \"match\": \"OrderBacklog\", \"strength\": \"close\", \"reason\": \"OrderBacklog is level; proposal uses conversion ratio and its change.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3304,
+   "completion_tokens": 378,
+   "total_tokens": 3682,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

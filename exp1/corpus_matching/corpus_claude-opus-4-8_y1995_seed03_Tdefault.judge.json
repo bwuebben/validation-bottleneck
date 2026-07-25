@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:49:07.991144+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y1995_seed03_Tdefault.json",
+  "prompt_sha256": "72f7725820b4ac204837e14ca5312a5d915db25df0fe9507f17529c08bdc605b"
+ },
+ "response": {
+  "id": "chatcmpl-E5QTyRFCZXiNGSI1d5S1CcoZOyM6E",
+  "object": "chat.completion",
+  "created": 1784962146,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"ChInv\", \"strength\": \"close\", \"reason\": \"Both use inventory growth, but proposal subtracts COGS growth.\"},\n  {\"index\": 1, \"match\": \"Accruals\", \"strength\": \"close\", \"reason\": \"Both decompose earnings into accrual/cash flow; proposal uses a ratio.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses sales/SG&A change ratio.\"},\n  {\"index\": 3, \"match\": \"DivInit\", \"strength\": \"close\", \"reason\": \"Both flag dividend initiators; proposal adds magnitude/earnings.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses volume-weighted range compression.\"},\n  {\"index\": 5, \"match\": \"grcapx3y\", \"strength\": \"close\", \"reason\": \"Both use multi-period capex change; proposal uses second difference.\"},\n  {\"index\": 6, \"match\": \"Tax\", \"strength\": \"related\", \"reason\": \"Both use tax/book income, but proposal focuses on the gap.\"},\n  {\"index\": 7, \"match\": \"ChNAnalyst\", \"strength\": \"related\", \"reason\": \"Both use analyst coverage, but proposal focuses on zero coverage and profitability.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses gross margin stability/volatility.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses change in debt maturity structure.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3064,
+   "completion_tokens": 378,
+   "total_tokens": 3442,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

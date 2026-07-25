@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:50:15.794442+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y2005_seed06_Tdefault.json",
+  "prompt_sha256": "249c008fee47020793cef440698fb795971dc1f13d174942f21a7dd966ad7a7b"
+ },
+ "response": {
+  "id": "chatcmpl-E5QV3cPxFl48qMi3x0OcuWbY5LyhY",
+  "object": "chat.completion",
+  "created": 1784962213,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Both use concentration from segment disclosures, but Herf is industry-wide.\"},\n  {\"index\": 1, \"match\": \"ChNWC\", \"strength\": \"close\", \"reason\": \"Both use changes in net working capital, but proposal uses acceleration.\"},\n  {\"index\": 2, \"match\": \"OrderBacklogChg\", \"strength\": \"exact\", \"reason\": \"Both use change/growth in order backlog as signal.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor flags unsustainable dividend payout vs FCF.\"},\n  {\"index\": 4, \"match\": \"IntanBM\", \"strength\": \"close\", \"reason\": \"Both adjust book-to-market for intangibles, but differ in SG&A treatment.\"},\n  {\"index\": 5, \"match\": \"ChNAnalyst\", \"strength\": \"exact\", \"reason\": \"Both use decline in analyst coverage as signal.\"},\n  {\"index\": 6, \"match\": \"EarningsSurprise\", \"strength\": \"close\", \"reason\": \"Both use SUE, but proposal focuses on seasonal repeatability.\"},\n  {\"index\": 7, \"match\": \"AssetGrowth\", \"strength\": \"related\", \"reason\": \"Both use asset growth, but proposal decomposes by asset type.\"},\n  {\"index\": 8, \"match\": \"Illiquidity\", \"strength\": \"close\", \"reason\": \"Both use Amihud price impact, but proposal weights by volume deviation.\"},\n  {\"index\": 9, \"match\": \"grcapx3y\", \"strength\": \"related\", \"reason\": \"Both use capex growth/reversal, but proposal focuses on timing reversal.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3243,
+   "completion_tokens": 398,
+   "total_tokens": 3641,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

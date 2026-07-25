@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:28:40.025242+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 3,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJUy1xgAhvegtjqf1Ck",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory Growth Divergence\", \"construction\": \"For each fiscal year, compute the growth rate of inventories (Compustat item INVT) minus the growth rate of cost of goods sold (item COGS), scaled by average total assets. Rank firms cross-sectionally each June using the most recent fiscal year data.\", \"rationale\": \"Inventory accumulating faster than sales signals weakening demand and future markdowns/write-offs, which the market underappreciates.\", \"higher_returns_for\": \"low values of the measure (inventory growing slower than COGS)\"}, {\"name\": \"Accrual-Adjusted Earnings Persistence\", \"construction\": \"Decompose earnings into cash flow (operating income minus total accruals, where accruals = change in non-cash current assets minus change in current liabilities excluding short-term debt, minus depreciation) and accrual components from Compustat. Rank firms by the ratio of cash-flow earnings to total earnings.\", \"rationale\": \"Earnings dominated by accruals are less persistent and mean-revert, so investors overvalue high-accrual firms.\", \"higher_returns_for\": \"high values (cash-flow-heavy earnings)\"}, {\"name\": \"Selling Expense Efficiency\", \"construction\": \"Compute the ratio of change in sales (Compustat SALE) to change in selling, general and administrative expense (item XSGA) over the trailing fiscal year. Rank cross-sectionally each June.\", \"rationale\": \"Firms generating more incremental sales per dollar of SG&A investment have improving operating leverage that the market is slow to price.\", \"higher_returns_for\": \"high values of the ratio\"}, {\"name\": \"Dividend Initiation Momentum\", \"construction\": \"Flag firms that paid zero dividends (Compustat DVC = 0) in the prior fiscal year but a positive dividend in the current year, and measure the magnitude of the initiation relative to earnings. Form a portfolio of recent initiators.\", \"rationale\": \"Dividend initiation is a costly credible signal of sustainable future cash flows that the market only partially incorporates at announcement.\", \"higher_returns_for\": \"firms that initiated dividends (high signal)\"}, {\"name\": \"Volume-Weighted Price Range Compression\", \"construction\": \"For each stock, compute the average daily high-low range (from CRSP daily data) over the past 3 months divided by the same measure over the prior 9 months, weighting each day by its share volume. Rank cross-sectionally monthly.\", \"rationale\": \"Compressing volatility ranges under stable volume indicate information consolidation preceding directional moves; low-range-compression stocks are underpriced due to reduced investor attention.\", \"higher_returns_for\": \"low values (compressed recent range)\"}, {\"name\": \"Capital Expenditure Deceleration\", \"construction\": \"Compute the second difference of capital expenditures (Compustat CAPX) scaled by lagged total assets: (CAPX_t - CAPX_{t-1}) - (CAPX_{t-1} - CAPX_{t-2}). Rank firms each June.\", \"rationale\": \"Firms decelerating capex avoid over-investment and free up cash, and the market misjudges the sustainability of prior investment binges.\", \"higher_returns_for\": \"low values (decelerating capex)\"}, {\"name\": \"Tax-Book Income Gap\", \"construction\": \"Estimate taxable income from the current tax provision (Compustat TXT minus deferred taxes TXDI, divided by the statutory rate) and compare to pre-tax book income (item PI). Compute the gap scaled by total assets. Rank cross-sectionally.\", \"rationale\": \"A large excess of book income over taxable income indicates aggressive accounting that predicts lower future earnings quality and returns.\", \"higher_returns_for\": \"low book-tax gap (book income close to taxable income)\"}, {\"name\": \"Analyst-Free Neglect Premium\", \"construction\": \"Identify firms with zero I/B/E/S analyst coverage but positive earnings and above-median size within the small-cap tercile. Form a portfolio of these neglected but profitable firms.\", \"rationale\": \"Profitable firms lacking analyst coverage are under-followed and subject to informational neglect, earning a premium as coverage eventually arrives.\", \"higher_returns_for\": \"neglected profitable firms (zero coverage)\"}, {\"name\": \"Gross Margin Stability\", \"construction\": \"Compute the standard deviation of annual gross margin (Compustat (SALE-COGS)/SALE) over the trailing 5 fiscal years. Rank cross-sectionally each June.\", \"rationale\": \"Firms with stable gross margins have durable competitive positions and lower cash-flow risk that the market underprices relative to volatile-margin peers.\", \"higher_returns_for\": \"low margin volatility (stable margins)\"}, {\"name\": \"Debt Maturity Shortening\", \"construction\": \"Compute the change in the ratio of debt in current liabilities (Compustat DLC) to total debt (DLC + DLTT) over the trailing fiscal year. Rank firms cross-sectionally each June.\", \"rationale\": \"A rising share of short-term debt reflects constrained financing access and refinancing risk that predicts lower future returns among such stressed firms.\", \"higher_returns_for\": \"low values (lengthening maturity / declining short-term reliance)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1788,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

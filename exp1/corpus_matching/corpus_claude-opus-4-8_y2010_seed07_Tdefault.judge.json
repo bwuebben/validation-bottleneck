@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:50:48.974840+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y2010_seed07_Tdefault.json",
+  "prompt_sha256": "2903fb38808c77627e3f6ba62e01b37506dea7db6433929eaeeb0b48b5066945"
+ },
+ "response": {
+  "id": "chatcmpl-E5QVaGGPCBbuPwkolMFtbynwHXdWY",
+  "object": "chat.completion",
+  "created": 1784962246,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"iomom_supp\", \"strength\": \"related\", \"reason\": \"Both use supplier concentration, but construction and focus differ.\"},\n  {\"index\": 1, \"match\": \"DelDRC\", \"strength\": \"close\", \"reason\": \"Both use change in deferred revenue scaled by assets.\"},\n  {\"index\": 2, \"match\": \"ChNWC\", \"strength\": \"close\", \"reason\": \"Both use changes in net working capital, but acceleration is new.\"},\n  {\"index\": 3, \"match\": \"ForecastDispersion\", \"strength\": \"close\", \"reason\": \"Both use analyst forecast dispersion, but focus on change/decay.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses capex text analysis or talk-vs-spend residual.\"},\n  {\"index\": 5, \"match\": \"EarningsConsistency\", \"strength\": \"related\", \"reason\": \"Both use earnings persistence, but seasonal gap is new.\"},\n  {\"index\": 6, \"match\": \"AssetGrowth\", \"strength\": \"close\", \"reason\": \"Both use asset growth, but proposal adjusts for intangibles.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses debt maturity wall or refinancing proximity.\"},\n  {\"index\": 8, \"match\": \"OrderBacklogSurprise\", \"strength\": \"exact\", \"reason\": \"Construction matches: backlog surprise relative to norm/average.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses margin volatility compression.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3132,
+   "completion_tokens": 376,
+   "total_tokens": 3508,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

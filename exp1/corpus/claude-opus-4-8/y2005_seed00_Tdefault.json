@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:37:14.576236+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 0,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNK8widw5gw6rStkFotj",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Supplier Concentration Fragility\", \"construction\": \"From 10-K segment and cost-of-goods footnotes, estimate the fraction of COGS attributable to the largest identifiable input category or supplier (using SIC-based input-output linkages from BEA use tables mapped to firm supplier disclosures). Rank firms by concentration; rebalance annually after fiscal year-end filings.\", \"rationale\": \"Firms dependent on few suppliers bear undiversified input-cost and disruption risk that is imperfectly priced, requiring a return premium.\", \"higher_returns_for\": \"high supplier concentration\"}, {\"name\": \"Order Backlog Momentum\", \"construction\": \"Using Compustat data item for order backlog (OB), compute year-over-year growth in backlog scaled by lagged sales. Form portfolios sorted on the change in backlog-to-sales, rebalanced quarterly after earnings.\", \"rationale\": \"Rising backlog signals future revenue that analysts underweight, producing a gradual drift as demand converts to earnings.\", \"higher_returns_for\": \"high backlog growth\"}, {\"name\": \"Working Capital Efficiency Trend\", \"construction\": \"Compute the cash conversion cycle (days inventory + days receivables - days payables) from Compustat quarterly items. Measure the trailing four-quarter change (improvement = shortening). Sort firms on the change, rebalance quarterly.\", \"rationale\": \"Improving operational efficiency reflects managerial quality and future free-cash-flow gains that the market prices slowly.\", \"higher_returns_for\": \"large decrease in cash conversion cycle\"}, {\"name\": \"Intraday Range Compression\", \"construction\": \"For each stock over the prior 60 trading days, compute the average daily (high-low)/close range from CRSP daily data, then take the ratio of the most recent 20-day average range to the prior 40-day average range. Sort cross-sectionally, rebalance monthly.\", \"rationale\": \"Volatility compression precedes directional resolution and reflects declining disagreement; low-range firms tend to experience subsequent underpricing correction and outperform.\", \"higher_returns_for\": \"low recent range relative to prior range (strong compression)\"}, {\"name\": \"Deferred Revenue Buildup\", \"construction\": \"From Compustat balance sheet, measure year-over-year growth in deferred/unearned revenue scaled by total assets. Sort firms annually after fiscal-year filings.\", \"rationale\": \"Growing deferred revenue represents prepaid future sales and customer commitment not yet reflected in earnings, an underappreciated leading indicator.\", \"higher_returns_for\": \"high deferred revenue growth\"}, {\"name\": \"Capex Acceleration Divergence\", \"construction\": \"Compute the second difference (acceleration) of capital expenditures scaled by lagged assets over trailing three fiscal years, and subtract the industry median acceleration. Sort firms on relative capex acceleration, rebalance annually.\", \"rationale\": \"Firms accelerating investment beyond industry peers may signal overexpansion; empirically decelerating investors are cheaper and outperform.\", \"higher_returns_for\": \"low (negative) capex acceleration relative to industry\"}, {\"name\": \"Insider Net Purchase Breadth\", \"construction\": \"Using SEC Form 4 filings (available via EDGAR), count distinct insiders making open-market purchases minus those making sales over the trailing six months, scaled by number of reporting insiders. Sort on breadth of net buying, rebalance monthly.\", \"rationale\": \"Broad consensus insider buying aggregates dispersed private information more reliably than dollar volume from a single insider.\", \"higher_returns_for\": \"high net purchase breadth\"}, {\"name\": \"Analyst Coverage Deceleration\", \"construction\": \"From I/B/E/S, compute the change in the number of covering analysts over the trailing 12 months. Sort firms on the decline in coverage, controlling for size, rebalance quarterly.\", \"rationale\": \"Firms losing analyst coverage become neglected and underpriced, earning a subsequent recovery premium akin to a neglect/liquidity effect.\", \"higher_returns_for\": \"large decline in analyst coverage\"}, {\"name\": \"Gross Profit Volatility\", \"construction\": \"Compute the standard deviation of quarterly gross profit (sales minus COGS) scaled by average assets over the trailing 16 quarters from Compustat. Sort firms on this volatility, rebalance annually.\", \"rationale\": \"Firms with volatile gross margins face greater fundamental uncertainty that commands a risk premium not captured by return volatility alone.\", \"higher_returns_for\": \"high gross profit volatility\"}, {\"name\": \"Tax Expense Surprise\", \"construction\": \"Estimate expected income tax expense from lagged effective tax rate applied to current pretax income, and compute the residual (actual minus expected tax) scaled by market equity. Sort firms on the surprise, rebalance quarterly after filings.\", \"rationale\": \"Unexpected declines in tax burden signal improving deferred tax positions or credits that boost future net income and are slowly incorporated by investors.\", \"higher_returns_for\": \"low (negative) tax surprise, i.e., taxes below expectation\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1760,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

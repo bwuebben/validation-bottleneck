@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:50:03.912899+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y2005_seed02_Tdefault.json",
+  "prompt_sha256": "af56d350502d93eaa4610c2995f794075fc1775379d539a1ae6f0643b0e649bf"
+ },
+ "response": {
+  "id": "chatcmpl-E5QUrgT2RXDAJTwWLzXKnsJbPPOuP",
+  "object": "chat.completion",
+  "created": 1784962201,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Both measure concentration using Herfindahl, but on different counterparties.\"},\n  {\"index\": 1, \"match\": \"ChForecastAccrual\", \"strength\": \"close\", \"reason\": \"Both use change in accruals; proposal uses second difference.\"},\n  {\"index\": 2, \"match\": \"GrSaleToGrInv\", \"strength\": \"close\", \"reason\": \"Both compare sales and inventory growth, but proposal uses difference not ratio.\"},\n  {\"index\": 3, \"match\": \"EarningsStreak\", \"strength\": \"related\", \"reason\": \"Both use payout/earnings streaks, but proposal focuses on dividends.\"},\n  {\"index\": 4, \"match\": \"std_turn\", \"strength\": \"related\", \"reason\": \"Both use volatility of firm activity, but proposal uses capex not turnover.\"},\n  {\"index\": 5, \"match\": \"ChNAnalyst\", \"strength\": \"exact\", \"reason\": \"Both use change in analyst coverage over recent period.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses this SG&A/gross profit efficiency construction.\"},\n  {\"index\": 7, \"match\": \"CompEquIss\", \"strength\": \"close\", \"reason\": \"Both use share issuance and price run-up, but proposal interacts them.\"},\n  {\"index\": 8, \"match\": \"ChTax\", \"strength\": \"close\", \"reason\": \"Both use change in tax rate, but proposal uses effective tax rate.\"},\n  {\"index\": 9, \"match\": \"OrderBacklogChg\", \"strength\": \"close\", \"reason\": \"Both use change in order backlog, but proposal uses momentum/growth.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3119,
+   "completion_tokens": 403,
+   "total_tokens": 3522,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

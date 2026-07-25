@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:49:10.612679+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y1995_seed04_Tdefault.json",
+  "prompt_sha256": "ec1ad0d4dcf93d9e93ce5452449ec3c7dfa74aa75675f9afdffcbef4d6e9719f"
+ },
+ "response": {
+  "id": "chatcmpl-E5QU0Jb3nB3Vot95A2ChrQd4lGytp",
+  "object": "chat.completion",
+  "created": 1784962148,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"GrSaleToGrInv\", \"strength\": \"close\", \"reason\": \"Both relate inventory growth to sales or cost flows.\"},\n  {\"index\": 1, \"match\": \"CBOperProf\", \"strength\": \"close\", \"reason\": \"Both measure cash-based operating profitability.\"},\n  {\"index\": 2, \"match\": \"ChAssetTurnover\", \"strength\": \"related\", \"reason\": \"Both involve efficiency ratios and their changes.\"},\n  {\"index\": 3, \"match\": \"DivInit\", \"strength\": \"related\", \"reason\": \"Both use dividend initiation, but proposal adds momentum overlay.\"},\n  {\"index\": 4, \"match\": \"InvestPPEInv\", \"strength\": \"related\", \"reason\": \"Both involve changes in capital intensity/investment.\"},\n  {\"index\": 5, \"match\": \"AnnouncementReturn\", \"strength\": \"related\", \"reason\": \"Both focus on earnings announcement window, but proposal uses volume.\"},\n  {\"index\": 6, \"match\": \"DelLTI\", \"strength\": \"close\", \"reason\": \"Both use change in long-term investment/debt scaled by assets.\"},\n  {\"index\": 7, \"match\": \"EarningsConsistency\", \"strength\": \"related\", \"reason\": \"Both measure stability, but on different metrics (margin vs earnings).\"},\n  {\"index\": 8, \"match\": \"IdioVol3F\", \"strength\": \"close\", \"reason\": \"Both use idiosyncratic volatility, proposal uses its trend.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses tax-book income gap construction.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 2967,
+   "completion_tokens": 374,
+   "total_tokens": 3341,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

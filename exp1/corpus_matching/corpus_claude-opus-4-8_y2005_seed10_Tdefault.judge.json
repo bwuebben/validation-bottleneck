@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:50:27.158186+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y2005_seed10_Tdefault.json",
+  "prompt_sha256": "4d0a1ae1d523b82a82b615f7f6ac3df45134cda47bcda33c5a34a52691fc78de"
+ },
+ "response": {
+  "id": "chatcmpl-E5QVEAnH4vftOxm6laPRUp1ke6zuz",
+  "object": "chat.completion",
+  "created": 1784962224,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Herf uses industry sales; proposal uses firm-level customer concentration.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses accrual volatility or multi-year accrual std.\"},\n  {\"index\": 2, \"match\": \"OrderBacklogChg\", \"strength\": \"exact\", \"reason\": \"OrderBacklogChg is year-over-year backlog growth, same as proposal.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses R&D acceleration or second-difference.\"},\n  {\"index\": 4, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses payout mix shift or repurchase share change.\"},\n  {\"index\": 5, \"match\": \"GrSaleToGrInv\", \"strength\": \"close\", \"reason\": \"Both compare sales and inventory growth, but proposal uses difference.\"},\n  {\"index\": 6, \"match\": \"Tax\", \"strength\": \"related\", \"reason\": \"Both use tax/book income, but proposal focuses on book-tax gap.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses capex smoothness or capex volatility.\"},\n  {\"index\": 8, \"match\": \"ChNAnalyst\", \"strength\": \"close\", \"reason\": \"Both use change in analyst coverage; proposal adjusts for size.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor combines gross margin level and stability.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3127,
+   "completion_tokens": 381,
+   "total_tokens": 3508,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

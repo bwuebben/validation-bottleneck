@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:21:54.696770+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 0,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 300,
+  "harness_version": "1.0.0",
+  "smoke": true
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNHzeWCH4LYJp8znL2hb",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory Growth Divergence\", \"construction\": \"Compute year-over-year growth in inventories (Compustat item INVT) minus year-over-year growth in cost of goods sold (item COGS), using annual data lagged at least six months to ensure availability. Rank stocks cross-sectionally on this difference.\", \"rationale\": \"Inventory building faster than sales throughput signals weakening demand and future markdowns/writeoffs, so it predicts lower future returns; disciplined inventory relative to sales signals operational efficiency.\", \"higher_returns_for\": \"low values of the measure (inventory growing slower than COGS)\"}, {\"name\": \"Accrual-to-Cashflow Quality Ratio\", \"construction\": \"Define earnings quality as operating cash flow proxy = net income (item NI) minus change in non-cash working capital (change in current assets excluding cash, minus change in current"
+   }
+  ],
+  "stop_reason": "max_tokens",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 300,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:50:29.909276+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y2010_seed00_Tdefault.json",
+  "prompt_sha256": "e014c999ae4b59ade45d59b11f77f0378da803c46294b820499aa87409eefdae"
+ },
+ "response": {
+  "id": "chatcmpl-E5QVHmalzzo08BHh9SwTore1scMqv",
+  "object": "chat.completion",
+  "created": 1784962227,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Both use Herfindahl on customer concentration from disclosures.\"},\n  {\"index\": 1, \"match\": \"GrSaleToGrInv\", \"strength\": \"close\", \"reason\": \"Both use sales and inventory growth divergence.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses round-lot trade clustering.\"},\n  {\"index\": 3, \"match\": \"ForecastDispersion\", \"strength\": \"close\", \"reason\": \"Both use changes in analyst forecast dispersion.\"},\n  {\"index\": 4, \"match\": \"grcapx\", \"strength\": \"related\", \"reason\": \"Both use capex growth, but not lumpiness/seasonality.\"},\n  {\"index\": 5, \"match\": \"DelDRC\", \"strength\": \"close\", \"reason\": \"Both use growth in deferred revenue liabilities.\"},\n  {\"index\": 6, \"match\": \"ChNWC\", \"strength\": \"related\", \"reason\": \"Both use working capital changes, but not cash conversion cycle trend.\"},\n  {\"index\": 7, \"match\": \"HerfAsset\", \"strength\": \"related\", \"reason\": \"Both use segment/asset diversification, but not foreign revenue share.\"},\n  {\"index\": 8, \"match\": \"ShortInterest\", \"strength\": \"related\", \"reason\": \"Both use short interest, but not velocity/change.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses sales per employee growth.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3023,
+   "completion_tokens": 363,
+   "total_tokens": 3386,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

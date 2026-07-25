@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:34:30.246348+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 5,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJvhZkdp8oPFQMM4e7M",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory-to-Sales Acceleration\", \"construction\": \"Compute inventory (Compustat item INVT) scaled by sales (SALE) for the two most recent fiscal years. Take the year-over-year change in this ratio, then subtract the prior year's change to get the second difference (acceleration). Sort stocks cross-sectionally each June.\", \"rationale\": \"Accelerating inventory relative to sales signals demand deterioration and future markdowns that the market underprices, foreshadowing negative earnings surprises.\", \"higher_returns_for\": \"low values of inventory-to-sales acceleration (stable or declining inventory buildup)\"}, {\"name\": \"Order Backlog Intensity\", \"construction\": \"Use Compustat order backlog (item OB) divided by average total assets (AT). Rank firms cross-sectionally each year among firms reporting order backlog; missing OB treated as separate group.\", \"rationale\": \"A large reported backlog reflects locked-in future revenue that analysts and investors discount too heavily due to uncertainty about conversion timing, creating undervaluation.\", \"higher_returns_for\": \"high order backlog intensity\"}, {\"name\": \"Advertising Persistence Ratio\", \"construction\": \"Compute advertising expense (Compustat item XAD) scaled by sales for each of the last three fiscal years. Measure persistence as the minimum of the three annual ratios divided by the maximum. Rank cross-sectionally among firms reporting XAD.\", \"rationale\": \"Firms that sustain steady advertising build durable intangible brand capital that is expensed rather than capitalized, so their true asset base and future profitability are understated.\", \"higher_returns_for\": \"high advertising persistence ratio\"}, {\"name\": \"Dividend Initiation-to-Payout Speed\", \"construction\": \"Identify firms that initiated a dividend within the last 12 months (first nonzero DVC after prior zeros). Scale first-year total dividends (DVC) by operating cash flow (OANCF). Rank recent initiators by this ratio.\", \"rationale\": \"Dividend initiations signal management confidence; those committing a larger cash share signal stronger conviction about sustainable earnings, which the market fully appreciates only gradually.\", \"higher_returns_for\": \"high initiation payout speed among recent initiators\"}, {\"name\": \"Capital Expenditure Smoothness\", \"construction\": \"Take capital expenditures (Compustat CAPX) scaled by lagged property plant and equipment (PPENT) over the last five fiscal years. Compute the coefficient of variation (standard deviation divided by mean) of this annual ratio. Rank cross-sectionally.\", \"rationale\": \"Firms with lumpy, volatile investment face higher adjustment costs and greater information uncertainty, commanding a risk premium relative to smooth investors.\", \"higher_returns_for\": \"high capex volatility (high coefficient of variation)\"}, {\"name\": \"Trade Credit Reliance\", \"construction\": \"Compute accounts payable (Compustat AP) divided by cost of goods sold (COGS), annualized. Take the change relative to the prior year. Rank cross-sectionally each June.\", \"rationale\": \"Rising reliance on supplier financing can indicate constrained access to formal capital markets, and constrained firms earn higher expected returns as compensation for financing risk.\", \"higher_returns_for\": \"high increase in trade credit reliance\"}, {\"name\": \"Return-Volume Elasticity\", \"construction\": \"Using daily data over the prior 12 months from CRSP, regress absolute daily returns on daily turnover (volume/shares outstanding). The slope coefficient measures price impact per unit of trading. Rank cross-sectionally.\", \"rationale\": \"Stocks whose prices move a lot per unit of volume are less liquid and less resilient, so investors demand a premium for bearing this illiquidity.\", \"higher_returns_for\": \"high return-volume elasticity (high price impact)\"}, {\"name\": \"Seasonal Earnings Consistency\", \"construction\": \"From Compustat quarterly data, compute year-over-year change in quarterly EPS for the last eight quarters. Count the fraction of quarters with positive year-over-year growth. Rank cross-sectionally each quarter.\", \"rationale\": \"A long streak of consistent seasonal earnings improvement reflects durable business momentum that investors underextrapolate, leading to continued positive surprises.\", \"higher_returns_for\": \"high seasonal earnings consistency\"}, {\"name\": \"Asset-Composition Tangibility Shift\", \"construction\": \"Compute net PP&E (PPENT) divided by total assets (AT) for the current and prior fiscal year, and take the change. Rank cross-sectionally each June.\", \"rationale\": \"A shift toward tangible assets increases collateralizable capacity and reduces distress risk, but the market slowly incorporates this improved financial flexibility, temporarily underpricing such firms.\", \"higher_returns_for\": \"low change in tangibility (shift toward intangible/less collateral)\"}, {\"name\": \"Cash Flow Volatility-Adjusted Yield\", \"construction\": \"Compute operating cash flow (OANCF) to price (market cap) for the latest fiscal year. Divide this yield by the standard deviation of the annual OANCF-to-assets ratio over the prior five years. Rank cross-sectionally.\", \"rationale\": \"High cash flow yield delivered with low cash flow volatility represents cheap, stable-quality firms that the market discounts too heavily relative to their reliability.\", \"higher_returns_for\": \"high volatility-adjusted cash flow yield\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1874,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

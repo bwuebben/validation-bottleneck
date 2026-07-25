@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:31:45.334284+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 10,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJiWqFfhNxUz3nCjaPo",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory Growth Divergence\", \"construction\": \"For each firm, compute year-over-year growth in inventories (Compustat item INVT) minus year-over-year growth in sales (item SALE), measured at fiscal year end and matched to returns with a 6-month lag. Rank cross-sectionally.\", \"rationale\": \"Inventories accumulating faster than sales signal overproduction and weak future demand, foreshadowing markdowns and earnings disappointments.\", \"higher_returns_for\": \"low values of the measure (inventory growth below sales growth)\"}, {\"name\": \"Depreciation-to-CapEx Aging\", \"construction\": \"Compute the ratio of accumulated depreciation (Compustat item DPACT) to gross PP&E (item PPEGT), and separately depreciation expense (item DP) to capital expenditures (item CAPX). Average the two into an asset-aging score, updated annually with a 6-month reporting lag.\", \"rationale\": \"Firms with old, underinvested asset bases face lower reinvestment needs and higher free-cash-flow yields, and the market underprices this hidden efficiency.\", \"higher_returns_for\": \"high values of the measure (older asset base, low reinvestment)\"}, {\"name\": \"Selling-Expense Operating Leverage\", \"construction\": \"Compute SG&A expense (Compustat item XSGA) scaled by sales (item SALE), then take the change in this ratio versus the prior fiscal year. Combine with total-asset turnover (SALE/AT). Rank on the interaction of high SG&A intensity and improving turnover, lagged 6 months.\", \"rationale\": \"High fixed selling-cost bases create operating leverage; when turnover improves, earnings rise disproportionately, a mispriced nonlinearity.\", \"higher_returns_for\": \"high SG&A intensity combined with improving asset turnover\"}, {\"name\": \"Dividend Initiation Persistence Gap\", \"construction\": \"Using CRSP distribution codes, identify firms that raised their regular cash dividend in each of the prior three fiscal years. Score = number of consecutive annual increases. Match to monthly returns.\", \"rationale\": \"A multi-year record of dividend increases signals durable cash-flow quality that investors extrapolate too weakly, leaving positive drift.\", \"higher_returns_for\": \"high values (longer streak of consecutive dividend increases)\"}, {\"name\": \"Share-Count Stability\", \"construction\": \"Compute the standard deviation of month-end shares outstanding (CRSP SHROUT) over the trailing 36 months, scaled by mean shares. Lower dispersion indicates absence of dilution and equity issuance.\", \"rationale\": \"Firms that neither dilute nor repeatedly issue equity tend to be self-financing and undervalued; volatile share counts flag financing distress or empire-building.\", \"higher_returns_for\": \"low values of the measure (stable share count)\"}, {\"name\": \"Accrual-Adjusted Earnings Momentum\", \"construction\": \"Compute standardized unexpected earnings (SUE) from Compustat quarterly EPS (item EPSPXQ) using a seasonal-random-walk expectation, then subtract the current-quarter total accruals scaled by assets (change in non-cash working capital minus depreciation, from the funds-flow statement). Rank on the cash-based SUE.\", \"rationale\": \"Earnings surprises backed by cash rather than accruals are more persistent, so cash-adjusted momentum predicts stronger post-announcement drift.\", \"higher_returns_for\": \"high cash-based earnings surprise\"}, {\"name\": \"Trading-Volume Trend Reversal\", \"construction\": \"For each stock compute average daily dollar volume (CRSP price times volume) in the most recent month divided by average daily dollar volume over the trailing 12 months. Rank cross-sectionally, monthly.\", \"rationale\": \"A sharp recent surge in relative volume often reflects unsustainable attention and overpricing that subsequently reverses.\", \"higher_returns_for\": \"low values of the measure (recent volume below its longer-run norm)\"}, {\"name\": \"Book Leverage Change Quality\", \"construction\": \"Compute year-over-year change in the ratio of total debt (Compustat DLTT + DLC) to total assets (AT). Rank firms; those reducing leverage while maintaining or growing assets score highest. Lag 6 months.\", \"rationale\": \"Voluntary deleveraging signals management confidence and reduced financial risk that the market recognizes only gradually.\", \"higher_returns_for\": \"low values of the measure (declining book leverage)\"}, {\"name\": \"Gross-Margin Trend Stability\", \"construction\": \"Compute gross margin ((SALE - COGS)/SALE) for each of the past four fiscal years, then take the trailing four-year slope minus its standard deviation. High score means steadily rising, low-volatility margins. Lag 6 months.\", \"rationale\": \"Consistently expanding margins indicate widening competitive advantage that investors underweight relative to headline earnings.\", \"higher_returns_for\": \"high values of the measure (rising, stable gross margins)\"}, {\"name\": \"Idiosyncratic Return Skewness\", \"construction\": \"For each stock, regress daily excess returns on the market over the trailing 12 months and compute the skewness of the regression residuals. Rank cross-sectionally, monthly.\", \"rationale\": \"Investors overpay for lottery-like positive-skewness stocks, so negatively skewed idiosyncratic returns command a premium.\", \"higher_returns_for\": \"low values of the measure (negative idiosyncratic skewness)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1880,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

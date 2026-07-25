@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:35:54.034894+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 8,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNK2vvLvqAkzpikCEYs9",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory-to-Sales Acceleration\", \"construction\": \"Using annual Compustat data, compute the ratio of inventories (item INVT) to sales (item SALE) for the three most recent fiscal years. Define the predictor as the change in the year-over-year growth rate of this ratio: [(INVT/SALE)_t / (INVT/SALE)_{t-1} - 1] minus [(INVT/SALE)_{t-1} / (INVT/SALE)_{t-2} - 1]. Rebalance annually four months after fiscal year-end.\", \"rationale\": \"Accelerating inventory buildup relative to sales signals overproduction and weakening demand that managers are slow to acknowledge, foreshadowing markdowns and negative earnings surprises.\", \"higher_returns_for\": \"low values of the measure (decelerating inventory buildup)\"}, {\"name\": \"Trade Credit Dependence\", \"construction\": \"From annual Compustat, compute accounts payable (item AP) divided by cost of goods sold (item COGS), a proxy for days payable outstanding scaled. Rank stocks cross-sectionally within industry. Rebalance annually four months after fiscal year-end.\", \"rationale\": \"Firms extended more trade credit by suppliers are viewed as creditworthy by informed counterparties, and this private information about firm quality is not immediately impounded into prices.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Dispersion of Monthly Return Signs\", \"construction\": \"Over the trailing 24 months, count the number of positive-return months minus negative-return months, divided by 24, using CRSP monthly returns. This measures directional consistency independent of magnitude.\", \"rationale\": \"Persistent directional agreement reflects gradual information diffusion and underreaction, while erratic sign flipping reflects noise-driven trading that mean-reverts.\", \"higher_returns_for\": \"high values of the measure (consistently positive months)\"}, {\"name\": \"Capital Expenditure Volatility\", \"construction\": \"Using the trailing five annual Compustat observations, compute the standard deviation of capital expenditures (item CAPX) scaled by average total assets (item AT), over that five-year window. Rebalance annually.\", \"rationale\": \"Lumpy, unpredictable investment reflects poor managerial planning and heightened operational uncertainty for which investors demand compensation, or alternatively signals overinvestment episodes that destroy value.\", \"higher_returns_for\": \"low values of the measure (smooth capital spending)\"}, {\"name\": \"Dividend Initiation Momentum\", \"construction\": \"Identify firms that first paid a cash dividend (item DVC transitions from zero to positive) within the trailing 12 months using Compustat/CRSP distribution data. Assign an indicator and hold for 12 months post-initiation.\", \"rationale\": \"Dividend initiations are a costly, sticky signal of sustainable future earnings that the market underappreciates, generating drift as the commitment is validated.\", \"higher_returns_for\": \"firms with recent dividend initiations\"}, {\"name\": \"Selling Expense Efficiency Change\", \"construction\": \"From annual Compustat, compute SG&A (item XSGA) divided by sales (item SALE) for the two latest fiscal years, and take the year-over-year change (improvement is negative). Rebalance annually four months after fiscal year-end.\", \"rationale\": \"Falling selling expense ratios signal improving operating leverage and management discipline that translates into future margin expansion not yet reflected in valuation.\", \"higher_returns_for\": \"low values of the change (improving expense efficiency)\"}, {\"name\": \"Turnover-Adjusted Illiquidity\", \"construction\": \"For each stock compute the trailing 12-month average of absolute daily return divided by daily dollar volume (Amihud-style), then multiply by the trailing 12-month average share turnover to adjust for float. Use CRSP daily data.\", \"rationale\": \"The interaction captures illiquidity that persists even among actively traded names, isolating a compensated liquidity risk premium distinct from raw illiquidity.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Depreciation-to-CapEx Gap\", \"construction\": \"From annual Compustat, compute depreciation and amortization (item DP) minus capital expenditures (item CAPX), scaled by total assets (item AT). Rebalance annually four months after fiscal year-end.\", \"rationale\": \"Firms depreciating faster than they reinvest are harvesting existing assets, a conservative posture that signals underappreciated free cash flow, whereas aggressive reinvestors overextend.\", \"higher_returns_for\": \"high values of the measure (depreciation exceeding capex)\"}, {\"name\": \"Earnings Announcement Return Clustering\", \"construction\": \"Sum the CRSP three-day cumulative abnormal returns around the four most recent quarterly earnings announcement dates (from Compustat quarterly RDQ field), measured relative to the market. Update after each announcement.\", \"rationale\": \"Consistent positive reactions across recent announcements indicate a firm systematically beating expectations, and this quality persists due to analyst and investor anchoring.\", \"higher_returns_for\": \"high values of the measure (positive cumulative announcement returns)\"}, {\"name\": \"Asset Growth Deceleration\", \"construction\": \"From annual Compustat, compute total asset growth (AT_t/AT_{t-1} - 1) for each of the last three years, then define the predictor as the second difference: the change in the growth rate. Rebalance annually four months after fiscal year-end.\", \"rationale\": \"Firms whose balance-sheet expansion is decelerating are transitioning from empire-building to discipline, which the market rewards, while accelerating growth presages overinvestment underperformance.\", \"higher_returns_for\": \"low values of the measure (decelerating asset growth)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1969,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

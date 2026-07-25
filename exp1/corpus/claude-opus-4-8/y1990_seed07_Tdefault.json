@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:25:32.666604+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 1990,
+  "prompt_sha256": "da73a8e5d4139ef7c2773f2e8eee4f702d477becf39e0258f31c5ad3cef5f799",
+  "seed": 7,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJFN4QWEBpjzCnQC4cC",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory Growth Divergence\", \"construction\": \"For each fiscal year, compute year-over-year growth in inventory (Compustat item INVT) minus year-over-year growth in cost of goods sold (item COGS). Rank stocks cross-sectionally each June using the most recent fiscal year with at least a 6-month reporting lag.\", \"rationale\": \"Inventory accumulating faster than sales signals weakening demand and future markdowns/writeoffs, a form of over-investment that the market underprices.\", \"higher_returns_for\": \"low values of the measure (inventory growing slower than COGS)\"},\n{\"name\": \"Accrued-to-Cash Earnings Ratio\", \"construction\": \"Compute the difference between reported net income (Compustat NI) and operating cash flow proxied as (net income + depreciation/amortization DP - change in non-cash working capital derived from balance-sheet items ACT, LCT, CHE, DLC). Scale by average total assets (AT). Rank cross-sectionally each June with a reporting lag.\", \"rationale\": \"Earnings driven more by accruals than cash are less persistent and often reflect aggressive accounting, so high-accrual firms subsequently underperform.\", \"higher_returns_for\": \"low values of the measure (cash-heavy earnings)\"},\n{\"name\": \"Capital Expenditure Intensity Reversal\", \"construction\": \"Compute capital expenditures (Compustat CAPX) scaled by lagged net property plant and equipment (PPENT), then take the deviation of the current year's ratio from the firm's own prior three-year average. Rank cross-sectionally each June with a reporting lag.\", \"rationale\": \"Firms sharply increasing investment relative to their history tend to overexpand into declining opportunities, leading to lower subsequent returns.\", \"higher_returns_for\": \"low values of the measure (declining relative capex)\"},\n{\"name\": \"Gross Margin Momentum\", \"construction\": \"Compute gross margin as (SALE - COGS)/SALE for the most recent fiscal year and the year prior; take the change. Rank stocks cross-sectionally each June by the year-over-year change with a reporting lag.\", \"rationale\": \"Improving gross margins signal strengthening competitive position and pricing power not yet fully reflected in prices.\", \"higher_returns_for\": \"high values of the measure (rising gross margin)\"},\n{\"name\": \"Idiosyncratic Return Volatility\", \"construction\": \"Each month, regress a stock's daily excess returns over the prior 60 trading days on the CRSP value-weighted market excess return; take the standard deviation of residuals as idiosyncratic volatility. Rank cross-sectionally at month end.\", \"rationale\": \"Under-diversified investors and limits to arbitrage cause high-idiosyncratic-volatility stocks to be overpriced and subsequently underperform.\", \"higher_returns_for\": \"low values of the measure (low idiosyncratic volatility)\"},\n{\"name\": \"Dollar Trading Volume Illiquidity\", \"construction\": \"For each stock compute the average daily absolute return divided by daily dollar volume (price times shares traded) over the prior 12 months using CRSP daily data. Rank cross-sectionally each month.\", \"rationale\": \"Illiquid stocks require a return premium to compensate investors for higher transaction costs and price impact.\", \"higher_returns_for\": \"high values of the measure (more illiquid stocks)\"},\n{\"name\": \"Share Issuance Change\", \"construction\": \"Compute the log growth in split-adjusted shares outstanding (CRSP shares times cumulative adjustment factor) over the prior 12 months. Rank cross-sectionally each month.\", \"rationale\": \"Net share issuance reflects managers exploiting overvaluation and dilutes existing holders, predicting lower future returns; net repurchasers outperform.\", \"higher_returns_for\": \"low values of the measure (net repurchasers/low issuance)\"},\n{\"name\": \"Asset Turnover Improvement\", \"construction\": \"Compute asset turnover as SALE/average total assets (AT) for the latest fiscal year and prior year; take the change. Rank cross-sectionally each June with a reporting lag.\", \"rationale\": \"Rising asset efficiency signals improving operational productivity and future profitability that the market prices with delay.\", \"higher_returns_for\": \"high values of the measure (improving asset turnover)\"},\n{\"name\": \"52-Week High Proximity\", \"construction\": \"Each month compute the ratio of a stock's current price to its highest closing price over the prior 52 weeks using CRSP data. Rank cross-sectionally.\", \"rationale\": \"Anchoring on the 52-week high causes investors to under-react to good news near the high, so stocks close to their high subsequently outperform.\", \"higher_returns_for\": \"high values of the measure (price near 52-week high)\"},\n{\"name\": \"Financial Leverage Change\", \"construction\": \"Compute total debt (DLC + DLTT) scaled by total assets (AT) for the latest and prior fiscal year; take the change. Rank cross-sectionally each June with a reporting lag, controlling by industry.\", \"rationale\": \"Firms rapidly increasing leverage face heightened financial distress risk and constrained flexibility, predicting lower subsequent risk-adjusted returns.\", \"higher_returns_for\": \"low values of the measure (deleveraging firms)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1791,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

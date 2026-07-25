@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:49:24.000616+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y1995_seed09_Tdefault.json",
+  "prompt_sha256": "286fba57d97a13537b685d9c3bfd9a523a979fc90335cd85ace58e2d0c82122d"
+ },
+ "response": {
+  "id": "chatcmpl-E5QUEMDNUdDMw0VrVfP8OMe9cZwpl",
+  "object": "chat.completion",
+  "created": 1784962162,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"ChInv\", \"strength\": \"related\", \"reason\": \"Both use inventory growth, but proposal uses inventory composition divergence.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses change in SG&A/sales ratio.\"},\n  {\"index\": 2, \"match\": \"ChNWC\", \"strength\": \"close\", \"reason\": \"Both use changes in working capital, but proposal focuses on receivables/payables.\"},\n  {\"index\": 3, \"match\": \"DivInit\", \"strength\": \"close\", \"reason\": \"Both use dividend initiation, proposal adds momentum screen.\"},\n  {\"index\": 4, \"match\": \"InvestPPEInv\", \"strength\": \"related\", \"reason\": \"Both use changes in capital intensity, but proposal uses gross PPE/assets.\"},\n  {\"index\": 5, \"match\": \"std_turn\", \"strength\": \"related\", \"reason\": \"Both use turnover changes, but proposal uses acceleration, not volatility.\"},\n  {\"index\": 6, \"match\": \"AbnormalAccruals\", \"strength\": \"related\", \"reason\": \"Both capture book-tax differences as earnings quality proxies.\"},\n  {\"index\": 7, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses ROA volatility scaled by mean ROA.\"},\n  {\"index\": 8, \"match\": \"ShareIss1Y\", \"strength\": \"close\", \"reason\": \"Both use 1-year share issuance, proposal interacts with BM.\"},\n  {\"index\": 9, \"match\": \"EarningsSurprise\", \"strength\": \"close\", \"reason\": \"Both use earnings surprises, proposal sums same-quarter surprises.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3044,
+   "completion_tokens": 387,
+   "total_tokens": 3431,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

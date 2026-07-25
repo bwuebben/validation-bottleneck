@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:34:01.802385+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 4,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJtYvHu1Mims1ueXVNh",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\":[{\"name\":\"Inventory-to-Sales Acceleration\",\"construction\":\"For each firm, compute the ratio of inventories (Compustat item INVT) to sales (SALE) at fiscal year-end. Measure the change in this ratio over the most recent year minus the change over the prior year (a second difference, i.e., acceleration). Form portfolios sorted on this acceleration measure, updated annually with a 6-month reporting lag.\",\"rationale\":\"Accelerating inventory relative to sales signals demand overestimation and future markdowns, which the market underappreciates until earnings disappoint.\",\"higher_returns_for\":\"low values of the measure (decelerating/shrinking inventory relative to sales)\"},{\"name\":\"Selling Expense Efficiency\",\"construction\":\"Compute the ratio of selling, general and administrative expense (Compustat XSGA) to gross profit (SALE minus COGS). Rank firms cross-sectionally each year, using a 6-month lag. The predictor is the level of this ratio.\",\"rationale\":\"Firms converting each dollar of gross profit into more selling overhead are managerially inefficient; efficient firms (low ratio) generate higher future returns as profitability persists and is undervalued.\",\"higher_returns_for\":\"low values of the measure (lean SG&A relative to gross profit)\"},{\"name\":\"Dividend Initiation Momentum\",\"construction\":\"Identify firms that moved from zero dividends in the prior fiscal year to positive cash dividends (Compustat DVC) in the current year. Among these initiators, hold for the subsequent 12 months. Compare against non-initiators. Updated quarterly from dividend declaration data (CRSP distributions).\",\"rationale\":\"Dividend initiation is a costly credible signal of durable future cash flows that the market incorporates only gradually, generating post-initiation drift.\",\"higher_returns_for\":\"high values (firms that initiate dividends)\"},{\"name\":\"Capital Expenditure Volatility\",\"construction\":\"Compute the standard deviation of the ratio of capital expenditures (Compustat CAPX) to total assets (AT) over the trailing 5 fiscal years. Sort firms into portfolios on this volatility, annually with a 6-month lag.\",\"rationale\":\"Erratic investment reflects poor managerial discipline and higher operating uncertainty; stable investors compound value more reliably, so low volatility earns higher risk-adjusted returns.\",\"higher_returns_for\":\"low values of the measure (stable capital spending)\"},{\"name\":\"Order Backlog to Assets\",\"construction\":\"Compute reported order backlog (Compustat item OB) divided by total assets (AT). Rank cross-sectionally each year with a 6-month reporting lag. Restrict to firms that report backlog.\",\"rationale\":\"Order backlog is a forward-looking indicator of contracted future sales not yet in earnings; the market underweights this off-balance-sheet demand signal.\",\"higher_returns_for\":\"high values of the measure (large backlog relative to assets)\"},{\"name\":\"Trading Volume Trend Divergence\",\"construction\":\"For each stock, regress daily log dollar trading volume on a time trend over the trailing 12 months. The predictor is the sign and magnitude of the trend slope, orthogonalized against past return momentum. Sort monthly.\",\"rationale\":\"Declining trading interest amid stable prices signals waning investor attention and forthcoming neglect-premium, while rising volume predicts overextension; declining-volume neglected stocks earn higher subsequent returns.\",\"higher_returns_for\":\"low values of the measure (declining trading-volume trend)\"},{\"name\":\"Accrual Reversal Consistency\",\"construction\":\"Decompose total accruals (change in non-cash working capital minus depreciation, from balance-sheet items) for each of the past 4 years. Count how many of those years had negative (income-decreasing) accruals. The predictor is this consistency count.\",\"rationale\":\"Firms that persistently report conservative (negative) accruals have higher earnings quality that the market fails to fully price, yielding higher future returns.\",\"higher_returns_for\":\"high values of the measure (consistently conservative accruals)\"},{\"name\":\"R&D Growth Relative to Peers\",\"construction\":\"Compute research and development expense (Compustat XRD) growth over the trailing year, then subtract the median R&D growth of firms in the same 2-digit SIC industry. Sort annually with a 6-month lag; set missing R&D to zero.\",\"rationale\":\"Firms outgrowing industry peers in innovation investment build undervalued intangible capital whose payoff is delayed and underpriced by the market.\",\"higher_returns_for\":\"high values of the measure (above-peer R&D growth)\"},{\"name\":\"Return Skewness Asymmetry\",\"construction\":\"Estimate the skewness of daily returns over the trailing 6 months for each stock. Sort cross-sectionally monthly into portfolios.\",\"rationale\":\"Investors overpay for lottery-like positively skewed stocks, driving their prices up and expected returns down, while negatively skewed stocks carry a discount and higher subsequent returns.\",\"higher_returns_for\":\"low values of the measure (negative return skewness)\"},{\"name\":\"Financing Gap Signal\",\"construction\":\"Compute the firm's free cash flow deficit: capital expenditures (CAPX) plus dividends (DVC) minus operating cash flow (approximated by income before extraordinary items IB plus depreciation DP), scaled by total assets (AT). Sort annually with a 6-month lag.\",\"rationale\":\"Firms that internally fund investment (low or negative financing gap) avoid dilutive equity issuance and costly debt, signaling financial strength that is rewarded with higher returns.\",\"higher_returns_for\":\"low values of the measure (internally-funded firms with no financing gap)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1928,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

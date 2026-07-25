@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:49:45.375403+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y2000_seed06_Tdefault.json",
+  "prompt_sha256": "54de15ebfca4e9e71f80d5ce17ffe1cc63e7526163c7c2a45fd323f2f0efb874"
+ },
+ "response": {
+  "id": "chatcmpl-E5QUZiQrrYyLT4z9qw5AkN5Pgk9C2",
+  "object": "chat.completion",
+  "created": 1784962183,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"GrSaleToGrInv\", \"strength\": \"close\", \"reason\": \"Both use inventory growth minus sales growth as signal.\"},\n  {\"index\": 1, \"match\": \"OrderBacklog\", \"strength\": \"exact\", \"reason\": \"Order backlog scaled by assets matches library construction.\"},\n  {\"index\": 2, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses change in SG&A/sales ratio.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses change in deferred tax liability.\"},\n  {\"index\": 4, \"match\": \"grcapx3y\", \"strength\": \"close\", \"reason\": \"Both measure capex acceleration relative to firm history.\"},\n  {\"index\": 5, \"match\": \"DivInit\", \"strength\": \"related\", \"reason\": \"Both relate to dividend initiation, but persistence is new.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses gross margin stability/volatility.\"},\n  {\"index\": 7, \"match\": \"MomVol\", \"strength\": \"close\", \"reason\": \"Both combine momentum with volume/turnover information.\"},\n  {\"index\": 8, \"match\": \"CashProd\", \"strength\": \"exact\", \"reason\": \"Same construction: cash flow proxy over market value.\"},\n  {\"index\": 9, \"match\": \"ChNAnalyst\", \"strength\": \"related\", \"reason\": \"Both use analyst coverage, but construction differs.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3041,
+   "completion_tokens": 360,
+   "total_tokens": 3401,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

@@ -28,6 +28,8 @@ PROVIDERS = {
                "keys": ("OPENAI_API_KEY", "OPENAI_KEY")},
     "together": {"url": "https://api.together.xyz/v1/chat/completions",
                  "keys": ("TOGETHER_API_KEY",)},
+    "anthropic": {"url": "https://api.anthropic.com/v1/messages",
+                  "keys": ("ANTHROPIC_API_KEY",)},
 }
 
 
@@ -72,22 +74,35 @@ def build_prompt(year: int) -> tuple[str, str]:
 
 def call_openai(key: str, model: str, user: str, temperature: float,
                 seed: int, max_tokens: int) -> dict:
-    payload = {
-        "model": model,
-        "messages": [
-            {"role": "system", "content": SYSTEM},
-            {"role": "user", "content": user},
-        ],
-        "temperature": temperature,
-        "seed": seed,
-        "max_tokens": max_tokens,
-    }
+    if PROVIDER == "anthropic":
+        # Messages API: no temperature/seed on this model family (rejected with 400);
+        # thinking disabled by omission. Amendment 2 records the deviation.
+        payload = {
+            "model": model,
+            "max_tokens": max_tokens,
+            "system": SYSTEM,
+            "messages": [{"role": "user", "content": user}],
+        }
+        headers = {"x-api-key": key, "anthropic-version": "2023-06-01",
+                   "Content-Type": "application/json"}
+    else:
+        payload = {
+            "model": model,
+            "messages": [
+                {"role": "system", "content": SYSTEM},
+                {"role": "user", "content": user},
+            ],
+            "temperature": temperature,
+            "seed": seed,
+            "max_tokens": max_tokens,
+        }
+        headers = {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
     delay = 5.0
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             r = requests.post(
                 API_URL,
-                headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+                headers=headers,
                 json=payload,
                 timeout=TIMEOUT,
             )
@@ -111,7 +126,8 @@ def archive(model: str, year: int, seed: int, temperature: float,
     outdir = CORPUS / model.replace("/", "_")
     outdir.mkdir(parents=True, exist_ok=True)
     prefix = "smoke_" if smoke else ""
-    fname = f"{prefix}y{year}_seed{seed:02d}_T{temperature:g}.json"
+    tlabel = "default" if temperature is None else f"{temperature:g}"
+    fname = f"{prefix}y{year}_seed{seed:02d}_T{tlabel}.json"
     meta = {
         "utc": dt.datetime.now(dt.timezone.utc).isoformat(),
         "model_requested": model,
@@ -119,6 +135,7 @@ def archive(model: str, year: int, seed: int, temperature: float,
         "prompt_sha256": prompt_sha,
         "seed": seed,
         "temperature": temperature,
+        "sampling": "provider_default" if temperature is None else "requested",
         "max_tokens": MAX_TOKENS,
         "harness_version": HARNESS_VERSION,
         "smoke": smoke,
@@ -126,13 +143,19 @@ def archive(model: str, year: int, seed: int, temperature: float,
     path = outdir / fname
     path.write_text(json.dumps({"meta": meta, "response": resp}, indent=1))
 
-    content = (resp.get("choices") or [{}])[0].get("message", {}).get("content", "") or ""
+    if "content" in resp and isinstance(resp.get("content"), list):  # anthropic shape
+        content = "".join(b.get("text", "") for b in resp["content"]
+                          if b.get("type") == "text")
+        finish = resp.get("stop_reason")
+    else:
+        content = (resp.get("choices") or [{}])[0].get("message", {}).get("content", "") or ""
+        finish = (resp.get("choices") or [{}])[0].get("finish_reason")
     manifest_line = {
         **meta,
         "file": str(path.relative_to(EXP1)),
         "model_returned": resp.get("model"),
         "system_fingerprint": resp.get("system_fingerprint"),
-        "finish_reason": (resp.get("choices") or [{}])[0].get("finish_reason"),
+        "finish_reason": finish,
         "usage": resp.get("usage"),
         "output_sha256": hashlib.sha256(content.encode()).hexdigest(),
     }
@@ -146,13 +169,18 @@ def main() -> None:
     ap.add_argument("--model", required=True)
     ap.add_argument("--smoke", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
-    ap.add_argument("--provider", choices=("openai", "together"), default="openai")
+    ap.add_argument("--provider", choices=("openai", "together", "anthropic"), default="openai")
     args = ap.parse_args()
     global PROVIDER, API_URL
     PROVIDER = args.provider
     API_URL = PROVIDERS[args.provider]["url"]
 
-    runs = [GREEDY] + SAMPLED
+    if PROVIDER == "anthropic":
+        # Amendment 2: no temperature/seed on this API -> 11 provider-default runs,
+        # seed slot = run index label only
+        runs = [{"temperature": None, "seed": i} for i in range(11)]
+    else:
+        runs = [GREEDY] + SAMPLED
     plan = [(y, r) for y in YEARS for r in runs]
     print(f"model={args.model}  years={YEARS}  calls={'1 (smoke)' if args.smoke else len(plan)}")
 
@@ -167,9 +195,14 @@ def main() -> None:
         global MAX_TOKENS
         MAX_TOKENS = 300
         user, sha = build_prompt(YEARS[0])
-        resp = call_openai(key, args.model, user, 0.0, 42, MAX_TOKENS)
-        path = archive(args.model, YEARS[0], 42, 0.0, sha, resp, smoke=True)
-        content = (resp.get("choices") or [{}])[0].get("message", {}).get("content", "")
+        st, ss = (None, 0) if PROVIDER == "anthropic" else (0.0, 42)
+        resp = call_openai(key, args.model, user, st, ss, MAX_TOKENS)
+        path = archive(args.model, YEARS[0], ss, st, sha, resp, smoke=True)
+        if PROVIDER == "anthropic":
+            content = "".join(b.get("text", "") for b in resp.get("content", [])
+                              if b.get("type") == "text")
+        else:
+            content = (resp.get("choices") or [{}])[0].get("message", {}).get("content", "")
         print(f"smoke OK → {path}")
         print("first 200 chars:", content[:200])
         return
@@ -178,12 +211,12 @@ def main() -> None:
     for year, run in plan:
         t, s = run["temperature"], run["seed"]
         outdir = CORPUS / args.model.replace("/", "_")
-        fname = f"y{year}_seed{s:02d}_T{t:g}.json"
+        fname = f"y{year}_seed{s:02d}_T{'default' if t is None else format(t, 'g')}.json"
         if (outdir / fname).exists():
             done += 1
             continue
         user, sha = build_prompt(year)
-        print(f"  call {done + 1}/{len(plan)}: y{year} seed={s} T={t}")
+        print(f"  call {done + 1}/{len(plan)}: y{year} seed={s} T={t}", flush=True)
         resp = call_openai(key, args.model, user, t, s, MAX_TOKENS)
         archive(args.model, year, s, t, sha, resp, smoke=False)
         done += 1

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:48:57.386407+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y1990_seed10_Tdefault.json",
+  "prompt_sha256": "ddb2eb9f60c516cbd30b8030413538fb6d1cf77c335f641d8d9320e69ab53d58"
+ },
+ "response": {
+  "id": "chatcmpl-E5QTnXxkTMTpWUeMcFbSTCoQq9kTm",
+  "object": "chat.completion",
+  "created": 1784962135,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"GrSaleToGrInv\", \"strength\": \"close\", \"reason\": \"Both compare inventory and sales growth, but implementation differs slightly.\"},\n  {\"index\": 1, \"match\": \"TotalAccruals\", \"strength\": \"exact\", \"reason\": \"Construction matches standard total accruals scaled by assets.\"},\n  {\"index\": 2, \"match\": \"grcapx3y\", \"strength\": \"close\", \"reason\": \"Both measure capex growth; proposal uses a shock, library uses 3-year change.\"},\n  {\"index\": 3, \"match\": \"OperProf\", \"strength\": \"related\", \"reason\": \"Both use gross margin/profitability, but proposal focuses on margin trend.\"},\n  {\"index\": 4, \"match\": \"DivInit\", \"strength\": \"exact\", \"reason\": \"Both identify dividend initiations using similar event definitions.\"},\n  {\"index\": 5, \"match\": \"IdioVol3F\", \"strength\": \"close\", \"reason\": \"Both use idiosyncratic volatility; proposal uses change, library uses level.\"},\n  {\"index\": 6, \"match\": \"SP\", \"strength\": \"exact\", \"reason\": \"Both compute sales-to-price using annual sales and market cap.\"},\n  {\"index\": 7, \"match\": \"DelFINL\", \"strength\": \"close\", \"reason\": \"Both measure change in financial liabilities/debt scaled by assets.\"},\n  {\"index\": 8, \"match\": \"Mom6m\", \"strength\": \"related\", \"reason\": \"Both use 6-month momentum; proposal adds turnover adjustment.\"},\n  {\"index\": 9, \"match\": \"AssetGrowth\", \"strength\": \"exact\", \"reason\": \"Both use year-over-year asset growth as the signal.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3051,
+   "completion_tokens": 398,
+   "total_tokens": 3449,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

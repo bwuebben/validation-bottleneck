@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:50:07.072420+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y2005_seed03_Tdefault.json",
+  "prompt_sha256": "b01bbcf0aa827b76184b02c1fcaa379fa3e1371c73e581d1e0b9ee03febb379f"
+ },
+ "response": {
+  "id": "chatcmpl-E5QUu4mTOdhnC8587pZ8p2WmBXWDF",
+  "object": "chat.completion",
+  "created": 1784962204,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"Herf\", \"strength\": \"close\", \"reason\": \"Both measure customer/supplier concentration using segment/customer data.\"},\n  {\"index\": 1, \"match\": \"ChInv\", \"strength\": \"close\", \"reason\": \"Both use changes in inventory relative to sales, but proposal uses acceleration.\"},\n  {\"index\": 2, \"match\": \"grcapx3y\", \"strength\": \"related\", \"reason\": \"Both use multi-year change in investment intensity, but proposal focuses on R&D.\"},\n  {\"index\": 3, \"match\": \"RealizedVol\", \"strength\": \"related\", \"reason\": \"Both use realized volatility, but proposal uses volatility-of-volatility.\"},\n  {\"index\": 4, \"match\": \"DelDRC\", \"strength\": \"close\", \"reason\": \"Both use change in deferred/unearned revenue scaled by assets.\"},\n  {\"index\": 5, \"match\": \"GrSaleToGrOverhead\", \"strength\": \"related\", \"reason\": \"Both relate profit or sales to SG&A, but proposal uses gross profit/SG&A change.\"},\n  {\"index\": 6, \"match\": \"DolVol\", \"strength\": \"related\", \"reason\": \"Both use order flow/volume, but proposal uses autocorrelation of signed order flow.\"},\n  {\"index\": 7, \"match\": \"FR\", \"strength\": \"close\", \"reason\": \"Both use pension funding status, but proposal uses change scaled by market equity.\"},\n  {\"index\": 8, \"match\": \"ChNAnalyst\", \"strength\": \"exact\", \"reason\": \"Both use change in analyst coverage over time.\"},\n  {\"index\": 9, \"match\": \"grcapx\", \"strength\": \"related\", \"reason\": \"Both use capex volatility/change, but proposal uses coefficient of variation.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3184,
+   "completion_tokens": 406,
+   "total_tokens": 3590,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

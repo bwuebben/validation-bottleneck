@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:39:36.538636+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2005,
+  "prompt_sha256": "aaa5184188001a521387f9b5736e935875404316d7ccdb987abea82e1070b7b2",
+  "seed": 5,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNKKSABuxanpEjbSkEuT",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Order Backlog Growth\", \"construction\": \"From the annual 10-K, take the disclosed order backlog dollar amount (item often reported in the business/MD&A section). Compute year-over-year growth in backlog scaled by total assets: (Backlog_t - Backlog_{t-1}) / Average Total Assets. Rank cross-sectionally each June.\", \"rationale\": \"Order backlog reflects contracted future demand not yet in revenue; the market underreacts to this leading indicator of future sales and earnings.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Deferred Revenue Change\", \"construction\": \"From the balance sheet, take the change in deferred (unearned) revenue over the trailing fiscal year, scaled by total assets: (DeferredRev_t - DeferredRev_{t-1}) / Total Assets. Sort stocks into deciles each June.\", \"rationale\": \"Rising deferred revenue signals customers prepaying for future delivery, a hard-cash leading indicator of future recognized revenue that investors underweight.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"R&D Momentum\", \"construction\": \"Compute the trailing three-year growth rate in R&D expense (Compustat XRD), scaled by lagged sales: geometric mean growth of XRD/Sales over three years. Rank cross-sectionally annually, restricting to firms with positive R&D.\", \"rationale\": \"Sustained increases in innovation investment presage future productivity and product-cycle gains that are mispriced due to conservative expensing of intangibles.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Supplier-Concentration Risk\", \"construction\": \"From 10-K disclosures of major customers (SFAS 131 segment/customer data), compute the fraction of revenue from customers each representing >10% of sales. Define concentration as the sum of these fractions. Sort into quintiles annually.\", \"rationale\": \"Firms dependent on few large customers bear elevated cash-flow risk and bargaining-power disadvantage, commanding a risk premium.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Working-Capital Efficiency Improvement\", \"construction\": \"Compute the cash conversion cycle (Days Inventory + Days Receivable - Days Payable) each year from Compustat. Take the year-over-year decline in the cash conversion cycle. Rank cross-sectionally; higher rank = larger improvement (larger decline).\", \"rationale\": \"Shortening the cash conversion cycle reflects operational improvements and freed-up cash that the market is slow to capitalize.\", \"higher_returns_for\": \"high values of the measure (larger reductions in the cycle)\"}, {\"name\": \"Intraday Range Volatility Compression\", \"construction\": \"For each stock, compute the average daily (High-Low)/Close range over the trailing 60 trading days, and the same over days 120-61. Define compression as the ratio of the recent range to the prior range; rank so that lower ratios (compressing ranges) rank high.\", \"rationale\": \"Compression of intraday trading ranges reflects declining disagreement and pending resolution of uncertainty, preceding positive drift as information stabilizes.\", \"higher_returns_for\": \"low values of the ratio (greater compression)\"}, {\"name\": \"Pension Plan Funding Change\", \"construction\": \"From the pension footnote (SFAS 132), compute the change in funded status (plan assets minus projected benefit obligation) scaled by market equity, year-over-year. Rank into deciles annually.\", \"rationale\": \"Improving pension funding status frees future corporate cash flows from mandatory contributions and signals asset-management quality that investors overlook.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Selling-Expense Leverage\", \"construction\": \"Compute the ratio of change in sales to change in SG&A expense over the trailing year: (Sales_t - Sales_{t-1}) / (SGA_t - SGA_{t-1}), restricting to firms with positive SGA growth. Rank cross-sectionally each June.\", \"rationale\": \"Firms generating disproportionately more revenue per incremental selling dollar exhibit operating leverage and scalable business models that predict rising margins.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Off-Balance-Sheet Lease Intensity Shift\", \"construction\": \"From lease commitment footnotes, capitalize operating lease obligations (discounted future minimum lease payments) and compute the year-over-year change in capitalized-lease-adjusted leverage relative to reported leverage. Rank annually.\", \"rationale\": \"Firms increasing reliance on off-balance-sheet operating leases carry hidden financial leverage and fixed-cost risk underappreciated by naive balance-sheet analysis.\", \"higher_returns_for\": \"high values of the measure (larger hidden-leverage increases)\"}, {\"name\": \"Analyst-Coverage Deceleration\", \"construction\": \"Using I/B/E/S, compute the change in the number of analysts covering a firm over the trailing 12 months, scaled by prior coverage. Rank so that stocks losing coverage rank high.\", \"rationale\": \"Declining analyst coverage reduces information production and visibility, raising the required return via an information-risk premium that later reverses upward.\", \"higher_returns_for\": \"low values of the change (declining coverage)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1825,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

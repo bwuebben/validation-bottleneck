@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:45:56.980286+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 7,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNKoCfNFtRJHkkHqP5Ye",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Supplier Concentration Fragility\", \"construction\": \"From annual 10-K disclosures under SFAS 131, identify firms that report dependence on one or more major suppliers accounting for 10%+ of purchases (parsed from text). Construct a dummy = 1 if the firm reports a concentrated supplier base, refined by counting the number of named critical suppliers scaled inversely. Combine with inventory-to-COGS ratio to proxy buffer capacity. Rank cross-sectionally each June.\", \"rationale\": \"Firms reliant on few suppliers face under-priced disruption risk; investors underweight the tail risk of input shocks, requiring a return premium.\", \"higher_returns_for\": \"high supplier concentration (few critical suppliers, low inventory buffer)\"}, {\"name\": \"Deferred Revenue Momentum\", \"construction\": \"Using quarterly balance-sheet deferred revenue (current + long-term), compute the year-over-year growth rate in deferred revenue scaled by total assets. Rank firms cross-sectionally each quarter on the four-quarter trend in this ratio.\", \"rationale\": \"Growth in deferred revenue reflects contracted but unrecognized future sales, a leading indicator of demand that is slow to be incorporated into prices.\", \"higher_returns_for\": \"high deferred revenue growth\"}, {\"name\": \"Working Capital Acceleration\", \"construction\": \"Compute non-cash net working capital (receivables + inventory - payables) scaled by sales for each of the last 8 quarters. Fit the second difference (acceleration) of this ratio. Rank firms on the acceleration term, controlling for level and first difference via cross-sectional regression residuals each quarter.\", \"rationale\": \"Accelerating working capital signals deteriorating operational efficiency and unsustainable growth financing that the market prices with a lag.\", \"higher_returns_for\": \"low (most negative) working capital acceleration\"}, {\"name\": \"Analyst Coverage Dispersion Decay\", \"construction\": \"From I/B/E/S detail files, measure the month-over-month change in the standard deviation of individual analyst FY1 EPS estimates, scaled by price. Compute the 3-month change in dispersion. Rank firms cross-sectionally on the decline (convergence) of estimates.\", \"rationale\": \"Converging analyst estimates signal resolving information uncertainty; as ambiguity resolves favorably, prices drift upward before full incorporation.\", \"higher_returns_for\": \"large decline in estimate dispersion\"}, {\"name\": \"Capital Expenditure Text Intensity\", \"construction\": \"Parse the MD&A section of 10-K filings for frequency of forward-looking capex and expansion language (terms like 'expand capacity', 'new facility', 'capital investment') normalized by document length. Combine with realized capex/assets to form a residual of 'talk vs. spend'. Rank firms each June.\", \"rationale\": \"Firms that announce expansion intentions beyond realized spending exhibit managerial overconfidence and overinvestment, predicting lower future returns.\", \"higher_returns_for\": \"low text-to-spend residual (spending exceeds announced intentions)\"}, {\"name\": \"Seasonal Earnings Persistence Gap\", \"construction\": \"For each firm, regress quarterly earnings on the same-quarter earnings one year prior over a rolling 5-year window to estimate seasonal persistence. Separately estimate adjacent-quarter persistence. Rank firms on the gap (seasonal minus adjacent persistence coefficient).\", \"rationale\": \"Firms with strong seasonal but weak sequential earnings persistence have predictable earnings the market under-anticipates in specific quarters.\", \"higher_returns_for\": \"high seasonal persistence gap ahead of strong quarters\"}, {\"name\": \"Intangible-Adjusted Asset Growth\", \"construction\": \"Capitalize R&D and a fraction of SG&A as intangible assets using perpetual-inventory method with standard amortization rates, add to reported total assets. Compute year-over-year growth of this adjusted asset base. Rank firms cross-sectionally each June.\", \"rationale\": \"The classic asset-growth anomaly ignores intangible investment; adjusting reveals that firms growing true (tangible+intangible) capital fastest overinvest and underperform.\", \"higher_returns_for\": \"low intangible-adjusted asset growth\"}, {\"name\": \"Debt Maturity Wall Proximity\", \"construction\": \"From Compustat debt maturity schedule (debt due in years 1-5), compute the share of total debt maturing within the next 12 months, scaled by cash plus operating cash flow. Rank firms cross-sectionally each quarter.\", \"rationale\": \"Firms facing imminent large refinancing relative to liquidity bear rollover risk that is under-priced outside of crisis periods, commanding a premium.\", \"higher_returns_for\": \"high near-term maturity relative to liquidity\"}, {\"name\": \"Order Backlog Surprise\", \"construction\": \"Using reported order backlog (Compustat item OB) scaled by sales, compute the change relative to its own 3-year average and relative to the seasonal norm. Rank firms cross-sectionally on positive backlog surprises each fiscal period.\", \"rationale\": \"Backlog is a forward demand signal disclosed by manufacturers that receives limited investor attention, generating post-disclosure drift.\", \"higher_returns_for\": \"high positive backlog surprise\"}, {\"name\": \"Gross Margin Volatility Compression\", \"construction\": \"Compute the rolling 12-quarter standard deviation of quarterly gross margin (gross profit/sales). Measure the ratio of recent 4-quarter volatility to the trailing 12-quarter volatility. Rank firms on the compression (recent volatility falling relative to history).\", \"rationale\": \"Declining margin volatility signals stabilizing competitive position and pricing power, a fundamental improvement priced with delay.\", \"higher_returns_for\": \"high margin volatility compression (stabilizing margins)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 2025,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

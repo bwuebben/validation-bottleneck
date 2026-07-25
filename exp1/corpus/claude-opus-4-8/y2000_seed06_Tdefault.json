@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:34:55.008802+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2000,
+  "prompt_sha256": "03d3cb4ffb9e7b6216fc175bf6b9ac40f270559843eaec2a206808995a14b536",
+  "seed": 6,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJxnv2Ku3h1aaWkxpPJ",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory Growth Divergence\", \"construction\": \"For each firm, compute year-over-year growth in inventories (Compustat item INVT) minus year-over-year growth in sales (item SALE), using annual financials lagged at least 4 months. Rank cross-sectionally each June.\", \"rationale\": \"When inventory builds faster than sales, it signals demand overestimation and future writedowns or margin pressure, which the market is slow to price.\", \"higher_returns_for\": \"low values of the measure (inventory growing slower than sales)\"}, {\"name\": \"Order Backlog to Assets\", \"construction\": \"Divide reported order backlog (Compustat item OB) by total assets (item AT), using annual data lagged 4 months. Form cross-sectional deciles.\", \"rationale\": \"Order backlog is a forward-looking demand indicator that is disclosed but underweighted by investors relative to reported earnings.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Selling Expense Efficiency Change\", \"construction\": \"Compute the change in the ratio of SG&A expense (item XSGA) to sales (item SALE) from the prior fiscal year to the current one; measure = -(current ratio minus prior ratio). Rank cross-sectionally.\", \"rationale\": \"Improving operating efficiency (falling overhead per dollar of sales) signals management execution not yet reflected in valuation multiples.\", \"higher_returns_for\": \"high values of the measure (improving efficiency)\"}, {\"name\": \"Deferred Tax Signal\", \"construction\": \"Compute the change in the net deferred tax liability (from Compustat deferred taxes item TXDB) scaled by lagged total assets, annual data lagged 4 months. Rank cross-sectionally.\", \"rationale\": \"Large increases in deferred tax liabilities often reflect aggressive book-vs-tax accounting that inflates reported earnings and reverses later.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Capital Expenditure Acceleration\", \"construction\": \"For each firm compute capex (item CAPX) scaled by lagged property plant and equipment (item PPENT) minus the firm's own 3-year average of that ratio. Rank cross-sectionally each June.\", \"rationale\": \"Spikes in investment relative to a firm's normal pace tend to be followed by disappointing returns as overinvestment erodes future free cash flow.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Dividend Initiation Persistence Momentum\", \"construction\": \"Flag firms that paid a dividend (item DVC > 0) in each of the trailing 3 years with strictly non-decreasing dividends per share, and rank remaining firms by the compound growth rate of dividends per share over that window.\", \"rationale\": \"Consistently rising dividends credibly signal sustainable cash flows and managerial confidence that the market underappreciates.\", \"higher_returns_for\": \"high values of the measure (steadily rising dividends)\"}, {\"name\": \"Gross Margin Stability\", \"construction\": \"Compute the standard deviation of quarterly gross margin (GP = SALE minus COGS, divided by SALE, using Compustat quarterly items SALEQ and COGSQ) over the trailing 12 quarters; measure = -stddev. Rank cross-sectionally.\", \"rationale\": \"Stable gross margins indicate durable competitive advantage and lower cash-flow risk that is only partially compensated by the market.\", \"higher_returns_for\": \"high values of the measure (more stable margins)\"}, {\"name\": \"Turnover-Adjusted Momentum\", \"construction\": \"Take standard 12-month minus 1-month past return, and within each momentum decile sort further by average monthly share turnover (CRSP volume divided by shares outstanding) over the same 12 months; measure = momentum residualized on turnover, favoring low-turnover winners.\", \"rationale\": \"Momentum on low-attention (low-turnover) stocks reflects slower information diffusion and continues longer than high-turnover momentum.\", \"higher_returns_for\": \"high past return combined with low turnover\"}, {\"name\": \"Cash Productivity\", \"construction\": \"Compute operating cash flow proxy (item IB plus item DP, income before extraordinary items plus depreciation) divided by market value of equity (CRSP price times shares), annual data lagged 4 months. Rank cross-sectionally.\", \"rationale\": \"Cash-based profitability relative to price is harder to manipulate than accrual earnings yield and captures genuine value the market discounts.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Analyst Coverage Deficit\", \"construction\": \"Regress number of covering analysts (IBES) on log market cap and log book-to-market cross-sectionally each month; measure = negative of the residual (firms with fewer analysts than their size/value peers predict).\", \"rationale\": \"Stocks with abnormally low coverage relative to observable characteristics are underfollowed, carry higher information risk, and earn a premium as coverage catches up.\", \"higher_returns_for\": \"high values of the measure (coverage deficit)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1716,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

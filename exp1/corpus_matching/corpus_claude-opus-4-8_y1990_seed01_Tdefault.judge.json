@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:48:32.341664+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y1990_seed01_Tdefault.json",
+  "prompt_sha256": "c4197547e2990613cea4a66a3018e60c9f4c5d412121637076072a1d21e37035"
+ },
+ "response": {
+  "id": "chatcmpl-E5QTO6cZzXXOCjtROuaW14xU5PyN8",
+  "object": "chat.completion",
+  "created": 1784962110,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"GrSaleToGrInv\", \"strength\": \"close\", \"reason\": \"Both compare inventory growth to sales or cost growth.\"},\n  {\"index\": 1, \"match\": \"PctTotAcc\", \"strength\": \"close\", \"reason\": \"Both scale accruals by cash flow or similar denominator.\"},\n  {\"index\": 2, \"match\": \"ChAssetTurnover\", \"strength\": \"exact\", \"reason\": \"Both use change in asset turnover over time.\"},\n  {\"index\": 3, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses change in SG&A-to-sales ratio.\"},\n  {\"index\": 4, \"match\": \"VolumeTrend\", \"strength\": \"close\", \"reason\": \"Both use recent turnover relative to historical average.\"},\n  {\"index\": 5, \"match\": \"DivInit\", \"strength\": \"exact\", \"reason\": \"Both flag recent dividend initiations.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses gross margin volatility.\"},\n  {\"index\": 7, \"match\": \"grcapx3y\", \"strength\": \"related\", \"reason\": \"Both relate to capex changes, but different construction.\"},\n  {\"index\": 8, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses change in debt maturity structure.\"},\n  {\"index\": 9, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses return/volatility Sharpe-like ratio.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3033,
+   "completion_tokens": 357,
+   "total_tokens": 3390,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

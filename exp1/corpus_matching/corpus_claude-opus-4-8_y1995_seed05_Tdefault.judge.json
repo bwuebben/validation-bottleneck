@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:49:13.232445+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y1995_seed05_Tdefault.json",
+  "prompt_sha256": "14689f36d0545c638596325e30b70de48b6cf053eb0d7ec71de8c84c10124f7a"
+ },
+ "response": {
+  "id": "chatcmpl-E5QU38oq0O2VfYJQCUXEjIP29fCZM",
+  "object": "chat.completion",
+  "created": 1784962151,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"GrSaleToGrInv\", \"strength\": \"exact\", \"reason\": \"Directly matches sales growth minus inventory growth construction.\"},\n  {\"index\": 1, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses change in SG&A/sales.\"},\n  {\"index\": 2, \"match\": \"Accruals\", \"strength\": \"close\", \"reason\": \"Accruals plus cash flow interaction; core idea is earnings quality.\"},\n  {\"index\": 3, \"match\": \"grcapx\", \"strength\": \"close\", \"reason\": \"Both measure change in capex relative to assets; implementation differs.\"},\n  {\"index\": 4, \"match\": \"DivInit\", \"strength\": \"related\", \"reason\": \"Both focus on dividend initiation/persistence, but construction differs.\"},\n  {\"index\": 5, \"match\": \"MomVol\", \"strength\": \"close\", \"reason\": \"Momentum adjusted by volume/turnover; implementation detail differs.\"},\n  {\"index\": 6, \"match\": null, \"strength\": \"none\", \"reason\": \"No library predictor uses gross margin stability/volatility.\"},\n  {\"index\": 7, \"match\": \"XFIN\", \"strength\": \"exact\", \"reason\": \"Net external financing scaled by assets; construction matches.\"},\n  {\"index\": 8, \"match\": \"ChNAnalyst\", \"strength\": \"related\", \"reason\": \"Both use analyst coverage, but focus and construction differ.\"},\n  {\"index\": 9, \"match\": \"ForecastDispersion\", \"strength\": \"close\", \"reason\": \"Forecast dispersion and revision direction; core idea is similar.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3086,
+   "completion_tokens": 376,
+   "total_tokens": 3462,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

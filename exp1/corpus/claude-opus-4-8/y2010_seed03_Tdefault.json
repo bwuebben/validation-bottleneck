@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:43:48.508052+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 2010,
+  "prompt_sha256": "b31f336809e1125a846ee29f41a3f6fb165858523ead065dc09525352d170c98",
+  "seed": 3,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNKdoEi7LqULo2Jb7peM",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Supplier Concentration Fragility\", \"construction\": \"Using firm 10-K disclosures of major customers (SFAS 131 segment data) and Compustat, compute the fraction of a supplier firm's revenue attributable to its largest disclosed customer. For each firm, aggregate the equity return volatility of its top customers (weighted by revenue share) over the trailing 12 months of daily returns. The measure is customer-revenue-share times customer stock volatility, summed across disclosed customers.\", \"rationale\": \"Firms dependent on a few volatile customers bear concentrated demand risk that is slow to be priced due to limited investor attention to supply-chain linkages.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Working Capital Acceleration\", \"construction\": \"From quarterly Compustat, compute non-cash working capital (receivables + inventory - payables) scaled by sales for each quarter. Take the second difference across the last three quarters (acceleration), i.e., the change in the change of scaled working capital. Rank cross-sectionally each quarter.\", \"rationale\": \"Accelerating working capital signals deteriorating operating efficiency and future earnings disappointments that the market underreacts to relative to level and first-difference signals.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Intra-Year Sales Seasonality Shift\", \"construction\": \"Using eight quarters of Compustat quarterly sales, estimate each firm's typical seasonal distribution of sales across the four fiscal quarters from years t-2 and t-1. Compute the absolute deviation of the most recent four quarters' seasonal pattern from the historical pattern. Higher deviation indicates a disrupted seasonal profile.\", \"rationale\": \"Shifts in a firm's habitual seasonal sales pattern reveal changing demand or channel behavior that predicts future fundamentals before analysts adjust expectations.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Dispersion of Intangible Investment\", \"construction\": \"Combine R&D expense, advertising expense (SG&A component), and capitalized software from Compustat. Compute the coefficient of variation of these three scaled-by-assets intensities within the firm, measuring how balanced versus lopsided intangible investment is. Rank cross-sectionally.\", \"rationale\": \"Firms with diversified intangible investment portfolios face lower idiosyncratic obsolescence risk, and the market underprices the resilience of balanced intangible strategies.\", \"higher_returns_for\": \"low values of the measure\"}, {\"name\": \"Order Backlog Momentum\", \"construction\": \"From Compustat annual order backlog (Compustat item OB) scaled by total assets, compute the year-over-year change. Where backlog is disclosed, form deciles on the change in scaled backlog. Update annually.\", \"rationale\": \"Growing order backlog is a forward-looking demand signal that leads reported revenue, and investors underreact to this non-earnings fundamental.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Debt Maturity Wall Proximity\", \"construction\": \"Using Compustat's schedule of long-term debt maturing in years 1 through 5 (items DD1-DD5), compute the fraction of total debt maturing within the next 24 months. Interact with the firm's interest coverage ratio to flag refinancing stress.\", \"rationale\": \"Firms facing a near-term maturity wall combined with weak coverage bear refinancing risk that is underpriced until rollover becomes imminent.\", \"higher_returns_for\": \"low values of the measure (less near-term maturing debt earns higher returns; high wall proximity underperforms)\"}, {\"name\": \"Gross Margin Stability Premium\", \"construction\": \"Compute quarterly gross margin (sales minus COGS over sales) over the trailing 12 quarters. Calculate the standard deviation of quarterly gross margin. Rank firms by margin volatility cross-sectionally, controlling for industry.\", \"rationale\": \"Firms with unstable gross margins face uncertain pricing power and input costs, a fundamental risk that carries a return premium under-recognized separately from earnings volatility.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Tax Aggressiveness Reversal\", \"construction\": \"Compute the effective tax rate (income tax expense over pretax income) each year. Measure the deviation of the current-year effective rate from the firm's five-year average. Large negative deviations indicate aggressive tax positions likely to reverse.\", \"rationale\": \"Unusually low current tax rates often reflect temporary items that mean-revert, causing future earnings drag that the market fails to anticipate.\", \"higher_returns_for\": \"high values of the measure (effective rate near or above historical average)\"}, {\"name\": \"Employee Productivity Surprise\", \"construction\": \"Using Compustat number of employees (EMP) and sales, compute sales-per-employee. Calculate the year-over-year growth in sales-per-employee minus the industry-median growth. Rank the abnormal productivity change cross-sectionally, updated annually.\", \"rationale\": \"Improving labor productivity relative to peers signals operational improvement and future margin expansion that is slowly incorporated into prices.\", \"higher_returns_for\": \"high values of the measure\"}, {\"name\": \"Institutional Ownership Breadth Acceleration\", \"construction\": \"From 13F filings, count the number of distinct institutional holders each quarter. Compute the second difference (acceleration) in the number of holders over three quarters, scaled by the prior holder count. Rank cross-sectionally.\", \"rationale\": \"Accelerating breadth of institutional ownership reflects diffusion of positive information and relaxation of short-sale/attention constraints, predicting continued positive returns beyond the level of breadth.\", \"higher_returns_for\": \"high values of the measure\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1973,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

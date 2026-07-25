@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:28:12.361334+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 2,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJT4qtunjwfusRkHJ12",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory Growth Divergence\", \"construction\": \"Compute year-over-year growth in inventories (Compustat item INVT) minus year-over-year growth in sales (item SALE), using the most recent fiscal year annual data. Rank stocks cross-sectionally into deciles each June.\", \"rationale\": \"When inventories build faster than sales, it signals weakening demand and future markdowns/write-offs, which the market underweights; firms depleting inventory relative to sales are experiencing stronger-than-expected demand.\", \"higher_returns_for\": \"low values of the measure (inventory growing slower than sales)\"}, {\"name\": \"Accrual-Adjusted Earnings Quality\", \"construction\": \"For each firm compute total accruals as the change in non-cash current assets minus change in current liabilities (excluding short-term debt) minus depreciation, scaled by average total assets (Compustat items ACT, CHE, LCT, DLC, DP, AT). Sort into deciles annually.\", \"rationale\": \"Earnings driven by accruals rather than cash flows are less persistent and tend to reverse, so the market overprices high-accrual firms.\", \"higher_returns_for\": \"low values of the measure (low accruals)\"}, {\"name\": \"R&D Intensity Relative to Market Cap\", \"construction\": \"Compute research and development expense (Compustat item XRD) divided by end-of-year market capitalization (PRCC_F times CSHO). Set missing XRD to zero. Rank into deciles each June.\", \"rationale\": \"R&D creates intangible capital that GAAP expenses immediately, causing systematic undervaluation of research-intensive firms whose future payoffs are not yet in book value.\", \"higher_returns_for\": \"high values of the measure (high R&D relative to market value)\"}, {\"name\": \"Gross Profitability Yield\", \"construction\": \"Compute gross profit (Compustat item SALE minus COGS) divided by total assets (item AT), using most recent fiscal year. Sort into deciles annually and hold from June.\", \"rationale\": \"Gross profits are a cleaner measure of economic productivity than net income because they are less contaminated by accounting/financing noise; more productive firms earn higher returns for their risk.\", \"higher_returns_for\": \"high values of the measure (high gross profitability)\"}, {\"name\": \"Asset Growth Reversal\", \"construction\": \"Compute the annual percentage change in total assets (Compustat item AT year over year). Rank all firms into deciles each June.\", \"rationale\": \"Rapid asset expansion often reflects overinvestment and empire-building that destroys value and is later corrected; conservatively growing firms outperform.\", \"higher_returns_for\": \"low values of the measure (low asset growth)\"}, {\"name\": \"Net External Financing\", \"construction\": \"Sum net equity issuance (change in split-adjusted shares outstanding times price, or Compustat SSTK minus PRSTKC) and net debt issuance (change in total debt DLTT+DLC) over the prior fiscal year, scaled by average total assets. Sort into deciles annually.\", \"rationale\": \"Managers issue securities when their firm is overvalued and retire them when undervalued, so heavy external financing predicts low future returns.\", \"higher_returns_for\": \"low values of the measure (net repurchasers/debt retirers)\"}, {\"name\": \"Order-Backlog to Sales\", \"construction\": \"For firms reporting order backlog (Compustat item OB), compute backlog divided by annual sales (item SALE). Rank reporting firms into quintiles annually.\", \"rationale\": \"A large order backlog relative to current sales is a leading indicator of future revenue growth that the market underappreciates when it is buried in footnotes.\", \"higher_returns_for\": \"high values of the measure (large backlog relative to sales)\"}, {\"name\": \"Volatility of Monthly Returns\", \"construction\": \"Compute the standard deviation of a stock's monthly returns (CRSP) over the trailing 36 months. Sort into deciles each month and hold value-weighted portfolios.\", \"rationale\": \"Idiosyncratically volatile, lottery-like stocks are overbought by underdiversified retail investors, leading to lower subsequent returns despite higher risk.\", \"higher_returns_for\": \"low values of the measure (low return volatility)\"}, {\"name\": \"Dividend Initiation Momentum\", \"construction\": \"Flag firms that initiated or increased cash dividends per share (Compustat DVPSX or CRSP distribution codes) within the trailing 12 months versus those that cut/omitted. Form long-initiators, short-cutters portfolio, rebalanced monthly.\", \"rationale\": \"Dividend changes credibly signal management's private information about sustainable future cash flows, and the market underreacts to this signal.\", \"higher_returns_for\": \"dividend initiators/increasers (versus cutters)\"}, {\"name\": \"Capital Turnover Efficiency\", \"construction\": \"Compute sales (Compustat SALE) divided by net property, plant and equipment (item PPENT), using most recent annual data. Sort into deciles each June, controlling within industry.\", \"rationale\": \"Firms that generate more sales per dollar of fixed capital use assets more efficiently and convert investment into cash flow faster, a quality dimension the market prices slowly.\", \"higher_returns_for\": \"high values of the measure (high capital turnover)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1784,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

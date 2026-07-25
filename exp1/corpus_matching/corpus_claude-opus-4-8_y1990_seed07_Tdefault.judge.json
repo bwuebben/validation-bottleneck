@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:48:49.644139+00:00",
+  "judge_model": "gpt-4.1-2025-04-14",
+  "source_file": "corpus/claude-opus-4-8/y1990_seed07_Tdefault.json",
+  "prompt_sha256": "6296d93651d70b4bb26cd54353ffe46b4d303bfd41def1e97ff3412f18b30af3"
+ },
+ "response": {
+  "id": "chatcmpl-E5QTfwM8Sjjt7d48I0DxAqgfYCdeX",
+  "object": "chat.completion",
+  "created": 1784962127,
+  "model": "gpt-4.1-2025-04-14",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "{\"matches\": [\n  {\"index\": 0, \"match\": \"GrSaleToGrInv\", \"strength\": \"close\", \"reason\": \"Both compare inventory growth to sales/inventory growth.\"},\n  {\"index\": 1, \"match\": \"Accruals\", \"strength\": \"close\", \"reason\": \"Both measure accruals scaled by assets, differing in calculation details.\"},\n  {\"index\": 2, \"match\": \"grcapx3y\", \"strength\": \"close\", \"reason\": \"Both use capex relative to assets/PPE and its change over time.\"},\n  {\"index\": 3, \"match\": \"ChAssetTurnover\", \"strength\": \"related\", \"reason\": \"Both use changes in profitability ratios, but margin vs. turnover.\"},\n  {\"index\": 4, \"match\": \"IdioVol3F\", \"strength\": \"exact\", \"reason\": \"Same construction: idiosyncratic volatility from market model residuals.\"},\n  {\"index\": 5, \"match\": \"Illiquidity\", \"strength\": \"exact\", \"reason\": \"Same: Amihud illiquidity using absolute return over dollar volume.\"},\n  {\"index\": 6, \"match\": \"ShareIss1Y\", \"strength\": \"exact\", \"reason\": \"Both use 1-year log growth in shares outstanding.\"},\n  {\"index\": 7, \"match\": \"ChAssetTurnover\", \"strength\": \"exact\", \"reason\": \"Both use year-over-year change in asset turnover.\"},\n  {\"index\": 8, \"match\": \"High52\", \"strength\": \"exact\", \"reason\": \"Both use proximity to 52-week high price.\"},\n  {\"index\": 9, \"match\": \"DelFINL\", \"strength\": \"close\", \"reason\": \"Both use change in financial leverage (debt/assets) year-over-year.\"}\n]}",
+     "refusal": null,
+     "annotations": []
+    },
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 3051,
+   "completion_tokens": 402,
+   "total_tokens": 3453,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920,
+    "audio_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "audio_tokens": 0,
+    "accepted_prediction_tokens": 0,
+    "rejected_prediction_tokens": 0
+   }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_2d69b4ef3f"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "utc": "2026-07-25T06:31:16.099116+00:00",
+  "model_requested": "claude-opus-4-8",
+  "roleplay_year": 1995,
+  "prompt_sha256": "e6f13fd943aa8f7dfbfad245c83f6d0509bd3847458e01daf7f1d4afbcf8bf54",
+  "seed": 9,
+  "temperature": null,
+  "sampling": "provider_default",
+  "max_tokens": 2500,
+  "harness_version": "1.0.0",
+  "smoke": false
+ },
+ "response": {
+  "model": "claude-opus-4-8",
+  "id": "msg_011CdNJgYjYo5smhuwQ7kQDA",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "{\"predictors\": [{\"name\": \"Inventory Growth Divergence\", \"construction\": \"Compute the year-over-year growth in raw-materials inventory minus the year-over-year growth in finished-goods inventory, using Compustat inventory detail items (INVRM, INVFG). Rank firms cross-sectionally each June using the most recent fiscal-year data.\", \"rationale\": \"Rising raw-materials relative to finished-goods inventory signals management's private expectation of future demand and production ramp-up, whereas finished-goods buildup signals unsold output.\", \"higher_returns_for\": \"high values of the measure (raw-materials growth exceeding finished-goods growth)\"}, {\"name\": \"Selling Expense Efficiency Change\", \"construction\": \"Compute SG&A expense (Compustat XSGA) scaled by sales for the current fiscal year minus the same ratio for the prior year. Rank firms by the change in this ratio.\", \"rationale\": \"Firms achieving falling selling-cost intensity are gaining operating leverage and competitive scale that the market prices slowly.\", \"higher_returns_for\": \"low values (declining SG&A-to-sales ratio)\"}, {\"name\": \"Trade Credit Extension Ratio\", \"construction\": \"Compute accounts receivable (RECT) scaled by sales, then take the change from the prior fiscal year, netted against the change in accounts payable (AP) scaled by cost of goods sold. Rank cross-sectionally each June.\", \"rationale\": \"Aggressive extension of receivables relative to payables can inflate current sales through channel-stuffing and predicts subsequent reversals in earnings.\", \"higher_returns_for\": \"low values (firms tightening receivables relative to payables)\"}, {\"name\": \"Dividend Initiation Momentum\", \"construction\": \"Flag firms that paid a common dividend (DVC>0) in the current fiscal year but paid zero in the prior year. Within initiators, rank by the prior-6-month return. Long the highest-momentum initiators.\", \"rationale\": \"Dividend initiation is a costly signal of durable earnings, and combining it with price momentum isolates initiations the market underreacts to.\", \"higher_returns_for\": \"high values (recent initiators with strong prior momentum)\"}, {\"name\": \"Capital Intensity Reversal\", \"construction\": \"Compute gross PP&E (PPEGT) scaled by total assets. Compute the 3-year change in this ratio. Rank firms cross-sectionally each June by the change.\", \"rationale\": \"Firms sharply increasing capital intensity tend to over-invest at cyclical peaks, and the market fails to discount subsequent low returns on new capital.\", \"higher_returns_for\": \"low values (firms reducing capital intensity)\"}, {\"name\": \"Turnover Acceleration\", \"construction\": \"Compute average monthly share turnover (volume/shares outstanding from CRSP) over the most recent 3 months minus the average monthly turnover over the prior 9 months. Rank cross-sectionally each month.\", \"rationale\": \"Accelerating turnover reflects rising investor disagreement and speculative attention, which is associated with overpricing and lower subsequent returns.\", \"higher_returns_for\": \"low values (decelerating turnover)\"}, {\"name\": \"Tax-Book Income Gap\", \"construction\": \"Estimate taxable income as current federal tax expense (TXFED) divided by the statutory rate (0.35), then compute pretax book income (PI) minus estimated taxable income, scaled by total assets. Rank cross-sectionally each June.\", \"rationale\": \"A large excess of book income over taxable income indicates aggressive accruals and lower-quality earnings likely to reverse.\", \"higher_returns_for\": \"low values (small book-tax gap)\"}, {\"name\": \"Volatility of Analyst-Free Fundamentals Ratio\", \"construction\": \"Compute the trailing 5-year standard deviation of annual return-on-assets (net income NI / total assets AT), scaled by mean ROA over the same window. Rank cross-sectionally each June.\", \"rationale\": \"Firms with unstable fundamental profitability are harder to value and carry a distress/uncertainty premium under-recognized in prices.\", \"higher_returns_for\": \"high values (high fundamental volatility)\"}, {\"name\": \"Equity Issuance Absorption\", \"construction\": \"Compute the 1-year growth in split-adjusted shares outstanding from CRSP, then interact with the firm's book-to-market rank. Long low-issuance firms among value stocks; short high-issuance firms among value stocks.\", \"rationale\": \"Share issuance dilutes returns and is especially informative among value firms where managers exploit temporary overvaluation of otherwise cheap stocks.\", \"higher_returns_for\": \"low values (low share-count growth, particularly within value)\"}, {\"name\": \"Seasonal Earnings Persistence\", \"construction\": \"Regress the most recent four quarterly earnings surprises (actual quarterly EPS from Compustat quarterly EPSPXQ minus same-quarter-prior-year EPS) and take the sum of the two most recent same-fiscal-quarter surprises. Rank firms by this same-quarter cumulative surprise.\", \"rationale\": \"Some firms exhibit calendar-quarter-specific earnings strength that recurs, and the market underreacts to this seasonal component of earnings news.\", \"higher_returns_for\": \"high values (positive recurring same-quarter surprises)\"}]}"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 407,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1813,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+}

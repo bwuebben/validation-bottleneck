@@ -11,11 +11,13 @@ generating model has provably not seen: the model's (verified) training cutoff i
 valid evaluation boundary. Two pre-registered experiments on public data supply the
 evidence. In Experiment 1, five models spanning three training lineages (OpenAI, Meta,
 Anthropic), asked to roleplay past dates (1990–2010) and propose "novel" cross-sectional
-predictors, cannot leave the literature they have read — 26–55% of proposals match
-already-documented predictors — and proposal frequency is *negatively* related to
-post-date factor performance (Fisher-combined z = −3.88, negative in 21 of 25
-model-vintage cells): the models reproduce prominence, not returns. In Experiment 2,
-models with recall-verified cutoffs generated 1,008 composite factors inside an
+predictors, return that literature anyway — 26–55% of their "novel" proposals match
+predictors already in the library, i.e. exactly what they were told to avoid. Convergent
+rediscovery could explain that; it cannot explain the sign: proposal frequency is
+*negatively* related to post-date factor performance (Fisher-combined z = −3.88, negative in
+21 of 25 model-vintage cells), which is information no truthful roleplayer could hold. The
+models reproduce prominence, not returns. In Experiment 2, models with recall-verified cutoffs
+generated 1,336 composite factors across four models — 1,000 of them evaluable — inside an
 enumerable grammar (making the trial count exact; M = 330 for the longest-window model)
 and were evaluated strictly after their cutoffs: nothing survives Benjamini–Yekutieli
 false-discovery control; against 10,000 uniform draws from the same grammar the best

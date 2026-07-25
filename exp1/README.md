@@ -41,7 +41,7 @@ Run the same roleplay prompts on **ChronoGPT annual vintages** (manelalab on Hug
 regurgitate post-2000 literature or tilt toward future winners BY CONSTRUCTION — its
 proposal distribution is the leakage-free baseline for test (b): the frontier models'
 post-date-performance tilt is measured against a control whose tilt must be exactly zero.
-State the capability confound honestly (1.5B proposals are crude; the comparison is about
+State the capability confound plainly (1.5B proposals are crude; the comparison is about
 the TILT, not proposal quality). Bonus runs: (i) the 74-probe LAP battery across all
 vintages — the LAP collapse should staircase exactly at each vintage's wall, certifying
 the instrument used to freeze exp2's walls; (ii) Cheng-et-al dated_data verification on

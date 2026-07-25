@@ -105,6 +105,23 @@ $PY 02_cutoff_probe.py --model gpt-4-0613       # 62-probe effective-cutoff batt
 
 Cost estimate: gpt-4-0613 ≈ $15–20; 4o/4.1 well under $10 combined. Probes: cents.
 
+Analysis stages, in order (all read the archived corpus; none calls a model API):
+
+```bash
+$PY 04_freeze_walls.py              # walls from probe data alone, committed before results
+$PY 05_evaluate.py                  # the evaluation ladder -> derived/results_perf.csv
+$PY 06_randomization.py             # Amendment 3: grammar randomization null (seed 42)
+$PY 07_aux_positive_control.py      # Amendment 4: documented-true auxiliary positive control
+$PY 08_grammar_null_hist.py         # best-of-M null CDF for the paper's model-vs-monkey figure
+```
+
+`08_grammar_null_hist.py` re-runs the Amendment 3 pool and adds nothing to the registered
+analysis: same pool, same seed, same windows, same pipeline. It exists so the figure is
+reproducible from committed data. It reproduces the archived pool exactly (8,099 / 7,749 /
+7,749 evaluable) and the archived null medians to four decimals; bootstrap percentiles agree
+with `randomization_test.json` to within resampling noise, leaving the reported 9th / 58th /
+16th percentiles unchanged.
+
 ## After this stage (not this run)
 
 1. Commit corpus (= registration). 2. Effective-cutoff verification write-up (probe battery

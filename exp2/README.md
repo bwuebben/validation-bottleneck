@@ -113,6 +113,7 @@ $PY 05_evaluate.py                  # the evaluation ladder -> derived/results_p
 $PY 06_randomization.py             # Amendment 3: grammar randomization null (seed 42)
 $PY 07_aux_positive_control.py      # Amendment 4: documented-true auxiliary positive control
 $PY 08_grammar_null_hist.py         # best-of-M null CDF for the paper's model-vs-monkey figure
+$PY 09_aux_type_mix.py             # auxiliary-implication type mix and per-type pass rates
 ```
 
 `08_grammar_null_hist.py` re-runs the Amendment 3 pool and adds nothing to the registered
@@ -129,3 +130,10 @@ here + Cheng et al. `dated_data` on the open-weight panel later). 3. Evaluation 
 composite construction + auxiliary tests via `dp.factors` on post-cutoff months only.
 4. Open-weight generation via hosted APIs. 5. Effective-M analysis across the 20-sample
 draws (dedup at the expression level; Si–Yang–Hashimoto comparison).
+
+`09_aux_type_mix.py` (added 2026-07-25) mirrors the auxiliary block of `05_evaluate.py` verbatim
+and additionally records the TYPE of every tested implication. It supports two statements in the
+paper: that the machine and documented-true control sides ran comparable batteries on the long
+window (83.5% vs 79% structural), and the within-type comparison (machine regime 86/167,
+correlation 92/198, subperiod 22/72 against control 5/5, 4/6, 3/3). Its totals reproduce
+`derived/results_perf.csv` exactly: 437/89/88 tested, 200/26/14 passed.

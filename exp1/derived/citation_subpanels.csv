@@ -1,0 +1,4 @@
+panel,n_models,N,fe_cells,fut_beta,fut_t,pre_beta,pre_t,pre_missing_beta,pre_missing_t,log_cites_beta,log_cites_t,pub_year_beta,pub_year_t
+openai_3,3,2082,15,-0.02702,-1.31,0.00052,0.05,-0.19095,-1.92,0.04512,1.54,0.01291,1.23
+four_pre_claude,4,2776,20,-0.02493,-1.57,-0.00311,-0.39,-0.21602,-2.12,0.04497,1.79,0.01354,1.29
+all_five,5,3470,25,-0.02193,-1.75,-0.00373,-0.53,-0.22183,-2.51,0.01038,0.45,0.00173,0.19

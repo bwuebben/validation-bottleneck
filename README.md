@@ -15,7 +15,8 @@ predictors, return that literature anyway — 26–55% of their "novel" proposal
 predictors already in the library, i.e. exactly what they were told to avoid. Convergent
 rediscovery could explain that; it cannot explain the sign: proposal frequency is
 *negatively* related to post-date factor performance (Fisher-combined z = −3.88, negative in
-21 of 25 model-vintage cells), which is information no truthful roleplayer could hold. The
+20 of 25 model-vintage cells — four of five for every one of the five models), which is
+information no truthful roleplayer could hold. The
 models reproduce prominence, not returns. In Experiment 2, models with recall-verified cutoffs
 generated 1,336 composite factors across four models — 1,000 of them evaluable — inside an
 enumerable grammar (making the trial count exact; M = 330 for the longest-window model)

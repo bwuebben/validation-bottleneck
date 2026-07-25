@@ -67,3 +67,20 @@ $PY 01_generate.py --model gpt-4o-2024-08-06
 $PY 01_generate.py --model gpt-4.1-2025-04-14
 ```
 Key: exp2/.env (shared loader). Cost ≈ $10 total, dominated by gpt-4-0613.
+
+## Analysis scripts
+
+```
+02_extract_proposals.py   parse proposals from the archived generation corpus
+03_match.py               LLM-judge matching against the 212 OSAP predictors
+04_score.py               tests (a) and (b), effective-M, grade split, audit sample
+05_grade_lag.py           match-grade split and forward publication lag
+06_citation_subpanels.py  test (b)'s citation control across nested model sets
+```
+
+`06_citation_subpanels.py` (added 2026-07-25) mirrors `04_score.py`'s test-(b) panel and
+clustered OLS verbatim and reruns them on three nested model sets. It exists because the paper
+reports how the log-citations control behaves as independent training lineages enter the pool:
+t = +1.54 (three OpenAI models), +1.79 (adding the open-weight arm), +0.44 (all five). Its
+five-model column reproduces `derived/results_b.txt`; the last digit of each t differs only
+because this script uses `pinv` where `04_score.py` uses `inv`.

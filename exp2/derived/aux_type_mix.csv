@@ -1,0 +1,10 @@
+model,type,stated_all_types,tested,passed
+gpt-4-0613,regime,939,167,86
+gpt-4-0613,corr,939,198,92
+gpt-4-0613,subperiod,939,72,22
+gpt-4o-2024-08-06,regime,907,0,0
+gpt-4o-2024-08-06,corr,907,0,0
+gpt-4o-2024-08-06,subperiod,907,89,26
+meta-llama_Llama-3.3-70B-Instruct-Turbo,regime,849,0,0
+meta-llama_Llama-3.3-70B-Instruct-Turbo,corr,849,0,0
+meta-llama_Llama-3.3-70B-Instruct-Turbo,subperiod,849,88,14

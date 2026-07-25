@@ -48,6 +48,7 @@ exp2/                         Experiment 2 — the cutoff-vintage forward test
   derived/                    evaluation universe and results
   WALLS.md                    the frozen per-model evaluation walls (probe-derived)
 scripts/verify_corpus.py      standalone integrity + reproduction check (stdlib only)
+scripts/check_numbers.py      recomputes every number in the paper and diffs it against the PDF
 ```
 
 ## Registration discipline
@@ -72,6 +73,27 @@ This checks corpus integrity (file counts, proposal/hypothesis counts, manifest 
 hashes) and independently recomputes Experiment 1's headline table
 (`exp1/derived/results_a.csv`) from the raw corpus, the raw judge output, and the bundled
 predictor metadata.
+
+A second check verifies the *paper* rather than the data (requires `pdftotext`):
+
+```bash
+python3 scripts/check_numbers.py
+```
+
+It recomputes 105 published quantities from the committed derived artifacts — the evaluation
+ladder, the grammar-null percentiles, both auxiliary accountings and their per-type breakdowns,
+Experiment 1's tables, the test-(b) regression, the closed-form constants and every corpus
+count — and asserts that each appears in the compiled PDF as computed. It then sweeps every
+remaining numeral in the body and lists those no registered fact explains, so an unbacked number
+introduced by a future revision surfaces on the next run. Exit status is non-zero if anything is
+missing.
+
+The check exists because it was needed: two rounds of cold reading found published figures that
+were simply wrong — a count of negative cells reported as 21 when the artifact says 20, and a
+regression t-statistic labelled as one model subset when it came from another. Both were
+checkable arithmetic. One known limitation is documented in the script: presence is tested
+against the whole document, so a value that also occurs elsewhere can pass spuriously; facts
+whose numbers are not unique are anchored to nearby text instead.
 
 Full re-scoring of Experiment 2 additionally requires the public factor data: the Open
 Source Asset Pricing portfolio returns (openassetpricing.com), the Ken French data library,

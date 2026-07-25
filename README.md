@@ -22,8 +22,10 @@ enumerable grammar (making the trial count exact; M = 330 for the longest-window
 and were evaluated strictly after their cutoffs: nothing survives Benjamini–Yekutieli
 false-discovery control; against 10,000 uniform draws from the same grammar the best
 machine-selected composite lands at the 9th/58th/16th percentile of the best-of-M null;
-and mechanism-implied auxiliary predictions hold at 46% where fourteen documented-true
-implications, run through the identical battery, pass at 70%.
+and the models' mechanism-implied auxiliary predictions hold at 39% pooled (240/614) against
+70% (14/20) for implications already documented as true put through the same battery — or 46%
+(200/437) against 86% (12/14) restricted to the one window on which the structural test types
+can run. Both comparisons are reported in the paper; the gap is wider on the like-for-like one.
 
 ## Repository layout
 

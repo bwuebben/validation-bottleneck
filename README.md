@@ -3,7 +3,10 @@
 Replication archive for:
 
 > Wuebben, B. J. (2026). *The Validation Bottleneck: Alpha Discovery When Hypotheses Are
-> Free.* Working paper. (`validation-bottleneck.pdf` in this repository.)
+> Free.* Working paper, SSRN 7180460. https://doi.org/10.2139/ssrn.7180460
+> (`validation-bottleneck.pdf` in this repository.)
+
+Paper page: https://bwuebben.github.io/papers/validation-bottleneck/
 
 The paper argues that large language models have made investment hypotheses effectively
 free, moving the binding constraint of quantitative research to out-of-sample time the
@@ -18,7 +21,8 @@ rediscovery could explain that; it cannot explain the sign: proposal frequency i
 20 of 25 model-vintage cells — four of five for every one of the five models), which is
 information no truthful roleplayer could hold. The
 models reproduce prominence, not returns. In Experiment 2, models with recall-verified cutoffs
-generated 1,336 composite factors across four models — 1,000 of them evaluable — inside an
+generated 1,336 composite factors across four models — 1,000 of them from the three models
+whose post-cutoff windows can already be scored (898 distinct expressions evaluable) — inside an
 enumerable grammar (making the trial count exact; M = 330 for the longest-window model)
 and were evaluated strictly after their cutoffs: nothing survives Benjamini–Yekutieli
 false-discovery control; against 10,000 uniform draws from the same grammar the best
